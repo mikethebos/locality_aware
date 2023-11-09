@@ -19,6 +19,15 @@ void init_request(MPIX_Request** request_ptr)
     request->recv_size = 0;
     request->block_size = 1;
     
+#ifdef GPU
+    request->cpu_sendbuf = NULL;
+    request->cpu_sendbuf_bytes = 0;
+    request->cpu_recvbuf = NULL;
+    request->cpu_recvbuf_bytes = 0;
+    
+    request->sub_request = NULL;
+#endif
+    
     *request_ptr = request;
 }
 
@@ -115,6 +124,8 @@ int MPIX_Request_free(MPIX_Request* request)
         cudaFreeHost(request->cpu_sendbuf);
     if (request->cpu_recvbuf)
         cudaFreeHost(request->cpu_recvbuf);
+    if (request->sub_request)
+        MPIX_Request_free(request->sub_request);
 #endif
 
     free(request);
