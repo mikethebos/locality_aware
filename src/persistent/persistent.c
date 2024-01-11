@@ -26,6 +26,8 @@ void init_request(MPIX_Request** request_ptr)
     request->cpu_recvbuf_bytes = 0;
     
     request->sub_request = NULL;
+    
+    request->num_threads = 0;
 #endif
     
     *request_ptr = request;

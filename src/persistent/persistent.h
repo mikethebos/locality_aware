@@ -44,6 +44,9 @@ typedef struct _MPIX_Request
     void* cpu_recvbuf; // for copy-to-cpu
     int cpu_recvbuf_bytes;
     MPIX_Request* sub_request;
+        
+    // for threaded neighbor alltoallv
+    int num_threads;
 #endif
 
     // Keep track of which start/wait functions to call for given request
