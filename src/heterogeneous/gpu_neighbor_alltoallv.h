@@ -58,16 +58,16 @@ int copy_to_cpu_neighbor_alltoallv_nonblocking_init(const void* sendbuf,
         MPI_Info info,
         MPIX_Request** request_ptr);
 
-// int threaded_neighbor_alltoallv_nonblocking_init(const void* sendbuf,
-//         const int sendcounts[],
-//         const int sdispls[],
-//         MPI_Datatype sendtype,
-//         void* recvbuf,
-//         const int recvcounts[],
-//         const int rdispls[],
-//         MPI_Datatype recvtype,
-//         MPIX_Comm* comm,
-//         MPI_Info info,
-//         MPIX_Request** request_ptr);
+int threaded_neighbor_alltoallv_nonblocking_init(const void* sendbuf,
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void* recvbuf,
+        const int recvcounts[],
+        const int rdispls[],
+        MPI_Datatype recvtype,
+        MPIX_Comm* comm,
+        MPI_Info info,
+        MPIX_Request** request_ptr);
 
 #endif

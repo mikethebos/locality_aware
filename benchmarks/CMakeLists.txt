@@ -4,6 +4,8 @@ if(USE_CUDA)
     set_source_files_properties(
         gpu_alltoall.cpp
         gpu_threaded_alltoall.cpp
+        gpu_neighbor_alltoallv.cpp
+        gpu_threaded_neighbor_alltoallv.cpp
         PROPERTIES LANGUAGE CUDA)
 
     add_executable(gpu_alltoall gpu_alltoall.cpp)
@@ -18,6 +20,17 @@ if(USE_CUDA)
     )
     target_link_libraries(gpu_threaded_alltoall mpi_advance ${MPI_LIBRARIES} OpenMP::OpenMP_CXX)
 
+    add_executable(gpu_neighbor_alltoallv gpu_neighbor_alltoallv.cpp)
+    target_link_libraries(gpu_neighbor_alltoallv mpi_advance ${MPI_LIBRARIES} OpenMP::OpenMP_CXX)
+
+    add_executable(gpu_threaded_neighbor_alltoallv gpu_threaded_neighbor_alltoallv.cpp)
+    target_compile_options(gpu_threaded_neighbor_alltoallv PRIVATE
+    $<$<COMPILE_LANGUAGE:CUDA>: # Flags for CUDA Objects
+    -lineinfo
+    -Xcompiler -fopenmp
+    >
+    )
+    target_link_libraries(gpu_threaded_neighbor_alltoallv mpi_advance ${MPI_LIBRARIES} OpenMP::OpenMP_CXX)
 else()
     add_executable(bruck_allgather bruck_allgather.cpp)
     target_link_libraries(bruck_allgather mpi_advance ${MPI_LIBRARIES})
