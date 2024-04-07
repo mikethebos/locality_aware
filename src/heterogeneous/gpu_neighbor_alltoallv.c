@@ -74,19 +74,17 @@ int copy_to_cpu_neighbor_alltoallv_init(neighbor_alltoallv_ftn f,
     MPI_Type_size(sendtype, &send_bytes);
     MPI_Type_size(recvtype, &recv_bytes);
 
-    int sendcount = 0;
-    int recvcount = 0;
-    for (int i = 0; i < outdegree; i++)
+    int total_bytes_s = 0;
+    int total_bytes_r = 0;
+    
+    if (outdegree > 0)
     {
-        sendcount += sendcounts[i];
+        total_bytes_s = (sdispls[outdegree - 1] + sendcounts[outdegree - 1]) * send_bytes;
     }
-    for (int i = 0; i < indegree; i++)
+    if (indegree > 0)
     {
-        recvcount += recvcounts[i];
+        total_bytes_r = (rdispls[indegree - 1] + recvcounts[indegree - 1]) * recv_bytes;
     }
-
-    int total_bytes_s = sendcount * send_bytes;
-    int total_bytes_r = recvcount * recv_bytes;
 
     MPIX_Request* outer_request = NULL;
     init_neighbor_gpu_copy_cpu_request(&outer_request, sendbuf, total_bytes_s, recvbuf, total_bytes_r);
@@ -168,20 +166,18 @@ int threaded_neighbor_alltoallv_nonblocking_init(const void* sendbuf,
     int send_bytes, recv_bytes;
     MPI_Type_size(sendtype, &send_bytes);
     MPI_Type_size(recvtype, &recv_bytes);
-
-    int sendcount = 0;
-    int recvcount = 0;
-    for (int i = 0; i < outdegree; i++)
+    
+    int total_bytes_s = 0;
+    int total_bytes_r = 0;
+    
+    if (outdegree > 0)
     {
-        sendcount += sendcounts[i];
+        total_bytes_s = (sdispls[outdegree - 1] + sendcounts[outdegree - 1]) * send_bytes;
     }
-    for (int i = 0; i < indegree; i++)
+    if (indegree > 0)
     {
-        recvcount += recvcounts[i];
+        total_bytes_r = (rdispls[indegree - 1] + recvcounts[indegree - 1]) * recv_bytes;
     }
-
-    int total_bytes_s = sendcount * send_bytes;
-    int total_bytes_r = recvcount * recv_bytes;
 
     // no communication occuring here, so no need for openmp
     int tag = 102944;
