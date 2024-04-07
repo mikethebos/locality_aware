@@ -37,7 +37,7 @@ int main(int argc, char* argv[])
         int *plan = (int *)malloc(num_procs * num_procs * sizeof(int));
         for (int j = 0; j < num_procs * num_procs; j++)
         {
-                plan[j] = rand() % s;
+                plan[j] = s + (rand() % 128);
         }
         srand(seed + rank);
         int initsdispl = rand() % 32;
@@ -74,7 +74,7 @@ int main(int argc, char* argv[])
         }
         
         free(plan);
-        if (rank == 0) printf("Testing Size %d\n", s);
+        if (rank == 0) printf("Testing (around) Size per proc %d\n", s);
 
         srand(time(NULL));
         std::vector<double> send_data(initsdispl);
