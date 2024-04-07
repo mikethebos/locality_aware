@@ -32,7 +32,7 @@ int gpu_aware_neighbor_alltoallv_nonblocking_init(const void* sendbuf,
         MPI_Info info,
         MPIX_Request** request_ptr)
 {
-    int ierr = gpu_aware_neighbor_alltoallv(MPIX_Neighbor_alltoallv_init,
+    int ierr = gpu_aware_neighbor_alltoallv_init(MPIX_Neighbor_alltoallv_init,
         sendbuf,
         sendcounts,
         sdispls,
@@ -59,7 +59,7 @@ int copy_to_cpu_neighbor_alltoallv_init(neighbor_alltoallv_ftn f,
         MPI_Datatype recvtype,
         MPIX_Comm* comm,
         MPI_Info info,
-        MPI_Request** request_ptr)
+        MPIX_Request** request_ptr)
 {
     int ierr = 0;
 
@@ -185,8 +185,6 @@ int threaded_neighbor_alltoallv_nonblocking_init(const void* sendbuf,
 
     // no communication occuring here, so no need for openmp
     int tag = 102944;
-    int send_proc, recv_proc;
-    int send_pos, recv_pos;
     int n_msgs_s = outdegree;
     int n_msgs_r = indegree;
     int num_threads = omp_get_max_threads(); // assume max number of threads always launched

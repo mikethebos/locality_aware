@@ -43,7 +43,7 @@ typedef struct _MPIX_Request
     int cpu_sendbuf_bytes;
     void* cpu_recvbuf; // for copy-to-cpu
     int cpu_recvbuf_bytes;
-    MPIX_Request* sub_request;
+    struct _MPIX_Request *sub_request;
         
     // for threaded neighbor alltoallv
     int num_threads;

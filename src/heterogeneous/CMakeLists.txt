@@ -11,8 +11,8 @@ set(heterogeneous_HEADERS
 set(heterogeneous_SOURCES
     heterogeneous/gpu_alltoall.c
     heterogeneous/gpu_alltoallv.c
-    heterogeneous/gpu_neighbor_alltoallv.h
-    heterogeneous/persistent_gpu.h
+    heterogeneous/gpu_neighbor_alltoallv.c
+    heterogeneous/persistent_gpu.c
     PARENT_SCOPE
     )
 

@@ -1,5 +1,5 @@
-#ifndef MPI_ADVANCE_GPU_ALLTOALLV_H
-#define MPI_ADVANCE_GPU_ALLTOALLV_H
+#ifndef MPI_ADVANCE_GPU_NEIGHBOR_ALLTOALLV_H
+#define MPI_ADVANCE_GPU_NEIGHBOR_ALLTOALLV_H
 
 #include "collective/alltoallv.h"
 #include "collective/collective.h"
@@ -32,7 +32,7 @@ int copy_to_cpu_neighbor_alltoallv_init(neighbor_alltoallv_ftn f,
         MPI_Datatype recvtype,
         MPIX_Comm* comm,
         MPI_Info info,
-        MPI_Request** request_ptr);
+        MPIX_Request** request_ptr);
 
 int gpu_aware_neighbor_alltoallv_nonblocking_init(const void* sendbuf, 
         const int sendcounts[],

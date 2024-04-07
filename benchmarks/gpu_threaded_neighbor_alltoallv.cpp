@@ -211,7 +211,8 @@ int main(int argc, char* argv[])
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0) printf("Threaded CC Neighbor_alltoallv Time %e\n", t0);
-        
+
+        MPIX_Request_free(copyreq);        
         MPI_Comm_free(&mpi_graph);
         MPIX_Comm_free(mpix_graph);
         cudaFree(send_data_d);

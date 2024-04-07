@@ -10,7 +10,7 @@ int neighbor_gpu_copy_cpu_start(MPIX_Request* request)
     // only copy sendbuf on start
     cudaMemcpy(request->cpu_sendbuf, request->sendbuf, request->cpu_sendbuf_bytes, cudaMemcpyDeviceToHost);
    
-    neighbor_start(request->sub_request);
+    return neighbor_start(request->sub_request);
 #endif
 }
 
@@ -18,10 +18,12 @@ int neighbor_gpu_copy_cpu_start(MPIX_Request* request)
 int neighbor_gpu_copy_cpu_wait(MPIX_Request* request, MPI_Status* status)
 {    
 #ifdef GPU    
-    neighbor_wait(request->sub_request, status);
+    int ret = neighbor_wait(request->sub_request, status);
 
     // only copy recvbuf after wait
     cudaMemcpy(request->recvbuf, request->cpu_recvbuf, request->cpu_recvbuf_bytes, cudaMemcpyHostToDevice);
+    
+    return ret;
 #endif
 }
 
@@ -29,6 +31,8 @@ int neighbor_gpu_copy_cpu_wait(MPIX_Request* request, MPI_Status* status)
 int neighbor_gpu_copy_cpu_threaded_start(MPIX_Request* request)
 {
 #ifdef GPU
+    int ret = 0;
+
     // only copy sendbuf on start
     cudaMemcpy(request->cpu_sendbuf, request->sendbuf, request->cpu_sendbuf_bytes, cudaMemcpyDeviceToHost);
    
@@ -38,8 +42,8 @@ int neighbor_gpu_copy_cpu_threaded_start(MPIX_Request* request)
     {
         int n_threads = request->num_threads;
         int n_msgs_per_thread = n_msgs / n_threads;
-        int extra_msgs = n_msgs % num_threads;
-        MPI_Request* requests_arr = request->inner_request->global_requests;
+        int extra_msgs = n_msgs % n_threads;
+        MPI_Request* requests_arr = request->sub_request->global_requests;
 #pragma omp parallel num_threads(n_threads) shared(requests_arr)
 {
     int thread_id = omp_get_thread_num();
@@ -56,12 +60,13 @@ int neighbor_gpu_copy_cpu_threaded_start(MPIX_Request* request)
         }
         for (int idx = baseIdx; idx < baseIdx + thread_n_msgs; ++idx)
         {
-            MPI_Start(&(requests_arr[idx]));
+            ret += MPI_Start(&(requests_arr[idx]));
         }
     }
 }
 
     }
+    return ret;
 #endif
 }
 
@@ -69,14 +74,15 @@ int neighbor_gpu_copy_cpu_threaded_start(MPIX_Request* request)
 int neighbor_gpu_copy_cpu_threaded_wait(MPIX_Request* request, MPI_Status* status)
 {    
 #ifdef GPU    
+    int ret = 0;
     int n_msgs = request->sub_request->global_n_msgs;
     
     if (n_msgs)
     {
         int n_threads = request->num_threads;
         int n_msgs_per_thread = n_msgs / n_threads;
-        int extra_msgs = n_msgs % num_threads;
-        MPI_Request* requests_arr = request->inner_request->global_requests;
+        int extra_msgs = n_msgs % n_threads;
+        MPI_Request* requests_arr = request->sub_request->global_requests;
 #pragma omp parallel num_threads(n_threads) shared(requests_arr)
 {
     int thread_id = omp_get_thread_num();
@@ -93,7 +99,7 @@ int neighbor_gpu_copy_cpu_threaded_wait(MPIX_Request* request, MPI_Status* statu
         }
         for (int idx = baseIdx; idx < baseIdx + thread_n_msgs; ++idx)
         {
-            MPI_Wait(&(requests_arr[idx]), MPI_STATUS_IGNORE);
+            ret += MPI_Wait(&(requests_arr[idx]), MPI_STATUS_IGNORE);
         }
     }
 }
@@ -101,6 +107,8 @@ int neighbor_gpu_copy_cpu_threaded_wait(MPIX_Request* request, MPI_Status* statu
     }
     // only copy recvbuf after wait
     cudaMemcpy(request->recvbuf, request->cpu_recvbuf, request->cpu_recvbuf_bytes, cudaMemcpyHostToDevice);
+
+    return ret;
 #endif
 }
 
