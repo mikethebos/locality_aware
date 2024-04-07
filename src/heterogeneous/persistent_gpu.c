@@ -7,8 +7,10 @@
 int neighbor_gpu_copy_cpu_start(MPIX_Request* request)
 {
 #ifdef GPU
-    // only copy sendbuf on start
     cudaMemcpy(request->cpu_sendbuf, request->sendbuf, request->cpu_sendbuf_bytes, cudaMemcpyDeviceToHost);
+
+    // copy recvbuf in case of extra data
+    cudaMemcpy(request->cpu_recvbuf, request->recvbuf, request->cpu_recvbuf_bytes, cudaMemcpyDeviceToHost);
    
     return neighbor_start(request->sub_request);
 #endif
@@ -33,8 +35,10 @@ int neighbor_gpu_copy_cpu_threaded_start(MPIX_Request* request)
 #ifdef GPU
     int ret = 0;
 
-    // only copy sendbuf on start
     cudaMemcpy(request->cpu_sendbuf, request->sendbuf, request->cpu_sendbuf_bytes, cudaMemcpyDeviceToHost);
+
+    // copy recvbuf in case of extra data
+    cudaMemcpy(request->cpu_recvbuf, request->recvbuf, request->cpu_recvbuf_bytes, cudaMemcpyDeviceToHost);
    
     int n_msgs = request->sub_request->global_n_msgs;
     
