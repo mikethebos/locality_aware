@@ -1,0 +1,345 @@
+Running Unthreaded Neighbor_Alltoallv Test:
+Testing (around) Size per proc 1
+MPI_Neighbor_alltoallv Time 8.951602e-04
+GPU-Aware Neighbor_alltoallv Time 8.805202e-04
+CC Neighbor_alltoallv Time 4.570795e-04
+Testing (around) Size per proc 2
+MPI_Neighbor_alltoallv Time 8.291265e-04
+GPU-Aware Neighbor_alltoallv Time 8.028929e-04
+CC Neighbor_alltoallv Time 4.123433e-04
+Testing (around) Size per proc 4
+MPI_Neighbor_alltoallv Time 2.063278e-03
+GPU-Aware Neighbor_alltoallv Time 7.688561e-04
+CC Neighbor_alltoallv Time 4.124042e-04
+Testing (around) Size per proc 8
+MPI_Neighbor_alltoallv Time 7.735972e-04
+GPU-Aware Neighbor_alltoallv Time 7.721617e-04
+CC Neighbor_alltoallv Time 4.125865e-04
+Testing (around) Size per proc 16
+MPI_Neighbor_alltoallv Time 7.786136e-04
+GPU-Aware Neighbor_alltoallv Time 7.657808e-04
+CC Neighbor_alltoallv Time 3.037149e-04
+Testing (around) Size per proc 32
+MPI_Neighbor_alltoallv Time 7.898017e-04
+GPU-Aware Neighbor_alltoallv Time 7.755660e-04
+CC Neighbor_alltoallv Time 9.046085e-05
+Testing (around) Size per proc 64
+MPI_Neighbor_alltoallv Time 7.762199e-04
+GPU-Aware Neighbor_alltoallv Time 7.731172e-04
+CC Neighbor_alltoallv Time 9.455090e-05
+Testing (around) Size per proc 128
+MPI_Neighbor_alltoallv Time 7.990109e-04
+GPU-Aware Neighbor_alltoallv Time 7.982387e-04
+CC Neighbor_alltoallv Time 1.013407e-04
+Testing (around) Size per proc 256
+MPI_Neighbor_alltoallv Time 8.061686e-04
+GPU-Aware Neighbor_alltoallv Time 7.941543e-04
+CC Neighbor_alltoallv Time 2.585764e-04
+Testing (around) Size per proc 512
+MPI_Neighbor_alltoallv Time 8.613078e-04
+GPU-Aware Neighbor_alltoallv Time 8.585322e-04
+CC Neighbor_alltoallv Time 1.539375e-04
+Testing (around) Size per proc 1024
+MPI_Neighbor_alltoallv Time 1.089162e-03
+GPU-Aware Neighbor_alltoallv Time 8.150511e-04
+CC Neighbor_alltoallv Time 2.197987e-04
+Testing (around) Size per proc 2048
+MPI_Neighbor_alltoallv Time 8.120670e-04
+GPU-Aware Neighbor_alltoallv Time 7.947113e-04
+CC Neighbor_alltoallv Time 3.635878e-04
+Testing (around) Size per proc 4096
+MPI_Neighbor_alltoallv Time 8.182642e-04
+GPU-Aware Neighbor_alltoallv Time 1.599135e-03
+CC Neighbor_alltoallv Time 8.366953e-04
+Testing (around) Size per proc 8192
+MPI_Neighbor_alltoallv Time 1.089720e-03
+GPU-Aware Neighbor_alltoallv Time 8.449400e-04
+CC Neighbor_alltoallv Time 1.378753e-03
+Testing (around) Size per proc 16384
+MPI_Neighbor_alltoallv Time 1.567749e-03
+GPU-Aware Neighbor_alltoallv Time 1.508770e-03
+CC Neighbor_alltoallv Time 2.480587e-03
+Testing (around) Size per proc 32768
+MPI_Neighbor_alltoallv Time 7.989848e-03
+GPU-Aware Neighbor_alltoallv Time 8.341795e-03
+CC Neighbor_alltoallv Time 4.499619e-03
+Testing (around) Size per proc 65536
+MPI_Neighbor_alltoallv Time 2.434400e-02
+GPU-Aware Neighbor_alltoallv Time 2.505049e-02
+CC Neighbor_alltoallv Time 7.800307e-03
+Testing (around) Size per proc 131072
+MPI_Neighbor_alltoallv Time 5.023611e-02
+GPU-Aware Neighbor_alltoallv Time 5.109039e-02
+CC Neighbor_alltoallv Time 1.488579e-02
+Testing (around) Size per proc 262144
+MPI_Neighbor_alltoallv Time 8.405478e-02
+GPU-Aware Neighbor_alltoallv Time 8.548787e-02
+CC Neighbor_alltoallv Time 2.813304e-02
+Testing (around) Size per proc 524288
+MPI_Neighbor_alltoallv Time 4.576887e-02
+GPU-Aware Neighbor_alltoallv Time 4.336042e-02
+CC Neighbor_alltoallv Time 5.639483e-02
+Running Threaded Neighbor_Alltoallv Test with 2 threads:
+Testing (around) Size per proc 1
+MPI_Neighbor_alltoallv Time 7.995036e-04
+Threaded CC Neighbor_alltoallv Time 4.621241e-04
+Testing (around) Size per proc 2
+MPI_Neighbor_alltoallv Time 7.903284e-04
+Threaded CC Neighbor_alltoallv Time 4.631399e-04
+Testing (around) Size per proc 4
+MPI_Neighbor_alltoallv Time 7.896789e-04
+Threaded CC Neighbor_alltoallv Time 4.635064e-04
+Testing (around) Size per proc 8
+MPI_Neighbor_alltoallv Time 8.126369e-04
+Threaded CC Neighbor_alltoallv Time 4.725556e-04
+Testing (around) Size per proc 16
+MPI_Neighbor_alltoallv Time 1.799780e-03
+Threaded CC Neighbor_alltoallv Time 3.428697e-04
+Testing (around) Size per proc 32
+MPI_Neighbor_alltoallv Time 7.810260e-04
+Threaded CC Neighbor_alltoallv Time 1.693242e-04
+Testing (around) Size per proc 64
+MPI_Neighbor_alltoallv Time 8.039595e-04
+Threaded CC Neighbor_alltoallv Time 1.715988e-04
+Testing (around) Size per proc 128
+MPI_Neighbor_alltoallv Time 8.292017e-04
+Threaded CC Neighbor_alltoallv Time 1.799852e-04
+Testing (around) Size per proc 256
+MPI_Neighbor_alltoallv Time 8.348861e-04
+Threaded CC Neighbor_alltoallv Time 1.961069e-04
+Testing (around) Size per proc 512
+MPI_Neighbor_alltoallv Time 8.305589e-04
+Threaded CC Neighbor_alltoallv Time 2.324266e-04
+Testing (around) Size per proc 1024
+MPI_Neighbor_alltoallv Time 8.291528e-04
+Threaded CC Neighbor_alltoallv Time 3.059275e-04
+Testing (around) Size per proc 2048
+MPI_Neighbor_alltoallv Time 8.406818e-04
+Threaded CC Neighbor_alltoallv Time 6.100513e-04
+Testing (around) Size per proc 4096
+MPI_Neighbor_alltoallv Time 8.288542e-04
+Threaded CC Neighbor_alltoallv Time 9.888243e-04
+Testing (around) Size per proc 8192
+MPI_Neighbor_alltoallv Time 1.233750e-03
+Threaded CC Neighbor_alltoallv Time 1.197122e-03
+Testing (around) Size per proc 16384
+MPI_Neighbor_alltoallv Time 2.359327e-03
+Threaded CC Neighbor_alltoallv Time 2.259433e-03
+Testing (around) Size per proc 32768
+MPI_Neighbor_alltoallv Time 1.127451e-02
+Threaded CC Neighbor_alltoallv Time 5.047324e-03
+Testing (around) Size per proc 65536
+MPI_Neighbor_alltoallv Time 2.404941e-02
+Threaded CC Neighbor_alltoallv Time 9.519017e-03
+Testing (around) Size per proc 131072
+MPI_Neighbor_alltoallv Time 4.908630e-02
+Threaded CC Neighbor_alltoallv Time 1.828213e-02
+Testing (around) Size per proc 262144
+MPI_Neighbor_alltoallv Time 7.428397e-02
+Threaded CC Neighbor_alltoallv Time 3.598024e-02
+Testing (around) Size per proc 524288
+MPI_Neighbor_alltoallv Time 6.196026e-02
+Threaded CC Neighbor_alltoallv Time 6.918762e-02
+Running Threaded Neighbor_Alltoallv Test with 4 threads:
+Testing (around) Size per proc 1
+MPI_Neighbor_alltoallv Time 9.055561e-04
+Threaded CC Neighbor_alltoallv Time 8.077927e-04
+Testing (around) Size per proc 2
+MPI_Neighbor_alltoallv Time 8.629748e-04
+Threaded CC Neighbor_alltoallv Time 8.059505e-04
+Testing (around) Size per proc 4
+MPI_Neighbor_alltoallv Time 8.286223e-04
+Threaded CC Neighbor_alltoallv Time 7.968509e-04
+Testing (around) Size per proc 8
+MPI_Neighbor_alltoallv Time 2.095257e-03
+Threaded CC Neighbor_alltoallv Time 7.958019e-04
+Testing (around) Size per proc 16
+MPI_Neighbor_alltoallv Time 8.510233e-04
+Threaded CC Neighbor_alltoallv Time 7.307799e-04
+Testing (around) Size per proc 32
+MPI_Neighbor_alltoallv Time 8.496306e-04
+Threaded CC Neighbor_alltoallv Time 6.234434e-04
+Testing (around) Size per proc 64
+MPI_Neighbor_alltoallv Time 8.482017e-04
+Threaded CC Neighbor_alltoallv Time 6.665095e-04
+Testing (around) Size per proc 128
+MPI_Neighbor_alltoallv Time 8.617688e-04
+Threaded CC Neighbor_alltoallv Time 6.705201e-04
+Testing (around) Size per proc 256
+MPI_Neighbor_alltoallv Time 8.430004e-04
+Threaded CC Neighbor_alltoallv Time 6.546523e-04
+Testing (around) Size per proc 512
+MPI_Neighbor_alltoallv Time 8.543953e-04
+Threaded CC Neighbor_alltoallv Time 7.438829e-04
+Testing (around) Size per proc 1024
+MPI_Neighbor_alltoallv Time 8.451600e-04
+Threaded CC Neighbor_alltoallv Time 8.202819e-04
+Testing (around) Size per proc 2048
+MPI_Neighbor_alltoallv Time 8.387388e-04
+Threaded CC Neighbor_alltoallv Time 1.298519e-03
+Testing (around) Size per proc 4096
+MPI_Neighbor_alltoallv Time 8.284609e-04
+Threaded CC Neighbor_alltoallv Time 1.777698e-03
+Testing (around) Size per proc 8192
+MPI_Neighbor_alltoallv Time 1.303771e-03
+Threaded CC Neighbor_alltoallv Time 2.271739e-03
+Testing (around) Size per proc 16384
+MPI_Neighbor_alltoallv Time 2.588986e-03
+Threaded CC Neighbor_alltoallv Time 2.404726e-03
+Testing (around) Size per proc 32768
+MPI_Neighbor_alltoallv Time 1.079138e-02
+Threaded CC Neighbor_alltoallv Time 4.950661e-03
+Testing (around) Size per proc 65536
+MPI_Neighbor_alltoallv Time 2.341498e-02
+Threaded CC Neighbor_alltoallv Time 9.071838e-03
+Testing (around) Size per proc 131072
+MPI_Neighbor_alltoallv Time 5.365622e-02
+Threaded CC Neighbor_alltoallv Time 1.774531e-02
+Testing (around) Size per proc 262144
+MPI_Neighbor_alltoallv Time 8.320379e-02
+Threaded CC Neighbor_alltoallv Time 3.565221e-02
+Testing (around) Size per proc 524288
+MPI_Neighbor_alltoallv Time 6.155678e-02
+Threaded CC Neighbor_alltoallv Time 6.981057e-02
+Running Threaded Neighbor_Alltoallv Test with 8 threads:
+Testing (around) Size per proc 1
+MPI_Neighbor_alltoallv Time 9.112285e-04
+Threaded CC Neighbor_alltoallv Time 1.888910e-02
+Testing (around) Size per proc 2
+MPI_Neighbor_alltoallv Time 1.298388e-03
+Threaded CC Neighbor_alltoallv Time 2.002851e-02
+Testing (around) Size per proc 4
+MPI_Neighbor_alltoallv Time 9.087351e-04
+Threaded CC Neighbor_alltoallv Time 2.080038e-02
+Testing (around) Size per proc 8
+MPI_Neighbor_alltoallv Time 8.754992e-04
+Threaded CC Neighbor_alltoallv Time 2.078312e-02
+Testing (around) Size per proc 16
+MPI_Neighbor_alltoallv Time 1.519380e-03
+Threaded CC Neighbor_alltoallv Time 1.923956e-02
+Testing (around) Size per proc 32
+MPI_Neighbor_alltoallv Time 9.152674e-04
+Threaded CC Neighbor_alltoallv Time 1.986317e-02
+Testing (around) Size per proc 64
+MPI_Neighbor_alltoallv Time 1.078892e-03
+Threaded CC Neighbor_alltoallv Time 1.590151e-02
+Testing (around) Size per proc 128
+MPI_Neighbor_alltoallv Time 1.364601e-03
+Threaded CC Neighbor_alltoallv Time 1.700229e-02
+Testing (around) Size per proc 256
+MPI_Neighbor_alltoallv Time 9.692544e-04
+Threaded CC Neighbor_alltoallv Time 1.787762e-02
+Testing (around) Size per proc 512
+MPI_Neighbor_alltoallv Time 9.213811e-04
+Threaded CC Neighbor_alltoallv Time 1.713046e-02
+Testing (around) Size per proc 1024
+MPI_Neighbor_alltoallv Time 8.386627e-04
+Threaded CC Neighbor_alltoallv Time 1.821320e-02
+Testing (around) Size per proc 2048
+MPI_Neighbor_alltoallv Time 1.038487e-03
+Threaded CC Neighbor_alltoallv Time 1.666948e-02
+Testing (around) Size per proc 4096
+MPI_Neighbor_alltoallv Time 9.274084e-04
+Threaded CC Neighbor_alltoallv Time 1.896383e-02
+Testing (around) Size per proc 8192
+MPI_Neighbor_alltoallv Time 1.247451e-03
+Threaded CC Neighbor_alltoallv Time 2.178483e-02
+Testing (around) Size per proc 16384
+MPI_Neighbor_alltoallv Time 2.480922e-03
+Threaded CC Neighbor_alltoallv Time 2.085285e-02
+Testing (around) Size per proc 32768
+MPI_Neighbor_alltoallv Time 1.027116e-02
+Threaded CC Neighbor_alltoallv Time 3.288907e-02
+Testing (around) Size per proc 65536
+MPI_Neighbor_alltoallv Time 2.438866e-02
+Threaded CC Neighbor_alltoallv Time 4.753932e-02
+Testing (around) Size per proc 131072
+MPI_Neighbor_alltoallv Time 4.653361e-02
+Threaded CC Neighbor_alltoallv Time 6.755103e-02
+Testing (around) Size per proc 262144
+MPI_Neighbor_alltoallv Time 7.812850e-02
+Threaded CC Neighbor_alltoallv Time 1.275868e-01
+Testing (around) Size per proc 524288
+MPI_Neighbor_alltoallv Time 6.283090e-02
+Threaded CC Neighbor_alltoallv Time 7.027895e-02
+logout
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 5772993: <nbralltoallv_n8> in cluster <lassen> Done
+
+Job <nbralltoallv_n8> was submitted from host <lassen708> by user <adams112> in cluster <lassen> at Mon Apr  8 12:13:07 2024
+Job was executed on host(s) <1*lassen710>, in queue <pdebug>, as user <adams112> in cluster <lassen> at Mon Apr  8 12:13:10 2024
+                            <40*lassen32>
+                            <40*lassen29>
+                            <40*lassen27>
+                            <40*lassen26>
+                            <40*lassen25>
+                            <40*lassen24>
+                            <40*lassen23>
+                            <40*lassen22>
+</g/g11/adams112> was used as the home directory.
+</g/g11/adams112/locality_aware-mikethebos/benchmark_tests/lassen> was used as the working directory.
+Started at Mon Apr  8 12:13:10 2024
+Terminated at Mon Apr  8 12:18:16 2024
+Results reported at Mon Apr  8 12:18:16 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J nbralltoallv_n8
+#BSUB -e nbralltoallv_n8.%J.err
+#BSUB -o nbralltoallv_n8.%J.out
+#BSUB -nnodes 8
+#BSUB -q pdebug
+#BSUB -W 00:10
+
+module load gcc/7.3.1
+module load cuda/10.2.89
+module load hwloc
+
+cd $HOME/locality_aware-mikethebos/build/benchmarks
+
+echo "Running Unthreaded Neighbor_Alltoallv Test:"
+export OMP_NUM_THREADS=1
+jsrun -a4 -c4 -g4 -r1 -n8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_neighbor_alltoallv
+
+echo "Running Threaded Neighbor_Alltoallv Test with 2 threads:"
+export OMP_NUM_THREADS=2
+jsrun -a4 -c8 -g4 -r1 -n8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+
+echo "Running Threaded Neighbor_Alltoallv Test with 4 threads:"
+export OMP_NUM_THREADS=4
+jsrun -a4 -c16 -g4 -r1 -n8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+
+echo "Running Threaded Neighbor_Alltoallv Test with 8 threads:"
+export OMP_NUM_THREADS=8
+jsrun -a4 -c32 -g4 -r1 -n8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   2.00 sec.
+    Max Memory :                                 60 MB
+    Average Memory :                             58.71 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1425 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   305 sec.
+    Turnaround time :                            309 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <nbralltoallv_n8.5772993.err> for stderr output of this job.
+
