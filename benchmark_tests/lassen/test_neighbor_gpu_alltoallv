@@ -4,7 +4,7 @@
 #BSUB -o nbralltoallv_n8.%J.out
 #BSUB -nnodes 8
 #BSUB -q pdebug
-#BSUB -W 00:10
+#BSUB -W 00:40
 
 module load gcc/7.3.1
 module load cuda/10.2.89
