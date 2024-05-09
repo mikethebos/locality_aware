@@ -15,7 +15,7 @@ int main(int argc, char* argv[])
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &num_procs);
 
-    int max_i = 23;
+    int max_i = 22;
     int max_s = pow(2, max_i);
     int n_iter = 100;
     double t0, tfinal;
@@ -126,6 +126,128 @@ int main(int argc, char* argv[])
                 cudaMemcpyDeviceToHost);
         cudaMemset(recv_data_d, 0, initrdispl*sizeof(double));
 
+        // MPI Advance
+        MPIX_Neighbor_alltoallv(send_data_d,
+                sendc,
+                sendd,
+                MPI_DOUBLE, 
+                recv_data_d,
+                recvc,
+                recvd,
+                MPI_DOUBLE,
+                mpix_graph);
+        cudaMemcpy(mpix_alltoall.data(), recv_data_d, initrdispl*sizeof(double),
+                cudaMemcpyDeviceToHost);
+        cudaMemset(recv_data_d, 0, initrdispl*sizeof(double));
+        for (int j = 0; j < initrdispl; j++)
+	{
+            if (fabs(mpi_alltoall[j] - mpix_alltoall[j]) > 1e-10)
+            {
+                fprintf(stderr, 
+                        "Rank %d, idx %d, pmpi %e, MPIX-NB %e\n", 
+                         rank, j, mpi_alltoall[j], mpix_alltoall[j]);
+                MPI_Abort(MPI_COMM_WORLD, 1);
+                return 1;
+            }
+        }
+        
+        // MPI Advance - init
+        MPIX_Request *mpixreq;
+        MPIX_Neighbor_alltoallv_init(send_data_d,
+                sendc,
+                sendd,
+                MPI_DOUBLE, 
+                recv_data_d,
+                recvc,
+                recvd,
+                MPI_DOUBLE,
+                mpix_graph,
+                MPI_INFO_NULL,
+                &mpixreq);
+        MPIX_Start(mpixreq);
+        MPIX_Wait(mpixreq, MPI_STATUS_IGNORE);
+        cudaMemcpy(mpix_alltoall.data(), recv_data_d, initrdispl*sizeof(double),
+                cudaMemcpyDeviceToHost);
+        cudaMemset(recv_data_d, 0, initrdispl*sizeof(double));
+        for (int j = 0; j < initrdispl; j++)
+	{
+            if (fabs(mpi_alltoall[j] - mpix_alltoall[j]) > 1e-10)
+            {
+                fprintf(stderr, 
+                        "Rank %d, idx %d, pmpi %e, MPIX-NB-INIT %e\n", 
+                         rank, j, mpi_alltoall[j], mpix_alltoall[j]);
+                MPI_Abort(MPI_COMM_WORLD, 1);
+                return 1;
+            }
+        }
+        
+        // MPI Advance CC
+        cudaMemcpy(send_data.data(), send_data_d, initsdispl*sizeof(double),
+                cudaMemcpyDeviceToHost);
+        cudaMemcpy(mpix_alltoall.data(), recv_data_d, initrdispl*sizeof(double),
+                cudaMemcpyDeviceToHost);
+        MPIX_Neighbor_alltoallv(send_data.data(),
+                sendc,
+                sendd,
+                MPI_DOUBLE, 
+                mpix_alltoall.data(),
+                recvc,
+                recvd,
+                MPI_DOUBLE,
+                mpix_graph);
+        cudaMemcpy(recv_data_d, mpix_alltoall.data(), initrdispl*sizeof(double),
+                cudaMemcpyHostToDevice);
+        cudaMemcpy(mpix_alltoall.data(), recv_data_d, initrdispl*sizeof(double),
+                cudaMemcpyDeviceToHost);
+        cudaMemset(recv_data_d, 0, initrdispl*sizeof(double));
+        for (int j = 0; j < initrdispl; j++)
+	{
+            if (fabs(mpi_alltoall[j] - mpix_alltoall[j]) > 1e-10)
+            {
+                fprintf(stderr, 
+                        "Rank %d, idx %d, pmpi %e, MPIX-NB-CC %e\n", 
+                         rank, j, mpi_alltoall[j], mpix_alltoall[j]);
+                MPI_Abort(MPI_COMM_WORLD, 1);
+                return 1;
+            }
+        }
+        
+        // MPI Advance - init CC
+        MPIX_Request *mpixccreq;
+        MPIX_Neighbor_alltoallv_init(send_data.data(),
+                sendc,
+                sendd,
+                MPI_DOUBLE, 
+                mpix_alltoall.data(),
+                recvc,
+                recvd,
+                MPI_DOUBLE,
+                mpix_graph,
+                MPI_INFO_NULL,
+                &mpixccreq);
+        cudaMemcpy(send_data.data(), send_data_d, initsdispl*sizeof(double),
+                cudaMemcpyDeviceToHost);
+        cudaMemcpy(mpix_alltoall.data(), recv_data_d, initrdispl*sizeof(double),
+                cudaMemcpyDeviceToHost);
+        MPIX_Start(mpixccreq);
+        MPIX_Wait(mpixccreq, MPI_STATUS_IGNORE);
+        cudaMemcpy(recv_data_d, mpix_alltoall.data(), initrdispl*sizeof(double),
+                cudaMemcpyHostToDevice);
+        cudaMemcpy(mpix_alltoall.data(), recv_data_d, initrdispl*sizeof(double),
+                cudaMemcpyDeviceToHost);
+        cudaMemset(recv_data_d, 0, initrdispl*sizeof(double));
+        for (int j = 0; j < initrdispl; j++)
+	{
+            if (fabs(mpi_alltoall[j] - mpix_alltoall[j]) > 1e-10)
+            {
+                fprintf(stderr, 
+                        "Rank %d, idx %d, pmpi %e, MPIX-NB-INIT-CC %e\n", 
+                         rank, j, mpi_alltoall[j], mpix_alltoall[j]);
+                MPI_Abort(MPI_COMM_WORLD, 1);
+                return 1;
+            }
+        }
+
         // MPI Advance : GPU-Aware
         MPIX_Request *gpureq;
         gpu_aware_neighbor_alltoallv_nonblocking_init(send_data_d,
@@ -215,6 +337,142 @@ int main(int argc, char* argv[])
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0) printf("MPI_Neighbor_alltoallv Time %e\n", t0);
 
+        // Time MPIX Alltoall
+        MPIX_Neighbor_alltoallv(send_data_d,
+                sendc,
+                sendd,
+                MPI_DOUBLE,
+                recv_data_d,
+                recvc,
+                recvd,
+                MPI_DOUBLE,
+                mpix_graph);
+        cudaDeviceSynchronize();
+        MPI_Barrier(MPI_COMM_WORLD);
+        t0 = MPI_Wtime();
+        for (int k = 0; k < n_iter; k++)
+        {
+                MPIX_Neighbor_alltoallv(send_data_d,
+                        sendc,
+                        sendd,
+                        MPI_DOUBLE,
+                        recv_data_d,
+                        recvc,
+                        recvd,
+                        MPI_DOUBLE,
+                        mpix_graph);
+        }
+        tfinal = (MPI_Wtime() - t0) / n_iter;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0) printf("MPIX_Neighbor_alltoallv Time %e\n", t0);
+
+        // Time MPIX alltoall init
+        MPIX_Neighbor_alltoallv_init(send_data_d,
+                sendc,
+                sendd,
+                MPI_DOUBLE, 
+                recv_data_d,
+                recvc,
+                recvd,
+                MPI_DOUBLE,
+                mpix_graph,
+                MPI_INFO_NULL,
+                &mpixreq);
+        MPIX_Start(mpixreq);
+        MPIX_Wait(mpixreq, MPI_STATUS_IGNORE);
+        cudaDeviceSynchronize();
+        MPI_Barrier(MPI_COMM_WORLD);
+        t0 = MPI_Wtime();
+        for (int k = 0; k < n_iter; k++)
+        {
+                // ignore init
+                MPIX_Start(mpixreq);
+                MPIX_Wait(mpixreq, MPI_STATUS_IGNORE);
+        }
+        tfinal = (MPI_Wtime() - t0) / n_iter;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0) printf("MPIX_Neighbor_alltoallv_init Time %e\n", t0);
+        
+        // Time MPIX Alltoall CC
+        cudaMemcpy(send_data.data(), send_data_d, initsdispl*sizeof(double),
+                cudaMemcpyDeviceToHost);
+        cudaMemcpy(mpix_alltoall.data(), recv_data_d, initrdispl*sizeof(double),
+                cudaMemcpyDeviceToHost);
+        MPIX_Neighbor_alltoallv(send_data.data(),
+                sendc,
+                sendd,
+                MPI_DOUBLE, 
+                mpix_alltoall.data(),
+                recvc,
+                recvd,
+                MPI_DOUBLE,
+                mpix_graph);
+        cudaMemcpy(recv_data_d, mpix_alltoall.data(), initrdispl*sizeof(double),
+                cudaMemcpyHostToDevice);
+        cudaMemset(recv_data_d, 0, initrdispl*sizeof(double));
+        cudaDeviceSynchronize();
+        MPI_Barrier(MPI_COMM_WORLD);
+        t0 = MPI_Wtime();
+        for (int k = 0; k < n_iter; k++)
+        {
+                cudaMemcpy(send_data.data(), send_data_d, initsdispl*sizeof(double),
+                        cudaMemcpyDeviceToHost);
+                cudaMemcpy(mpix_alltoall.data(), recv_data_d, initrdispl*sizeof(double),
+                        cudaMemcpyDeviceToHost);
+                MPIX_Neighbor_alltoallv(send_data.data(),
+                        sendc,
+                        sendd,
+                        MPI_DOUBLE, 
+                        mpix_alltoall.data(),
+                        recvc,
+                        recvd,
+                        MPI_DOUBLE,
+                        mpix_graph);
+                cudaMemcpy(recv_data_d, mpix_alltoall.data(), initrdispl*sizeof(double),
+                        cudaMemcpyHostToDevice);
+        }
+        tfinal = (MPI_Wtime() - t0) / n_iter;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0) printf("MPIX_Neighbor_alltoallv CC Time %e\n", t0);
+
+        // Time MPIX alltoall init CC
+        MPIX_Neighbor_alltoallv_init(send_data.data(),
+                sendc,
+                sendd,
+                MPI_DOUBLE, 
+                mpix_alltoall.data(),
+                recvc,
+                recvd,
+                MPI_DOUBLE,
+                mpix_graph,
+                MPI_INFO_NULL,
+                &mpixccreq);
+        cudaMemcpy(send_data.data(), send_data_d, initsdispl*sizeof(double),
+                cudaMemcpyDeviceToHost);
+        cudaMemcpy(mpix_alltoall.data(), recv_data_d, initrdispl*sizeof(double),
+                cudaMemcpyDeviceToHost);
+        MPIX_Start(mpixccreq);
+        MPIX_Wait(mpixccreq, MPI_STATUS_IGNORE);
+        cudaMemcpy(recv_data_d, mpix_alltoall.data(), initrdispl*sizeof(double),
+                cudaMemcpyHostToDevice);
+        cudaDeviceSynchronize();
+        MPI_Barrier(MPI_COMM_WORLD);
+        t0 = MPI_Wtime();
+        for (int k = 0; k < n_iter; k++)
+        {
+                cudaMemcpy(send_data.data(), send_data_d, initsdispl*sizeof(double),
+                        cudaMemcpyDeviceToHost);
+                cudaMemcpy(mpix_alltoall.data(), recv_data_d, initrdispl*sizeof(double),
+                        cudaMemcpyDeviceToHost);
+                MPIX_Start(mpixccreq);
+                MPIX_Wait(mpixccreq, MPI_STATUS_IGNORE);
+                cudaMemcpy(recv_data_d, mpix_alltoall.data(), initrdispl*sizeof(double),
+                        cudaMemcpyHostToDevice);
+        }
+        tfinal = (MPI_Wtime() - t0) / n_iter;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0) printf("MPIX_Neighbor_alltoallv_init CC Time %e\n", t0);
+
         // Time GPU-Aware Pairwise Exchange
         gpu_aware_neighbor_alltoallv_nonblocking_init(send_data_d,
                 sendc,
@@ -268,6 +526,8 @@ int main(int argc, char* argv[])
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0) printf("CC Neighbor_alltoallv Time %e\n", t0);
         
+        MPIX_Request_free(mpixreq);
+        MPIX_Request_free(mpixccreq);
         MPIX_Request_free(gpureq);
         MPIX_Request_free(copyreq);
         MPI_Comm_free(&mpi_graph);
