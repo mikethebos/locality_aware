@@ -7,6 +7,8 @@
 #include <vector>
 #include <set>
 
+// copy recvbuf in case of extra data
+// needed if noncontiguous displs (or custom packing)
 int main(int argc, char* argv[])
 {
     int provided;
@@ -40,7 +42,7 @@ int main(int argc, char* argv[])
                 plan[j] = s + (rand() % 128);
         }
         srand(seed + rank);
-        int initsdispl = rand() % 32;
+        int initsdispl = 0;
         int scount = 0;
         for (int dest = 0; dest < num_procs; dest++)
         {
@@ -51,13 +53,13 @@ int main(int argc, char* argv[])
                     destsw[scount] = count;
                     sendc[scount] = count;
                     sendd[scount] = initsdispl;
-                    initsdispl += count + (rand() % 32);
+                    initsdispl += count;
                     scount++;
                 }
         }
         
         srand(seed + (num_procs * rank));
-        int initrdispl = rand() % 32;
+        int initrdispl = 0;
         int rcount = 0;
         for (int src = 0; src < num_procs; src++)
         {
@@ -68,7 +70,7 @@ int main(int argc, char* argv[])
                     srcsw[rcount] = count;
                     recvc[rcount] = count;
                     recvd[rcount] = initrdispl;
-                    initrdispl += count + (rand() % 32);
+                    initrdispl += count;
                     rcount++;
                 }
         }
@@ -185,8 +187,6 @@ int main(int argc, char* argv[])
         // MPI Advance CC
         cudaMemcpy(send_data.data(), send_data_d, initsdispl*sizeof(double),
                 cudaMemcpyDeviceToHost);
-        cudaMemcpy(mpix_alltoall.data(), recv_data_d, initrdispl*sizeof(double),
-                cudaMemcpyDeviceToHost);
         MPIX_Neighbor_alltoallv(send_data.data(),
                 sendc,
                 sendd,
@@ -227,8 +227,6 @@ int main(int argc, char* argv[])
                 MPI_INFO_NULL,
                 &mpixccreq);
         cudaMemcpy(send_data.data(), send_data_d, initsdispl*sizeof(double),
-                cudaMemcpyDeviceToHost);
-        cudaMemcpy(mpix_alltoall.data(), recv_data_d, initrdispl*sizeof(double),
                 cudaMemcpyDeviceToHost);
         MPIX_Start(mpixccreq);
         MPIX_Wait(mpixccreq, MPI_STATUS_IGNORE);
@@ -367,8 +365,6 @@ int main(int argc, char* argv[])
         // Time MPIX Alltoall CC
         cudaMemcpy(send_data.data(), send_data_d, initsdispl*sizeof(double),
                 cudaMemcpyDeviceToHost);
-        cudaMemcpy(mpix_alltoall.data(), recv_data_d, initrdispl*sizeof(double),
-                cudaMemcpyDeviceToHost);
         MPIX_Neighbor_alltoallv(send_data.data(),
                 sendc,
                 sendd,
@@ -387,8 +383,6 @@ int main(int argc, char* argv[])
         for (int k = 0; k < n_iter; k++)
         {
                 cudaMemcpy(send_data.data(), send_data_d, initsdispl*sizeof(double),
-                        cudaMemcpyDeviceToHost);
-                cudaMemcpy(mpix_alltoall.data(), recv_data_d, initrdispl*sizeof(double),
                         cudaMemcpyDeviceToHost);
                 MPIX_Neighbor_alltoallv(send_data.data(),
                         sendc,
@@ -420,8 +414,6 @@ int main(int argc, char* argv[])
                 &mpixccreq);
         cudaMemcpy(send_data.data(), send_data_d, initsdispl*sizeof(double),
                 cudaMemcpyDeviceToHost);
-        cudaMemcpy(mpix_alltoall.data(), recv_data_d, initrdispl*sizeof(double),
-                cudaMemcpyDeviceToHost);
         MPIX_Start(mpixccreq);
         MPIX_Wait(mpixccreq, MPI_STATUS_IGNORE);
         cudaMemcpy(recv_data_d, mpix_alltoall.data(), initrdispl*sizeof(double),
@@ -432,8 +424,6 @@ int main(int argc, char* argv[])
         for (int k = 0; k < n_iter; k++)
         {
                 cudaMemcpy(send_data.data(), send_data_d, initsdispl*sizeof(double),
-                        cudaMemcpyDeviceToHost);
-                cudaMemcpy(mpix_alltoall.data(), recv_data_d, initrdispl*sizeof(double),
                         cudaMemcpyDeviceToHost);
                 MPIX_Start(mpixccreq);
                 MPIX_Wait(mpixccreq, MPI_STATUS_IGNORE);

@@ -10,7 +10,8 @@ int neighbor_gpu_copy_cpu_start(MPIX_Request* request)
     cudaMemcpy(request->cpu_sendbuf, request->sendbuf, request->cpu_sendbuf_bytes, cudaMemcpyDeviceToHost);
 
     // copy recvbuf in case of extra data
-    cudaMemcpy(request->cpu_recvbuf, request->recvbuf, request->cpu_recvbuf_bytes, cudaMemcpyDeviceToHost);
+    // needed if noncontiguous displs (or custom packing)
+    // cudaMemcpy(request->cpu_recvbuf, request->recvbuf, request->cpu_recvbuf_bytes, cudaMemcpyDeviceToHost);
    
     return neighbor_start(request->sub_request);
 #endif
@@ -38,7 +39,8 @@ int neighbor_gpu_copy_cpu_threaded_start(MPIX_Request* request)
     cudaMemcpy(request->cpu_sendbuf, request->sendbuf, request->cpu_sendbuf_bytes, cudaMemcpyDeviceToHost);
 
     // copy recvbuf in case of extra data
-    cudaMemcpy(request->cpu_recvbuf, request->recvbuf, request->cpu_recvbuf_bytes, cudaMemcpyDeviceToHost);
+    // needed if noncontiguous displs (or custom packing)
+    // cudaMemcpy(request->cpu_recvbuf, request->recvbuf, request->cpu_recvbuf_bytes, cudaMemcpyDeviceToHost);
    
     int n_msgs = request->sub_request->global_n_msgs;
     
@@ -48,7 +50,7 @@ int neighbor_gpu_copy_cpu_threaded_start(MPIX_Request* request)
         int n_msgs_per_thread = n_msgs / n_threads;
         int extra_msgs = n_msgs % n_threads;
         MPI_Request* requests_arr = request->sub_request->global_requests;
-#pragma omp parallel num_threads(n_threads) shared(requests_arr)
+#pragma omp parallel num_threads(n_threads) shared(requests_arr) reduction(+:ret)
 {
     int thread_id = omp_get_thread_num();
     int thread_n_msgs = n_msgs_per_thread;
@@ -87,7 +89,7 @@ int neighbor_gpu_copy_cpu_threaded_wait(MPIX_Request* request, MPI_Status* statu
         int n_msgs_per_thread = n_msgs / n_threads;
         int extra_msgs = n_msgs % n_threads;
         MPI_Request* requests_arr = request->sub_request->global_requests;
-#pragma omp parallel num_threads(n_threads) shared(requests_arr)
+#pragma omp parallel num_threads(n_threads) shared(requests_arr) reduction(+:ret)
 {
     int thread_id = omp_get_thread_num();
     int thread_n_msgs = n_msgs_per_thread;
