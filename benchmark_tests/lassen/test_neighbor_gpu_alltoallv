@@ -4,7 +4,7 @@
 #BSUB -o nbralltoallv_n8.%J.out
 #BSUB -nnodes 8
 #BSUB -q pdebug
-#BSUB -W 00:40
+#BSUB -W 01:10
 
 module load gcc/7.3.1
 module load cuda/10.2.89
@@ -23,6 +23,10 @@ jsrun -a4 -c8 -g4 -r1 -n8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribu
 echo "Running Threaded Neighbor_Alltoallv Test with 4 threads:"
 export OMP_NUM_THREADS=4
 jsrun -a4 -c16 -g4 -r1 -n8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+
+echo "Running Threaded Neighbor_Alltoallv Test with 6 threads:"
+export OMP_NUM_THREADS=6
+jsrun -a4 -c24 -g4 -r1 -n8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
 
 echo "Running Threaded Neighbor_Alltoallv Test with 8 threads:"
 export OMP_NUM_THREADS=8

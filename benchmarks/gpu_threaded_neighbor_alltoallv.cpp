@@ -28,6 +28,12 @@ int main(int argc, char* argv[])
         int seed = 123 + i;
         srand(seed);
         int s = pow(2, i);
+
+        if (s <= 65536) 
+       	{
+       	       	n_iter *= 10;
+       	}
+
         int *sendc = (int *)malloc(num_procs * sizeof(int));
         int *dests = (int *)malloc(num_procs * sizeof(int));
         int *destsw = (int *)malloc(num_procs * sizeof(int));
@@ -459,6 +465,11 @@ int main(int argc, char* argv[])
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0) printf("Threaded CC Neighbor_alltoallv Time %e\n", t0);
+
+        if (s <= 65536) 
+       	{
+       	       	n_iter /= 10;
+       	}
 
         MPIX_Request_free(mpixreq);
         MPIX_Request_free(mpixccreq);
