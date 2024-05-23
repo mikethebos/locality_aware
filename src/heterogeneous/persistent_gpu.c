@@ -41,37 +41,7 @@ int neighbor_gpu_copy_cpu_threaded_start(MPIX_Request* request)
     // copy recvbuf in case of extra data
     // needed if noncontiguous displs (or custom packing)
     // cudaMemcpy(request->cpu_recvbuf, request->recvbuf, request->cpu_recvbuf_bytes, cudaMemcpyDeviceToHost);
-   
-    int n_msgs = request->sub_request->global_n_msgs;
-    
-    if (n_msgs)
-    {
-        int n_threads = request->num_threads;
-        int n_msgs_per_thread = n_msgs / n_threads;
-        int extra_msgs = n_msgs % n_threads;
-        MPI_Request* requests_arr = request->sub_request->global_requests;
-#pragma omp parallel num_threads(n_threads) shared(requests_arr) reduction(+:ret)
-{
-    int thread_id = omp_get_thread_num();
-    int thread_n_msgs = n_msgs_per_thread;
-    if (extra_msgs > thread_id)
-        thread_n_msgs++;
-        
-    if (thread_n_msgs)
-    {
-        int baseIdx = thread_n_msgs * thread_id;
-        if (extra_msgs <= thread_id)
-        {
-            baseIdx += extra_msgs;
-        }
-        for (int idx = baseIdx; idx < baseIdx + thread_n_msgs; ++idx)
-        {
-            ret += MPI_Start(&(requests_arr[idx]));
-        }
-    }
-}
 
-    }
     return ret;
 #endif
 }
@@ -99,6 +69,16 @@ int neighbor_gpu_copy_cpu_threaded_wait(MPIX_Request* request, MPI_Status* statu
     if (thread_n_msgs)
     {
         int baseIdx = thread_n_msgs * thread_id;
+        if (extra_msgs <= thread_id)
+        {
+            baseIdx += extra_msgs;
+        }
+        for (int idx = baseIdx; idx < baseIdx + thread_n_msgs; ++idx)
+        {
+            ret += MPI_Start(&(requests_arr[idx]));
+        }
+        
+        baseIdx = thread_n_msgs * thread_id;
         if (extra_msgs <= thread_id)
         {
             baseIdx += extra_msgs;
