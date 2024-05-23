@@ -14,20 +14,20 @@ cd $HOME/locality_aware-mikethebos/build/benchmarks
 
 echo "Running Unthreaded Neighbor_Alltoallv Test:"
 export OMP_NUM_THREADS=1
-jsrun -a4 -c4 -g4 -r1 -n8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_neighbor_alltoallv
+jsrun -a1 -c1 -g1 -r4 -n8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_neighbor_alltoallv
 
 echo "Running Threaded Neighbor_Alltoallv Test with 2 threads:"
 export OMP_NUM_THREADS=2
-jsrun -a4 -c8 -g4 -r1 -n8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+jsrun -a1 -c2 -g1 -r4 -n8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
 
 echo "Running Threaded Neighbor_Alltoallv Test with 4 threads:"
 export OMP_NUM_THREADS=4
-jsrun -a4 -c16 -g4 -r1 -n8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+jsrun -a1 -c4 -g1 -r4 -n8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
 
 echo "Running Threaded Neighbor_Alltoallv Test with 6 threads:"
 export OMP_NUM_THREADS=6
-jsrun -a4 -c24 -g4 -r1 -n8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+jsrun -a1 -c6 -g1 -r4 -n8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
 
 echo "Running Threaded Neighbor_Alltoallv Test with 8 threads:"
 export OMP_NUM_THREADS=8
-jsrun -a4 -c32 -g4 -r1 -n8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+jsrun -a1 -c8 -g1 -r4 -n8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
