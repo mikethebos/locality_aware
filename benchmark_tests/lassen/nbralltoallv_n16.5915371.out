@@ -1,0 +1,890 @@
+Running Unthreaded Neighbor_Alltoallv Test:
+Testing (around) Size per proc 1
+MPI_Neighbor_alltoallv Time 1.350090e-04
+MPIX_Neighbor_alltoallv Time 1.399586e-04
+MPIX_Neighbor_alltoallv_init Time 1.357745e-04
+MPIX_Neighbor_alltoallv CC Time 6.294614e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.055719e-05
+GPU-Aware Neighbor_alltoallv Time 1.388542e-04
+CC Neighbor_alltoallv Time 5.442923e-05
+Testing (around) Size per proc 2
+MPI_Neighbor_alltoallv Time 1.413922e-04
+MPIX_Neighbor_alltoallv Time 1.394179e-04
+MPIX_Neighbor_alltoallv_init Time 1.337390e-04
+MPIX_Neighbor_alltoallv CC Time 6.617001e-05
+MPIX_Neighbor_alltoallv_init CC Time 5.994710e-05
+GPU-Aware Neighbor_alltoallv Time 1.368758e-04
+CC Neighbor_alltoallv Time 5.404710e-05
+Testing (around) Size per proc 4
+MPI_Neighbor_alltoallv Time 1.399117e-04
+MPIX_Neighbor_alltoallv Time 1.403422e-04
+MPIX_Neighbor_alltoallv_init Time 1.314614e-04
+MPIX_Neighbor_alltoallv CC Time 6.732909e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.048522e-05
+GPU-Aware Neighbor_alltoallv Time 1.362756e-04
+CC Neighbor_alltoallv Time 5.474812e-05
+Testing (around) Size per proc 8
+MPI_Neighbor_alltoallv Time 1.395033e-04
+MPIX_Neighbor_alltoallv Time 1.349158e-04
+MPIX_Neighbor_alltoallv_init Time 1.383390e-04
+MPIX_Neighbor_alltoallv CC Time 6.299350e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.564124e-05
+GPU-Aware Neighbor_alltoallv Time 1.358667e-04
+CC Neighbor_alltoallv Time 5.856149e-05
+Testing (around) Size per proc 16
+MPI_Neighbor_alltoallv Time 1.434661e-04
+MPIX_Neighbor_alltoallv Time 1.363006e-04
+MPIX_Neighbor_alltoallv_init Time 1.376964e-04
+MPIX_Neighbor_alltoallv CC Time 6.362863e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.673154e-05
+GPU-Aware Neighbor_alltoallv Time 1.314105e-04
+CC Neighbor_alltoallv Time 6.050803e-05
+Testing (around) Size per proc 32
+MPI_Neighbor_alltoallv Time 1.379734e-04
+MPIX_Neighbor_alltoallv Time 1.392724e-04
+MPIX_Neighbor_alltoallv_init Time 1.381065e-04
+MPIX_Neighbor_alltoallv CC Time 6.417050e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.135612e-05
+GPU-Aware Neighbor_alltoallv Time 1.385359e-04
+CC Neighbor_alltoallv Time 5.528551e-05
+Testing (around) Size per proc 64
+MPI_Neighbor_alltoallv Time 1.405575e-04
+MPIX_Neighbor_alltoallv Time 1.395006e-04
+MPIX_Neighbor_alltoallv_init Time 1.354157e-04
+MPIX_Neighbor_alltoallv CC Time 6.626647e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.355824e-05
+GPU-Aware Neighbor_alltoallv Time 1.377080e-04
+CC Neighbor_alltoallv Time 5.728641e-05
+Testing (around) Size per proc 128
+MPI_Neighbor_alltoallv Time 1.451882e-04
+MPIX_Neighbor_alltoallv Time 1.448362e-04
+MPIX_Neighbor_alltoallv_init Time 1.414084e-04
+MPIX_Neighbor_alltoallv CC Time 7.297225e-05
+MPIX_Neighbor_alltoallv_init CC Time 7.013756e-05
+GPU-Aware Neighbor_alltoallv Time 1.417680e-04
+CC Neighbor_alltoallv Time 6.206646e-05
+Testing (around) Size per proc 256
+MPI_Neighbor_alltoallv Time 1.414999e-04
+MPIX_Neighbor_alltoallv Time 1.505051e-04
+MPIX_Neighbor_alltoallv_init Time 1.460701e-04
+MPIX_Neighbor_alltoallv CC Time 8.043577e-05
+MPIX_Neighbor_alltoallv_init CC Time 8.291879e-05
+GPU-Aware Neighbor_alltoallv Time 1.399939e-04
+CC Neighbor_alltoallv Time 6.507999e-05
+Testing (around) Size per proc 512
+MPI_Neighbor_alltoallv Time 1.505940e-04
+MPIX_Neighbor_alltoallv Time 1.508877e-04
+MPIX_Neighbor_alltoallv_init Time 1.508098e-04
+MPIX_Neighbor_alltoallv CC Time 1.030658e-04
+MPIX_Neighbor_alltoallv_init CC Time 9.552450e-05
+GPU-Aware Neighbor_alltoallv Time 1.484095e-04
+CC Neighbor_alltoallv Time 7.195390e-05
+Testing (around) Size per proc 1024
+MPI_Neighbor_alltoallv Time 1.537470e-04
+MPIX_Neighbor_alltoallv Time 1.524734e-04
+MPIX_Neighbor_alltoallv_init Time 1.503505e-04
+MPIX_Neighbor_alltoallv CC Time 1.289547e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.304046e-04
+GPU-Aware Neighbor_alltoallv Time 1.512799e-04
+CC Neighbor_alltoallv Time 9.588507e-05
+Testing (around) Size per proc 2048
+MPI_Neighbor_alltoallv Time 1.516063e-04
+MPIX_Neighbor_alltoallv Time 1.559576e-04
+MPIX_Neighbor_alltoallv_init Time 1.529234e-04
+MPIX_Neighbor_alltoallv CC Time 1.981130e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.957685e-04
+GPU-Aware Neighbor_alltoallv Time 1.519890e-04
+CC Neighbor_alltoallv Time 1.518550e-04
+Testing (around) Size per proc 4096
+MPI_Neighbor_alltoallv Time 1.673012e-04
+MPIX_Neighbor_alltoallv Time 1.699257e-04
+MPIX_Neighbor_alltoallv_init Time 1.652959e-04
+MPIX_Neighbor_alltoallv CC Time 3.253534e-04
+MPIX_Neighbor_alltoallv_init CC Time 3.204769e-04
+GPU-Aware Neighbor_alltoallv Time 1.652070e-04
+CC Neighbor_alltoallv Time 2.608441e-04
+Testing (around) Size per proc 8192
+MPI_Neighbor_alltoallv Time 2.811228e-04
+MPIX_Neighbor_alltoallv Time 2.851685e-04
+MPIX_Neighbor_alltoallv_init Time 2.786215e-04
+MPIX_Neighbor_alltoallv CC Time 6.602661e-04
+MPIX_Neighbor_alltoallv_init CC Time 6.574495e-04
+GPU-Aware Neighbor_alltoallv Time 2.768904e-04
+CC Neighbor_alltoallv Time 3.997918e-04
+Testing (around) Size per proc 16384
+MPI_Neighbor_alltoallv Time 5.562055e-04
+MPIX_Neighbor_alltoallv Time 5.621067e-04
+MPIX_Neighbor_alltoallv_init Time 5.545223e-04
+MPIX_Neighbor_alltoallv CC Time 1.223344e-03
+MPIX_Neighbor_alltoallv_init CC Time 1.224473e-03
+GPU-Aware Neighbor_alltoallv Time 5.526879e-04
+CC Neighbor_alltoallv Time 7.742628e-04
+Testing (around) Size per proc 32768
+MPI_Neighbor_alltoallv Time 1.063206e-03
+MPIX_Neighbor_alltoallv Time 1.063024e-03
+MPIX_Neighbor_alltoallv_init Time 1.051407e-03
+MPIX_Neighbor_alltoallv CC Time 2.358573e-03
+MPIX_Neighbor_alltoallv_init CC Time 2.355699e-03
+GPU-Aware Neighbor_alltoallv Time 1.049203e-03
+CC Neighbor_alltoallv Time 1.365380e-03
+Testing (around) Size per proc 65536
+MPI_Neighbor_alltoallv Time 3.905666e-03
+MPIX_Neighbor_alltoallv Time 3.875403e-03
+MPIX_Neighbor_alltoallv_init Time 3.888475e-03
+MPIX_Neighbor_alltoallv CC Time 4.604956e-03
+MPIX_Neighbor_alltoallv_init CC Time 4.603167e-03
+GPU-Aware Neighbor_alltoallv Time 3.895867e-03
+CC Neighbor_alltoallv Time 2.528190e-03
+Testing (around) Size per proc 131072
+MPI_Neighbor_alltoallv Time 8.572003e-03
+MPIX_Neighbor_alltoallv Time 8.631223e-03
+MPIX_Neighbor_alltoallv_init Time 8.332220e-03
+MPIX_Neighbor_alltoallv CC Time 9.179626e-03
+MPIX_Neighbor_alltoallv_init CC Time 9.132005e-03
+GPU-Aware Neighbor_alltoallv Time 8.415756e-03
+CC Neighbor_alltoallv Time 4.758589e-03
+Testing (around) Size per proc 262144
+MPI_Neighbor_alltoallv Time 1.388944e-02
+MPIX_Neighbor_alltoallv Time 1.370685e-02
+MPIX_Neighbor_alltoallv_init Time 1.353249e-02
+MPIX_Neighbor_alltoallv CC Time 1.818630e-02
+MPIX_Neighbor_alltoallv_init CC Time 1.822044e-02
+GPU-Aware Neighbor_alltoallv Time 1.381193e-02
+CC Neighbor_alltoallv Time 9.273252e-03
+Testing (around) Size per proc 524288
+MPI_Neighbor_alltoallv Time 1.205412e-02
+MPIX_Neighbor_alltoallv Time 1.215319e-02
+MPIX_Neighbor_alltoallv_init Time 1.207715e-02
+MPIX_Neighbor_alltoallv CC Time 3.459324e-02
+MPIX_Neighbor_alltoallv_init CC Time 3.424597e-02
+GPU-Aware Neighbor_alltoallv Time 1.213489e-02
+CC Neighbor_alltoallv Time 1.630166e-02
+Testing (around) Size per proc 1048576
+MPI_Neighbor_alltoallv Time 2.769368e-02
+MPIX_Neighbor_alltoallv Time 2.746848e-02
+MPIX_Neighbor_alltoallv_init Time 2.704112e-02
+MPIX_Neighbor_alltoallv CC Time 6.777977e-02
+MPIX_Neighbor_alltoallv_init CC Time 6.772183e-02
+GPU-Aware Neighbor_alltoallv Time 2.679877e-02
+CC Neighbor_alltoallv Time 3.035692e-02
+Testing (around) Size per proc 2097152
+MPI_Neighbor_alltoallv Time 5.959549e-02
+MPIX_Neighbor_alltoallv Time 5.962314e-02
+MPIX_Neighbor_alltoallv_init Time 5.899543e-02
+MPIX_Neighbor_alltoallv CC Time 1.334190e-01
+MPIX_Neighbor_alltoallv_init CC Time 1.331589e-01
+GPU-Aware Neighbor_alltoallv Time 5.978707e-02
+CC Neighbor_alltoallv Time 5.881441e-02
+Running Threaded Neighbor_Alltoallv Test with 2 threads:
+Testing (around) Size per proc 1
+MPI_Neighbor_alltoallv Time 1.348663e-04
+MPIX_Neighbor_alltoallv Time 1.338557e-04
+MPIX_Neighbor_alltoallv_init Time 1.332715e-04
+MPIX_Neighbor_alltoallv CC Time 6.562003e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.732829e-05
+Threaded CC Neighbor_alltoallv Time 6.476235e-05
+Testing (around) Size per proc 2
+MPI_Neighbor_alltoallv Time 1.369887e-04
+MPIX_Neighbor_alltoallv Time 1.320124e-04
+MPIX_Neighbor_alltoallv_init Time 1.329559e-04
+MPIX_Neighbor_alltoallv CC Time 6.566690e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.668401e-05
+Threaded CC Neighbor_alltoallv Time 6.503408e-05
+Testing (around) Size per proc 4
+MPI_Neighbor_alltoallv Time 1.384007e-04
+MPIX_Neighbor_alltoallv Time 1.337960e-04
+MPIX_Neighbor_alltoallv_init Time 1.338657e-04
+MPIX_Neighbor_alltoallv CC Time 6.605501e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.886347e-05
+Threaded CC Neighbor_alltoallv Time 6.422716e-05
+Testing (around) Size per proc 8
+MPI_Neighbor_alltoallv Time 1.374687e-04
+MPIX_Neighbor_alltoallv Time 1.363964e-04
+MPIX_Neighbor_alltoallv_init Time 1.290217e-04
+MPIX_Neighbor_alltoallv CC Time 7.182361e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.209355e-05
+Threaded CC Neighbor_alltoallv Time 6.415200e-05
+Testing (around) Size per proc 16
+MPI_Neighbor_alltoallv Time 1.375852e-04
+MPIX_Neighbor_alltoallv Time 1.381418e-04
+MPIX_Neighbor_alltoallv_init Time 1.296232e-04
+MPIX_Neighbor_alltoallv CC Time 7.283299e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.294813e-05
+Threaded CC Neighbor_alltoallv Time 6.480944e-05
+Testing (around) Size per proc 32
+MPI_Neighbor_alltoallv Time 1.337005e-04
+MPIX_Neighbor_alltoallv Time 1.381334e-04
+MPIX_Neighbor_alltoallv_init Time 1.355730e-04
+MPIX_Neighbor_alltoallv CC Time 6.729788e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.337509e-05
+Threaded CC Neighbor_alltoallv Time 7.124236e-05
+Testing (around) Size per proc 64
+MPI_Neighbor_alltoallv Time 1.339043e-04
+MPIX_Neighbor_alltoallv Time 1.388879e-04
+MPIX_Neighbor_alltoallv_init Time 1.341310e-04
+MPIX_Neighbor_alltoallv CC Time 6.989807e-05
+MPIX_Neighbor_alltoallv_init CC Time 7.196200e-05
+Threaded CC Neighbor_alltoallv Time 6.888953e-05
+Testing (around) Size per proc 128
+MPI_Neighbor_alltoallv Time 1.408498e-04
+MPIX_Neighbor_alltoallv Time 1.358707e-04
+MPIX_Neighbor_alltoallv_init Time 1.375294e-04
+MPIX_Neighbor_alltoallv CC Time 7.266012e-05
+MPIX_Neighbor_alltoallv_init CC Time 7.534481e-05
+Threaded CC Neighbor_alltoallv Time 7.160027e-05
+Testing (around) Size per proc 256
+MPI_Neighbor_alltoallv Time 1.469812e-04
+MPIX_Neighbor_alltoallv Time 1.466007e-04
+MPIX_Neighbor_alltoallv_init Time 1.445715e-04
+MPIX_Neighbor_alltoallv CC Time 7.954447e-05
+MPIX_Neighbor_alltoallv_init CC Time 7.547161e-05
+Threaded CC Neighbor_alltoallv Time 7.515338e-05
+Testing (around) Size per proc 512
+MPI_Neighbor_alltoallv Time 1.499050e-04
+MPIX_Neighbor_alltoallv Time 1.456842e-04
+MPIX_Neighbor_alltoallv_init Time 1.454003e-04
+MPIX_Neighbor_alltoallv CC Time 1.004523e-04
+MPIX_Neighbor_alltoallv_init CC Time 9.127201e-05
+Threaded CC Neighbor_alltoallv Time 8.097552e-05
+Testing (around) Size per proc 1024
+MPI_Neighbor_alltoallv Time 1.472776e-04
+MPIX_Neighbor_alltoallv Time 1.506881e-04
+MPIX_Neighbor_alltoallv_init Time 1.469990e-04
+MPIX_Neighbor_alltoallv CC Time 1.221709e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.172381e-04
+Threaded CC Neighbor_alltoallv Time 1.033006e-04
+Testing (around) Size per proc 2048
+MPI_Neighbor_alltoallv Time 1.512242e-04
+MPIX_Neighbor_alltoallv Time 1.472783e-04
+MPIX_Neighbor_alltoallv_init Time 1.473630e-04
+MPIX_Neighbor_alltoallv CC Time 1.816325e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.760743e-04
+Threaded CC Neighbor_alltoallv Time 1.453619e-04
+Testing (around) Size per proc 4096
+MPI_Neighbor_alltoallv Time 1.743077e-04
+MPIX_Neighbor_alltoallv Time 1.742176e-04
+MPIX_Neighbor_alltoallv_init Time 1.643813e-04
+MPIX_Neighbor_alltoallv CC Time 2.934008e-04
+MPIX_Neighbor_alltoallv_init CC Time 2.868822e-04
+Threaded CC Neighbor_alltoallv Time 2.262908e-04
+Testing (around) Size per proc 8192
+MPI_Neighbor_alltoallv Time 2.833609e-04
+MPIX_Neighbor_alltoallv Time 2.840431e-04
+MPIX_Neighbor_alltoallv_init Time 2.783296e-04
+MPIX_Neighbor_alltoallv CC Time 5.348718e-04
+MPIX_Neighbor_alltoallv_init CC Time 5.311185e-04
+Threaded CC Neighbor_alltoallv Time 3.579468e-04
+Testing (around) Size per proc 16384
+MPI_Neighbor_alltoallv Time 5.566943e-04
+MPIX_Neighbor_alltoallv Time 5.601095e-04
+MPIX_Neighbor_alltoallv_init Time 5.549060e-04
+MPIX_Neighbor_alltoallv CC Time 1.003726e-03
+MPIX_Neighbor_alltoallv_init CC Time 9.697942e-04
+Threaded CC Neighbor_alltoallv Time 6.772316e-04
+Testing (around) Size per proc 32768
+MPI_Neighbor_alltoallv Time 1.068579e-03
+MPIX_Neighbor_alltoallv Time 1.067721e-03
+MPIX_Neighbor_alltoallv_init Time 1.065808e-03
+MPIX_Neighbor_alltoallv CC Time 1.984772e-03
+MPIX_Neighbor_alltoallv_init CC Time 1.971333e-03
+Threaded CC Neighbor_alltoallv Time 1.267110e-03
+Testing (around) Size per proc 65536
+MPI_Neighbor_alltoallv Time 3.617131e-03
+MPIX_Neighbor_alltoallv Time 3.601857e-03
+MPIX_Neighbor_alltoallv_init Time 3.580868e-03
+MPIX_Neighbor_alltoallv CC Time 3.729611e-03
+MPIX_Neighbor_alltoallv_init CC Time 3.724677e-03
+Threaded CC Neighbor_alltoallv Time 2.460057e-03
+Testing (around) Size per proc 131072
+MPI_Neighbor_alltoallv Time 8.210560e-03
+MPIX_Neighbor_alltoallv Time 8.759513e-03
+MPIX_Neighbor_alltoallv_init Time 8.510862e-03
+MPIX_Neighbor_alltoallv CC Time 7.059165e-03
+MPIX_Neighbor_alltoallv_init CC Time 7.021798e-03
+Threaded CC Neighbor_alltoallv Time 4.660647e-03
+Testing (around) Size per proc 262144
+MPI_Neighbor_alltoallv Time 1.505514e-02
+MPIX_Neighbor_alltoallv Time 1.529344e-02
+MPIX_Neighbor_alltoallv_init Time 1.589294e-02
+MPIX_Neighbor_alltoallv CC Time 1.358564e-02
+MPIX_Neighbor_alltoallv_init CC Time 1.361018e-02
+Threaded CC Neighbor_alltoallv Time 8.940540e-03
+Testing (around) Size per proc 524288
+MPI_Neighbor_alltoallv Time 1.202750e-02
+MPIX_Neighbor_alltoallv Time 1.206921e-02
+MPIX_Neighbor_alltoallv_init Time 1.208579e-02
+MPIX_Neighbor_alltoallv CC Time 2.785729e-02
+MPIX_Neighbor_alltoallv_init CC Time 2.780657e-02
+Threaded CC Neighbor_alltoallv Time 1.564643e-02
+Testing (around) Size per proc 1048576
+MPI_Neighbor_alltoallv Time 2.703848e-02
+MPIX_Neighbor_alltoallv Time 2.729050e-02
+MPIX_Neighbor_alltoallv_init Time 2.662294e-02
+MPIX_Neighbor_alltoallv CC Time 5.356770e-02
+MPIX_Neighbor_alltoallv_init CC Time 5.361869e-02
+Threaded CC Neighbor_alltoallv Time 2.893898e-02
+Testing (around) Size per proc 2097152
+MPI_Neighbor_alltoallv Time 5.880590e-02
+MPIX_Neighbor_alltoallv Time 5.819183e-02
+MPIX_Neighbor_alltoallv_init Time 5.914766e-02
+MPIX_Neighbor_alltoallv CC Time 1.050728e-01
+MPIX_Neighbor_alltoallv_init CC Time 1.050332e-01
+Threaded CC Neighbor_alltoallv Time 5.619484e-02
+Running Threaded Neighbor_Alltoallv Test with 4 threads:
+Testing (around) Size per proc 1
+MPI_Neighbor_alltoallv Time 1.378414e-04
+MPIX_Neighbor_alltoallv Time 1.365865e-04
+MPIX_Neighbor_alltoallv_init Time 1.284107e-04
+MPIX_Neighbor_alltoallv CC Time 7.132195e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.179307e-05
+Threaded CC Neighbor_alltoallv Time 8.282028e-05
+Testing (around) Size per proc 2
+MPI_Neighbor_alltoallv Time 1.372823e-04
+MPIX_Neighbor_alltoallv Time 1.367910e-04
+MPIX_Neighbor_alltoallv_init Time 1.291266e-04
+MPIX_Neighbor_alltoallv CC Time 7.137186e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.222027e-05
+Threaded CC Neighbor_alltoallv Time 8.638768e-05
+Testing (around) Size per proc 4
+MPI_Neighbor_alltoallv Time 1.332734e-04
+MPIX_Neighbor_alltoallv Time 1.381246e-04
+MPIX_Neighbor_alltoallv_init Time 1.344181e-04
+MPIX_Neighbor_alltoallv CC Time 6.604003e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.219374e-05
+Threaded CC Neighbor_alltoallv Time 8.708455e-05
+Testing (around) Size per proc 8
+MPI_Neighbor_alltoallv Time 1.379334e-04
+MPIX_Neighbor_alltoallv Time 1.327837e-04
+MPIX_Neighbor_alltoallv_init Time 1.332659e-04
+MPIX_Neighbor_alltoallv CC Time 6.636761e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.816979e-05
+Threaded CC Neighbor_alltoallv Time 8.197944e-05
+Testing (around) Size per proc 16
+MPI_Neighbor_alltoallv Time 1.379489e-04
+MPIX_Neighbor_alltoallv Time 1.386234e-04
+MPIX_Neighbor_alltoallv_init Time 1.296718e-04
+MPIX_Neighbor_alltoallv CC Time 7.192275e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.260477e-05
+Threaded CC Neighbor_alltoallv Time 8.296899e-05
+Testing (around) Size per proc 32
+MPI_Neighbor_alltoallv Time 1.374078e-04
+MPIX_Neighbor_alltoallv Time 1.384030e-04
+MPIX_Neighbor_alltoallv_init Time 1.352825e-04
+MPIX_Neighbor_alltoallv CC Time 6.719802e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.344454e-05
+Threaded CC Neighbor_alltoallv Time 8.948686e-05
+Testing (around) Size per proc 64
+MPI_Neighbor_alltoallv Time 1.342513e-04
+MPIX_Neighbor_alltoallv Time 1.386407e-04
+MPIX_Neighbor_alltoallv_init Time 1.335811e-04
+MPIX_Neighbor_alltoallv CC Time 6.996068e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.566020e-05
+Threaded CC Neighbor_alltoallv Time 9.183536e-05
+Testing (around) Size per proc 128
+MPI_Neighbor_alltoallv Time 1.410763e-04
+MPIX_Neighbor_alltoallv Time 1.358375e-04
+MPIX_Neighbor_alltoallv_init Time 1.373777e-04
+MPIX_Neighbor_alltoallv CC Time 7.312458e-05
+MPIX_Neighbor_alltoallv_init CC Time 7.486188e-05
+Threaded CC Neighbor_alltoallv Time 8.834238e-05
+Testing (around) Size per proc 256
+MPI_Neighbor_alltoallv Time 1.463312e-04
+MPIX_Neighbor_alltoallv Time 1.468199e-04
+MPIX_Neighbor_alltoallv_init Time 1.441929e-04
+MPIX_Neighbor_alltoallv CC Time 7.971493e-05
+MPIX_Neighbor_alltoallv_init CC Time 7.538012e-05
+Threaded CC Neighbor_alltoallv Time 9.298177e-05
+Testing (around) Size per proc 512
+MPI_Neighbor_alltoallv Time 1.499556e-04
+MPIX_Neighbor_alltoallv Time 1.449225e-04
+MPIX_Neighbor_alltoallv_init Time 1.453324e-04
+MPIX_Neighbor_alltoallv CC Time 9.941331e-05
+MPIX_Neighbor_alltoallv_init CC Time 9.099335e-05
+Threaded CC Neighbor_alltoallv Time 1.008911e-04
+Testing (around) Size per proc 1024
+MPI_Neighbor_alltoallv Time 1.500963e-04
+MPIX_Neighbor_alltoallv Time 1.455783e-04
+MPIX_Neighbor_alltoallv_init Time 1.471709e-04
+MPIX_Neighbor_alltoallv CC Time 1.222221e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.150584e-04
+Threaded CC Neighbor_alltoallv Time 1.168584e-04
+Testing (around) Size per proc 2048
+MPI_Neighbor_alltoallv Time 1.508593e-04
+MPIX_Neighbor_alltoallv Time 1.507125e-04
+MPIX_Neighbor_alltoallv_init Time 1.423254e-04
+MPIX_Neighbor_alltoallv CC Time 1.813992e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.761049e-04
+Threaded CC Neighbor_alltoallv Time 1.600594e-04
+Testing (around) Size per proc 4096
+MPI_Neighbor_alltoallv Time 1.736807e-04
+MPIX_Neighbor_alltoallv Time 1.736534e-04
+MPIX_Neighbor_alltoallv_init Time 1.667911e-04
+MPIX_Neighbor_alltoallv CC Time 2.876924e-04
+MPIX_Neighbor_alltoallv_init CC Time 2.881743e-04
+Threaded CC Neighbor_alltoallv Time 2.209323e-04
+Testing (around) Size per proc 8192
+MPI_Neighbor_alltoallv Time 2.841820e-04
+MPIX_Neighbor_alltoallv Time 2.843817e-04
+MPIX_Neighbor_alltoallv_init Time 2.784958e-04
+MPIX_Neighbor_alltoallv CC Time 5.197627e-04
+MPIX_Neighbor_alltoallv_init CC Time 5.209764e-04
+Threaded CC Neighbor_alltoallv Time 3.354836e-04
+Testing (around) Size per proc 16384
+MPI_Neighbor_alltoallv Time 5.603057e-04
+MPIX_Neighbor_alltoallv Time 5.604539e-04
+MPIX_Neighbor_alltoallv_init Time 5.617775e-04
+MPIX_Neighbor_alltoallv CC Time 9.709661e-04
+MPIX_Neighbor_alltoallv_init CC Time 9.625834e-04
+Threaded CC Neighbor_alltoallv Time 6.191393e-04
+Testing (around) Size per proc 32768
+MPI_Neighbor_alltoallv Time 1.064404e-03
+MPIX_Neighbor_alltoallv Time 1.065798e-03
+MPIX_Neighbor_alltoallv_init Time 1.054706e-03
+MPIX_Neighbor_alltoallv CC Time 1.927671e-03
+MPIX_Neighbor_alltoallv_init CC Time 1.932163e-03
+Threaded CC Neighbor_alltoallv Time 1.152611e-03
+Testing (around) Size per proc 65536
+MPI_Neighbor_alltoallv Time 3.734521e-03
+MPIX_Neighbor_alltoallv Time 3.817074e-03
+MPIX_Neighbor_alltoallv_init Time 3.751498e-03
+MPIX_Neighbor_alltoallv CC Time 3.743333e-03
+MPIX_Neighbor_alltoallv_init CC Time 3.732006e-03
+Threaded CC Neighbor_alltoallv Time 2.256257e-03
+Testing (around) Size per proc 131072
+MPI_Neighbor_alltoallv Time 8.061327e-03
+MPIX_Neighbor_alltoallv Time 8.112559e-03
+MPIX_Neighbor_alltoallv_init Time 8.062719e-03
+MPIX_Neighbor_alltoallv CC Time 7.116857e-03
+MPIX_Neighbor_alltoallv_init CC Time 7.150997e-03
+Threaded CC Neighbor_alltoallv Time 4.361978e-03
+Testing (around) Size per proc 262144
+MPI_Neighbor_alltoallv Time 1.568189e-02
+MPIX_Neighbor_alltoallv Time 1.578603e-02
+MPIX_Neighbor_alltoallv_init Time 1.557394e-02
+MPIX_Neighbor_alltoallv CC Time 1.387207e-02
+MPIX_Neighbor_alltoallv_init CC Time 1.379539e-02
+Threaded CC Neighbor_alltoallv Time 8.377867e-03
+Testing (around) Size per proc 524288
+MPI_Neighbor_alltoallv Time 1.302335e-02
+MPIX_Neighbor_alltoallv Time 1.205462e-02
+MPIX_Neighbor_alltoallv_init Time 1.202804e-02
+MPIX_Neighbor_alltoallv CC Time 2.773344e-02
+MPIX_Neighbor_alltoallv_init CC Time 2.761508e-02
+Threaded CC Neighbor_alltoallv Time 1.509143e-02
+Testing (around) Size per proc 1048576
+MPI_Neighbor_alltoallv Time 2.730238e-02
+MPIX_Neighbor_alltoallv Time 2.696717e-02
+MPIX_Neighbor_alltoallv_init Time 2.674718e-02
+MPIX_Neighbor_alltoallv CC Time 5.354169e-02
+MPIX_Neighbor_alltoallv_init CC Time 5.353564e-02
+Threaded CC Neighbor_alltoallv Time 2.897864e-02
+Testing (around) Size per proc 2097152
+MPI_Neighbor_alltoallv Time 5.932647e-02
+MPIX_Neighbor_alltoallv Time 5.986677e-02
+MPIX_Neighbor_alltoallv_init Time 5.860195e-02
+MPIX_Neighbor_alltoallv CC Time 1.047832e-01
+MPIX_Neighbor_alltoallv_init CC Time 1.047568e-01
+Threaded CC Neighbor_alltoallv Time 5.711323e-02
+Running Threaded Neighbor_Alltoallv Test with 6 threads:
+Testing (around) Size per proc 1
+MPI_Neighbor_alltoallv Time 1.383236e-04
+MPIX_Neighbor_alltoallv Time 1.380718e-04
+MPIX_Neighbor_alltoallv_init Time 1.284192e-04
+MPIX_Neighbor_alltoallv CC Time 7.086538e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.151590e-05
+Threaded CC Neighbor_alltoallv Time 2.544760e-04
+Testing (around) Size per proc 2
+MPI_Neighbor_alltoallv Time 1.324040e-04
+MPIX_Neighbor_alltoallv Time 1.368606e-04
+MPIX_Neighbor_alltoallv_init Time 1.343276e-04
+MPIX_Neighbor_alltoallv CC Time 6.575741e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.210568e-05
+Threaded CC Neighbor_alltoallv Time 1.506757e-04
+Testing (around) Size per proc 4
+MPI_Neighbor_alltoallv Time 1.377581e-04
+MPIX_Neighbor_alltoallv Time 1.333143e-04
+MPIX_Neighbor_alltoallv_init Time 1.341627e-04
+MPIX_Neighbor_alltoallv CC Time 6.641533e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.778981e-05
+Threaded CC Neighbor_alltoallv Time 2.720401e-04
+Testing (around) Size per proc 8
+MPI_Neighbor_alltoallv Time 1.366191e-04
+MPIX_Neighbor_alltoallv Time 1.327012e-04
+MPIX_Neighbor_alltoallv_init Time 1.333865e-04
+MPIX_Neighbor_alltoallv CC Time 6.768430e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.664069e-05
+Threaded CC Neighbor_alltoallv Time 2.651474e-04
+Testing (around) Size per proc 16
+MPI_Neighbor_alltoallv Time 1.372974e-04
+MPIX_Neighbor_alltoallv Time 1.378611e-04
+MPIX_Neighbor_alltoallv_init Time 1.294225e-04
+MPIX_Neighbor_alltoallv CC Time 7.165914e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.292848e-05
+Threaded CC Neighbor_alltoallv Time 3.316923e-04
+Testing (around) Size per proc 32
+MPI_Neighbor_alltoallv Time 1.360367e-04
+MPIX_Neighbor_alltoallv Time 1.360305e-04
+MPIX_Neighbor_alltoallv_init Time 1.339629e-04
+MPIX_Neighbor_alltoallv CC Time 6.727619e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.660493e-05
+Threaded CC Neighbor_alltoallv Time 2.194261e-04
+Testing (around) Size per proc 64
+MPI_Neighbor_alltoallv Time 1.330439e-04
+MPIX_Neighbor_alltoallv Time 1.376734e-04
+MPIX_Neighbor_alltoallv_init Time 1.349758e-04
+MPIX_Neighbor_alltoallv CC Time 7.016858e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.609615e-05
+Threaded CC Neighbor_alltoallv Time 2.463372e-04
+Testing (around) Size per proc 128
+MPI_Neighbor_alltoallv Time 1.400717e-04
+MPIX_Neighbor_alltoallv Time 1.359629e-04
+MPIX_Neighbor_alltoallv_init Time 1.367806e-04
+MPIX_Neighbor_alltoallv CC Time 7.258283e-05
+MPIX_Neighbor_alltoallv_init CC Time 7.437681e-05
+Threaded CC Neighbor_alltoallv Time 2.867228e-04
+Testing (around) Size per proc 256
+MPI_Neighbor_alltoallv Time 1.459920e-04
+MPIX_Neighbor_alltoallv Time 1.476001e-04
+MPIX_Neighbor_alltoallv_init Time 1.396871e-04
+MPIX_Neighbor_alltoallv CC Time 8.541617e-05
+MPIX_Neighbor_alltoallv_init CC Time 7.574464e-05
+Threaded CC Neighbor_alltoallv Time 2.003753e-04
+Testing (around) Size per proc 512
+MPI_Neighbor_alltoallv Time 1.492612e-04
+MPIX_Neighbor_alltoallv Time 1.480976e-04
+MPIX_Neighbor_alltoallv_init Time 1.466713e-04
+MPIX_Neighbor_alltoallv CC Time 9.519821e-05
+MPIX_Neighbor_alltoallv_init CC Time 9.789909e-05
+Threaded CC Neighbor_alltoallv Time 3.406196e-04
+Testing (around) Size per proc 1024
+MPI_Neighbor_alltoallv Time 1.504530e-04
+MPIX_Neighbor_alltoallv Time 1.491878e-04
+MPIX_Neighbor_alltoallv_init Time 1.469270e-04
+MPIX_Neighbor_alltoallv CC Time 1.194842e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.210451e-04
+Threaded CC Neighbor_alltoallv Time 3.340349e-04
+Testing (around) Size per proc 2048
+MPI_Neighbor_alltoallv Time 1.458733e-04
+MPIX_Neighbor_alltoallv Time 1.502187e-04
+MPIX_Neighbor_alltoallv_init Time 1.470178e-04
+MPIX_Neighbor_alltoallv CC Time 1.812059e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.769273e-04
+Threaded CC Neighbor_alltoallv Time 2.957458e-04
+Testing (around) Size per proc 4096
+MPI_Neighbor_alltoallv Time 1.697830e-04
+MPIX_Neighbor_alltoallv Time 1.734547e-04
+MPIX_Neighbor_alltoallv_init Time 1.679589e-04
+MPIX_Neighbor_alltoallv CC Time 2.932008e-04
+MPIX_Neighbor_alltoallv_init CC Time 2.850035e-04
+Threaded CC Neighbor_alltoallv Time 4.206465e-04
+Testing (around) Size per proc 8192
+MPI_Neighbor_alltoallv Time 2.839997e-04
+MPIX_Neighbor_alltoallv Time 2.847342e-04
+MPIX_Neighbor_alltoallv_init Time 2.804199e-04
+MPIX_Neighbor_alltoallv CC Time 5.045012e-04
+MPIX_Neighbor_alltoallv_init CC Time 5.027291e-04
+Threaded CC Neighbor_alltoallv Time 3.999128e-04
+Testing (around) Size per proc 16384
+MPI_Neighbor_alltoallv Time 5.549548e-04
+MPIX_Neighbor_alltoallv Time 5.601590e-04
+MPIX_Neighbor_alltoallv_init Time 5.542932e-04
+MPIX_Neighbor_alltoallv CC Time 9.530791e-04
+MPIX_Neighbor_alltoallv_init CC Time 9.464071e-04
+Threaded CC Neighbor_alltoallv Time 7.030938e-04
+Testing (around) Size per proc 32768
+MPI_Neighbor_alltoallv Time 1.062501e-03
+MPIX_Neighbor_alltoallv Time 1.061888e-03
+MPIX_Neighbor_alltoallv_init Time 1.057695e-03
+MPIX_Neighbor_alltoallv CC Time 1.937393e-03
+MPIX_Neighbor_alltoallv_init CC Time 1.935388e-03
+Threaded CC Neighbor_alltoallv Time 1.141558e-03
+Testing (around) Size per proc 65536
+MPI_Neighbor_alltoallv Time 3.890624e-03
+MPIX_Neighbor_alltoallv Time 3.958024e-03
+MPIX_Neighbor_alltoallv_init Time 3.927727e-03
+MPIX_Neighbor_alltoallv CC Time 3.804584e-03
+MPIX_Neighbor_alltoallv_init CC Time 3.794359e-03
+Threaded CC Neighbor_alltoallv Time 2.217796e-03
+Testing (around) Size per proc 131072
+MPI_Neighbor_alltoallv Time 8.936976e-03
+MPIX_Neighbor_alltoallv Time 8.896131e-03
+MPIX_Neighbor_alltoallv_init Time 8.823916e-03
+MPIX_Neighbor_alltoallv CC Time 7.018260e-03
+MPIX_Neighbor_alltoallv_init CC Time 7.109739e-03
+Threaded CC Neighbor_alltoallv Time 4.374925e-03
+Testing (around) Size per proc 262144
+MPI_Neighbor_alltoallv Time 1.492086e-02
+MPIX_Neighbor_alltoallv Time 1.556897e-02
+MPIX_Neighbor_alltoallv_init Time 1.530336e-02
+MPIX_Neighbor_alltoallv CC Time 1.363376e-02
+MPIX_Neighbor_alltoallv_init CC Time 1.367454e-02
+Threaded CC Neighbor_alltoallv Time 8.211629e-03
+Testing (around) Size per proc 524288
+MPI_Neighbor_alltoallv Time 1.200059e-02
+MPIX_Neighbor_alltoallv Time 1.200956e-02
+MPIX_Neighbor_alltoallv_init Time 1.200854e-02
+MPIX_Neighbor_alltoallv CC Time 2.489197e-02
+MPIX_Neighbor_alltoallv_init CC Time 2.477320e-02
+Threaded CC Neighbor_alltoallv Time 1.443282e-02
+Testing (around) Size per proc 1048576
+MPI_Neighbor_alltoallv Time 2.751989e-02
+MPIX_Neighbor_alltoallv Time 2.705068e-02
+MPIX_Neighbor_alltoallv_init Time 2.653975e-02
+MPIX_Neighbor_alltoallv CC Time 5.323712e-02
+MPIX_Neighbor_alltoallv_init CC Time 5.320787e-02
+Threaded CC Neighbor_alltoallv Time 2.822026e-02
+Testing (around) Size per proc 2097152
+MPI_Neighbor_alltoallv Time 5.878621e-02
+MPIX_Neighbor_alltoallv Time 5.953061e-02
+MPIX_Neighbor_alltoallv_init Time 5.912014e-02
+MPIX_Neighbor_alltoallv CC Time 1.043596e-01
+MPIX_Neighbor_alltoallv_init CC Time 1.043554e-01
+Threaded CC Neighbor_alltoallv Time 5.520202e-02
+Running Threaded Neighbor_Alltoallv Test with 8 threads:
+Testing (around) Size per proc 1
+MPI_Neighbor_alltoallv Time 1.323404e-04
+MPIX_Neighbor_alltoallv Time 1.388395e-04
+MPIX_Neighbor_alltoallv_init Time 1.336237e-04
+MPIX_Neighbor_alltoallv CC Time 6.563211e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.649061e-05
+Threaded CC Neighbor_alltoallv Time 1.040190e-04
+Testing (around) Size per proc 2
+MPI_Neighbor_alltoallv Time 1.381695e-04
+MPIX_Neighbor_alltoallv Time 1.327866e-04
+MPIX_Neighbor_alltoallv_init Time 1.347298e-04
+MPIX_Neighbor_alltoallv CC Time 6.560585e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.835597e-05
+Threaded CC Neighbor_alltoallv Time 1.022682e-04
+Testing (around) Size per proc 4
+MPI_Neighbor_alltoallv Time 1.380974e-04
+MPIX_Neighbor_alltoallv Time 1.386263e-04
+MPIX_Neighbor_alltoallv_init Time 1.316171e-04
+MPIX_Neighbor_alltoallv CC Time 7.089357e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.215284e-05
+Threaded CC Neighbor_alltoallv Time 1.066441e-04
+Testing (around) Size per proc 8
+MPI_Neighbor_alltoallv Time 1.328211e-04
+MPIX_Neighbor_alltoallv Time 1.376680e-04
+MPIX_Neighbor_alltoallv_init Time 1.345590e-04
+MPIX_Neighbor_alltoallv CC Time 6.682330e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.325493e-05
+Threaded CC Neighbor_alltoallv Time 1.059655e-04
+Testing (around) Size per proc 16
+MPI_Neighbor_alltoallv Time 1.386174e-04
+MPIX_Neighbor_alltoallv Time 1.336868e-04
+MPIX_Neighbor_alltoallv_init Time 1.347661e-04
+MPIX_Neighbor_alltoallv CC Time 6.643596e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.864368e-05
+Threaded CC Neighbor_alltoallv Time 1.033327e-04
+Testing (around) Size per proc 32
+MPI_Neighbor_alltoallv Time 1.388745e-04
+MPIX_Neighbor_alltoallv Time 1.379485e-04
+MPIX_Neighbor_alltoallv_init Time 1.297726e-04
+MPIX_Neighbor_alltoallv CC Time 7.204641e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.346591e-05
+Threaded CC Neighbor_alltoallv Time 1.094424e-04
+Testing (around) Size per proc 64
+MPI_Neighbor_alltoallv Time 1.336573e-04
+MPIX_Neighbor_alltoallv Time 1.380397e-04
+MPIX_Neighbor_alltoallv_init Time 1.348010e-04
+MPIX_Neighbor_alltoallv CC Time 7.014365e-05
+MPIX_Neighbor_alltoallv_init CC Time 7.218754e-05
+Threaded CC Neighbor_alltoallv Time 1.075505e-04
+Testing (around) Size per proc 128
+MPI_Neighbor_alltoallv Time 1.405503e-04
+MPIX_Neighbor_alltoallv Time 1.418410e-04
+MPIX_Neighbor_alltoallv_init Time 1.328902e-04
+MPIX_Neighbor_alltoallv CC Time 7.861992e-05
+MPIX_Neighbor_alltoallv_init CC Time 6.880882e-05
+Threaded CC Neighbor_alltoallv Time 1.130316e-04
+Testing (around) Size per proc 256
+MPI_Neighbor_alltoallv Time 1.425116e-04
+MPIX_Neighbor_alltoallv Time 1.487275e-04
+MPIX_Neighbor_alltoallv_init Time 1.440183e-04
+MPIX_Neighbor_alltoallv CC Time 7.999331e-05
+MPIX_Neighbor_alltoallv_init CC Time 8.241366e-05
+Threaded CC Neighbor_alltoallv Time 1.085235e-04
+Testing (around) Size per proc 512
+MPI_Neighbor_alltoallv Time 1.490652e-04
+MPIX_Neighbor_alltoallv Time 1.505262e-04
+MPIX_Neighbor_alltoallv_init Time 1.467529e-04
+MPIX_Neighbor_alltoallv CC Time 9.433693e-05
+MPIX_Neighbor_alltoallv_init CC Time 9.562650e-05
+Threaded CC Neighbor_alltoallv Time 1.165592e-04
+Testing (around) Size per proc 1024
+MPI_Neighbor_alltoallv Time 1.506499e-04
+MPIX_Neighbor_alltoallv Time 1.507277e-04
+MPIX_Neighbor_alltoallv_init Time 1.477198e-04
+MPIX_Neighbor_alltoallv CC Time 1.192616e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.208488e-04
+Threaded CC Neighbor_alltoallv Time 1.316822e-04
+Testing (around) Size per proc 2048
+MPI_Neighbor_alltoallv Time 1.470481e-04
+MPIX_Neighbor_alltoallv Time 1.513276e-04
+MPIX_Neighbor_alltoallv_init Time 1.473374e-04
+MPIX_Neighbor_alltoallv CC Time 1.808738e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.776918e-04
+Threaded CC Neighbor_alltoallv Time 1.757345e-04
+Testing (around) Size per proc 4096
+MPI_Neighbor_alltoallv Time 1.712176e-04
+MPIX_Neighbor_alltoallv Time 1.717182e-04
+MPIX_Neighbor_alltoallv_init Time 1.617839e-04
+MPIX_Neighbor_alltoallv CC Time 2.925689e-04
+MPIX_Neighbor_alltoallv_init CC Time 2.841034e-04
+Threaded CC Neighbor_alltoallv Time 2.331778e-04
+Testing (around) Size per proc 8192
+MPI_Neighbor_alltoallv Time 2.861285e-04
+MPIX_Neighbor_alltoallv Time 2.877548e-04
+MPIX_Neighbor_alltoallv_init Time 2.815186e-04
+MPIX_Neighbor_alltoallv CC Time 5.143418e-04
+MPIX_Neighbor_alltoallv_init CC Time 5.094769e-04
+Threaded CC Neighbor_alltoallv Time 3.309025e-04
+Testing (around) Size per proc 16384
+MPI_Neighbor_alltoallv Time 5.593971e-04
+MPIX_Neighbor_alltoallv Time 5.596861e-04
+MPIX_Neighbor_alltoallv_init Time 5.559672e-04
+MPIX_Neighbor_alltoallv CC Time 9.880308e-04
+MPIX_Neighbor_alltoallv_init CC Time 9.842886e-04
+Threaded CC Neighbor_alltoallv Time 6.120069e-04
+Testing (around) Size per proc 32768
+MPI_Neighbor_alltoallv Time 1.062091e-03
+MPIX_Neighbor_alltoallv Time 1.061310e-03
+MPIX_Neighbor_alltoallv_init Time 1.061099e-03
+MPIX_Neighbor_alltoallv CC Time 1.917061e-03
+MPIX_Neighbor_alltoallv_init CC Time 1.899339e-03
+Threaded CC Neighbor_alltoallv Time 1.119237e-03
+Testing (around) Size per proc 65536
+MPI_Neighbor_alltoallv Time 3.762207e-03
+MPIX_Neighbor_alltoallv Time 3.804151e-03
+MPIX_Neighbor_alltoallv_init Time 3.753510e-03
+MPIX_Neighbor_alltoallv CC Time 3.745991e-03
+MPIX_Neighbor_alltoallv_init CC Time 3.736860e-03
+Threaded CC Neighbor_alltoallv Time 2.180596e-03
+Testing (around) Size per proc 131072
+MPI_Neighbor_alltoallv Time 8.828189e-03
+MPIX_Neighbor_alltoallv Time 8.536729e-03
+MPIX_Neighbor_alltoallv_init Time 8.486628e-03
+MPIX_Neighbor_alltoallv CC Time 7.036350e-03
+MPIX_Neighbor_alltoallv_init CC Time 7.061229e-03
+Threaded CC Neighbor_alltoallv Time 4.260488e-03
+Testing (around) Size per proc 262144
+MPI_Neighbor_alltoallv Time 1.483034e-02
+MPIX_Neighbor_alltoallv Time 1.373182e-02
+MPIX_Neighbor_alltoallv_init Time 1.435559e-02
+MPIX_Neighbor_alltoallv CC Time 1.380596e-02
+MPIX_Neighbor_alltoallv_init CC Time 1.383274e-02
+Threaded CC Neighbor_alltoallv Time 8.069081e-03
+Testing (around) Size per proc 524288
+MPI_Neighbor_alltoallv Time 1.204504e-02
+MPIX_Neighbor_alltoallv Time 1.205323e-02
+MPIX_Neighbor_alltoallv_init Time 1.205615e-02
+MPIX_Neighbor_alltoallv CC Time 2.478136e-02
+MPIX_Neighbor_alltoallv_init CC Time 2.492208e-02
+Threaded CC Neighbor_alltoallv Time 1.450562e-02
+Testing (around) Size per proc 1048576
+MPI_Neighbor_alltoallv Time 2.637931e-02
+MPIX_Neighbor_alltoallv Time 2.672886e-02
+MPIX_Neighbor_alltoallv_init Time 2.711244e-02
+MPIX_Neighbor_alltoallv CC Time 5.328461e-02
+MPIX_Neighbor_alltoallv_init CC Time 5.321878e-02
+Threaded CC Neighbor_alltoallv Time 2.733373e-02
+Testing (around) Size per proc 2097152
+MPI_Neighbor_alltoallv Time 5.919428e-02
+MPIX_Neighbor_alltoallv Time 5.882036e-02
+MPIX_Neighbor_alltoallv_init Time 5.955897e-02
+MPIX_Neighbor_alltoallv CC Time 1.044910e-01
+MPIX_Neighbor_alltoallv_init CC Time 1.043708e-01
+Threaded CC Neighbor_alltoallv Time 5.321687e-02
+logout
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 5915371: <nbralltoallv_n16> in cluster <lassen> Done
+
+Job <nbralltoallv_n16> was submitted from host <lassen708> by user <adams112> in cluster <lassen> at Wed May 29 17:13:10 2024
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <adams112> in cluster <lassen> at Wed May 29 23:19:31 2024
+                            <40*lassen520>
+                            <40*lassen521>
+                            <40*lassen523>
+                            <40*lassen370>
+                            <40*lassen373>
+                            <40*lassen374>
+                            <40*lassen377>
+                            <40*lassen531>
+                            <40*lassen203>
+                            <40*lassen206>
+                            <40*lassen535>
+                            <40*lassen208>
+                            <40*lassen537>
+                            <40*lassen381>
+                            <40*lassen209>
+                            <40*lassen539>
+</g/g11/adams112> was used as the home directory.
+</g/g11/adams112/locality_aware-mikethebos/benchmark_tests/lassen> was used as the working directory.
+Started at Wed May 29 23:19:31 2024
+Terminated at Wed May 29 23:32:55 2024
+Results reported at Wed May 29 23:32:55 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J nbralltoallv_n16
+#BSUB -e nbralltoallv_n16.%J.err
+#BSUB -o nbralltoallv_n16.%J.out
+#BSUB -nnodes 16
+#BSUB -q pbatch
+#BSUB -W 04:30
+
+module load gcc/7.3.1
+module load cuda/10.2.89
+module load hwloc
+
+cd $HOME/locality_aware-mikethebos/build/benchmarks
+
+echo "Running Unthreaded Neighbor_Alltoallv Test:"
+export OMP_NUM_THREADS=1
+jsrun -a1 -c1 -g1 -r4 -n16 -bpacked:1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_neighbor_alltoallv
+
+echo "Running Threaded Neighbor_Alltoallv Test with 2 threads:"
+export OMP_NUM_THREADS=2
+jsrun -a1 -c2 -g1 -r4 -n16 -bpacked:2 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+
+echo "Running Threaded Neighbor_Alltoallv Test with 4 threads:"
+export OMP_NUM_THREADS=4
+jsrun -a1 -c4 -g1 -r4 -n16 -bpacked:4 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+
+echo "Running Threaded Neighbor_Alltoallv Test with 6 threads:"
+export OMP_NUM_THREADS=6
+jsrun -a1 -c6 -g1 -r4 -n16 -bpacked:6 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+
+echo "Running Threaded Neighbor_Alltoallv Test with 8 threads:"
+export OMP_NUM_THREADS=8
+jsrun -a1 -c8 -g1 -r4 -n16 -bpacked:8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   2.00 sec.
+    Max Memory :                                 60 MB
+    Average Memory :                             59.52 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1426 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   804 sec.
+    Turnaround time :                            22785 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <nbralltoallv_n16.5915371.err> for stderr output of this job.
+
