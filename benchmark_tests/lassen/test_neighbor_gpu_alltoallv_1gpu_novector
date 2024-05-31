@@ -1,0 +1,37 @@
+#!/bin/bash
+#BSUB -J nbralltoallv_n8_1gpu_novector
+#BSUB -e nbralltoallv_n8_1gpu_novector.%J.err
+#BSUB -o nbralltoallv_n8_1gpu_novector.%J.out
+#BSUB -nnodes 8
+#BSUB -q pbatch
+#BSUB -W 01:10
+
+module load gcc/7.3.1
+module load cuda/10.2.89
+module load hwloc
+
+cd $HOME/locality_aware-mikethebos/build/benchmarks
+
+echo "Running Unthreaded Neighbor_Alltoallv Test:"
+export OMP_NUM_THREADS=1
+jsrun -a1 -c1 -g1 -r1 -n8 -bpacked:1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_neighbor_alltoallv_novector
+
+echo "Running Threaded Neighbor_Alltoallv Test with 2 threads:"
+export OMP_NUM_THREADS=2
+jsrun -a1 -c2 -g1 -r1 -n8 -bpacked:2 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv_novector
+
+echo "Running Threaded Neighbor_Alltoallv Test with 4 threads:"
+export OMP_NUM_THREADS=4
+jsrun -a1 -c4 -g1 -r1 -n8 -bpacked:4 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv_novector
+
+echo "Running Threaded Neighbor_Alltoallv Test with 8 threads:"
+export OMP_NUM_THREADS=8
+jsrun -a1 -c8 -g1 -r1 -n8 -bpacked:8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv_novector
+
+echo "Running Threaded Neighbor_Alltoallv Test with 16 threads:"
+export OMP_NUM_THREADS=16
+jsrun -a1 -c16 -g1 -r1 -n8 -bpacked:16 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv_novector
+
+echo "Running Threaded Neighbor_Alltoallv Test with 32 threads:"
+export OMP_NUM_THREADS=32
+jsrun -a1 -c32 -g1 -r1 -n8 -bpacked:32 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv_novector
