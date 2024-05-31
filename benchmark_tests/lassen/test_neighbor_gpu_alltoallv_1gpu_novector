@@ -4,7 +4,7 @@
 #BSUB -o nbralltoallv_n8_1gpu_novector.%J.out
 #BSUB -nnodes 8
 #BSUB -q pbatch
-#BSUB -W 01:10
+#BSUB -W 02:10
 
 module load gcc/7.3.1
 module load cuda/10.2.89
