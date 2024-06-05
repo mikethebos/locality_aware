@@ -58,7 +58,7 @@ int neighbor_gpu_copy_cpu_threaded_wait(MPIX_Request* request, MPI_Status* statu
     MPIX_Request *inner_request = request->sub_request;
     const char* send_buffer = (const char*) request->cpu_sendbuf;
     char* recv_buffer = (char*) request->cpu_recvbuf;
-    int num_threads = request->num_threads;
+    int nthreads = request->num_threads;
     int n_msgs_s_per_thread = request->n_msgs_s_per_thread;
     int extra_msgs_s = request->extra_msgs_s;
     int n_msgs_r_per_thread = request->n_msgs_r_per_thread;
@@ -77,7 +77,7 @@ int neighbor_gpu_copy_cpu_threaded_wait(MPIX_Request* request, MPI_Status* statu
     
     int tag = 102944;
     
-#pragma omp parallel num_threads(num_threads) reduction(+:ret)
+#pragma omp parallel num_threads(nthreads) reduction(+:ret)
     {
         int thread_id = omp_get_thread_num();
         int thread_n_msgs_s = n_msgs_s_per_thread;
@@ -142,7 +142,7 @@ int neighbor_gpu_copy_cpu_threaded_wait(MPIX_Request* request, MPI_Status* statu
             }
         }
         
-        ret += MPI_Waitall(count_th, inner_request->global_requests, MPI_STATUSES_IGNORE);
+        ret += MPI_Waitall(count_th, &(inner_request->global_requests[start_offset]), MPI_STATUSES_IGNORE);
     }
     }
     // only copy recvbuf after wait
@@ -208,16 +208,16 @@ void init_neighbor_gpu_copy_cpu_request_threaded(MPIX_Request** request_ptr, con
     request->n_msgs_r_per_thread = n_msgs_r_per_thread;
     request->extra_msgs_s = extra_msgs_s;
     request->extra_msgs_r = extra_msgs_r;
-    request->sdispls = sdispls;
-    request->send_bytes = send_bytes;
+    request->sdispls = (int *) sdispls;
+    request->send_bytes = (int) send_bytes;
     request->sendtype = sendtype;
-    request->sendcounts = sendcounts;
-    request->destinations = destinations;
-    request->rdispls = rdispls;
-    request->recv_bytes = recv_bytes;
+    request->sendcounts = (int *) sendcounts;
+    request->destinations = (int *) destinations;
+    request->rdispls = (int *) rdispls;
+    request->recv_bytes = (int) recv_bytes;
     request->recvtype = recvtype;
-    request->recvcounts = recvcounts;
-    request->sources = sources;
+    request->recvcounts = (int *) recvcounts;
+    request->sources = (int *) sources;
     request->comm = comm;
     
     cudaMallocHost((void **)(&(request->cpu_sendbuf)), sendbuf_bytes);
