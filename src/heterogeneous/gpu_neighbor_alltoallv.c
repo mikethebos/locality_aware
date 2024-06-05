@@ -198,68 +198,24 @@ int threaded_neighbor_alltoallv_nonblocking_init(const void* sendbuf,
     
     MPIX_Request* outer_request;
     init_neighbor_gpu_copy_cpu_request_threaded(&outer_request, sendbuf, total_bytes_s,
-                                                                recvbuf, total_bytes_r, num_threads);
+                                                                recvbuf, total_bytes_r, num_threads,
+                                                                n_msgs_s_per_thread,
+                                                                n_msgs_r_per_thread,
+                                                                extra_msgs_s,
+                                                                extra_msgs_r,
+                                                                sdispls,
+                                                                send_bytes,
+                                                                sendtype,
+                                                                sendcounts,
+                                                                destinations,
+                                                                rdispls,
+                                                                recv_bytes,
+                                                                recvtype,
+                                                                recvcounts,
+                                                                sources,
+                                                                comm);
     
     int request_idx = 0;
-
-#ifdef GPU
-    const char* send_buffer = (const char*) outer_request->cpu_sendbuf;
-    char* recv_buffer = (char*) outer_request->cpu_recvbuf;
-#endif
-    
-    for (int thread_id = 0; thread_id < num_threads; ++thread_id)
-    {
-        int thread_n_msgs_s = n_msgs_s_per_thread;
-        int thread_n_msgs_r = n_msgs_r_per_thread;
-        if (extra_msgs_s > thread_id)
-            thread_n_msgs_s++;
-        if (extra_msgs_r > thread_id)
-            thread_n_msgs_r++;
-            
-        if (thread_n_msgs_s)
-        {
-            int baseIdx = thread_n_msgs_s * thread_id;
-            if (extra_msgs_s <= thread_id)
-            {
-                baseIdx += extra_msgs_s;
-            }
-            for (int idx = baseIdx; idx < baseIdx + thread_n_msgs_s; ++idx)
-            {
-#ifdef GPU
-                MPI_Send_init(&(send_buffer[sdispls[idx] * send_bytes]), 
-                        sendcounts[idx], 
-                        sendtype, 
-                        destinations[idx], 
-                        tag, 
-                        comm->neighbor_comm, 
-                        &(inner_request->global_requests[request_idx]));
-#endif
-                ++request_idx;
-            }
-        }
-        
-        if (thread_n_msgs_r)
-        {
-            int baseIdx = thread_n_msgs_r * thread_id;
-            if (extra_msgs_r <= thread_id)
-            {
-                baseIdx += extra_msgs_r;
-            }
-            for (int idx = baseIdx; idx < baseIdx + thread_n_msgs_r; ++idx)
-            {
-#ifdef GPU
-                MPI_Recv_init(&(recv_buffer[rdispls[idx] * recv_bytes]), 
-                        recvcounts[idx], 
-                        recvtype, 
-                        sources[idx], 
-                        tag, 
-                        comm->neighbor_comm, 
-                        &(inner_request->global_requests[request_idx]));
-#endif
-                ++request_idx;
-            }
-        }
-    }
 
     set_sub_request_in_neighbor_gpu_copy_cpu_request(outer_request, inner_request);
     
