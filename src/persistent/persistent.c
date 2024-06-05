@@ -28,6 +28,8 @@ void init_request(MPIX_Request** request_ptr)
     request->sub_request = NULL;
     
     request->num_threads = 0;
+    
+    request->neighbor_gpu_reqs = NULL;
 #endif
     
     *request_ptr = request;
@@ -128,6 +130,14 @@ int MPIX_Request_free(MPIX_Request* request)
         cudaFreeHost(request->cpu_recvbuf);
     if (request->sub_request)
         MPIX_Request_free(request->sub_request);
+    if (request->neighbor_gpu_reqs)
+    {
+        for (int i = 0; i < request->num_threads; i++)
+        {
+            free(request->neighbor_gpu_reqs[i]);
+        }
+        free(request->neighbor_gpu_reqs);
+    }
 #endif
 
     free(request);

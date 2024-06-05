@@ -194,7 +194,13 @@ int threaded_neighbor_alltoallv_nonblocking_init(const void* sendbuf,
     init_neighbor_request(&inner_request);
 
     inner_request->global_n_msgs = (num_threads * n_msgs_s_per_thread) + extra_msgs_s + (num_threads * n_msgs_r_per_thread) + extra_msgs_r;
-    allocate_requests(inner_request->global_n_msgs, &(inner_request->global_requests));
+#ifdef GPU
+    inner_request->neighbor_gpu_reqs = (MPI_Request **) malloc(num_threads * sizeof(MPI_Request *));
+    for (int i = 0; i < num_threads; i++)
+    {
+        inner_request->neighbor_gpu_reqs[i] = (MPI_Request *) malloc((n_msgs_s_per_thread + extra_msgs_s + n_msgs_r_per_thread + extra_msgs_r) * sizeof(MPI_Request));
+    }
+#endif
     
     MPIX_Request* outer_request;
     init_neighbor_gpu_copy_cpu_request_threaded(&outer_request, sendbuf, total_bytes_s,
