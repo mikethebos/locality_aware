@@ -219,6 +219,11 @@ int threaded_neighbor_alltoallv_nonblocking_init(const void* sendbuf,
 
     set_sub_request_in_neighbor_gpu_copy_cpu_request(outer_request, inner_request);
     
+#ifdef GPU
+    outer_request->not_gpu_neighbor_alltoallv = 0;
+    inner_request->not_gpu_neighbor_alltoallv = 0;
+#endif
+    
     *request_ptr = outer_request;
     
     return ierr;

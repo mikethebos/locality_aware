@@ -62,6 +62,8 @@ typedef struct _MPIX_Request
     int *recvcounts;
     int *sources;
     MPIX_Comm *comm;
+    
+    int not_gpu_neighbor_alltoallv;
 #endif
 
     // Keep track of which start/wait functions to call for given request

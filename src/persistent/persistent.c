@@ -30,6 +30,8 @@ void init_request(MPIX_Request** request_ptr)
     request->num_threads = 0;
     request->sources = NULL;
     request->destinations = NULL;
+    
+    request->not_gpu_neighbor_alltoallv = 1;
 #endif
     
     *request_ptr = request;
@@ -113,8 +115,13 @@ int MPIX_Request_free(MPIX_Request* request)
     }
     if (request->global_n_msgs)
     {
+#ifdef GPU
+        if (request->not_gpu_neighbor_alltoallv > 0)
+#endif
+        {
         for (int i = 0; i < request->global_n_msgs; i++)
             MPI_Request_free(&(request->global_requests[i]));
+        }
         free(request->global_requests);
     }
 
