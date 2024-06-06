@@ -150,9 +150,9 @@ int threaded_neighbor_alltoallv_nonblocking_init(const void* sendbuf,
             &outdegree, 
             &weighted);
 
-    int sources[indegree];
+    int *sources = malloc(indegree * sizeof(int));
     int sourceweights[indegree];
-    int destinations[outdegree];
+    int *destinations = malloc(outdegree * sizeof(int));
     int destweights[outdegree];
     ierr += MPI_Dist_graph_neighbors(
             comm->neighbor_comm, 
