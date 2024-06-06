@@ -77,7 +77,7 @@ int neighbor_gpu_copy_cpu_threaded_wait(MPIX_Request* request, MPI_Status* statu
     
     int tag = 102944;
     
-#pragma omp parallel num_threads(nthreads) reduction(+:ret)
+#pragma omp parallel reduction(+:ret)
     {
         int thread_id = omp_get_thread_num();
         int thread_n_msgs_s = n_msgs_s_per_thread;
