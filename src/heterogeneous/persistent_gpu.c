@@ -87,7 +87,18 @@ int neighbor_gpu_copy_cpu_threaded_wait(MPIX_Request* request, MPI_Status* statu
         if (extra_msgs_r > thread_id)
             thread_n_msgs_r++;
             
-        int request_idx = 0;
+        int request_idx = (thread_n_msgs_s + thread_n_msgs_r) * thread_id;
+        if (extra_msgs_s <= thread_id)
+        {
+            request_idx += extra_msgs_s;
+        }
+        if (extra_msgs_r <= thread_id)
+        {
+            request_idx += extra_msgs_r;
+        }
+        
+        int start_offset = request_idx;
+        int count_th = 0;
             
         if (thread_n_msgs_s)
         {
@@ -104,8 +115,9 @@ int neighbor_gpu_copy_cpu_threaded_wait(MPIX_Request* request, MPI_Status* statu
                         destinations[idx], 
                         tag, 
                         comm->neighbor_comm, 
-                        &(inner_request->neighbor_gpu_reqs[thread_id][request_idx]));
+                        &(inner_request->global_requests[request_idx]));
                 ++request_idx;
+                ++count_th;
             }
         }
         
@@ -124,12 +136,13 @@ int neighbor_gpu_copy_cpu_threaded_wait(MPIX_Request* request, MPI_Status* statu
                         sources[idx], 
                         tag, 
                         comm->neighbor_comm, 
-                        &(inner_request->neighbor_gpu_reqs[thread_id][request_idx]));
+                        &(inner_request->global_requests[request_idx]));
                 ++request_idx;
+                ++count_th;
             }
         }
         
-        ret += MPI_Waitall(request_idx, inner_request->neighbor_gpu_reqs[thread_id], MPI_STATUSES_IGNORE);
+        ret += MPI_Waitall(count_th, &(inner_request->global_requests[start_offset]), MPI_STATUSES_IGNORE);
     }
     }
     // only copy recvbuf after wait
