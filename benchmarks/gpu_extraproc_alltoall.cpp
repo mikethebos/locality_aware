@@ -8,11 +8,11 @@
 #include <set>
 #include <omp.h>
 
-void alltoall(double* send_data, double* recv_data, int n, int start, int stop, int step)
+void alltoall(double* send_data, double* recv_data, int n, int start, int stop, int step, MPI_Comm comm)
 {
     int rank, num_procs;
-    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-    MPI_Comm_size(MPI_COMM_WORLD, &num_procs);
+    MPI_Comm_rank(comm, &rank);
+    MPI_Comm_size(comm, &num_procs);
 
     int src, dest;
     for (int i = start; i < stop; i += step)
@@ -25,7 +25,7 @@ void alltoall(double* send_data, double* recv_data, int n, int start, int stop, 
         int send_pos = dest*n;
         int recv_pos = src*n;
         
-        MPI_Sendrecv(send_data + send_pos, n, MPI_DOUBLE, dest, 0, recv_data + recv_pos, n, MPI_DOUBLE, src, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+        MPI_Sendrecv(send_data + send_pos, n, MPI_DOUBLE, dest, 0, recv_data + recv_pos, n, MPI_DOUBLE, src, 0, comm, MPI_STATUS_IGNORE);
     }
 }
 
@@ -66,6 +66,19 @@ int main(int argc, char* argv[])
 
     MPI_Comm gpu_comm;
     MPI_Comm_split(xcomm->local_comm, rank_gpu, gpu_rank, &gpu_comm);
+    
+    MPI_Comm all_masters_comm;
+    int master_color = MPI_UNDEFINED;
+    if (gpu_rank == 0)
+    {
+        master_color = 0;
+    }
+    MPI_Comm_split(MPI_COMM_WORLD, master_color, rank_gpu, &all_masters_comm);
+    int master_count;
+    MPI_Comm_size(all_masters_comm, &master_count);
+    
+    MPI_Comm one_per_gpu_comm;
+    MPI_Comm_split(MPI_COMM_WORLD, gpu_rank, rank_gpu, &one_per_gpu_comm);
 
     int max_i = 20;
     int max_s = pow(2, max_i);
@@ -95,10 +108,26 @@ int main(int argc, char* argv[])
     double* send_data_shared;
     double* recv_data_shared;
     MPI_Win send_win, recv_win;
-    MPI_Win_allocate_shared(max_s*num_procs*sizeof(double), sizeof(double),  
+    int win_size = 0;
+    if (gpu_rank == 0)
+    {
+        win_size = max_s*num_procs;
+    }
+    MPI_Aint remote_win_s, remote_win_r;
+    int disp_unit_s, disp_unit_r;
+    MPI_Win_allocate_shared(win_size*sizeof(double), sizeof(double),  
         MPI_INFO_NULL, gpu_comm, &send_data_shared, &send_win);
-    MPI_Win_allocate_shared(max_s*num_procs*sizeof(double), sizeof(double), 
+    if (gpu_rank != 0)
+    {
+        MPI_Win_shared_query(send_win, 0, &remote_win_s, &disp_unit_s, send_data_shared);
+    }
+    
+    MPI_Win_allocate_shared(win_size*sizeof(double), sizeof(double), 
         MPI_INFO_NULL, gpu_comm, &recv_data_shared, &recv_win);
+    if (gpu_rank != 0)
+    {
+        MPI_Win_shared_query(recv_win, 0, &remote_win_r, &disp_unit_r, recv_data_shared);
+    }
 
     for (int i = 0; i < max_i; i++)
     {
@@ -111,7 +140,7 @@ int main(int argc, char* argv[])
         // GPU-Aware PMPI Implementation
         if (gpu_rank == 0)
         {
-            PMPI_Alltoall(send_data_d, s, MPI_DOUBLE, recv_data_d, s, MPI_DOUBLE, MPI_COMM_WORLD);
+            PMPI_Alltoall(send_data_d, s, MPI_DOUBLE, recv_data_d, s, MPI_DOUBLE, all_masters_comm);
             gpuMemcpy(std_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
             gpuMemset(recv_data_d, 0, s*num_procs*sizeof(int));
         }
@@ -120,7 +149,7 @@ int main(int argc, char* argv[])
         if (gpu_rank == 0)
         {
             gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-            PMPI_Alltoall(send_data_h, s, MPI_DOUBLE, recv_data_h, s, MPI_DOUBLE, MPI_COMM_WORLD);
+            PMPI_Alltoall(send_data_h, s, MPI_DOUBLE, recv_data_h, s, MPI_DOUBLE, all_masters_comm);
             gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
             gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
             int err = compare(std_alltoall, new_alltoall, s);
@@ -137,7 +166,7 @@ int main(int argc, char* argv[])
         if (gpu_rank == 0)
         {
             gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-            alltoall(send_data_h, recv_data_h, s, 1, num_procs, 1);
+            alltoall(send_data_h, recv_data_h, s, 1, master_count, 1, all_masters_comm);
             gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
             gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
             int err = compare(std_alltoall, new_alltoall, s);
@@ -156,7 +185,10 @@ int main(int argc, char* argv[])
         if (gpu_rank == 0)
         {
             gpuMemcpy(send_data_shared, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-            alltoall(send_data_shared, recv_data_shared, s, 1, num_procs, 1);
+        }
+        alltoall(send_data_shared, recv_data_shared, s, gpu_rank+1, master_count, ranks_per_gpu, one_per_gpu_comm);
+        if (gpu_rank == 0)
+        {
             gpuMemcpy(recv_data_d, recv_data_shared, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
             gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
             int err = compare(std_alltoall, new_alltoall, s);
@@ -313,6 +345,8 @@ int main(int argc, char* argv[])
     MPI_Win_free(&recv_win);
 
     MPI_Comm_free(&gpu_comm);
+    MPI_Comm_free(&all_masters_comm);
+    MPI_Comm_free(&one_per_gpu_comm);
 
     MPIX_Comm_free(xcomm);
 
