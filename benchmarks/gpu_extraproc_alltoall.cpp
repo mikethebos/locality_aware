@@ -75,7 +75,9 @@ int main(int argc, char* argv[])
     }
     MPI_Comm_split(MPI_COMM_WORLD, master_color, rank_gpu, &all_masters_comm);
     int master_count;
-    MPI_Comm_size(all_masters_comm, &master_count);
+    if (all_masters_comm != MPI_COMM_NULL)
+        MPI_Comm_size(all_masters_comm, &master_count);
+    MPI_Bcast(&master_count, 1, MPI_INT, 0, MPI_COMM_WORLD);
     
     MPI_Comm one_per_gpu_comm;
     MPI_Comm_split(MPI_COMM_WORLD, gpu_rank, rank_gpu, &one_per_gpu_comm);

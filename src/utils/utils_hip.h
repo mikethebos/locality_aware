@@ -24,6 +24,7 @@
 #define gpuMemcpyDeviceToHost hipMemcpyDeviceToHost
 #define gpuMemcpyHostToDevice hipMemcpyHostToDevice
 #define gpuMemcpyDeviceToDevice hipMemcpyDeviceToDevice
+#define gpuMemset hipMemset
 
 // Streams
 #define gpuStream_t hipStream_t

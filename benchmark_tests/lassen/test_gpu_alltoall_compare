@@ -1,0 +1,41 @@
+#!/bin/bash
+#BSUB -J gpu_alltoall_compare4
+#BSUB -e gpu_alltoall_compare4.%J.err
+#BSUB -o gpu_alltoall_compare4.%J.out
+#BSUB -nnodes 4
+#BSUB -q pbatch
+#BSUB -W 01:45
+ 
+module load gcc/7.3.1
+module load cuda/10.2.89
+module load hwloc
+
+cd $HOME/locality_aware-mikethebos/build/benchmarks
+
+export OMP_NUM_THREADS=1
+echo "Running Unthreaded Alltoall Test:"
+jsrun -n4 -r1 -a4 -c4 -g4 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_alltoall
+
+export MV2_USE_ALIGNED_ALLOC=1
+
+export OMP_NUM_THREADS=10
+echo "Running Threaded Alltoall Test with launches"
+jsrun -n4 -r1 -a4 -c40 -g4 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./thread_launches
+
+export OMP_NUM_THREADS=10
+echo "Running Threaded Alltoall Test without launches"
+jsrun -n4 -r1 -a4 -c40 -g4 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./no_thread_launches
+
+export OMP_NUM_THREADS=1
+
+echo "Running Multiproc Alltoall Test with 2 procs:"
+jsrun -n4 -r1 -a8 -c8 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+
+echo "Running Multiproc Alltoall Test with 4 procs:"
+jsrun -n4 -r1 -a16 -c16 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+
+echo "Running Multiproc Alltoall Test with 8 procs:"
+jsrun -n4 -r1 -a32 -c32 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+
+echo "Running Threaded Alltoall Test with 10 threads:"
+jsrun -n4 -r1 -a40 -c40 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall

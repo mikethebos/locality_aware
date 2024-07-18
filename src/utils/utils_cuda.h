@@ -22,6 +22,7 @@
 #define gpuMemcpyDeviceToHost cudaMemcpyDeviceToHost
 #define gpuMemcpyHostToDevice cudaMemcpyHostToDevice
 #define gpuMemcpyDeviceToDevice cudaMemcpyDeviceToDevice
+#define gpuMemset cudaMemset
 
 // Streams
 #define gpuStream_t cudaStream_t
