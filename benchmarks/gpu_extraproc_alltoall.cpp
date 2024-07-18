@@ -172,7 +172,7 @@ int main(int argc, char* argv[])
             int err = compare(std_alltoall, new_alltoall, s);
             if (err >= 0)
             {
-                printf("C2C MPIX Error at IDX %d, rank %d\n", err, rank);
+                printf("C2C MPIX Pairwise Error at IDX %d, rank %d\n", err, rank);
                 MPI_Abort(MPI_COMM_WORLD, 1);
                 return 1;
             }
@@ -180,13 +180,15 @@ int main(int argc, char* argv[])
         }
 
         // Copy-to-CPU 2Thread Alltoall
-        MPI_Win_lock_all(0, send_win);
-        MPI_Win_lock_all(0, recv_win);
+        // MPI_Win_lock_all(0, send_win);
+        // MPI_Win_lock_all(0, recv_win);
         if (gpu_rank == 0)
         {
             gpuMemcpy(send_data_shared, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
         }
+        MPI_Barrier(gpu_comm);
         alltoall(send_data_shared, recv_data_shared, s, gpu_rank+1, master_count, ranks_per_gpu, one_per_gpu_comm);
+        MPI_Barrier(gpu_comm);
         if (gpu_rank == 0)
         {
             gpuMemcpy(recv_data_d, recv_data_shared, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
@@ -194,49 +196,26 @@ int main(int argc, char* argv[])
             int err = compare(std_alltoall, new_alltoall, s);
             if (err >= 0)
             {
-                printf("C2C MPIX Error at IDX %d, rank %d\n", err, rank);
+                printf("C2C %d Processes MPIX Pairwise Error at IDX %d, rank %d\n", ranks_per_gpu, err, rank);
                 MPI_Abort(MPI_COMM_WORLD, 1);
                 return 1;
             }
             gpuMemset(recv_data_d, 0, s*num_procs*sizeof(int));
         }
-        MPI_Win_sync(send_win);
-        MPI_Win_sync(recv_win);
-        MPI_Win_unlock_all(send_win);
-        MPI_Win_unlock_all(recv_win);
-/*
-        if (gpu_rank == 0)
-        { 
-            gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-        }
-        if (gpu_rank < 2)
-        {
-            alltoall(send_data_h, recv_data_h, s, thread_id+1, num_procs, 2);
-        }
-        if (gpu_rank == 0)
-        {
-            gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
-            gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-            int err = compare(std_alltoall, new_alltoall, s);
-            if (err >= 0)
-            {   
-                printf("2Threads MPIX Error at IDX %d, rank %d\n", err, rank);
-                MPI_Abort(MPI_COMM_WORLD, 1);
-                return 1;
-            }
-            gpuMemset(recv_data_d, 0, s*num_procs*sizeof(int));
-        }
-*/   
+        // MPI_Win_sync(send_win);
+        // MPI_Win_sync(recv_win);
+        // MPI_Win_unlock_all(send_win);
+        // MPI_Win_unlock_all(recv_win);
+
         // Time Methods!
 
         // GPU-Aware PMPI Implementation
-        /*
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
         {
-            if (thread_id == 0)
+            if (gpu_rank == 0)
             {
-                PMPI_Alltoall(send_data_d, s, MPI_DOUBLE, recv_data_d, s, MPI_DOUBLE, MPI_COMM_WORLD);
+                PMPI_Alltoall(send_data_d, s, MPI_DOUBLE, recv_data_d, s, MPI_DOUBLE, all_masters_comm);
             }
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
@@ -247,10 +226,10 @@ int main(int argc, char* argv[])
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
         {
-            if (thread_id == 0)
+            if (gpu_rank == 0)
             {
                 gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-                PMPI_Alltoall(send_data_h, s, MPI_DOUBLE, recv_data_h, s, MPI_DOUBLE, MPI_COMM_WORLD);
+                PMPI_Alltoall(send_data_h, s, MPI_DOUBLE, recv_data_h, s, MPI_DOUBLE, all_masters_comm);
                 gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
             }
         }
@@ -262,10 +241,10 @@ int main(int argc, char* argv[])
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
         {
-            if (thread_id == 0)
+            if (gpu_rank == 0)
             {
                 gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-                alltoall(send_data_h, recv_data_h, s, 1, num_procs, 1);
+                alltoall(send_data_h, recv_data_h, s, 1, master_count, 1, all_masters_comm);
                 gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
             }
         }
@@ -278,68 +257,17 @@ int main(int argc, char* argv[])
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
         {
-            if (thread_id == 0) 
-                gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-#pragma barrier
-            if (thread_id < 2)
-                alltoall(send_data_h, recv_data_h, s, thread_id+1, num_procs, 2);
-#pragma barrier
-            if (thread_id == 0)
-                gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
+            if (gpu_rank == 0) 
+                gpuMemcpy(send_data_shared, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+            MPI_Barrier(gpu_comm);
+            alltoall(send_data_shared, recv_data_shared, s, gpu_rank+1, master_count, ranks_per_gpu, one_per_gpu_comm);
+            MPI_Barrier(gpu_comm);
+            if (gpu_rank == 0)
+                gpuMemcpy(recv_data_d, recv_data_shared, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("2 Threads Pairwise Time %e\n", t0);
-   
-        // Copy-to-CPU 4Thread Alltoall
-        t0 = MPI_Wtime();
-        for (int i = 0; i < n_iter; i++)
-        {
-            if (thread_id == 0) 
-                gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-#pragma barrier
-            if (thread_id < 4)
-                alltoall(send_data_h, recv_data_h, s, thread_id+1, num_procs, 4);
-#pragma barrier
-            if (thread_id == 0)
-                gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
-        }
-        tfinal = (MPI_Wtime() - t0) / n_iter;
-        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("4 Threads Pairwise Time %e\n", t0);
-
-        t0 = MPI_Wtime();
-        for (int i = 0; i < n_iter; i++)
-        {   
-            if (thread_id == 0) 
-                gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-#pragma barrier
-            if (thread_id < 8)
-                alltoall(send_data_h, recv_data_h, s, thread_id+1, num_procs, 8);
-#pragma barrier
-            if (thread_id == 0)
-                gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
-        }
-        tfinal = (MPI_Wtime() - t0) / n_iter;
-        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("8 Threads Pairwise Time %e\n", t0);
-
-        t0 = MPI_Wtime();
-        for (int i = 0; i < n_iter; i++)
-        {   
-            if (thread_id == 0) 
-                gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-#pragma barrier
-            if (thread_id < 10)
-                alltoall(send_data_h, recv_data_h, s, thread_id+1, num_procs, 10);
-#pragma barrier
-            if (thread_id == 0)
-                gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
-        }
-        tfinal = (MPI_Wtime() - t0) / n_iter;
-        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("10 Threads Pairwise Time %e\n", t0);
-        */
+        if (rank == 0) printf("%d Processes Pairwise Time %e\n", ranks_per_gpu, t0);   
     }
     MPI_Win_free(&send_win);
     MPI_Win_free(&recv_win);
