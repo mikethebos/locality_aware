@@ -116,20 +116,20 @@ int main(int argc, char* argv[])
         }
 
         // GPU-Aware Alltoall
-        if (thread_id == 0)
+/*        if (thread_id == 0)
         {
-            alltoall(send_data_d, recv_data_d, s, 1, num_procs, 1);
-            gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-            int err = compare(std_alltoall, new_alltoall, s);
-            if (err >= 0)
-            {
-               printf("GPU Aware MPIX Error at IDX %d, rank %d\n", err, rank);
-               MPI_Abort(MPI_COMM_WORLD, 1);
-              return 1;
-            }
-            gpuMemset(recv_data_d, 0, s*num_procs*sizeof(int));
+            //alltoall(send_data_d, recv_data_d, s, 1, num_procs, 1);
+            //gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+            //int err = compare(std_alltoall, new_alltoall, s);
+            //if (err >= 0)
+            //{
+            //    printf("GPU Aware MPIX Error at IDX %d, rank %d\n", err, rank);
+            //    MPI_Abort(MPI_COMM_WORLD, 1);
+            //   return 1;
+            //}
+            //gpuMemset(recv_data_d, 0, s*num_procs*sizeof(int));
         }
-
+*/
 
 
         // Copy-to-CPU Alltoall

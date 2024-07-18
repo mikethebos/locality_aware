@@ -6,8 +6,8 @@
 #BSUB -q pbatch
 #BSUB -W 01:45
  
-module load gcc/7.3.1
-module load cuda/10.2.89
+module load gcc/8.3.1
+module load cuda/11.2.0
 module load hwloc
 
 cd $HOME/locality_aware-mikethebos/build/benchmarks
