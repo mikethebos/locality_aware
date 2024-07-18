@@ -35,6 +35,10 @@ int main(int argc, char* argv[])
     MPIX_Comm* locality_comm;
     MPIX_Comm_init(&locality_comm, MPI_COMM_WORLD);
 
+    int gpu_rank;
+    MPI_Comm_rank(locality_comm->local_comm, &gpu_rank);
+    gpuSetDevice(gpu_rank);
+
     for (int i = 0; i < max_i; i++)
     {
         int s = pow(2, i);
