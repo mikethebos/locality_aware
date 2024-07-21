@@ -158,6 +158,7 @@ int main(int argc, char* argv[])
             if (err >= 0)
             {
                 printf("C2C PMPI Error at IDX %d, rank %d\n", err, rank);
+                fflush(stdout);
                 MPI_Abort(MPI_COMM_WORLD, 1);
                 return 1;
             }
@@ -175,6 +176,7 @@ int main(int argc, char* argv[])
             if (err >= 0)
             {
                 printf("C2C MPIX Pairwise Error at IDX %d, rank %d\n", err, rank);
+                fflush(stdout);
                 MPI_Abort(MPI_COMM_WORLD, 1);
                 return 1;
             }
@@ -199,6 +201,7 @@ int main(int argc, char* argv[])
             if (err >= 0)
             {
                 printf("C2C %d Processes MPIX Pairwise Error at IDX %d, rank %d\n", ranks_per_gpu, err, rank);
+                fflush(stdout);
                 MPI_Abort(MPI_COMM_WORLD, 1);
                 return 1;
             }

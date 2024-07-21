@@ -37,5 +37,5 @@ jsrun -n4 -r1 -a16 -c16 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --laun
 echo "Running Multiproc Alltoall Test with 8 procs:"
 jsrun -n4 -r1 -a32 -c32 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
 
-echo "Running Threaded Alltoall Test with 10 threads:"
+echo "Running Multiproc Alltoall Test with 10 procs:"
 jsrun -n4 -r1 -a40 -c40 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
