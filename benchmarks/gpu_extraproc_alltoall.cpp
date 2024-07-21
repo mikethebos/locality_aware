@@ -121,14 +121,14 @@ int main(int argc, char* argv[])
         MPI_INFO_NULL, gpu_comm, &send_data_shared, &send_win);
     if (gpu_rank != 0)
     {
-        MPI_Win_shared_query(send_win, 0, &remote_win_s, &disp_unit_s, send_data_shared);
+        MPI_Win_shared_query(send_win, 0, &remote_win_s, &disp_unit_s, &send_data_shared);
     }
     
     MPI_Win_allocate_shared(win_size*sizeof(double), sizeof(double), 
         MPI_INFO_NULL, gpu_comm, &recv_data_shared, &recv_win);
     if (gpu_rank != 0)
     {
-        MPI_Win_shared_query(recv_win, 0, &remote_win_r, &disp_unit_r, recv_data_shared);
+        MPI_Win_shared_query(recv_win, 0, &remote_win_r, &disp_unit_r, &recv_data_shared);
     }
 
     for (int i = 0; i < max_i; i++)
