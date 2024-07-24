@@ -184,15 +184,19 @@ int main(int argc, char* argv[])
         }
 
         // Copy-to-CPU 2Thread Alltoall
-        // MPI_Win_lock_all(0, send_win);
-        // MPI_Win_lock_all(0, recv_win);
         if (gpu_rank == 0)
         {
             gpuMemcpy(send_data_shared, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
         }
         MPI_Barrier(gpu_comm);
+        MPI_Win_lock_all(MPI_MODE_NOCHECK, send_win);
+        MPI_Win_lock_all(MPI_MODE_NOCHECK, recv_win);
         alltoall(send_data_shared, recv_data_shared, s, gpu_rank+1, master_count, ranks_per_gpu, one_per_gpu_comm);
-        MPI_Barrier(gpu_comm);
+        MPI_Win_sync(send_win);
+        MPI_Win_sync(recv_win);
+        MPI_Win_unlock_all(send_win);
+        MPI_Win_unlock_all(recv_win);
+        MPI_Barrier(gpu_comm);        
         if (gpu_rank == 0)
         {
             gpuMemcpy(recv_data_d, recv_data_shared, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
@@ -207,10 +211,6 @@ int main(int argc, char* argv[])
             }
             gpuMemset(recv_data_d, 0, s*num_procs*sizeof(int));
         }
-        // MPI_Win_sync(send_win);
-        // MPI_Win_sync(recv_win);
-        // MPI_Win_unlock_all(send_win);
-        // MPI_Win_unlock_all(recv_win);
 
         // Time Methods!
 
@@ -265,7 +265,13 @@ int main(int argc, char* argv[])
             if (gpu_rank == 0) 
                 gpuMemcpy(send_data_shared, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
             MPI_Barrier(gpu_comm);
+            MPI_Win_lock_all(MPI_MODE_NOCHECK, send_win);
+            MPI_Win_lock_all(MPI_MODE_NOCHECK, recv_win);
             alltoall(send_data_shared, recv_data_shared, s, gpu_rank+1, master_count, ranks_per_gpu, one_per_gpu_comm);
+            MPI_Win_sync(send_win);
+            MPI_Win_sync(recv_win);
+            MPI_Win_unlock_all(send_win);
+            MPI_Win_unlock_all(recv_win);
             MPI_Barrier(gpu_comm);
             if (gpu_rank == 0)
                 gpuMemcpy(recv_data_d, recv_data_shared, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
