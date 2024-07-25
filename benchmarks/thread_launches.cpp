@@ -88,35 +88,35 @@ int main(int argc, char* argv[])
         // GPU-Aware PMPI Implementation
         PMPI_Alltoall(send_data_d, s, MPI_DOUBLE, recv_data_d, s, MPI_DOUBLE, MPI_COMM_WORLD);
         gpuMemcpy(std_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(int));
+        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
 
         // Copy-to-CPU PMPI Implementation
         gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
         PMPI_Alltoall(send_data_h, s, MPI_DOUBLE, recv_data_h, s, MPI_DOUBLE, MPI_COMM_WORLD);
         gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-        int err = compare(std_alltoall, new_alltoall, s);
+        int err = compare(std_alltoall, new_alltoall, s*num_procs);
         if (err >= 0)
         {
             printf("C2C PMPI Error at IDX %d, rank %d\n", err, rank);
             MPI_Abort(MPI_COMM_WORLD, 1);
             return 1;
         }
-        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(int));
+        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
 
         // Copy-to-CPU Alltoall
         gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
         alltoall(send_data_h, recv_data_h, s, 1, num_procs, 1);
         gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-        err = compare(std_alltoall, new_alltoall, s);
+        err = compare(std_alltoall, new_alltoall, s*num_procs);
         if (err >= 0)
         {
             printf("C2C MPIX Error at IDX %d, rank %d\n", err, rank);
             MPI_Abort(MPI_COMM_WORLD, 1);
             return 1;
         }
-        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(int));
+        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
 
         // Copy-to-CPU 2Thread Alltoall
         gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
@@ -128,14 +128,14 @@ int main(int argc, char* argv[])
         }
         gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-        err = compare(std_alltoall, new_alltoall, s);
+        err = compare(std_alltoall, new_alltoall, s*num_procs);
         if (err >= 0)
         {   
             printf("2Threads MPIX Error at IDX %d, rank %d\n", err, rank);
             MPI_Abort(MPI_COMM_WORLD, 1);
             return 1;
         }
-        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(int));
+        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
    
        // Copy-to-CPU 4Thread Alltoall
         gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
@@ -147,14 +147,14 @@ int main(int argc, char* argv[])
         }
         gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-        err = compare(std_alltoall, new_alltoall, s);
+        err = compare(std_alltoall, new_alltoall, s*num_procs);
         if (err >= 0)
         {   
             printf("2Threads MPIX Error at IDX %d, rank %d\n", err, rank);
             MPI_Abort(MPI_COMM_WORLD, 1);
             return 1;
         }
-        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(int));
+        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
    
         // Time Methods!
 

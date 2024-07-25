@@ -144,7 +144,7 @@ int main(int argc, char* argv[])
         {
             PMPI_Alltoall(send_data_d, s, MPI_DOUBLE, recv_data_d, s, MPI_DOUBLE, all_masters_comm);
             gpuMemcpy(std_alltoall.data(), recv_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
-            gpuMemset(recv_data_d, 0, s*master_count*sizeof(int));
+            gpuMemset(recv_data_d, 0, s*master_count*sizeof(double));
         }
 
         // Copy-to-CPU PMPI Implementation
@@ -154,7 +154,7 @@ int main(int argc, char* argv[])
             PMPI_Alltoall(send_data_h, s, MPI_DOUBLE, recv_data_h, s, MPI_DOUBLE, all_masters_comm);
             gpuMemcpy(recv_data_d, recv_data_h, s*master_count*sizeof(double), gpuMemcpyHostToDevice);
             gpuMemcpy(new_alltoall.data(), recv_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
-            int err = compare(std_alltoall, new_alltoall, s);
+            int err = compare(std_alltoall, new_alltoall, s*master_count);
             if (err >= 0)
             {
                 printf("C2C PMPI Error at IDX %d, rank %d\n", err, rank);
@@ -162,7 +162,7 @@ int main(int argc, char* argv[])
                 MPI_Abort(MPI_COMM_WORLD, 1);
                 return 1;
             }
-            gpuMemset(recv_data_d, 0, s*master_count*sizeof(int));
+            gpuMemset(recv_data_d, 0, s*master_count*sizeof(double));
         }
 
         // Copy-to-CPU Alltoall
@@ -172,7 +172,7 @@ int main(int argc, char* argv[])
             alltoall(send_data_h, recv_data_h, s, 1, master_count, 1, all_masters_comm);
             gpuMemcpy(recv_data_d, recv_data_h, s*master_count*sizeof(double), gpuMemcpyHostToDevice);
             gpuMemcpy(new_alltoall.data(), recv_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
-            int err = compare(std_alltoall, new_alltoall, s);
+            int err = compare(std_alltoall, new_alltoall, s*master_count);
             if (err >= 0)
             {
                 printf("C2C MPIX Pairwise Error at IDX %d, rank %d\n", err, rank);
@@ -180,7 +180,7 @@ int main(int argc, char* argv[])
                 MPI_Abort(MPI_COMM_WORLD, 1);
                 return 1;
             }
-            gpuMemset(recv_data_d, 0, s*master_count*sizeof(int));
+            gpuMemset(recv_data_d, 0, s*master_count*sizeof(double));
         }
 
         // Copy-to-CPU 2Thread Alltoall
@@ -201,7 +201,7 @@ int main(int argc, char* argv[])
         {
             gpuMemcpy(recv_data_d, recv_data_shared, s*master_count*sizeof(double), gpuMemcpyHostToDevice);
             gpuMemcpy(new_alltoall.data(), recv_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
-            int err = compare(std_alltoall, new_alltoall, s);
+            int err = compare(std_alltoall, new_alltoall, s*master_count);
             if (err >= 0)
             {
                 printf("C2C %d Processes MPIX Pairwise Error at IDX %d, rank %d\n", ranks_per_gpu, err, rank);
@@ -209,7 +209,7 @@ int main(int argc, char* argv[])
                 MPI_Abort(MPI_COMM_WORLD, 1);
                 return 1;
             }
-            gpuMemset(recv_data_d, 0, s*master_count*sizeof(int));
+            gpuMemset(recv_data_d, 0, s*master_count*sizeof(double));
         }
 
         // Time Methods!

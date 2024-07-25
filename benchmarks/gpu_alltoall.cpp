@@ -63,7 +63,7 @@ int main(int argc, char* argv[])
         cudaMemcpy(mpix_alltoall.data(), recv_data_d, s*num_procs*sizeof(double),
                 cudaMemcpyDeviceToHost);
         cudaMemset(recv_data_d, 0, s*num_procs*sizeof(int));
-        for (int j = 0; j < s; j++)
+        for (int j = 0; j < s*num_procs; j++)
 	{
             if (fabs(pmpi_alltoall[j] - mpix_alltoall[j]) > 1e-10)
             {
@@ -86,7 +86,7 @@ int main(int argc, char* argv[])
         cudaMemcpy(mpix_alltoall.data(), recv_data_d, s*num_procs*sizeof(double),
                 cudaMemcpyDeviceToHost);
         cudaMemset(recv_data_d, 0, s*num_procs*sizeof(int));
-        for (int j = 0; j < s; j++)
+        for (int j = 0; j < s*num_procs; j++)
 	{
             if (fabs(pmpi_alltoall[j] - mpix_alltoall[j]) > 1e-10)
             {
@@ -109,7 +109,7 @@ int main(int argc, char* argv[])
         cudaMemcpy(mpix_alltoall.data(), recv_data_d, s*num_procs*sizeof(double),
                 cudaMemcpyDeviceToHost);
         cudaMemset(recv_data_d, 0, s*num_procs*sizeof(int));
-        for (int j = 0; j < s; j++)
+        for (int j = 0; j < s*num_procs; j++)
 	{
             if (fabs(pmpi_alltoall[j] - mpix_alltoall[j]) > 1e-10)
             {
@@ -132,7 +132,7 @@ int main(int argc, char* argv[])
         cudaMemcpy(mpix_alltoall.data(), recv_data_d, s*num_procs*sizeof(double),
                 cudaMemcpyDeviceToHost);
         cudaMemset(recv_data_d, 0, s*num_procs*sizeof(int));
-        for (int j = 0; j < s; j++)
+        for (int j = 0; j < s*num_procs; j++)
 	{
             if (fabs(pmpi_alltoall[j] - mpix_alltoall[j]) > 1e-10)
             {
