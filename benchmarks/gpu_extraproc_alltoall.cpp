@@ -87,10 +87,10 @@ int main(int argc, char* argv[])
     int max_n_iter = 100;
     double t0, tfinal;
     srand(time(NULL));
-    std::vector<double> send_data(max_s*num_procs);
-    std::vector<double> std_alltoall(max_s*num_procs);
-    std::vector<double> new_alltoall(max_s*num_procs);
-    for (int j = 0; j < max_s*num_procs; j++)
+    std::vector<double> send_data(max_s*master_count);
+    std::vector<double> std_alltoall(max_s*master_count);
+    std::vector<double> new_alltoall(max_s*master_count);
+    for (int j = 0; j < max_s*master_count; j++)
         send_data[j] = rand();
 
     double* send_data_d;
@@ -100,11 +100,11 @@ int main(int argc, char* argv[])
 
     if (gpu_rank == 0)
     {
-        gpuMalloc((void**)(&send_data_d), max_s*num_procs*sizeof(double));
-        gpuMalloc((void**)(&recv_data_d), max_s*num_procs*sizeof(double));
-        gpuMemcpy(send_data_d, send_data.data(), max_s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
-        gpuMallocHost((void**)(&send_data_h), max_s*num_procs*sizeof(double));
-        gpuMallocHost((void**)(&recv_data_h), max_s*num_procs*sizeof(double));
+        gpuMalloc((void**)(&send_data_d), max_s*master_count*sizeof(double));
+        gpuMalloc((void**)(&recv_data_d), max_s*master_count*sizeof(double));
+        gpuMemcpy(send_data_d, send_data.data(), max_s*master_count*sizeof(double), gpuMemcpyHostToDevice);
+        gpuMallocHost((void**)(&send_data_h), max_s*master_count*sizeof(double));
+        gpuMallocHost((void**)(&recv_data_h), max_s*master_count*sizeof(double));
     }
 
     double* send_data_shared;
@@ -113,7 +113,7 @@ int main(int argc, char* argv[])
     int win_size = 0;
     if (gpu_rank == 0)
     {
-        win_size = max_s*num_procs;
+        win_size = max_s*master_count;
     }
     MPI_Aint remote_win_s, remote_win_r;
     int disp_unit_s, disp_unit_r;
@@ -143,17 +143,17 @@ int main(int argc, char* argv[])
         if (gpu_rank == 0)
         {
             PMPI_Alltoall(send_data_d, s, MPI_DOUBLE, recv_data_d, s, MPI_DOUBLE, all_masters_comm);
-            gpuMemcpy(std_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-            gpuMemset(recv_data_d, 0, s*num_procs*sizeof(int));
+            gpuMemcpy(std_alltoall.data(), recv_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
+            gpuMemset(recv_data_d, 0, s*master_count*sizeof(int));
         }
 
         // Copy-to-CPU PMPI Implementation
         if (gpu_rank == 0)
         {
-            gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+            gpuMemcpy(send_data_h, send_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
             PMPI_Alltoall(send_data_h, s, MPI_DOUBLE, recv_data_h, s, MPI_DOUBLE, all_masters_comm);
-            gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
-            gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+            gpuMemcpy(recv_data_d, recv_data_h, s*master_count*sizeof(double), gpuMemcpyHostToDevice);
+            gpuMemcpy(new_alltoall.data(), recv_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
             int err = compare(std_alltoall, new_alltoall, s);
             if (err >= 0)
             {
@@ -162,16 +162,16 @@ int main(int argc, char* argv[])
                 MPI_Abort(MPI_COMM_WORLD, 1);
                 return 1;
             }
-            gpuMemset(recv_data_d, 0, s*num_procs*sizeof(int));
+            gpuMemset(recv_data_d, 0, s*master_count*sizeof(int));
         }
 
         // Copy-to-CPU Alltoall
         if (gpu_rank == 0)
         {
-            gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+            gpuMemcpy(send_data_h, send_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
             alltoall(send_data_h, recv_data_h, s, 1, master_count, 1, all_masters_comm);
-            gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
-            gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+            gpuMemcpy(recv_data_d, recv_data_h, s*master_count*sizeof(double), gpuMemcpyHostToDevice);
+            gpuMemcpy(new_alltoall.data(), recv_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
             int err = compare(std_alltoall, new_alltoall, s);
             if (err >= 0)
             {
@@ -180,13 +180,13 @@ int main(int argc, char* argv[])
                 MPI_Abort(MPI_COMM_WORLD, 1);
                 return 1;
             }
-            gpuMemset(recv_data_d, 0, s*num_procs*sizeof(int));
+            gpuMemset(recv_data_d, 0, s*master_count*sizeof(int));
         }
 
         // Copy-to-CPU 2Thread Alltoall
         if (gpu_rank == 0)
         {
-            gpuMemcpy(send_data_shared, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+            gpuMemcpy(send_data_shared, send_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
         }
         MPI_Barrier(gpu_comm);
         MPI_Win_lock_all(MPI_MODE_NOCHECK, send_win);
@@ -199,8 +199,8 @@ int main(int argc, char* argv[])
         MPI_Barrier(gpu_comm);        
         if (gpu_rank == 0)
         {
-            gpuMemcpy(recv_data_d, recv_data_shared, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
-            gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+            gpuMemcpy(recv_data_d, recv_data_shared, s*master_count*sizeof(double), gpuMemcpyHostToDevice);
+            gpuMemcpy(new_alltoall.data(), recv_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
             int err = compare(std_alltoall, new_alltoall, s);
             if (err >= 0)
             {
@@ -209,7 +209,7 @@ int main(int argc, char* argv[])
                 MPI_Abort(MPI_COMM_WORLD, 1);
                 return 1;
             }
-            gpuMemset(recv_data_d, 0, s*num_procs*sizeof(int));
+            gpuMemset(recv_data_d, 0, s*master_count*sizeof(int));
         }
 
         // Time Methods!
@@ -233,9 +233,9 @@ int main(int argc, char* argv[])
         {
             if (gpu_rank == 0)
             {
-                gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+                gpuMemcpy(send_data_h, send_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
                 PMPI_Alltoall(send_data_h, s, MPI_DOUBLE, recv_data_h, s, MPI_DOUBLE, all_masters_comm);
-                gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
+                gpuMemcpy(recv_data_d, recv_data_h, s*master_count*sizeof(double), gpuMemcpyHostToDevice);
             }
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
@@ -248,9 +248,9 @@ int main(int argc, char* argv[])
         {
             if (gpu_rank == 0)
             {
-                gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+                gpuMemcpy(send_data_h, send_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
                 alltoall(send_data_h, recv_data_h, s, 1, master_count, 1, all_masters_comm);
-                gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
+                gpuMemcpy(recv_data_d, recv_data_h, s*master_count*sizeof(double), gpuMemcpyHostToDevice);
             }
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
@@ -263,7 +263,7 @@ int main(int argc, char* argv[])
         for (int i = 0; i < n_iter; i++)
         {
             if (gpu_rank == 0) 
-                gpuMemcpy(send_data_shared, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+                gpuMemcpy(send_data_shared, send_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
             MPI_Barrier(gpu_comm);
             MPI_Win_lock_all(MPI_MODE_NOCHECK, send_win);
             MPI_Win_lock_all(MPI_MODE_NOCHECK, recv_win);
@@ -274,7 +274,7 @@ int main(int argc, char* argv[])
             MPI_Win_unlock_all(recv_win);
             MPI_Barrier(gpu_comm);
             if (gpu_rank == 0)
-                gpuMemcpy(recv_data_d, recv_data_shared, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
+                gpuMemcpy(recv_data_d, recv_data_shared, s*master_count*sizeof(double), gpuMemcpyHostToDevice);
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
