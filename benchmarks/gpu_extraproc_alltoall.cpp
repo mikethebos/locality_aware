@@ -190,11 +190,9 @@ int main(int argc, char* argv[])
             gpuMemcpy(send_data_shared, send_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
         }
         MPI_Win_sync(send_win);
-        MPI_Win_sync(send_win);
         MPI_Barrier(gpu_comm);
         MPI_Win_lock_all(MPI_MODE_NOCHECK, recv_win);
         alltoall(send_data_shared, recv_data_shared, s, gpu_rank, master_count, ranks_per_gpu, one_per_gpu_comm);
-        MPI_Win_sync(recv_win);
         MPI_Win_sync(recv_win);
         MPI_Win_unlock_all(send_win);
         MPI_Barrier(gpu_comm); // needed
