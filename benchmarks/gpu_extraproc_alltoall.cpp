@@ -184,7 +184,6 @@ int main(int argc, char* argv[])
         }
 
         // Copy-to-CPU 2Thread Alltoall
-        MPI_Barrier(gpu_comm); // hang if proc per gpu == 1
         MPI_Win_lock_all(MPI_MODE_NOCHECK, send_win);
         if (gpu_rank == 0)
         {
@@ -198,12 +197,11 @@ int main(int argc, char* argv[])
         MPI_Win_sync(recv_win);
         MPI_Win_sync(recv_win);
         MPI_Win_unlock_all(send_win);
-        MPI_Barrier(gpu_comm);
+        MPI_Barrier(gpu_comm); // needed
         if (gpu_rank == 0)
         {
             cudaMemcpy(recv_data_d, recv_data_shared, s*master_count*sizeof(double), cudaMemcpyHostToDevice);
         }
-        MPI_Barrier(gpu_comm);
         MPI_Win_unlock_all(recv_win);
         if (gpu_rank == 0)
         {
