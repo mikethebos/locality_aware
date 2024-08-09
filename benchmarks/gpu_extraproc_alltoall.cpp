@@ -184,22 +184,33 @@ int main(int argc, char* argv[])
         }
 
         // Copy-to-CPU 2Thread Alltoall
+        MPI_Barrier(gpu_comm); // hang if proc per gpu == 1
+        MPI_Win_lock_all(MPI_MODE_NOCHECK, send_win);
+        MPI_Win_sync(send_win);
+        MPI_Win_sync(send_win);
         if (gpu_rank == 0)
         {
             gpuMemcpy(send_data_shared, send_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
         }
-        MPI_Barrier(gpu_comm);
-        MPI_Win_lock_all(MPI_MODE_NOCHECK, send_win);
-        MPI_Win_lock_all(MPI_MODE_NOCHECK, recv_win);
-        alltoall(send_data_shared, recv_data_shared, s, gpu_rank+1, master_count, ranks_per_gpu, one_per_gpu_comm);
         MPI_Win_sync(send_win);
+        MPI_Win_sync(send_win);
+        MPI_Barrier(gpu_comm);
+        MPI_Win_lock_all(MPI_MODE_NOCHECK, recv_win);
+        MPI_Win_sync(recv_win);
+        MPI_Win_sync(recv_win);
+        alltoall(send_data_shared, recv_data_shared, s, gpu_rank, master_count, ranks_per_gpu, one_per_gpu_comm);
+        MPI_Win_sync(recv_win);
         MPI_Win_sync(recv_win);
         MPI_Win_unlock_all(send_win);
-        MPI_Win_unlock_all(recv_win);
-        MPI_Barrier(gpu_comm);        
+        MPI_Barrier(gpu_comm);
         if (gpu_rank == 0)
         {
-            gpuMemcpy(recv_data_d, recv_data_shared, s*master_count*sizeof(double), gpuMemcpyHostToDevice);
+            cudaMemcpy(recv_data_d, recv_data_shared, s*master_count*sizeof(double), cudaMemcpyHostToDevice);
+        }
+        MPI_Barrier(gpu_comm);
+        MPI_Win_unlock_all(recv_win);
+        if (gpu_rank == 0)
+        {
             gpuMemcpy(new_alltoall.data(), recv_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
             int err = compare(std_alltoall, new_alltoall, s*master_count);
             if (err >= 0)
@@ -211,7 +222,7 @@ int main(int argc, char* argv[])
             }
             gpuMemset(recv_data_d, 0, s*master_count*sizeof(double));
         }
-
+/*
         // Time Methods!
 
         // GPU-Aware PMPI Implementation
@@ -279,20 +290,27 @@ int main(int argc, char* argv[])
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0) printf("%d Processes Pairwise Time %e\n", ranks_per_gpu, t0);   
+        */
     }
     MPI_Win_free(&send_win);
     MPI_Win_free(&recv_win);
 
     MPI_Comm_free(&gpu_comm);
-    MPI_Comm_free(&all_masters_comm);
+    if (gpu_rank == 0)
+    {
+        MPI_Comm_free(&all_masters_comm);
+    }
     MPI_Comm_free(&one_per_gpu_comm);
 
     MPIX_Comm_free(xcomm);
 
-    gpuFree(send_data_d);
-    gpuFree(recv_data_d);
-    gpuFreeHost(send_data_h);
-    gpuFreeHost(recv_data_h);
+    if (gpu_rank == 0)
+    {
+        gpuFree(send_data_d);
+        gpuFree(recv_data_d);
+        gpuFreeHost(send_data_h);
+        gpuFreeHost(recv_data_h);
+    }
 
     MPI_Finalize();
     return 0;
