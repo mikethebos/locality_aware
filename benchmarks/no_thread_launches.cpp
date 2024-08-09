@@ -116,27 +116,26 @@ int main(int argc, char* argv[])
         }
 
         // GPU-Aware Alltoall
-/*        if (thread_id == 0)
+        if (thread_id == 0)
         {
-            //alltoall(send_data_d, recv_data_d, s, 1, num_procs, 1);
-            //gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-            //int err = compare(std_alltoall, new_alltoall, s);
-            //if (err >= 0)
-            //{
-            //    printf("GPU Aware MPIX Error at IDX %d, rank %d\n", err, rank);
-            //    MPI_Abort(MPI_COMM_WORLD, 1);
-            //   return 1;
-            //}
-            //gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
+            alltoall(send_data_d, recv_data_d, s, 0, num_procs, 1);
+            gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+            int err = compare(std_alltoall, new_alltoall, s);
+            if (err >= 0)
+            {
+               printf("GPU Aware MPIX Error at IDX %d, rank %d\n", err, rank);
+               MPI_Abort(MPI_COMM_WORLD, 1);
+              return 1;
+            }
+            gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
         }
-*/
 
 
         // Copy-to-CPU Alltoall
         if (thread_id == 0)
         {
             gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-            alltoall(send_data_h, recv_data_h, s, 1, num_procs, 1);
+            alltoall(send_data_h, recv_data_h, s, 0, num_procs, 1);
             gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
             gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
             int err = compare(std_alltoall, new_alltoall, s*num_procs);
@@ -154,7 +153,7 @@ int main(int argc, char* argv[])
             gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
 #pragma barrier
         if (thread_id < 2)
-            alltoall(send_data_h, recv_data_h, s, thread_id+1, num_procs, 2);
+            alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, 2);
 #pragma barrier
         if (thread_id == 0)
             gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
@@ -177,7 +176,7 @@ int main(int argc, char* argv[])
             gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
 #pragma barrier
         if (thread_id < 4)
-            alltoall(send_data_h, recv_data_h, s, thread_id+1, num_procs, 4);
+            alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, 4);
 #pragma barrier
         if (thread_id == 0)
             gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
@@ -195,6 +194,51 @@ int main(int argc, char* argv[])
             gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
         }
 
+       // Copy-to-CPU 8Thread Alltoall
+        if (thread_id == 0) 
+            gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+#pragma barrier
+        if (thread_id < 8)
+            alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, 8);
+#pragma barrier
+        if (thread_id == 0)
+            gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
+
+        if (thread_id == 0)
+        {   
+            gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+            int err = compare(std_alltoall, new_alltoall, s*num_procs);
+            if (err >= 0)
+            {   
+                printf("8Threads MPIX Error at IDX %d, rank %d\n", err, rank);
+                MPI_Abort(MPI_COMM_WORLD, 1);
+                return 1;
+            }
+            gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
+        }
+        
+       // Copy-to-CPU 10Thread Alltoall
+        if (thread_id == 0) 
+            gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+#pragma barrier
+        if (thread_id < 10)
+            alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, 10);
+#pragma barrier
+        if (thread_id == 0)
+            gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
+
+        if (thread_id == 0)
+        {   
+            gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+            int err = compare(std_alltoall, new_alltoall, s*num_procs);
+            if (err >= 0)
+            {   
+                printf("10Threads MPIX Error at IDX %d, rank %d\n", err, rank);
+                MPI_Abort(MPI_COMM_WORLD, 1);
+                return 1;
+            }
+            gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
+        }
    
         // Time Methods!
 
@@ -233,7 +277,7 @@ int main(int argc, char* argv[])
             if (thread_id == 0)
             {
                 gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-                alltoall(send_data_h, recv_data_h, s, 1, num_procs, 1);
+                alltoall(send_data_h, recv_data_h, s, 0, num_procs, 1);
                 gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
             }
         }
@@ -241,6 +285,18 @@ int main(int argc, char* argv[])
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0) printf("Copy-to-CPU Pairwise Time %e\n", t0);
   
+        // GPU-Aware Alltoall
+        t0 = MPI_Wtime();
+        for (int i = 0; i < n_iter; i++)
+        {
+            if (thread_id == 0)
+            {
+                alltoall(send_data_d, recv_data_d, s, 0, num_procs, 1);
+            }
+        }
+        tfinal = (MPI_Wtime() - t0) / n_iter;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0) printf("GPU Aware Pairwise Time %e\n", t0);
 
         // Copy-to-CPU 2Thread Alltoall
         t0 = MPI_Wtime();
@@ -250,7 +306,7 @@ int main(int argc, char* argv[])
                 gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
 #pragma barrier
             if (thread_id < 2)
-                alltoall(send_data_h, recv_data_h, s, thread_id+1, num_procs, 2);
+                alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, 2);
 #pragma barrier
             if (thread_id == 0)
                 gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
@@ -267,7 +323,7 @@ int main(int argc, char* argv[])
                 gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
 #pragma barrier
             if (thread_id < 4)
-                alltoall(send_data_h, recv_data_h, s, thread_id+1, num_procs, 4);
+                alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, 4);
 #pragma barrier
             if (thread_id == 0)
                 gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
@@ -283,7 +339,7 @@ int main(int argc, char* argv[])
                 gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
 #pragma barrier
             if (thread_id < 8)
-                alltoall(send_data_h, recv_data_h, s, thread_id+1, num_procs, 8);
+                alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, 8);
 #pragma barrier
             if (thread_id == 0)
                 gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
@@ -299,7 +355,7 @@ int main(int argc, char* argv[])
                 gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
 #pragma barrier
             if (thread_id < 10)
-                alltoall(send_data_h, recv_data_h, s, thread_id+1, num_procs, 10);
+                alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, 10);
 #pragma barrier
             if (thread_id == 0)
                 gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);

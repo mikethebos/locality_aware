@@ -106,7 +106,7 @@ int main(int argc, char* argv[])
 
         // Copy-to-CPU Alltoall
         gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-        alltoall(send_data_h, recv_data_h, s, 1, num_procs, 1);
+        alltoall(send_data_h, recv_data_h, s, 0, num_procs, 1);
         gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
         err = compare(std_alltoall, new_alltoall, s*num_procs);
@@ -124,7 +124,7 @@ int main(int argc, char* argv[])
         {
             int thread_id = omp_get_thread_num();
             int num_threads = omp_get_num_threads();
-            alltoall(send_data_h, recv_data_h, s, thread_id+1, num_procs, num_threads);
+            alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, num_threads);
         }
         gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
@@ -143,14 +143,52 @@ int main(int argc, char* argv[])
         {
             int thread_id = omp_get_thread_num();
             int num_threads = omp_get_num_threads();
-            alltoall(send_data_h, recv_data_h, s, thread_id+1, num_procs, num_threads);
+            alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, num_threads);
         }
         gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
         err = compare(std_alltoall, new_alltoall, s*num_procs);
         if (err >= 0)
         {   
-            printf("2Threads MPIX Error at IDX %d, rank %d\n", err, rank);
+            printf("4Threads MPIX Error at IDX %d, rank %d\n", err, rank);
+            MPI_Abort(MPI_COMM_WORLD, 1);
+            return 1;
+        }
+        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
+        
+       // Copy-to-CPU 8Thread Alltoall
+        gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+        #pragma parallel num_threads(8)
+        {
+            int thread_id = omp_get_thread_num();
+            int num_threads = omp_get_num_threads();
+            alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, num_threads);
+        }
+        gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
+        gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+        err = compare(std_alltoall, new_alltoall, s*num_procs);
+        if (err >= 0)
+        {   
+            printf("8Threads MPIX Error at IDX %d, rank %d\n", err, rank);
+            MPI_Abort(MPI_COMM_WORLD, 1);
+            return 1;
+        }
+        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
+
+       // Copy-to-CPU 10Thread Alltoall
+        gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+        #pragma parallel num_threads(10)
+        {
+            int thread_id = omp_get_thread_num();
+            int num_threads = omp_get_num_threads();
+            alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, num_threads);
+        }
+        gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
+        gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+        err = compare(std_alltoall, new_alltoall, s*num_procs);
+        if (err >= 0)
+        {   
+            printf("10Threads MPIX Error at IDX %d, rank %d\n", err, rank);
             MPI_Abort(MPI_COMM_WORLD, 1);
             return 1;
         }
@@ -185,7 +223,7 @@ int main(int argc, char* argv[])
         for (int i = 0; i < n_iter; i++)
         {
             gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-            alltoall(send_data_h, recv_data_h, s, 1, num_procs, 1);
+            alltoall(send_data_h, recv_data_h, s, 0, num_procs, 1);
             gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
@@ -202,7 +240,7 @@ int main(int argc, char* argv[])
             {
                 int thread_id = omp_get_thread_num();
                 int num_threads = omp_get_num_threads();
-                alltoall(send_data_h, recv_data_h, s, thread_id+1, num_procs, num_threads);
+                alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, num_threads);
             }
             gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         }
@@ -219,7 +257,7 @@ int main(int argc, char* argv[])
             {
                 int thread_id = omp_get_thread_num();
                 int num_threads = omp_get_num_threads();
-                alltoall(send_data_h, recv_data_h, s, thread_id+1, num_procs, num_threads);
+                alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, num_threads);
             }
             gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         }
@@ -235,7 +273,7 @@ int main(int argc, char* argv[])
             {
                 int thread_id = omp_get_thread_num();
                 int num_threads = omp_get_num_threads();
-                alltoall(send_data_h, recv_data_h, s, thread_id+1, num_procs, num_threads);
+                alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, num_threads);
             }
             gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         }
@@ -251,7 +289,7 @@ int main(int argc, char* argv[])
             {
                 int thread_id = omp_get_thread_num();
                 int num_threads = omp_get_num_threads();
-                alltoall(send_data_h, recv_data_h, s, thread_id+1, num_procs, num_threads);
+                alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, num_threads);
             }
             gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         }

@@ -169,7 +169,7 @@ int main(int argc, char* argv[])
         if (gpu_rank == 0)
         {
             gpuMemcpy(send_data_h, send_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
-            alltoall(send_data_h, recv_data_h, s, 1, master_count, 1, all_masters_comm);
+            alltoall(send_data_h, recv_data_h, s, 0, master_count, 1, all_masters_comm);
             gpuMemcpy(recv_data_d, recv_data_h, s*master_count*sizeof(double), gpuMemcpyHostToDevice);
             gpuMemcpy(new_alltoall.data(), recv_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
             int err = compare(std_alltoall, new_alltoall, s*master_count);
