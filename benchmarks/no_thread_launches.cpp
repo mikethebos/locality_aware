@@ -115,6 +115,7 @@ int main(int argc, char* argv[])
             gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
         }
 
+/*
         // GPU-Aware Alltoall
         if (thread_id == 0)
         {
@@ -129,7 +130,7 @@ int main(int argc, char* argv[])
             }
             gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
         }
-
+*/
 
         // Copy-to-CPU Alltoall
         if (thread_id == 0)
@@ -284,7 +285,8 @@ int main(int argc, char* argv[])
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0) printf("Copy-to-CPU Pairwise Time %e\n", t0);
-  
+
+/*  
         // GPU-Aware Alltoall
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
@@ -297,6 +299,7 @@ int main(int argc, char* argv[])
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0) printf("GPU Aware Pairwise Time %e\n", t0);
+*/
 
         // Copy-to-CPU 2Thread Alltoall
         t0 = MPI_Wtime();

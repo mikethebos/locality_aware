@@ -186,8 +186,6 @@ int main(int argc, char* argv[])
         // Copy-to-CPU 2Thread Alltoall
         MPI_Barrier(gpu_comm); // hang if proc per gpu == 1
         MPI_Win_lock_all(MPI_MODE_NOCHECK, send_win);
-        MPI_Win_sync(send_win);
-        MPI_Win_sync(send_win);
         if (gpu_rank == 0)
         {
             gpuMemcpy(send_data_shared, send_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
@@ -196,8 +194,6 @@ int main(int argc, char* argv[])
         MPI_Win_sync(send_win);
         MPI_Barrier(gpu_comm);
         MPI_Win_lock_all(MPI_MODE_NOCHECK, recv_win);
-        MPI_Win_sync(recv_win);
-        MPI_Win_sync(recv_win);
         alltoall(send_data_shared, recv_data_shared, s, gpu_rank, master_count, ranks_per_gpu, one_per_gpu_comm);
         MPI_Win_sync(recv_win);
         MPI_Win_sync(recv_win);
