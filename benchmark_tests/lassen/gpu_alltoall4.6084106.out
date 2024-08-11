@@ -1,0 +1,614 @@
+Running Unthreaded Alltoall Test:
+Testing Size 1
+PMPI_Alltoall Time 6.878835e-05
+GPU-Aware Pairwise Exchange Time 1.996427e-03
+GPU-Aware Nonblocking Time 2.125252e-03
+Copy-to-CPU Pairwise Exchange Time 1.733019e-03
+Copy-to-CPU Nonblocking Time 1.723825e-03
+Testing Size 2
+PMPI_Alltoall Time 6.794346e-05
+GPU-Aware Pairwise Exchange Time 1.959898e-03
+GPU-Aware Nonblocking Time 2.036996e-03
+Copy-to-CPU Pairwise Exchange Time 1.749458e-03
+Copy-to-CPU Nonblocking Time 1.673868e-03
+Testing Size 4
+PMPI_Alltoall Time 6.771439e-05
+GPU-Aware Pairwise Exchange Time 2.083039e-03
+GPU-Aware Nonblocking Time 1.777464e-03
+Copy-to-CPU Pairwise Exchange Time 1.711505e-03
+Copy-to-CPU Nonblocking Time 1.699000e-03
+Testing Size 8
+PMPI_Alltoall Time 1.416854e-04
+GPU-Aware Pairwise Exchange Time 1.946927e-03
+GPU-Aware Nonblocking Time 1.731267e-03
+Copy-to-CPU Pairwise Exchange Time 2.022482e-03
+Copy-to-CPU Nonblocking Time 1.806223e-03
+Testing Size 16
+PMPI_Alltoall Time 7.042605e-05
+GPU-Aware Pairwise Exchange Time 2.022233e-03
+GPU-Aware Nonblocking Time 2.011679e-03
+Copy-to-CPU Pairwise Exchange Time 1.792520e-03
+Copy-to-CPU Nonblocking Time 1.622746e-03
+Testing Size 32
+PMPI_Alltoall Time 7.266600e-05
+GPU-Aware Pairwise Exchange Time 2.046429e-03
+GPU-Aware Nonblocking Time 1.810473e-03
+Copy-to-CPU Pairwise Exchange Time 1.711826e-03
+Copy-to-CPU Nonblocking Time 2.059735e-03
+Testing Size 64
+PMPI_Alltoall Time 7.631401e-05
+GPU-Aware Pairwise Exchange Time 1.955001e-03
+GPU-Aware Nonblocking Time 1.770484e-03
+Copy-to-CPU Pairwise Exchange Time 1.684052e-03
+Copy-to-CPU Nonblocking Time 1.727786e-03
+Testing Size 128
+PMPI_Alltoall Time 7.814223e-05
+GPU-Aware Pairwise Exchange Time 2.000624e-03
+GPU-Aware Nonblocking Time 1.747614e-03
+Copy-to-CPU Pairwise Exchange Time 1.714175e-03
+Copy-to-CPU Nonblocking Time 1.671226e-03
+Testing Size 256
+PMPI_Alltoall Time 7.782343e-05
+GPU-Aware Pairwise Exchange Time 2.016875e-03
+GPU-Aware Nonblocking Time 1.768208e-03
+Copy-to-CPU Pairwise Exchange Time 2.195646e-03
+Copy-to-CPU Nonblocking Time 1.739093e-03
+Testing Size 512
+PMPI_Alltoall Time 9.120781e-05
+GPU-Aware Pairwise Exchange Time 1.994108e-03
+GPU-Aware Nonblocking Time 1.917892e-03
+Copy-to-CPU Pairwise Exchange Time 2.259249e-03
+Copy-to-CPU Nonblocking Time 1.734098e-03
+Testing Size 1024
+PMPI_Alltoall Time 1.213405e-04
+GPU-Aware Pairwise Exchange Time 1.936081e-03
+GPU-Aware Nonblocking Time 1.772369e-03
+Copy-to-CPU Pairwise Exchange Time 1.796199e-03
+Copy-to-CPU Nonblocking Time 1.700796e-03
+Testing Size 2048
+PMPI_Alltoall Time 1.749757e-04
+GPU-Aware Pairwise Exchange Time 2.004043e-03
+GPU-Aware Nonblocking Time 1.735633e-03
+Copy-to-CPU Pairwise Exchange Time 1.988466e-03
+Copy-to-CPU Nonblocking Time 1.766915e-03
+Testing Size 4096
+PMPI_Alltoall Time 2.780227e-04
+GPU-Aware Pairwise Exchange Time 2.113193e-03
+GPU-Aware Nonblocking Time 1.760221e-03
+Copy-to-CPU Pairwise Exchange Time 1.928365e-03
+Copy-to-CPU Nonblocking Time 1.722131e-03
+Testing Size 8192
+PMPI_Alltoall Time 4.823527e-04
+GPU-Aware Pairwise Exchange Time 2.096444e-03
+GPU-Aware Nonblocking Time 1.787718e-03
+Copy-to-CPU Pairwise Exchange Time 2.128428e-03
+Copy-to-CPU Nonblocking Time 1.895997e-03
+Testing Size 16384
+PMPI_Alltoall Time 7.394454e-04
+GPU-Aware Pairwise Exchange Time 4.200364e-03
+GPU-Aware Nonblocking Time 3.847461e-03
+Copy-to-CPU Pairwise Exchange Time 6.982985e-03
+Copy-to-CPU Nonblocking Time 5.038811e-03
+Testing Size 32768
+PMPI_Alltoall Time 1.390931e-03
+GPU-Aware Pairwise Exchange Time 6.010999e-03
+GPU-Aware Nonblocking Time 5.092992e-03
+Copy-to-CPU Pairwise Exchange Time 8.804228e-03
+Copy-to-CPU Nonblocking Time 6.683511e-03
+Testing Size 65536
+PMPI_Alltoall Time 2.583351e-03
+GPU-Aware Pairwise Exchange Time 8.674195e-03
+GPU-Aware Nonblocking Time 7.987844e-03
+Copy-to-CPU Pairwise Exchange Time 1.296736e-02
+Copy-to-CPU Nonblocking Time 1.058634e-02
+Testing Size 131072
+PMPI_Alltoall Time 4.797120e-03
+GPU-Aware Pairwise Exchange Time 1.588001e-02
+GPU-Aware Nonblocking Time 1.496514e-02
+Copy-to-CPU Pairwise Exchange Time 2.176667e-02
+Copy-to-CPU Nonblocking Time 1.879749e-02
+Testing Size 262144
+PMPI_Alltoall Time 9.229158e-03
+GPU-Aware Pairwise Exchange Time 3.290553e-02
+GPU-Aware Nonblocking Time 3.150814e-02
+Copy-to-CPU Pairwise Exchange Time 4.078303e-02
+Copy-to-CPU Nonblocking Time 3.705640e-02
+Testing Size 524288
+PMPI_Alltoall Time 1.743915e-02
+GPU-Aware Pairwise Exchange Time 6.804299e-02
+GPU-Aware Nonblocking Time 6.703254e-02
+Copy-to-CPU Pairwise Exchange Time 7.727426e-02
+Copy-to-CPU Nonblocking Time 7.238232e-02
+app 0: ./gpu_alltoall 
+rank: 0: { host: 1; cpu: {0-3}, {4-7,80-87} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 1: { host: 1; cpu: {4-7}, {0-3,80-87} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 2: { host: 1; cpu: {80-83}, {0-7,84-87} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 3: { host: 1; cpu: {84-87}, {0-7,80-83} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 4: { host: 2; cpu: {0-3}, {4-7,80-87} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 5: { host: 2; cpu: {4-7}, {0-3,80-87} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 6: { host: 2; cpu: {80-83}, {0-7,84-87} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 7: { host: 2; cpu: {84-87}, {0-7,80-83} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 8: { host: 3; cpu: {0-3}, {4-7,80-87} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 9: { host: 3; cpu: {4-7}, {0-3,80-87} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 10: { host: 3; cpu: {80-83}, {0-7,84-87} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 11: { host: 3; cpu: {84-87}, {0-7,80-83} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 12: { host: 4; cpu: {0-3}, {4-7,80-87} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 13: { host: 4; cpu: {4-7}, {0-3,80-87} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 14: { host: 4; cpu: {80-83}, {0-7,84-87} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 15: { host: 4; cpu: {84-87}, {0-7,80-83} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+Running Threaded Alltoall Test with 2 threads:
+Testing Size 1
+PMPI_Alltoall Time 6.800829e-05
+Threaded Pairwise Exchange Time 7.712084e-03
+Threaded Nonblocking Time 5.207637e-03
+Testing Size 2
+PMPI_Alltoall Time 6.421361e-05
+Threaded Pairwise Exchange Time 1.010626e-02
+Threaded Nonblocking Time 4.134706e-03
+Testing Size 4
+PMPI_Alltoall Time 6.933699e-05
+Threaded Pairwise Exchange Time 7.851203e-03
+Threaded Nonblocking Time 4.276339e-03
+Testing Size 8
+PMPI_Alltoall Time 6.482807e-05
+Threaded Pairwise Exchange Time 6.955894e-03
+Threaded Nonblocking Time 4.322827e-03
+Testing Size 16
+PMPI_Alltoall Time 1.454689e-04
+Threaded Pairwise Exchange Time 7.664019e-03
+Threaded Nonblocking Time 4.998638e-03
+Testing Size 32
+PMPI_Alltoall Time 6.862117e-05
+Threaded Pairwise Exchange Time 4.862926e-03
+Threaded Nonblocking Time 8.171679e-03
+Testing Size 64
+PMPI_Alltoall Time 7.263397e-05
+Threaded Pairwise Exchange Time 6.073450e-03
+Threaded Nonblocking Time 7.659315e-03
+Testing Size 128
+PMPI_Alltoall Time 8.241703e-05
+Threaded Pairwise Exchange Time 5.639141e-03
+Threaded Nonblocking Time 9.173082e-03
+Testing Size 256
+PMPI_Alltoall Time 7.399584e-05
+Threaded Pairwise Exchange Time 6.175221e-03
+Threaded Nonblocking Time 7.284523e-03
+Testing Size 512
+PMPI_Alltoall Time 1.379716e-04
+Threaded Pairwise Exchange Time 7.532510e-03
+Threaded Nonblocking Time 4.866345e-03
+Testing Size 1024
+PMPI_Alltoall Time 1.168021e-04
+Threaded Pairwise Exchange Time 4.332602e-03
+Threaded Nonblocking Time 4.591928e-03
+Testing Size 2048
+PMPI_Alltoall Time 1.559865e-04
+Threaded Pairwise Exchange Time 5.477014e-03
+Threaded Nonblocking Time 6.030803e-03
+Testing Size 4096
+PMPI_Alltoall Time 2.521284e-04
+Threaded Pairwise Exchange Time 7.645261e-03
+Threaded Nonblocking Time 5.468950e-03
+Testing Size 8192
+PMPI_Alltoall Time 4.283059e-04
+Threaded Pairwise Exchange Time 5.381314e-03
+Threaded Nonblocking Time 1.399011e-02
+Testing Size 16384
+PMPI_Alltoall Time 7.098477e-04
+Threaded Pairwise Exchange Time 1.093866e-01
+Threaded Nonblocking Time 8.848046e-02
+Testing Size 32768
+PMPI_Alltoall Time 1.366563e-03
+Threaded Pairwise Exchange Time 1.155485e-01
+Threaded Nonblocking Time 8.569102e-02
+Testing Size 65536
+PMPI_Alltoall Time 2.438752e-03
+Threaded Pairwise Exchange Time 1.237770e-01
+Threaded Nonblocking Time 8.983423e-02
+Testing Size 131072
+PMPI_Alltoall Time 5.011746e-03
+Threaded Pairwise Exchange Time 1.541775e-01
+Threaded Nonblocking Time 9.427253e-02
+Testing Size 262144
+PMPI_Alltoall Time 9.150224e-03
+Threaded Pairwise Exchange Time 1.722463e-01
+Threaded Nonblocking Time 1.170915e-01
+Testing Size 524288
+PMPI_Alltoall Time 1.697974e-02
+Threaded Pairwise Exchange Time 2.073712e-01
+Threaded Nonblocking Time 1.649421e-01
+app 0: ./gpu_threaded_alltoall 
+rank: 0: { host: 1; cpu: {0-7}, {8-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 1: { host: 1; cpu: {8-15}, {0-7,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 2: { host: 1; cpu: {80-87}, {0-15,88-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 3: { host: 1; cpu: {88-95}, {0-15,80-87} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 4: { host: 2; cpu: {0-7}, {8-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 5: { host: 2; cpu: {8-15}, {0-7,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 6: { host: 2; cpu: {80-87}, {0-15,88-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 7: { host: 2; cpu: {88-95}, {0-15,80-87} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 8: { host: 3; cpu: {0-7}, {8-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 9: { host: 3; cpu: {8-15}, {0-7,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 10: { host: 3; cpu: {80-87}, {0-15,88-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 11: { host: 3; cpu: {88-95}, {0-15,80-87} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 12: { host: 4; cpu: {0-7}, {8-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 13: { host: 4; cpu: {8-15}, {0-7,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 14: { host: 4; cpu: {80-87}, {0-15,88-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 15: { host: 4; cpu: {88-95}, {0-15,80-87} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+Running Threaded Alltoall Test with 4 threads:
+Testing Size 1
+PMPI_Alltoall Time 6.688137e-05
+Threaded Pairwise Exchange Time 2.036950e-03
+Threaded Nonblocking Time 1.958175e-03
+Testing Size 2
+PMPI_Alltoall Time 6.390273e-05
+Threaded Pairwise Exchange Time 2.054386e-03
+Threaded Nonblocking Time 2.011367e-03
+Testing Size 4
+PMPI_Alltoall Time 6.310834e-05
+Threaded Pairwise Exchange Time 2.111933e-03
+Threaded Nonblocking Time 2.045407e-03
+Testing Size 8
+PMPI_Alltoall Time 6.468625e-05
+Threaded Pairwise Exchange Time 2.033760e-03
+Threaded Nonblocking Time 2.083610e-03
+Testing Size 16
+PMPI_Alltoall Time 6.522923e-05
+Threaded Pairwise Exchange Time 1.981441e-03
+Threaded Nonblocking Time 1.951297e-03
+Testing Size 32
+PMPI_Alltoall Time 6.755664e-05
+Threaded Pairwise Exchange Time 1.994492e-03
+Threaded Nonblocking Time 2.011641e-03
+Testing Size 64
+PMPI_Alltoall Time 7.034578e-05
+Threaded Pairwise Exchange Time 2.248621e-03
+Threaded Nonblocking Time 2.026514e-03
+Testing Size 128
+PMPI_Alltoall Time 7.542228e-05
+Threaded Pairwise Exchange Time 2.116693e-03
+Threaded Nonblocking Time 2.084062e-03
+Testing Size 256
+PMPI_Alltoall Time 7.330131e-05
+Threaded Pairwise Exchange Time 2.664220e-03
+Threaded Nonblocking Time 2.414763e-03
+Testing Size 512
+PMPI_Alltoall Time 8.514018e-05
+Threaded Pairwise Exchange Time 2.497815e-03
+Threaded Nonblocking Time 1.987614e-03
+Testing Size 1024
+PMPI_Alltoall Time 1.098870e-04
+Threaded Pairwise Exchange Time 2.028696e-03
+Threaded Nonblocking Time 2.555688e-03
+Testing Size 2048
+PMPI_Alltoall Time 1.557116e-04
+Threaded Pairwise Exchange Time 2.399195e-03
+Threaded Nonblocking Time 2.212231e-03
+Testing Size 4096
+PMPI_Alltoall Time 2.465425e-04
+Threaded Pairwise Exchange Time 2.323177e-03
+Threaded Nonblocking Time 2.471869e-03
+Testing Size 8192
+PMPI_Alltoall Time 4.240879e-04
+Threaded Pairwise Exchange Time 2.550275e-03
+Threaded Nonblocking Time 2.727779e-03
+Testing Size 16384
+PMPI_Alltoall Time 7.015238e-04
+Threaded Pairwise Exchange Time 1.233904e-02
+Threaded Nonblocking Time 1.265560e-02
+Testing Size 32768
+PMPI_Alltoall Time 1.359582e-03
+Threaded Pairwise Exchange Time 1.272456e-02
+Threaded Nonblocking Time 1.434485e-02
+Testing Size 65536
+PMPI_Alltoall Time 2.365520e-03
+Threaded Pairwise Exchange Time 1.790205e-02
+Threaded Nonblocking Time 1.925428e-02
+Testing Size 131072
+PMPI_Alltoall Time 4.720675e-03
+Threaded Pairwise Exchange Time 2.567354e-02
+Threaded Nonblocking Time 2.580436e-02
+Testing Size 262144
+PMPI_Alltoall Time 8.758513e-03
+Threaded Pairwise Exchange Time 4.496985e-02
+Threaded Nonblocking Time 4.279608e-02
+Testing Size 524288
+PMPI_Alltoall Time 1.717078e-02
+Threaded Pairwise Exchange Time 7.270063e-02
+Threaded Nonblocking Time 7.960238e-02
+app 0: ./gpu_threaded_alltoall 
+rank: 0: { host: 1; cpu: {0-15}, {16-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 1: { host: 1; cpu: {16-31}, {0-15,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 2: { host: 1; cpu: {80-95}, {0-31,96-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 3: { host: 1; cpu: {96-111}, {0-31,80-95} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 4: { host: 2; cpu: {0-15}, {16-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 5: { host: 2; cpu: {16-31}, {0-15,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 6: { host: 2; cpu: {80-95}, {0-31,96-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 7: { host: 2; cpu: {96-111}, {0-31,80-95} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 8: { host: 3; cpu: {0-15}, {16-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 9: { host: 3; cpu: {16-31}, {0-15,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 10: { host: 3; cpu: {80-95}, {0-31,96-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 11: { host: 3; cpu: {96-111}, {0-31,80-95} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 12: { host: 4; cpu: {0-15}, {16-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 13: { host: 4; cpu: {16-31}, {0-15,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 14: { host: 4; cpu: {80-95}, {0-31,96-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 15: { host: 4; cpu: {96-111}, {0-31,80-95} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+Running Threaded Alltoall Test with 8 threads:
+Testing Size 1
+PMPI_Alltoall Time 6.713168e-05
+Threaded Pairwise Exchange Time 1.818624e-03
+Threaded Nonblocking Time 1.801087e-03
+Testing Size 2
+PMPI_Alltoall Time 6.404045e-05
+Threaded Pairwise Exchange Time 1.859462e-03
+Threaded Nonblocking Time 1.788672e-03
+Testing Size 4
+PMPI_Alltoall Time 6.330263e-05
+Threaded Pairwise Exchange Time 1.897603e-03
+Threaded Nonblocking Time 1.792194e-03
+Testing Size 8
+PMPI_Alltoall Time 6.392331e-05
+Threaded Pairwise Exchange Time 1.776918e-03
+Threaded Nonblocking Time 1.802201e-03
+Testing Size 16
+PMPI_Alltoall Time 7.130789e-05
+Threaded Pairwise Exchange Time 1.801909e-03
+Threaded Nonblocking Time 2.102615e-03
+Testing Size 32
+PMPI_Alltoall Time 6.717687e-05
+Threaded Pairwise Exchange Time 1.797117e-03
+Threaded Nonblocking Time 1.737679e-03
+Testing Size 64
+PMPI_Alltoall Time 7.089496e-05
+Threaded Pairwise Exchange Time 2.265453e-03
+Threaded Nonblocking Time 1.774698e-03
+Testing Size 128
+PMPI_Alltoall Time 7.519193e-05
+Threaded Pairwise Exchange Time 1.846236e-03
+Threaded Nonblocking Time 1.825041e-03
+Testing Size 256
+PMPI_Alltoall Time 7.003917e-05
+Threaded Pairwise Exchange Time 1.793952e-03
+Threaded Nonblocking Time 1.777807e-03
+Testing Size 512
+PMPI_Alltoall Time 8.146955e-05
+Threaded Pairwise Exchange Time 1.949438e-03
+Threaded Nonblocking Time 2.214928e-03
+Testing Size 1024
+PMPI_Alltoall Time 1.899853e-04
+Threaded Pairwise Exchange Time 1.940722e-03
+Threaded Nonblocking Time 2.290941e-03
+Testing Size 2048
+PMPI_Alltoall Time 1.563451e-04
+Threaded Pairwise Exchange Time 2.377197e-03
+Threaded Nonblocking Time 1.989716e-03
+Testing Size 4096
+PMPI_Alltoall Time 2.481478e-04
+Threaded Pairwise Exchange Time 2.098540e-03
+Threaded Nonblocking Time 2.201941e-03
+Testing Size 8192
+PMPI_Alltoall Time 4.223173e-04
+Threaded Pairwise Exchange Time 2.554797e-03
+Threaded Nonblocking Time 2.554408e-03
+Testing Size 16384
+PMPI_Alltoall Time 6.807304e-04
+Threaded Pairwise Exchange Time 6.428624e-03
+Threaded Nonblocking Time 6.807352e-03
+Testing Size 32768
+PMPI_Alltoall Time 1.295756e-03
+Threaded Pairwise Exchange Time 7.881672e-03
+Threaded Nonblocking Time 8.034414e-03
+Testing Size 65536
+PMPI_Alltoall Time 2.363900e-03
+Threaded Pairwise Exchange Time 1.089357e-02
+Threaded Nonblocking Time 1.127266e-02
+Testing Size 131072
+PMPI_Alltoall Time 4.761025e-03
+Threaded Pairwise Exchange Time 1.814252e-02
+Threaded Nonblocking Time 1.826284e-02
+Testing Size 262144
+PMPI_Alltoall Time 8.903025e-03
+Threaded Pairwise Exchange Time 3.180999e-02
+Threaded Nonblocking Time 3.343257e-02
+Testing Size 524288
+PMPI_Alltoall Time 1.709234e-02
+Threaded Pairwise Exchange Time 5.834856e-02
+Threaded Nonblocking Time 6.217597e-02
+app 0: ./gpu_threaded_alltoall 
+rank: 0: { host: 1; cpu: {0-31}, {32-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 1: { host: 1; cpu: {32-63}, {0-31,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 2: { host: 1; cpu: {80-111}, {0-63,112-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 3: { host: 1; cpu: {112-143}, {0-63,80-111} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 4: { host: 2; cpu: {0-31}, {32-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 5: { host: 2; cpu: {32-63}, {0-31,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 6: { host: 2; cpu: {80-111}, {0-63,112-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 7: { host: 2; cpu: {112-143}, {0-63,80-111} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 8: { host: 3; cpu: {0-31}, {32-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 9: { host: 3; cpu: {32-63}, {0-31,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 10: { host: 3; cpu: {80-111}, {0-63,112-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 11: { host: 3; cpu: {112-143}, {0-63,80-111} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 12: { host: 4; cpu: {0-31}, {32-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 13: { host: 4; cpu: {32-63}, {0-31,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 14: { host: 4; cpu: {80-111}, {0-63,112-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 15: { host: 4; cpu: {112-143}, {0-63,80-111} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+Running Threaded Alltoall Test with 10 threads:
+Testing Size 1
+PMPI_Alltoall Time 6.664542e-05
+Threaded Pairwise Exchange Time 1.729377e-03
+Threaded Nonblocking Time 1.759168e-03
+Testing Size 2
+PMPI_Alltoall Time 7.744683e-05
+Threaded Pairwise Exchange Time 2.041283e-03
+Threaded Nonblocking Time 1.747845e-03
+Testing Size 4
+PMPI_Alltoall Time 6.340070e-05
+Threaded Pairwise Exchange Time 1.799537e-03
+Threaded Nonblocking Time 1.775934e-03
+Testing Size 8
+PMPI_Alltoall Time 6.399137e-05
+Threaded Pairwise Exchange Time 1.710486e-03
+Threaded Nonblocking Time 1.753907e-03
+Testing Size 16
+PMPI_Alltoall Time 6.543667e-05
+Threaded Pairwise Exchange Time 1.735012e-03
+Threaded Nonblocking Time 1.787239e-03
+Testing Size 32
+PMPI_Alltoall Time 6.771750e-05
+Threaded Pairwise Exchange Time 1.739062e-03
+Threaded Nonblocking Time 1.743631e-03
+Testing Size 64
+PMPI_Alltoall Time 7.233764e-05
+Threaded Pairwise Exchange Time 1.757520e-03
+Threaded Nonblocking Time 1.693885e-03
+Testing Size 128
+PMPI_Alltoall Time 7.431130e-05
+Threaded Pairwise Exchange Time 1.796763e-03
+Threaded Nonblocking Time 1.803009e-03
+Testing Size 256
+PMPI_Alltoall Time 7.435525e-05
+Threaded Pairwise Exchange Time 1.887006e-03
+Threaded Nonblocking Time 1.885710e-03
+Testing Size 512
+PMPI_Alltoall Time 1.589921e-04
+Threaded Pairwise Exchange Time 1.799100e-03
+Threaded Nonblocking Time 1.844678e-03
+Testing Size 1024
+PMPI_Alltoall Time 2.337340e-04
+Threaded Pairwise Exchange Time 1.786973e-03
+Threaded Nonblocking Time 1.790327e-03
+Testing Size 2048
+PMPI_Alltoall Time 1.560550e-04
+Threaded Pairwise Exchange Time 2.024517e-03
+Threaded Nonblocking Time 1.839253e-03
+Testing Size 4096
+PMPI_Alltoall Time 2.566790e-04
+Threaded Pairwise Exchange Time 1.862961e-03
+Threaded Nonblocking Time 1.856204e-03
+Testing Size 8192
+PMPI_Alltoall Time 5.026588e-04
+Threaded Pairwise Exchange Time 1.996527e-03
+Threaded Nonblocking Time 1.949940e-03
+Testing Size 16384
+PMPI_Alltoall Time 1.251484e-03
+Threaded Pairwise Exchange Time 5.729473e-03
+Threaded Nonblocking Time 5.179131e-03
+Testing Size 32768
+PMPI_Alltoall Time 2.324053e-03
+Threaded Pairwise Exchange Time 6.685127e-03
+Threaded Nonblocking Time 6.687142e-03
+Testing Size 65536
+PMPI_Alltoall Time 2.457690e-03
+Threaded Pairwise Exchange Time 1.111384e-02
+Threaded Nonblocking Time 9.707461e-03
+Testing Size 131072
+PMPI_Alltoall Time 4.588697e-03
+Threaded Pairwise Exchange Time 1.629150e-02
+Threaded Nonblocking Time 1.609174e-02
+Testing Size 262144
+PMPI_Alltoall Time 8.657816e-03
+Threaded Pairwise Exchange Time 2.980582e-02
+Threaded Nonblocking Time 2.975412e-02
+Testing Size 524288
+PMPI_Alltoall Time 1.719909e-02
+Threaded Pairwise Exchange Time 6.105008e-02
+Threaded Nonblocking Time 6.233921e-02
+app 0: ./gpu_threaded_alltoall 
+rank: 0: { host: 1; cpu: {0-39}, {40-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 1: { host: 1; cpu: {40-79}, {0-39,80-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 2: { host: 1; cpu: {80-119}, {0-79,120-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 3: { host: 1; cpu: {120-159}, {0-119} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 4: { host: 2; cpu: {0-39}, {40-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 5: { host: 2; cpu: {40-79}, {0-39,80-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 6: { host: 2; cpu: {80-119}, {0-79,120-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 7: { host: 2; cpu: {120-159}, {0-119} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 8: { host: 3; cpu: {0-39}, {40-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 9: { host: 3; cpu: {40-79}, {0-39,80-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 10: { host: 3; cpu: {80-119}, {0-79,120-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 11: { host: 3; cpu: {120-159}, {0-119} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 12: { host: 4; cpu: {0-39}, {40-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 13: { host: 4; cpu: {40-79}, {0-39,80-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 14: { host: 4; cpu: {80-119}, {0-79,120-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 15: { host: 4; cpu: {120-159}, {0-119} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+logout
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 6084106: <gpu_alltoall4> in cluster <lassen> Done
+
+Job <gpu_alltoall4> was submitted from host <lassen708> by user <adams112> in cluster <lassen> at Sun Aug 11 14:33:57 2024
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <adams112> in cluster <lassen> at Sun Aug 11 14:40:23 2024
+                            <40*lassen535>
+                            <40*lassen387>
+                            <40*lassen570>
+                            <40*lassen227>
+</g/g11/adams112> was used as the home directory.
+</g/g11/adams112/locality_aware-mikethebos/benchmark_tests/lassen> was used as the working directory.
+Started at Sun Aug 11 14:40:23 2024
+Terminated at Sun Aug 11 14:43:35 2024
+Results reported at Sun Aug 11 14:43:35 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J gpu_alltoall4
+#BSUB -e gpu_alltoall4.%J.err
+#BSUB -o gpu_alltoall4.%J.out
+#BSUB -nnodes 4
+#BSUB -q pbatch
+#BSUB -W 01:45
+
+module load gcc/7.3.1
+module load cuda/10.2.89
+module load hwloc
+
+cd $HOME/locality_aware-mikethebos/build/benchmarks
+
+echo "Running Unthreaded Alltoall Test:"
+jsrun -n4 -r1 -a4 -c4 -g4 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_alltoall
+
+export MV2_USE_ALIGNED_ALLOC=1
+
+export OMP_NUM_THREADS=2
+echo "Running Threaded Alltoall Test with 2 threads:"
+jsrun -n4 -r1 -a4 -c8 -g4 -bpacked:2 -dpacked -EOMP_NUM_THREADS=2 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_threaded_alltoall
+
+export OMP_NUM_THREADS=4
+echo "Running Threaded Alltoall Test with 4 threads:"
+jsrun -n4 -r1 -a4 -c16 -g4 -bpacked:4 -dpacked -EOMP_NUM_THREADS=4 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_threaded_alltoall
+
+export OMP_NUM_THREADS=8
+echo "Running Threaded Alltoall Test with 8 threads:"
+jsrun -n4 -r1 -a4 -c32 -g4 -bpacked:8 -dpacked -EOMP_NUM_THREADS=8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_threaded_alltoall
+
+export OMP_NUM_THREADS=10
+echo "Running Threaded Alltoall Test with 10 threads:"
+jsrun -n4 -r1 -a4 -c40 -g4 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_threaded_alltoall
+
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.33 sec.
+    Max Memory :                                 60 MB
+    Average Memory :                             57.74 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1425 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   192 sec.
+    Turnaround time :                            578 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <gpu_alltoall4.6084106.err> for stderr output of this job.
+
