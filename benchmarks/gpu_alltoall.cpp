@@ -26,14 +26,17 @@ int main(int argc, char* argv[])
     for (int j = 0; j < max_s*num_procs; j++)
         send_data[j] = rand();
 
+    MPIX_Comm *locality_comm;
+    MPIX_Comm_init(&locality_comm, MPI_COMM_WORLD);
+    int local_rank;
+    MPI_Comm_rank(locality_comm->local_comm, &local_rank);
+    gpuSetDevice(local_rank);
+
     double* send_data_d;
     double* recv_data_d;
     cudaMalloc((void**)(&send_data_d), max_s*num_procs*sizeof(double));
     cudaMalloc((void**)(&recv_data_d), max_s*num_procs*sizeof(double));
     cudaMemcpy(send_data_d, send_data.data(), max_s*num_procs*sizeof(double), cudaMemcpyHostToDevice);
-
-    MPIX_Comm* locality_comm;
-    MPIX_Comm_init(&locality_comm, MPI_COMM_WORLD);
 
     for (int i = 0; i < max_i; i++)
     {

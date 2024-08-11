@@ -61,6 +61,12 @@ int main(int argc, char* argv[])
     for (int j = 0; j < max_s*num_procs; j++)
         send_data[j] = rand();
 
+    MPIX_Comm* xcomm;
+    MPIX_Comm_init(&xcomm, MPI_COMM_WORLD);
+    int local_rank;
+    MPI_Comm_rank(xcomm->local_comm, &local_rank);
+    gpuSetDevice(local_rank);
+
     double* send_data_d;
     double* recv_data_d;
     gpuMalloc((void**)(&send_data_d), max_s*num_procs*sizeof(double));
@@ -70,12 +76,6 @@ int main(int argc, char* argv[])
     double* recv_data_h;
     gpuMallocHost((void**)(&send_data_h), max_s*num_procs*sizeof(double));
     gpuMallocHost((void**)(&recv_data_h), max_s*num_procs*sizeof(double));
-
-    MPIX_Comm* xcomm;
-    MPIX_Comm_init(&xcomm, MPI_COMM_WORLD);
-    int local_rank;
-    MPI_Comm_rank(xcomm->local_comm, &local_rank);
-    gpuSetDevice(local_rank);
 
     for (int i = 0; i < max_i; i++)
     {
