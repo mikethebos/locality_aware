@@ -1,0 +1,36 @@
+#!/bin/bash
+#BSUB -J gpu_alltoall40
+#BSUB -e gpu_alltoall40.%J.err
+#BSUB -o gpu_alltoall40.%J.out
+#BSUB -nnodes 40
+#BSUB -q pbatch
+#BSUB -W 02:45
+
+module load gcc/7.3.1
+module load cuda/10.2.89
+module load hwloc
+
+cd $HOME/locality_aware-mikethebos/build/benchmarks
+
+echo "Running Unthreaded Alltoall Test:"
+jsrun -n40 -r1 -a4 -c4 -g4 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_alltoall
+
+export MV2_USE_ALIGNED_ALLOC=1
+
+export OMP_NUM_THREADS=2
+echo "Running Threaded Alltoall Test with 2 threads:"
+jsrun -n40 -r1 -a4 -c8 -g4 -bpacked:2 -dpacked -EOMP_NUM_THREADS=2 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_threaded_alltoall
+
+export OMP_NUM_THREADS=4
+echo "Running Threaded Alltoall Test with 4 threads:"
+jsrun -n40 -r1 -a4 -c16 -g4 -bpacked:4 -dpacked -EOMP_NUM_THREADS=4 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_threaded_alltoall
+
+export OMP_NUM_THREADS=8
+echo "Running Threaded Alltoall Test with 8 threads:"
+jsrun -n40 -r1 -a4 -c32 -g4 -bpacked:8 -dpacked -EOMP_NUM_THREADS=8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_threaded_alltoall
+
+export OMP_NUM_THREADS=10
+echo "Running Threaded Alltoall Test with 10 threads:"
+jsrun -n40 -r1 -a4 -c40 -g4 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_threaded_alltoall
+
+
