@@ -1,0 +1,1439 @@
+Running Unthreaded Neighbor_Alltoallv Test:
+Testing (around) Size per proc 1
+MPI_Neighbor_alltoallv Time 2.576715e-04
+MPIX_Neighbor_alltoallv Time 2.584249e-04
+MPIX_Neighbor_alltoallv_init Time 2.549614e-04
+MPIX_Neighbor_alltoallv CC Time 1.262365e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.179799e-04
+GPU-Aware Neighbor_alltoallv Time 2.559631e-04
+CC Neighbor_alltoallv Time 1.188194e-04
+Testing (around) Size per proc 2
+MPI_Neighbor_alltoallv Time 2.692417e-04
+MPIX_Neighbor_alltoallv Time 2.544549e-04
+MPIX_Neighbor_alltoallv_init Time 2.569764e-04
+MPIX_Neighbor_alltoallv CC Time 1.300018e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.269759e-04
+GPU-Aware Neighbor_alltoallv Time 2.532394e-04
+CC Neighbor_alltoallv Time 1.195582e-04
+Testing (around) Size per proc 4
+MPI_Neighbor_alltoallv Time 2.792923e-04
+MPIX_Neighbor_alltoallv Time 2.675826e-04
+MPIX_Neighbor_alltoallv_init Time 2.602680e-04
+MPIX_Neighbor_alltoallv CC Time 1.308969e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.190653e-04
+GPU-Aware Neighbor_alltoallv Time 2.590285e-04
+CC Neighbor_alltoallv Time 1.220968e-04
+Testing (around) Size per proc 8
+MPI_Neighbor_alltoallv Time 2.716353e-04
+MPIX_Neighbor_alltoallv Time 2.593844e-04
+MPIX_Neighbor_alltoallv_init Time 2.580619e-04
+MPIX_Neighbor_alltoallv CC Time 1.293288e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.233319e-04
+GPU-Aware Neighbor_alltoallv Time 2.585450e-04
+CC Neighbor_alltoallv Time 1.190143e-04
+Testing (around) Size per proc 16
+MPI_Neighbor_alltoallv Time 2.724527e-04
+MPIX_Neighbor_alltoallv Time 2.595586e-04
+MPIX_Neighbor_alltoallv_init Time 2.614512e-04
+MPIX_Neighbor_alltoallv CC Time 1.270751e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.263757e-04
+GPU-Aware Neighbor_alltoallv Time 2.536222e-04
+CC Neighbor_alltoallv Time 1.250370e-04
+Testing (around) Size per proc 32
+MPI_Neighbor_alltoallv Time 2.736670e-04
+MPIX_Neighbor_alltoallv Time 2.721014e-04
+MPIX_Neighbor_alltoallv_init Time 2.570979e-04
+MPIX_Neighbor_alltoallv CC Time 1.371173e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.279022e-04
+GPU-Aware Neighbor_alltoallv Time 2.621268e-04
+CC Neighbor_alltoallv Time 1.252773e-04
+Testing (around) Size per proc 64
+MPI_Neighbor_alltoallv Time 2.777105e-04
+MPIX_Neighbor_alltoallv Time 2.684151e-04
+MPIX_Neighbor_alltoallv_init Time 2.677431e-04
+MPIX_Neighbor_alltoallv CC Time 1.378730e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.409407e-04
+GPU-Aware Neighbor_alltoallv Time 2.661988e-04
+CC Neighbor_alltoallv Time 1.297965e-04
+Testing (around) Size per proc 128
+MPI_Neighbor_alltoallv Time 2.936593e-04
+MPIX_Neighbor_alltoallv Time 2.803700e-04
+MPIX_Neighbor_alltoallv_init Time 2.818840e-04
+MPIX_Neighbor_alltoallv CC Time 1.586295e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.479366e-04
+GPU-Aware Neighbor_alltoallv Time 2.819545e-04
+CC Neighbor_alltoallv Time 1.468357e-04
+Testing (around) Size per proc 256
+MPI_Neighbor_alltoallv Time 3.223158e-04
+MPIX_Neighbor_alltoallv Time 3.229982e-04
+MPIX_Neighbor_alltoallv_init Time 3.130375e-04
+MPIX_Neighbor_alltoallv CC Time 1.800919e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.697436e-04
+GPU-Aware Neighbor_alltoallv Time 3.129529e-04
+CC Neighbor_alltoallv Time 1.659137e-04
+Testing (around) Size per proc 512
+MPI_Neighbor_alltoallv Time 3.277089e-04
+MPIX_Neighbor_alltoallv Time 3.339049e-04
+MPIX_Neighbor_alltoallv_init Time 3.156616e-04
+MPIX_Neighbor_alltoallv CC Time 2.502163e-04
+MPIX_Neighbor_alltoallv_init CC Time 2.459156e-04
+GPU-Aware Neighbor_alltoallv Time 3.138402e-04
+CC Neighbor_alltoallv Time 2.272425e-04
+Testing (around) Size per proc 1024
+MPI_Neighbor_alltoallv Time 3.290942e-04
+MPIX_Neighbor_alltoallv Time 3.246179e-04
+MPIX_Neighbor_alltoallv_init Time 3.236725e-04
+MPIX_Neighbor_alltoallv CC Time 4.257908e-04
+MPIX_Neighbor_alltoallv_init CC Time 4.171695e-04
+GPU-Aware Neighbor_alltoallv Time 3.194944e-04
+CC Neighbor_alltoallv Time 3.917429e-04
+Testing (around) Size per proc 2048
+MPI_Neighbor_alltoallv Time 4.541329e-04
+MPIX_Neighbor_alltoallv Time 4.559452e-04
+MPIX_Neighbor_alltoallv_init Time 4.475199e-04
+MPIX_Neighbor_alltoallv CC Time 8.047032e-04
+MPIX_Neighbor_alltoallv_init CC Time 7.958173e-04
+GPU-Aware Neighbor_alltoallv Time 4.428428e-04
+CC Neighbor_alltoallv Time 7.252665e-04
+Testing (around) Size per proc 4096
+MPI_Neighbor_alltoallv Time 7.861621e-04
+MPIX_Neighbor_alltoallv Time 7.923295e-04
+MPIX_Neighbor_alltoallv_init Time 7.836758e-04
+MPIX_Neighbor_alltoallv CC Time 1.730156e-03
+MPIX_Neighbor_alltoallv_init CC Time 1.716276e-03
+GPU-Aware Neighbor_alltoallv Time 7.742893e-04
+CC Neighbor_alltoallv Time 1.414369e-03
+Testing (around) Size per proc 8192
+MPI_Neighbor_alltoallv Time 1.593961e-03
+MPIX_Neighbor_alltoallv Time 1.603690e-03
+MPIX_Neighbor_alltoallv_init Time 1.597874e-03
+MPIX_Neighbor_alltoallv CC Time 2.645457e-03
+MPIX_Neighbor_alltoallv_init CC Time 2.627742e-03
+GPU-Aware Neighbor_alltoallv Time 1.589000e-03
+CC Neighbor_alltoallv Time 1.733864e-03
+Testing (around) Size per proc 16384
+MPI_Neighbor_alltoallv Time 5.761468e-03
+MPIX_Neighbor_alltoallv Time 6.047408e-03
+MPIX_Neighbor_alltoallv_init Time 5.989271e-03
+MPIX_Neighbor_alltoallv CC Time 5.404429e-03
+MPIX_Neighbor_alltoallv_init CC Time 5.379986e-03
+GPU-Aware Neighbor_alltoallv Time 5.758082e-03
+CC Neighbor_alltoallv Time 3.554513e-03
+Testing (around) Size per proc 32768
+MPI_Neighbor_alltoallv Time 1.454851e-02
+MPIX_Neighbor_alltoallv Time 1.381880e-02
+MPIX_Neighbor_alltoallv_init Time 1.438682e-02
+MPIX_Neighbor_alltoallv CC Time 1.027121e-02
+MPIX_Neighbor_alltoallv_init CC Time 1.027771e-02
+GPU-Aware Neighbor_alltoallv Time 1.442820e-02
+CC Neighbor_alltoallv Time 6.427256e-03
+Testing (around) Size per proc 65536
+MPI_Neighbor_alltoallv Time 2.746073e-02
+MPIX_Neighbor_alltoallv Time 2.743870e-02
+MPIX_Neighbor_alltoallv_init Time 2.749066e-02
+MPIX_Neighbor_alltoallv CC Time 1.931336e-02
+MPIX_Neighbor_alltoallv_init CC Time 1.915274e-02
+GPU-Aware Neighbor_alltoallv Time 2.773893e-02
+CC Neighbor_alltoallv Time 1.170805e-02
+Testing (around) Size per proc 131072
+MPI_Neighbor_alltoallv Time 5.445723e-02
+MPIX_Neighbor_alltoallv Time 5.383637e-02
+MPIX_Neighbor_alltoallv_init Time 5.173665e-02
+MPIX_Neighbor_alltoallv CC Time 3.943906e-02
+MPIX_Neighbor_alltoallv_init CC Time 3.946396e-02
+GPU-Aware Neighbor_alltoallv Time 5.340710e-02
+CC Neighbor_alltoallv Time 2.222758e-02
+Testing (around) Size per proc 262144
+MPI_Neighbor_alltoallv Time 8.728172e-02
+MPIX_Neighbor_alltoallv Time 8.607881e-02
+MPIX_Neighbor_alltoallv_init Time 8.686181e-02
+MPIX_Neighbor_alltoallv CC Time 7.593463e-02
+MPIX_Neighbor_alltoallv_init CC Time 7.621674e-02
+GPU-Aware Neighbor_alltoallv Time 8.600632e-02
+CC Neighbor_alltoallv Time 4.233037e-02
+Testing (around) Size per proc 524288
+MPI_Neighbor_alltoallv Time 8.371330e-02
+MPIX_Neighbor_alltoallv Time 8.218361e-02
+MPIX_Neighbor_alltoallv_init Time 8.243058e-02
+MPIX_Neighbor_alltoallv CC Time 1.456566e-01
+MPIX_Neighbor_alltoallv_init CC Time 1.443958e-01
+GPU-Aware Neighbor_alltoallv Time 8.064118e-02
+CC Neighbor_alltoallv Time 7.687334e-02
+Testing (around) Size per proc 1048576
+MPI_Neighbor_alltoallv Time 1.716006e-01
+MPIX_Neighbor_alltoallv Time 1.728583e-01
+MPIX_Neighbor_alltoallv_init Time 1.726086e-01
+MPIX_Neighbor_alltoallv CC Time 2.856249e-01
+MPIX_Neighbor_alltoallv_init CC Time 2.787431e-01
+GPU-Aware Neighbor_alltoallv Time 1.743248e-01
+CC Neighbor_alltoallv Time 1.596780e-01
+Testing (around) Size per proc 2097152
+MPI_Neighbor_alltoallv Time 3.690072e-01
+MPIX_Neighbor_alltoallv Time 3.647915e-01
+MPIX_Neighbor_alltoallv_init Time 3.720916e-01
+MPIX_Neighbor_alltoallv CC Time 5.734025e-01
+MPIX_Neighbor_alltoallv_init CC Time 5.700263e-01
+GPU-Aware Neighbor_alltoallv Time 3.716201e-01
+CC Neighbor_alltoallv Time 3.203138e-01
+app 0: ./gpu_neighbor_alltoallv 
+rank: 0: { host: 1; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 1: { host: 1; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 2: { host: 1; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 3: { host: 1; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 4: { host: 2; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 5: { host: 2; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 6: { host: 2; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 7: { host: 2; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 8: { host: 3; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 9: { host: 3; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 10: { host: 3; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 11: { host: 3; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 12: { host: 4; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 13: { host: 4; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 14: { host: 4; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 15: { host: 4; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 16: { host: 5; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 17: { host: 5; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 18: { host: 5; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 19: { host: 5; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 20: { host: 6; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 21: { host: 6; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 22: { host: 6; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 23: { host: 6; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 24: { host: 7; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 25: { host: 7; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 26: { host: 7; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 27: { host: 7; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 28: { host: 8; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 29: { host: 8; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 30: { host: 8; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 31: { host: 8; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 32: { host: 9; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 33: { host: 9; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 34: { host: 9; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 35: { host: 9; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 36: { host: 10; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 37: { host: 10; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 38: { host: 10; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 39: { host: 10; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 40: { host: 11; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 41: { host: 11; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 42: { host: 11; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 43: { host: 11; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 44: { host: 12; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 45: { host: 12; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 46: { host: 12; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 47: { host: 12; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 48: { host: 13; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 49: { host: 13; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 50: { host: 13; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 51: { host: 13; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 52: { host: 14; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 53: { host: 14; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 54: { host: 14; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 55: { host: 14; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 56: { host: 15; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 57: { host: 15; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 58: { host: 15; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 59: { host: 15; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 60: { host: 16; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 61: { host: 16; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 62: { host: 16; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 63: { host: 16; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+Running Threaded Neighbor_Alltoallv Test with 2 threads:
+Testing (around) Size per proc 1
+MPI_Neighbor_alltoallv Time 2.677147e-04
+MPIX_Neighbor_alltoallv Time 2.673482e-04
+MPIX_Neighbor_alltoallv_init Time 2.584024e-04
+MPIX_Neighbor_alltoallv CC Time 1.394689e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.318926e-04
+Threaded CC Neighbor_alltoallv Time 1.570615e-04
+Testing (around) Size per proc 2
+MPI_Neighbor_alltoallv Time 2.758111e-04
+MPIX_Neighbor_alltoallv Time 2.618105e-04
+MPIX_Neighbor_alltoallv_init Time 2.661598e-04
+MPIX_Neighbor_alltoallv CC Time 1.366861e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.358012e-04
+Threaded CC Neighbor_alltoallv Time 1.645534e-04
+Testing (around) Size per proc 4
+MPI_Neighbor_alltoallv Time 2.746514e-04
+MPIX_Neighbor_alltoallv Time 2.687329e-04
+MPIX_Neighbor_alltoallv_init Time 2.687307e-04
+MPIX_Neighbor_alltoallv CC Time 1.434146e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.394744e-04
+Threaded CC Neighbor_alltoallv Time 1.561507e-04
+Testing (around) Size per proc 8
+MPI_Neighbor_alltoallv Time 2.752201e-04
+MPIX_Neighbor_alltoallv Time 2.671129e-04
+MPIX_Neighbor_alltoallv_init Time 2.666255e-04
+MPIX_Neighbor_alltoallv CC Time 1.370035e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.364507e-04
+Threaded CC Neighbor_alltoallv Time 1.651126e-04
+Testing (around) Size per proc 16
+MPI_Neighbor_alltoallv Time 2.819336e-04
+MPIX_Neighbor_alltoallv Time 2.757636e-04
+MPIX_Neighbor_alltoallv_init Time 2.609515e-04
+MPIX_Neighbor_alltoallv CC Time 1.457129e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.360355e-04
+Threaded CC Neighbor_alltoallv Time 1.619672e-04
+Testing (around) Size per proc 32
+MPI_Neighbor_alltoallv Time 2.816866e-04
+MPIX_Neighbor_alltoallv Time 2.734009e-04
+MPIX_Neighbor_alltoallv_init Time 2.692234e-04
+MPIX_Neighbor_alltoallv CC Time 1.501681e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.355482e-04
+Threaded CC Neighbor_alltoallv Time 1.722814e-04
+Testing (around) Size per proc 64
+MPI_Neighbor_alltoallv Time 2.867646e-04
+MPIX_Neighbor_alltoallv Time 2.763121e-04
+MPIX_Neighbor_alltoallv_init Time 2.765169e-04
+MPIX_Neighbor_alltoallv CC Time 1.502035e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.471671e-04
+Threaded CC Neighbor_alltoallv Time 1.754074e-04
+Testing (around) Size per proc 128
+MPI_Neighbor_alltoallv Time 2.981614e-04
+MPIX_Neighbor_alltoallv Time 2.869647e-04
+MPIX_Neighbor_alltoallv_init Time 2.831561e-04
+MPIX_Neighbor_alltoallv CC Time 1.649155e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.500157e-04
+Threaded CC Neighbor_alltoallv Time 1.873656e-04
+Testing (around) Size per proc 256
+MPI_Neighbor_alltoallv Time 3.234495e-04
+MPIX_Neighbor_alltoallv Time 3.216927e-04
+MPIX_Neighbor_alltoallv_init Time 3.104632e-04
+MPIX_Neighbor_alltoallv CC Time 1.826778e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.737755e-04
+Threaded CC Neighbor_alltoallv Time 2.032376e-04
+Testing (around) Size per proc 512
+MPI_Neighbor_alltoallv Time 3.288317e-04
+MPIX_Neighbor_alltoallv Time 3.251357e-04
+MPIX_Neighbor_alltoallv_init Time 3.105976e-04
+MPIX_Neighbor_alltoallv CC Time 2.350943e-04
+MPIX_Neighbor_alltoallv_init CC Time 2.245184e-04
+Threaded CC Neighbor_alltoallv Time 2.466477e-04
+Testing (around) Size per proc 1024
+MPI_Neighbor_alltoallv Time 3.309193e-04
+MPIX_Neighbor_alltoallv Time 3.263925e-04
+MPIX_Neighbor_alltoallv_init Time 3.227976e-04
+MPIX_Neighbor_alltoallv CC Time 3.871484e-04
+MPIX_Neighbor_alltoallv_init CC Time 3.801874e-04
+Threaded CC Neighbor_alltoallv Time 3.592073e-04
+Testing (around) Size per proc 2048
+MPI_Neighbor_alltoallv Time 4.600489e-04
+MPIX_Neighbor_alltoallv Time 4.675796e-04
+MPIX_Neighbor_alltoallv_init Time 4.486001e-04
+MPIX_Neighbor_alltoallv CC Time 7.716500e-04
+MPIX_Neighbor_alltoallv_init CC Time 7.615078e-04
+Threaded CC Neighbor_alltoallv Time 6.997747e-04
+Testing (around) Size per proc 4096
+MPI_Neighbor_alltoallv Time 7.848127e-04
+MPIX_Neighbor_alltoallv Time 7.883071e-04
+MPIX_Neighbor_alltoallv_init Time 7.790380e-04
+MPIX_Neighbor_alltoallv CC Time 1.503940e-03
+MPIX_Neighbor_alltoallv_init CC Time 1.491316e-03
+Threaded CC Neighbor_alltoallv Time 1.405476e-03
+Testing (around) Size per proc 8192
+MPI_Neighbor_alltoallv Time 1.571132e-03
+MPIX_Neighbor_alltoallv Time 1.572219e-03
+MPIX_Neighbor_alltoallv_init Time 1.574225e-03
+MPIX_Neighbor_alltoallv CC Time 2.207245e-03
+MPIX_Neighbor_alltoallv_init CC Time 2.187000e-03
+Threaded CC Neighbor_alltoallv Time 1.958883e-03
+Testing (around) Size per proc 16384
+MPI_Neighbor_alltoallv Time 5.955146e-03
+MPIX_Neighbor_alltoallv Time 5.685250e-03
+MPIX_Neighbor_alltoallv_init Time 5.985076e-03
+MPIX_Neighbor_alltoallv CC Time 4.602173e-03
+MPIX_Neighbor_alltoallv_init CC Time 4.590608e-03
+Threaded CC Neighbor_alltoallv Time 4.021839e-03
+Testing (around) Size per proc 32768
+MPI_Neighbor_alltoallv Time 1.364136e-02
+MPIX_Neighbor_alltoallv Time 1.406677e-02
+MPIX_Neighbor_alltoallv_init Time 1.363517e-02
+MPIX_Neighbor_alltoallv CC Time 8.593649e-03
+MPIX_Neighbor_alltoallv_init CC Time 8.553180e-03
+Threaded CC Neighbor_alltoallv Time 7.394165e-03
+Testing (around) Size per proc 65536
+MPI_Neighbor_alltoallv Time 2.910494e-02
+MPIX_Neighbor_alltoallv Time 2.913987e-02
+MPIX_Neighbor_alltoallv_init Time 2.909907e-02
+MPIX_Neighbor_alltoallv CC Time 1.552008e-02
+MPIX_Neighbor_alltoallv_init CC Time 1.553085e-02
+Threaded CC Neighbor_alltoallv Time 1.370258e-02
+Testing (around) Size per proc 131072
+MPI_Neighbor_alltoallv Time 5.378956e-02
+MPIX_Neighbor_alltoallv Time 5.394785e-02
+MPIX_Neighbor_alltoallv_init Time 5.138040e-02
+MPIX_Neighbor_alltoallv CC Time 3.436155e-02
+MPIX_Neighbor_alltoallv_init CC Time 3.414270e-02
+Threaded CC Neighbor_alltoallv Time 2.541142e-02
+Testing (around) Size per proc 262144
+MPI_Neighbor_alltoallv Time 8.794400e-02
+MPIX_Neighbor_alltoallv Time 8.511089e-02
+MPIX_Neighbor_alltoallv_init Time 8.455008e-02
+MPIX_Neighbor_alltoallv CC Time 5.857481e-02
+MPIX_Neighbor_alltoallv_init CC Time 5.861286e-02
+Threaded CC Neighbor_alltoallv Time 4.625736e-02
+Testing (around) Size per proc 524288
+MPI_Neighbor_alltoallv Time 8.324320e-02
+MPIX_Neighbor_alltoallv Time 8.238853e-02
+MPIX_Neighbor_alltoallv_init Time 8.111528e-02
+MPIX_Neighbor_alltoallv CC Time 1.104792e-01
+MPIX_Neighbor_alltoallv_init CC Time 1.099335e-01
+Threaded CC Neighbor_alltoallv Time 8.441260e-02
+Testing (around) Size per proc 1048576
+MPI_Neighbor_alltoallv Time 1.777794e-01
+MPIX_Neighbor_alltoallv Time 1.750885e-01
+MPIX_Neighbor_alltoallv_init Time 1.744408e-01
+MPIX_Neighbor_alltoallv CC Time 2.480692e-01
+MPIX_Neighbor_alltoallv_init CC Time 2.480006e-01
+Threaded CC Neighbor_alltoallv Time 1.657105e-01
+Testing (around) Size per proc 2097152
+MPI_Neighbor_alltoallv Time 3.715134e-01
+MPIX_Neighbor_alltoallv Time 3.683811e-01
+MPIX_Neighbor_alltoallv_init Time 3.772639e-01
+MPIX_Neighbor_alltoallv CC Time 4.978555e-01
+MPIX_Neighbor_alltoallv_init CC Time 4.982991e-01
+Threaded CC Neighbor_alltoallv Time 3.219978e-01
+app 0: ./gpu_threaded_neighbor_alltoallv 
+rank: 0: { host: 1; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 1: { host: 1; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 2: { host: 1; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 3: { host: 1; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 4: { host: 2; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 5: { host: 2; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 6: { host: 2; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 7: { host: 2; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 8: { host: 3; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 9: { host: 3; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 10: { host: 3; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 11: { host: 3; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 12: { host: 4; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 13: { host: 4; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 14: { host: 4; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 15: { host: 4; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 16: { host: 5; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 17: { host: 5; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 18: { host: 5; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 19: { host: 5; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 20: { host: 6; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 21: { host: 6; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 22: { host: 6; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 23: { host: 6; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 24: { host: 7; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 25: { host: 7; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 26: { host: 7; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 27: { host: 7; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 28: { host: 8; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 29: { host: 8; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 30: { host: 8; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 31: { host: 8; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 32: { host: 9; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 33: { host: 9; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 34: { host: 9; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 35: { host: 9; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 36: { host: 10; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 37: { host: 10; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 38: { host: 10; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 39: { host: 10; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 40: { host: 11; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 41: { host: 11; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 42: { host: 11; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 43: { host: 11; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 44: { host: 12; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 45: { host: 12; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 46: { host: 12; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 47: { host: 12; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 48: { host: 13; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 49: { host: 13; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 50: { host: 13; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 51: { host: 13; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 52: { host: 14; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 53: { host: 14; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 54: { host: 14; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 55: { host: 14; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 56: { host: 15; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 57: { host: 15; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 58: { host: 15; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 59: { host: 15; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 60: { host: 16; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 61: { host: 16; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 62: { host: 16; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 63: { host: 16; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+Running Threaded Neighbor_Alltoallv Test with 4 threads:
+Testing (around) Size per proc 1
+MPI_Neighbor_alltoallv Time 2.829039e-04
+MPIX_Neighbor_alltoallv Time 2.710562e-04
+MPIX_Neighbor_alltoallv_init Time 2.552203e-04
+MPIX_Neighbor_alltoallv CC Time 1.401332e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.263258e-04
+Threaded CC Neighbor_alltoallv Time 2.924290e-04
+Testing (around) Size per proc 2
+MPI_Neighbor_alltoallv Time 2.684710e-04
+MPIX_Neighbor_alltoallv Time 2.692631e-04
+MPIX_Neighbor_alltoallv_init Time 2.555184e-04
+MPIX_Neighbor_alltoallv CC Time 1.411421e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.261603e-04
+Threaded CC Neighbor_alltoallv Time 3.344413e-04
+Testing (around) Size per proc 4
+MPI_Neighbor_alltoallv Time 2.758412e-04
+MPIX_Neighbor_alltoallv Time 2.692449e-04
+MPIX_Neighbor_alltoallv_init Time 2.574500e-04
+MPIX_Neighbor_alltoallv CC Time 1.429953e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.322858e-04
+Threaded CC Neighbor_alltoallv Time 3.511010e-04
+Testing (around) Size per proc 8
+MPI_Neighbor_alltoallv Time 2.727958e-04
+MPIX_Neighbor_alltoallv Time 2.742435e-04
+MPIX_Neighbor_alltoallv_init Time 2.586895e-04
+MPIX_Neighbor_alltoallv CC Time 1.451265e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.259359e-04
+Threaded CC Neighbor_alltoallv Time 3.556165e-04
+Testing (around) Size per proc 16
+MPI_Neighbor_alltoallv Time 2.844260e-04
+MPIX_Neighbor_alltoallv Time 2.694792e-04
+MPIX_Neighbor_alltoallv_init Time 2.670633e-04
+MPIX_Neighbor_alltoallv CC Time 1.440016e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.364463e-04
+Threaded CC Neighbor_alltoallv Time 3.311569e-04
+Testing (around) Size per proc 32
+MPI_Neighbor_alltoallv Time 2.803937e-04
+MPIX_Neighbor_alltoallv Time 2.789313e-04
+MPIX_Neighbor_alltoallv_init Time 2.629964e-04
+MPIX_Neighbor_alltoallv CC Time 1.530896e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.364681e-04
+Threaded CC Neighbor_alltoallv Time 3.051164e-04
+Testing (around) Size per proc 64
+MPI_Neighbor_alltoallv Time 2.811444e-04
+MPIX_Neighbor_alltoallv Time 2.860274e-04
+MPIX_Neighbor_alltoallv_init Time 2.728405e-04
+MPIX_Neighbor_alltoallv CC Time 1.554037e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.416588e-04
+Threaded CC Neighbor_alltoallv Time 3.169881e-04
+Testing (around) Size per proc 128
+MPI_Neighbor_alltoallv Time 2.949259e-04
+MPIX_Neighbor_alltoallv Time 2.894866e-04
+MPIX_Neighbor_alltoallv_init Time 2.847619e-04
+MPIX_Neighbor_alltoallv CC Time 1.590565e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.562211e-04
+Threaded CC Neighbor_alltoallv Time 3.233682e-04
+Testing (around) Size per proc 256
+MPI_Neighbor_alltoallv Time 3.267408e-04
+MPIX_Neighbor_alltoallv Time 3.239329e-04
+MPIX_Neighbor_alltoallv_init Time 3.181221e-04
+MPIX_Neighbor_alltoallv CC Time 1.807628e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.671180e-04
+Threaded CC Neighbor_alltoallv Time 3.651503e-04
+Testing (around) Size per proc 512
+MPI_Neighbor_alltoallv Time 3.264065e-04
+MPIX_Neighbor_alltoallv Time 3.227599e-04
+MPIX_Neighbor_alltoallv_init Time 3.116924e-04
+MPIX_Neighbor_alltoallv CC Time 2.369771e-04
+MPIX_Neighbor_alltoallv_init CC Time 2.328083e-04
+Threaded CC Neighbor_alltoallv Time 4.075981e-04
+Testing (around) Size per proc 1024
+MPI_Neighbor_alltoallv Time 3.320909e-04
+MPIX_Neighbor_alltoallv Time 3.312878e-04
+MPIX_Neighbor_alltoallv_init Time 3.269652e-04
+MPIX_Neighbor_alltoallv CC Time 3.941833e-04
+MPIX_Neighbor_alltoallv_init CC Time 3.849365e-04
+Threaded CC Neighbor_alltoallv Time 5.077772e-04
+Testing (around) Size per proc 2048
+MPI_Neighbor_alltoallv Time 4.637269e-04
+MPIX_Neighbor_alltoallv Time 4.710010e-04
+MPIX_Neighbor_alltoallv_init Time 4.531817e-04
+MPIX_Neighbor_alltoallv CC Time 7.653144e-04
+MPIX_Neighbor_alltoallv_init CC Time 7.599945e-04
+Threaded CC Neighbor_alltoallv Time 6.923463e-04
+Testing (around) Size per proc 4096
+MPI_Neighbor_alltoallv Time 7.920131e-04
+MPIX_Neighbor_alltoallv Time 7.974285e-04
+MPIX_Neighbor_alltoallv_init Time 7.837763e-04
+MPIX_Neighbor_alltoallv CC Time 1.485028e-03
+MPIX_Neighbor_alltoallv_init CC Time 1.468429e-03
+Threaded CC Neighbor_alltoallv Time 1.342025e-03
+Testing (around) Size per proc 8192
+MPI_Neighbor_alltoallv Time 1.598025e-03
+MPIX_Neighbor_alltoallv Time 1.597059e-03
+MPIX_Neighbor_alltoallv_init Time 1.595728e-03
+MPIX_Neighbor_alltoallv CC Time 2.172232e-03
+MPIX_Neighbor_alltoallv_init CC Time 2.170029e-03
+Threaded CC Neighbor_alltoallv Time 3.503221e-03
+Testing (around) Size per proc 16384
+MPI_Neighbor_alltoallv Time 6.211656e-03
+MPIX_Neighbor_alltoallv Time 6.214009e-03
+MPIX_Neighbor_alltoallv_init Time 6.552679e-03
+MPIX_Neighbor_alltoallv CC Time 4.715496e-03
+MPIX_Neighbor_alltoallv_init CC Time 4.714231e-03
+Threaded CC Neighbor_alltoallv Time 6.205128e-03
+Testing (around) Size per proc 32768
+MPI_Neighbor_alltoallv Time 1.398668e-02
+MPIX_Neighbor_alltoallv Time 1.345692e-02
+MPIX_Neighbor_alltoallv_init Time 1.376598e-02
+MPIX_Neighbor_alltoallv CC Time 8.588200e-03
+MPIX_Neighbor_alltoallv_init CC Time 8.558763e-03
+Threaded CC Neighbor_alltoallv Time 8.979801e-03
+Testing (around) Size per proc 65536
+MPI_Neighbor_alltoallv Time 2.893562e-02
+MPIX_Neighbor_alltoallv Time 2.895790e-02
+MPIX_Neighbor_alltoallv_init Time 2.889334e-02
+MPIX_Neighbor_alltoallv CC Time 1.571721e-02
+MPIX_Neighbor_alltoallv_init CC Time 1.569863e-02
+Threaded CC Neighbor_alltoallv Time 1.368769e-02
+Testing (around) Size per proc 131072
+MPI_Neighbor_alltoallv Time 5.408044e-02
+MPIX_Neighbor_alltoallv Time 5.634786e-02
+MPIX_Neighbor_alltoallv_init Time 5.571307e-02
+MPIX_Neighbor_alltoallv CC Time 3.026199e-02
+MPIX_Neighbor_alltoallv_init CC Time 3.023444e-02
+Threaded CC Neighbor_alltoallv Time 2.247807e-02
+Testing (around) Size per proc 262144
+MPI_Neighbor_alltoallv Time 8.243024e-02
+MPIX_Neighbor_alltoallv Time 8.530768e-02
+MPIX_Neighbor_alltoallv_init Time 8.650310e-02
+MPIX_Neighbor_alltoallv CC Time 5.908500e-02
+MPIX_Neighbor_alltoallv_init CC Time 5.908903e-02
+Threaded CC Neighbor_alltoallv Time 4.093498e-02
+Testing (around) Size per proc 524288
+MPI_Neighbor_alltoallv Time 8.181333e-02
+MPIX_Neighbor_alltoallv Time 8.040243e-02
+MPIX_Neighbor_alltoallv_init Time 7.972453e-02
+MPIX_Neighbor_alltoallv CC Time 1.255524e-01
+MPIX_Neighbor_alltoallv_init CC Time 1.244881e-01
+Threaded CC Neighbor_alltoallv Time 7.881198e-02
+Testing (around) Size per proc 1048576
+MPI_Neighbor_alltoallv Time 1.749966e-01
+MPIX_Neighbor_alltoallv Time 1.733196e-01
+MPIX_Neighbor_alltoallv_init Time 1.731758e-01
+MPIX_Neighbor_alltoallv CC Time 2.494020e-01
+MPIX_Neighbor_alltoallv_init CC Time 2.488038e-01
+Threaded CC Neighbor_alltoallv Time 1.591188e-01
+Testing (around) Size per proc 2097152
+MPI_Neighbor_alltoallv Time 3.661604e-01
+MPIX_Neighbor_alltoallv Time 3.773016e-01
+MPIX_Neighbor_alltoallv_init Time 3.723984e-01
+MPIX_Neighbor_alltoallv CC Time 4.891682e-01
+MPIX_Neighbor_alltoallv_init CC Time 4.916030e-01
+Threaded CC Neighbor_alltoallv Time 3.116431e-01
+app 0: ./gpu_threaded_neighbor_alltoallv 
+rank: 0: { host: 1; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 1: { host: 1; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 2: { host: 1; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 3: { host: 1; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 4: { host: 2; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 5: { host: 2; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 6: { host: 2; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 7: { host: 2; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 8: { host: 3; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 9: { host: 3; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 10: { host: 3; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 11: { host: 3; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 12: { host: 4; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 13: { host: 4; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 14: { host: 4; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 15: { host: 4; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 16: { host: 5; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 17: { host: 5; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 18: { host: 5; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 19: { host: 5; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 20: { host: 6; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 21: { host: 6; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 22: { host: 6; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 23: { host: 6; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 24: { host: 7; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 25: { host: 7; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 26: { host: 7; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 27: { host: 7; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 28: { host: 8; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 29: { host: 8; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 30: { host: 8; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 31: { host: 8; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 32: { host: 9; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 33: { host: 9; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 34: { host: 9; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 35: { host: 9; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 36: { host: 10; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 37: { host: 10; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 38: { host: 10; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 39: { host: 10; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 40: { host: 11; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 41: { host: 11; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 42: { host: 11; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 43: { host: 11; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 44: { host: 12; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 45: { host: 12; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 46: { host: 12; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 47: { host: 12; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 48: { host: 13; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 49: { host: 13; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 50: { host: 13; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 51: { host: 13; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 52: { host: 14; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 53: { host: 14; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 54: { host: 14; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 55: { host: 14; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 56: { host: 15; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 57: { host: 15; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 58: { host: 15; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 59: { host: 15; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 60: { host: 16; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 61: { host: 16; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 62: { host: 16; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 63: { host: 16; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+Running Threaded Neighbor_Alltoallv Test with 6 threads:
+Testing (around) Size per proc 1
+MPI_Neighbor_alltoallv Time 2.785983e-04
+MPIX_Neighbor_alltoallv Time 2.656490e-04
+MPIX_Neighbor_alltoallv_init Time 2.560847e-04
+MPIX_Neighbor_alltoallv CC Time 1.388054e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.273702e-04
+Threaded CC Neighbor_alltoallv Time 2.071447e-04
+Testing (around) Size per proc 2
+MPI_Neighbor_alltoallv Time 2.828032e-04
+MPIX_Neighbor_alltoallv Time 2.647259e-04
+MPIX_Neighbor_alltoallv_init Time 2.567242e-04
+MPIX_Neighbor_alltoallv CC Time 1.400728e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.310533e-04
+Threaded CC Neighbor_alltoallv Time 2.244268e-04
+Testing (around) Size per proc 4
+MPI_Neighbor_alltoallv Time 2.715949e-04
+MPIX_Neighbor_alltoallv Time 2.743358e-04
+MPIX_Neighbor_alltoallv_init Time 2.585289e-04
+MPIX_Neighbor_alltoallv CC Time 1.464155e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.269795e-04
+Threaded CC Neighbor_alltoallv Time 2.186829e-04
+Testing (around) Size per proc 8
+MPI_Neighbor_alltoallv Time 2.704655e-04
+MPIX_Neighbor_alltoallv Time 2.731190e-04
+MPIX_Neighbor_alltoallv_init Time 2.616383e-04
+MPIX_Neighbor_alltoallv CC Time 1.375102e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.335737e-04
+Threaded CC Neighbor_alltoallv Time 2.165212e-04
+Testing (around) Size per proc 16
+MPI_Neighbor_alltoallv Time 2.790239e-04
+MPIX_Neighbor_alltoallv Time 2.706607e-04
+MPIX_Neighbor_alltoallv_init Time 2.657316e-04
+MPIX_Neighbor_alltoallv CC Time 1.429810e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.334247e-04
+Threaded CC Neighbor_alltoallv Time 2.186375e-04
+Testing (around) Size per proc 32
+MPI_Neighbor_alltoallv Time 2.814599e-04
+MPIX_Neighbor_alltoallv Time 2.787780e-04
+MPIX_Neighbor_alltoallv_init Time 2.645745e-04
+MPIX_Neighbor_alltoallv CC Time 1.494392e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.335549e-04
+Threaded CC Neighbor_alltoallv Time 2.220381e-04
+Testing (around) Size per proc 64
+MPI_Neighbor_alltoallv Time 2.842369e-04
+MPIX_Neighbor_alltoallv Time 2.890260e-04
+MPIX_Neighbor_alltoallv_init Time 2.709698e-04
+MPIX_Neighbor_alltoallv CC Time 1.575243e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.396351e-04
+Threaded CC Neighbor_alltoallv Time 2.271406e-04
+Testing (around) Size per proc 128
+MPI_Neighbor_alltoallv Time 2.941644e-04
+MPIX_Neighbor_alltoallv Time 2.943515e-04
+MPIX_Neighbor_alltoallv_init Time 2.833606e-04
+MPIX_Neighbor_alltoallv CC Time 1.651023e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.589590e-04
+Threaded CC Neighbor_alltoallv Time 2.258919e-04
+Testing (around) Size per proc 256
+MPI_Neighbor_alltoallv Time 3.302568e-04
+MPIX_Neighbor_alltoallv Time 3.283664e-04
+MPIX_Neighbor_alltoallv_init Time 3.139585e-04
+MPIX_Neighbor_alltoallv CC Time 1.793724e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.736075e-04
+Threaded CC Neighbor_alltoallv Time 2.677413e-04
+Testing (around) Size per proc 512
+MPI_Neighbor_alltoallv Time 3.322620e-04
+MPIX_Neighbor_alltoallv Time 3.227216e-04
+MPIX_Neighbor_alltoallv_init Time 3.191970e-04
+MPIX_Neighbor_alltoallv CC Time 2.380538e-04
+MPIX_Neighbor_alltoallv_init CC Time 2.298304e-04
+Threaded CC Neighbor_alltoallv Time 2.945530e-04
+Testing (around) Size per proc 1024
+MPI_Neighbor_alltoallv Time 3.329220e-04
+MPIX_Neighbor_alltoallv Time 3.294911e-04
+MPIX_Neighbor_alltoallv_init Time 3.268081e-04
+MPIX_Neighbor_alltoallv CC Time 4.012173e-04
+MPIX_Neighbor_alltoallv_init CC Time 3.888241e-04
+Threaded CC Neighbor_alltoallv Time 3.658185e-04
+Testing (around) Size per proc 2048
+MPI_Neighbor_alltoallv Time 4.634483e-04
+MPIX_Neighbor_alltoallv Time 4.677078e-04
+MPIX_Neighbor_alltoallv_init Time 4.525791e-04
+MPIX_Neighbor_alltoallv CC Time 7.800463e-04
+MPIX_Neighbor_alltoallv_init CC Time 7.677650e-04
+Threaded CC Neighbor_alltoallv Time 5.842938e-04
+Testing (around) Size per proc 4096
+MPI_Neighbor_alltoallv Time 7.941291e-04
+MPIX_Neighbor_alltoallv Time 7.958084e-04
+MPIX_Neighbor_alltoallv_init Time 7.835310e-04
+MPIX_Neighbor_alltoallv CC Time 1.484646e-03
+MPIX_Neighbor_alltoallv_init CC Time 1.478882e-03
+Threaded CC Neighbor_alltoallv Time 1.243220e-03
+Testing (around) Size per proc 8192
+MPI_Neighbor_alltoallv Time 1.579686e-03
+MPIX_Neighbor_alltoallv Time 1.585339e-03
+MPIX_Neighbor_alltoallv_init Time 1.582645e-03
+MPIX_Neighbor_alltoallv CC Time 2.132918e-03
+MPIX_Neighbor_alltoallv_init CC Time 2.124040e-03
+Threaded CC Neighbor_alltoallv Time 1.562232e-03
+Testing (around) Size per proc 16384
+MPI_Neighbor_alltoallv Time 5.940136e-03
+MPIX_Neighbor_alltoallv Time 5.991002e-03
+MPIX_Neighbor_alltoallv_init Time 5.736489e-03
+MPIX_Neighbor_alltoallv CC Time 4.614219e-03
+MPIX_Neighbor_alltoallv_init CC Time 4.585088e-03
+Threaded CC Neighbor_alltoallv Time 3.230802e-03
+Testing (around) Size per proc 32768
+MPI_Neighbor_alltoallv Time 1.470993e-02
+MPIX_Neighbor_alltoallv Time 1.418540e-02
+MPIX_Neighbor_alltoallv_init Time 1.474035e-02
+MPIX_Neighbor_alltoallv CC Time 8.542568e-03
+MPIX_Neighbor_alltoallv_init CC Time 8.498477e-03
+Threaded CC Neighbor_alltoallv Time 6.048474e-03
+Testing (around) Size per proc 65536
+MPI_Neighbor_alltoallv Time 2.774049e-02
+MPIX_Neighbor_alltoallv Time 2.787755e-02
+MPIX_Neighbor_alltoallv_init Time 2.785396e-02
+MPIX_Neighbor_alltoallv CC Time 1.566737e-02
+MPIX_Neighbor_alltoallv_init CC Time 1.561642e-02
+Threaded CC Neighbor_alltoallv Time 1.125021e-02
+Testing (around) Size per proc 131072
+MPI_Neighbor_alltoallv Time 4.951763e-02
+MPIX_Neighbor_alltoallv Time 5.091620e-02
+MPIX_Neighbor_alltoallv_init Time 5.155609e-02
+MPIX_Neighbor_alltoallv CC Time 2.999986e-02
+MPIX_Neighbor_alltoallv_init CC Time 2.986192e-02
+Threaded CC Neighbor_alltoallv Time 2.145600e-02
+Testing (around) Size per proc 262144
+MPI_Neighbor_alltoallv Time 8.298637e-02
+MPIX_Neighbor_alltoallv Time 8.414010e-02
+MPIX_Neighbor_alltoallv_init Time 8.591487e-02
+MPIX_Neighbor_alltoallv CC Time 5.828912e-02
+MPIX_Neighbor_alltoallv_init CC Time 5.801075e-02
+Threaded CC Neighbor_alltoallv Time 4.123847e-02
+Testing (around) Size per proc 524288
+MPI_Neighbor_alltoallv Time 8.375861e-02
+MPIX_Neighbor_alltoallv Time 8.059140e-02
+MPIX_Neighbor_alltoallv_init Time 8.029878e-02
+MPIX_Neighbor_alltoallv CC Time 1.247850e-01
+MPIX_Neighbor_alltoallv_init CC Time 1.244918e-01
+Threaded CC Neighbor_alltoallv Time 7.878655e-02
+Testing (around) Size per proc 1048576
+MPI_Neighbor_alltoallv Time 1.745607e-01
+MPIX_Neighbor_alltoallv Time 1.747074e-01
+MPIX_Neighbor_alltoallv_init Time 1.757785e-01
+MPIX_Neighbor_alltoallv CC Time 2.478588e-01
+MPIX_Neighbor_alltoallv_init CC Time 2.429974e-01
+Threaded CC Neighbor_alltoallv Time 1.538628e-01
+Testing (around) Size per proc 2097152
+MPI_Neighbor_alltoallv Time 3.779066e-01
+MPIX_Neighbor_alltoallv Time 3.691124e-01
+MPIX_Neighbor_alltoallv_init Time 3.714599e-01
+MPIX_Neighbor_alltoallv CC Time 4.972427e-01
+MPIX_Neighbor_alltoallv_init CC Time 4.946738e-01
+Threaded CC Neighbor_alltoallv Time 3.142140e-01
+app 0: ./gpu_threaded_neighbor_alltoallv 
+rank: 0: { host: 1; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 1: { host: 1; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 2: { host: 1; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 3: { host: 1; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 4: { host: 2; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 5: { host: 2; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 6: { host: 2; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 7: { host: 2; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 8: { host: 3; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 9: { host: 3; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 10: { host: 3; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 11: { host: 3; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 12: { host: 4; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 13: { host: 4; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 14: { host: 4; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 15: { host: 4; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 16: { host: 5; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 17: { host: 5; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 18: { host: 5; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 19: { host: 5; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 20: { host: 6; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 21: { host: 6; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 22: { host: 6; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 23: { host: 6; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 24: { host: 7; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 25: { host: 7; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 26: { host: 7; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 27: { host: 7; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 28: { host: 8; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 29: { host: 8; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 30: { host: 8; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 31: { host: 8; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 32: { host: 9; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 33: { host: 9; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 34: { host: 9; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 35: { host: 9; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 36: { host: 10; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 37: { host: 10; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 38: { host: 10; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 39: { host: 10; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 40: { host: 11; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 41: { host: 11; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 42: { host: 11; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 43: { host: 11; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 44: { host: 12; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 45: { host: 12; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 46: { host: 12; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 47: { host: 12; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 48: { host: 13; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 49: { host: 13; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 50: { host: 13; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 51: { host: 13; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 52: { host: 14; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 53: { host: 14; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 54: { host: 14; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 55: { host: 14; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 56: { host: 15; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 57: { host: 15; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 58: { host: 15; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 59: { host: 15; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 60: { host: 16; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 61: { host: 16; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 62: { host: 16; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 63: { host: 16; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+Running Threaded Neighbor_Alltoallv Test with 8 threads:
+Testing (around) Size per proc 1
+MPI_Neighbor_alltoallv Time 2.702022e-04
+MPIX_Neighbor_alltoallv Time 2.622315e-04
+MPIX_Neighbor_alltoallv_init Time 2.662335e-04
+MPIX_Neighbor_alltoallv CC Time 1.393822e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.241559e-04
+Threaded CC Neighbor_alltoallv Time 2.145894e-04
+Testing (around) Size per proc 2
+MPI_Neighbor_alltoallv Time 2.687362e-04
+MPIX_Neighbor_alltoallv Time 2.619047e-04
+MPIX_Neighbor_alltoallv_init Time 2.547230e-04
+MPIX_Neighbor_alltoallv CC Time 1.413253e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.305849e-04
+Threaded CC Neighbor_alltoallv Time 2.165717e-04
+Testing (around) Size per proc 4
+MPI_Neighbor_alltoallv Time 2.712849e-04
+MPIX_Neighbor_alltoallv Time 2.690919e-04
+MPIX_Neighbor_alltoallv_init Time 2.596504e-04
+MPIX_Neighbor_alltoallv CC Time 1.407979e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.259707e-04
+Threaded CC Neighbor_alltoallv Time 2.130714e-04
+Testing (around) Size per proc 8
+MPI_Neighbor_alltoallv Time 2.763686e-04
+MPIX_Neighbor_alltoallv Time 2.632353e-04
+MPIX_Neighbor_alltoallv_init Time 2.661954e-04
+MPIX_Neighbor_alltoallv CC Time 1.353576e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.333940e-04
+Threaded CC Neighbor_alltoallv Time 2.133563e-04
+Testing (around) Size per proc 16
+MPI_Neighbor_alltoallv Time 2.811677e-04
+MPIX_Neighbor_alltoallv Time 2.678810e-04
+MPIX_Neighbor_alltoallv_init Time 2.611824e-04
+MPIX_Neighbor_alltoallv CC Time 1.444719e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.352532e-04
+Threaded CC Neighbor_alltoallv Time 2.176806e-04
+Testing (around) Size per proc 32
+MPI_Neighbor_alltoallv Time 2.793808e-04
+MPIX_Neighbor_alltoallv Time 2.751528e-04
+MPIX_Neighbor_alltoallv_init Time 2.634020e-04
+MPIX_Neighbor_alltoallv CC Time 1.495208e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.327300e-04
+Threaded CC Neighbor_alltoallv Time 2.269995e-04
+Testing (around) Size per proc 64
+MPI_Neighbor_alltoallv Time 2.816598e-04
+MPIX_Neighbor_alltoallv Time 2.740354e-04
+MPIX_Neighbor_alltoallv_init Time 2.704972e-04
+MPIX_Neighbor_alltoallv CC Time 1.557217e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.397237e-04
+Threaded CC Neighbor_alltoallv Time 2.251960e-04
+Testing (around) Size per proc 128
+MPI_Neighbor_alltoallv Time 2.929138e-04
+MPIX_Neighbor_alltoallv Time 2.869160e-04
+MPIX_Neighbor_alltoallv_init Time 2.842854e-04
+MPIX_Neighbor_alltoallv CC Time 1.706406e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.567729e-04
+Threaded CC Neighbor_alltoallv Time 2.400124e-04
+Testing (around) Size per proc 256
+MPI_Neighbor_alltoallv Time 3.235515e-04
+MPIX_Neighbor_alltoallv Time 3.267117e-04
+MPIX_Neighbor_alltoallv_init Time 3.139073e-04
+MPIX_Neighbor_alltoallv CC Time 1.785772e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.740245e-04
+Threaded CC Neighbor_alltoallv Time 2.604256e-04
+Testing (around) Size per proc 512
+MPI_Neighbor_alltoallv Time 3.249547e-04
+MPIX_Neighbor_alltoallv Time 3.239610e-04
+MPIX_Neighbor_alltoallv_init Time 3.090218e-04
+MPIX_Neighbor_alltoallv CC Time 2.387199e-04
+MPIX_Neighbor_alltoallv_init CC Time 2.270243e-04
+Threaded CC Neighbor_alltoallv Time 2.853255e-04
+Testing (around) Size per proc 1024
+MPI_Neighbor_alltoallv Time 3.283306e-04
+MPIX_Neighbor_alltoallv Time 3.226024e-04
+MPIX_Neighbor_alltoallv_init Time 3.108346e-04
+MPIX_Neighbor_alltoallv CC Time 3.926665e-04
+MPIX_Neighbor_alltoallv_init CC Time 3.825147e-04
+Threaded CC Neighbor_alltoallv Time 3.529404e-04
+Testing (around) Size per proc 2048
+MPI_Neighbor_alltoallv Time 4.646313e-04
+MPIX_Neighbor_alltoallv Time 4.680831e-04
+MPIX_Neighbor_alltoallv_init Time 4.503633e-04
+MPIX_Neighbor_alltoallv CC Time 7.735072e-04
+MPIX_Neighbor_alltoallv_init CC Time 7.656891e-04
+Threaded CC Neighbor_alltoallv Time 5.875344e-04
+Testing (around) Size per proc 4096
+MPI_Neighbor_alltoallv Time 7.916583e-04
+MPIX_Neighbor_alltoallv Time 7.966475e-04
+MPIX_Neighbor_alltoallv_init Time 7.798283e-04
+MPIX_Neighbor_alltoallv CC Time 1.479516e-03
+MPIX_Neighbor_alltoallv_init CC Time 1.458987e-03
+Threaded CC Neighbor_alltoallv Time 1.196981e-03
+Testing (around) Size per proc 8192
+MPI_Neighbor_alltoallv Time 1.574132e-03
+MPIX_Neighbor_alltoallv Time 1.577648e-03
+MPIX_Neighbor_alltoallv_init Time 1.576442e-03
+MPIX_Neighbor_alltoallv CC Time 2.157049e-03
+MPIX_Neighbor_alltoallv_init CC Time 2.142048e-03
+Threaded CC Neighbor_alltoallv Time 1.521270e-03
+Testing (around) Size per proc 16384
+MPI_Neighbor_alltoallv Time 5.927772e-03
+MPIX_Neighbor_alltoallv Time 5.909265e-03
+MPIX_Neighbor_alltoallv_init Time 5.933717e-03
+MPIX_Neighbor_alltoallv CC Time 4.662448e-03
+MPIX_Neighbor_alltoallv_init CC Time 4.655090e-03
+Threaded CC Neighbor_alltoallv Time 3.191736e-03
+Testing (around) Size per proc 32768
+MPI_Neighbor_alltoallv Time 1.433835e-02
+MPIX_Neighbor_alltoallv Time 1.371676e-02
+MPIX_Neighbor_alltoallv_init Time 1.437048e-02
+MPIX_Neighbor_alltoallv CC Time 8.561213e-03
+MPIX_Neighbor_alltoallv_init CC Time 8.586738e-03
+Threaded CC Neighbor_alltoallv Time 5.986630e-03
+Testing (around) Size per proc 65536
+MPI_Neighbor_alltoallv Time 2.833544e-02
+MPIX_Neighbor_alltoallv Time 2.821673e-02
+MPIX_Neighbor_alltoallv_init Time 2.818710e-02
+MPIX_Neighbor_alltoallv CC Time 1.584135e-02
+MPIX_Neighbor_alltoallv_init CC Time 1.579462e-02
+Threaded CC Neighbor_alltoallv Time 1.101823e-02
+Testing (around) Size per proc 131072
+MPI_Neighbor_alltoallv Time 5.137537e-02
+MPIX_Neighbor_alltoallv Time 5.165468e-02
+MPIX_Neighbor_alltoallv_init Time 5.331748e-02
+MPIX_Neighbor_alltoallv CC Time 3.415858e-02
+MPIX_Neighbor_alltoallv_init CC Time 3.396140e-02
+Threaded CC Neighbor_alltoallv Time 2.109060e-02
+Testing (around) Size per proc 262144
+MPI_Neighbor_alltoallv Time 8.485076e-02
+MPIX_Neighbor_alltoallv Time 8.427665e-02
+MPIX_Neighbor_alltoallv_init Time 8.615249e-02
+MPIX_Neighbor_alltoallv CC Time 6.423104e-02
+MPIX_Neighbor_alltoallv_init CC Time 6.449036e-02
+Threaded CC Neighbor_alltoallv Time 3.976942e-02
+Testing (around) Size per proc 524288
+MPI_Neighbor_alltoallv Time 8.527794e-02
+MPIX_Neighbor_alltoallv Time 8.231000e-02
+MPIX_Neighbor_alltoallv_init Time 8.067828e-02
+MPIX_Neighbor_alltoallv CC Time 1.249511e-01
+MPIX_Neighbor_alltoallv_init CC Time 1.251785e-01
+Threaded CC Neighbor_alltoallv Time 7.904569e-02
+Testing (around) Size per proc 1048576
+MPI_Neighbor_alltoallv Time 1.751195e-01
+MPIX_Neighbor_alltoallv Time 1.747117e-01
+MPIX_Neighbor_alltoallv_init Time 1.746374e-01
+MPIX_Neighbor_alltoallv CC Time 2.481832e-01
+MPIX_Neighbor_alltoallv_init CC Time 2.485275e-01
+Threaded CC Neighbor_alltoallv Time 1.571013e-01
+Testing (around) Size per proc 2097152
+MPI_Neighbor_alltoallv Time 3.695052e-01
+MPIX_Neighbor_alltoallv Time 3.689692e-01
+MPIX_Neighbor_alltoallv_init Time 3.713797e-01
+MPIX_Neighbor_alltoallv CC Time 4.925875e-01
+MPIX_Neighbor_alltoallv_init CC Time 4.905252e-01
+Threaded CC Neighbor_alltoallv Time 3.153435e-01
+app 0: ./gpu_threaded_neighbor_alltoallv 
+rank: 0: { host: 1; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 1: { host: 1; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 2: { host: 1; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 3: { host: 1; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 4: { host: 2; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 5: { host: 2; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 6: { host: 2; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 7: { host: 2; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 8: { host: 3; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 9: { host: 3; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 10: { host: 3; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 11: { host: 3; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 12: { host: 4; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 13: { host: 4; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 14: { host: 4; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 15: { host: 4; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 16: { host: 5; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 17: { host: 5; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 18: { host: 5; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 19: { host: 5; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 20: { host: 6; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 21: { host: 6; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 22: { host: 6; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 23: { host: 6; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 24: { host: 7; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 25: { host: 7; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 26: { host: 7; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 27: { host: 7; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 28: { host: 8; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 29: { host: 8; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 30: { host: 8; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 31: { host: 8; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 32: { host: 9; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 33: { host: 9; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 34: { host: 9; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 35: { host: 9; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 36: { host: 10; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 37: { host: 10; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 38: { host: 10; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 39: { host: 10; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 40: { host: 11; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 41: { host: 11; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 42: { host: 11; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 43: { host: 11; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 44: { host: 12; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 45: { host: 12; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 46: { host: 12; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 47: { host: 12; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 48: { host: 13; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 49: { host: 13; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 50: { host: 13; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 51: { host: 13; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 52: { host: 14; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 53: { host: 14; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 54: { host: 14; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 55: { host: 14; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 56: { host: 15; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 57: { host: 15; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 58: { host: 15; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 59: { host: 15; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 60: { host: 16; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 61: { host: 16; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 62: { host: 16; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 63: { host: 16; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+Running Threaded Neighbor_Alltoallv Test with 10 threads:
+Testing (around) Size per proc 1
+MPI_Neighbor_alltoallv Time 2.716036e-04
+MPIX_Neighbor_alltoallv Time 2.681285e-04
+MPIX_Neighbor_alltoallv_init Time 2.574163e-04
+MPIX_Neighbor_alltoallv CC Time 1.398705e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.278502e-04
+Threaded CC Neighbor_alltoallv Time 2.297163e-04
+Testing (around) Size per proc 2
+MPI_Neighbor_alltoallv Time 2.711519e-04
+MPIX_Neighbor_alltoallv Time 2.650612e-04
+MPIX_Neighbor_alltoallv_init Time 2.607065e-04
+MPIX_Neighbor_alltoallv CC Time 1.349814e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.304646e-04
+Threaded CC Neighbor_alltoallv Time 2.303874e-04
+Testing (around) Size per proc 4
+MPI_Neighbor_alltoallv Time 2.756863e-04
+MPIX_Neighbor_alltoallv Time 2.704504e-04
+MPIX_Neighbor_alltoallv_init Time 2.639555e-04
+MPIX_Neighbor_alltoallv CC Time 1.395363e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.345939e-04
+Threaded CC Neighbor_alltoallv Time 2.287855e-04
+Testing (around) Size per proc 8
+MPI_Neighbor_alltoallv Time 2.772197e-04
+MPIX_Neighbor_alltoallv Time 2.701319e-04
+MPIX_Neighbor_alltoallv_init Time 2.588392e-04
+MPIX_Neighbor_alltoallv CC Time 1.437027e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.321090e-04
+Threaded CC Neighbor_alltoallv Time 2.275871e-04
+Testing (around) Size per proc 16
+MPI_Neighbor_alltoallv Time 2.768595e-04
+MPIX_Neighbor_alltoallv Time 2.769213e-04
+MPIX_Neighbor_alltoallv_init Time 2.649826e-04
+MPIX_Neighbor_alltoallv CC Time 1.433612e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.357662e-04
+Threaded CC Neighbor_alltoallv Time 2.329064e-04
+Testing (around) Size per proc 32
+MPI_Neighbor_alltoallv Time 2.797837e-04
+MPIX_Neighbor_alltoallv Time 2.766930e-04
+MPIX_Neighbor_alltoallv_init Time 2.686191e-04
+MPIX_Neighbor_alltoallv CC Time 1.504200e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.341248e-04
+Threaded CC Neighbor_alltoallv Time 2.398296e-04
+Testing (around) Size per proc 64
+MPI_Neighbor_alltoallv Time 2.849184e-04
+MPIX_Neighbor_alltoallv Time 2.788219e-04
+MPIX_Neighbor_alltoallv_init Time 2.703679e-04
+MPIX_Neighbor_alltoallv CC Time 1.553447e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.418292e-04
+Threaded CC Neighbor_alltoallv Time 2.392817e-04
+Testing (around) Size per proc 128
+MPI_Neighbor_alltoallv Time 2.932463e-04
+MPIX_Neighbor_alltoallv Time 2.930870e-04
+MPIX_Neighbor_alltoallv_init Time 2.814681e-04
+MPIX_Neighbor_alltoallv CC Time 1.649795e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.566901e-04
+Threaded CC Neighbor_alltoallv Time 2.482444e-04
+Testing (around) Size per proc 256
+MPI_Neighbor_alltoallv Time 3.259140e-04
+MPIX_Neighbor_alltoallv Time 3.193736e-04
+MPIX_Neighbor_alltoallv_init Time 3.150322e-04
+MPIX_Neighbor_alltoallv CC Time 1.848327e-04
+MPIX_Neighbor_alltoallv_init CC Time 1.762265e-04
+Threaded CC Neighbor_alltoallv Time 2.667059e-04
+Testing (around) Size per proc 512
+MPI_Neighbor_alltoallv Time 3.299709e-04
+MPIX_Neighbor_alltoallv Time 3.235274e-04
+MPIX_Neighbor_alltoallv_init Time 3.149327e-04
+MPIX_Neighbor_alltoallv CC Time 2.412570e-04
+MPIX_Neighbor_alltoallv_init CC Time 2.278213e-04
+Threaded CC Neighbor_alltoallv Time 2.992118e-04
+Testing (around) Size per proc 1024
+MPI_Neighbor_alltoallv Time 3.343511e-04
+MPIX_Neighbor_alltoallv Time 3.325026e-04
+MPIX_Neighbor_alltoallv_init Time 3.190040e-04
+MPIX_Neighbor_alltoallv CC Time 4.001542e-04
+MPIX_Neighbor_alltoallv_init CC Time 3.871882e-04
+Threaded CC Neighbor_alltoallv Time 3.582478e-04
+Testing (around) Size per proc 2048
+MPI_Neighbor_alltoallv Time 4.628753e-04
+MPIX_Neighbor_alltoallv Time 4.682550e-04
+MPIX_Neighbor_alltoallv_init Time 4.536538e-04
+MPIX_Neighbor_alltoallv CC Time 7.723668e-04
+MPIX_Neighbor_alltoallv_init CC Time 7.590197e-04
+Threaded CC Neighbor_alltoallv Time 5.618980e-04
+Testing (around) Size per proc 4096
+MPI_Neighbor_alltoallv Time 7.930364e-04
+MPIX_Neighbor_alltoallv Time 7.990527e-04
+MPIX_Neighbor_alltoallv_init Time 7.891007e-04
+MPIX_Neighbor_alltoallv CC Time 1.488692e-03
+MPIX_Neighbor_alltoallv_init CC Time 1.477373e-03
+Threaded CC Neighbor_alltoallv Time 1.089320e-03
+Testing (around) Size per proc 8192
+MPI_Neighbor_alltoallv Time 1.586609e-03
+MPIX_Neighbor_alltoallv Time 1.578860e-03
+MPIX_Neighbor_alltoallv_init Time 1.575136e-03
+MPIX_Neighbor_alltoallv CC Time 2.195391e-03
+MPIX_Neighbor_alltoallv_init CC Time 2.175800e-03
+Threaded CC Neighbor_alltoallv Time 1.512881e-03
+Testing (around) Size per proc 16384
+MPI_Neighbor_alltoallv Time 5.605996e-03
+MPIX_Neighbor_alltoallv Time 5.807987e-03
+MPIX_Neighbor_alltoallv_init Time 5.655782e-03
+MPIX_Neighbor_alltoallv CC Time 4.614198e-03
+MPIX_Neighbor_alltoallv_init CC Time 4.594203e-03
+Threaded CC Neighbor_alltoallv Time 3.132315e-03
+Testing (around) Size per proc 32768
+MPI_Neighbor_alltoallv Time 1.346809e-02
+MPIX_Neighbor_alltoallv Time 1.295287e-02
+MPIX_Neighbor_alltoallv_init Time 1.328013e-02
+MPIX_Neighbor_alltoallv CC Time 8.528565e-03
+MPIX_Neighbor_alltoallv_init CC Time 8.524751e-03
+Threaded CC Neighbor_alltoallv Time 5.862581e-03
+Testing (around) Size per proc 65536
+MPI_Neighbor_alltoallv Time 2.751474e-02
+MPIX_Neighbor_alltoallv Time 2.758595e-02
+MPIX_Neighbor_alltoallv_init Time 2.751075e-02
+MPIX_Neighbor_alltoallv CC Time 1.577684e-02
+MPIX_Neighbor_alltoallv_init CC Time 1.572441e-02
+Threaded CC Neighbor_alltoallv Time 1.109939e-02
+Testing (around) Size per proc 131072
+MPI_Neighbor_alltoallv Time 5.473200e-02
+MPIX_Neighbor_alltoallv Time 5.213062e-02
+MPIX_Neighbor_alltoallv_init Time 5.136981e-02
+MPIX_Neighbor_alltoallv CC Time 3.407696e-02
+MPIX_Neighbor_alltoallv_init CC Time 3.403545e-02
+Threaded CC Neighbor_alltoallv Time 2.145972e-02
+Testing (around) Size per proc 262144
+MPI_Neighbor_alltoallv Time 8.783243e-02
+MPIX_Neighbor_alltoallv Time 8.393879e-02
+MPIX_Neighbor_alltoallv_init Time 8.463450e-02
+MPIX_Neighbor_alltoallv CC Time 6.616622e-02
+MPIX_Neighbor_alltoallv_init CC Time 6.638113e-02
+Threaded CC Neighbor_alltoallv Time 4.103491e-02
+Testing (around) Size per proc 524288
+MPI_Neighbor_alltoallv Time 8.596825e-02
+MPIX_Neighbor_alltoallv Time 8.214895e-02
+MPIX_Neighbor_alltoallv_init Time 8.255428e-02
+MPIX_Neighbor_alltoallv CC Time 1.248268e-01
+MPIX_Neighbor_alltoallv_init CC Time 1.245911e-01
+Threaded CC Neighbor_alltoallv Time 7.864911e-02
+Testing (around) Size per proc 1048576
+MPI_Neighbor_alltoallv Time 1.740399e-01
+MPIX_Neighbor_alltoallv Time 1.740759e-01
+MPIX_Neighbor_alltoallv_init Time 1.716248e-01
+MPIX_Neighbor_alltoallv CC Time 2.437365e-01
+MPIX_Neighbor_alltoallv_init CC Time 2.432373e-01
+Threaded CC Neighbor_alltoallv Time 1.539509e-01
+Testing (around) Size per proc 2097152
+MPI_Neighbor_alltoallv Time 3.739178e-01
+MPIX_Neighbor_alltoallv Time 3.746732e-01
+MPIX_Neighbor_alltoallv_init Time 3.717066e-01
+MPIX_Neighbor_alltoallv CC Time 4.936169e-01
+MPIX_Neighbor_alltoallv_init CC Time 4.919065e-01
+Threaded CC Neighbor_alltoallv Time 3.132402e-01
+app 0: ./gpu_threaded_neighbor_alltoallv 
+rank: 0: { host: 1; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 1: { host: 1; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 2: { host: 1; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 3: { host: 1; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 4: { host: 2; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 5: { host: 2; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 6: { host: 2; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 7: { host: 2; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 8: { host: 3; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 9: { host: 3; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 10: { host: 3; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 11: { host: 3; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 12: { host: 4; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 13: { host: 4; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 14: { host: 4; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 15: { host: 4; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 16: { host: 5; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 17: { host: 5; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 18: { host: 5; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 19: { host: 5; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 20: { host: 6; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 21: { host: 6; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 22: { host: 6; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 23: { host: 6; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 24: { host: 7; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 25: { host: 7; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 26: { host: 7; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 27: { host: 7; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 28: { host: 8; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 29: { host: 8; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 30: { host: 8; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 31: { host: 8; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 32: { host: 9; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 33: { host: 9; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 34: { host: 9; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 35: { host: 9; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 36: { host: 10; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 37: { host: 10; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 38: { host: 10; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 39: { host: 10; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 40: { host: 11; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 41: { host: 11; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 42: { host: 11; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 43: { host: 11; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 44: { host: 12; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 45: { host: 12; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 46: { host: 12; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 47: { host: 12; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 48: { host: 13; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 49: { host: 13; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 50: { host: 13; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 51: { host: 13; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 52: { host: 14; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 53: { host: 14; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 54: { host: 14; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 55: { host: 14; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 56: { host: 15; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 57: { host: 15; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 58: { host: 15; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 59: { host: 15; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 60: { host: 16; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 61: { host: 16; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 62: { host: 16; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 63: { host: 16; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+logout
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 6089509: <nbralltoallv_n16> in cluster <lassen> Done
+
+Job <nbralltoallv_n16> was submitted from host <lassen709> by user <adams112> in cluster <lassen> at Wed Aug 14 13:11:46 2024
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <adams112> in cluster <lassen> at Wed Aug 14 13:24:10 2024
+                            <40*lassen474>
+                            <40*lassen476>
+                            <40*lassen163>
+                            <40*lassen493>
+                            <40*lassen498>
+                            <40*lassen343>
+                            <40*lassen675>
+                            <40*lassen353>
+                            <40*lassen532>
+                            <40*lassen534>
+                            <40*lassen206>
+                            <40*lassen536>
+                            <40*lassen245>
+                            <40*lassen213>
+                            <40*lassen394>
+                            <40*lassen397>
+</g/g11/adams112> was used as the home directory.
+</g/g11/adams112/locality_aware-mikethebos/benchmark_tests/lassen> was used as the working directory.
+Started at Wed Aug 14 13:24:10 2024
+Terminated at Wed Aug 14 14:46:19 2024
+Results reported at Wed Aug 14 14:46:19 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J nbralltoallv_n16
+#BSUB -e nbralltoallv_n16.%J.err
+#BSUB -o nbralltoallv_n16.%J.out
+#BSUB -nnodes 16
+#BSUB -q pbatch
+#BSUB -W 02:40
+
+module load gcc/7.3.1
+module load cuda/10.2.89
+module load hwloc
+
+cd $HOME/locality_aware-mikethebos/build/benchmarks
+
+echo "Running Unthreaded Neighbor_Alltoallv Test:"
+export OMP_NUM_THREADS=1
+jsrun -a1 -c1 -g1 -r4 -n64 -bpacked:1 -dpacked -EOMP_NUM_THREADS=1 --print_placement=1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_neighbor_alltoallv
+
+echo "Running Threaded Neighbor_Alltoallv Test with 2 threads:"
+export OMP_NUM_THREADS=2
+jsrun -a1 -c2 -g1 -r4 -n64 -bpacked:2 -dpacked -EOMP_NUM_THREADS=2 --print_placement=1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+
+echo "Running Threaded Neighbor_Alltoallv Test with 4 threads:"
+export OMP_NUM_THREADS=4
+jsrun -a1 -c4 -g1 -r4 -n64 -bpacked:4 -dpacked -EOMP_NUM_THREADS=4 --print_placement=1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+
+echo "Running Threaded Neighbor_Alltoallv Test with 6 threads:"
+export OMP_NUM_THREADS=6
+jsrun -a1 -c6 -g1 -r4 -n64 -bpacked:6 -dpacked -EOMP_NUM_THREADS=6 --print_placement=1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+
+echo "Running Threaded Neighbor_Alltoallv Test with 8 threads:"
+export OMP_NUM_THREADS=8
+jsrun -a1 -c8 -g1 -r4 -n64 -bpacked:8 -dpacked -EOMP_NUM_THREADS=8 --print_placement=1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+
+echo "Running Threaded Neighbor_Alltoallv Test with 10 threads:"
+export OMP_NUM_THREADS=10
+jsrun -a1 -c10 -g1 -r4 -n64 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 --print_placement=1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   3.00 sec.
+    Max Memory :                                 62 MB
+    Average Memory :                             60.90 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1426 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   4929 sec.
+    Turnaround time :                            5673 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <nbralltoallv_n16.6089509.err> for stderr output of this job.
+
