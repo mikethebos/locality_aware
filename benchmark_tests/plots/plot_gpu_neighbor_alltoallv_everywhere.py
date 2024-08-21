@@ -62,4 +62,18 @@ if len(include_list) == 0:
         plt.legend()
         plt.tight_layout()
         pdf.savefig(fig)
+    
+    fig = plt.figure()
+    plt.loglog(xs_list[th_run_type][10], ys_list[th_run_type][10], label=str(10) + " threads")
+    for run_type in xs_list.keys():
+        if "Threaded" in run_type:
+            continue
+        plt.loglog(xs_list[run_type][1], ys_list[run_type][1], label=run_type)
+    plt.title("10 threads vs")
+    plt.xlabel("Floating point numbers")
+    plt.ylabel("Time (s)")
+    plt.legend()
+    plt.tight_layout()
+    pdf.savefig(fig)
+
     pdf.close()
