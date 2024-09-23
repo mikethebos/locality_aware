@@ -4,6 +4,7 @@ set(neighborhood_HEADERS
     neighborhood/dist_graph.h
     neighborhood/neighbor.h
     neighborhood/neighbor_persistent.h
+    neighborhood/sparse_coll.h
     PARENT_SCOPE
     )
 
@@ -12,6 +13,8 @@ set(neighborhood_SOURCES
     neighborhood/neighbor.c
     neighborhood/neighbor_locality.cpp
     neighborhood/neighbor_persistent.c
+    neighborhood/sparse_coll.c
+    neighborhood/sparse_coll_utils.cpp
     PARENT_SCOPE
     )
 
