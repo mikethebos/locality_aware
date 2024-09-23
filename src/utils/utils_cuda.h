@@ -22,6 +22,8 @@
 #define gpuMemcpyDeviceToHost cudaMemcpyDeviceToHost
 #define gpuMemcpyHostToDevice cudaMemcpyHostToDevice
 #define gpuMemcpyDeviceToDevice cudaMemcpyDeviceToDevice
+#define gpuMemcpyHostToHost cudaMemcpyHostToHost
+#define gpuMemcpyKind cudaMemcpyKind
 
 // Streams
 #define gpuStream_t cudaStream_t
@@ -32,5 +34,13 @@
 #define gpuDeviceSynchronize cudaDeviceSynchronize
 #define gpuStreamSynchronize cudaStreamSynchronize
 
+#define gpuMemoryTypeHost cudaMemoryTypeHost
+#define gpuErrorInvalidValue cudaErrorInvalidValue
+#define gpuPointerGetAttributes cudaPointerGetAttributes
+#define gpuPointerAttributes cudaPointerAttributes
+#define gpuMemoryTypeHost cudaMemoryTypeHost
+#define gpuMemoryTypeDevice cudaMemoryTypeDevice
+#define gpuMemoryType cudaMemoryType
+#define gpuMemset cudaMemset
 
 #endif
