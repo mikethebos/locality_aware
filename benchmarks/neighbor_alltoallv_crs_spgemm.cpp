@@ -68,27 +68,26 @@ int main(int argc, char* argv[])
             
     // setup for SpMM - send all nonzero entries for row
     std::vector<int> send_row_sizes(A.send_comm.n_msgs);
-    std::vector<int *> colIndicesPtrs(A.send_comm.n_msgs);
-    int *sendColIndPtr = A.on_proc.col_idx.data();   // Amanda:  are these globall?
+    std::vector<std::vector<int> *> globalColIndices(A.send_comm.n_msgs);
     std::vector<double *> sendDataVals(A.send_comm.n_msgs);
-    double *sendDataPtr = A.on_proc.data.data();
     for (int i = 0; i < A.send_comm.n_msgs; i++)
     {
-        if (i < A.send_comm.n_msgs - 1)
-        {
-            send_row_sizes[i] = A.send_comm.ptr[i + 1] - A.send_comm.ptr[i];
-        }
-        else
-        {
-            send_row_sizes[i] = A.on_proc.nnz - A.send_comm.ptr[i];  // Amanda:  is A.on_proc.nnz the local number of nonzeros?
-        }
+        int ptr = A.send_comm.ptr[i];
         
-        colIndicesPtrs[i] = sendColIndPtr;
-        sendColIndPtr += send_row_sizes[i];
+        send_row_sizes[i] = A.send_comm.ptr[ptr + 1] - A.send_comm.ptr[ptr];
         
-        sendDataVals[i] = sendDataPtr;
-        sendDataPtr += send_row_sizes[i];
+        int *localColIndicesPtr = &(A.on_proc.col_idx[ptr]);
+        std::vector<int> *globalColIndicesVec = new std::vector<int>(send_row_sizes[i]);
+        // compute global column indices
+        for (int j = 0; j < send_row_sizes[i]; j++)
+        {
+            (*globalColIndicesVec)[j] = A.first_col + localColIndicesPtr[j];
+        }
+        globalColIndices[i] = globalColIndicesVec;
+        
+        sendDataVals[i] = &(A.on_proc.data[ptr]);
     }
+    int num_send_vals = std::accumulate(send_row_sizes.begin(), send_row_sizes.end(), 0);
 
     // communicate  TODO
     // sends
@@ -105,6 +104,10 @@ int main(int argc, char* argv[])
     // }
     // recvs
     
+    for (int i = 0; i < A.send_comm.n_msgs; i++)
+    {
+        delete globalColIndices[i];
+    }
 
     MPIX_Info_free(&xinfo);
     MPIX_Comm_free(xcomm);
