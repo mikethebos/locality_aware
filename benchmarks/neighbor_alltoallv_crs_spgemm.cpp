@@ -89,21 +89,31 @@ int main(int argc, char* argv[])
     }
     int num_send_vals = std::accumulate(send_row_sizes.begin(), send_row_sizes.end(), 0);
 
-    // communicate  TODO
+    // communicate
     // sends
-    // char *sendbuf = (char *)malloc();  // buffer to pack
-    // MPI_Request* send_reqs[A.send_comm.n_msgs];
-    // int j = 0;
-    // for (int i = 0; i < A.send_comm.n_msgs + 1; i++)
-    // {
-    //     if (A.send_comm.procs[i] != rank)
-    //     {
-    //         MPI_Isend();
-    //         j++;
-    //     }
-    // }
-    // recvs
+    std::vector<char> packBuf(A.send_comm.n_msgs * sizeof(int) + num_send_vals * sizeof(int) + num_send_vals * sizeof(double));  // buffer to pack
+    MPI_Request* send_reqs = (MPI_Request *)malloc(A.send_comm.n_msgs * sizeof(MPI_Request));
+    char *packBufPtr = packBuf.data();
+    int num_send_reqs = 0;
+    for (int i = 0; i < A.send_comm.n_msgs; i++)
+    {
+        int proc = A.send_comm.procs[i];
+        if (proc == rank) continue;
+        int pos = 0;
+        MPI_Pack(&(send_row_sizes[i]), 1, MPI_INT, packBufPtr, sizeof(int) + send_row_sizes[i] * sizeof(int) + send_row_sizes[i] * sizeof(double), &pos, MPI_COMM_WORLD);
+        MPI_Pack(globalColIndices[i]->data(), send_row_sizes[i], MPI_INT, packBufPtr, sizeof(int) + send_row_sizes[i] * sizeof(int) + send_row_sizes[i] * sizeof(double), &pos, MPI_COMM_WORLD);
+        MPI_Pack(sendDataVals.data(), send_row_sizes[i], MPI_DOUBLE, packBufPtr, sizeof(int) + send_row_sizes[i] * sizeof(int) + send_row_sizes[i] * sizeof(double), &pos, MPI_COMM_WORLD);
+        MPI_Isend(packBufPtr, pos, MPI_PACKED, proc, xinfo->tag, MPI_COMM_WORLD, &(send_reqs[i]));
+        packBufPtr += pos;
+        num_send_reqs++;
+    }
     
+    // recvs  TODO
+    
+    
+    MPI_Waitall(num_send_reqs, send_reqs, MPI_STATUSES_IGNORE);
+    
+    free(send_reqs);
     for (int i = 0; i < A.send_comm.n_msgs; i++)
     {
         delete globalColIndices[i];
