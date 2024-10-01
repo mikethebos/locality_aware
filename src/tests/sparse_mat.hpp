@@ -4,9 +4,13 @@
 #include "mpi.h"
 #include <vector>
 
+
+// Local matrix -- we hold two (A.on_proc and A.off_proc).  These are both fully local
 struct Mat 
 {
+    // Rowptr points to the index in col_idx/data where each row starts
     std::vector<int> rowptr;
+    // The rest of the CSR matrix (local col indices, data values)
     std::vector<int> col_idx;
     std::vector<double> data;
     int n_rows;
@@ -18,28 +22,60 @@ struct Mat
 template <typename U>
 struct Comm
 {
+    // Number of messages I send
     int n_msgs;
+
+    // Total size of all messages combined
     int size_msgs;
+
+    // List, size = n_msgs, which processes I send to
     std::vector<int> procs;
+
+    // List, size = n_msgs + 1, points to index within `idx` list.  idx[ptr[i]] is first index I send to procs[i].
     std::vector<U> ptr;
+
+    // List, size = n_msgs, counts[i] = ptr[i+1] - ptr[i], number of indices (idx) to send to procs[i].
     std::vector<int> counts;
+
+    // Actual indices to send to each process.  Send idx[ptr[i]] to idx[ptr[i+1]] to procs[i].
+    // For SpMV, these are vector indices to send.  For SpGEMM, these are the rows to send.
     std::vector<int> idx;
+
+    // Array of MPI_Requests for Isends/Irecvs.
     std::vector<MPI_Request> req;
 };
 
 template <typename U>
 struct ParMat
 {
+    // Fully local A.on_proc
     Mat on_proc;
+    // Fully local A.off_proc
     Mat off_proc;
+
+    // Global dimensions of matrix
     int global_rows;
     int global_cols;
+
+    // Local number of rows I hold
     int local_rows;
+
+    // Local number of vector values I hold, number of columns in A.on_proc
     int local_cols;
+
+    // Global index of local row 0
     int first_row;
+
+    // Global index of column 0 in A.on_proc
     int first_col;
+
+    // Number of non-zero columns in A.off_proc 
     int off_proc_num_cols;
+
+    // Size = off_proc_num_cols, maps each local column in A.off_proc to its corresponding global column
     std::vector<long> off_proc_columns;
+
+    // Communicators for sending and recving 
     Comm<U> send_comm;
     Comm<U> recv_comm;
     MPI_Comm dist_graph_comm;
