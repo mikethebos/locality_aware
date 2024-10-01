@@ -72,7 +72,7 @@ int main(int argc, char* argv[])
     std::vector<double *> sendDataVals(A.send_comm.n_msgs);
     for (int i = 0; i < A.send_comm.n_msgs; i++)
     {
-        int ptr = A.send_comm.ptr[i];
+        int ptr = A.send_comm.idx[i];
         
         send_row_sizes[i] = A.send_comm.ptr[ptr + 1] - A.send_comm.ptr[ptr];
         
