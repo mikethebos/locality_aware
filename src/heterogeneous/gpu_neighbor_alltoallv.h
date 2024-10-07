@@ -70,4 +70,30 @@ int threaded_neighbor_alltoallv_nonblocking_init(const void* sendbuf,
         MPI_Info info,
         MPIX_Request** request_ptr);
 
+typedef int (*neighbor_alltoallv_unk_anyorder_ftn)(const void*, const int*, const int*, MPI_Datatype, 
+                                     void**, int*, int*, MPI_Datatype, int *, MPIX_Comm*);
+                                     
+int gpu_aware_neighbor_alltoallv_unk_anyorder(neighbor_alltoallv_unk_anyorder_ftn f,
+        const void* sendbuffer,
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void** recvbufferPtr,
+        int* recvcounts,
+        int* rdispls,
+        MPI_Datatype recvtype,
+        int* sourcesIndexMap,
+        MPIX_Comm* comm);
+        
+int gpu_aware_neighbor_alltoallv_unk_anyorder_nonblocking(const void* sendbuffer,
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void** recvbufferPtr,
+        int* recvcounts,
+        int* rdispls,
+        MPI_Datatype recvtype,
+        int* sourcesIndexMap,
+        MPIX_Comm* comm);
+
 #endif

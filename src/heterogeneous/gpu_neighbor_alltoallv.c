@@ -228,3 +228,46 @@ int threaded_neighbor_alltoallv_nonblocking_init(const void* sendbuf,
     
     return ierr;
 }
+
+// ASSUMES 1 CPU CORE PER GPU (Standard for applications)
+int gpu_aware_neighbor_alltoallv_unk_anyorder(neighbor_alltoallv_unk_anyorder_ftn f,
+        const void* sendbuffer,
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void** recvbufferPtr,
+        int* recvcounts,
+        int* rdispls,
+        MPI_Datatype recvtype,
+        int* sourcesIndexMap,
+        MPIX_Comm* comm)
+{
+    return f(sendbuffer, sendcounts, sdispls, sendtype, recvbufferPtr, recvcounts, rdispls, recvtype, sourcesIndexMap,
+            comm);
+}
+
+int gpu_aware_neighbor_alltoallv_unk_anyorder_nonblocking(const void* sendbuffer,
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void** recvbufferPtr,
+        int* recvcounts,
+        int* rdispls,
+        MPI_Datatype recvtype,
+        int* sourcesIndexMap,
+        MPIX_Comm* comm)
+{
+    int ierr = gpu_aware_neighbor_alltoallv_unk_anyorder(neighbor_alltoallv_unk_anyorder_probe_nonblocking_send,
+            sendbuffer,
+            sendcounts,
+            sdispls,
+            sendtype,
+            recvbufferPtr,
+            recvcounts,
+            rdispls,
+            recvtype,
+            sourcesIndexMap,
+            comm);
+    
+    return ierr;
+}

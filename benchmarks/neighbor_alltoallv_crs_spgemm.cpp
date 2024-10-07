@@ -70,39 +70,40 @@ int main(int argc, char* argv[])
     std::vector<int> send_row_sizes(A.send_comm.n_msgs);
     std::vector<std::vector<int> *> globalColIndices(A.send_comm.n_msgs);
     std::vector<double *> sendDataVals(A.send_comm.n_msgs);
+    std::vector<int> number_of_rows_to_send_to_proc(A.send_comm.n_msgs);
     for (int i = 0; i < A.send_comm.n_msgs; i++)
     {
-        proc = A.send_comm.procs[i];
+        int proc = A.send_comm.procs[i];
         number_of_rows_to_send_to_proc[i] = A.send_comm.ptr[i + 1] - A.send_comm.ptr[i];
-	for (int j = A.send_comm.ptr[i]; j < A.send_comm.ptr[i+1]; j++)
-	{
-		row = A.send_comm.idx[j];
-		// Send row to proc
-		on_proc_rowsize =  A.on_proc.rowptr[row+1] - A.on_proc.rowptr[row];
-		off_proc_rowsize = A.off_proc.rowptr[row+1] - A.off_proc.rowptr[row];
-		rowsize = on_proc_rowsize + off_proc_rowsize;
+        for (int j = A.send_comm.ptr[i]; j < A.send_comm.ptr[i+1]; j++)
+        {
+            int row = A.send_comm.idx[j];
+            // Send row to proc
+            int on_proc_rowsize =  A.on_proc.rowptr[row+1] - A.on_proc.rowptr[row];
+            int off_proc_rowsize = A.off_proc.rowptr[row+1] - A.off_proc.rowptr[row];
+            int rowsize = on_proc_rowsize + off_proc_rowsize;
 
-		// 1. Pack rowsize  MPI_Pack(row_size...)
-		// 2. Pack on_proc_rowsize values of A.on_proc.col_idx starting at position A.on_proc.rowptr[row]
-		for (int k = A.on_proc.rowptr[row]; k < A.on_proc.rowptr[row+1]; k++)
-		{
-			col_idx = A.on_proc.col_idx[k];
-			global_col_idx = col_idx + A.first_col;
-			MPI_Pack(global_col_idx...)
-		}
-		// 3. Pack off_proc_rowsize values of A.off_proc.col_idx starting at position A.off_proc.rowptr[row]
-		for (int k = A.off_proc.rowptr[row]; k < A.off_proc.rowptr[row+1]; k++)
-		{
-			col_idx = A.off_proc.col_idx[k];
-			global_col_idx = A.off_proc_columns[col_idx];
-			MPI_Pack(global_col_idx, ...)
-		}
-		// 4. Pack on proc data
-		// MPI_Pack(A.on_proc.data[A.on_proc.rowptr[row]], number of doubles = on_proc_rowsize)
+            // 1. Pack rowsize  MPI_Pack(row_size...)
+            // 2. Pack on_proc_rowsize values of A.on_proc.col_idx starting at position A.on_proc.rowptr[row]
+            for (int k = A.on_proc.rowptr[row]; k < A.on_proc.rowptr[row+1]; k++)
+            {
+                int col_idx = A.on_proc.col_idx[k];
+                int global_col_idx = col_idx + A.first_col;
+                // MPI_Pack(global_col_idx...)
+            }
+            // 3. Pack off_proc_rowsize values of A.off_proc.col_idx starting at position A.off_proc.rowptr[row]
+            for (int k = A.off_proc.rowptr[row]; k < A.off_proc.rowptr[row+1]; k++)
+            {
+                // col_idx = A.off_proc.col_idx[k];
+                // global_col_idx = A.off_proc_columns[col_idx];
+                // MPI_Pack(global_col_idx, ...)
+            }
+            // 4. Pack on proc data
+            // MPI_Pack(A.on_proc.data[A.on_proc.rowptr[row]], number of doubles = on_proc_rowsize)
 
-		// 5. Pack off proc data
-		// MPI_Pack(A.off_proc.data[A.off_proc.rowptr[row]], number of doubles = off_proc_rowsize)
-	}
+            // 5. Pack off proc data
+            // MPI_Pack(A.off_proc.data[A.off_proc.rowptr[row]], number of doubles = off_proc_rowsize)
+        }
 
 
         int ptr = A.send_comm.idx[i];

@@ -69,6 +69,20 @@ int MPIX_Neighbor_part_locality_alltoallv(
         const int rdispls[],
         MPI_Datatype recvtype,
         MPIX_Comm* comm);
+        
+        
+
+int neighbor_alltoallv_unk_anyorder_probe_nonblocking_send(const void* sendbuffer,
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void** recvbufferPtr,
+        int* recvcounts,
+        int* rdispls,
+        MPI_Datatype recvtype,
+        int* sourcesIndexMap,
+        MPIX_Comm* comm);
+
 
 
 #ifdef __cplusplus
