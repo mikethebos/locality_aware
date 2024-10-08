@@ -239,10 +239,10 @@ int gpu_aware_neighbor_alltoallv_unk_anyorder(neighbor_alltoallv_unk_anyorder_ft
         int* recvcounts,
         int* rdispls,
         MPI_Datatype recvtype,
-        int* sourcesIndexMap,
+        int* newSources,
         MPIX_Comm* comm)
 {
-    return f(sendbuffer, sendcounts, sdispls, sendtype, recvbufferPtr, recvcounts, rdispls, recvtype, sourcesIndexMap,
+    return f(sendbuffer, sendcounts, sdispls, sendtype, recvbufferPtr, recvcounts, rdispls, recvtype, newSources,
             comm);
 }
 
@@ -254,7 +254,7 @@ int gpu_aware_neighbor_alltoallv_unk_anyorder_nonblocking(const void* sendbuffer
         int* recvcounts,
         int* rdispls,
         MPI_Datatype recvtype,
-        int* sourcesIndexMap,
+        int* newSources,
         MPIX_Comm* comm)
 {
     int ierr = gpu_aware_neighbor_alltoallv_unk_anyorder(neighbor_alltoallv_unk_anyorder_probe_nonblocking_send,
@@ -266,7 +266,7 @@ int gpu_aware_neighbor_alltoallv_unk_anyorder_nonblocking(const void* sendbuffer
             recvcounts,
             rdispls,
             recvtype,
-            sourcesIndexMap,
+            newSources,
             comm);
     
     return ierr;
@@ -281,7 +281,7 @@ int copy_to_cpu_neighbor_alltoallv_unk_anyorder(neighbor_alltoallv_unk_anyorder_
         int* recvcounts,
         int* rdispls,
         MPI_Datatype recvtype,
-        int* sourcesIndexMap,
+        int* newSources,
         MPIX_Comm* comm)
 {
     int ierr = 0;
@@ -309,7 +309,7 @@ int copy_to_cpu_neighbor_alltoallv_unk_anyorder(neighbor_alltoallv_unk_anyorder_
     cudaMemcpy(cpuSendBuf, sendbuffer, total_bytes_s, cudaMemcpyDeviceToHost);
 #endif
     void *cpuRecvBuf;
-    ierr += f(cpuSendBuf, sendcounts, sdispls, sendtype, &cpuRecvBuf, recvcounts, rdispls, recvtype, sourcesIndexMap, comm);
+    ierr += f(cpuSendBuf, sendcounts, sdispls, sendtype, &cpuRecvBuf, recvcounts, rdispls, recvtype, newSources, comm);
     
     int total_bytes_r = 0;
     if (indegree > 0)
@@ -350,7 +350,7 @@ int copy_to_cpu_neighbor_alltoallv_unk_anyorder_nonblocking(const void* sendbuff
         int* recvcounts,
         int* rdispls,
         MPI_Datatype recvtype,
-        int* sourcesIndexMap,
+        int* newSources,
         MPIX_Comm* comm)
 {
     return copy_to_cpu_neighbor_alltoallv_unk_anyorder(neighbor_alltoallv_unk_anyorder_probe_nonblocking_send,
@@ -362,6 +362,6 @@ int copy_to_cpu_neighbor_alltoallv_unk_anyorder_nonblocking(const void* sendbuff
        recvcounts,
        rdispls,
        recvtype,
-       sourcesIndexMap,
+       newSources,
        comm);
 }

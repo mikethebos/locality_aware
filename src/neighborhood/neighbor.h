@@ -80,7 +80,7 @@ int neighbor_alltoallv_unk_anyorder_probe_nonblocking_send(const void* sendbuffe
         int* recvcounts,
         int* rdispls,
         MPI_Datatype recvtype,
-        int* sourcesIndexMap,
+        int* newSources,
         MPIX_Comm* comm);
 
 

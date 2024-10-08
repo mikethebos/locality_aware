@@ -143,7 +143,7 @@ int MPIX_Neighbor_locality_alltoallv(
 }
 
 // assume completely contiguous recvs and if multiple recvs from one process,
-// order in *recvbufferPtr not deterministic by map
+// order in *recvbufferPtr not deterministic by newSources
 // free *recvbufferPtr after use
 int neighbor_alltoallv_unk_anyorder_probe_nonblocking_send(const void* sendbuffer,
         const int sendcounts[],
@@ -153,7 +153,7 @@ int neighbor_alltoallv_unk_anyorder_probe_nonblocking_send(const void* sendbuffe
         int* recvcounts,
         int* rdispls,
         MPI_Datatype recvtype,
-        int* sourcesIndexMap,  // index of sources to index of rdispls/recvcounts
+        int* newSources,  // new sources in the order of msg received
         MPIX_Comm* comm)
 {
     int ierr = 0;
@@ -165,12 +165,6 @@ int neighbor_alltoallv_unk_anyorder_probe_nonblocking_send(const void* sendbuffe
             &outdegree, 
             &weighted);
             
-    // clear map
-    for (int i = 0; i < indegree; i++)
-    {
-        sourcesIndexMap[i] = -1;
-    }
-
     int sources[indegree];
     int sourceweights[indegree];
     int destinations[outdegree];
@@ -282,15 +276,7 @@ int neighbor_alltoallv_unk_anyorder_probe_nonblocking_send(const void* sendbuffe
         
         recvcounts[i] = count;
         rdispls[i] = currDispl;
-        // assume one recv per process here:
-        for (int j = 0; j < n_msgs_r; j++)
-        {
-            if (sources[j] == proc && sourcesIndexMap[j] == -1)
-            {
-                sourcesIndexMap[j] = i;
-                break;
-            }
-        }
+        newSources[i] = proc;
         
         ierr += MPI_Recv(currIntRecvBuffer,
                 count,
