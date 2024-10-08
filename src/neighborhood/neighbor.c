@@ -206,9 +206,15 @@ int neighbor_alltoallv_unk_anyorder_probe_nonblocking_send(const void* sendbuffe
     cudaMemoryType ptr_send_type;
     cudaPointerAttributes mem;
     cudaPointerGetAttributes(&mem, sendbuffer);
-    int ierr = cudaGetLastError();
-    if (ierr == cudaErrorInvalidValue)
+    int cerr = cudaGetLastError();
+    if (cerr == cudaErrorInvalidValue)
         ptr_send_type = cudaMemoryTypeHost;
+#ifdef CUDART_VERSION
+#if (CUDART_VERSION >= 11000)
+    else if (mem.type == cudaMemoryTypeUnregistered)
+        ptr_send_type = cudaMemoryTypeHost;
+#endif
+#endif
     else
         ptr_send_type = mem.type;
         

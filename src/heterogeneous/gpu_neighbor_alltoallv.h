@@ -96,4 +96,27 @@ int gpu_aware_neighbor_alltoallv_unk_anyorder_nonblocking(const void* sendbuffer
         int* sourcesIndexMap,
         MPIX_Comm* comm);
 
+int copy_to_cpu_neighbor_alltoallv_unk_anyorder(neighbor_alltoallv_unk_anyorder_ftn f,
+        const void* sendbuffer,
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void** recvbufferPtr,
+        int* recvcounts,
+        int* rdispls,
+        MPI_Datatype recvtype,
+        int* sourcesIndexMap,
+        MPIX_Comm* comm);
+        
+int copy_to_cpu_neighbor_alltoallv_unk_anyorder_nonblocking(const void* sendbuffer,
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void** recvbufferPtr,
+        int* recvcounts,
+        int* rdispls,
+        MPI_Datatype recvtype,
+        int* sourcesIndexMap,
+        MPIX_Comm* comm);
+
 #endif

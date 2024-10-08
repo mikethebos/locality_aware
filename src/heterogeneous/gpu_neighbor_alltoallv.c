@@ -271,3 +271,97 @@ int gpu_aware_neighbor_alltoallv_unk_anyorder_nonblocking(const void* sendbuffer
     
     return ierr;
 }
+
+int copy_to_cpu_neighbor_alltoallv_unk_anyorder(neighbor_alltoallv_unk_anyorder_ftn f,
+        const void* sendbuffer,
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void** recvbufferPtr,
+        int* recvcounts,
+        int* rdispls,
+        MPI_Datatype recvtype,
+        int* sourcesIndexMap,
+        MPIX_Comm* comm)
+{
+    int ierr = 0;
+
+    int indegree, outdegree, weighted;
+    ierr += MPI_Dist_graph_neighbors_count(
+            comm->neighbor_comm, 
+            &indegree, 
+            &outdegree, 
+            &weighted);
+
+    int send_bytes, recv_bytes;
+    MPI_Type_size(sendtype, &send_bytes);
+    MPI_Type_size(recvtype, &recv_bytes);
+
+    int total_bytes_s = 0;
+    if (outdegree > 0)
+    {
+        total_bytes_s = (sdispls[outdegree - 1] + sendcounts[outdegree - 1]) * send_bytes;
+    }
+
+    void *cpuSendBuf;
+#ifdef GPU
+    cudaMallocHost(&cpuSendBuf, total_bytes_s);
+    cudaMemcpy(cpuSendBuf, sendbuffer, total_bytes_s, cudaMemcpyDeviceToHost);
+#endif
+    void *cpuRecvBuf;
+    ierr += f(cpuSendBuf, sendcounts, sdispls, sendtype, &cpuRecvBuf, recvcounts, rdispls, recvtype, sourcesIndexMap, comm);
+    
+    int total_bytes_r = 0;
+    if (indegree > 0)
+    {
+        total_bytes_r = (rdispls[indegree - 1] + recvcounts[indegree - 1]) * recv_bytes;
+    }
+
+#ifdef GPU
+    cudaMalloc(recvbufferPtr, total_bytes_r);
+    cudaMemcpy(*recvbufferPtr, cpuRecvBuf, total_bytes_r, cudaMemcpyHostToDevice);
+    
+    cudaFreeHost(cpuSendBuf);
+    cudaPointerAttributes mem;
+    cudaPointerGetAttributes(&mem, cpuRecvBuf);
+    int cerr = cudaGetLastError();
+    if (cerr == cudaErrorInvalidValue)
+        free(cpuRecvBuf);
+#ifdef CUDART_VERSION
+#if (CUDART_VERSION >= 11000)
+    else if (mem.type == cudaMemoryTypeUnregistered)
+        free(cpuRecvBuf);
+#endif
+#endif
+    else if (mem.type == cudaMemoryTypeHost)
+        cudaFreeHost(cpuRecvBuf);
+    else
+        cudaFree(cpuRecvBuf);  // should be dead code
+#endif
+
+    return ierr;
+}
+
+int copy_to_cpu_neighbor_alltoallv_unk_anyorder_nonblocking(const void* sendbuffer,
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void** recvbufferPtr,
+        int* recvcounts,
+        int* rdispls,
+        MPI_Datatype recvtype,
+        int* sourcesIndexMap,
+        MPIX_Comm* comm)
+{
+    return copy_to_cpu_neighbor_alltoallv_unk_anyorder(neighbor_alltoallv_unk_anyorder_probe_nonblocking_send,
+       sendbuffer,
+       sendcounts,
+       sdispls,
+       sendtype,
+       recvbufferPtr,
+       recvcounts,
+       rdispls,
+       recvtype,
+       sourcesIndexMap,
+       comm);
+}
