@@ -527,6 +527,49 @@ void communicate(ParMat<T>& A, std::vector<U>& data, std::vector<U>& recvbuf, MP
     	MPI_Waitall(A.recv_comm.n_msgs, A.recv_comm.req.data(), MPI_STATUSES_IGNORE);
 }
 
+template <typename U, typename T>
+void communicateBlockVec(ParMat<T>& A, std::vector<U>& data, std::vector<U>& recvbuf, MPI_Datatype type, int block_vec_cols)
+{
+    int proc;
+    T start, end;
+    int tag = 2948;
+    
+    for (int i = 0; i < A.recv_comm.n_msgs; i++)
+    {
+        proc = A.recv_comm.procs[i];
+        start = A.recv_comm.ptr[i];
+        end = A.recv_comm.ptr[i+1];
+        MPI_Irecv(&(recvbuf[start * block_vec_cols]), ((int)(end - start)) * block_vec_cols, type, proc, tag,
+                MPI_COMM_WORLD, &(A.recv_comm.req[i]));
+    }
+    
+    std::vector<U> sendbuf;
+    if (A.send_comm.size_msgs)
+        sendbuf.resize(A.send_comm.size_msgs * block_vec_cols);
+    for (int i = 0; i < A.send_comm.n_msgs; i++)
+    {
+        proc = A.send_comm.procs[i];
+        start = A.send_comm.ptr[i];
+        end = A.send_comm.ptr[i+1];
+        for (T j = start; j < end; j++)
+        {
+            for (int k = 0; k < block_vec_cols; k++)
+            {
+                int send_idx = (j * block_vec_cols) + k;
+                sendbuf[send_idx] = data[(A.send_comm.idx[j] * block_vec_cols) + k];
+            }
+        }
+        MPI_Isend(&(sendbuf[start * block_vec_cols]), ((int)(end - start)) * block_vec_cols, type, proc, tag, 
+                MPI_COMM_WORLD, &(A.send_comm.req[i]));
+    }
+
+
+    if (A.send_comm.n_msgs)
+        MPI_Waitall(A.send_comm.n_msgs, A.send_comm.req.data(), MPI_STATUSES_IGNORE);
+    if (A.recv_comm.n_msgs)
+    	MPI_Waitall(A.recv_comm.n_msgs, A.recv_comm.req.data(), MPI_STATUSES_IGNORE);
+}
+
 
 
 #endif
