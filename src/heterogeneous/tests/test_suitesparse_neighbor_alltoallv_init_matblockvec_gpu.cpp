@@ -84,7 +84,7 @@ void test_matrix(const char* filename)
         int start = A.recv_comm.ptr[i];
         int end = A.recv_comm.ptr[i+1];
         newRecvDispls[i] = start * block_vec_cols;
-        newSendCounts[i] = (int)(end - start) * block_vec_cols;
+        newRecvCounts[i] = (int)(end - start) * block_vec_cols;
     }
     
     int *std_recv_vals_cu, *neigh_recv_vals_cu;
