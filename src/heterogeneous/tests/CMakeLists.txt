@@ -27,4 +27,4 @@ $<$<COMPILE_LANGUAGE:CUDA>: # Flags for CUDA Objects
 >
 )
 target_link_libraries(test_suitesparse_threaded_neighbor_alltoallv_init_matblockvec_gpu mpi_advance ${MPI_LIBRARIES} OpenMP::OpenMP_CXX gtest pthread)
-add_test(test_suitesparse_threaded_neighbor_alltoallv_init_matblockvec_gpu mpirun -n 16 ./test_suitesparse_threaded_neighbor_alltoallv_init_matblockvec_gpu)
+add_test(SuitesparseThreadedNeighborAlltoallvInitMatblockvecGPUTest mpirun -n 16 ./test_suitesparse_threaded_neighbor_alltoallv_init_matblockvec_gpu)

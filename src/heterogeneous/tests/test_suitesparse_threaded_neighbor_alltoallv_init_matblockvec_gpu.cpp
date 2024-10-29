@@ -278,6 +278,29 @@ void test_matrix(const char* filename)
     cudaMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(int));
     memset((void *)neigh_recv_vals.data(), 0, neigh_recv_vals.size() * sizeof(int));
     MPIX_Request_free(copyreq);
+    
+    MPIX_Request *threadedreq;
+    threaded_neighbor_alltoallv_nonblocking_init(alltoallv_send_vals_cu, 
+            newSendCounts.data(),
+            newSendDispls.data(), 
+            MPI_INT,
+            neigh_recv_vals_cu, 
+            newRecvCounts.data(),
+            newRecvDispls.data(), 
+            MPI_INT,
+            neighbor_comm,
+            MPI_INFO_NULL,
+            &threadedreq);
+    MPIX_Start(threadedreq);
+    MPIX_Wait(threadedreq, MPI_STATUS_IGNORE);
+    cudaMemcpy((void *)neigh_recv_vals.data(), (void *)neigh_recv_vals_cu, std_recv_vals.size() * sizeof(int), cudaMemcpyDeviceToHost);
+    for (int i = 0; i < A.recv_comm.size_msgs * block_vec_cols; i++)
+    {
+        ASSERT_EQ(std_recv_vals[i], neigh_recv_vals[i]);
+    }
+    cudaMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(int));
+    memset((void *)neigh_recv_vals.data(), 0, neigh_recv_vals.size() * sizeof(int));
+    MPIX_Request_free(threadedreq);
 
     MPIX_Comm_free(&neighbor_comm);
     MPI_Comm_free(&std_comm);
