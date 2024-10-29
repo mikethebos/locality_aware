@@ -217,7 +217,7 @@ void test_matrix(const char* filename)
     gpuFree(sendbuf_d);
     gpuFree(recvbuf_d);
 
-    MPIX_Comm_free(xcomm);
+    MPIX_Comm_free(&xcomm);
 }
 
 int main(int argc, char** argv)

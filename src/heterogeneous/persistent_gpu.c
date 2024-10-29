@@ -11,7 +11,7 @@ int neighbor_gpu_copy_cpu_start(MPIX_Request* request)
 
     // copy recvbuf in case of extra data
     // needed if noncontiguous displs (or custom packing)
-    // cudaMemcpy(request->cpu_recvbuf, request->recvbuf, request->cpu_recvbuf_bytes, cudaMemcpyDeviceToHost);
+    cudaMemcpy(request->cpu_recvbuf, request->recvbuf, request->cpu_recvbuf_bytes, cudaMemcpyDeviceToHost);
    
     return neighbor_start(request->sub_request);
 #endif
@@ -40,7 +40,7 @@ int neighbor_gpu_copy_cpu_threaded_start(MPIX_Request* request)
 
     // copy recvbuf in case of extra data
     // needed if noncontiguous displs (or custom packing)
-    // cudaMemcpy(request->cpu_recvbuf, request->recvbuf, request->cpu_recvbuf_bytes, cudaMemcpyDeviceToHost);
+    cudaMemcpy(request->cpu_recvbuf, request->recvbuf, request->cpu_recvbuf_bytes, cudaMemcpyDeviceToHost);
 
     return ret;
 #endif

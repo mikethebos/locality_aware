@@ -218,7 +218,7 @@ TEST(RandomCommTest, TestsInTests)
     gpuFree(local_data_d);
     gpuFree(alltoall_d);
 
-    MPIX_Comm_free(xcomm);
+    MPIX_Comm_free(&xcomm);
 }
 
 

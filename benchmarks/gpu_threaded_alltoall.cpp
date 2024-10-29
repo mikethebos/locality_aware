@@ -185,7 +185,7 @@ int main(int argc, char* argv[])
     cudaFree(send_data_d);
     cudaFree(recv_data_d);
 
-    MPIX_Comm_free(locality_comm);
+    MPIX_Comm_free(&locality_comm);
 
     MPI_Finalize();
     return 0;

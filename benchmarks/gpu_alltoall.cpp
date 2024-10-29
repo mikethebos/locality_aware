@@ -276,7 +276,7 @@ int main(int argc, char* argv[])
         if (rank == 0) printf("Copy-to-CPU Nonblocking Time %e\n", t0);
     }
 
-    MPIX_Comm_free(locality_comm);
+    MPIX_Comm_free(&locality_comm);
 
     cudaFree(send_data_d);
     cudaFree(recv_data_d);

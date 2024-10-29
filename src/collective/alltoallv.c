@@ -37,7 +37,7 @@ int MPIX_Alltoallv(const void* sendbuf,
 {
 #ifdef GPU
     cudaMemoryType send_type, recv_type;
-    get_mem_types(sendbuf, recvbuf, send_type, recv_type);
+    get_mem_types(sendbuf, recvbuf, &send_type, &recv_type);
 
     if (send_type == cudaMemoryTypeDevice &&
             recv_type == cudaMemoryTypeDevice)

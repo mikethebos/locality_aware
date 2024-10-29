@@ -257,7 +257,7 @@ void test_matrix(const char* filename)
     MPIX_Request_free(gpureq);
     
     MPIX_Request *copyreq;
-    copy_to_cpu_neighor_alltoallv_nonblocking_init(alltoallv_send_vals_cu, 
+    copy_to_cpu_neighbor_alltoallv_nonblocking_init(alltoallv_send_vals_cu, 
             newSendCounts.data(),
             newSendDispls.data(), 
             MPI_INT,
@@ -279,7 +279,7 @@ void test_matrix(const char* filename)
     memset((void *)neigh_recv_vals.data(), 0, neigh_recv_vals.size() * sizeof(int));
     MPIX_Request_free(copyreq);
 
-    MPIX_Comm_free(neighbor_comm);
+    MPIX_Comm_free(&neighbor_comm);
     MPI_Comm_free(&std_comm);
     
     cudaFree(std_recv_vals_cu);

@@ -1110,8 +1110,8 @@ int main(int argc, char* argv[])
         MPIX_Request_free(mpixccreq);
         MPIX_Request_free(copyreq);
         MPI_Comm_free(&mpi_graph);
-        MPIX_Comm_free(mpix_graph);
-        MPIX_Comm_free(locality_comm);
+        MPIX_Comm_free(&mpix_graph);
+        MPIX_Comm_free(&locality_comm);
         cudaFree(send_data_d);
         cudaFree(recv_data_d);
         free(sendc);
