@@ -278,7 +278,7 @@ void test_matrix(const char* filename)
     cudaMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(int));
     memset((void *)neigh_recv_vals.data(), 0, neigh_recv_vals.size() * sizeof(int));
     MPIX_Request_free(copyreq);
-    
+
     MPIX_Request *threadedreq;
     threaded_neighbor_alltoallv_nonblocking_init(alltoallv_send_vals_cu, 
             newSendCounts.data(),
@@ -312,7 +312,8 @@ void test_matrix(const char* filename)
 
 int main(int argc, char** argv)
 {
-    MPI_Init(&argc, &argv);
+    int provided;
+    MPI_Init_thread(&argc, &argv, MPI_THREAD_MULTIPLE, &provided);
     ::testing::InitGoogleTest(&argc, argv);
     int temp=RUN_ALL_TESTS();
     MPI_Finalize();
