@@ -8,6 +8,8 @@ if(USE_CUDA)
         gpu_threaded_neighbor_alltoallv.cpp
         gpu_neighbor_alltoallv_novector.cpp
         gpu_threaded_neighbor_alltoallv_novector.cpp
+        gpu_suitesparse_neighbor_alltoallv_matblockvec.cpp
+        gpu_suitesparse_threaded_neighbor_alltoallv_matblockvec.cpp
         PROPERTIES LANGUAGE CUDA)
 
     add_executable(gpu_alltoall gpu_alltoall.cpp)
