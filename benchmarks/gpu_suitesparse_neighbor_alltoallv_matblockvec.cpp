@@ -189,7 +189,7 @@ void test_matrix(const char *filename)
         double tfinal = (MPI_Wtime() - t0) / niter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0)
-            printf("GPU MPI_Neighbor_alltoallv Time %e; Time All Iters %d\n", t0, t0 * niter);
+            printf("GPU MPI_Neighbor_alltoallv Time %e; Time All Iters %e\n", t0, t0 * niter);
         gpuMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
         memset((void *)neigh_recv_vals.data(), 0, neigh_recv_vals.size() * sizeof(double));
         gpuDeviceSynchronize();
@@ -226,7 +226,7 @@ void test_matrix(const char *filename)
         tfinal = (MPI_Wtime() - t0) / niter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0)
-            printf("GPU MPIX_Neighbor_alltoallv Time %e; Time All Iters %d\n", t0, t0 * niter);
+            printf("GPU MPIX_Neighbor_alltoallv Time %e; Time All Iters %e\n", t0, t0 * niter);
         gpuMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
         memset((void *)neigh_recv_vals.data(), 0, neigh_recv_vals.size() * sizeof(double));
         gpuDeviceSynchronize();
@@ -261,7 +261,7 @@ void test_matrix(const char *filename)
         tfinal = (MPI_Wtime() - t0) / niter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0)
-            printf("GPU MPIX_Neighbor_alltoallv_init Time %e; Time All Iters %d\n", t0, t0 * niter);
+            printf("GPU MPIX_Neighbor_alltoallv_init Time %e; Time All Iters %e\n", t0, t0 * niter);
         gpuMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
         memset((void *)neigh_recv_vals.data(), 0, neigh_recv_vals.size() * sizeof(double));
         MPIX_Request_free(mpixreq);
@@ -303,7 +303,7 @@ void test_matrix(const char *filename)
         tfinal = (MPI_Wtime() - t0) / niter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0)
-            printf("CC MPIX_Neighbor_alltoallv Time %e; Time All Iters %d\n", t0, t0 * niter);
+            printf("CC MPIX_Neighbor_alltoallv Time %e; Time All Iters %e\n", t0, t0 * niter);
         gpuMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
         memset((void *)neigh_recv_vals.data(), 0, neigh_recv_vals.size() * sizeof(double));
         gpuDeviceSynchronize();
@@ -342,7 +342,7 @@ void test_matrix(const char *filename)
         tfinal = (MPI_Wtime() - t0) / niter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0)
-            printf("CC MPIX_Neighbor_alltoallv_init Time %e; Time All Iters %d\n", t0, t0 * niter);
+            printf("CC MPIX_Neighbor_alltoallv_init Time %e; Time All Iters %e\n", t0, t0 * niter);
         gpuMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
         memset((void *)neigh_recv_vals.data(), 0, neigh_recv_vals.size() * sizeof(double));
         MPIX_Request_free(mpixccreq);
@@ -378,7 +378,7 @@ void test_matrix(const char *filename)
         tfinal = (MPI_Wtime() - t0) / niter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0)
-            printf("GPU-Aware Neighbor_alltoallv Time %e; Time All Iters %d\n", t0, t0 * niter);
+            printf("GPU-Aware Neighbor_alltoallv Time %e; Time All Iters %e\n", t0, t0 * niter);
         gpuMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
         memset((void *)neigh_recv_vals.data(), 0, neigh_recv_vals.size() * sizeof(double));
         MPIX_Request_free(gpureq);
@@ -414,7 +414,7 @@ void test_matrix(const char *filename)
         tfinal = (MPI_Wtime() - t0) / niter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0)
-            printf("CC Neighbor_alltoallv Time %e; Time All Iters %d\n", t0, t0 * niter);
+            printf("CC Neighbor_alltoallv Time %e; Time All Iters %e\n", t0, t0 * niter);
         gpuMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
         memset((void *)neigh_recv_vals.data(), 0, neigh_recv_vals.size() * sizeof(double));
         MPIX_Request_free(copyreq);
