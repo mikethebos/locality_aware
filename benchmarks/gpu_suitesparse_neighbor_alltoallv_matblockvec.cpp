@@ -110,12 +110,12 @@ void test_matrix(const char *filename)
         }
 
         double *std_recv_vals_cu, *neigh_recv_vals_cu;
-        cudaMalloc((void **)&std_recv_vals_cu, std_recv_vals.size() * sizeof(double));
-        cudaMalloc((void **)&neigh_recv_vals_cu, neigh_recv_vals.size() * sizeof(double));
+        gpuMalloc((void **)&std_recv_vals_cu, std_recv_vals.size() * sizeof(double));
+        gpuMalloc((void **)&neigh_recv_vals_cu, neigh_recv_vals.size() * sizeof(double));
 
         double *alltoallv_send_vals_cu;
-        cudaMalloc((void **)&alltoallv_send_vals_cu, alltoallv_send_vals.size() * sizeof(double));
-        cudaMemcpy((void *)alltoallv_send_vals_cu, (void *)(alltoallv_send_vals.data()), alltoallv_send_vals.size() * sizeof(double), cudaMemcpyHostToDevice);
+        gpuMalloc((void **)&alltoallv_send_vals_cu, alltoallv_send_vals.size() * sizeof(double));
+        gpuMemcpy((void *)alltoallv_send_vals_cu, (void *)(alltoallv_send_vals.data()), alltoallv_send_vals.size() * sizeof(double), gpuMemcpyHostToDevice);
 
         communicateBlockVec(A, send_vals, std_recv_vals, MPI_DOUBLE, block_vec_cols);
 
@@ -156,7 +156,7 @@ void test_matrix(const char *filename)
         if (rank == 0)
             printf("Testing Size blockVecCols %d, matrix %s\n", block_vec_cols, filename);
 
-        // Standard MPI Implementation of Alltoallv (CUDA)
+        // Standard MPI Implementation of Alltoallv (gpu)
         MPI_Neighbor_alltoallv(alltoallv_send_vals_cu,
                                newSendCounts.data(),
                                newSendDispls.data(),
@@ -166,12 +166,12 @@ void test_matrix(const char *filename)
                                newRecvDispls.data(),
                                MPI_DOUBLE,
                                std_comm);
-        cudaMemcpy((void *)neigh_recv_vals.data(), (void *)neigh_recv_vals_cu, std_recv_vals.size() * sizeof(double), cudaMemcpyDeviceToHost);
+        gpuMemcpy((void *)neigh_recv_vals.data(), (void *)neigh_recv_vals_cu, std_recv_vals.size() * sizeof(double), gpuMemcpyDeviceToHost);
         for (int i = 0; i < A.recv_comm.size_msgs * block_vec_cols; i++)
         {
             ASSERT_EQ(std_recv_vals[i], neigh_recv_vals[i]);
         }
-        cudaDeviceSynchronize();
+        gpuDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
         double t0 = MPI_Wtime();
         for (int k = 0; k < niter; k++)
@@ -190,9 +190,9 @@ void test_matrix(const char *filename)
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0)
             printf("GPU MPI_Neighbor_alltoallv Time %e; Time All Iters %d\n", t0, t0 * niter);
-        cudaMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
+        gpuMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
         memset((void *)neigh_recv_vals.data(), 0, neigh_recv_vals.size() * sizeof(double));
-        cudaDeviceSynchronize();
+        gpuDeviceSynchronize();
 
         MPIX_Neighbor_alltoallv(alltoallv_send_vals_cu,
                                 newSendCounts.data(),
@@ -203,12 +203,12 @@ void test_matrix(const char *filename)
                                 newRecvDispls.data(),
                                 MPI_DOUBLE,
                                 neighbor_comm);
-        cudaMemcpy((void *)neigh_recv_vals.data(), (void *)neigh_recv_vals_cu, std_recv_vals.size() * sizeof(double), cudaMemcpyDeviceToHost);
+        gpuMemcpy((void *)neigh_recv_vals.data(), (void *)neigh_recv_vals_cu, std_recv_vals.size() * sizeof(double), gpuMemcpyDeviceToHost);
         for (int i = 0; i < A.recv_comm.size_msgs * block_vec_cols; i++)
         {
             ASSERT_EQ(std_recv_vals[i], neigh_recv_vals[i]);
         }
-        cudaDeviceSynchronize();
+        gpuDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int k = 0; k < niter; k++)
@@ -227,9 +227,9 @@ void test_matrix(const char *filename)
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0)
             printf("GPU MPIX_Neighbor_alltoallv Time %e; Time All Iters %d\n", t0, t0 * niter);
-        cudaMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
+        gpuMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
         memset((void *)neigh_recv_vals.data(), 0, neigh_recv_vals.size() * sizeof(double));
-        cudaDeviceSynchronize();
+        gpuDeviceSynchronize();
 
         MPIX_Request *mpixreq;
         MPIX_Neighbor_alltoallv_init(alltoallv_send_vals_cu,
@@ -245,12 +245,12 @@ void test_matrix(const char *filename)
                                      &mpixreq);
         MPIX_Start(mpixreq);
         MPIX_Wait(mpixreq, MPI_STATUS_IGNORE);
-        cudaMemcpy((void *)neigh_recv_vals.data(), (void *)neigh_recv_vals_cu, std_recv_vals.size() * sizeof(double), cudaMemcpyDeviceToHost);
+        gpuMemcpy((void *)neigh_recv_vals.data(), (void *)neigh_recv_vals_cu, std_recv_vals.size() * sizeof(double), gpuMemcpyDeviceToHost);
         for (int i = 0; i < A.recv_comm.size_msgs * block_vec_cols; i++)
         {
             ASSERT_EQ(std_recv_vals[i], neigh_recv_vals[i]);
         }
-        cudaDeviceSynchronize();
+        gpuDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int k = 0; k < niter; k++)
@@ -262,12 +262,12 @@ void test_matrix(const char *filename)
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0)
             printf("GPU MPIX_Neighbor_alltoallv_init Time %e; Time All Iters %d\n", t0, t0 * niter);
-        cudaMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
+        gpuMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
         memset((void *)neigh_recv_vals.data(), 0, neigh_recv_vals.size() * sizeof(double));
         MPIX_Request_free(mpixreq);
-        cudaDeviceSynchronize();
+        gpuDeviceSynchronize();
 
-        cudaMemcpy((void *)alltoallv_send_vals.data(), (void *)alltoallv_send_vals_cu, alltoallv_send_vals.size() * sizeof(double), cudaMemcpyDeviceToHost);
+        gpuMemcpy((void *)alltoallv_send_vals.data(), (void *)alltoallv_send_vals_cu, alltoallv_send_vals.size() * sizeof(double), gpuMemcpyDeviceToHost);
         MPIX_Neighbor_alltoallv(alltoallv_send_vals.data(),
                                 newSendCounts.data(),
                                 newSendDispls.data(),
@@ -277,18 +277,18 @@ void test_matrix(const char *filename)
                                 newRecvDispls.data(),
                                 MPI_DOUBLE,
                                 neighbor_comm);
-        cudaMemcpy((void *)neigh_recv_vals_cu, (void *)neigh_recv_vals.data(), neigh_recv_vals.size() * sizeof(double), cudaMemcpyHostToDevice);
-        cudaMemcpy((void *)neigh_recv_vals.data(), (void *)neigh_recv_vals_cu, std_recv_vals.size() * sizeof(double), cudaMemcpyDeviceToHost);
+        gpuMemcpy((void *)neigh_recv_vals_cu, (void *)neigh_recv_vals.data(), neigh_recv_vals.size() * sizeof(double), gpuMemcpyHostToDevice);
+        gpuMemcpy((void *)neigh_recv_vals.data(), (void *)neigh_recv_vals_cu, std_recv_vals.size() * sizeof(double), gpuMemcpyDeviceToHost);
         for (int i = 0; i < A.recv_comm.size_msgs * block_vec_cols; i++)
         {
             ASSERT_EQ(std_recv_vals[i], neigh_recv_vals[i]);
         }
-        cudaDeviceSynchronize();
+        gpuDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int k = 0; k < niter; k++)
         {
-            cudaMemcpy((void *)alltoallv_send_vals.data(), (void *)alltoallv_send_vals_cu, alltoallv_send_vals.size() * sizeof(double), cudaMemcpyDeviceToHost);
+            gpuMemcpy((void *)alltoallv_send_vals.data(), (void *)alltoallv_send_vals_cu, alltoallv_send_vals.size() * sizeof(double), gpuMemcpyDeviceToHost);
             MPIX_Neighbor_alltoallv(alltoallv_send_vals.data(),
                                     newSendCounts.data(),
                                     newSendDispls.data(),
@@ -298,18 +298,18 @@ void test_matrix(const char *filename)
                                     newRecvDispls.data(),
                                     MPI_DOUBLE,
                                     neighbor_comm);
-            cudaMemcpy((void *)neigh_recv_vals_cu, (void *)neigh_recv_vals.data(), neigh_recv_vals.size() * sizeof(double), cudaMemcpyHostToDevice);
+            gpuMemcpy((void *)neigh_recv_vals_cu, (void *)neigh_recv_vals.data(), neigh_recv_vals.size() * sizeof(double), gpuMemcpyHostToDevice);
         }
         tfinal = (MPI_Wtime() - t0) / niter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0)
             printf("CC MPIX_Neighbor_alltoallv Time %e; Time All Iters %d\n", t0, t0 * niter);
-        cudaMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
+        gpuMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
         memset((void *)neigh_recv_vals.data(), 0, neigh_recv_vals.size() * sizeof(double));
-        cudaDeviceSynchronize();
+        gpuDeviceSynchronize();
 
         MPIX_Request *mpixccreq;
-        cudaMemcpy((void *)alltoallv_send_vals.data(), (void *)alltoallv_send_vals_cu, alltoallv_send_vals.size() * sizeof(double), cudaMemcpyDeviceToHost);
+        gpuMemcpy((void *)alltoallv_send_vals.data(), (void *)alltoallv_send_vals_cu, alltoallv_send_vals.size() * sizeof(double), gpuMemcpyDeviceToHost);
         MPIX_Neighbor_alltoallv_init(alltoallv_send_vals.data(),
                                      newSendCounts.data(),
                                      newSendDispls.data(),
@@ -323,30 +323,30 @@ void test_matrix(const char *filename)
                                      &mpixccreq);
         MPIX_Start(mpixccreq);
         MPIX_Wait(mpixccreq, MPI_STATUS_IGNORE);
-        cudaMemcpy((void *)neigh_recv_vals_cu, (void *)neigh_recv_vals.data(), neigh_recv_vals.size() * sizeof(double), cudaMemcpyHostToDevice);
-        cudaMemcpy((void *)neigh_recv_vals.data(), (void *)neigh_recv_vals_cu, std_recv_vals.size() * sizeof(double), cudaMemcpyDeviceToHost);
+        gpuMemcpy((void *)neigh_recv_vals_cu, (void *)neigh_recv_vals.data(), neigh_recv_vals.size() * sizeof(double), gpuMemcpyHostToDevice);
+        gpuMemcpy((void *)neigh_recv_vals.data(), (void *)neigh_recv_vals_cu, std_recv_vals.size() * sizeof(double), gpuMemcpyDeviceToHost);
         for (int i = 0; i < A.recv_comm.size_msgs * block_vec_cols; i++)
         {
             ASSERT_EQ(std_recv_vals[i], neigh_recv_vals[i]);
         }
-        cudaDeviceSynchronize();
+        gpuDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int k = 0; k < niter; k++)
         {
-            cudaMemcpy((void *)alltoallv_send_vals.data(), (void *)alltoallv_send_vals_cu, alltoallv_send_vals.size() * sizeof(double), cudaMemcpyDeviceToHost);
+            gpuMemcpy((void *)alltoallv_send_vals.data(), (void *)alltoallv_send_vals_cu, alltoallv_send_vals.size() * sizeof(double), gpuMemcpyDeviceToHost);
             MPIX_Start(mpixccreq);
             MPIX_Wait(mpixccreq, MPI_STATUS_IGNORE);
-            cudaMemcpy((void *)neigh_recv_vals_cu, (void *)neigh_recv_vals.data(), neigh_recv_vals.size() * sizeof(double), cudaMemcpyHostToDevice);
+            gpuMemcpy((void *)neigh_recv_vals_cu, (void *)neigh_recv_vals.data(), neigh_recv_vals.size() * sizeof(double), gpuMemcpyHostToDevice);
         }
         tfinal = (MPI_Wtime() - t0) / niter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0)
             printf("CC MPIX_Neighbor_alltoallv_init Time %e; Time All Iters %d\n", t0, t0 * niter);
-        cudaMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
+        gpuMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
         memset((void *)neigh_recv_vals.data(), 0, neigh_recv_vals.size() * sizeof(double));
         MPIX_Request_free(mpixccreq);
-        cudaDeviceSynchronize();
+        gpuDeviceSynchronize();
 
         MPIX_Request *gpureq;
         gpu_aware_neighbor_alltoallv_nonblocking_init(alltoallv_send_vals_cu,
@@ -362,12 +362,12 @@ void test_matrix(const char *filename)
                                                       &gpureq);
         MPIX_Start(gpureq);
         MPIX_Wait(gpureq, MPI_STATUS_IGNORE);
-        cudaMemcpy((void *)neigh_recv_vals.data(), (void *)neigh_recv_vals_cu, std_recv_vals.size() * sizeof(double), cudaMemcpyDeviceToHost);
+        gpuMemcpy((void *)neigh_recv_vals.data(), (void *)neigh_recv_vals_cu, std_recv_vals.size() * sizeof(double), gpuMemcpyDeviceToHost);
         for (int i = 0; i < A.recv_comm.size_msgs * block_vec_cols; i++)
         {
             ASSERT_EQ(std_recv_vals[i], neigh_recv_vals[i]);
         }
-        cudaDeviceSynchronize();
+        gpuDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int k = 0; k < niter; k++)
@@ -379,10 +379,10 @@ void test_matrix(const char *filename)
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0)
             printf("GPU-Aware Neighbor_alltoallv Time %e; Time All Iters %d\n", t0, t0 * niter);
-        cudaMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
+        gpuMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
         memset((void *)neigh_recv_vals.data(), 0, neigh_recv_vals.size() * sizeof(double));
         MPIX_Request_free(gpureq);
-        cudaDeviceSynchronize();
+        gpuDeviceSynchronize();
 
         MPIX_Request *copyreq;
         copy_to_cpu_neighbor_alltoallv_nonblocking_init(alltoallv_send_vals_cu,
@@ -398,12 +398,12 @@ void test_matrix(const char *filename)
                                                         &copyreq);
         MPIX_Start(copyreq);
         MPIX_Wait(copyreq, MPI_STATUS_IGNORE);
-        cudaMemcpy((void *)neigh_recv_vals.data(), (void *)neigh_recv_vals_cu, std_recv_vals.size() * sizeof(double), cudaMemcpyDeviceToHost);
+        gpuMemcpy((void *)neigh_recv_vals.data(), (void *)neigh_recv_vals_cu, std_recv_vals.size() * sizeof(double), gpuMemcpyDeviceToHost);
         for (int i = 0; i < A.recv_comm.size_msgs * block_vec_cols; i++)
         {
             ASSERT_EQ(std_recv_vals[i], neigh_recv_vals[i]);
         }
-        cudaDeviceSynchronize();
+        gpuDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int k = 0; k < niter; k++)
@@ -415,16 +415,16 @@ void test_matrix(const char *filename)
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0)
             printf("CC Neighbor_alltoallv Time %e; Time All Iters %d\n", t0, t0 * niter);
-        cudaMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
+        gpuMemset((void *)neigh_recv_vals_cu, 0, neigh_recv_vals.size() * sizeof(double));
         memset((void *)neigh_recv_vals.data(), 0, neigh_recv_vals.size() * sizeof(double));
         MPIX_Request_free(copyreq);
 
         MPIX_Comm_free(&neighbor_comm);
         MPI_Comm_free(&std_comm);
 
-        cudaFree(std_recv_vals_cu);
-        cudaFree(neigh_recv_vals_cu);
-        cudaFree(alltoallv_send_vals_cu);
+        gpuFree(std_recv_vals_cu);
+        gpuFree(neigh_recv_vals_cu);
+        gpuFree(alltoallv_send_vals_cu);
         
         block_vec_cols_pow++;
     }
