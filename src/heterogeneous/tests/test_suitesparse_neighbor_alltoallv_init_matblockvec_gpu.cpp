@@ -41,7 +41,7 @@ void test_matrix(const char* filename)
     {
         send_vals.resize(A.on_proc.n_cols * block_vec_cols);
         std::iota(send_vals.begin(), send_vals.end(), 0);
-        for (double i = 0; i < A.on_proc.n_cols * block_vec_cols; i++)
+        for (int i = 0; i < A.on_proc.n_cols * block_vec_cols; i++)
             send_vals[i] += (rank*1000);
     }
 
