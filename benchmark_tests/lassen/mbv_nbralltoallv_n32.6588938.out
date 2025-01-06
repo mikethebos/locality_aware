@@ -1,0 +1,2648 @@
+Running Unthreaded Neighbor_Alltoallv Test:
+Testing Size blockVecCols 1, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.521210e-04; Time All Iters 2.521210e-01
+GPU MPIX_Neighbor_alltoallv Time 2.643924e-04; Time All Iters 2.643924e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.637455e-04; Time All Iters 2.637455e-01
+CC MPIX_Neighbor_alltoallv Time 1.521492e-04; Time All Iters 1.521492e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.468160e-04; Time All Iters 1.468160e-01
+GPU-Aware Neighbor_alltoallv Time 2.644838e-04; Time All Iters 2.644838e-01
+CC Neighbor_alltoallv Time 1.454493e-04; Time All Iters 1.454493e-01
+Testing Size blockVecCols 2, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.627785e-04; Time All Iters 2.627785e-01
+GPU MPIX_Neighbor_alltoallv Time 2.615499e-04; Time All Iters 2.615499e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.632984e-04; Time All Iters 2.632984e-01
+CC MPIX_Neighbor_alltoallv Time 1.500247e-04; Time All Iters 1.500247e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.536972e-04; Time All Iters 1.536972e-01
+GPU-Aware Neighbor_alltoallv Time 2.705741e-04; Time All Iters 2.705741e-01
+CC Neighbor_alltoallv Time 1.652528e-04; Time All Iters 1.652528e-01
+Testing Size blockVecCols 4, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.804601e-04; Time All Iters 2.804601e-01
+GPU MPIX_Neighbor_alltoallv Time 2.831012e-04; Time All Iters 2.831012e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.847956e-04; Time All Iters 2.847956e-01
+CC MPIX_Neighbor_alltoallv Time 1.655156e-04; Time All Iters 1.655156e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.687415e-04; Time All Iters 1.687415e-01
+GPU-Aware Neighbor_alltoallv Time 2.664797e-04; Time All Iters 2.664797e-01
+CC Neighbor_alltoallv Time 1.675793e-04; Time All Iters 1.675793e-01
+Testing Size blockVecCols 8, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.782754e-04; Time All Iters 2.782754e-01
+GPU MPIX_Neighbor_alltoallv Time 2.836192e-04; Time All Iters 2.836192e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.801777e-04; Time All Iters 2.801777e-01
+CC MPIX_Neighbor_alltoallv Time 1.743256e-04; Time All Iters 1.743256e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.747232e-04; Time All Iters 1.747232e-01
+GPU-Aware Neighbor_alltoallv Time 2.770516e-04; Time All Iters 2.770516e-01
+CC Neighbor_alltoallv Time 1.571659e-04; Time All Iters 1.571659e-01
+Testing Size blockVecCols 16, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.625512e-04; Time All Iters 2.625512e-01
+GPU MPIX_Neighbor_alltoallv Time 2.599066e-04; Time All Iters 2.599066e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.532357e-04; Time All Iters 2.532357e-01
+CC MPIX_Neighbor_alltoallv Time 1.919311e-04; Time All Iters 1.919311e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.773050e-04; Time All Iters 1.773050e-01
+GPU-Aware Neighbor_alltoallv Time 2.625422e-04; Time All Iters 2.625422e-01
+CC Neighbor_alltoallv Time 1.813216e-04; Time All Iters 1.813216e-01
+Testing Size blockVecCols 32, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.039158e-04; Time All Iters 3.039158e-01
+GPU MPIX_Neighbor_alltoallv Time 2.979468e-04; Time All Iters 2.979468e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.911710e-04; Time All Iters 2.911710e-01
+CC MPIX_Neighbor_alltoallv Time 2.361082e-04; Time All Iters 2.361082e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.328905e-04; Time All Iters 2.328905e-01
+GPU-Aware Neighbor_alltoallv Time 2.971479e-04; Time All Iters 2.971479e-01
+CC Neighbor_alltoallv Time 2.130119e-04; Time All Iters 2.130119e-01
+Testing Size blockVecCols 64, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.100734e-04; Time All Iters 3.100734e-01
+GPU MPIX_Neighbor_alltoallv Time 3.138041e-04; Time All Iters 3.138041e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.134085e-04; Time All Iters 3.134085e-01
+CC MPIX_Neighbor_alltoallv Time 3.217934e-04; Time All Iters 3.217934e-01
+CC MPIX_Neighbor_alltoallv_init Time 3.195042e-04; Time All Iters 3.195042e-01
+GPU-Aware Neighbor_alltoallv Time 3.082162e-04; Time All Iters 3.082162e-01
+CC Neighbor_alltoallv Time 2.535613e-04; Time All Iters 2.535613e-01
+Testing Size blockVecCols 128, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.940525e-04; Time All Iters 2.940525e-01
+GPU MPIX_Neighbor_alltoallv Time 2.922703e-04; Time All Iters 2.922703e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.190521e-04; Time All Iters 3.190521e-01
+CC MPIX_Neighbor_alltoallv Time 5.909397e-04; Time All Iters 5.909397e-01
+CC MPIX_Neighbor_alltoallv_init Time 5.886841e-04; Time All Iters 5.886841e-01
+GPU-Aware Neighbor_alltoallv Time 2.907365e-04; Time All Iters 2.907365e-01
+CC Neighbor_alltoallv Time 3.660482e-04; Time All Iters 3.660482e-01
+Testing Size blockVecCols 256, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 4.108633e-04; Time All Iters 4.108633e-01
+GPU MPIX_Neighbor_alltoallv Time 4.064849e-04; Time All Iters 4.064849e-01
+GPU MPIX_Neighbor_alltoallv_init Time 4.066779e-04; Time All Iters 4.066779e-01
+CC MPIX_Neighbor_alltoallv Time 1.075933e-03; Time All Iters 1.075933e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.074740e-03; Time All Iters 1.074740e+00
+GPU-Aware Neighbor_alltoallv Time 3.859267e-04; Time All Iters 3.859267e-01
+CC Neighbor_alltoallv Time 6.026399e-04; Time All Iters 6.026399e-01
+Testing Size blockVecCols 512, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 8.763155e-04; Time All Iters 8.763155e-01
+GPU MPIX_Neighbor_alltoallv Time 8.800676e-04; Time All Iters 8.800676e-01
+GPU MPIX_Neighbor_alltoallv_init Time 8.825811e-04; Time All Iters 8.825811e-01
+CC MPIX_Neighbor_alltoallv Time 2.047844e-03; Time All Iters 2.047844e+00
+CC MPIX_Neighbor_alltoallv_init Time 2.059920e-03; Time All Iters 2.059920e+00
+GPU-Aware Neighbor_alltoallv Time 8.694660e-04; Time All Iters 8.694660e-01
+CC Neighbor_alltoallv Time 1.183642e-03; Time All Iters 1.183642e+00
+Testing Size blockVecCols 1024, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.028051e-03; Time All Iters 2.028051e+00
+GPU MPIX_Neighbor_alltoallv Time 1.982816e-03; Time All Iters 1.982816e+00
+GPU MPIX_Neighbor_alltoallv_init Time 1.961182e-03; Time All Iters 1.961182e+00
+CC MPIX_Neighbor_alltoallv Time 4.031207e-03; Time All Iters 4.031207e+00
+CC MPIX_Neighbor_alltoallv_init Time 4.024859e-03; Time All Iters 4.024859e+00
+GPU-Aware Neighbor_alltoallv Time 1.992206e-03; Time All Iters 1.992206e+00
+CC Neighbor_alltoallv Time 2.147655e-03; Time All Iters 2.147655e+00
+Testing Size blockVecCols 1, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.405764e-04; Time All Iters 1.405764e-01
+GPU MPIX_Neighbor_alltoallv Time 1.464244e-04; Time All Iters 1.464244e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.415618e-04; Time All Iters 1.415618e-01
+CC MPIX_Neighbor_alltoallv Time 9.834772e-05; Time All Iters 9.834772e-02
+CC MPIX_Neighbor_alltoallv_init Time 9.659844e-05; Time All Iters 9.659844e-02
+GPU-Aware Neighbor_alltoallv Time 1.417009e-04; Time All Iters 1.417009e-01
+CC Neighbor_alltoallv Time 1.010347e-04; Time All Iters 1.010347e-01
+Testing Size blockVecCols 2, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.471177e-04; Time All Iters 1.471177e-01
+GPU MPIX_Neighbor_alltoallv Time 1.573336e-04; Time All Iters 1.573336e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.490020e-04; Time All Iters 1.490020e-01
+CC MPIX_Neighbor_alltoallv Time 1.066432e-04; Time All Iters 1.066432e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.081737e-04; Time All Iters 1.081737e-01
+GPU-Aware Neighbor_alltoallv Time 1.467184e-04; Time All Iters 1.467184e-01
+CC Neighbor_alltoallv Time 1.152295e-04; Time All Iters 1.152295e-01
+Testing Size blockVecCols 4, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.659424e-04; Time All Iters 1.659424e-01
+GPU MPIX_Neighbor_alltoallv Time 1.589345e-04; Time All Iters 1.589345e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.509271e-04; Time All Iters 1.509271e-01
+CC MPIX_Neighbor_alltoallv Time 1.224229e-04; Time All Iters 1.224229e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.154291e-04; Time All Iters 1.154291e-01
+GPU-Aware Neighbor_alltoallv Time 1.574434e-04; Time All Iters 1.574434e-01
+CC Neighbor_alltoallv Time 1.112037e-04; Time All Iters 1.112037e-01
+Testing Size blockVecCols 8, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.665196e-04; Time All Iters 1.665196e-01
+GPU MPIX_Neighbor_alltoallv Time 1.754265e-04; Time All Iters 1.754265e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.625001e-04; Time All Iters 1.625001e-01
+CC MPIX_Neighbor_alltoallv Time 1.398303e-04; Time All Iters 1.398303e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.410063e-04; Time All Iters 1.410063e-01
+GPU-Aware Neighbor_alltoallv Time 1.586517e-04; Time All Iters 1.586517e-01
+CC Neighbor_alltoallv Time 1.344159e-04; Time All Iters 1.344159e-01
+Testing Size blockVecCols 16, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.682782e-04; Time All Iters 1.682782e-01
+GPU MPIX_Neighbor_alltoallv Time 1.803211e-04; Time All Iters 1.803211e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.807768e-04; Time All Iters 1.807768e-01
+CC MPIX_Neighbor_alltoallv Time 2.030716e-04; Time All Iters 2.030716e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.013606e-04; Time All Iters 2.013606e-01
+GPU-Aware Neighbor_alltoallv Time 1.830790e-04; Time All Iters 1.830790e-01
+CC Neighbor_alltoallv Time 1.789209e-04; Time All Iters 1.789209e-01
+Testing Size blockVecCols 32, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.927118e-04; Time All Iters 1.927118e-01
+GPU MPIX_Neighbor_alltoallv Time 2.053212e-04; Time All Iters 2.053212e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.016767e-04; Time All Iters 2.016767e-01
+CC MPIX_Neighbor_alltoallv Time 2.983353e-04; Time All Iters 2.983353e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.945490e-04; Time All Iters 2.945490e-01
+GPU-Aware Neighbor_alltoallv Time 1.842740e-04; Time All Iters 1.842740e-01
+CC Neighbor_alltoallv Time 2.445542e-04; Time All Iters 2.445542e-01
+Testing Size blockVecCols 64, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 2.788614e-04; Time All Iters 2.788614e-01
+GPU MPIX_Neighbor_alltoallv Time 2.800711e-04; Time All Iters 2.800711e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.618791e-04; Time All Iters 2.618791e-01
+CC MPIX_Neighbor_alltoallv Time 4.913411e-04; Time All Iters 4.913411e-01
+CC MPIX_Neighbor_alltoallv_init Time 4.911919e-04; Time All Iters 4.911919e-01
+GPU-Aware Neighbor_alltoallv Time 2.690801e-04; Time All Iters 2.690801e-01
+CC Neighbor_alltoallv Time 3.518651e-04; Time All Iters 3.518651e-01
+Testing Size blockVecCols 128, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 4.426695e-04; Time All Iters 4.426695e-01
+GPU MPIX_Neighbor_alltoallv Time 4.536067e-04; Time All Iters 4.536067e-01
+GPU MPIX_Neighbor_alltoallv_init Time 4.557302e-04; Time All Iters 4.557302e-01
+CC MPIX_Neighbor_alltoallv Time 9.077306e-04; Time All Iters 9.077306e-01
+CC MPIX_Neighbor_alltoallv_init Time 8.982265e-04; Time All Iters 8.982265e-01
+GPU-Aware Neighbor_alltoallv Time 4.473156e-04; Time All Iters 4.473156e-01
+CC Neighbor_alltoallv Time 5.781339e-04; Time All Iters 5.781339e-01
+Testing Size blockVecCols 256, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 8.959209e-04; Time All Iters 8.959209e-01
+GPU MPIX_Neighbor_alltoallv Time 8.961931e-04; Time All Iters 8.961931e-01
+GPU MPIX_Neighbor_alltoallv_init Time 8.822713e-04; Time All Iters 8.822713e-01
+CC MPIX_Neighbor_alltoallv Time 1.644807e-03; Time All Iters 1.644807e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.650432e-03; Time All Iters 1.650432e+00
+GPU-Aware Neighbor_alltoallv Time 8.924362e-04; Time All Iters 8.924362e-01
+CC Neighbor_alltoallv Time 1.039375e-03; Time All Iters 1.039375e+00
+Testing Size blockVecCols 512, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 2.120062e-03; Time All Iters 2.120062e+00
+GPU MPIX_Neighbor_alltoallv Time 2.166694e-03; Time All Iters 2.166694e+00
+GPU MPIX_Neighbor_alltoallv_init Time 2.111206e-03; Time All Iters 2.111206e+00
+CC MPIX_Neighbor_alltoallv Time 3.394140e-03; Time All Iters 3.394140e+00
+CC MPIX_Neighbor_alltoallv_init Time 3.396386e-03; Time All Iters 3.396386e+00
+GPU-Aware Neighbor_alltoallv Time 2.089413e-03; Time All Iters 2.089413e+00
+CC Neighbor_alltoallv Time 1.993135e-03; Time All Iters 1.993135e+00
+Testing Size blockVecCols 1024, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 5.961038e-03; Time All Iters 5.961038e+00
+GPU MPIX_Neighbor_alltoallv Time 5.813744e-03; Time All Iters 5.813744e+00
+GPU MPIX_Neighbor_alltoallv_init Time 5.799904e-03; Time All Iters 5.799904e+00
+CC MPIX_Neighbor_alltoallv Time 7.063452e-03; Time All Iters 7.063452e+00
+CC MPIX_Neighbor_alltoallv_init Time 7.059255e-03; Time All Iters 7.059255e+00
+GPU-Aware Neighbor_alltoallv Time 5.939109e-03; Time All Iters 5.939109e+00
+CC Neighbor_alltoallv Time 4.066793e-03; Time All Iters 4.066793e+00
+Testing Size blockVecCols 1, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.504736e-05; Time All Iters 8.504736e-02
+GPU MPIX_Neighbor_alltoallv Time 8.159762e-05; Time All Iters 8.159762e-02
+GPU MPIX_Neighbor_alltoallv_init Time 8.253821e-05; Time All Iters 8.253821e-02
+CC MPIX_Neighbor_alltoallv Time 6.769650e-05; Time All Iters 6.769650e-02
+CC MPIX_Neighbor_alltoallv_init Time 6.857131e-05; Time All Iters 6.857131e-02
+GPU-Aware Neighbor_alltoallv Time 8.386561e-05; Time All Iters 8.386561e-02
+CC Neighbor_alltoallv Time 7.495651e-05; Time All Iters 7.495651e-02
+Testing Size blockVecCols 2, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.095357e-05; Time All Iters 8.095357e-02
+GPU MPIX_Neighbor_alltoallv Time 8.499624e-05; Time All Iters 8.499624e-02
+GPU MPIX_Neighbor_alltoallv_init Time 8.157252e-05; Time All Iters 8.157252e-02
+CC MPIX_Neighbor_alltoallv Time 7.485400e-05; Time All Iters 7.485400e-02
+CC MPIX_Neighbor_alltoallv_init Time 7.167145e-05; Time All Iters 7.167145e-02
+GPU-Aware Neighbor_alltoallv Time 8.095454e-05; Time All Iters 8.095454e-02
+CC Neighbor_alltoallv Time 7.811974e-05; Time All Iters 7.811974e-02
+Testing Size blockVecCols 4, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.278111e-05; Time All Iters 8.278111e-02
+GPU MPIX_Neighbor_alltoallv Time 8.254354e-05; Time All Iters 8.254354e-02
+GPU MPIX_Neighbor_alltoallv_init Time 8.240977e-05; Time All Iters 8.240977e-02
+CC MPIX_Neighbor_alltoallv Time 8.197362e-05; Time All Iters 8.197362e-02
+CC MPIX_Neighbor_alltoallv_init Time 8.061032e-05; Time All Iters 8.061032e-02
+GPU-Aware Neighbor_alltoallv Time 7.954507e-05; Time All Iters 7.954507e-02
+CC Neighbor_alltoallv Time 8.019937e-05; Time All Iters 8.019937e-02
+Testing Size blockVecCols 8, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.607776e-05; Time All Iters 8.607776e-02
+GPU MPIX_Neighbor_alltoallv Time 8.586078e-05; Time All Iters 8.586078e-02
+GPU MPIX_Neighbor_alltoallv_init Time 8.247713e-05; Time All Iters 8.247713e-02
+CC MPIX_Neighbor_alltoallv Time 1.008994e-04; Time All Iters 1.008994e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.018150e-04; Time All Iters 1.018150e-01
+GPU-Aware Neighbor_alltoallv Time 8.588803e-05; Time All Iters 8.588803e-02
+CC Neighbor_alltoallv Time 9.445310e-05; Time All Iters 9.445310e-02
+Testing Size blockVecCols 16, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.719912e-05; Time All Iters 8.719912e-02
+GPU MPIX_Neighbor_alltoallv Time 8.929987e-05; Time All Iters 8.929987e-02
+GPU MPIX_Neighbor_alltoallv_init Time 8.284494e-05; Time All Iters 8.284494e-02
+CC MPIX_Neighbor_alltoallv Time 1.442775e-04; Time All Iters 1.442775e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.471852e-04; Time All Iters 1.471852e-01
+GPU-Aware Neighbor_alltoallv Time 8.815643e-05; Time All Iters 8.815643e-02
+CC Neighbor_alltoallv Time 1.194106e-04; Time All Iters 1.194106e-01
+Testing Size blockVecCols 32, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 9.330172e-05; Time All Iters 9.330172e-02
+GPU MPIX_Neighbor_alltoallv Time 9.273758e-05; Time All Iters 9.273758e-02
+GPU MPIX_Neighbor_alltoallv_init Time 9.200146e-05; Time All Iters 9.200146e-02
+CC MPIX_Neighbor_alltoallv Time 2.087255e-04; Time All Iters 2.087255e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.122004e-04; Time All Iters 2.122004e-01
+GPU-Aware Neighbor_alltoallv Time 9.280371e-05; Time All Iters 9.280371e-02
+CC Neighbor_alltoallv Time 1.614474e-04; Time All Iters 1.614474e-01
+Testing Size blockVecCols 64, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.097058e-04; Time All Iters 1.097058e-01
+GPU MPIX_Neighbor_alltoallv Time 1.111812e-04; Time All Iters 1.111812e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.115770e-04; Time All Iters 1.115770e-01
+CC MPIX_Neighbor_alltoallv Time 3.377658e-04; Time All Iters 3.377658e-01
+CC MPIX_Neighbor_alltoallv_init Time 3.330712e-04; Time All Iters 3.330712e-01
+GPU-Aware Neighbor_alltoallv Time 1.103274e-04; Time All Iters 1.103274e-01
+CC Neighbor_alltoallv Time 2.154593e-04; Time All Iters 2.154593e-01
+Testing Size blockVecCols 128, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.518463e-04; Time All Iters 1.518463e-01
+GPU MPIX_Neighbor_alltoallv Time 1.564881e-04; Time All Iters 1.564881e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.473501e-04; Time All Iters 1.473501e-01
+CC MPIX_Neighbor_alltoallv Time 5.872980e-04; Time All Iters 5.872980e-01
+CC MPIX_Neighbor_alltoallv_init Time 5.916983e-04; Time All Iters 5.916983e-01
+GPU-Aware Neighbor_alltoallv Time 1.618461e-04; Time All Iters 1.618461e-01
+CC Neighbor_alltoallv Time 3.201132e-04; Time All Iters 3.201132e-01
+Testing Size blockVecCols 256, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 3.177863e-04; Time All Iters 3.177863e-01
+GPU MPIX_Neighbor_alltoallv Time 3.150945e-04; Time All Iters 3.150945e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.066025e-04; Time All Iters 3.066025e-01
+CC MPIX_Neighbor_alltoallv Time 1.109374e-03; Time All Iters 1.109374e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.105275e-03; Time All Iters 1.105275e+00
+GPU-Aware Neighbor_alltoallv Time 2.742953e-04; Time All Iters 2.742953e-01
+CC Neighbor_alltoallv Time 5.508960e-04; Time All Iters 5.508960e-01
+Testing Size blockVecCols 512, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 5.872913e-04; Time All Iters 5.872913e-01
+GPU MPIX_Neighbor_alltoallv Time 5.912416e-04; Time All Iters 5.912416e-01
+GPU MPIX_Neighbor_alltoallv_init Time 5.804549e-04; Time All Iters 5.804549e-01
+CC MPIX_Neighbor_alltoallv Time 2.072797e-03; Time All Iters 2.072797e+00
+CC MPIX_Neighbor_alltoallv_init Time 2.070893e-03; Time All Iters 2.070893e+00
+GPU-Aware Neighbor_alltoallv Time 5.854142e-04; Time All Iters 5.854142e-01
+CC Neighbor_alltoallv Time 9.775035e-04; Time All Iters 9.775035e-01
+Testing Size blockVecCols 1024, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.041769e-03; Time All Iters 1.041769e+00
+GPU MPIX_Neighbor_alltoallv Time 1.032864e-03; Time All Iters 1.032864e+00
+GPU MPIX_Neighbor_alltoallv_init Time 1.043763e-03; Time All Iters 1.043763e+00
+CC MPIX_Neighbor_alltoallv Time 4.111414e-03; Time All Iters 4.111414e+00
+CC MPIX_Neighbor_alltoallv_init Time 4.092539e-03; Time All Iters 4.092539e+00
+GPU-Aware Neighbor_alltoallv Time 1.048757e-03; Time All Iters 1.048757e+00
+CC Neighbor_alltoallv Time 1.730543e-03; Time All Iters 1.730543e+00
+app 0: ./gpu_suitesparse_neighbor_alltoallv_matblockvec 
+rank: 0: { host: 1; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 1: { host: 1; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 2: { host: 1; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 3: { host: 1; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 4: { host: 2; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 5: { host: 2; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 6: { host: 2; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 7: { host: 2; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 8: { host: 3; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 9: { host: 3; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 10: { host: 3; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 11: { host: 3; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 12: { host: 4; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 13: { host: 4; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 14: { host: 4; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 15: { host: 4; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 16: { host: 5; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 17: { host: 5; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 18: { host: 5; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 19: { host: 5; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 20: { host: 6; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 21: { host: 6; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 22: { host: 6; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 23: { host: 6; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 24: { host: 7; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 25: { host: 7; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 26: { host: 7; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 27: { host: 7; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 28: { host: 8; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 29: { host: 8; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 30: { host: 8; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 31: { host: 8; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 32: { host: 9; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 33: { host: 9; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 34: { host: 9; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 35: { host: 9; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 36: { host: 10; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 37: { host: 10; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 38: { host: 10; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 39: { host: 10; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 40: { host: 11; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 41: { host: 11; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 42: { host: 11; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 43: { host: 11; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 44: { host: 12; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 45: { host: 12; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 46: { host: 12; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 47: { host: 12; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 48: { host: 13; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 49: { host: 13; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 50: { host: 13; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 51: { host: 13; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 52: { host: 14; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 53: { host: 14; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 54: { host: 14; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 55: { host: 14; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 56: { host: 15; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 57: { host: 15; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 58: { host: 15; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 59: { host: 15; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 60: { host: 16; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 61: { host: 16; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 62: { host: 16; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 63: { host: 16; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 64: { host: 17; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 65: { host: 17; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 66: { host: 17; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 67: { host: 17; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 68: { host: 18; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 69: { host: 18; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 70: { host: 18; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 71: { host: 18; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 72: { host: 19; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 73: { host: 19; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 74: { host: 19; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 75: { host: 19; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 76: { host: 20; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 77: { host: 20; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 78: { host: 20; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 79: { host: 20; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 80: { host: 21; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 81: { host: 21; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 82: { host: 21; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 83: { host: 21; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 84: { host: 22; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 85: { host: 22; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 86: { host: 22; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 87: { host: 22; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 88: { host: 23; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 89: { host: 23; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 90: { host: 23; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 91: { host: 23; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 92: { host: 24; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 93: { host: 24; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 94: { host: 24; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 95: { host: 24; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 96: { host: 25; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 97: { host: 25; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 98: { host: 25; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 99: { host: 25; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 100: { host: 26; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 101: { host: 26; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 102: { host: 26; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 103: { host: 26; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 104: { host: 27; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 105: { host: 27; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 106: { host: 27; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 107: { host: 27; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 108: { host: 28; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 109: { host: 28; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 110: { host: 28; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 111: { host: 28; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 112: { host: 29; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 113: { host: 29; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 114: { host: 29; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 115: { host: 29; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 116: { host: 30; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 117: { host: 30; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 118: { host: 30; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 119: { host: 30; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 120: { host: 31; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 121: { host: 31; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 122: { host: 31; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 123: { host: 31; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 124: { host: 32; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 125: { host: 32; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 126: { host: 32; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 127: { host: 32; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+Running Threaded Neighbor_Alltoallv Test with 2 threads:
+Testing Size blockVecCols 1, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.699792e-04; Time All Iters 2.699792e-01
+GPU MPIX_Neighbor_alltoallv Time 2.706815e-04; Time All Iters 2.706815e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.587158e-04; Time All Iters 2.587158e-01
+CC MPIX_Neighbor_alltoallv Time 1.539280e-04; Time All Iters 1.539280e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.388181e-04; Time All Iters 1.388181e-01
+GPU-Aware Neighbor_alltoallv Time 2.579811e-04; Time All Iters 2.579811e-01
+CC Neighbor_alltoallv Time 1.508408e-04; Time All Iters 1.508408e-01
+Threaded CC Neighbor_alltoallv Time 1.524027e-04; Time All Iters 1.524027e-01
+Testing Size blockVecCols 2, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.724668e-04; Time All Iters 2.724668e-01
+GPU MPIX_Neighbor_alltoallv Time 2.932680e-04; Time All Iters 2.932680e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.793176e-04; Time All Iters 2.793176e-01
+CC MPIX_Neighbor_alltoallv Time 1.644350e-04; Time All Iters 1.644350e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.594608e-04; Time All Iters 1.594608e-01
+GPU-Aware Neighbor_alltoallv Time 2.864246e-04; Time All Iters 2.864246e-01
+CC Neighbor_alltoallv Time 1.702417e-04; Time All Iters 1.702417e-01
+Threaded CC Neighbor_alltoallv Time 1.753196e-04; Time All Iters 1.753196e-01
+Testing Size blockVecCols 4, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.854564e-04; Time All Iters 2.854564e-01
+GPU MPIX_Neighbor_alltoallv Time 2.670291e-04; Time All Iters 2.670291e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.639643e-04; Time All Iters 2.639643e-01
+CC MPIX_Neighbor_alltoallv Time 1.731790e-04; Time All Iters 1.731790e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.667944e-04; Time All Iters 1.667944e-01
+GPU-Aware Neighbor_alltoallv Time 2.679314e-04; Time All Iters 2.679314e-01
+CC Neighbor_alltoallv Time 1.704670e-04; Time All Iters 1.704670e-01
+Threaded CC Neighbor_alltoallv Time 1.814158e-04; Time All Iters 1.814158e-01
+Testing Size blockVecCols 8, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.926758e-04; Time All Iters 2.926758e-01
+GPU MPIX_Neighbor_alltoallv Time 2.888172e-04; Time All Iters 2.888172e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.722227e-04; Time All Iters 2.722227e-01
+CC MPIX_Neighbor_alltoallv Time 1.823148e-04; Time All Iters 1.823148e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.767233e-04; Time All Iters 1.767233e-01
+GPU-Aware Neighbor_alltoallv Time 2.749603e-04; Time All Iters 2.749603e-01
+CC Neighbor_alltoallv Time 1.815394e-04; Time All Iters 1.815394e-01
+Threaded CC Neighbor_alltoallv Time 1.948431e-04; Time All Iters 1.948431e-01
+Testing Size blockVecCols 16, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.065992e-04; Time All Iters 3.065992e-01
+GPU MPIX_Neighbor_alltoallv Time 2.931068e-04; Time All Iters 2.931068e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.851301e-04; Time All Iters 2.851301e-01
+CC MPIX_Neighbor_alltoallv Time 2.096513e-04; Time All Iters 2.096513e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.953392e-04; Time All Iters 1.953392e-01
+GPU-Aware Neighbor_alltoallv Time 2.812766e-04; Time All Iters 2.812766e-01
+CC Neighbor_alltoallv Time 1.880945e-04; Time All Iters 1.880945e-01
+Threaded CC Neighbor_alltoallv Time 1.925298e-04; Time All Iters 1.925298e-01
+Testing Size blockVecCols 32, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.950497e-04; Time All Iters 2.950497e-01
+GPU MPIX_Neighbor_alltoallv Time 2.846737e-04; Time All Iters 2.846737e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.761857e-04; Time All Iters 2.761857e-01
+CC MPIX_Neighbor_alltoallv Time 2.469988e-04; Time All Iters 2.469988e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.415631e-04; Time All Iters 2.415631e-01
+GPU-Aware Neighbor_alltoallv Time 3.013637e-04; Time All Iters 3.013637e-01
+CC Neighbor_alltoallv Time 2.180488e-04; Time All Iters 2.180488e-01
+Threaded CC Neighbor_alltoallv Time 2.214274e-04; Time All Iters 2.214274e-01
+Testing Size blockVecCols 64, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.138807e-04; Time All Iters 3.138807e-01
+GPU MPIX_Neighbor_alltoallv Time 3.005425e-04; Time All Iters 3.005425e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.055740e-04; Time All Iters 3.055740e-01
+CC MPIX_Neighbor_alltoallv Time 3.071877e-04; Time All Iters 3.071877e-01
+CC MPIX_Neighbor_alltoallv_init Time 3.018289e-04; Time All Iters 3.018289e-01
+GPU-Aware Neighbor_alltoallv Time 3.070859e-04; Time All Iters 3.070859e-01
+CC Neighbor_alltoallv Time 2.527080e-04; Time All Iters 2.527080e-01
+Threaded CC Neighbor_alltoallv Time 2.585408e-04; Time All Iters 2.585408e-01
+Testing Size blockVecCols 128, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.216033e-04; Time All Iters 3.216033e-01
+GPU MPIX_Neighbor_alltoallv Time 3.186281e-04; Time All Iters 3.186281e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.944646e-04; Time All Iters 2.944646e-01
+CC MPIX_Neighbor_alltoallv Time 5.527288e-04; Time All Iters 5.527288e-01
+CC MPIX_Neighbor_alltoallv_init Time 5.500827e-04; Time All Iters 5.500827e-01
+GPU-Aware Neighbor_alltoallv Time 3.062559e-04; Time All Iters 3.062559e-01
+CC Neighbor_alltoallv Time 3.485876e-04; Time All Iters 3.485876e-01
+Threaded CC Neighbor_alltoallv Time 3.461516e-04; Time All Iters 3.461516e-01
+Testing Size blockVecCols 256, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.836695e-04; Time All Iters 3.836695e-01
+GPU MPIX_Neighbor_alltoallv Time 3.839495e-04; Time All Iters 3.839495e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.824155e-04; Time All Iters 3.824155e-01
+CC MPIX_Neighbor_alltoallv Time 1.044487e-03; Time All Iters 1.044487e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.041896e-03; Time All Iters 1.041896e+00
+GPU-Aware Neighbor_alltoallv Time 3.791898e-04; Time All Iters 3.791898e-01
+CC Neighbor_alltoallv Time 5.844311e-04; Time All Iters 5.844311e-01
+Threaded CC Neighbor_alltoallv Time 5.802326e-04; Time All Iters 5.802326e-01
+Testing Size blockVecCols 512, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 8.678117e-04; Time All Iters 8.678117e-01
+GPU MPIX_Neighbor_alltoallv Time 8.781762e-04; Time All Iters 8.781762e-01
+GPU MPIX_Neighbor_alltoallv_init Time 8.753865e-04; Time All Iters 8.753865e-01
+CC MPIX_Neighbor_alltoallv Time 1.930093e-03; Time All Iters 1.930093e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.927674e-03; Time All Iters 1.927674e+00
+GPU-Aware Neighbor_alltoallv Time 8.376967e-04; Time All Iters 8.376967e-01
+CC Neighbor_alltoallv Time 1.151406e-03; Time All Iters 1.151406e+00
+Threaded CC Neighbor_alltoallv Time 1.049563e-03; Time All Iters 1.049563e+00
+Testing Size blockVecCols 1024, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 1.823888e-03; Time All Iters 1.823888e+00
+GPU MPIX_Neighbor_alltoallv Time 1.802958e-03; Time All Iters 1.802958e+00
+GPU MPIX_Neighbor_alltoallv_init Time 1.805513e-03; Time All Iters 1.805513e+00
+CC MPIX_Neighbor_alltoallv Time 3.568904e-03; Time All Iters 3.568904e+00
+CC MPIX_Neighbor_alltoallv_init Time 3.570539e-03; Time All Iters 3.570539e+00
+GPU-Aware Neighbor_alltoallv Time 1.927461e-03; Time All Iters 1.927461e+00
+CC Neighbor_alltoallv Time 2.076041e-03; Time All Iters 2.076041e+00
+Threaded CC Neighbor_alltoallv Time 1.997715e-03; Time All Iters 1.997715e+00
+Testing Size blockVecCols 1, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.418794e-04; Time All Iters 1.418794e-01
+GPU MPIX_Neighbor_alltoallv Time 1.443348e-04; Time All Iters 1.443348e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.398376e-04; Time All Iters 1.398376e-01
+CC MPIX_Neighbor_alltoallv Time 1.006478e-04; Time All Iters 1.006478e-01
+CC MPIX_Neighbor_alltoallv_init Time 9.210732e-05; Time All Iters 9.210732e-02
+GPU-Aware Neighbor_alltoallv Time 1.339212e-04; Time All Iters 1.339212e-01
+CC Neighbor_alltoallv Time 1.046991e-04; Time All Iters 1.046991e-01
+Threaded CC Neighbor_alltoallv Time 1.120799e-04; Time All Iters 1.120799e-01
+Testing Size blockVecCols 2, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.470727e-04; Time All Iters 1.470727e-01
+GPU MPIX_Neighbor_alltoallv Time 1.403827e-04; Time All Iters 1.403827e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.454492e-04; Time All Iters 1.454492e-01
+CC MPIX_Neighbor_alltoallv Time 1.093678e-04; Time All Iters 1.093678e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.061840e-04; Time All Iters 1.061840e-01
+GPU-Aware Neighbor_alltoallv Time 1.515659e-04; Time All Iters 1.515659e-01
+CC Neighbor_alltoallv Time 1.095249e-04; Time All Iters 1.095249e-01
+Threaded CC Neighbor_alltoallv Time 1.088126e-04; Time All Iters 1.088126e-01
+Testing Size blockVecCols 4, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.579368e-04; Time All Iters 1.579368e-01
+GPU MPIX_Neighbor_alltoallv Time 1.599767e-04; Time All Iters 1.599767e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.605442e-04; Time All Iters 1.605442e-01
+CC MPIX_Neighbor_alltoallv Time 1.255554e-04; Time All Iters 1.255554e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.182757e-04; Time All Iters 1.182757e-01
+GPU-Aware Neighbor_alltoallv Time 1.601666e-04; Time All Iters 1.601666e-01
+CC Neighbor_alltoallv Time 1.117809e-04; Time All Iters 1.117809e-01
+Threaded CC Neighbor_alltoallv Time 1.185017e-04; Time All Iters 1.185017e-01
+Testing Size blockVecCols 8, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.661348e-04; Time All Iters 1.661348e-01
+GPU MPIX_Neighbor_alltoallv Time 1.631678e-04; Time All Iters 1.631678e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.600577e-04; Time All Iters 1.600577e-01
+CC MPIX_Neighbor_alltoallv Time 1.437096e-04; Time All Iters 1.437096e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.406304e-04; Time All Iters 1.406304e-01
+GPU-Aware Neighbor_alltoallv Time 1.575725e-04; Time All Iters 1.575725e-01
+CC Neighbor_alltoallv Time 1.307454e-04; Time All Iters 1.307454e-01
+Threaded CC Neighbor_alltoallv Time 1.372161e-04; Time All Iters 1.372161e-01
+Testing Size blockVecCols 16, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.664807e-04; Time All Iters 1.664807e-01
+GPU MPIX_Neighbor_alltoallv Time 1.778537e-04; Time All Iters 1.778537e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.687612e-04; Time All Iters 1.687612e-01
+CC MPIX_Neighbor_alltoallv Time 1.885033e-04; Time All Iters 1.885033e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.838577e-04; Time All Iters 1.838577e-01
+GPU-Aware Neighbor_alltoallv Time 1.712533e-04; Time All Iters 1.712533e-01
+CC Neighbor_alltoallv Time 1.686153e-04; Time All Iters 1.686153e-01
+Threaded CC Neighbor_alltoallv Time 1.708064e-04; Time All Iters 1.708064e-01
+Testing Size blockVecCols 32, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.887598e-04; Time All Iters 1.887598e-01
+GPU MPIX_Neighbor_alltoallv Time 1.951969e-04; Time All Iters 1.951969e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.977724e-04; Time All Iters 1.977724e-01
+CC MPIX_Neighbor_alltoallv Time 2.710568e-04; Time All Iters 2.710568e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.670060e-04; Time All Iters 2.670060e-01
+GPU-Aware Neighbor_alltoallv Time 1.900429e-04; Time All Iters 1.900429e-01
+CC Neighbor_alltoallv Time 2.329782e-04; Time All Iters 2.329782e-01
+Threaded CC Neighbor_alltoallv Time 2.331223e-04; Time All Iters 2.331223e-01
+Testing Size blockVecCols 64, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 2.681015e-04; Time All Iters 2.681015e-01
+GPU MPIX_Neighbor_alltoallv Time 2.669448e-04; Time All Iters 2.669448e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.755581e-04; Time All Iters 2.755581e-01
+CC MPIX_Neighbor_alltoallv Time 4.209174e-04; Time All Iters 4.209174e-01
+CC MPIX_Neighbor_alltoallv_init Time 4.124757e-04; Time All Iters 4.124757e-01
+GPU-Aware Neighbor_alltoallv Time 2.700144e-04; Time All Iters 2.700144e-01
+CC Neighbor_alltoallv Time 3.403119e-04; Time All Iters 3.403119e-01
+Threaded CC Neighbor_alltoallv Time 3.415643e-04; Time All Iters 3.415643e-01
+Testing Size blockVecCols 128, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 4.422536e-04; Time All Iters 4.422536e-01
+GPU MPIX_Neighbor_alltoallv Time 4.515477e-04; Time All Iters 4.515477e-01
+GPU MPIX_Neighbor_alltoallv_init Time 4.463867e-04; Time All Iters 4.463867e-01
+CC MPIX_Neighbor_alltoallv Time 7.404873e-04; Time All Iters 7.404873e-01
+CC MPIX_Neighbor_alltoallv_init Time 7.333357e-04; Time All Iters 7.333357e-01
+GPU-Aware Neighbor_alltoallv Time 4.415835e-04; Time All Iters 4.415835e-01
+CC Neighbor_alltoallv Time 5.562644e-04; Time All Iters 5.562644e-01
+Threaded CC Neighbor_alltoallv Time 5.672163e-04; Time All Iters 5.672163e-01
+Testing Size blockVecCols 256, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 8.805470e-04; Time All Iters 8.805470e-01
+GPU MPIX_Neighbor_alltoallv Time 8.903516e-04; Time All Iters 8.903516e-01
+GPU MPIX_Neighbor_alltoallv_init Time 8.996612e-04; Time All Iters 8.996612e-01
+CC MPIX_Neighbor_alltoallv Time 1.426978e-03; Time All Iters 1.426978e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.423443e-03; Time All Iters 1.423443e+00
+GPU-Aware Neighbor_alltoallv Time 8.785765e-04; Time All Iters 8.785765e-01
+CC Neighbor_alltoallv Time 1.011045e-03; Time All Iters 1.011045e+00
+Threaded CC Neighbor_alltoallv Time 1.010579e-03; Time All Iters 1.010579e+00
+Testing Size blockVecCols 512, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 2.197121e-03; Time All Iters 2.197121e+00
+GPU MPIX_Neighbor_alltoallv Time 2.210656e-03; Time All Iters 2.210656e+00
+GPU MPIX_Neighbor_alltoallv_init Time 2.161988e-03; Time All Iters 2.161988e+00
+CC MPIX_Neighbor_alltoallv Time 2.885101e-03; Time All Iters 2.885101e+00
+CC MPIX_Neighbor_alltoallv_init Time 2.880479e-03; Time All Iters 2.880479e+00
+GPU-Aware Neighbor_alltoallv Time 2.294567e-03; Time All Iters 2.294567e+00
+CC Neighbor_alltoallv Time 1.857709e-03; Time All Iters 1.857709e+00
+Threaded CC Neighbor_alltoallv Time 1.923932e-03; Time All Iters 1.923932e+00
+Testing Size blockVecCols 1024, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 5.636842e-03; Time All Iters 5.636842e+00
+GPU MPIX_Neighbor_alltoallv Time 5.553146e-03; Time All Iters 5.553146e+00
+GPU MPIX_Neighbor_alltoallv_init Time 5.682352e-03; Time All Iters 5.682352e+00
+CC MPIX_Neighbor_alltoallv Time 5.588891e-03; Time All Iters 5.588891e+00
+CC MPIX_Neighbor_alltoallv_init Time 5.587916e-03; Time All Iters 5.587916e+00
+GPU-Aware Neighbor_alltoallv Time 5.549652e-03; Time All Iters 5.549652e+00
+CC Neighbor_alltoallv Time 3.900694e-03; Time All Iters 3.900694e+00
+Threaded CC Neighbor_alltoallv Time 3.816781e-03; Time All Iters 3.816781e+00
+Testing Size blockVecCols 1, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.378849e-05; Time All Iters 8.378849e-02
+GPU MPIX_Neighbor_alltoallv Time 8.102642e-05; Time All Iters 8.102642e-02
+GPU MPIX_Neighbor_alltoallv_init Time 8.076420e-05; Time All Iters 8.076420e-02
+CC MPIX_Neighbor_alltoallv Time 6.541002e-05; Time All Iters 6.541002e-02
+CC MPIX_Neighbor_alltoallv_init Time 6.344182e-05; Time All Iters 6.344182e-02
+GPU-Aware Neighbor_alltoallv Time 8.176887e-05; Time All Iters 8.176887e-02
+CC Neighbor_alltoallv Time 7.142259e-05; Time All Iters 7.142259e-02
+Threaded CC Neighbor_alltoallv Time 7.808510e-05; Time All Iters 7.808510e-02
+Testing Size blockVecCols 2, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.052111e-05; Time All Iters 8.052111e-02
+GPU MPIX_Neighbor_alltoallv Time 8.061032e-05; Time All Iters 8.061032e-02
+GPU MPIX_Neighbor_alltoallv_init Time 7.752680e-05; Time All Iters 7.752680e-02
+CC MPIX_Neighbor_alltoallv Time 7.028440e-05; Time All Iters 7.028440e-02
+CC MPIX_Neighbor_alltoallv_init Time 7.225141e-05; Time All Iters 7.225141e-02
+GPU-Aware Neighbor_alltoallv Time 8.044065e-05; Time All Iters 8.044065e-02
+CC Neighbor_alltoallv Time 7.866589e-05; Time All Iters 7.866589e-02
+Threaded CC Neighbor_alltoallv Time 8.584139e-05; Time All Iters 8.584139e-02
+Testing Size blockVecCols 4, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.088417e-05; Time All Iters 8.088417e-02
+GPU MPIX_Neighbor_alltoallv Time 8.568832e-05; Time All Iters 8.568832e-02
+GPU MPIX_Neighbor_alltoallv_init Time 8.032083e-05; Time All Iters 8.032083e-02
+CC MPIX_Neighbor_alltoallv Time 8.010728e-05; Time All Iters 8.010728e-02
+CC MPIX_Neighbor_alltoallv_init Time 7.835290e-05; Time All Iters 7.835290e-02
+GPU-Aware Neighbor_alltoallv Time 8.061326e-05; Time All Iters 8.061326e-02
+CC Neighbor_alltoallv Time 8.030261e-05; Time All Iters 8.030261e-02
+Threaded CC Neighbor_alltoallv Time 8.377947e-05; Time All Iters 8.377947e-02
+Testing Size blockVecCols 8, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.270072e-05; Time All Iters 8.270072e-02
+GPU MPIX_Neighbor_alltoallv Time 8.250880e-05; Time All Iters 8.250880e-02
+GPU MPIX_Neighbor_alltoallv_init Time 7.862709e-05; Time All Iters 7.862709e-02
+CC MPIX_Neighbor_alltoallv Time 9.783508e-05; Time All Iters 9.783508e-02
+CC MPIX_Neighbor_alltoallv_init Time 9.848911e-05; Time All Iters 9.848911e-02
+GPU-Aware Neighbor_alltoallv Time 8.147631e-05; Time All Iters 8.147631e-02
+CC Neighbor_alltoallv Time 8.830734e-05; Time All Iters 8.830734e-02
+Threaded CC Neighbor_alltoallv Time 9.513974e-05; Time All Iters 9.513974e-02
+Testing Size blockVecCols 16, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.673259e-05; Time All Iters 8.673259e-02
+GPU MPIX_Neighbor_alltoallv Time 8.425102e-05; Time All Iters 8.425102e-02
+GPU MPIX_Neighbor_alltoallv_init Time 7.899704e-05; Time All Iters 7.899704e-02
+CC MPIX_Neighbor_alltoallv Time 1.386353e-04; Time All Iters 1.386353e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.389457e-04; Time All Iters 1.389457e-01
+GPU-Aware Neighbor_alltoallv Time 8.044774e-05; Time All Iters 8.044774e-02
+CC Neighbor_alltoallv Time 1.171803e-04; Time All Iters 1.171803e-01
+Threaded CC Neighbor_alltoallv Time 1.213622e-04; Time All Iters 1.213622e-01
+Testing Size blockVecCols 32, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 9.004765e-05; Time All Iters 9.004765e-02
+GPU MPIX_Neighbor_alltoallv Time 9.196403e-05; Time All Iters 9.196403e-02
+GPU MPIX_Neighbor_alltoallv_init Time 8.623612e-05; Time All Iters 8.623612e-02
+CC MPIX_Neighbor_alltoallv Time 1.798499e-04; Time All Iters 1.798499e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.814501e-04; Time All Iters 1.814501e-01
+GPU-Aware Neighbor_alltoallv Time 8.384471e-05; Time All Iters 8.384471e-02
+CC Neighbor_alltoallv Time 1.492993e-04; Time All Iters 1.492993e-01
+Threaded CC Neighbor_alltoallv Time 1.462207e-04; Time All Iters 1.462207e-01
+Testing Size blockVecCols 64, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.090122e-04; Time All Iters 1.090122e-01
+GPU MPIX_Neighbor_alltoallv Time 1.168125e-04; Time All Iters 1.168125e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.097654e-04; Time All Iters 1.097654e-01
+CC MPIX_Neighbor_alltoallv Time 2.738741e-04; Time All Iters 2.738741e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.682586e-04; Time All Iters 2.682586e-01
+GPU-Aware Neighbor_alltoallv Time 1.104533e-04; Time All Iters 1.104533e-01
+CC Neighbor_alltoallv Time 2.033862e-04; Time All Iters 2.033862e-01
+Threaded CC Neighbor_alltoallv Time 1.992688e-04; Time All Iters 1.992688e-01
+Testing Size blockVecCols 128, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.524340e-04; Time All Iters 1.524340e-01
+GPU MPIX_Neighbor_alltoallv Time 1.585645e-04; Time All Iters 1.585645e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.564721e-04; Time All Iters 1.564721e-01
+CC MPIX_Neighbor_alltoallv Time 5.271175e-04; Time All Iters 5.271175e-01
+CC MPIX_Neighbor_alltoallv_init Time 5.225756e-04; Time All Iters 5.225756e-01
+GPU-Aware Neighbor_alltoallv Time 1.625787e-04; Time All Iters 1.625787e-01
+CC Neighbor_alltoallv Time 3.147570e-04; Time All Iters 3.147570e-01
+Threaded CC Neighbor_alltoallv Time 3.106145e-04; Time All Iters 3.106145e-01
+Testing Size blockVecCols 256, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 3.116145e-04; Time All Iters 3.116145e-01
+GPU MPIX_Neighbor_alltoallv Time 3.102014e-04; Time All Iters 3.102014e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.105169e-04; Time All Iters 3.105169e-01
+CC MPIX_Neighbor_alltoallv Time 8.907292e-04; Time All Iters 8.907292e-01
+CC MPIX_Neighbor_alltoallv_init Time 8.789632e-04; Time All Iters 8.789632e-01
+GPU-Aware Neighbor_alltoallv Time 2.607853e-04; Time All Iters 2.607853e-01
+CC Neighbor_alltoallv Time 5.037390e-04; Time All Iters 5.037390e-01
+Threaded CC Neighbor_alltoallv Time 5.336182e-04; Time All Iters 5.336182e-01
+Testing Size blockVecCols 512, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 5.802186e-04; Time All Iters 5.802186e-01
+GPU MPIX_Neighbor_alltoallv Time 5.749626e-04; Time All Iters 5.749626e-01
+GPU MPIX_Neighbor_alltoallv_init Time 5.758737e-04; Time All Iters 5.758737e-01
+CC MPIX_Neighbor_alltoallv Time 1.569060e-03; Time All Iters 1.569060e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.567423e-03; Time All Iters 1.567423e+00
+GPU-Aware Neighbor_alltoallv Time 5.798994e-04; Time All Iters 5.798994e-01
+CC Neighbor_alltoallv Time 9.406153e-04; Time All Iters 9.406153e-01
+Threaded CC Neighbor_alltoallv Time 1.032463e-03; Time All Iters 1.032463e+00
+Testing Size blockVecCols 1024, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.041524e-03; Time All Iters 1.041524e+00
+GPU MPIX_Neighbor_alltoallv Time 1.048487e-03; Time All Iters 1.048487e+00
+GPU MPIX_Neighbor_alltoallv_init Time 1.060408e-03; Time All Iters 1.060408e+00
+CC MPIX_Neighbor_alltoallv Time 2.928969e-03; Time All Iters 2.928969e+00
+CC MPIX_Neighbor_alltoallv_init Time 2.917882e-03; Time All Iters 2.917882e+00
+GPU-Aware Neighbor_alltoallv Time 1.044370e-03; Time All Iters 1.044370e+00
+CC Neighbor_alltoallv Time 1.541112e-03; Time All Iters 1.541112e+00
+Threaded CC Neighbor_alltoallv Time 1.753238e-03; Time All Iters 1.753238e+00
+app 0: ./gpu_suitesparse_threaded_neighbor_alltoallv_matblockvec 
+rank: 0: { host: 1; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 1: { host: 1; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 2: { host: 1; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 3: { host: 1; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 4: { host: 2; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 5: { host: 2; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 6: { host: 2; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 7: { host: 2; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 8: { host: 3; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 9: { host: 3; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 10: { host: 3; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 11: { host: 3; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 12: { host: 4; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 13: { host: 4; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 14: { host: 4; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 15: { host: 4; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 16: { host: 5; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 17: { host: 5; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 18: { host: 5; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 19: { host: 5; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 20: { host: 6; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 21: { host: 6; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 22: { host: 6; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 23: { host: 6; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 24: { host: 7; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 25: { host: 7; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 26: { host: 7; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 27: { host: 7; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 28: { host: 8; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 29: { host: 8; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 30: { host: 8; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 31: { host: 8; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 32: { host: 9; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 33: { host: 9; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 34: { host: 9; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 35: { host: 9; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 36: { host: 10; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 37: { host: 10; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 38: { host: 10; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 39: { host: 10; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 40: { host: 11; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 41: { host: 11; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 42: { host: 11; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 43: { host: 11; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 44: { host: 12; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 45: { host: 12; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 46: { host: 12; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 47: { host: 12; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 48: { host: 13; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 49: { host: 13; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 50: { host: 13; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 51: { host: 13; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 52: { host: 14; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 53: { host: 14; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 54: { host: 14; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 55: { host: 14; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 56: { host: 15; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 57: { host: 15; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 58: { host: 15; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 59: { host: 15; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 60: { host: 16; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 61: { host: 16; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 62: { host: 16; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 63: { host: 16; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 64: { host: 17; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 65: { host: 17; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 66: { host: 17; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 67: { host: 17; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 68: { host: 18; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 69: { host: 18; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 70: { host: 18; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 71: { host: 18; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 72: { host: 19; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 73: { host: 19; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 74: { host: 19; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 75: { host: 19; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 76: { host: 20; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 77: { host: 20; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 78: { host: 20; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 79: { host: 20; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 80: { host: 21; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 81: { host: 21; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 82: { host: 21; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 83: { host: 21; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 84: { host: 22; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 85: { host: 22; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 86: { host: 22; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 87: { host: 22; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 88: { host: 23; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 89: { host: 23; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 90: { host: 23; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 91: { host: 23; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 92: { host: 24; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 93: { host: 24; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 94: { host: 24; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 95: { host: 24; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 96: { host: 25; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 97: { host: 25; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 98: { host: 25; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 99: { host: 25; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 100: { host: 26; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 101: { host: 26; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 102: { host: 26; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 103: { host: 26; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 104: { host: 27; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 105: { host: 27; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 106: { host: 27; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 107: { host: 27; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 108: { host: 28; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 109: { host: 28; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 110: { host: 28; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 111: { host: 28; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 112: { host: 29; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 113: { host: 29; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 114: { host: 29; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 115: { host: 29; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 116: { host: 30; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 117: { host: 30; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 118: { host: 30; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 119: { host: 30; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 120: { host: 31; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 121: { host: 31; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 122: { host: 31; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 123: { host: 31; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 124: { host: 32; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 125: { host: 32; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 126: { host: 32; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 127: { host: 32; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+Running Threaded Neighbor_Alltoallv Test with 4 threads:
+Testing Size blockVecCols 1, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.762913e-04; Time All Iters 2.762913e-01
+GPU MPIX_Neighbor_alltoallv Time 2.756828e-04; Time All Iters 2.756828e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.631085e-04; Time All Iters 2.631085e-01
+CC MPIX_Neighbor_alltoallv Time 1.560926e-04; Time All Iters 1.560926e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.493129e-04; Time All Iters 1.493129e-01
+GPU-Aware Neighbor_alltoallv Time 2.549392e-04; Time All Iters 2.549392e-01
+CC Neighbor_alltoallv Time 1.449868e-04; Time All Iters 1.449868e-01
+Threaded CC Neighbor_alltoallv Time 2.807109e-04; Time All Iters 2.807109e-01
+Testing Size blockVecCols 2, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.636536e-04; Time All Iters 2.636536e-01
+GPU MPIX_Neighbor_alltoallv Time 2.770867e-04; Time All Iters 2.770867e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.642691e-04; Time All Iters 2.642691e-01
+CC MPIX_Neighbor_alltoallv Time 1.594702e-04; Time All Iters 1.594702e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.586799e-04; Time All Iters 1.586799e-01
+GPU-Aware Neighbor_alltoallv Time 2.706323e-04; Time All Iters 2.706323e-01
+CC Neighbor_alltoallv Time 1.604987e-04; Time All Iters 1.604987e-01
+Threaded CC Neighbor_alltoallv Time 2.881964e-04; Time All Iters 2.881964e-01
+Testing Size blockVecCols 4, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.781772e-04; Time All Iters 2.781772e-01
+GPU MPIX_Neighbor_alltoallv Time 2.838007e-04; Time All Iters 2.838007e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.727497e-04; Time All Iters 2.727497e-01
+CC MPIX_Neighbor_alltoallv Time 1.800398e-04; Time All Iters 1.800398e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.695405e-04; Time All Iters 1.695405e-01
+GPU-Aware Neighbor_alltoallv Time 2.752805e-04; Time All Iters 2.752805e-01
+CC Neighbor_alltoallv Time 1.749323e-04; Time All Iters 1.749323e-01
+Threaded CC Neighbor_alltoallv Time 2.821259e-04; Time All Iters 2.821259e-01
+Testing Size blockVecCols 8, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.905250e-04; Time All Iters 2.905250e-01
+GPU MPIX_Neighbor_alltoallv Time 2.921774e-04; Time All Iters 2.921774e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.822963e-04; Time All Iters 2.822963e-01
+CC MPIX_Neighbor_alltoallv Time 1.897599e-04; Time All Iters 1.897599e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.867054e-04; Time All Iters 1.867054e-01
+GPU-Aware Neighbor_alltoallv Time 2.861302e-04; Time All Iters 2.861302e-01
+CC Neighbor_alltoallv Time 1.865102e-04; Time All Iters 1.865102e-01
+Threaded CC Neighbor_alltoallv Time 2.810427e-04; Time All Iters 2.810427e-01
+Testing Size blockVecCols 16, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.951075e-04; Time All Iters 2.951075e-01
+GPU MPIX_Neighbor_alltoallv Time 2.797294e-04; Time All Iters 2.797294e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.823388e-04; Time All Iters 2.823388e-01
+CC MPIX_Neighbor_alltoallv Time 2.033045e-04; Time All Iters 2.033045e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.066430e-04; Time All Iters 2.066430e-01
+GPU-Aware Neighbor_alltoallv Time 2.913271e-04; Time All Iters 2.913271e-01
+CC Neighbor_alltoallv Time 1.941898e-04; Time All Iters 1.941898e-01
+Threaded CC Neighbor_alltoallv Time 3.349657e-04; Time All Iters 3.349657e-01
+Testing Size blockVecCols 32, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.065466e-04; Time All Iters 3.065466e-01
+GPU MPIX_Neighbor_alltoallv Time 3.032573e-04; Time All Iters 3.032573e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.883896e-04; Time All Iters 2.883896e-01
+CC MPIX_Neighbor_alltoallv Time 2.364331e-04; Time All Iters 2.364331e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.325843e-04; Time All Iters 2.325843e-01
+GPU-Aware Neighbor_alltoallv Time 2.984547e-04; Time All Iters 2.984547e-01
+CC Neighbor_alltoallv Time 2.133726e-04; Time All Iters 2.133726e-01
+Threaded CC Neighbor_alltoallv Time 3.687335e-04; Time All Iters 3.687335e-01
+Testing Size blockVecCols 64, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.237451e-04; Time All Iters 3.237451e-01
+GPU MPIX_Neighbor_alltoallv Time 3.307991e-04; Time All Iters 3.307991e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.039103e-04; Time All Iters 3.039103e-01
+CC MPIX_Neighbor_alltoallv Time 3.087082e-04; Time All Iters 3.087082e-01
+CC MPIX_Neighbor_alltoallv_init Time 3.024552e-04; Time All Iters 3.024552e-01
+GPU-Aware Neighbor_alltoallv Time 3.043666e-04; Time All Iters 3.043666e-01
+CC Neighbor_alltoallv Time 2.578245e-04; Time All Iters 2.578245e-01
+Threaded CC Neighbor_alltoallv Time 4.365981e-04; Time All Iters 4.365981e-01
+Testing Size blockVecCols 128, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.124231e-04; Time All Iters 3.124231e-01
+GPU MPIX_Neighbor_alltoallv Time 3.235972e-04; Time All Iters 3.235972e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.133323e-04; Time All Iters 3.133323e-01
+CC MPIX_Neighbor_alltoallv Time 5.465679e-04; Time All Iters 5.465679e-01
+CC MPIX_Neighbor_alltoallv_init Time 5.430861e-04; Time All Iters 5.430861e-01
+GPU-Aware Neighbor_alltoallv Time 3.171952e-04; Time All Iters 3.171952e-01
+CC Neighbor_alltoallv Time 3.535186e-04; Time All Iters 3.535186e-01
+Threaded CC Neighbor_alltoallv Time 5.156632e-04; Time All Iters 5.156632e-01
+Testing Size blockVecCols 256, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.994498e-04; Time All Iters 3.994498e-01
+GPU MPIX_Neighbor_alltoallv Time 3.978053e-04; Time All Iters 3.978053e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.943229e-04; Time All Iters 3.943229e-01
+CC MPIX_Neighbor_alltoallv Time 1.000366e-03; Time All Iters 1.000366e+00
+CC MPIX_Neighbor_alltoallv_init Time 9.982664e-04; Time All Iters 9.982664e-01
+GPU-Aware Neighbor_alltoallv Time 3.866443e-04; Time All Iters 3.866443e-01
+CC Neighbor_alltoallv Time 5.840745e-04; Time All Iters 5.840745e-01
+Threaded CC Neighbor_alltoallv Time 7.152152e-04; Time All Iters 7.152152e-01
+Testing Size blockVecCols 512, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 9.347659e-04; Time All Iters 9.347659e-01
+GPU MPIX_Neighbor_alltoallv Time 9.393932e-04; Time All Iters 9.393932e-01
+GPU MPIX_Neighbor_alltoallv_init Time 9.281914e-04; Time All Iters 9.281914e-01
+CC MPIX_Neighbor_alltoallv Time 1.908613e-03; Time All Iters 1.908613e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.910694e-03; Time All Iters 1.910694e+00
+GPU-Aware Neighbor_alltoallv Time 8.350729e-04; Time All Iters 8.350729e-01
+CC Neighbor_alltoallv Time 1.157217e-03; Time All Iters 1.157217e+00
+Threaded CC Neighbor_alltoallv Time 1.107515e-03; Time All Iters 1.107515e+00
+Testing Size blockVecCols 1024, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 1.845803e-03; Time All Iters 1.845803e+00
+GPU MPIX_Neighbor_alltoallv Time 1.833035e-03; Time All Iters 1.833035e+00
+GPU MPIX_Neighbor_alltoallv_init Time 1.849418e-03; Time All Iters 1.849418e+00
+CC MPIX_Neighbor_alltoallv Time 3.642279e-03; Time All Iters 3.642279e+00
+CC MPIX_Neighbor_alltoallv_init Time 3.640739e-03; Time All Iters 3.640739e+00
+GPU-Aware Neighbor_alltoallv Time 1.820105e-03; Time All Iters 1.820105e+00
+CC Neighbor_alltoallv Time 2.115652e-03; Time All Iters 2.115652e+00
+Threaded CC Neighbor_alltoallv Time 2.103636e-03; Time All Iters 2.103636e+00
+Testing Size blockVecCols 1, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.490257e-04; Time All Iters 1.490257e-01
+GPU MPIX_Neighbor_alltoallv Time 1.464603e-04; Time All Iters 1.464603e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.439567e-04; Time All Iters 1.439567e-01
+CC MPIX_Neighbor_alltoallv Time 1.041111e-04; Time All Iters 1.041111e-01
+CC MPIX_Neighbor_alltoallv_init Time 9.927590e-05; Time All Iters 9.927590e-02
+GPU-Aware Neighbor_alltoallv Time 1.466525e-04; Time All Iters 1.466525e-01
+CC Neighbor_alltoallv Time 1.137195e-04; Time All Iters 1.137195e-01
+Threaded CC Neighbor_alltoallv Time 2.123449e-04; Time All Iters 2.123449e-01
+Testing Size blockVecCols 2, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.348025e-04; Time All Iters 1.348025e-01
+GPU MPIX_Neighbor_alltoallv Time 1.384526e-04; Time All Iters 1.384526e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.343407e-04; Time All Iters 1.343407e-01
+CC MPIX_Neighbor_alltoallv Time 1.035080e-04; Time All Iters 1.035080e-01
+CC MPIX_Neighbor_alltoallv_init Time 9.721545e-05; Time All Iters 9.721545e-02
+GPU-Aware Neighbor_alltoallv Time 1.431852e-04; Time All Iters 1.431852e-01
+CC Neighbor_alltoallv Time 1.102856e-04; Time All Iters 1.102856e-01
+Threaded CC Neighbor_alltoallv Time 3.046779e-04; Time All Iters 3.046779e-01
+Testing Size blockVecCols 4, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.611383e-04; Time All Iters 1.611383e-01
+GPU MPIX_Neighbor_alltoallv Time 1.619704e-04; Time All Iters 1.619704e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.519248e-04; Time All Iters 1.519248e-01
+CC MPIX_Neighbor_alltoallv Time 1.208582e-04; Time All Iters 1.208582e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.179937e-04; Time All Iters 1.179937e-01
+GPU-Aware Neighbor_alltoallv Time 1.616820e-04; Time All Iters 1.616820e-01
+CC Neighbor_alltoallv Time 1.153615e-04; Time All Iters 1.153615e-01
+Threaded CC Neighbor_alltoallv Time 2.934389e-04; Time All Iters 2.934389e-01
+Testing Size blockVecCols 8, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.661770e-04; Time All Iters 1.661770e-01
+GPU MPIX_Neighbor_alltoallv Time 1.710558e-04; Time All Iters 1.710558e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.527201e-04; Time All Iters 1.527201e-01
+CC MPIX_Neighbor_alltoallv Time 1.428275e-04; Time All Iters 1.428275e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.463814e-04; Time All Iters 1.463814e-01
+GPU-Aware Neighbor_alltoallv Time 1.637413e-04; Time All Iters 1.637413e-01
+CC Neighbor_alltoallv Time 1.295657e-04; Time All Iters 1.295657e-01
+Threaded CC Neighbor_alltoallv Time 3.282270e-04; Time All Iters 3.282270e-01
+Testing Size blockVecCols 16, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.674198e-04; Time All Iters 1.674198e-01
+GPU MPIX_Neighbor_alltoallv Time 1.703126e-04; Time All Iters 1.703126e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.637588e-04; Time All Iters 1.637588e-01
+CC MPIX_Neighbor_alltoallv Time 1.812143e-04; Time All Iters 1.812143e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.769451e-04; Time All Iters 1.769451e-01
+GPU-Aware Neighbor_alltoallv Time 1.607943e-04; Time All Iters 1.607943e-01
+CC Neighbor_alltoallv Time 1.625335e-04; Time All Iters 1.625335e-01
+Threaded CC Neighbor_alltoallv Time 8.573640e-04; Time All Iters 8.573640e-01
+Testing Size blockVecCols 32, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.762884e-04; Time All Iters 1.762884e-01
+GPU MPIX_Neighbor_alltoallv Time 1.805849e-04; Time All Iters 1.805849e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.812266e-04; Time All Iters 1.812266e-01
+CC MPIX_Neighbor_alltoallv Time 2.720364e-04; Time All Iters 2.720364e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.691157e-04; Time All Iters 2.691157e-01
+GPU-Aware Neighbor_alltoallv Time 1.884867e-04; Time All Iters 1.884867e-01
+CC Neighbor_alltoallv Time 2.327898e-04; Time All Iters 2.327898e-01
+Threaded CC Neighbor_alltoallv Time 9.581019e-04; Time All Iters 9.581019e-01
+Testing Size blockVecCols 64, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 2.672492e-04; Time All Iters 2.672492e-01
+GPU MPIX_Neighbor_alltoallv Time 2.642257e-04; Time All Iters 2.642257e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.724613e-04; Time All Iters 2.724613e-01
+CC MPIX_Neighbor_alltoallv Time 4.188153e-04; Time All Iters 4.188153e-01
+CC MPIX_Neighbor_alltoallv_init Time 4.054993e-04; Time All Iters 4.054993e-01
+GPU-Aware Neighbor_alltoallv Time 2.612754e-04; Time All Iters 2.612754e-01
+CC Neighbor_alltoallv Time 3.420449e-04; Time All Iters 3.420449e-01
+Threaded CC Neighbor_alltoallv Time 1.096911e-03; Time All Iters 1.096911e+00
+Testing Size blockVecCols 128, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 4.362348e-04; Time All Iters 4.362348e-01
+GPU MPIX_Neighbor_alltoallv Time 4.376146e-04; Time All Iters 4.376146e-01
+GPU MPIX_Neighbor_alltoallv_init Time 4.347537e-04; Time All Iters 4.347537e-01
+CC MPIX_Neighbor_alltoallv Time 7.344313e-04; Time All Iters 7.344313e-01
+CC MPIX_Neighbor_alltoallv_init Time 7.325011e-04; Time All Iters 7.325011e-01
+GPU-Aware Neighbor_alltoallv Time 4.330506e-04; Time All Iters 4.330506e-01
+CC Neighbor_alltoallv Time 5.520880e-04; Time All Iters 5.520880e-01
+Threaded CC Neighbor_alltoallv Time 1.267357e-03; Time All Iters 1.267357e+00
+Testing Size blockVecCols 256, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 8.880808e-04; Time All Iters 8.880808e-01
+GPU MPIX_Neighbor_alltoallv Time 8.841601e-04; Time All Iters 8.841601e-01
+GPU MPIX_Neighbor_alltoallv_init Time 8.847984e-04; Time All Iters 8.847984e-01
+CC MPIX_Neighbor_alltoallv Time 1.414347e-03; Time All Iters 1.414347e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.362817e-03; Time All Iters 1.362817e+00
+GPU-Aware Neighbor_alltoallv Time 8.677332e-04; Time All Iters 8.677332e-01
+CC Neighbor_alltoallv Time 1.017313e-03; Time All Iters 1.017313e+00
+Threaded CC Neighbor_alltoallv Time 1.661700e-03; Time All Iters 1.661700e+00
+Testing Size blockVecCols 512, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 2.174742e-03; Time All Iters 2.174742e+00
+GPU MPIX_Neighbor_alltoallv Time 2.120712e-03; Time All Iters 2.120712e+00
+GPU MPIX_Neighbor_alltoallv_init Time 2.092977e-03; Time All Iters 2.092977e+00
+CC MPIX_Neighbor_alltoallv Time 2.680809e-03; Time All Iters 2.680809e+00
+CC MPIX_Neighbor_alltoallv_init Time 2.681686e-03; Time All Iters 2.681686e+00
+GPU-Aware Neighbor_alltoallv Time 2.146266e-03; Time All Iters 2.146266e+00
+CC Neighbor_alltoallv Time 1.943435e-03; Time All Iters 1.943435e+00
+Threaded CC Neighbor_alltoallv Time 2.494069e-03; Time All Iters 2.494069e+00
+Testing Size blockVecCols 1024, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 5.379156e-03; Time All Iters 5.379156e+00
+GPU MPIX_Neighbor_alltoallv Time 5.541414e-03; Time All Iters 5.541414e+00
+GPU MPIX_Neighbor_alltoallv_init Time 5.405184e-03; Time All Iters 5.405184e+00
+CC MPIX_Neighbor_alltoallv Time 5.661351e-03; Time All Iters 5.661351e+00
+CC MPIX_Neighbor_alltoallv_init Time 5.677568e-03; Time All Iters 5.677568e+00
+GPU-Aware Neighbor_alltoallv Time 5.503938e-03; Time All Iters 5.503938e+00
+CC Neighbor_alltoallv Time 3.995005e-03; Time All Iters 3.995005e+00
+Threaded CC Neighbor_alltoallv Time 4.434168e-03; Time All Iters 4.434168e+00
+Testing Size blockVecCols 1, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 9.141852e-05; Time All Iters 9.141852e-02
+GPU MPIX_Neighbor_alltoallv Time 8.542991e-05; Time All Iters 8.542991e-02
+GPU MPIX_Neighbor_alltoallv_init Time 7.960177e-05; Time All Iters 7.960177e-02
+CC MPIX_Neighbor_alltoallv Time 6.648858e-05; Time All Iters 6.648858e-02
+CC MPIX_Neighbor_alltoallv_init Time 6.626180e-05; Time All Iters 6.626180e-02
+GPU-Aware Neighbor_alltoallv Time 7.967813e-05; Time All Iters 7.967813e-02
+CC Neighbor_alltoallv Time 7.355368e-05; Time All Iters 7.355368e-02
+Threaded CC Neighbor_alltoallv Time 9.933372e-05; Time All Iters 9.933372e-02
+Testing Size blockVecCols 2, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.305216e-05; Time All Iters 8.305216e-02
+GPU MPIX_Neighbor_alltoallv Time 9.223642e-05; Time All Iters 9.223642e-02
+GPU MPIX_Neighbor_alltoallv_init Time 8.388571e-05; Time All Iters 8.388571e-02
+CC MPIX_Neighbor_alltoallv Time 7.270029e-05; Time All Iters 7.270029e-02
+CC MPIX_Neighbor_alltoallv_init Time 7.172319e-05; Time All Iters 7.172319e-02
+GPU-Aware Neighbor_alltoallv Time 8.314845e-05; Time All Iters 8.314845e-02
+CC Neighbor_alltoallv Time 7.749497e-05; Time All Iters 7.749497e-02
+Threaded CC Neighbor_alltoallv Time 1.153857e-04; Time All Iters 1.153857e-01
+Testing Size blockVecCols 4, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.814105e-05; Time All Iters 8.814105e-02
+GPU MPIX_Neighbor_alltoallv Time 9.095106e-05; Time All Iters 9.095106e-02
+GPU MPIX_Neighbor_alltoallv_init Time 8.485660e-05; Time All Iters 8.485660e-02
+CC MPIX_Neighbor_alltoallv Time 8.104997e-05; Time All Iters 8.104997e-02
+CC MPIX_Neighbor_alltoallv_init Time 8.011528e-05; Time All Iters 8.011528e-02
+GPU-Aware Neighbor_alltoallv Time 8.077201e-05; Time All Iters 8.077201e-02
+CC Neighbor_alltoallv Time 7.880470e-05; Time All Iters 7.880470e-02
+Threaded CC Neighbor_alltoallv Time 9.220284e-05; Time All Iters 9.220284e-02
+Testing Size blockVecCols 8, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.296044e-05; Time All Iters 8.296044e-02
+GPU MPIX_Neighbor_alltoallv Time 8.304542e-05; Time All Iters 8.304542e-02
+GPU MPIX_Neighbor_alltoallv_init Time 8.283015e-05; Time All Iters 8.283015e-02
+CC MPIX_Neighbor_alltoallv Time 1.007581e-04; Time All Iters 1.007581e-01
+CC MPIX_Neighbor_alltoallv_init Time 9.791298e-05; Time All Iters 9.791298e-02
+GPU-Aware Neighbor_alltoallv Time 8.624002e-05; Time All Iters 8.624002e-02
+CC Neighbor_alltoallv Time 9.078924e-05; Time All Iters 9.078924e-02
+Threaded CC Neighbor_alltoallv Time 1.272875e-04; Time All Iters 1.272875e-01
+Testing Size blockVecCols 16, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.744431e-05; Time All Iters 8.744431e-02
+GPU MPIX_Neighbor_alltoallv Time 8.865034e-05; Time All Iters 8.865034e-02
+GPU MPIX_Neighbor_alltoallv_init Time 8.926518e-05; Time All Iters 8.926518e-02
+CC MPIX_Neighbor_alltoallv Time 1.413945e-04; Time All Iters 1.413945e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.421822e-04; Time All Iters 1.421822e-01
+GPU-Aware Neighbor_alltoallv Time 8.694175e-05; Time All Iters 8.694175e-02
+CC Neighbor_alltoallv Time 1.180334e-04; Time All Iters 1.180334e-01
+Threaded CC Neighbor_alltoallv Time 1.500458e-04; Time All Iters 1.500458e-01
+Testing Size blockVecCols 32, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 9.117407e-05; Time All Iters 9.117407e-02
+GPU MPIX_Neighbor_alltoallv Time 9.170903e-05; Time All Iters 9.170903e-02
+GPU MPIX_Neighbor_alltoallv_init Time 9.002324e-05; Time All Iters 9.002324e-02
+CC MPIX_Neighbor_alltoallv Time 2.145480e-04; Time All Iters 2.145480e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.126877e-04; Time All Iters 2.126877e-01
+GPU-Aware Neighbor_alltoallv Time 9.204601e-05; Time All Iters 9.204601e-02
+CC Neighbor_alltoallv Time 1.559324e-04; Time All Iters 1.559324e-01
+Threaded CC Neighbor_alltoallv Time 1.671312e-04; Time All Iters 1.671312e-01
+Testing Size blockVecCols 64, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.162849e-04; Time All Iters 1.162849e-01
+GPU MPIX_Neighbor_alltoallv Time 1.153972e-04; Time All Iters 1.153972e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.175521e-04; Time All Iters 1.175521e-01
+CC MPIX_Neighbor_alltoallv Time 2.798837e-04; Time All Iters 2.798837e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.872566e-04; Time All Iters 2.872566e-01
+GPU-Aware Neighbor_alltoallv Time 1.236809e-04; Time All Iters 1.236809e-01
+CC Neighbor_alltoallv Time 2.148964e-04; Time All Iters 2.148964e-01
+Threaded CC Neighbor_alltoallv Time 2.274864e-04; Time All Iters 2.274864e-01
+Testing Size blockVecCols 128, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.710033e-04; Time All Iters 1.710033e-01
+GPU MPIX_Neighbor_alltoallv Time 1.775222e-04; Time All Iters 1.775222e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.703095e-04; Time All Iters 1.703095e-01
+CC MPIX_Neighbor_alltoallv Time 5.164715e-04; Time All Iters 5.164715e-01
+CC MPIX_Neighbor_alltoallv_init Time 5.152591e-04; Time All Iters 5.152591e-01
+GPU-Aware Neighbor_alltoallv Time 1.689212e-04; Time All Iters 1.689212e-01
+CC Neighbor_alltoallv Time 3.130637e-04; Time All Iters 3.130637e-01
+Threaded CC Neighbor_alltoallv Time 3.219155e-04; Time All Iters 3.219155e-01
+Testing Size blockVecCols 256, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 3.027070e-04; Time All Iters 3.027070e-01
+GPU MPIX_Neighbor_alltoallv Time 3.090264e-04; Time All Iters 3.090264e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.090090e-04; Time All Iters 3.090090e-01
+CC MPIX_Neighbor_alltoallv Time 8.445980e-04; Time All Iters 8.445980e-01
+CC MPIX_Neighbor_alltoallv_init Time 8.473429e-04; Time All Iters 8.473429e-01
+GPU-Aware Neighbor_alltoallv Time 2.717915e-04; Time All Iters 2.717915e-01
+CC Neighbor_alltoallv Time 5.033035e-04; Time All Iters 5.033035e-01
+Threaded CC Neighbor_alltoallv Time 5.599665e-04; Time All Iters 5.599665e-01
+Testing Size blockVecCols 512, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 6.042950e-04; Time All Iters 6.042950e-01
+GPU MPIX_Neighbor_alltoallv Time 5.867520e-04; Time All Iters 5.867520e-01
+GPU MPIX_Neighbor_alltoallv_init Time 5.967655e-04; Time All Iters 5.967655e-01
+CC MPIX_Neighbor_alltoallv Time 1.492321e-03; Time All Iters 1.492321e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.488552e-03; Time All Iters 1.488552e+00
+GPU-Aware Neighbor_alltoallv Time 5.957469e-04; Time All Iters 5.957469e-01
+CC Neighbor_alltoallv Time 9.143780e-04; Time All Iters 9.143780e-01
+Threaded CC Neighbor_alltoallv Time 9.583568e-04; Time All Iters 9.583568e-01
+Testing Size blockVecCols 1024, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.048049e-03; Time All Iters 1.048049e+00
+GPU MPIX_Neighbor_alltoallv Time 1.059594e-03; Time All Iters 1.059594e+00
+GPU MPIX_Neighbor_alltoallv_init Time 1.040304e-03; Time All Iters 1.040304e+00
+CC MPIX_Neighbor_alltoallv Time 2.870728e-03; Time All Iters 2.870728e+00
+CC MPIX_Neighbor_alltoallv_init Time 2.862232e-03; Time All Iters 2.862232e+00
+GPU-Aware Neighbor_alltoallv Time 1.048365e-03; Time All Iters 1.048365e+00
+CC Neighbor_alltoallv Time 1.551490e-03; Time All Iters 1.551490e+00
+Threaded CC Neighbor_alltoallv Time 1.681315e-03; Time All Iters 1.681315e+00
+app 0: ./gpu_suitesparse_threaded_neighbor_alltoallv_matblockvec 
+rank: 0: { host: 1; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 1: { host: 1; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 2: { host: 1; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 3: { host: 1; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 4: { host: 2; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 5: { host: 2; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 6: { host: 2; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 7: { host: 2; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 8: { host: 3; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 9: { host: 3; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 10: { host: 3; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 11: { host: 3; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 12: { host: 4; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 13: { host: 4; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 14: { host: 4; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 15: { host: 4; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 16: { host: 5; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 17: { host: 5; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 18: { host: 5; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 19: { host: 5; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 20: { host: 6; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 21: { host: 6; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 22: { host: 6; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 23: { host: 6; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 24: { host: 7; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 25: { host: 7; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 26: { host: 7; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 27: { host: 7; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 28: { host: 8; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 29: { host: 8; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 30: { host: 8; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 31: { host: 8; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 32: { host: 9; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 33: { host: 9; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 34: { host: 9; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 35: { host: 9; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 36: { host: 10; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 37: { host: 10; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 38: { host: 10; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 39: { host: 10; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 40: { host: 11; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 41: { host: 11; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 42: { host: 11; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 43: { host: 11; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 44: { host: 12; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 45: { host: 12; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 46: { host: 12; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 47: { host: 12; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 48: { host: 13; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 49: { host: 13; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 50: { host: 13; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 51: { host: 13; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 52: { host: 14; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 53: { host: 14; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 54: { host: 14; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 55: { host: 14; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 56: { host: 15; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 57: { host: 15; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 58: { host: 15; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 59: { host: 15; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 60: { host: 16; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 61: { host: 16; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 62: { host: 16; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 63: { host: 16; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 64: { host: 17; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 65: { host: 17; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 66: { host: 17; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 67: { host: 17; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 68: { host: 18; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 69: { host: 18; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 70: { host: 18; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 71: { host: 18; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 72: { host: 19; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 73: { host: 19; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 74: { host: 19; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 75: { host: 19; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 76: { host: 20; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 77: { host: 20; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 78: { host: 20; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 79: { host: 20; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 80: { host: 21; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 81: { host: 21; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 82: { host: 21; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 83: { host: 21; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 84: { host: 22; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 85: { host: 22; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 86: { host: 22; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 87: { host: 22; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 88: { host: 23; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 89: { host: 23; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 90: { host: 23; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 91: { host: 23; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 92: { host: 24; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 93: { host: 24; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 94: { host: 24; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 95: { host: 24; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 96: { host: 25; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 97: { host: 25; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 98: { host: 25; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 99: { host: 25; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 100: { host: 26; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 101: { host: 26; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 102: { host: 26; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 103: { host: 26; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 104: { host: 27; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 105: { host: 27; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 106: { host: 27; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 107: { host: 27; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 108: { host: 28; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 109: { host: 28; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 110: { host: 28; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 111: { host: 28; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 112: { host: 29; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 113: { host: 29; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 114: { host: 29; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 115: { host: 29; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 116: { host: 30; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 117: { host: 30; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 118: { host: 30; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 119: { host: 30; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 120: { host: 31; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 121: { host: 31; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 122: { host: 31; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 123: { host: 31; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 124: { host: 32; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 125: { host: 32; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 126: { host: 32; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 127: { host: 32; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+Running Threaded Neighbor_Alltoallv Test with 6 threads:
+Testing Size blockVecCols 1, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.974541e-04; Time All Iters 2.974541e-01
+GPU MPIX_Neighbor_alltoallv Time 2.840313e-04; Time All Iters 2.840313e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.778210e-04; Time All Iters 2.778210e-01
+CC MPIX_Neighbor_alltoallv Time 1.667581e-04; Time All Iters 1.667581e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.556535e-04; Time All Iters 1.556535e-01
+GPU-Aware Neighbor_alltoallv Time 2.684487e-04; Time All Iters 2.684487e-01
+CC Neighbor_alltoallv Time 1.546960e-04; Time All Iters 1.546960e-01
+Threaded CC Neighbor_alltoallv Time 1.999965e-04; Time All Iters 1.999965e-01
+Testing Size blockVecCols 2, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.950631e-04; Time All Iters 2.950631e-01
+GPU MPIX_Neighbor_alltoallv Time 2.978320e-04; Time All Iters 2.978320e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.747438e-04; Time All Iters 2.747438e-01
+CC MPIX_Neighbor_alltoallv Time 1.621505e-04; Time All Iters 1.621505e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.569935e-04; Time All Iters 1.569935e-01
+GPU-Aware Neighbor_alltoallv Time 2.925825e-04; Time All Iters 2.925825e-01
+CC Neighbor_alltoallv Time 1.766057e-04; Time All Iters 1.766057e-01
+Threaded CC Neighbor_alltoallv Time 2.109939e-04; Time All Iters 2.109939e-01
+Testing Size blockVecCols 4, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.026471e-04; Time All Iters 3.026471e-01
+GPU MPIX_Neighbor_alltoallv Time 2.927937e-04; Time All Iters 2.927937e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.856728e-04; Time All Iters 2.856728e-01
+CC MPIX_Neighbor_alltoallv Time 1.858661e-04; Time All Iters 1.858661e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.710290e-04; Time All Iters 1.710290e-01
+GPU-Aware Neighbor_alltoallv Time 2.746087e-04; Time All Iters 2.746087e-01
+CC Neighbor_alltoallv Time 1.757302e-04; Time All Iters 1.757302e-01
+Threaded CC Neighbor_alltoallv Time 2.242194e-04; Time All Iters 2.242194e-01
+Testing Size blockVecCols 8, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.772502e-04; Time All Iters 2.772502e-01
+GPU MPIX_Neighbor_alltoallv Time 2.781120e-04; Time All Iters 2.781120e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.880768e-04; Time All Iters 2.880768e-01
+CC MPIX_Neighbor_alltoallv Time 1.935765e-04; Time All Iters 1.935765e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.825619e-04; Time All Iters 1.825619e-01
+GPU-Aware Neighbor_alltoallv Time 2.945695e-04; Time All Iters 2.945695e-01
+CC Neighbor_alltoallv Time 1.896221e-04; Time All Iters 1.896221e-01
+Threaded CC Neighbor_alltoallv Time 2.451437e-04; Time All Iters 2.451437e-01
+Testing Size blockVecCols 16, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.093695e-04; Time All Iters 3.093695e-01
+GPU MPIX_Neighbor_alltoallv Time 2.978775e-04; Time All Iters 2.978775e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.955174e-04; Time All Iters 2.955174e-01
+CC MPIX_Neighbor_alltoallv Time 1.981091e-04; Time All Iters 1.981091e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.950050e-04; Time All Iters 1.950050e-01
+GPU-Aware Neighbor_alltoallv Time 2.828621e-04; Time All Iters 2.828621e-01
+CC Neighbor_alltoallv Time 2.021960e-04; Time All Iters 2.021960e-01
+Threaded CC Neighbor_alltoallv Time 2.858369e-04; Time All Iters 2.858369e-01
+Testing Size blockVecCols 32, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.180337e-04; Time All Iters 3.180337e-01
+GPU MPIX_Neighbor_alltoallv Time 3.147762e-04; Time All Iters 3.147762e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.062501e-04; Time All Iters 3.062501e-01
+CC MPIX_Neighbor_alltoallv Time 2.503016e-04; Time All Iters 2.503016e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.392143e-04; Time All Iters 2.392143e-01
+GPU-Aware Neighbor_alltoallv Time 2.874097e-04; Time All Iters 2.874097e-01
+CC Neighbor_alltoallv Time 2.230038e-04; Time All Iters 2.230038e-01
+Threaded CC Neighbor_alltoallv Time 2.889958e-04; Time All Iters 2.889958e-01
+Testing Size blockVecCols 64, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.181419e-04; Time All Iters 3.181419e-01
+GPU MPIX_Neighbor_alltoallv Time 3.214195e-04; Time All Iters 3.214195e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.030261e-04; Time All Iters 3.030261e-01
+CC MPIX_Neighbor_alltoallv Time 3.053999e-04; Time All Iters 3.053999e-01
+CC MPIX_Neighbor_alltoallv_init Time 3.024994e-04; Time All Iters 3.024994e-01
+GPU-Aware Neighbor_alltoallv Time 2.828612e-04; Time All Iters 2.828612e-01
+CC Neighbor_alltoallv Time 2.475993e-04; Time All Iters 2.475993e-01
+Threaded CC Neighbor_alltoallv Time 3.166147e-04; Time All Iters 3.166147e-01
+Testing Size blockVecCols 128, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.023785e-04; Time All Iters 3.023785e-01
+GPU MPIX_Neighbor_alltoallv Time 2.991697e-04; Time All Iters 2.991697e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.996061e-04; Time All Iters 2.996061e-01
+CC MPIX_Neighbor_alltoallv Time 5.502667e-04; Time All Iters 5.502667e-01
+CC MPIX_Neighbor_alltoallv_init Time 5.461919e-04; Time All Iters 5.461919e-01
+GPU-Aware Neighbor_alltoallv Time 3.181239e-04; Time All Iters 3.181239e-01
+CC Neighbor_alltoallv Time 3.533098e-04; Time All Iters 3.533098e-01
+Threaded CC Neighbor_alltoallv Time 4.376852e-04; Time All Iters 4.376852e-01
+Testing Size blockVecCols 256, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 4.396351e-04; Time All Iters 4.396351e-01
+GPU MPIX_Neighbor_alltoallv Time 4.400552e-04; Time All Iters 4.400552e-01
+GPU MPIX_Neighbor_alltoallv_init Time 4.360140e-04; Time All Iters 4.360140e-01
+CC MPIX_Neighbor_alltoallv Time 1.026216e-03; Time All Iters 1.026216e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.020603e-03; Time All Iters 1.020603e+00
+GPU-Aware Neighbor_alltoallv Time 3.982803e-04; Time All Iters 3.982803e-01
+CC Neighbor_alltoallv Time 5.716918e-04; Time All Iters 5.716918e-01
+Threaded CC Neighbor_alltoallv Time 6.300970e-04; Time All Iters 6.300970e-01
+Testing Size blockVecCols 512, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 9.547427e-04; Time All Iters 9.547427e-01
+GPU MPIX_Neighbor_alltoallv Time 9.541332e-04; Time All Iters 9.541332e-01
+GPU MPIX_Neighbor_alltoallv_init Time 9.518676e-04; Time All Iters 9.518676e-01
+CC MPIX_Neighbor_alltoallv Time 1.944474e-03; Time All Iters 1.944474e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.940361e-03; Time All Iters 1.940361e+00
+GPU-Aware Neighbor_alltoallv Time 8.481152e-04; Time All Iters 8.481152e-01
+CC Neighbor_alltoallv Time 1.155091e-03; Time All Iters 1.155091e+00
+Threaded CC Neighbor_alltoallv Time 1.053019e-03; Time All Iters 1.053019e+00
+Testing Size blockVecCols 1024, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 1.736281e-03; Time All Iters 1.736281e+00
+GPU MPIX_Neighbor_alltoallv Time 1.737128e-03; Time All Iters 1.737128e+00
+GPU MPIX_Neighbor_alltoallv_init Time 1.741844e-03; Time All Iters 1.741844e+00
+CC MPIX_Neighbor_alltoallv Time 3.582677e-03; Time All Iters 3.582677e+00
+CC MPIX_Neighbor_alltoallv_init Time 3.580176e-03; Time All Iters 3.580176e+00
+GPU-Aware Neighbor_alltoallv Time 1.746973e-03; Time All Iters 1.746973e+00
+CC Neighbor_alltoallv Time 2.082185e-03; Time All Iters 2.082185e+00
+Threaded CC Neighbor_alltoallv Time 2.058878e-03; Time All Iters 2.058878e+00
+Testing Size blockVecCols 1, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.537832e-04; Time All Iters 1.537832e-01
+GPU MPIX_Neighbor_alltoallv Time 1.634704e-04; Time All Iters 1.634704e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.515905e-04; Time All Iters 1.515905e-01
+CC MPIX_Neighbor_alltoallv Time 1.061078e-04; Time All Iters 1.061078e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.018418e-04; Time All Iters 1.018418e-01
+GPU-Aware Neighbor_alltoallv Time 1.411252e-04; Time All Iters 1.411252e-01
+CC Neighbor_alltoallv Time 1.128887e-04; Time All Iters 1.128887e-01
+Threaded CC Neighbor_alltoallv Time 1.888995e-04; Time All Iters 1.888995e-01
+Testing Size blockVecCols 2, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.487397e-04; Time All Iters 1.487397e-01
+GPU MPIX_Neighbor_alltoallv Time 1.468989e-04; Time All Iters 1.468989e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.508472e-04; Time All Iters 1.508472e-01
+CC MPIX_Neighbor_alltoallv Time 1.137734e-04; Time All Iters 1.137734e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.095391e-04; Time All Iters 1.095391e-01
+GPU-Aware Neighbor_alltoallv Time 1.507768e-04; Time All Iters 1.507768e-01
+CC Neighbor_alltoallv Time 1.138990e-04; Time All Iters 1.138990e-01
+Threaded CC Neighbor_alltoallv Time 1.904484e-04; Time All Iters 1.904484e-01
+Testing Size blockVecCols 4, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.672837e-04; Time All Iters 1.672837e-01
+GPU MPIX_Neighbor_alltoallv Time 1.718267e-04; Time All Iters 1.718267e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.642555e-04; Time All Iters 1.642555e-01
+CC MPIX_Neighbor_alltoallv Time 1.241160e-04; Time All Iters 1.241160e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.203898e-04; Time All Iters 1.203898e-01
+GPU-Aware Neighbor_alltoallv Time 1.587901e-04; Time All Iters 1.587901e-01
+CC Neighbor_alltoallv Time 1.176739e-04; Time All Iters 1.176739e-01
+Threaded CC Neighbor_alltoallv Time 2.373035e-04; Time All Iters 2.373035e-01
+Testing Size blockVecCols 8, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.680514e-04; Time All Iters 1.680514e-01
+GPU MPIX_Neighbor_alltoallv Time 1.616092e-04; Time All Iters 1.616092e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.658674e-04; Time All Iters 1.658674e-01
+CC MPIX_Neighbor_alltoallv Time 1.498840e-04; Time All Iters 1.498840e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.346297e-04; Time All Iters 1.346297e-01
+GPU-Aware Neighbor_alltoallv Time 1.586642e-04; Time All Iters 1.586642e-01
+CC Neighbor_alltoallv Time 1.361252e-04; Time All Iters 1.361252e-01
+Threaded CC Neighbor_alltoallv Time 2.247537e-04; Time All Iters 2.247537e-01
+Testing Size blockVecCols 16, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.645324e-04; Time All Iters 1.645324e-01
+GPU MPIX_Neighbor_alltoallv Time 1.791527e-04; Time All Iters 1.791527e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.791246e-04; Time All Iters 1.791246e-01
+CC MPIX_Neighbor_alltoallv Time 1.836399e-04; Time All Iters 1.836399e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.782197e-04; Time All Iters 1.782197e-01
+GPU-Aware Neighbor_alltoallv Time 1.719201e-04; Time All Iters 1.719201e-01
+CC Neighbor_alltoallv Time 1.752396e-04; Time All Iters 1.752396e-01
+Threaded CC Neighbor_alltoallv Time 3.400630e-04; Time All Iters 3.400630e-01
+Testing Size blockVecCols 32, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.971466e-04; Time All Iters 1.971466e-01
+GPU MPIX_Neighbor_alltoallv Time 2.036971e-04; Time All Iters 2.036971e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.040008e-04; Time All Iters 2.040008e-01
+CC MPIX_Neighbor_alltoallv Time 2.813452e-04; Time All Iters 2.813452e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.805869e-04; Time All Iters 2.805869e-01
+GPU-Aware Neighbor_alltoallv Time 2.021506e-04; Time All Iters 2.021506e-01
+CC Neighbor_alltoallv Time 2.360230e-04; Time All Iters 2.360230e-01
+Threaded CC Neighbor_alltoallv Time 4.984455e-04; Time All Iters 4.984455e-01
+Testing Size blockVecCols 64, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 2.698421e-04; Time All Iters 2.698421e-01
+GPU MPIX_Neighbor_alltoallv Time 2.819626e-04; Time All Iters 2.819626e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.692909e-04; Time All Iters 2.692909e-01
+CC MPIX_Neighbor_alltoallv Time 4.253071e-04; Time All Iters 4.253071e-01
+CC MPIX_Neighbor_alltoallv_init Time 4.272743e-04; Time All Iters 4.272743e-01
+GPU-Aware Neighbor_alltoallv Time 2.795627e-04; Time All Iters 2.795627e-01
+CC Neighbor_alltoallv Time 3.535610e-04; Time All Iters 3.535610e-01
+Threaded CC Neighbor_alltoallv Time 5.494902e-04; Time All Iters 5.494902e-01
+Testing Size blockVecCols 128, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 4.461877e-04; Time All Iters 4.461877e-01
+GPU MPIX_Neighbor_alltoallv Time 4.564572e-04; Time All Iters 4.564572e-01
+GPU MPIX_Neighbor_alltoallv_init Time 4.587941e-04; Time All Iters 4.587941e-01
+CC MPIX_Neighbor_alltoallv Time 7.429552e-04; Time All Iters 7.429552e-01
+CC MPIX_Neighbor_alltoallv_init Time 7.562594e-04; Time All Iters 7.562594e-01
+GPU-Aware Neighbor_alltoallv Time 4.480400e-04; Time All Iters 4.480400e-01
+CC Neighbor_alltoallv Time 5.716819e-04; Time All Iters 5.716819e-01
+Threaded CC Neighbor_alltoallv Time 7.668548e-04; Time All Iters 7.668548e-01
+Testing Size blockVecCols 256, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 9.022636e-04; Time All Iters 9.022636e-01
+GPU MPIX_Neighbor_alltoallv Time 9.054618e-04; Time All Iters 9.054618e-01
+GPU MPIX_Neighbor_alltoallv_init Time 9.009315e-04; Time All Iters 9.009315e-01
+CC MPIX_Neighbor_alltoallv Time 1.389364e-03; Time All Iters 1.389364e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.386126e-03; Time All Iters 1.386126e+00
+GPU-Aware Neighbor_alltoallv Time 8.769259e-04; Time All Iters 8.769259e-01
+CC Neighbor_alltoallv Time 1.018162e-03; Time All Iters 1.018162e+00
+Threaded CC Neighbor_alltoallv Time 1.247479e-03; Time All Iters 1.247479e+00
+Testing Size blockVecCols 512, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 2.057764e-03; Time All Iters 2.057764e+00
+GPU MPIX_Neighbor_alltoallv Time 2.166529e-03; Time All Iters 2.166529e+00
+GPU MPIX_Neighbor_alltoallv_init Time 2.094789e-03; Time All Iters 2.094789e+00
+CC MPIX_Neighbor_alltoallv Time 2.708763e-03; Time All Iters 2.708763e+00
+CC MPIX_Neighbor_alltoallv_init Time 2.692484e-03; Time All Iters 2.692484e+00
+GPU-Aware Neighbor_alltoallv Time 2.086802e-03; Time All Iters 2.086802e+00
+CC Neighbor_alltoallv Time 1.875342e-03; Time All Iters 1.875342e+00
+Threaded CC Neighbor_alltoallv Time 2.023953e-03; Time All Iters 2.023953e+00
+Testing Size blockVecCols 1024, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 6.274163e-03; Time All Iters 6.274163e+00
+GPU MPIX_Neighbor_alltoallv Time 6.354076e-03; Time All Iters 6.354076e+00
+GPU MPIX_Neighbor_alltoallv_init Time 6.239732e-03; Time All Iters 6.239732e+00
+CC MPIX_Neighbor_alltoallv Time 5.504468e-03; Time All Iters 5.504468e+00
+CC MPIX_Neighbor_alltoallv_init Time 5.491983e-03; Time All Iters 5.491983e+00
+GPU-Aware Neighbor_alltoallv Time 6.263698e-03; Time All Iters 6.263698e+00
+CC Neighbor_alltoallv Time 3.921611e-03; Time All Iters 3.921611e+00
+Threaded CC Neighbor_alltoallv Time 3.874821e-03; Time All Iters 3.874821e+00
+Testing Size blockVecCols 1, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.325878e-05; Time All Iters 8.325878e-02
+GPU MPIX_Neighbor_alltoallv Time 8.306170e-05; Time All Iters 8.306170e-02
+GPU MPIX_Neighbor_alltoallv_init Time 7.916330e-05; Time All Iters 7.916330e-02
+CC MPIX_Neighbor_alltoallv Time 6.415839e-05; Time All Iters 6.415839e-02
+CC MPIX_Neighbor_alltoallv_init Time 6.168630e-05; Time All Iters 6.168630e-02
+GPU-Aware Neighbor_alltoallv Time 7.896924e-05; Time All Iters 7.896924e-02
+CC Neighbor_alltoallv Time 7.445741e-05; Time All Iters 7.445741e-02
+Threaded CC Neighbor_alltoallv Time 9.234371e-05; Time All Iters 9.234371e-02
+Testing Size blockVecCols 2, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.363201e-05; Time All Iters 8.363201e-02
+GPU MPIX_Neighbor_alltoallv Time 8.783574e-05; Time All Iters 8.783574e-02
+GPU MPIX_Neighbor_alltoallv_init Time 8.248932e-05; Time All Iters 8.248932e-02
+CC MPIX_Neighbor_alltoallv Time 7.390485e-05; Time All Iters 7.390485e-02
+CC MPIX_Neighbor_alltoallv_init Time 7.477681e-05; Time All Iters 7.477681e-02
+GPU-Aware Neighbor_alltoallv Time 8.544540e-05; Time All Iters 8.544540e-02
+CC Neighbor_alltoallv Time 8.178858e-05; Time All Iters 8.178858e-02
+Threaded CC Neighbor_alltoallv Time 1.037991e-04; Time All Iters 1.037991e-01
+Testing Size blockVecCols 4, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.689436e-05; Time All Iters 8.689436e-02
+GPU MPIX_Neighbor_alltoallv Time 8.346819e-05; Time All Iters 8.346819e-02
+GPU MPIX_Neighbor_alltoallv_init Time 8.511939e-05; Time All Iters 8.511939e-02
+CC MPIX_Neighbor_alltoallv Time 8.575853e-05; Time All Iters 8.575853e-02
+CC MPIX_Neighbor_alltoallv_init Time 8.272686e-05; Time All Iters 8.272686e-02
+GPU-Aware Neighbor_alltoallv Time 8.593942e-05; Time All Iters 8.593942e-02
+CC Neighbor_alltoallv Time 8.167634e-05; Time All Iters 8.167634e-02
+Threaded CC Neighbor_alltoallv Time 1.036103e-04; Time All Iters 1.036103e-01
+Testing Size blockVecCols 8, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.800936e-05; Time All Iters 8.800936e-02
+GPU MPIX_Neighbor_alltoallv Time 8.754189e-05; Time All Iters 8.754189e-02
+GPU MPIX_Neighbor_alltoallv_init Time 8.303320e-05; Time All Iters 8.303320e-02
+CC MPIX_Neighbor_alltoallv Time 1.028711e-04; Time All Iters 1.028711e-01
+CC MPIX_Neighbor_alltoallv_init Time 9.986755e-05; Time All Iters 9.986755e-02
+GPU-Aware Neighbor_alltoallv Time 8.239686e-05; Time All Iters 8.239686e-02
+CC Neighbor_alltoallv Time 9.068208e-05; Time All Iters 9.068208e-02
+Threaded CC Neighbor_alltoallv Time 1.068655e-04; Time All Iters 1.068655e-01
+Testing Size blockVecCols 16, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.954688e-05; Time All Iters 8.954688e-02
+GPU MPIX_Neighbor_alltoallv Time 9.072889e-05; Time All Iters 9.072889e-02
+GPU MPIX_Neighbor_alltoallv_init Time 9.127861e-05; Time All Iters 9.127861e-02
+CC MPIX_Neighbor_alltoallv Time 1.488380e-04; Time All Iters 1.488380e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.503080e-04; Time All Iters 1.503080e-01
+GPU-Aware Neighbor_alltoallv Time 9.272434e-05; Time All Iters 9.272434e-02
+CC Neighbor_alltoallv Time 1.302435e-04; Time All Iters 1.302435e-01
+Threaded CC Neighbor_alltoallv Time 1.473288e-04; Time All Iters 1.473288e-01
+Testing Size blockVecCols 32, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 9.774211e-05; Time All Iters 9.774211e-02
+GPU MPIX_Neighbor_alltoallv Time 1.048419e-04; Time All Iters 1.048419e-01
+GPU MPIX_Neighbor_alltoallv_init Time 9.937794e-05; Time All Iters 9.937794e-02
+CC MPIX_Neighbor_alltoallv Time 2.029284e-04; Time All Iters 2.029284e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.931558e-04; Time All Iters 1.931558e-01
+GPU-Aware Neighbor_alltoallv Time 9.607578e-05; Time All Iters 9.607578e-02
+CC Neighbor_alltoallv Time 1.597689e-04; Time All Iters 1.597689e-01
+Threaded CC Neighbor_alltoallv Time 1.690085e-04; Time All Iters 1.690085e-01
+Testing Size blockVecCols 64, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.153645e-04; Time All Iters 1.153645e-01
+GPU MPIX_Neighbor_alltoallv Time 1.145776e-04; Time All Iters 1.145776e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.168975e-04; Time All Iters 1.168975e-01
+CC MPIX_Neighbor_alltoallv Time 3.235114e-04; Time All Iters 3.235114e-01
+CC MPIX_Neighbor_alltoallv_init Time 3.413103e-04; Time All Iters 3.413103e-01
+GPU-Aware Neighbor_alltoallv Time 1.132085e-04; Time All Iters 1.132085e-01
+CC Neighbor_alltoallv Time 2.134218e-04; Time All Iters 2.134218e-01
+Threaded CC Neighbor_alltoallv Time 2.239833e-04; Time All Iters 2.239833e-01
+Testing Size blockVecCols 128, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.663274e-04; Time All Iters 1.663274e-01
+GPU MPIX_Neighbor_alltoallv Time 1.672929e-04; Time All Iters 1.672929e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.619960e-04; Time All Iters 1.619960e-01
+CC MPIX_Neighbor_alltoallv Time 5.523200e-04; Time All Iters 5.523200e-01
+CC MPIX_Neighbor_alltoallv_init Time 5.610025e-04; Time All Iters 5.610025e-01
+GPU-Aware Neighbor_alltoallv Time 1.767406e-04; Time All Iters 1.767406e-01
+CC Neighbor_alltoallv Time 3.175609e-04; Time All Iters 3.175609e-01
+Threaded CC Neighbor_alltoallv Time 3.393218e-04; Time All Iters 3.393218e-01
+Testing Size blockVecCols 256, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 3.187432e-04; Time All Iters 3.187432e-01
+GPU MPIX_Neighbor_alltoallv Time 3.123735e-04; Time All Iters 3.123735e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.118897e-04; Time All Iters 3.118897e-01
+CC MPIX_Neighbor_alltoallv Time 8.766590e-04; Time All Iters 8.766590e-01
+CC MPIX_Neighbor_alltoallv_init Time 8.640443e-04; Time All Iters 8.640443e-01
+GPU-Aware Neighbor_alltoallv Time 2.759765e-04; Time All Iters 2.759765e-01
+CC Neighbor_alltoallv Time 5.242821e-04; Time All Iters 5.242821e-01
+Threaded CC Neighbor_alltoallv Time 5.552384e-04; Time All Iters 5.552384e-01
+Testing Size blockVecCols 512, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 6.134144e-04; Time All Iters 6.134144e-01
+GPU MPIX_Neighbor_alltoallv Time 6.032194e-04; Time All Iters 6.032194e-01
+GPU MPIX_Neighbor_alltoallv_init Time 5.999963e-04; Time All Iters 5.999963e-01
+CC MPIX_Neighbor_alltoallv Time 1.575500e-03; Time All Iters 1.575500e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.565942e-03; Time All Iters 1.565942e+00
+GPU-Aware Neighbor_alltoallv Time 6.184969e-04; Time All Iters 6.184969e-01
+CC Neighbor_alltoallv Time 9.260085e-04; Time All Iters 9.260085e-01
+Threaded CC Neighbor_alltoallv Time 9.498307e-04; Time All Iters 9.498307e-01
+Testing Size blockVecCols 1024, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.047276e-03; Time All Iters 1.047276e+00
+GPU MPIX_Neighbor_alltoallv Time 1.077157e-03; Time All Iters 1.077157e+00
+GPU MPIX_Neighbor_alltoallv_init Time 1.067891e-03; Time All Iters 1.067891e+00
+CC MPIX_Neighbor_alltoallv Time 2.869151e-03; Time All Iters 2.869151e+00
+CC MPIX_Neighbor_alltoallv_init Time 2.878049e-03; Time All Iters 2.878049e+00
+GPU-Aware Neighbor_alltoallv Time 1.064766e-03; Time All Iters 1.064766e+00
+CC Neighbor_alltoallv Time 1.565832e-03; Time All Iters 1.565832e+00
+Threaded CC Neighbor_alltoallv Time 1.658027e-03; Time All Iters 1.658027e+00
+app 0: ./gpu_suitesparse_threaded_neighbor_alltoallv_matblockvec 
+rank: 0: { host: 1; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 1: { host: 1; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 2: { host: 1; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 3: { host: 1; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 4: { host: 2; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 5: { host: 2; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 6: { host: 2; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 7: { host: 2; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 8: { host: 3; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 9: { host: 3; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 10: { host: 3; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 11: { host: 3; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 12: { host: 4; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 13: { host: 4; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 14: { host: 4; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 15: { host: 4; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 16: { host: 5; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 17: { host: 5; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 18: { host: 5; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 19: { host: 5; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 20: { host: 6; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 21: { host: 6; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 22: { host: 6; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 23: { host: 6; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 24: { host: 7; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 25: { host: 7; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 26: { host: 7; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 27: { host: 7; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 28: { host: 8; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 29: { host: 8; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 30: { host: 8; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 31: { host: 8; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 32: { host: 9; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 33: { host: 9; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 34: { host: 9; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 35: { host: 9; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 36: { host: 10; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 37: { host: 10; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 38: { host: 10; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 39: { host: 10; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 40: { host: 11; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 41: { host: 11; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 42: { host: 11; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 43: { host: 11; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 44: { host: 12; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 45: { host: 12; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 46: { host: 12; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 47: { host: 12; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 48: { host: 13; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 49: { host: 13; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 50: { host: 13; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 51: { host: 13; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 52: { host: 14; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 53: { host: 14; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 54: { host: 14; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 55: { host: 14; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 56: { host: 15; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 57: { host: 15; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 58: { host: 15; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 59: { host: 15; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 60: { host: 16; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 61: { host: 16; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 62: { host: 16; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 63: { host: 16; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 64: { host: 17; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 65: { host: 17; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 66: { host: 17; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 67: { host: 17; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 68: { host: 18; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 69: { host: 18; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 70: { host: 18; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 71: { host: 18; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 72: { host: 19; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 73: { host: 19; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 74: { host: 19; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 75: { host: 19; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 76: { host: 20; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 77: { host: 20; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 78: { host: 20; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 79: { host: 20; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 80: { host: 21; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 81: { host: 21; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 82: { host: 21; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 83: { host: 21; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 84: { host: 22; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 85: { host: 22; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 86: { host: 22; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 87: { host: 22; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 88: { host: 23; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 89: { host: 23; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 90: { host: 23; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 91: { host: 23; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 92: { host: 24; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 93: { host: 24; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 94: { host: 24; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 95: { host: 24; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 96: { host: 25; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 97: { host: 25; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 98: { host: 25; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 99: { host: 25; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 100: { host: 26; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 101: { host: 26; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 102: { host: 26; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 103: { host: 26; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 104: { host: 27; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 105: { host: 27; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 106: { host: 27; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 107: { host: 27; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 108: { host: 28; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 109: { host: 28; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 110: { host: 28; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 111: { host: 28; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 112: { host: 29; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 113: { host: 29; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 114: { host: 29; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 115: { host: 29; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 116: { host: 30; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 117: { host: 30; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 118: { host: 30; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 119: { host: 30; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 120: { host: 31; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 121: { host: 31; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 122: { host: 31; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 123: { host: 31; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+rank: 124: { host: 32; cpu: {0-23} ; gpu: {0} ; mem: {0-48905} } : app 0
+rank: 125: { host: 32; cpu: {24-47} ; gpu: {1} ; mem: {48906-97811} } : app 0
+rank: 126: { host: 32; cpu: {80-103} ; gpu: {2} ; mem: {163036-211941} } : app 0
+rank: 127: { host: 32; cpu: {104-127} ; gpu: {3} ; mem: {211942-260847} } : app 0
+Running Threaded Neighbor_Alltoallv Test with 8 threads:
+Testing Size blockVecCols 1, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.114129e-04; Time All Iters 3.114129e-01
+GPU MPIX_Neighbor_alltoallv Time 3.174937e-04; Time All Iters 3.174937e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.895066e-04; Time All Iters 2.895066e-01
+CC MPIX_Neighbor_alltoallv Time 1.743290e-04; Time All Iters 1.743290e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.706613e-04; Time All Iters 1.706613e-01
+GPU-Aware Neighbor_alltoallv Time 2.937998e-04; Time All Iters 2.937998e-01
+CC Neighbor_alltoallv Time 1.692592e-04; Time All Iters 1.692592e-01
+Threaded CC Neighbor_alltoallv Time 2.009798e-04; Time All Iters 2.009798e-01
+Testing Size blockVecCols 2, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.899986e-04; Time All Iters 2.899986e-01
+GPU MPIX_Neighbor_alltoallv Time 2.854418e-04; Time All Iters 2.854418e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.859613e-04; Time All Iters 2.859613e-01
+CC MPIX_Neighbor_alltoallv Time 1.731882e-04; Time All Iters 1.731882e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.619889e-04; Time All Iters 1.619889e-01
+GPU-Aware Neighbor_alltoallv Time 2.899637e-04; Time All Iters 2.899637e-01
+CC Neighbor_alltoallv Time 1.713372e-04; Time All Iters 1.713372e-01
+Threaded CC Neighbor_alltoallv Time 2.142377e-04; Time All Iters 2.142377e-01
+Testing Size blockVecCols 4, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.000075e-04; Time All Iters 3.000075e-01
+GPU MPIX_Neighbor_alltoallv Time 3.059706e-04; Time All Iters 3.059706e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.965170e-04; Time All Iters 2.965170e-01
+CC MPIX_Neighbor_alltoallv Time 1.857100e-04; Time All Iters 1.857100e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.663804e-04; Time All Iters 1.663804e-01
+GPU-Aware Neighbor_alltoallv Time 2.849396e-04; Time All Iters 2.849396e-01
+CC Neighbor_alltoallv Time 1.858413e-04; Time All Iters 1.858413e-01
+Threaded CC Neighbor_alltoallv Time 2.379194e-04; Time All Iters 2.379194e-01
+Testing Size blockVecCols 8, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 2.997137e-04; Time All Iters 2.997137e-01
+GPU MPIX_Neighbor_alltoallv Time 3.070606e-04; Time All Iters 3.070606e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.135012e-04; Time All Iters 3.135012e-01
+CC MPIX_Neighbor_alltoallv Time 2.021368e-04; Time All Iters 2.021368e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.949563e-04; Time All Iters 1.949564e-01
+GPU-Aware Neighbor_alltoallv Time 2.867018e-04; Time All Iters 2.867018e-01
+CC Neighbor_alltoallv Time 1.940046e-04; Time All Iters 1.940046e-01
+Threaded CC Neighbor_alltoallv Time 2.544696e-04; Time All Iters 2.544696e-01
+Testing Size blockVecCols 16, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.134540e-04; Time All Iters 3.134540e-01
+GPU MPIX_Neighbor_alltoallv Time 3.071852e-04; Time All Iters 3.071852e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.098795e-04; Time All Iters 3.098795e-01
+CC MPIX_Neighbor_alltoallv Time 2.297608e-04; Time All Iters 2.297608e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.285469e-04; Time All Iters 2.285469e-01
+GPU-Aware Neighbor_alltoallv Time 3.207914e-04; Time All Iters 3.207914e-01
+CC Neighbor_alltoallv Time 2.224780e-04; Time All Iters 2.224780e-01
+Threaded CC Neighbor_alltoallv Time 2.873020e-04; Time All Iters 2.873020e-01
+Testing Size blockVecCols 32, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.445533e-04; Time All Iters 3.445533e-01
+GPU MPIX_Neighbor_alltoallv Time 3.200557e-04; Time All Iters 3.200557e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.243243e-04; Time All Iters 3.243243e-01
+CC MPIX_Neighbor_alltoallv Time 2.488675e-04; Time All Iters 2.488675e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.573857e-04; Time All Iters 2.573857e-01
+GPU-Aware Neighbor_alltoallv Time 3.380360e-04; Time All Iters 3.380360e-01
+CC Neighbor_alltoallv Time 2.455575e-04; Time All Iters 2.455575e-01
+Threaded CC Neighbor_alltoallv Time 3.260869e-04; Time All Iters 3.260869e-01
+Testing Size blockVecCols 64, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.512308e-04; Time All Iters 3.512308e-01
+GPU MPIX_Neighbor_alltoallv Time 3.433516e-04; Time All Iters 3.433516e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.348058e-04; Time All Iters 3.348058e-01
+CC MPIX_Neighbor_alltoallv Time 3.209549e-04; Time All Iters 3.209549e-01
+CC MPIX_Neighbor_alltoallv_init Time 3.144225e-04; Time All Iters 3.144225e-01
+GPU-Aware Neighbor_alltoallv Time 3.437332e-04; Time All Iters 3.437332e-01
+CC Neighbor_alltoallv Time 2.776850e-04; Time All Iters 2.776850e-01
+Threaded CC Neighbor_alltoallv Time 3.595254e-04; Time All Iters 3.595254e-01
+Testing Size blockVecCols 128, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.574088e-04; Time All Iters 3.574088e-01
+GPU MPIX_Neighbor_alltoallv Time 3.411243e-04; Time All Iters 3.411243e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.384613e-04; Time All Iters 3.384613e-01
+CC MPIX_Neighbor_alltoallv Time 5.494235e-04; Time All Iters 5.494235e-01
+CC MPIX_Neighbor_alltoallv_init Time 5.446647e-04; Time All Iters 5.446647e-01
+GPU-Aware Neighbor_alltoallv Time 3.605383e-04; Time All Iters 3.605383e-01
+CC Neighbor_alltoallv Time 3.648624e-04; Time All Iters 3.648624e-01
+Threaded CC Neighbor_alltoallv Time 4.455208e-04; Time All Iters 4.455208e-01
+Testing Size blockVecCols 256, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 4.400754e-04; Time All Iters 4.400754e-01
+GPU MPIX_Neighbor_alltoallv Time 4.442270e-04; Time All Iters 4.442270e-01
+GPU MPIX_Neighbor_alltoallv_init Time 4.377343e-04; Time All Iters 4.377343e-01
+CC MPIX_Neighbor_alltoallv Time 1.022315e-03; Time All Iters 1.022315e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.018770e-03; Time All Iters 1.018770e+00
+GPU-Aware Neighbor_alltoallv Time 4.169405e-04; Time All Iters 4.169405e-01
+CC Neighbor_alltoallv Time 6.007075e-04; Time All Iters 6.007075e-01
+Threaded CC Neighbor_alltoallv Time 6.637836e-04; Time All Iters 6.637836e-01
+Testing Size blockVecCols 512, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 9.113766e-04; Time All Iters 9.113766e-01
+GPU MPIX_Neighbor_alltoallv Time 9.148861e-04; Time All Iters 9.148861e-01
+GPU MPIX_Neighbor_alltoallv_init Time 8.883285e-04; Time All Iters 8.883285e-01
+CC MPIX_Neighbor_alltoallv Time 1.922570e-03; Time All Iters 1.922570e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.921444e-03; Time All Iters 1.921444e+00
+GPU-Aware Neighbor_alltoallv Time 8.245671e-04; Time All Iters 8.245671e-01
+CC Neighbor_alltoallv Time 1.172865e-03; Time All Iters 1.172865e+00
+Threaded CC Neighbor_alltoallv Time 1.126798e-03; Time All Iters 1.126798e+00
+Testing Size blockVecCols 1024, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 1.772187e-03; Time All Iters 1.772187e+00
+GPU MPIX_Neighbor_alltoallv Time 1.802062e-03; Time All Iters 1.802062e+00
+GPU MPIX_Neighbor_alltoallv_init Time 1.777251e-03; Time All Iters 1.777251e+00
+CC MPIX_Neighbor_alltoallv Time 3.574734e-03; Time All Iters 3.574734e+00
+CC MPIX_Neighbor_alltoallv_init Time 3.565221e-03; Time All Iters 3.565221e+00
+GPU-Aware Neighbor_alltoallv Time 1.775498e-03; Time All Iters 1.775498e+00
+CC Neighbor_alltoallv Time 2.115001e-03; Time All Iters 2.115001e+00
+Threaded CC Neighbor_alltoallv Time 2.053114e-03; Time All Iters 2.053114e+00
+Testing Size blockVecCols 1, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.811687e-04; Time All Iters 1.811687e-01
+GPU MPIX_Neighbor_alltoallv Time 1.706448e-04; Time All Iters 1.706448e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.732597e-04; Time All Iters 1.732597e-01
+CC MPIX_Neighbor_alltoallv Time 1.189085e-04; Time All Iters 1.189085e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.192929e-04; Time All Iters 1.192929e-01
+GPU-Aware Neighbor_alltoallv Time 1.634331e-04; Time All Iters 1.634331e-01
+CC Neighbor_alltoallv Time 1.112391e-04; Time All Iters 1.112391e-01
+Threaded CC Neighbor_alltoallv Time 1.739536e-04; Time All Iters 1.739536e-01
+Testing Size blockVecCols 2, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.804682e-04; Time All Iters 1.804682e-01
+GPU MPIX_Neighbor_alltoallv Time 1.703374e-04; Time All Iters 1.703374e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.656487e-04; Time All Iters 1.656487e-01
+CC MPIX_Neighbor_alltoallv Time 1.211931e-04; Time All Iters 1.211931e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.262110e-04; Time All Iters 1.262110e-01
+GPU-Aware Neighbor_alltoallv Time 1.739297e-04; Time All Iters 1.739297e-01
+CC Neighbor_alltoallv Time 1.284923e-04; Time All Iters 1.284923e-01
+Threaded CC Neighbor_alltoallv Time 1.660242e-04; Time All Iters 1.660242e-01
+Testing Size blockVecCols 4, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.878899e-04; Time All Iters 1.878899e-01
+GPU MPIX_Neighbor_alltoallv Time 1.908689e-04; Time All Iters 1.908689e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.898392e-04; Time All Iters 1.898392e-01
+CC MPIX_Neighbor_alltoallv Time 1.316488e-04; Time All Iters 1.316488e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.306330e-04; Time All Iters 1.306330e-01
+GPU-Aware Neighbor_alltoallv Time 1.721198e-04; Time All Iters 1.721198e-01
+CC Neighbor_alltoallv Time 1.254680e-04; Time All Iters 1.254680e-01
+Threaded CC Neighbor_alltoallv Time 1.731202e-04; Time All Iters 1.731202e-01
+Testing Size blockVecCols 8, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.686040e-04; Time All Iters 1.686040e-01
+GPU MPIX_Neighbor_alltoallv Time 1.666211e-04; Time All Iters 1.666211e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.755752e-04; Time All Iters 1.755752e-01
+CC MPIX_Neighbor_alltoallv Time 1.532492e-04; Time All Iters 1.532492e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.462179e-04; Time All Iters 1.462179e-01
+GPU-Aware Neighbor_alltoallv Time 1.903657e-04; Time All Iters 1.903657e-01
+CC Neighbor_alltoallv Time 1.434245e-04; Time All Iters 1.434245e-01
+Threaded CC Neighbor_alltoallv Time 1.991094e-04; Time All Iters 1.991094e-01
+Testing Size blockVecCols 16, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.898849e-04; Time All Iters 1.898849e-01
+GPU MPIX_Neighbor_alltoallv Time 1.899079e-04; Time All Iters 1.899079e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.818974e-04; Time All Iters 1.818974e-01
+CC MPIX_Neighbor_alltoallv Time 1.974665e-04; Time All Iters 1.974665e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.019290e-04; Time All Iters 2.019290e-01
+GPU-Aware Neighbor_alltoallv Time 1.816654e-04; Time All Iters 1.816654e-01
+CC Neighbor_alltoallv Time 1.814016e-04; Time All Iters 1.814016e-01
+Threaded CC Neighbor_alltoallv Time 2.703106e-04; Time All Iters 2.703106e-01
+Testing Size blockVecCols 32, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 2.114905e-04; Time All Iters 2.114905e-01
+GPU MPIX_Neighbor_alltoallv Time 2.273336e-04; Time All Iters 2.273336e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.227185e-04; Time All Iters 2.227185e-01
+CC MPIX_Neighbor_alltoallv Time 3.033145e-04; Time All Iters 3.033145e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.968888e-04; Time All Iters 2.968888e-01
+GPU-Aware Neighbor_alltoallv Time 2.155773e-04; Time All Iters 2.155773e-01
+CC Neighbor_alltoallv Time 2.574852e-04; Time All Iters 2.574852e-01
+Threaded CC Neighbor_alltoallv Time 3.958862e-04; Time All Iters 3.958862e-01
+Testing Size blockVecCols 64, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 2.792181e-04; Time All Iters 2.792181e-01
+GPU MPIX_Neighbor_alltoallv Time 2.849535e-04; Time All Iters 2.849535e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.842151e-04; Time All Iters 2.842151e-01
+CC MPIX_Neighbor_alltoallv Time 4.307604e-04; Time All Iters 4.307604e-01
+CC MPIX_Neighbor_alltoallv_init Time 4.334238e-04; Time All Iters 4.334238e-01
+GPU-Aware Neighbor_alltoallv Time 2.902485e-04; Time All Iters 2.902485e-01
+CC Neighbor_alltoallv Time 3.649413e-04; Time All Iters 3.649413e-01
+Threaded CC Neighbor_alltoallv Time 4.233540e-04; Time All Iters 4.233540e-01
+Testing Size blockVecCols 128, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 4.707032e-04; Time All Iters 4.707032e-01
+GPU MPIX_Neighbor_alltoallv Time 4.757959e-04; Time All Iters 4.757959e-01
+GPU MPIX_Neighbor_alltoallv_init Time 4.874494e-04; Time All Iters 4.874494e-01
+CC MPIX_Neighbor_alltoallv Time 7.656306e-04; Time All Iters 7.656306e-01
+CC MPIX_Neighbor_alltoallv_init Time 7.462636e-04; Time All Iters 7.462636e-01
+GPU-Aware Neighbor_alltoallv Time 4.578766e-04; Time All Iters 4.578766e-01
+CC Neighbor_alltoallv Time 5.810914e-04; Time All Iters 5.810914e-01
+Threaded CC Neighbor_alltoallv Time 6.535916e-04; Time All Iters 6.535916e-01
+Testing Size blockVecCols 256, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 9.358917e-04; Time All Iters 9.358917e-01
+GPU MPIX_Neighbor_alltoallv Time 9.423068e-04; Time All Iters 9.423068e-01
+GPU MPIX_Neighbor_alltoallv_init Time 9.340903e-04; Time All Iters 9.340903e-01
+CC MPIX_Neighbor_alltoallv Time 1.386610e-03; Time All Iters 1.386610e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.416275e-03; Time All Iters 1.416275e+00
+GPU-Aware Neighbor_alltoallv Time 9.296793e-04; Time All Iters 9.296793e-01
+CC Neighbor_alltoallv Time 1.026425e-03; Time All Iters 1.026425e+00
+Threaded CC Neighbor_alltoallv Time 1.091232e-03; Time All Iters 1.091232e+00
+Testing Size blockVecCols 512, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 2.168064e-03; Time All Iters 2.168064e+00
+GPU MPIX_Neighbor_alltoallv Time 2.085829e-03; Time All Iters 2.085829e+00
+GPU MPIX_Neighbor_alltoallv_init Time 2.025423e-03; Time All Iters 2.025423e+00
+CC MPIX_Neighbor_alltoallv Time 2.741272e-03; Time All Iters 2.741272e+00
+CC MPIX_Neighbor_alltoallv_init Time 2.730193e-03; Time All Iters 2.730193e+00
+GPU-Aware Neighbor_alltoallv Time 2.193487e-03; Time All Iters 2.193487e+00
+CC Neighbor_alltoallv Time 1.888019e-03; Time All Iters 1.888019e+00
+Threaded CC Neighbor_alltoallv Time 1.947822e-03; Time All Iters 1.947822e+00
+Testing Size blockVecCols 1024, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 5.674081e-03; Time All Iters 5.674081e+00
+GPU MPIX_Neighbor_alltoallv Time 5.727419e-03; Time All Iters 5.727419e+00
+GPU MPIX_Neighbor_alltoallv_init Time 5.773480e-03; Time All Iters 5.773480e+00
+CC MPIX_Neighbor_alltoallv Time 5.361605e-03; Time All Iters 5.361605e+00
+CC MPIX_Neighbor_alltoallv_init Time 5.346036e-03; Time All Iters 5.346036e+00
+GPU-Aware Neighbor_alltoallv Time 5.595556e-03; Time All Iters 5.595556e+00
+CC Neighbor_alltoallv Time 3.841573e-03; Time All Iters 3.841573e+00
+Threaded CC Neighbor_alltoallv Time 3.812256e-03; Time All Iters 3.812256e+00
+Testing Size blockVecCols 1, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 8.688454e-05; Time All Iters 8.688454e-02
+GPU MPIX_Neighbor_alltoallv Time 8.233774e-05; Time All Iters 8.233774e-02
+GPU MPIX_Neighbor_alltoallv_init Time 9.119426e-05; Time All Iters 9.119426e-02
+CC MPIX_Neighbor_alltoallv Time 6.665206e-05; Time All Iters 6.665206e-02
+CC MPIX_Neighbor_alltoallv_init Time 7.105366e-05; Time All Iters 7.105366e-02
+GPU-Aware Neighbor_alltoallv Time 8.984233e-05; Time All Iters 8.984233e-02
+CC Neighbor_alltoallv Time 7.789221e-05; Time All Iters 7.789221e-02
+Threaded CC Neighbor_alltoallv Time 1.068726e-04; Time All Iters 1.068726e-01
+Testing Size blockVecCols 2, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 9.194394e-05; Time All Iters 9.194394e-02
+GPU MPIX_Neighbor_alltoallv Time 9.149280e-05; Time All Iters 9.149280e-02
+GPU MPIX_Neighbor_alltoallv_init Time 9.228305e-05; Time All Iters 9.228305e-02
+CC MPIX_Neighbor_alltoallv Time 7.517464e-05; Time All Iters 7.517464e-02
+CC MPIX_Neighbor_alltoallv_init Time 7.711557e-05; Time All Iters 7.711557e-02
+GPU-Aware Neighbor_alltoallv Time 9.236213e-05; Time All Iters 9.236213e-02
+CC Neighbor_alltoallv Time 8.263983e-05; Time All Iters 8.263983e-02
+Threaded CC Neighbor_alltoallv Time 1.049705e-04; Time All Iters 1.049705e-01
+Testing Size blockVecCols 4, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 9.466597e-05; Time All Iters 9.466597e-02
+GPU MPIX_Neighbor_alltoallv Time 9.252113e-05; Time All Iters 9.252113e-02
+GPU MPIX_Neighbor_alltoallv_init Time 9.413586e-05; Time All Iters 9.413586e-02
+CC MPIX_Neighbor_alltoallv Time 8.937736e-05; Time All Iters 8.937736e-02
+CC MPIX_Neighbor_alltoallv_init Time 8.483187e-05; Time All Iters 8.483187e-02
+GPU-Aware Neighbor_alltoallv Time 9.656982e-05; Time All Iters 9.656982e-02
+CC Neighbor_alltoallv Time 8.316163e-05; Time All Iters 8.316163e-02
+Threaded CC Neighbor_alltoallv Time 1.037644e-04; Time All Iters 1.037644e-01
+Testing Size blockVecCols 8, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 9.343766e-05; Time All Iters 9.343766e-02
+GPU MPIX_Neighbor_alltoallv Time 9.117485e-05; Time All Iters 9.117485e-02
+GPU MPIX_Neighbor_alltoallv_init Time 8.772211e-05; Time All Iters 8.772211e-02
+CC MPIX_Neighbor_alltoallv Time 1.011503e-04; Time All Iters 1.011503e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.018144e-04; Time All Iters 1.018144e-01
+GPU-Aware Neighbor_alltoallv Time 9.402609e-05; Time All Iters 9.402609e-02
+CC Neighbor_alltoallv Time 9.387532e-05; Time All Iters 9.387532e-02
+Threaded CC Neighbor_alltoallv Time 1.151020e-04; Time All Iters 1.151020e-01
+Testing Size blockVecCols 16, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 9.819244e-05; Time All Iters 9.819244e-02
+GPU MPIX_Neighbor_alltoallv Time 9.717044e-05; Time All Iters 9.717044e-02
+GPU MPIX_Neighbor_alltoallv_init Time 9.965216e-05; Time All Iters 9.965216e-02
+CC MPIX_Neighbor_alltoallv Time 1.495921e-04; Time All Iters 1.495921e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.504456e-04; Time All Iters 1.504456e-01
+GPU-Aware Neighbor_alltoallv Time 9.907321e-05; Time All Iters 9.907321e-02
+CC Neighbor_alltoallv Time 1.314387e-04; Time All Iters 1.314387e-01
+Threaded CC Neighbor_alltoallv Time 1.671183e-04; Time All Iters 1.671183e-01
+Testing Size blockVecCols 32, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.022625e-04; Time All Iters 1.022625e-01
+GPU MPIX_Neighbor_alltoallv Time 1.046385e-04; Time All Iters 1.046385e-01
+GPU MPIX_Neighbor_alltoallv_init Time 9.658132e-05; Time All Iters 9.658132e-02
+CC MPIX_Neighbor_alltoallv Time 2.137231e-04; Time All Iters 2.137231e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.112731e-04; Time All Iters 2.112731e-01
+GPU-Aware Neighbor_alltoallv Time 9.463351e-05; Time All Iters 9.463351e-02
+CC Neighbor_alltoallv Time 1.564163e-04; Time All Iters 1.564163e-01
+Threaded CC Neighbor_alltoallv Time 2.142560e-04; Time All Iters 2.142560e-01
+Testing Size blockVecCols 64, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.165993e-04; Time All Iters 1.165993e-01
+GPU MPIX_Neighbor_alltoallv Time 1.154388e-04; Time All Iters 1.154388e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.160827e-04; Time All Iters 1.160827e-01
+CC MPIX_Neighbor_alltoallv Time 2.826245e-04; Time All Iters 2.826245e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.891656e-04; Time All Iters 2.891656e-01
+GPU-Aware Neighbor_alltoallv Time 1.186933e-04; Time All Iters 1.186933e-01
+CC Neighbor_alltoallv Time 2.215092e-04; Time All Iters 2.215092e-01
+Threaded CC Neighbor_alltoallv Time 2.607040e-04; Time All Iters 2.607040e-01
+Testing Size blockVecCols 128, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.803200e-04; Time All Iters 1.803200e-01
+GPU MPIX_Neighbor_alltoallv Time 1.789377e-04; Time All Iters 1.789377e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.804933e-04; Time All Iters 1.804933e-01
+CC MPIX_Neighbor_alltoallv Time 5.420721e-04; Time All Iters 5.420721e-01
+CC MPIX_Neighbor_alltoallv_init Time 5.407816e-04; Time All Iters 5.407816e-01
+GPU-Aware Neighbor_alltoallv Time 1.847156e-04; Time All Iters 1.847156e-01
+CC Neighbor_alltoallv Time 3.279896e-04; Time All Iters 3.279896e-01
+Threaded CC Neighbor_alltoallv Time 3.725606e-04; Time All Iters 3.725606e-01
+Testing Size blockVecCols 256, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 3.237109e-04; Time All Iters 3.237109e-01
+GPU MPIX_Neighbor_alltoallv Time 3.295343e-04; Time All Iters 3.295343e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.161101e-04; Time All Iters 3.161101e-01
+CC MPIX_Neighbor_alltoallv Time 8.588783e-04; Time All Iters 8.588783e-01
+CC MPIX_Neighbor_alltoallv_init Time 8.587725e-04; Time All Iters 8.587725e-01
+GPU-Aware Neighbor_alltoallv Time 2.978001e-04; Time All Iters 2.978001e-01
+CC Neighbor_alltoallv Time 5.261979e-04; Time All Iters 5.261979e-01
+Threaded CC Neighbor_alltoallv Time 5.504768e-04; Time All Iters 5.504768e-01
+Testing Size blockVecCols 512, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 6.415940e-04; Time All Iters 6.415940e-01
+GPU MPIX_Neighbor_alltoallv Time 6.255783e-04; Time All Iters 6.255783e-01
+GPU MPIX_Neighbor_alltoallv_init Time 6.286163e-04; Time All Iters 6.286163e-01
+CC MPIX_Neighbor_alltoallv Time 1.525703e-03; Time All Iters 1.525703e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.530870e-03; Time All Iters 1.530870e+00
+GPU-Aware Neighbor_alltoallv Time 6.283996e-04; Time All Iters 6.283996e-01
+CC Neighbor_alltoallv Time 9.285011e-04; Time All Iters 9.285011e-01
+Threaded CC Neighbor_alltoallv Time 1.021345e-03; Time All Iters 1.021345e+00
+Testing Size blockVecCols 1024, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.055450e-03; Time All Iters 1.055450e+00
+GPU MPIX_Neighbor_alltoallv Time 1.096079e-03; Time All Iters 1.096079e+00
+GPU MPIX_Neighbor_alltoallv_init Time 1.063248e-03; Time All Iters 1.063248e+00
+CC MPIX_Neighbor_alltoallv Time 2.945215e-03; Time All Iters 2.945215e+00
+CC MPIX_Neighbor_alltoallv_init Time 2.965581e-03; Time All Iters 2.965581e+00
+GPU-Aware Neighbor_alltoallv Time 1.071207e-03; Time All Iters 1.071207e+00
+CC Neighbor_alltoallv Time 1.593623e-03; Time All Iters 1.593623e+00
+Threaded CC Neighbor_alltoallv Time 1.743655e-03; Time All Iters 1.743655e+00
+app 0: ./gpu_suitesparse_threaded_neighbor_alltoallv_matblockvec 
+rank: 0: { host: 1; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 1: { host: 1; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 2: { host: 1; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 3: { host: 1; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 4: { host: 2; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 5: { host: 2; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 6: { host: 2; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 7: { host: 2; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 8: { host: 3; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 9: { host: 3; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 10: { host: 3; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 11: { host: 3; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 12: { host: 4; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 13: { host: 4; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 14: { host: 4; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 15: { host: 4; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 16: { host: 5; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 17: { host: 5; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 18: { host: 5; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 19: { host: 5; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 20: { host: 6; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 21: { host: 6; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 22: { host: 6; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 23: { host: 6; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 24: { host: 7; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 25: { host: 7; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 26: { host: 7; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 27: { host: 7; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 28: { host: 8; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 29: { host: 8; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 30: { host: 8; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 31: { host: 8; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 32: { host: 9; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 33: { host: 9; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 34: { host: 9; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 35: { host: 9; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 36: { host: 10; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 37: { host: 10; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 38: { host: 10; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 39: { host: 10; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 40: { host: 11; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 41: { host: 11; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 42: { host: 11; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 43: { host: 11; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 44: { host: 12; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 45: { host: 12; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 46: { host: 12; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 47: { host: 12; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 48: { host: 13; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 49: { host: 13; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 50: { host: 13; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 51: { host: 13; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 52: { host: 14; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 53: { host: 14; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 54: { host: 14; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 55: { host: 14; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 56: { host: 15; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 57: { host: 15; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 58: { host: 15; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 59: { host: 15; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 60: { host: 16; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 61: { host: 16; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 62: { host: 16; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 63: { host: 16; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 64: { host: 17; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 65: { host: 17; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 66: { host: 17; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 67: { host: 17; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 68: { host: 18; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 69: { host: 18; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 70: { host: 18; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 71: { host: 18; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 72: { host: 19; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 73: { host: 19; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 74: { host: 19; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 75: { host: 19; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 76: { host: 20; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 77: { host: 20; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 78: { host: 20; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 79: { host: 20; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 80: { host: 21; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 81: { host: 21; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 82: { host: 21; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 83: { host: 21; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 84: { host: 22; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 85: { host: 22; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 86: { host: 22; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 87: { host: 22; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 88: { host: 23; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 89: { host: 23; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 90: { host: 23; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 91: { host: 23; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 92: { host: 24; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 93: { host: 24; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 94: { host: 24; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 95: { host: 24; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 96: { host: 25; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 97: { host: 25; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 98: { host: 25; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 99: { host: 25; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 100: { host: 26; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 101: { host: 26; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 102: { host: 26; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 103: { host: 26; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 104: { host: 27; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 105: { host: 27; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 106: { host: 27; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 107: { host: 27; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 108: { host: 28; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 109: { host: 28; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 110: { host: 28; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 111: { host: 28; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 112: { host: 29; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 113: { host: 29; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 114: { host: 29; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 115: { host: 29; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 116: { host: 30; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 117: { host: 30; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 118: { host: 30; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 119: { host: 30; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 120: { host: 31; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 121: { host: 31; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 122: { host: 31; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 123: { host: 31; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 124: { host: 32; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 125: { host: 32; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 126: { host: 32; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 127: { host: 32; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+Running Threaded Neighbor_Alltoallv Test with 10 threads:
+Testing Size blockVecCols 1, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.123725e-04; Time All Iters 3.123725e-01
+GPU MPIX_Neighbor_alltoallv Time 2.879913e-04; Time All Iters 2.879913e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.991972e-04; Time All Iters 2.991972e-01
+CC MPIX_Neighbor_alltoallv Time 1.785799e-04; Time All Iters 1.785799e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.721973e-04; Time All Iters 1.721973e-01
+GPU-Aware Neighbor_alltoallv Time 3.053279e-04; Time All Iters 3.053279e-01
+CC Neighbor_alltoallv Time 1.797791e-04; Time All Iters 1.797791e-01
+Threaded CC Neighbor_alltoallv Time 2.262408e-04; Time All Iters 2.262408e-01
+Testing Size blockVecCols 2, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.286227e-04; Time All Iters 3.286227e-01
+GPU MPIX_Neighbor_alltoallv Time 3.227103e-04; Time All Iters 3.227103e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.167570e-04; Time All Iters 3.167570e-01
+CC MPIX_Neighbor_alltoallv Time 1.958269e-04; Time All Iters 1.958269e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.787325e-04; Time All Iters 1.787325e-01
+GPU-Aware Neighbor_alltoallv Time 3.263533e-04; Time All Iters 3.263533e-01
+CC Neighbor_alltoallv Time 1.902059e-04; Time All Iters 1.902059e-01
+Threaded CC Neighbor_alltoallv Time 2.362170e-04; Time All Iters 2.362170e-01
+Testing Size blockVecCols 4, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.250352e-04; Time All Iters 3.250352e-01
+GPU MPIX_Neighbor_alltoallv Time 3.202338e-04; Time All Iters 3.202338e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.105257e-04; Time All Iters 3.105257e-01
+CC MPIX_Neighbor_alltoallv Time 1.948579e-04; Time All Iters 1.948579e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.974108e-04; Time All Iters 1.974108e-01
+GPU-Aware Neighbor_alltoallv Time 3.153394e-04; Time All Iters 3.153394e-01
+CC Neighbor_alltoallv Time 1.988346e-04; Time All Iters 1.988346e-01
+Threaded CC Neighbor_alltoallv Time 2.576386e-04; Time All Iters 2.576386e-01
+Testing Size blockVecCols 8, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.265915e-04; Time All Iters 3.265915e-01
+GPU MPIX_Neighbor_alltoallv Time 3.106412e-04; Time All Iters 3.106412e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.969789e-04; Time All Iters 2.969789e-01
+CC MPIX_Neighbor_alltoallv Time 1.985924e-04; Time All Iters 1.985924e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.896673e-04; Time All Iters 1.896673e-01
+GPU-Aware Neighbor_alltoallv Time 3.095459e-04; Time All Iters 3.095459e-01
+CC Neighbor_alltoallv Time 2.170876e-04; Time All Iters 2.170876e-01
+Threaded CC Neighbor_alltoallv Time 2.780686e-04; Time All Iters 2.780686e-01
+Testing Size blockVecCols 16, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.509920e-04; Time All Iters 3.509920e-01
+GPU MPIX_Neighbor_alltoallv Time 3.503240e-04; Time All Iters 3.503240e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.403732e-04; Time All Iters 3.403732e-01
+CC MPIX_Neighbor_alltoallv Time 2.321946e-04; Time All Iters 2.321946e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.269507e-04; Time All Iters 2.269507e-01
+GPU-Aware Neighbor_alltoallv Time 3.364618e-04; Time All Iters 3.364618e-01
+CC Neighbor_alltoallv Time 2.239337e-04; Time All Iters 2.239337e-01
+Threaded CC Neighbor_alltoallv Time 2.918236e-04; Time All Iters 2.918236e-01
+Testing Size blockVecCols 32, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.493523e-04; Time All Iters 3.493523e-01
+GPU MPIX_Neighbor_alltoallv Time 3.536240e-04; Time All Iters 3.536240e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.468880e-04; Time All Iters 3.468880e-01
+CC MPIX_Neighbor_alltoallv Time 2.663494e-04; Time All Iters 2.663494e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.576986e-04; Time All Iters 2.576986e-01
+GPU-Aware Neighbor_alltoallv Time 3.473446e-04; Time All Iters 3.473446e-01
+CC Neighbor_alltoallv Time 2.471592e-04; Time All Iters 2.471592e-01
+Threaded CC Neighbor_alltoallv Time 3.000502e-04; Time All Iters 3.000502e-01
+Testing Size blockVecCols 64, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.531806e-04; Time All Iters 3.531806e-01
+GPU MPIX_Neighbor_alltoallv Time 3.522727e-04; Time All Iters 3.522727e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.498391e-04; Time All Iters 3.498391e-01
+CC MPIX_Neighbor_alltoallv Time 3.252569e-04; Time All Iters 3.252569e-01
+CC MPIX_Neighbor_alltoallv_init Time 3.169703e-04; Time All Iters 3.169703e-01
+GPU-Aware Neighbor_alltoallv Time 3.590576e-04; Time All Iters 3.590576e-01
+CC Neighbor_alltoallv Time 2.783163e-04; Time All Iters 2.783163e-01
+Threaded CC Neighbor_alltoallv Time 3.498008e-04; Time All Iters 3.498008e-01
+Testing Size blockVecCols 128, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 3.713318e-04; Time All Iters 3.713318e-01
+GPU MPIX_Neighbor_alltoallv Time 3.822571e-04; Time All Iters 3.822571e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.731057e-04; Time All Iters 3.731057e-01
+CC MPIX_Neighbor_alltoallv Time 5.496015e-04; Time All Iters 5.496015e-01
+CC MPIX_Neighbor_alltoallv_init Time 5.456571e-04; Time All Iters 5.456571e-01
+GPU-Aware Neighbor_alltoallv Time 3.592960e-04; Time All Iters 3.592960e-01
+CC Neighbor_alltoallv Time 3.715064e-04; Time All Iters 3.715064e-01
+Threaded CC Neighbor_alltoallv Time 4.316502e-04; Time All Iters 4.316502e-01
+Testing Size blockVecCols 256, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 4.320166e-04; Time All Iters 4.320166e-01
+GPU MPIX_Neighbor_alltoallv Time 4.345754e-04; Time All Iters 4.345754e-01
+GPU MPIX_Neighbor_alltoallv_init Time 4.301164e-04; Time All Iters 4.301164e-01
+CC MPIX_Neighbor_alltoallv Time 1.051857e-03; Time All Iters 1.051857e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.047450e-03; Time All Iters 1.047450e+00
+GPU-Aware Neighbor_alltoallv Time 4.102333e-04; Time All Iters 4.102333e-01
+CC Neighbor_alltoallv Time 5.901511e-04; Time All Iters 5.901511e-01
+Threaded CC Neighbor_alltoallv Time 6.417352e-04; Time All Iters 6.417352e-01
+Testing Size blockVecCols 512, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 9.245106e-04; Time All Iters 9.245106e-01
+GPU MPIX_Neighbor_alltoallv Time 8.838960e-04; Time All Iters 8.838960e-01
+GPU MPIX_Neighbor_alltoallv_init Time 8.844189e-04; Time All Iters 8.844189e-01
+CC MPIX_Neighbor_alltoallv Time 1.918028e-03; Time All Iters 1.918028e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.916096e-03; Time All Iters 1.916096e+00
+GPU-Aware Neighbor_alltoallv Time 8.327379e-04; Time All Iters 8.327379e-01
+CC Neighbor_alltoallv Time 1.158868e-03; Time All Iters 1.158868e+00
+Threaded CC Neighbor_alltoallv Time 1.109005e-03; Time All Iters 1.109005e+00
+Testing Size blockVecCols 1024, matrix ../../test_data/cnr-2000.pm
+GPU MPI_Neighbor_alltoallv Time 1.825937e-03; Time All Iters 1.825937e+00
+GPU MPIX_Neighbor_alltoallv Time 1.824889e-03; Time All Iters 1.824889e+00
+GPU MPIX_Neighbor_alltoallv_init Time 1.828241e-03; Time All Iters 1.828241e+00
+CC MPIX_Neighbor_alltoallv Time 3.502275e-03; Time All Iters 3.502275e+00
+CC MPIX_Neighbor_alltoallv_init Time 3.517232e-03; Time All Iters 3.517232e+00
+GPU-Aware Neighbor_alltoallv Time 1.806452e-03; Time All Iters 1.806452e+00
+CC Neighbor_alltoallv Time 2.075952e-03; Time All Iters 2.075952e+00
+Threaded CC Neighbor_alltoallv Time 2.126350e-03; Time All Iters 2.126350e+00
+Testing Size blockVecCols 1, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.799173e-04; Time All Iters 1.799173e-01
+GPU MPIX_Neighbor_alltoallv Time 1.910045e-04; Time All Iters 1.910045e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.719986e-04; Time All Iters 1.719986e-01
+CC MPIX_Neighbor_alltoallv Time 1.187112e-04; Time All Iters 1.187112e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.207051e-04; Time All Iters 1.207051e-01
+GPU-Aware Neighbor_alltoallv Time 1.804376e-04; Time All Iters 1.804376e-01
+CC Neighbor_alltoallv Time 1.277668e-04; Time All Iters 1.277668e-01
+Threaded CC Neighbor_alltoallv Time 1.717610e-04; Time All Iters 1.717610e-01
+Testing Size blockVecCols 2, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.933994e-04; Time All Iters 1.933994e-01
+GPU MPIX_Neighbor_alltoallv Time 1.958479e-04; Time All Iters 1.958479e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.972783e-04; Time All Iters 1.972783e-01
+CC MPIX_Neighbor_alltoallv Time 1.326031e-04; Time All Iters 1.326031e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.237623e-04; Time All Iters 1.237623e-01
+GPU-Aware Neighbor_alltoallv Time 1.795510e-04; Time All Iters 1.795510e-01
+CC Neighbor_alltoallv Time 1.373096e-04; Time All Iters 1.373096e-01
+Threaded CC Neighbor_alltoallv Time 1.806889e-04; Time All Iters 1.806889e-01
+Testing Size blockVecCols 4, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 2.024620e-04; Time All Iters 2.024620e-01
+GPU MPIX_Neighbor_alltoallv Time 1.989588e-04; Time All Iters 1.989588e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.937724e-04; Time All Iters 1.937724e-01
+CC MPIX_Neighbor_alltoallv Time 1.361812e-04; Time All Iters 1.361812e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.260059e-04; Time All Iters 1.260059e-01
+GPU-Aware Neighbor_alltoallv Time 1.674065e-04; Time All Iters 1.674065e-01
+CC Neighbor_alltoallv Time 1.281984e-04; Time All Iters 1.281984e-01
+Threaded CC Neighbor_alltoallv Time 1.639261e-04; Time All Iters 1.639261e-01
+Testing Size blockVecCols 8, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 1.939634e-04; Time All Iters 1.939634e-01
+GPU MPIX_Neighbor_alltoallv Time 1.990046e-04; Time All Iters 1.990046e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.969603e-04; Time All Iters 1.969603e-01
+CC MPIX_Neighbor_alltoallv Time 1.674433e-04; Time All Iters 1.674433e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.608090e-04; Time All Iters 1.608090e-01
+GPU-Aware Neighbor_alltoallv Time 2.026587e-04; Time All Iters 2.026587e-01
+CC Neighbor_alltoallv Time 1.553796e-04; Time All Iters 1.553796e-01
+Threaded CC Neighbor_alltoallv Time 1.995279e-04; Time All Iters 1.995279e-01
+Testing Size blockVecCols 16, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 2.028283e-04; Time All Iters 2.028283e-01
+GPU MPIX_Neighbor_alltoallv Time 2.020830e-04; Time All Iters 2.020830e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.089600e-04; Time All Iters 2.089600e-01
+CC MPIX_Neighbor_alltoallv Time 2.068704e-04; Time All Iters 2.068704e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.121310e-04; Time All Iters 2.121310e-01
+GPU-Aware Neighbor_alltoallv Time 1.951518e-04; Time All Iters 1.951518e-01
+CC Neighbor_alltoallv Time 1.894960e-04; Time All Iters 1.894960e-01
+Threaded CC Neighbor_alltoallv Time 2.361738e-04; Time All Iters 2.361738e-01
+Testing Size blockVecCols 32, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 2.416234e-04; Time All Iters 2.416234e-01
+GPU MPIX_Neighbor_alltoallv Time 2.315995e-04; Time All Iters 2.315995e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.290143e-04; Time All Iters 2.290143e-01
+CC MPIX_Neighbor_alltoallv Time 3.062710e-04; Time All Iters 3.062710e-01
+CC MPIX_Neighbor_alltoallv_init Time 3.074599e-04; Time All Iters 3.074599e-01
+GPU-Aware Neighbor_alltoallv Time 2.199792e-04; Time All Iters 2.199792e-01
+CC Neighbor_alltoallv Time 2.638969e-04; Time All Iters 2.638969e-01
+Threaded CC Neighbor_alltoallv Time 3.218514e-04; Time All Iters 3.218514e-01
+Testing Size blockVecCols 64, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 2.869807e-04; Time All Iters 2.869807e-01
+GPU MPIX_Neighbor_alltoallv Time 3.082802e-04; Time All Iters 3.082802e-01
+GPU MPIX_Neighbor_alltoallv_init Time 2.918756e-04; Time All Iters 2.918756e-01
+CC MPIX_Neighbor_alltoallv Time 4.502515e-04; Time All Iters 4.502515e-01
+CC MPIX_Neighbor_alltoallv_init Time 4.510094e-04; Time All Iters 4.510094e-01
+GPU-Aware Neighbor_alltoallv Time 3.004837e-04; Time All Iters 3.004837e-01
+CC Neighbor_alltoallv Time 3.767402e-04; Time All Iters 3.767402e-01
+Threaded CC Neighbor_alltoallv Time 4.200174e-04; Time All Iters 4.200174e-01
+Testing Size blockVecCols 128, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 4.760979e-04; Time All Iters 4.760979e-01
+GPU MPIX_Neighbor_alltoallv Time 4.763691e-04; Time All Iters 4.763691e-01
+GPU MPIX_Neighbor_alltoallv_init Time 4.891160e-04; Time All Iters 4.891160e-01
+CC MPIX_Neighbor_alltoallv Time 7.806566e-04; Time All Iters 7.806566e-01
+CC MPIX_Neighbor_alltoallv_init Time 7.796331e-04; Time All Iters 7.796331e-01
+GPU-Aware Neighbor_alltoallv Time 4.921622e-04; Time All Iters 4.921622e-01
+CC Neighbor_alltoallv Time 6.060655e-04; Time All Iters 6.060655e-01
+Threaded CC Neighbor_alltoallv Time 6.319343e-04; Time All Iters 6.319343e-01
+Testing Size blockVecCols 256, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 9.338370e-04; Time All Iters 9.338370e-01
+GPU MPIX_Neighbor_alltoallv Time 9.298208e-04; Time All Iters 9.298208e-01
+GPU MPIX_Neighbor_alltoallv_init Time 9.381011e-04; Time All Iters 9.381011e-01
+CC MPIX_Neighbor_alltoallv Time 1.479672e-03; Time All Iters 1.479672e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.469683e-03; Time All Iters 1.469683e+00
+GPU-Aware Neighbor_alltoallv Time 9.379799e-04; Time All Iters 9.379799e-01
+CC Neighbor_alltoallv Time 1.032346e-03; Time All Iters 1.032346e+00
+Threaded CC Neighbor_alltoallv Time 1.037657e-03; Time All Iters 1.037657e+00
+Testing Size blockVecCols 512, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 2.110279e-03; Time All Iters 2.110279e+00
+GPU MPIX_Neighbor_alltoallv Time 2.197851e-03; Time All Iters 2.197851e+00
+GPU MPIX_Neighbor_alltoallv_init Time 2.167652e-03; Time All Iters 2.167652e+00
+CC MPIX_Neighbor_alltoallv Time 2.737574e-03; Time All Iters 2.737574e+00
+CC MPIX_Neighbor_alltoallv_init Time 2.740121e-03; Time All Iters 2.740121e+00
+GPU-Aware Neighbor_alltoallv Time 2.156467e-03; Time All Iters 2.156467e+00
+CC Neighbor_alltoallv Time 1.955409e-03; Time All Iters 1.955409e+00
+Threaded CC Neighbor_alltoallv Time 1.959156e-03; Time All Iters 1.959156e+00
+Testing Size blockVecCols 1024, matrix ../../test_data/3dtube.pm
+GPU MPI_Neighbor_alltoallv Time 5.985630e-03; Time All Iters 5.985630e+00
+GPU MPIX_Neighbor_alltoallv Time 5.918820e-03; Time All Iters 5.918820e+00
+GPU MPIX_Neighbor_alltoallv_init Time 5.961750e-03; Time All Iters 5.961750e+00
+CC MPIX_Neighbor_alltoallv Time 5.436922e-03; Time All Iters 5.436922e+00
+CC MPIX_Neighbor_alltoallv_init Time 5.432274e-03; Time All Iters 5.432274e+00
+GPU-Aware Neighbor_alltoallv Time 5.914179e-03; Time All Iters 5.914179e+00
+CC Neighbor_alltoallv Time 3.877754e-03; Time All Iters 3.877754e+00
+Threaded CC Neighbor_alltoallv Time 3.832309e-03; Time All Iters 3.832309e+00
+Testing Size blockVecCols 1, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 9.605458e-05; Time All Iters 9.605458e-02
+GPU MPIX_Neighbor_alltoallv Time 9.975434e-05; Time All Iters 9.975434e-02
+GPU MPIX_Neighbor_alltoallv_init Time 9.036193e-05; Time All Iters 9.036193e-02
+CC MPIX_Neighbor_alltoallv Time 7.261386e-05; Time All Iters 7.261386e-02
+CC MPIX_Neighbor_alltoallv_init Time 7.224078e-05; Time All Iters 7.224078e-02
+GPU-Aware Neighbor_alltoallv Time 9.251567e-05; Time All Iters 9.251567e-02
+CC Neighbor_alltoallv Time 8.326759e-05; Time All Iters 8.326759e-02
+Threaded CC Neighbor_alltoallv Time 9.646889e-05; Time All Iters 9.646889e-02
+Testing Size blockVecCols 2, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 9.794135e-05; Time All Iters 9.794135e-02
+GPU MPIX_Neighbor_alltoallv Time 9.481774e-05; Time All Iters 9.481774e-02
+GPU MPIX_Neighbor_alltoallv_init Time 8.555417e-05; Time All Iters 8.555417e-02
+CC MPIX_Neighbor_alltoallv Time 7.644647e-05; Time All Iters 7.644647e-02
+CC MPIX_Neighbor_alltoallv_init Time 7.317030e-05; Time All Iters 7.317030e-02
+GPU-Aware Neighbor_alltoallv Time 8.852262e-05; Time All Iters 8.852262e-02
+CC Neighbor_alltoallv Time 8.410224e-05; Time All Iters 8.410224e-02
+Threaded CC Neighbor_alltoallv Time 9.542597e-05; Time All Iters 9.542597e-02
+Testing Size blockVecCols 4, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 9.085578e-05; Time All Iters 9.085578e-02
+GPU MPIX_Neighbor_alltoallv Time 9.358114e-05; Time All Iters 9.358114e-02
+GPU MPIX_Neighbor_alltoallv_init Time 9.284911e-05; Time All Iters 9.284911e-02
+CC MPIX_Neighbor_alltoallv Time 8.719170e-05; Time All Iters 8.719170e-02
+CC MPIX_Neighbor_alltoallv_init Time 8.590248e-05; Time All Iters 8.590248e-02
+GPU-Aware Neighbor_alltoallv Time 9.287411e-05; Time All Iters 9.287411e-02
+CC Neighbor_alltoallv Time 8.469921e-05; Time All Iters 8.469921e-02
+Threaded CC Neighbor_alltoallv Time 1.016392e-04; Time All Iters 1.016392e-01
+Testing Size blockVecCols 8, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 9.617910e-05; Time All Iters 9.617910e-02
+GPU MPIX_Neighbor_alltoallv Time 9.206701e-05; Time All Iters 9.206701e-02
+GPU MPIX_Neighbor_alltoallv_init Time 9.001172e-05; Time All Iters 9.001172e-02
+CC MPIX_Neighbor_alltoallv Time 1.040108e-04; Time All Iters 1.040108e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.020506e-04; Time All Iters 1.020506e-01
+GPU-Aware Neighbor_alltoallv Time 9.717436e-05; Time All Iters 9.717436e-02
+CC Neighbor_alltoallv Time 9.753361e-05; Time All Iters 9.753361e-02
+Threaded CC Neighbor_alltoallv Time 1.153396e-04; Time All Iters 1.153396e-01
+Testing Size blockVecCols 16, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 9.859246e-05; Time All Iters 9.859246e-02
+GPU MPIX_Neighbor_alltoallv Time 1.037357e-04; Time All Iters 1.037357e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.022686e-04; Time All Iters 1.022686e-01
+CC MPIX_Neighbor_alltoallv Time 1.538034e-04; Time All Iters 1.538034e-01
+CC MPIX_Neighbor_alltoallv_init Time 1.476246e-04; Time All Iters 1.476246e-01
+GPU-Aware Neighbor_alltoallv Time 9.695766e-05; Time All Iters 9.695766e-02
+CC Neighbor_alltoallv Time 1.355601e-04; Time All Iters 1.355601e-01
+Threaded CC Neighbor_alltoallv Time 1.581364e-04; Time All Iters 1.581364e-01
+Testing Size blockVecCols 32, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.070626e-04; Time All Iters 1.070626e-01
+GPU MPIX_Neighbor_alltoallv Time 1.108274e-04; Time All Iters 1.108274e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.107232e-04; Time All Iters 1.107232e-01
+CC MPIX_Neighbor_alltoallv Time 2.057953e-04; Time All Iters 2.057953e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.054131e-04; Time All Iters 2.054131e-01
+GPU-Aware Neighbor_alltoallv Time 1.089518e-04; Time All Iters 1.089518e-01
+CC Neighbor_alltoallv Time 1.695713e-04; Time All Iters 1.695713e-01
+Threaded CC Neighbor_alltoallv Time 1.932568e-04; Time All Iters 1.932568e-01
+Testing Size blockVecCols 64, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.283798e-04; Time All Iters 1.283798e-01
+GPU MPIX_Neighbor_alltoallv Time 1.343799e-04; Time All Iters 1.343799e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.368659e-04; Time All Iters 1.368659e-01
+CC MPIX_Neighbor_alltoallv Time 2.922868e-04; Time All Iters 2.922868e-01
+CC MPIX_Neighbor_alltoallv_init Time 2.880262e-04; Time All Iters 2.880262e-01
+GPU-Aware Neighbor_alltoallv Time 1.264606e-04; Time All Iters 1.264606e-01
+CC Neighbor_alltoallv Time 2.241963e-04; Time All Iters 2.241963e-01
+Threaded CC Neighbor_alltoallv Time 2.349727e-04; Time All Iters 2.349727e-01
+Testing Size blockVecCols 128, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.736172e-04; Time All Iters 1.736172e-01
+GPU MPIX_Neighbor_alltoallv Time 1.786104e-04; Time All Iters 1.786104e-01
+GPU MPIX_Neighbor_alltoallv_init Time 1.841631e-04; Time All Iters 1.841631e-01
+CC MPIX_Neighbor_alltoallv Time 5.245865e-04; Time All Iters 5.245865e-01
+CC MPIX_Neighbor_alltoallv_init Time 5.229516e-04; Time All Iters 5.229516e-01
+GPU-Aware Neighbor_alltoallv Time 1.864707e-04; Time All Iters 1.864707e-01
+CC Neighbor_alltoallv Time 3.315989e-04; Time All Iters 3.315989e-01
+Threaded CC Neighbor_alltoallv Time 3.573600e-04; Time All Iters 3.573600e-01
+Testing Size blockVecCols 256, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 3.246146e-04; Time All Iters 3.246146e-01
+GPU MPIX_Neighbor_alltoallv Time 3.267983e-04; Time All Iters 3.267983e-01
+GPU MPIX_Neighbor_alltoallv_init Time 3.342071e-04; Time All Iters 3.342071e-01
+CC MPIX_Neighbor_alltoallv Time 8.910295e-04; Time All Iters 8.910295e-01
+CC MPIX_Neighbor_alltoallv_init Time 8.937388e-04; Time All Iters 8.937388e-01
+GPU-Aware Neighbor_alltoallv Time 2.988247e-04; Time All Iters 2.988247e-01
+CC Neighbor_alltoallv Time 5.297482e-04; Time All Iters 5.297482e-01
+Threaded CC Neighbor_alltoallv Time 5.619587e-04; Time All Iters 5.619587e-01
+Testing Size blockVecCols 512, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 6.141055e-04; Time All Iters 6.141055e-01
+GPU MPIX_Neighbor_alltoallv Time 6.175444e-04; Time All Iters 6.175444e-01
+GPU MPIX_Neighbor_alltoallv_init Time 6.304014e-04; Time All Iters 6.304014e-01
+CC MPIX_Neighbor_alltoallv Time 1.504515e-03; Time All Iters 1.504515e+00
+CC MPIX_Neighbor_alltoallv_init Time 1.517254e-03; Time All Iters 1.517254e+00
+GPU-Aware Neighbor_alltoallv Time 6.158013e-04; Time All Iters 6.158013e-01
+CC Neighbor_alltoallv Time 9.234877e-04; Time All Iters 9.234877e-01
+Threaded CC Neighbor_alltoallv Time 9.823172e-04; Time All Iters 9.823172e-01
+Testing Size blockVecCols 1024, matrix ../../test_data/Goodwin_095.pm
+GPU MPI_Neighbor_alltoallv Time 1.084752e-03; Time All Iters 1.084752e+00
+GPU MPIX_Neighbor_alltoallv Time 1.075571e-03; Time All Iters 1.075571e+00
+GPU MPIX_Neighbor_alltoallv_init Time 1.093734e-03; Time All Iters 1.093734e+00
+CC MPIX_Neighbor_alltoallv Time 2.930601e-03; Time All Iters 2.930601e+00
+CC MPIX_Neighbor_alltoallv_init Time 2.925861e-03; Time All Iters 2.925861e+00
+GPU-Aware Neighbor_alltoallv Time 1.084446e-03; Time All Iters 1.084446e+00
+CC Neighbor_alltoallv Time 1.572886e-03; Time All Iters 1.572886e+00
+Threaded CC Neighbor_alltoallv Time 1.715459e-03; Time All Iters 1.715459e+00
+app 0: ./gpu_suitesparse_threaded_neighbor_alltoallv_matblockvec 
+rank: 0: { host: 1; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 1: { host: 1; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 2: { host: 1; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 3: { host: 1; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 4: { host: 2; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 5: { host: 2; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 6: { host: 2; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 7: { host: 2; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 8: { host: 3; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 9: { host: 3; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 10: { host: 3; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 11: { host: 3; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 12: { host: 4; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 13: { host: 4; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 14: { host: 4; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 15: { host: 4; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 16: { host: 5; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 17: { host: 5; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 18: { host: 5; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 19: { host: 5; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 20: { host: 6; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 21: { host: 6; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 22: { host: 6; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 23: { host: 6; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 24: { host: 7; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 25: { host: 7; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 26: { host: 7; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 27: { host: 7; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 28: { host: 8; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 29: { host: 8; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 30: { host: 8; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 31: { host: 8; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 32: { host: 9; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 33: { host: 9; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 34: { host: 9; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 35: { host: 9; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 36: { host: 10; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 37: { host: 10; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 38: { host: 10; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 39: { host: 10; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 40: { host: 11; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 41: { host: 11; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 42: { host: 11; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 43: { host: 11; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 44: { host: 12; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 45: { host: 12; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 46: { host: 12; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 47: { host: 12; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 48: { host: 13; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 49: { host: 13; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 50: { host: 13; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 51: { host: 13; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 52: { host: 14; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 53: { host: 14; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 54: { host: 14; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 55: { host: 14; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 56: { host: 15; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 57: { host: 15; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 58: { host: 15; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 59: { host: 15; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 60: { host: 16; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 61: { host: 16; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 62: { host: 16; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 63: { host: 16; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 64: { host: 17; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 65: { host: 17; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 66: { host: 17; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 67: { host: 17; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 68: { host: 18; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 69: { host: 18; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 70: { host: 18; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 71: { host: 18; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 72: { host: 19; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 73: { host: 19; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 74: { host: 19; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 75: { host: 19; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 76: { host: 20; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 77: { host: 20; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 78: { host: 20; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 79: { host: 20; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 80: { host: 21; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 81: { host: 21; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 82: { host: 21; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 83: { host: 21; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 84: { host: 22; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 85: { host: 22; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 86: { host: 22; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 87: { host: 22; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 88: { host: 23; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 89: { host: 23; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 90: { host: 23; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 91: { host: 23; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 92: { host: 24; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 93: { host: 24; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 94: { host: 24; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 95: { host: 24; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 96: { host: 25; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 97: { host: 25; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 98: { host: 25; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 99: { host: 25; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 100: { host: 26; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 101: { host: 26; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 102: { host: 26; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 103: { host: 26; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 104: { host: 27; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 105: { host: 27; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 106: { host: 27; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 107: { host: 27; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 108: { host: 28; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 109: { host: 28; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 110: { host: 28; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 111: { host: 28; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 112: { host: 29; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 113: { host: 29; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 114: { host: 29; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 115: { host: 29; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 116: { host: 30; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 117: { host: 30; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 118: { host: 30; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 119: { host: 30; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 120: { host: 31; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 121: { host: 31; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 122: { host: 31; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 123: { host: 31; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 124: { host: 32; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 125: { host: 32; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 126: { host: 32; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 127: { host: 32; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+logout
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 6588938: <mbv_nbralltoallv_n32> in cluster <lassen> Done
+
+Job <mbv_nbralltoallv_n32> was submitted from host <lassen709> by user <adams112> in cluster <lassen> at Wed Dec 25 10:30:02 2024
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <adams112> in cluster <lassen> at Wed Dec 25 11:04:41 2024
+                            <40*lassen278>
+                            <40*lassen431>
+                            <40*lassen766>
+                            <40*lassen283>
+                            <40*lassen768>
+                            <40*lassen774>
+                            <40*lassen454>
+                            <40*lassen794>
+                            <40*lassen301>
+                            <40*lassen156>
+                            <40*lassen157>
+                            <40*lassen313>
+                            <40*lassen644>
+                            <40*lassen315>
+                            <40*lassen172>
+                            <40*lassen660>
+                            <40*lassen661>
+                            <40*lassen667>
+                            <40*lassen669>
+                            <40*lassen187>
+                            <40*lassen670>
+                            <40*lassen341>
+                            <40*lassen675>
+                            <40*lassen680>
+                            <40*lassen351>
+                            <40*lassen354>
+                            <40*lassen359>
+                            <40*lassen732>
+                            <40*lassen510>
+                            <40*lassen512>
+                            <40*lassen515>
+                            <40*lassen516>
+</g/g11/adams112> was used as the home directory.
+</g/g11/adams112/locality_aware-mikethebos/benchmark_tests/lassen> was used as the working directory.
+Started at Wed Dec 25 11:04:41 2024
+Terminated at Wed Dec 25 11:22:30 2024
+Results reported at Wed Dec 25 11:22:30 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J mbv_nbralltoallv_n32
+#BSUB -e mbv_nbralltoallv_n32.%J.err
+#BSUB -o mbv_nbralltoallv_n32.%J.out
+#BSUB -nnodes 32
+#BSUB -q pbatch
+#BSUB -W 00:35
+
+module load gcc/7.3.1
+module load cuda/10.2.89
+module load hwloc
+
+cd $HOME/locality_aware-mikethebos/build/benchmarks
+
+echo "Running Unthreaded Neighbor_Alltoallv Test:"
+echo "Running Unthreaded Neighbor_Alltoallv Test:" 1>&2
+export OMP_NUM_THREADS=1
+jsrun -a1 -c1 -g1 -r4 -n128 -bpacked:1 -dpacked -EOMP_NUM_THREADS=1 --print_placement=1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_suitesparse_neighbor_alltoallv_matblockvec
+
+echo "Running Threaded Neighbor_Alltoallv Test with 2 threads:"
+echo "Running Threaded Neighbor_Alltoallv Test with 2 threads:" 1>&2
+export OMP_NUM_THREADS=2
+jsrun -a1 -c2 -g1 -r4 -n128 -bpacked:2 -dpacked -EOMP_NUM_THREADS=2 --print_placement=1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_suitesparse_threaded_neighbor_alltoallv_matblockvec
+
+echo "Running Threaded Neighbor_Alltoallv Test with 4 threads:"
+echo "Running Threaded Neighbor_Alltoallv Test with 4 threads:" 1>&2
+export OMP_NUM_THREADS=4
+jsrun -a1 -c4 -g1 -r4 -n128 -bpacked:4 -dpacked -EOMP_NUM_THREADS=4 --print_placement=1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_suitesparse_threaded_neighbor_alltoallv_matblockvec
+
+echo "Running Threaded Neighbor_Alltoallv Test with 6 threads:"
+echo "Running Threaded Neighbor_Alltoallv Test with 6 threads:" 1>&2
+export OMP_NUM_THREADS=6
+jsrun -a1 -c6 -g1 -r4 -n128 -bpacked:6 -dpacked -EOMP_NUM_THREADS=6 --print_placement=1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_suitesparse_threaded_neighbor_alltoallv_matblockvec
+
+echo "Running Threaded Neighbor_Alltoallv Test with 8 threads:"
+echo "Running Threaded Neighbor_Alltoallv Test with 8 threads:" 1>&2
+export OMP_NUM_THREADS=8
+jsrun -a1 -c8 -g1 -r4 -n128 -bpacked:8 -dpacked -EOMP_NUM_THREADS=8 --print_placement=1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_suitesparse_threaded_neighbor_alltoallv_matblockvec
+
+echo "Running Threaded Neighbor_Alltoallv Test with 10 threads:"
+echo "Running Threaded Neighbor_Alltoallv Test with 10 threads:" 1>&2
+export OMP_NUM_THREADS=10
+jsrun -a1 -c10 -g1 -r4 -n128 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 --print_placement=1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_suitesparse_threaded_neighbor_alltoallv_matblockvec
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   2.00 sec.
+    Max Memory :                                 66 MB
+    Average Memory :                             63.66 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1427 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   1070 sec.
+    Turnaround time :                            3148 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <mbv_nbralltoallv_n32.6588938.err> for stderr output of this job.
+
