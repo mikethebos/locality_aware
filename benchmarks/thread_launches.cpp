@@ -82,7 +82,7 @@ int main(int argc, char* argv[])
     gpuMallocHost((void**)(&send_data_h), max_s*num_procs*sizeof(double));
     gpuMallocHost((void**)(&recv_data_h), max_s*num_procs*sizeof(double));
     
-    MPI_Request *reqs = (MPI_Request *)malloc(num_procs * sizeof(MPI_Request));
+    MPI_Request *reqs = (MPI_Request *)malloc(2 * num_procs * sizeof(MPI_Request));
 
     for (int i = 0; i < max_i; i++)
     {
@@ -120,6 +120,18 @@ int main(int argc, char* argv[])
         if (err >= 0)
         {
             printf("C2C MPIX Error at IDX %d, rank %d\n", err, rank);
+            MPI_Abort(MPI_COMM_WORLD, 1);
+            return 1;
+        }
+        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
+
+        // GPU-Aware Alltoall
+        alltoall(send_data_d, recv_data_d, s, 0, num_procs, 1, reqs);
+        gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+        err = compare(std_alltoall, new_alltoall, s*num_procs);
+        if (err >= 0)
+        {
+            printf("GPU MPIX Error at IDX %d, rank %d\n", err, rank);
             MPI_Abort(MPI_COMM_WORLD, 1);
             return 1;
         }
@@ -235,8 +247,17 @@ int main(int argc, char* argv[])
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("Copy-to-CPU Pairwise Time %e\n", t0);
-  
+        if (rank == 0) printf("Copy-to-CPU Nonblocking Time %e\n", t0);
+
+        // GPU-Aware Alltoall
+        t0 = MPI_Wtime();
+        for (int i = 0; i < n_iter; i++)
+        {
+            alltoall(send_data_d, recv_data_d, s, 0, num_procs, 1, reqs);
+        }
+	tfinal = (MPI_Wtime() - t0) / n_iter;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0) printf("GPU-Aware Nonblocking Time %e\n", t0);  
 
         // Copy-to-CPU 2Thread Alltoall
         t0 = MPI_Wtime();
@@ -253,7 +274,7 @@ int main(int argc, char* argv[])
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("2 Threads Pairwise Time %e\n", t0);
+        if (rank == 0) printf("2 Threads Nonblocking Time %e\n", t0);
    
         // Copy-to-CPU 4Thread Alltoall
         t0 = MPI_Wtime();
@@ -270,7 +291,7 @@ int main(int argc, char* argv[])
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("4 Threads Pairwise Time %e\n", t0);
+        if (rank == 0) printf("4 Threads Nonblocking Time %e\n", t0);
 
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
@@ -286,7 +307,7 @@ int main(int argc, char* argv[])
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("8 Threads Pairwise Time %e\n", t0);
+        if (rank == 0) printf("8 Threads Nonblocking Time %e\n", t0);
 
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
@@ -302,7 +323,7 @@ int main(int argc, char* argv[])
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("10 Threads Pairwise Time %e\n", t0);
+        if (rank == 0) printf("10 Threads Nonblocking Time %e\n", t0);
     }
     free((void *)reqs);
     

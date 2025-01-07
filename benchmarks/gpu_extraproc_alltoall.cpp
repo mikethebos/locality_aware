@@ -136,7 +136,7 @@ int main(int argc, char* argv[])
         MPI_Win_shared_query(recv_win, 0, &remote_win_r, &disp_unit_r, &recv_data_shared);
     }
     
-    MPI_Request *reqs = (MPI_Request *)malloc(master_count * sizeof(MPI_Request));
+    MPI_Request *reqs = (MPI_Request *)malloc(2 * master_count * sizeof(MPI_Request));
 
     for (int i = 0; i < max_i; i++)
     {
@@ -182,7 +182,7 @@ int main(int argc, char* argv[])
             int err = compare(std_alltoall, new_alltoall, s*master_count);
             if (err >= 0)
             {
-                printf("C2C MPIX Pairwise Error at IDX %d, rank %d\n", err, rank);
+                printf("C2C MPIX Nonblocking Error at IDX %d, rank %d\n", err, rank);
                 fflush(stdout);
                 MPI_Abort(MPI_COMM_WORLD, 1);
                 return 1;
@@ -214,7 +214,7 @@ int main(int argc, char* argv[])
             int err = compare(std_alltoall, new_alltoall, s*master_count);
             if (err >= 0)
             {
-                printf("C2C %d Processes MPIX Pairwise Error at IDX %d, rank %d\n", ranks_per_gpu, err, rank);
+                printf("C2C %d Processes MPIX Nonblocking Error at IDX %d, rank %d\n", ranks_per_gpu, err, rank);
                 fflush(stdout);
                 MPI_Abort(MPI_COMM_WORLD, 1);
                 return 1;
@@ -265,7 +265,7 @@ int main(int argc, char* argv[])
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("Copy-to-CPU Pairwise Time %e\n", t0);
+        if (rank == 0) printf("Copy-to-CPU Nonblocking Time %e\n", t0);
   
 
         // Copy-to-CPU 2Thread Alltoall
@@ -292,7 +292,7 @@ int main(int argc, char* argv[])
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("%d Processes Pairwise Time %e\n", ranks_per_gpu, t0);
+        if (rank == 0) printf("%d Processes Nonblocking Time %e\n", ranks_per_gpu, t0);
     }
     free((void *)reqs);
     MPI_Win_free(&send_win);
