@@ -139,7 +139,7 @@ int main(int argc, char* argv[])
 
         // Copy-to-CPU 2Thread Alltoall
         gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-        #pragma parallel num_threads(2)
+        #pragma omp parallel num_threads(2)
         {
             int thread_id = omp_get_thread_num();
             int num_threads = omp_get_num_threads();
@@ -158,7 +158,7 @@ int main(int argc, char* argv[])
    
        // Copy-to-CPU 4Thread Alltoall
         gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-        #pragma parallel num_threads(4)
+        #pragma omp parallel num_threads(4)
         {
             int thread_id = omp_get_thread_num();
             int num_threads = omp_get_num_threads();
@@ -177,7 +177,7 @@ int main(int argc, char* argv[])
         
        // Copy-to-CPU 8Thread Alltoall
         gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-        #pragma parallel num_threads(8)
+        #pragma omp parallel num_threads(8)
         {
             int thread_id = omp_get_thread_num();
             int num_threads = omp_get_num_threads();
@@ -196,7 +196,7 @@ int main(int argc, char* argv[])
 
        // Copy-to-CPU 10Thread Alltoall
         gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-        #pragma parallel num_threads(10)
+        #pragma omp parallel num_threads(10)
         {
             int thread_id = omp_get_thread_num();
             int num_threads = omp_get_num_threads();
@@ -264,7 +264,7 @@ int main(int argc, char* argv[])
         for (int i = 0; i < n_iter; i++)
         {
             gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-            #pragma parallel num_threads(2)
+            #pragma omp parallel num_threads(2)
             {
                 int thread_id = omp_get_thread_num();
                 int num_threads = omp_get_num_threads();
@@ -281,7 +281,7 @@ int main(int argc, char* argv[])
         for (int i = 0; i < n_iter; i++)
         {
             gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-            #pragma parallel num_threads(4)
+            #pragma omp parallel num_threads(4)
             {
                 int thread_id = omp_get_thread_num();
                 int num_threads = omp_get_num_threads();
@@ -297,7 +297,7 @@ int main(int argc, char* argv[])
         for (int i = 0; i < n_iter; i++)
         {   
             gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-            #pragma parallel num_threads(8)
+            #pragma omp parallel num_threads(8)
             {
                 int thread_id = omp_get_thread_num();
                 int num_threads = omp_get_num_threads();
@@ -313,7 +313,7 @@ int main(int argc, char* argv[])
         for (int i = 0; i < n_iter; i++)
         {   
             gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-            #pragma parallel num_threads(10)
+            #pragma omp parallel num_threads(10)
             {
                 int thread_id = omp_get_thread_num();
                 int num_threads = omp_get_num_threads();

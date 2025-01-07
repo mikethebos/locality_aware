@@ -84,7 +84,7 @@ int main(int argc, char* argv[])
     
     MPI_Request *reqs = (MPI_Request *)malloc(2 * num_procs * sizeof(MPI_Request));
 
-#pragma parallel num_threads(10)
+#pragma omp parallel num_threads(10)
 {
     int thread_id = omp_get_thread_num();
     int num_threads = omp_get_num_threads();
@@ -142,10 +142,10 @@ int main(int argc, char* argv[])
         // Copy-to-CPU 2Thread Alltoall
         if (thread_id == 0) 
             gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-#pragma barrier
+#pragma omp barrier
         if (thread_id < 2)
             alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, 2, reqs);
-#pragma barrier
+#pragma omp barrier
         if (thread_id == 0)
             gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
 
@@ -165,10 +165,10 @@ int main(int argc, char* argv[])
        // Copy-to-CPU 4Thread Alltoall
         if (thread_id == 0) 
             gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-#pragma barrier
+#pragma omp barrier
         if (thread_id < 4)
             alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, 4, reqs);
-#pragma barrier
+#pragma omp barrier
         if (thread_id == 0)
             gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
 
@@ -188,10 +188,10 @@ int main(int argc, char* argv[])
        // Copy-to-CPU 8Thread Alltoall
         if (thread_id == 0) 
             gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-#pragma barrier
+#pragma omp barrier
         if (thread_id < 8)
             alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, 8, reqs);
-#pragma barrier
+#pragma omp barrier
         if (thread_id == 0)
             gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
 
@@ -211,10 +211,10 @@ int main(int argc, char* argv[])
        // Copy-to-CPU 10Thread Alltoall
         if (thread_id == 0) 
             gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-#pragma barrier
+#pragma omp barrier
         if (thread_id < 10)
             alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, 10, reqs);
-#pragma barrier
+#pragma omp barrier
         if (thread_id == 0)
             gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
 
@@ -282,10 +282,10 @@ int main(int argc, char* argv[])
         {
             if (thread_id == 0) 
                 gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-#pragma barrier
+#pragma omp barrier
             if (thread_id < 2)
                 alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, 2, reqs);
-#pragma barrier
+#pragma omp barrier
             if (thread_id == 0)
                 gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         }
@@ -299,10 +299,10 @@ int main(int argc, char* argv[])
         {
             if (thread_id == 0) 
                 gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-#pragma barrier
+#pragma omp barrier
             if (thread_id < 4)
                 alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, 4, reqs);
-#pragma barrier
+#pragma omp barrier
             if (thread_id == 0)
                 gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         }
@@ -315,10 +315,10 @@ int main(int argc, char* argv[])
         {   
             if (thread_id == 0) 
                 gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-#pragma barrier
+#pragma omp barrier
             if (thread_id < 8)
                 alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, 8, reqs);
-#pragma barrier
+#pragma omp barrier
             if (thread_id == 0)
                 gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         }
@@ -331,10 +331,10 @@ int main(int argc, char* argv[])
         {   
             if (thread_id == 0) 
                 gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-#pragma barrier
+#pragma omp barrier
             if (thread_id < 10)
                 alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, 10, reqs);
-#pragma barrier
+#pragma omp barrier
             if (thread_id == 0)
                 gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         }
