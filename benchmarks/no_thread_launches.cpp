@@ -117,7 +117,7 @@ int main(int argc, char* argv[])
             {
                 printf("C2C PMPI Error at IDX %d, rank %d\n", err, rank);
                 MPI_Abort(MPI_COMM_WORLD, 1);
-                return 1;
+                // return 1;
             }
             gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
         }
@@ -134,7 +134,7 @@ int main(int argc, char* argv[])
             {
                 printf("C2C MPIX Error at IDX %d, rank %d\n", err, rank);
                 MPI_Abort(MPI_COMM_WORLD, 1);
-                return 1;
+                // return 1;
             }
             gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
         }
@@ -157,7 +157,7 @@ int main(int argc, char* argv[])
             {   
                 printf("2Threads MPIX Error at IDX %d, rank %d\n", err, rank);
                 MPI_Abort(MPI_COMM_WORLD, 1);
-                return 1;
+                // return 1;
             }
             gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
         }
@@ -180,7 +180,7 @@ int main(int argc, char* argv[])
             {   
                 printf("4Threads MPIX Error at IDX %d, rank %d\n", err, rank);
                 MPI_Abort(MPI_COMM_WORLD, 1);
-                return 1;
+                // return 1;
             }
             gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
         }
@@ -203,7 +203,7 @@ int main(int argc, char* argv[])
             {   
                 printf("8Threads MPIX Error at IDX %d, rank %d\n", err, rank);
                 MPI_Abort(MPI_COMM_WORLD, 1);
-                return 1;
+                // return 1;
             }
             gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
         }
@@ -226,7 +226,7 @@ int main(int argc, char* argv[])
             {   
                 printf("10Threads MPIX Error at IDX %d, rank %d\n", err, rank);
                 MPI_Abort(MPI_COMM_WORLD, 1);
-                return 1;
+                // return 1;
             }
             gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
         }
