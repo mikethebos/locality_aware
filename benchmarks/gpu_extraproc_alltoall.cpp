@@ -8,25 +8,30 @@
 #include <set>
 #include <omp.h>
 
-void alltoall(double* send_data, double* recv_data, int n, int start, int stop, int step, MPI_Comm comm)
+void alltoall(double* send_data, double* recv_data, int n, int thread_id, int num_procs, int num_threads, MPI_Comm comm, MPI_Request *reqs)
 {
-    int rank, num_procs;
-    MPI_Comm_rank(comm, &rank);
-    MPI_Comm_size(comm, &num_procs);
-
-    int src, dest;
-    for (int i = start; i < stop; i += step)
-    {
-        dest = rank - i; 
-        if (dest < 0) dest += num_procs;
-        src = rank + i;
-        if (src >= num_procs)
-            src -= num_procs;
-        int send_pos = dest*n;
-        int recv_pos = src*n;
-        
-        MPI_Sendrecv(send_data + send_pos, n, MPI_DOUBLE, dest, 0, recv_data + recv_pos, n, MPI_DOUBLE, src, 0, comm, MPI_STATUS_IGNORE);
+    int n_msgs_per_thread = num_procs / num_threads;
+    int extra_msgs = num_procs % num_threads;
+    if (extra_msgs > thread_id) n_msgs_per_thread++;
+    
+    int request_idx = (2 * n_msgs_per_thread) * thread_id;
+    if (extra_msgs <= thread_id) request_idx += 2 * extra_msgs;
+    int start_offset = request_idx;
+    
+    int baseIdx = n_msgs_per_thread * thread_id;
+    if (extra_msgs <= thread_id) baseIdx += extra_msgs;
+    int count_th = 0;
+    for (int idx = baseIdx; idx < baseIdx + n_msgs_per_thread; ++idx)
+    {        
+        MPI_Isend(&(send_data[idx * n]), n, MPI_DOUBLE, idx, 77, comm, &(reqs[request_idx]));
+        ++request_idx;
+        ++count_th;
+        MPI_Irecv(&(recv_data[idx * n]), n, MPI_DOUBLE, idx, 77, comm, &(reqs[request_idx]));
+        ++request_idx;
+        ++count_th;
     }
+    
+    MPI_Waitall(count_th, &(reqs[start_offset]), MPI_STATUSES_IGNORE);
 }
 
 int compare(std::vector<double>& std_alltoall, std::vector<double>& new_alltoall, int size)
@@ -130,6 +135,8 @@ int main(int argc, char* argv[])
     {
         MPI_Win_shared_query(recv_win, 0, &remote_win_r, &disp_unit_r, &recv_data_shared);
     }
+    
+    MPI_Request *reqs = (MPI_Request *)malloc(master_count * sizeof(MPI_Request));
 
     for (int i = 0; i < max_i; i++)
     {
@@ -169,7 +176,7 @@ int main(int argc, char* argv[])
         if (gpu_rank == 0)
         {
             gpuMemcpy(send_data_h, send_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
-            alltoall(send_data_h, recv_data_h, s, 0, master_count, 1, all_masters_comm);
+            alltoall(send_data_h, recv_data_h, s, 0, master_count, 1, all_masters_comm, reqs);
             gpuMemcpy(recv_data_d, recv_data_h, s*master_count*sizeof(double), gpuMemcpyHostToDevice);
             gpuMemcpy(new_alltoall.data(), recv_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
             int err = compare(std_alltoall, new_alltoall, s*master_count);
@@ -192,7 +199,7 @@ int main(int argc, char* argv[])
         MPI_Win_sync(send_win);
         MPI_Barrier(gpu_comm);
         MPI_Win_lock_all(MPI_MODE_NOCHECK, recv_win);
-        alltoall(send_data_shared, recv_data_shared, s, gpu_rank, master_count, ranks_per_gpu, one_per_gpu_comm);
+        alltoall(send_data_shared, recv_data_shared, s, gpu_rank, master_count, ranks_per_gpu, one_per_gpu_comm, reqs);
         MPI_Win_sync(recv_win);
         MPI_Win_unlock_all(send_win);
         MPI_Barrier(gpu_comm); // needed
@@ -252,7 +259,7 @@ int main(int argc, char* argv[])
             if (gpu_rank == 0)
             {
                 gpuMemcpy(send_data_h, send_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
-                alltoall(send_data_h, recv_data_h, s, 0, master_count, 1, all_masters_comm);
+                alltoall(send_data_h, recv_data_h, s, 0, master_count, 1, all_masters_comm, reqs);
                 gpuMemcpy(recv_data_d, recv_data_h, s*master_count*sizeof(double), gpuMemcpyHostToDevice);
             }
         }
@@ -273,7 +280,7 @@ int main(int argc, char* argv[])
             MPI_Win_sync(send_win);
             MPI_Barrier(gpu_comm);
             MPI_Win_lock_all(MPI_MODE_NOCHECK, recv_win);
-            alltoall(send_data_shared, recv_data_shared, s, gpu_rank, master_count, ranks_per_gpu, one_per_gpu_comm);
+            alltoall(send_data_shared, recv_data_shared, s, gpu_rank, master_count, ranks_per_gpu, one_per_gpu_comm, reqs);
             MPI_Win_sync(recv_win);
             MPI_Win_unlock_all(send_win);
             MPI_Barrier(gpu_comm); // needed
@@ -287,6 +294,7 @@ int main(int argc, char* argv[])
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0) printf("%d Processes Pairwise Time %e\n", ranks_per_gpu, t0);
     }
+    free((void *)reqs);
     MPI_Win_free(&send_win);
     MPI_Win_free(&recv_win);
 

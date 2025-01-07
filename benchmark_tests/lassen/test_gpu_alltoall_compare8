@@ -14,7 +14,7 @@ cd $HOME/locality_aware-mikethebos/build/benchmarks
 
 export OMP_NUM_THREADS=1
 echo "Running Unthreaded Alltoall Test:"
-jsrun -n8 -r1 -a4 -c4 -g4 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_alltoall
+jsrun -n8 -r1 -a4 -c4 -g4 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_alltoall_quick
 
 export MV2_USE_ALIGNED_ALLOC=1
 
