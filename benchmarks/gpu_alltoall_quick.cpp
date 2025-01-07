@@ -68,7 +68,7 @@ int main(int argc, char* argv[])
     MPIX_Comm_init(&xcomm, MPI_COMM_WORLD);
     int local_rank;
     MPI_Comm_rank(xcomm->local_comm, &local_rank);
-    gpuSetDevice(local_rank);
+    // gpuSetDevice(local_rank);
 
     double* send_data_d;
     double* recv_data_d;

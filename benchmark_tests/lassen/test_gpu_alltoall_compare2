@@ -14,17 +14,17 @@ cd $HOME/locality_aware-mikethebos/build/benchmarks
 
 export OMP_NUM_THREADS=1
 echo "Running Unthreaded Alltoall Test:"
-jsrun -n2 -r1 -a4 -c4 -g4 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_alltoall_quick
+jsrun -n8 -r4 -a1 -c1 -g1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_alltoall_quick
 
 export MV2_USE_ALIGNED_ALLOC=1
 
 export OMP_NUM_THREADS=10
 echo "Running Threaded Alltoall Test with launches"
-jsrun -n2 -r1 -a4 -c40 -g4 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./thread_launches
+jsrun -n8 -r4 -a1 -c10 -g1 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./thread_launches
 
 export OMP_NUM_THREADS=10
 echo "Running Threaded Alltoall Test without launches"
-jsrun -n2 -r1 -a4 -c40 -g4 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./no_thread_launches
+jsrun -n8 -r4 -a1 -c10 -g1 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./no_thread_launches
 
 export OMP_NUM_THREADS=1
 
