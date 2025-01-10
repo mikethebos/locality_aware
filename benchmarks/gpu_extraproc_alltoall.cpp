@@ -220,6 +220,7 @@ int main(int argc, char* argv[])
         // Time Methods!
 
         // GPU-Aware PMPI Implementation
+        MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
         {
@@ -233,6 +234,7 @@ int main(int argc, char* argv[])
         if (rank == 0) printf("GPU-Aware PMPI Time %e\n", t0);
 
         // Copy-to-CPU PMPI Implementation
+        MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
         {
@@ -248,6 +250,7 @@ int main(int argc, char* argv[])
         if (rank == 0) printf("Copy-to-CPU PMPI Time %e\n", t0);
   
         // Copy-to-CPU Alltoall
+        MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
         {
@@ -264,6 +267,7 @@ int main(int argc, char* argv[])
   
 
         // Copy-to-CPU 2Thread Alltoall
+        MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
         {
