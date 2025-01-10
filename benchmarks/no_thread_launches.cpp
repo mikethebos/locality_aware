@@ -238,8 +238,8 @@ int main(int argc, char* argv[])
             }
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
-        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("GPU-Aware PMPI Time %e\n", t0);
+        if (thread_id == 0) MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0 && thread_id == 0) printf("GPU-Aware PMPI Time %e\n", t0);
 
         // Copy-to-CPU PMPI Implementation
         t0 = MPI_Wtime();
@@ -253,8 +253,8 @@ int main(int argc, char* argv[])
             }
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
-        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("Copy-to-CPU PMPI Time %e\n", t0);
+        if (thread_id == 0) MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0 && thread_id == 0) printf("Copy-to-CPU PMPI Time %e\n", t0);
   
         // Copy-to-CPU Alltoall
         t0 = MPI_Wtime();
@@ -268,8 +268,8 @@ int main(int argc, char* argv[])
             }
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
-        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("Copy-to-CPU Nonblocking Time %e\n", t0);
+        if (thread_id == 0) MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0 && thread_id == 0) printf("Copy-to-CPU Nonblocking Time %e\n", t0);
 
         // Copy-to-CPU 2Thread Alltoall
         t0 = MPI_Wtime();
@@ -285,8 +285,8 @@ int main(int argc, char* argv[])
                 gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
-        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("2 Threads Nonblocking Time %e\n", t0);
+        if (thread_id == 0) MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0 && thread_id == 0) printf("2 Threads Nonblocking Time %e\n", t0);
    
         // Copy-to-CPU 4Thread Alltoall
         t0 = MPI_Wtime();
@@ -302,8 +302,8 @@ int main(int argc, char* argv[])
                 gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
-        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("4 Threads Nonblocking Time %e\n", t0);
+        if (thread_id == 0) MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0 && thread_id == 0) printf("4 Threads Nonblocking Time %e\n", t0);
 
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
@@ -318,8 +318,8 @@ int main(int argc, char* argv[])
                 gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
-        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("8 Threads Nonblocking Time %e\n", t0);
+        if (thread_id == 0) MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0 && thread_id == 0) printf("8 Threads Nonblocking Time %e\n", t0);
 
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
@@ -334,8 +334,8 @@ int main(int argc, char* argv[])
                 gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
-        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("10 Threads Nonblocking Time %e\n", t0);
+        if (thread_id == 0) MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0 && thread_id == 0) printf("10 Threads Nonblocking Time %e\n", t0);
     }
 }
     // free((void *)reqs);
