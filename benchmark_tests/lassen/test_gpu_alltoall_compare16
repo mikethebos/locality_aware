@@ -18,13 +18,37 @@ jsrun -n64 -r4 -a1 -c1 -g1 -M "-gpu" --latency_priority=gpu-cpu --launch_distrib
 
 export MV2_USE_ALIGNED_ALLOC=1
 
-export OMP_NUM_THREADS=10
-echo "Running Threaded Alltoall Test with launches"
-jsrun -n64 -r4 -a1 -c10 -g1 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./thread_launches
+export OMP_NUM_THREADS=2
+echo "Running Threaded Alltoall Test with launches, 2 threads"
+jsrun -n64 -r4 -a1 -c2 -g1 -bpacked:2 -dpacked -EOMP_NUM_THREADS=2 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./thread_launches 2
+
+export OMP_NUM_THREADS=2
+echo "Running Threaded Alltoall Test without launches, 2 threads"
+jsrun -n64 -r4 -a1 -c2 -g1 -bpacked:2 -dpacked -EOMP_NUM_THREADS=2 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./no_thread_launches 2
+
+export OMP_NUM_THREADS=4
+echo "Running Threaded Alltoall Test with launches, 4 threads"
+jsrun -n64 -r4 -a1 -c4 -g1 -bpacked:4 -dpacked -EOMP_NUM_THREADS=4 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./thread_launches 4
+
+export OMP_NUM_THREADS=4
+echo "Running Threaded Alltoall Test without launches, 4 threads"
+jsrun -n64 -r4 -a1 -c4 -g1 -bpacked:4 -dpacked -EOMP_NUM_THREADS=4 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./no_thread_launches 4
+
+export OMP_NUM_THREADS=8
+echo "Running Threaded Alltoall Test with launches, 8 threads"
+jsrun -n64 -r4 -a1 -c8 -g1 -bpacked:8 -dpacked -EOMP_NUM_THREADS=8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./thread_launches 8
+
+export OMP_NUM_THREADS=8
+echo "Running Threaded Alltoall Test without launches, 8 threads"
+jsrun -n64 -r4 -a1 -c8 -g1 -bpacked:8 -dpacked -EOMP_NUM_THREADS=8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./no_thread_launches 8
 
 export OMP_NUM_THREADS=10
-echo "Running Threaded Alltoall Test without launches"
-jsrun -n64 -r4 -a1 -c10 -g1 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./no_thread_launches
+echo "Running Threaded Alltoall Test with launches, 10 threads"
+jsrun -n64 -r4 -a1 -c10 -g1 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./thread_launches 10
+
+export OMP_NUM_THREADS=10
+echo "Running Threaded Alltoall Test without launches, 10 threads"
+jsrun -n64 -r4 -a1 -c10 -g1 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./no_thread_launches 10
 
 export OMP_NUM_THREADS=1
 
