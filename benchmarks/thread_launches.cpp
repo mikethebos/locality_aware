@@ -79,6 +79,8 @@ int main(int argc, char* argv[])
     
     // MPI_Request *reqs = (MPI_Request *)malloc(2 * num_procs * sizeof(MPI_Request));
 
+    int arg_nt = atoi(argv[1]);
+
     for (int i = 0; i < max_i; i++)
     {
         int s = pow(2, i);
@@ -132,9 +134,9 @@ int main(int argc, char* argv[])
         }
         gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
 
-        // Copy-to-CPU 2Thread Alltoall
+        // Copy-to-CPU 10Thread Alltoall
         gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-        #pragma omp parallel num_threads(2)
+        #pragma omp parallel num_threads(arg_nt)
         {
             int thread_id = omp_get_thread_num();
             int num_threads = omp_get_num_threads();
@@ -145,64 +147,7 @@ int main(int argc, char* argv[])
         err = compare(std_alltoall, new_alltoall, s*num_procs);
         if (err >= 0)
         {   
-            printf("2Threads MPIX Error at IDX %d, rank %d\n", err, rank);
-            MPI_Abort(MPI_COMM_WORLD, 1);
-            return 1;
-        }
-        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
-   
-       // Copy-to-CPU 4Thread Alltoall
-        gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-        #pragma omp parallel num_threads(4)
-        {
-            int thread_id = omp_get_thread_num();
-            int num_threads = omp_get_num_threads();
-            alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, num_threads);
-        }
-        gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
-        gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-        err = compare(std_alltoall, new_alltoall, s*num_procs);
-        if (err >= 0)
-        {   
-            printf("4Threads MPIX Error at IDX %d, rank %d\n", err, rank);
-            MPI_Abort(MPI_COMM_WORLD, 1);
-            return 1;
-        }
-        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
-        
-       // Copy-to-CPU 8Thread Alltoall
-        gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-        #pragma omp parallel num_threads(8)
-        {
-            int thread_id = omp_get_thread_num();
-            int num_threads = omp_get_num_threads();
-            alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, num_threads);
-        }
-        gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
-        gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-        err = compare(std_alltoall, new_alltoall, s*num_procs);
-        if (err >= 0)
-        {   
-            printf("8Threads MPIX Error at IDX %d, rank %d\n", err, rank);
-            MPI_Abort(MPI_COMM_WORLD, 1);
-            return 1;
-        }
-        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
-
-       // Copy-to-CPU 10Thread Alltoall
-        gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-        #pragma omp parallel num_threads(10)
-        {
-            int thread_id = omp_get_thread_num();
-            int num_threads = omp_get_num_threads();
-            alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, num_threads);
-        }
-        gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
-        gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-        err = compare(std_alltoall, new_alltoall, s*num_procs);
-        if (err >= 0)
-        {   
-            printf("10Threads MPIX Error at IDX %d, rank %d\n", err, rank);
+            printf("%dThreads MPIX Error at IDX %d, rank %d\n", arg_nt, err, rank);
             MPI_Abort(MPI_COMM_WORLD, 1);
             return 1;
         }
@@ -250,49 +195,15 @@ int main(int argc, char* argv[])
         {
             alltoall(send_data_d, recv_data_d, s, 0, num_procs, 1);
         }
-	tfinal = (MPI_Wtime() - t0) / n_iter;
+    	tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0) printf("GPU-Aware Pairwise Time %e\n", t0);  
 
-        // Copy-to-CPU 2Thread Alltoall
-        t0 = MPI_Wtime();
-        for (int i = 0; i < n_iter; i++)
-        {
-            gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-            #pragma omp parallel num_threads(2)
-            {
-                int thread_id = omp_get_thread_num();
-                int num_threads = omp_get_num_threads();
-                alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, num_threads);
-            }
-            gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
-        }
-        tfinal = (MPI_Wtime() - t0) / n_iter;
-        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("2 Threads Pairwise Time %e\n", t0);
-   
-        // Copy-to-CPU 4Thread Alltoall
-        t0 = MPI_Wtime();
-        for (int i = 0; i < n_iter; i++)
-        {
-            gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-            #pragma omp parallel num_threads(4)
-            {
-                int thread_id = omp_get_thread_num();
-                int num_threads = omp_get_num_threads();
-                alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, num_threads);
-            }
-            gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
-        }
-        tfinal = (MPI_Wtime() - t0) / n_iter;
-        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("4 Threads Pairwise Time %e\n", t0);
-
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
         {   
             gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-            #pragma omp parallel num_threads(8)
+            #pragma omp parallel num_threads(arg_nt)
             {
                 int thread_id = omp_get_thread_num();
                 int num_threads = omp_get_num_threads();
@@ -302,23 +213,7 @@ int main(int argc, char* argv[])
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("8 Threads Pairwise Time %e\n", t0);
-
-        t0 = MPI_Wtime();
-        for (int i = 0; i < n_iter; i++)
-        {   
-            gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
-            #pragma omp parallel num_threads(10)
-            {
-                int thread_id = omp_get_thread_num();
-                int num_threads = omp_get_num_threads();
-                alltoall(send_data_h, recv_data_h, s, thread_id, num_procs, num_threads);
-            }
-            gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
-        }
-        tfinal = (MPI_Wtime() - t0) / n_iter;
-        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("10 Threads Pairwise Time %e\n", t0);
+        if (rank == 0) printf("%d Threads Pairwise Time %e\n", arg_nt, t0);
     }
     // free((void *)reqs);
     
