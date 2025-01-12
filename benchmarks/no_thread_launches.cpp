@@ -162,8 +162,9 @@ int main(int argc, char* argv[])
         // Time Methods!
 
         // GPU-Aware PMPI Implementation
-        MPI_Barrier(MPI_COMM_WORLD);
-        t0 = MPI_Wtime();
+        if (thread_id == 0) MPI_Barrier(MPI_COMM_WORLD);
+#pragma omp barrier
+        if (thread_id == 0) t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
         {
             if (thread_id == 0)
@@ -171,13 +172,14 @@ int main(int argc, char* argv[])
                 PMPI_Alltoall(send_data_d, s, MPI_DOUBLE, recv_data_d, s, MPI_DOUBLE, MPI_COMM_WORLD);
             }
         }
-        tfinal = (MPI_Wtime() - t0) / n_iter;
+        if (thread_id == 0) tfinal = (MPI_Wtime() - t0) / n_iter;
         if (thread_id == 0) MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0 && thread_id == 0) printf("GPU-Aware PMPI Time %e\n", t0);
 
         // Copy-to-CPU PMPI Implementation
-        MPI_Barrier(MPI_COMM_WORLD);
-        t0 = MPI_Wtime();
+        if (thread_id == 0) MPI_Barrier(MPI_COMM_WORLD);
+#pragma omp barrier
+        if (thread_id == 0) t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
         {
             if (thread_id == 0)
@@ -187,13 +189,14 @@ int main(int argc, char* argv[])
                 gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
             }
         }
-        tfinal = (MPI_Wtime() - t0) / n_iter;
+        if (thread_id == 0) tfinal = (MPI_Wtime() - t0) / n_iter;
         if (thread_id == 0) MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0 && thread_id == 0) printf("Copy-to-CPU PMPI Time %e\n", t0);
   
         // Copy-to-CPU Alltoall
-        MPI_Barrier(MPI_COMM_WORLD);
-        t0 = MPI_Wtime();
+        if (thread_id == 0) MPI_Barrier(MPI_COMM_WORLD);
+#pragma omp barrier
+        if (thread_id == 0) t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
         {
             if (thread_id == 0)
@@ -203,12 +206,14 @@ int main(int argc, char* argv[])
                 gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
             }
         }
-        tfinal = (MPI_Wtime() - t0) / n_iter;
+        if (thread_id == 0) tfinal = (MPI_Wtime() - t0) / n_iter;
         if (thread_id == 0) MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0 && thread_id == 0) printf("Copy-to-CPU Pairwise Time %e\n", t0);
 
-        MPI_Barrier(MPI_COMM_WORLD);
-        t0 = MPI_Wtime();
+        if (thread_id == 0) MPI_Barrier(MPI_COMM_WORLD);
+        if (thread_id == 0) tfinal = -1.0;
+#pragma omp barrier
+        double t0_thread = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
         {   
             if (thread_id == 0) 
@@ -220,7 +225,15 @@ int main(int argc, char* argv[])
             if (thread_id == 0)
                 gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         }
-        tfinal = (MPI_Wtime() - t0) / n_iter;
+        double tfinal_thread = (MPI_Wtime() - t0_thread) / n_iter;
+#pragma omp critical
+{
+        if (tfinal_thread > tfinal)
+        {
+            tfinal = tfinal_thread;
+        }
+}
+#pragma omp barrier
         if (thread_id == 0) MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0 && thread_id == 0) printf("%d Threads Pairwise Time %e\n", num_threads, t0);
     }
