@@ -29,6 +29,33 @@ void alltoall(double* send_data, double* recv_data, int n, int start, int stop, 
     }
 }
 
+void alltoall_nonblocking_bench(double* send_data, double* recv_data, int n, int start, int stop, int step, MPI_Request *reqs)
+{
+    int rank, num_procs;
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    MPI_Comm_size(MPI_COMM_WORLD, &num_procs);
+
+    int src, dest;
+    int count = 0;
+    for (int i = start; i < stop; i += step)
+    {
+        dest = rank - i; 
+        if (dest < 0) dest += num_procs;
+        src = rank + i;
+        if (src >= num_procs)
+            src -= num_procs;
+        int send_pos = dest*n;
+        int recv_pos = src*n;
+        
+        MPI_Isend(send_data + send_pos, n, MPI_DOUBLE, dest, 0, MPI_COMM_WORLD, &(reqs[count]));
+        count++;
+        MPI_Irecv(recv_data + recv_pos, n, MPI_DOUBLE, src, 0, MPI_COMM_WORLD, &(reqs[count]));
+        count++;
+    }
+    
+    MPI_Waitall(count, reqs, MPI_STATUSES_IGNORE);
+}
+
 int compare(std::vector<double>& std_alltoall, std::vector<double>& new_alltoall, int size)
 {
     for (int i = 0; i < size; i++)
@@ -77,9 +104,9 @@ int main(int argc, char* argv[])
     gpuMallocHost((void**)(&send_data_h), max_s*num_procs*sizeof(double));
     gpuMallocHost((void**)(&recv_data_h), max_s*num_procs*sizeof(double));
     
-    // MPI_Request *reqs = (MPI_Request *)malloc(2 * num_procs * sizeof(MPI_Request));
-
     int arg_nt = atoi(argv[1]);
+
+    MPI_Request *reqs = (MPI_Request *)malloc(arg_nt * 2 * num_procs * sizeof(MPI_Request));
 
     for (int i = 0; i < max_i; i++)
     {
@@ -88,6 +115,7 @@ int main(int argc, char* argv[])
 
         int n_iter = max_n_iter;
         if (s > 4096) n_iter /= 10;
+        else n_iter *= 10;
 
         // GPU-Aware PMPI Implementation
         PMPI_Alltoall(send_data_d, s, MPI_DOUBLE, recv_data_d, s, MPI_DOUBLE, MPI_COMM_WORLD);
@@ -148,6 +176,51 @@ int main(int argc, char* argv[])
         if (err >= 0)
         {   
             printf("%dThreads MPIX Error at IDX %d, rank %d\n", arg_nt, err, rank);
+            MPI_Abort(MPI_COMM_WORLD, 1);
+            return 1;
+        }
+        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
+        
+        // Copy-to-CPU Alltoall
+        gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+        alltoall_nonblocking_bench(send_data_h, recv_data_h, s, 0, num_procs, 1, reqs);
+        gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
+        gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+        err = compare(std_alltoall, new_alltoall, s*num_procs);
+        if (err >= 0)
+        {
+            printf("C2C MPIX Nonblocking Error at IDX %d, rank %d\n", err, rank);
+            MPI_Abort(MPI_COMM_WORLD, 1);
+            return 1;
+        }
+        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
+
+        // GPU-Aware Alltoall
+        alltoall_nonblocking_bench(send_data_d, recv_data_d, s, 0, num_procs, 1, reqs);
+        gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+        err = compare(std_alltoall, new_alltoall, s*num_procs);
+        if (err >= 0)
+        {
+            printf("GPU MPIX Nonblocking Error at IDX %d, rank %d\n", err, rank);
+            MPI_Abort(MPI_COMM_WORLD, 1);
+            return 1;
+        }
+        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
+
+        // Copy-to-CPU 10Thread Alltoall
+        gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+        #pragma omp parallel num_threads(arg_nt)
+        {
+            int thread_id = omp_get_thread_num();
+            int num_threads = omp_get_num_threads();
+            alltoall_nonblocking_bench(send_data_h, recv_data_h, s, thread_id, num_procs, num_threads, &(reqs[thread_id * 2 * num_procs]));
+        }
+        gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
+        gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+        err = compare(std_alltoall, new_alltoall, s*num_procs);
+        if (err >= 0)
+        {   
+            printf("%dThreads MPIX Nonblocking Error at IDX %d, rank %d\n", arg_nt, err, rank);
             MPI_Abort(MPI_COMM_WORLD, 1);
             return 1;
         }
@@ -219,8 +292,49 @@ int main(int argc, char* argv[])
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0) printf("%d Threads Pairwise Time %e\n", arg_nt, t0);
+        
+        // Copy-to-CPU Alltoall
+        MPI_Barrier(MPI_COMM_WORLD);
+        t0 = MPI_Wtime();
+        for (int i = 0; i < n_iter; i++)
+        {
+            gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+            alltoall_nonblocking_bench(send_data_h, recv_data_h, s, 0, num_procs, 1, reqs);
+            gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
+        }
+        tfinal = (MPI_Wtime() - t0) / n_iter;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0) printf("Copy-to-CPU Nonblocking Time %e\n", t0);
+
+        // GPU-Aware Alltoall
+        MPI_Barrier(MPI_COMM_WORLD);
+        t0 = MPI_Wtime();
+        for (int i = 0; i < n_iter; i++)
+        {
+            alltoall_nonblocking_bench(send_data_d, recv_data_d, s, 0, num_procs, 1, reqs);
+        }
+    	tfinal = (MPI_Wtime() - t0) / n_iter;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0) printf("GPU-Aware Nonblocking Time %e\n", t0);  
+
+        MPI_Barrier(MPI_COMM_WORLD);
+        t0 = MPI_Wtime();
+        for (int i = 0; i < n_iter; i++)
+        {   
+            gpuMemcpy(send_data_h, send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+            #pragma omp parallel num_threads(arg_nt)
+            {
+                int thread_id = omp_get_thread_num();
+                int num_threads = omp_get_num_threads();
+                alltoall_nonblocking_bench(send_data_h, recv_data_h, s, thread_id, num_procs, num_threads, &(reqs[thread_id * 2 * num_procs]));
+            }
+            gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
+        }
+        tfinal = (MPI_Wtime() - t0) / n_iter;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0) printf("%d Threads Nonblocking Time %e\n", arg_nt, t0);
     }
-    // free((void *)reqs);
+    free((void *)reqs);
     
     MPIX_Comm_free(xcomm);
 

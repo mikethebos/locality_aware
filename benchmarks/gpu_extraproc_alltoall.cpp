@@ -29,6 +29,33 @@ void alltoall(double* send_data, double* recv_data, int n, int start, int stop, 
     }
 }
 
+void alltoall_nonblocking_bench(double* send_data, double* recv_data, int n, int start, int stop, int step, MPI_Comm comm, MPI_Request *reqs)
+{
+    int rank, num_procs;
+    MPI_Comm_rank(comm, &rank);
+    MPI_Comm_size(comm, &num_procs);
+
+    int src, dest;
+    int count = 0;
+    for (int i = start; i < stop; i += step)
+    {
+        dest = rank - i; 
+        if (dest < 0) dest += num_procs;
+        src = rank + i;
+        if (src >= num_procs)
+            src -= num_procs;
+        int send_pos = dest*n;
+        int recv_pos = src*n;
+        
+        MPI_Isend(send_data + send_pos, n, MPI_DOUBLE, dest, 0, comm, &(reqs[count]));
+        count++;
+        MPI_Irecv(recv_data + recv_pos, n, MPI_DOUBLE, src, 0, comm, &(reqs[count]));
+        count++;
+    }
+    
+    MPI_Waitall(count, reqs, MPI_STATUSES_IGNORE);
+}
+
 int compare(std::vector<double>& std_alltoall, std::vector<double>& new_alltoall, int size)
 {
     for (int i = 0; i < size; i++)
@@ -131,7 +158,7 @@ int main(int argc, char* argv[])
         MPI_Win_shared_query(recv_win, 0, &remote_win_r, &disp_unit_r, &recv_data_shared);
     }
     
-    // MPI_Request *reqs = (MPI_Request *)malloc(2 * master_count * sizeof(MPI_Request));
+    MPI_Request *reqs = (MPI_Request *)malloc(2 * master_count * sizeof(MPI_Request));
 
     for (int i = 0; i < max_i; i++)
     {
@@ -140,6 +167,7 @@ int main(int argc, char* argv[])
 
         int n_iter = max_n_iter;
         if (s > 4096) n_iter /= 10;
+        else n_iter *= 10;
 
         // GPU-Aware PMPI Implementation
         if (gpu_rank == 0)
@@ -160,6 +188,22 @@ int main(int argc, char* argv[])
             if (err >= 0)
             {
                 printf("C2C PMPI Error at IDX %d, rank %d\n", err, rank);
+                fflush(stdout);
+                MPI_Abort(MPI_COMM_WORLD, 1);
+                return 1;
+            }
+            gpuMemset(recv_data_d, 0, s*master_count*sizeof(double));
+        }
+        
+        // GPU-Aware Alltoall
+        if (gpu_rank == 0)
+        {
+            alltoall(send_data_d, recv_data_d, s, 0, master_count, 1, all_masters_comm);
+            gpuMemcpy(new_alltoall.data(), recv_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
+            int err = compare(std_alltoall, new_alltoall, s*master_count);
+            if (err >= 0)
+            {
+                printf("GPU Aware MPIX Pairwise Error at IDX %d, rank %d\n", err, rank);
                 fflush(stdout);
                 MPI_Abort(MPI_COMM_WORLD, 1);
                 return 1;
@@ -216,6 +260,72 @@ int main(int argc, char* argv[])
             }
             gpuMemset(recv_data_d, 0, s*master_count*sizeof(double));
         }
+        
+        // GPU-Aware Alltoall
+        if (gpu_rank == 0)
+        {
+            alltoall_nonblocking_bench(send_data_d, recv_data_d, s, 0, master_count, 1, all_masters_comm, reqs);
+            gpuMemcpy(new_alltoall.data(), recv_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
+            int err = compare(std_alltoall, new_alltoall, s*master_count);
+            if (err >= 0)
+            {
+                printf("GPU Aware MPIX Nonblocking Error at IDX %d, rank %d\n", err, rank);
+                fflush(stdout);
+                MPI_Abort(MPI_COMM_WORLD, 1);
+                return 1;
+            }
+            gpuMemset(recv_data_d, 0, s*master_count*sizeof(double));
+        }
+
+        // Copy-to-CPU Alltoall
+        if (gpu_rank == 0)
+        {
+            gpuMemcpy(send_data_h, send_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
+            alltoall_nonblocking_bench(send_data_h, recv_data_h, s, 0, master_count, 1, all_masters_comm, reqs);
+            gpuMemcpy(recv_data_d, recv_data_h, s*master_count*sizeof(double), gpuMemcpyHostToDevice);
+            gpuMemcpy(new_alltoall.data(), recv_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
+            int err = compare(std_alltoall, new_alltoall, s*master_count);
+            if (err >= 0)
+            {
+                printf("C2C MPIX Nonblocking Error at IDX %d, rank %d\n", err, rank);
+                fflush(stdout);
+                MPI_Abort(MPI_COMM_WORLD, 1);
+                return 1;
+            }
+            gpuMemset(recv_data_d, 0, s*master_count*sizeof(double));
+        }
+
+        // Copy-to-CPU 2Thread Alltoall
+        MPI_Win_lock_all(MPI_MODE_NOCHECK, send_win);
+        if (gpu_rank == 0)
+        {
+            gpuMemcpy(send_data_shared, send_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
+        }
+        MPI_Win_sync(send_win);
+        MPI_Barrier(gpu_comm);
+        MPI_Win_lock_all(MPI_MODE_NOCHECK, recv_win);
+        alltoall_nonblocking_bench(send_data_shared, recv_data_shared, s, gpu_rank, master_count, ranks_per_gpu, one_per_gpu_comm, reqs);
+        MPI_Win_sync(recv_win);
+        MPI_Win_unlock_all(send_win);
+        MPI_Barrier(gpu_comm); // needed
+        if (gpu_rank == 0)
+        {
+            cudaMemcpy(recv_data_d, recv_data_shared, s*master_count*sizeof(double), cudaMemcpyHostToDevice);
+        }
+        MPI_Win_unlock_all(recv_win);
+        if (gpu_rank == 0)
+        {
+            gpuMemcpy(new_alltoall.data(), recv_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
+            int err = compare(std_alltoall, new_alltoall, s*master_count);
+            if (err >= 0)
+            {
+                printf("C2C %d Processes MPIX Nonblocking Error at IDX %d, rank %d\n", ranks_per_gpu, err, rank);
+                fflush(stdout);
+                MPI_Abort(MPI_COMM_WORLD, 1);
+                return 1;
+            }
+            gpuMemset(recv_data_d, 0, s*master_count*sizeof(double));
+        }
 
         // Time Methods!
 
@@ -249,6 +359,20 @@ int main(int argc, char* argv[])
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0) printf("Copy-to-CPU PMPI Time %e\n", t0);
   
+        // GPU-Aware Alltoall
+        MPI_Barrier(MPI_COMM_WORLD);
+        t0 = MPI_Wtime();
+        for (int i = 0; i < n_iter; i++)
+        {
+            if (gpu_rank == 0)
+            {
+                alltoall(send_data_d, recv_data_d, s, 0, master_count, 1, all_masters_comm);
+            }
+        }
+        tfinal = (MPI_Wtime() - t0) / n_iter;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0) printf("GPU-Aware Pairwise Time %e\n", t0);
+        
         // Copy-to-CPU Alltoall
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
@@ -264,7 +388,6 @@ int main(int argc, char* argv[])
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0) printf("Copy-to-CPU Pairwise Time %e\n", t0);
-  
 
         // Copy-to-CPU 2Thread Alltoall
         MPI_Barrier(MPI_COMM_WORLD);
@@ -292,8 +415,65 @@ int main(int argc, char* argv[])
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0) printf("%d Processes Pairwise Time %e\n", ranks_per_gpu, t0);
+        
+        // GPU-Aware Alltoall
+        MPI_Barrier(MPI_COMM_WORLD);
+        t0 = MPI_Wtime();
+        for (int i = 0; i < n_iter; i++)
+        {
+            if (gpu_rank == 0)
+            {
+                alltoall_nonblocking_bench(send_data_d, recv_data_d, s, 0, master_count, 1, all_masters_comm, reqs);
+            }
+        }
+        tfinal = (MPI_Wtime() - t0) / n_iter;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0) printf("GPU-Aware Nonblocking Time %e\n", t0);
+        
+        // Copy-to-CPU Alltoall
+        MPI_Barrier(MPI_COMM_WORLD);
+        t0 = MPI_Wtime();
+        for (int i = 0; i < n_iter; i++)
+        {
+            if (gpu_rank == 0)
+            {
+                gpuMemcpy(send_data_h, send_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
+                alltoall_nonblocking_bench(send_data_h, recv_data_h, s, 0, master_count, 1, all_masters_comm, reqs);
+                gpuMemcpy(recv_data_d, recv_data_h, s*master_count*sizeof(double), gpuMemcpyHostToDevice);
+            }
+        }
+        tfinal = (MPI_Wtime() - t0) / n_iter;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0) printf("Copy-to-CPU Nonblocking Time %e\n", t0);
+
+        // Copy-to-CPU 2Thread Alltoall
+        MPI_Barrier(MPI_COMM_WORLD);
+        t0 = MPI_Wtime();
+        for (int i = 0; i < n_iter; i++)
+        {
+            MPI_Win_lock_all(MPI_MODE_NOCHECK, send_win);
+            if (gpu_rank == 0)
+            {
+                gpuMemcpy(send_data_shared, send_data_d, s*master_count*sizeof(double), gpuMemcpyDeviceToHost);
+            }
+            MPI_Win_sync(send_win);
+            MPI_Barrier(gpu_comm);
+            MPI_Win_lock_all(MPI_MODE_NOCHECK, recv_win);
+            alltoall_nonblocking_bench(send_data_shared, recv_data_shared, s, gpu_rank, master_count, ranks_per_gpu, one_per_gpu_comm, reqs);
+            MPI_Win_sync(recv_win);
+            MPI_Win_unlock_all(send_win);
+            MPI_Barrier(gpu_comm); // needed
+            if (gpu_rank == 0)
+            {
+                cudaMemcpy(recv_data_d, recv_data_shared, s*master_count*sizeof(double), cudaMemcpyHostToDevice);
+            }
+            MPI_Win_unlock_all(recv_win);
+        }
+        tfinal = (MPI_Wtime() - t0) / n_iter;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0) printf("%d Processes Nonblocking Time %e\n", ranks_per_gpu, t0);
     }
-    // free((void *)reqs);
+    free((void *)reqs);
     MPI_Win_free(&send_win);
     MPI_Win_free(&recv_win);
 
