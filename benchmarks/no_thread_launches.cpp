@@ -325,7 +325,7 @@ int main(int argc, char* argv[])
         if (thread_id == 0) MPI_Barrier(MPI_COMM_WORLD);
         if (thread_id == 0) tfinal = -1.0;
 #pragma omp barrier
-        double t0_thread = MPI_Wtime();
+        t0_thread = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
         {   
             if (thread_id == 0) 
@@ -337,7 +337,7 @@ int main(int argc, char* argv[])
             if (thread_id == 0)
                 gpuMemcpy(recv_data_d, recv_data_h, s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
         }
-        double tfinal_thread = (MPI_Wtime() - t0_thread) / n_iter;
+        tfinal_thread = (MPI_Wtime() - t0_thread) / n_iter;
 #pragma omp critical
 {
         if (tfinal_thread > tfinal)
