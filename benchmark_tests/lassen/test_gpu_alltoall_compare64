@@ -50,16 +50,16 @@ export OMP_NUM_THREADS=10
 echo "Running Threaded Alltoall Test without launches, 10 threads"
 jsrun -n256 -r4 -a1 -c10 -g1 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./no_thread_launches 10
 
-export OMP_NUM_THREADS=1
+#export OMP_NUM_THREADS=1
 
-echo "Running Multiproc Alltoall Test with 2 procs:"
-jsrun -n64 -r1 -a8 -c8 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+#echo "Running Multiproc Alltoall Test with 2 procs:"
+#jsrun -n64 -r1 -a8 -c8 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
 
-echo "Running Multiproc Alltoall Test with 4 procs:"
-jsrun -n64 -r1 -a16 -c16 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+#echo "Running Multiproc Alltoall Test with 4 procs:"
+#jsrun -n64 -r1 -a16 -c16 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
 
-echo "Running Multiproc Alltoall Test with 8 procs:"
-jsrun -n64 -r1 -a32 -c32 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+#echo "Running Multiproc Alltoall Test with 8 procs:"
+#jsrun -n64 -r1 -a32 -c32 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
 
-echo "Running Multiproc Alltoall Test with 10 procs:"
-jsrun -n64 -r1 -a40 -c40 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+#echo "Running Multiproc Alltoall Test with 10 procs:"
+#jsrun -n64 -r1 -a40 -c40 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
