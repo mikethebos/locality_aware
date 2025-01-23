@@ -8,6 +8,257 @@
 #include <set>
 #include <omp.h>
 
+int neighbor_gpu_copy_cpu_threaded_start(MPIX_Request* request)
+{
+#ifdef GPU
+    int ret = 0;
+
+    cudaMemcpy(request->cpu_sendbuf, request->sendbuf, request->cpu_sendbuf_bytes, cudaMemcpyDeviceToHost);
+
+    // copy recvbuf in case of extra data
+    // needed if noncontiguous displs (or custom packing)
+    cudaMemcpy(request->cpu_recvbuf, request->recvbuf, request->cpu_recvbuf_bytes, cudaMemcpyDeviceToHost);
+
+    return ret;
+#endif
+}
+
+// no locality support
+int neighbor_gpu_copy_cpu_threaded_wait(MPIX_Request* request, MPI_Status* status)
+{    
+#ifdef GPU    
+    int ret = 0;
+    int n_msgs = request->sub_request->global_n_msgs;
+
+    if (n_msgs)
+    {
+    MPIX_Request *inner_request = request->sub_request;
+    const char* send_buffer = (const char*) request->cpu_sendbuf;
+    char* recv_buffer = (char*) request->cpu_recvbuf;
+    int nthreads = request->num_threads;
+    int n_msgs_s_per_thread = request->n_msgs_s_per_thread;
+    int extra_msgs_s = request->extra_msgs_s;
+    int n_msgs_r_per_thread = request->n_msgs_r_per_thread;
+    int extra_msgs_r = request->extra_msgs_r;
+    const int *sdispls = request->sdispls;
+    const int *rdispls = request->rdispls;
+    const int send_bytes = request->send_bytes;
+    const int recv_bytes = request->recv_bytes;
+    const int *sendcounts = request->sendcounts;
+    const int *recvcounts = request->recvcounts;
+    MPI_Datatype sendtype = request->sendtype;
+    MPI_Datatype recvtype = request->recvtype;
+    const int *destinations = request->destinations;
+    const int *sources = request->sources;
+    
+    int tag = 102944;
+    
+#pragma omp parallel reduction(+:ret)
+    {
+        int thread_id = omp_get_thread_num();
+        int thread_n_msgs_s = n_msgs_s_per_thread;
+        int thread_n_msgs_r = n_msgs_r_per_thread;
+        if (extra_msgs_s > thread_id)
+            thread_n_msgs_s++;
+        if (extra_msgs_r > thread_id)
+            thread_n_msgs_r++;
+            
+        int request_idx = (thread_n_msgs_s + thread_n_msgs_r) * thread_id;
+        if (extra_msgs_s <= thread_id)
+        {
+            request_idx += extra_msgs_s;
+        }
+        if (extra_msgs_r <= thread_id)
+        {
+            request_idx += extra_msgs_r;
+        }
+        
+        int start_offset = request_idx;
+        int count_th = 0;
+            
+        if (thread_n_msgs_s)
+        {
+            int baseIdx = thread_n_msgs_s * thread_id;
+            if (extra_msgs_s <= thread_id)
+            {
+                baseIdx += extra_msgs_s;
+            }
+            for (int idx = baseIdx; idx < baseIdx + thread_n_msgs_s; ++idx)
+            {
+                ret += MPI_Isend(&(send_buffer[sdispls[idx] * send_bytes]), 
+                        sendcounts[idx], 
+                        sendtype, 
+                        destinations[idx], 
+                        tag, 
+                        MPI_COMM_WORLD, 
+                        &(inner_request->global_requests[request_idx]));
+                ++request_idx;
+                ++count_th;
+            }
+        }
+        
+        if (thread_n_msgs_r)
+        {
+            int baseIdx = thread_n_msgs_r * thread_id;
+            if (extra_msgs_r <= thread_id)
+            {
+                baseIdx += extra_msgs_r;
+            }
+            for (int idx = baseIdx; idx < baseIdx + thread_n_msgs_r; ++idx)
+            {
+                ret += MPI_Irecv(&(recv_buffer[rdispls[idx] * recv_bytes]), 
+                        recvcounts[idx], 
+                        recvtype, 
+                        sources[idx], 
+                        tag, 
+                        MPI_COMM_WORLD, 
+                        &(inner_request->global_requests[request_idx]));
+                ++request_idx;
+                ++count_th;
+            }
+        }
+        
+        ret += MPI_Waitall(count_th, &(inner_request->global_requests[start_offset]), MPI_STATUSES_IGNORE);
+    }
+    }
+    // only copy recvbuf after wait
+    cudaMemcpy(request->recvbuf, request->cpu_recvbuf, request->cpu_recvbuf_bytes, cudaMemcpyHostToDevice);
+
+    return ret;
+#endif
+}
+
+void init_neighbor_gpu_copy_cpu_request_threaded(MPIX_Request** request_ptr, const void* sendbuf, int sendbuf_bytes,
+                                                                             void* recvbuf, int recvbuf_bytes, int num_threads,
+                                                                             int n_msgs_s_per_thread,
+                                                                             int n_msgs_r_per_thread,
+                                                                             int extra_msgs_s,
+                                                                             int extra_msgs_r,
+                                                                             const int *sdispls,
+                                                                             const int send_bytes,
+                                                                             MPI_Datatype sendtype,
+                                                                             const int *sendcounts,
+                                                                             const int *destinations,
+                                                                             const int *rdispls,
+                                                                             const int recv_bytes,
+                                                                             MPI_Datatype recvtype,
+                                                                             const int *recvcounts,
+                                                                             const int *sources)
+{
+    init_request(request_ptr);
+    MPIX_Request* request = *request_ptr;
+
+    request->start_function = (void*) neighbor_gpu_copy_cpu_threaded_start;
+    request->wait_function = (void*) neighbor_gpu_copy_cpu_threaded_wait;
+    
+    request->sendbuf = sendbuf;
+    request->recvbuf = recvbuf;
+    
+#ifdef GPU
+    request->cpu_sendbuf_bytes = sendbuf_bytes;
+    request->cpu_recvbuf_bytes = recvbuf_bytes;
+        
+    request->num_threads = num_threads;
+    request->n_msgs_s_per_thread = n_msgs_s_per_thread;
+    request->n_msgs_r_per_thread = n_msgs_r_per_thread;
+    request->extra_msgs_s = extra_msgs_s;
+    request->extra_msgs_r = extra_msgs_r;
+    request->sdispls = (int *) sdispls;
+    request->send_bytes = (int) send_bytes;
+    request->sendtype = sendtype;
+    request->sendcounts = (int *) sendcounts;
+    request->destinations = (int *) destinations;
+    request->rdispls = (int *) rdispls;
+    request->recv_bytes = (int) recv_bytes;
+    request->recvtype = recvtype;
+    request->recvcounts = (int *) recvcounts;
+    request->sources = (int *) sources;
+    
+    cudaMallocHost((void **)(&(request->cpu_sendbuf)), sendbuf_bytes);
+    cudaMallocHost((void **)(&(request->cpu_recvbuf)), recvbuf_bytes);
+#endif // free handled in MPIX_Request_free in persistent/persistent.c, must be cudaMallocHost
+}
+
+void set_sub_request_in_neighbor_gpu_copy_cpu_request(MPIX_Request* outer_request, MPIX_Request* inner_request)
+{
+#ifdef GPU
+    outer_request->sub_request = inner_request;
+#endif
+}
+
+void from_nbr_init(double *send_data, double *recv_data, int n, MPIX_Request **request_ptr)
+{
+    int rank, num_procs;
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    MPI_Comm_size(MPI_COMM_WORLD, &num_procs);
+    int outdegree = num_procs;
+    int indegree = num_procs;
+    
+    int *sdispls = (int *)malloc(num_procs * sizeof(int));
+    int *rdispls = (int *)malloc(num_procs * sizeof(int));
+    int *rcounts = (int *)malloc(num_procs * sizeof(int));
+    int *scounts = (int *)malloc(num_procs * sizeof(int));
+    int *sources = (int *)malloc(num_procs * sizeof(int));
+    int *destinations = (int *)malloc(num_procs * sizeof(int));
+    int d = 0;
+    for (int i = 0; i < num_procs; i++)
+    {
+        sdispls[i] = d;
+        rdispls[i] = d;
+        d += n;
+        scounts[i] = n;
+        rcounts[i] = n;
+        sources[i] = i;
+        destinations[i] = i;
+    }
+    
+    // no communication occuring here, so no need for openmp
+    int tag = 102944;
+    int n_msgs_s = outdegree;
+    int n_msgs_r = indegree;
+    int num_threads = omp_get_max_threads(); // assume max number of threads always launched
+
+    int n_msgs_s_per_thread = n_msgs_s / num_threads;
+    int n_msgs_r_per_thread = n_msgs_r / num_threads;
+    int extra_msgs_s = n_msgs_s % num_threads;
+    int extra_msgs_r = n_msgs_r % num_threads;
+        
+    MPIX_Request* inner_request;
+    init_neighbor_request(&inner_request);
+
+    inner_request->global_n_msgs = (num_threads * n_msgs_s_per_thread) + extra_msgs_s + (num_threads * n_msgs_r_per_thread) + extra_msgs_r;
+    allocate_requests(inner_request->global_n_msgs, &(inner_request->global_requests));
+    
+    MPIX_Request* outer_request;
+    init_neighbor_gpu_copy_cpu_request_threaded(&outer_request, send_data, n*num_procs*sizeof(double),
+                                                                recv_data, n*num_procs*sizeof(double), num_threads,
+                                                                n_msgs_s_per_thread,
+                                                                n_msgs_r_per_thread,
+                                                                extra_msgs_s,
+                                                                extra_msgs_r,
+                                                                sdispls,
+                                                                sizeof(double),
+                                                                MPI_DOUBLE,
+                                                                scounts,
+                                                                destinations,
+                                                                rdispls,
+                                                                sizeof(double),
+                                                                MPI_DOUBLE,
+                                                                rcounts,
+                                                                sources);
+    
+    int request_idx = 0;
+
+    set_sub_request_in_neighbor_gpu_copy_cpu_request(outer_request, inner_request);
+    
+#ifdef GPU
+    outer_request->not_gpu_neighbor_alltoallv = 0;
+    inner_request->not_gpu_neighbor_alltoallv = 0;
+#endif
+    
+    *request_ptr = outer_request;
+}
+
 void alltoall(double* send_data, double* recv_data, int n, int start, int stop, int step)
 {
     int rank, num_procs;
@@ -225,6 +476,22 @@ int main(int argc, char* argv[])
             return 1;
         }
         gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
+        
+        // Copy-to-CPU 10Thread Alltoall (neighbor)
+        MPIX_Request *neighreq;
+        from_nbr_init(send_data_d, recv_data_d, s, &neighreq);
+        neighbor_gpu_copy_cpu_threaded_start(neighreq);
+        neighbor_gpu_copy_cpu_threaded_wait(neighreq, MPI_STATUS_IGNORE);
+        gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+        err = compare(std_alltoall, new_alltoall, s*num_procs);
+        if (err >= 0)
+        {   
+            printf("%dThreads MPIX Nonblocking (Neighbor) Error at IDX %d, rank %d\n", arg_nt, err, rank);
+            MPI_Abort(MPI_COMM_WORLD, 1);
+            return 1;
+        }
+        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
+        MPIX_Request_free(neighreq);
    
         // Time Methods!
 
@@ -333,6 +600,19 @@ int main(int argc, char* argv[])
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0) printf("%d Threads Nonblocking Time %e\n", arg_nt, t0);
+        
+        from_nbr_init(send_data_d, recv_data_d, s, &neighreq);
+        MPI_Barrier(MPI_COMM_WORLD);
+        t0 = MPI_Wtime();
+        for (int i = 0; i < n_iter; i++)
+        {   
+            neighbor_gpu_copy_cpu_threaded_start(neighreq);
+            neighbor_gpu_copy_cpu_threaded_wait(neighreq, MPI_STATUS_IGNORE);
+        }
+        tfinal = (MPI_Wtime() - t0) / n_iter;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0) printf("%d Threads Nonblocking (Neighbor) Time %e\n", arg_nt, t0);
+        MPIX_Request_free(neighreq);
     }
     free((void *)reqs);
     

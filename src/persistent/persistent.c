@@ -19,6 +19,21 @@ void init_request(MPIX_Request** request_ptr)
     request->recv_size = 0;
     request->block_size = 1;
     
+#ifdef GPU
+    request->cpu_sendbuf = NULL;
+    request->cpu_sendbuf_bytes = 0;
+    request->cpu_recvbuf = NULL;
+    request->cpu_recvbuf_bytes = 0;
+    
+    request->sub_request = NULL;
+    
+    request->num_threads = 0;
+    request->sources = NULL;
+    request->destinations = NULL;
+    
+    request->not_gpu_neighbor_alltoallv = 1;
+#endif
+    
     *request_ptr = request;
 }
 
@@ -100,8 +115,13 @@ int MPIX_Request_free(MPIX_Request* request)
     }
     if (request->global_n_msgs)
     {
+#ifdef GPU
+        if (request->not_gpu_neighbor_alltoallv > 0)
+#endif
+        {
         for (int i = 0; i < request->global_n_msgs; i++)
             MPI_Request_free(&(request->global_requests[i]));
+        }
         free(request->global_requests);
     }
 
@@ -115,10 +135,15 @@ int MPIX_Request_free(MPIX_Request* request)
         cudaFreeHost(request->cpu_sendbuf);
     if (request->cpu_recvbuf)
         cudaFreeHost(request->cpu_recvbuf);
+    if (request->sub_request)
+        MPIX_Request_free(request->sub_request);
+    if (request->sources)
+        free(request->sources);
+    if (request->destinations)
+        free(request->destinations);
 #endif
 
     free(request);
 
     return 0;
 }
-

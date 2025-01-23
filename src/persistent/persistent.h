@@ -40,7 +40,30 @@ typedef struct _MPIX_Request
     // For allocating cpu buffers for heterogeneous communication
 #ifdef GPU
     void* cpu_sendbuf; // for copy-to-cpu
+    int cpu_sendbuf_bytes;
     void* cpu_recvbuf; // for copy-to-cpu
+    int cpu_recvbuf_bytes;
+    struct _MPIX_Request *sub_request;
+        
+    // for threaded neighbor alltoallv
+    int num_threads;
+    int n_msgs_s_per_thread;
+    int n_msgs_r_per_thread;
+    int extra_msgs_s;
+    int extra_msgs_r;
+    int *sdispls;
+    int send_bytes;
+    MPI_Datatype sendtype;
+    int *sendcounts;
+    int *destinations;
+    int *rdispls;
+    int recv_bytes;
+    MPI_Datatype recvtype;
+    int *recvcounts;
+    int *sources;
+    MPIX_Comm *comm;
+    
+    int not_gpu_neighbor_alltoallv;
 #endif
 
     // Keep track of which start/wait functions to call for given request
