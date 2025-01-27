@@ -153,7 +153,9 @@ TEST(RandomCommTest, TestsInTests)
                 alltoall_d,
                 s, 
                 MPI_INT,
-                xcomm);
+                xcomm,
+                NULL,
+                NULL);
         gpuMemcpy(device_data.data(), 
                 alltoall_d, 
                 s*num_procs*sizeof(int), 
@@ -170,7 +172,9 @@ TEST(RandomCommTest, TestsInTests)
                 alltoall_d,
                 s,
                 MPI_INT,
-                xcomm);
+                xcomm,
+                NULL,
+                NULL);
         gpuMemcpy(device_data.data(),
                 alltoall_d,
                 s*num_procs*sizeof(int),
@@ -188,7 +192,9 @@ TEST(RandomCommTest, TestsInTests)
                 alltoall_d,
                 s,
                 MPI_INT,
-                xcomm);
+                xcomm,
+                NULL,
+                NULL);
         gpuMemcpy(device_data.data(),
                 alltoall_d,
                 s*num_procs*sizeof(int),
@@ -205,7 +211,9 @@ TEST(RandomCommTest, TestsInTests)
                 alltoall_d,
                 s,
                 MPI_INT,
-                xcomm);
+                xcomm,
+                NULL,
+                NULL);
         gpuMemcpy(device_data.data(),
                 alltoall_d,
                 s*num_procs*sizeof(int),
