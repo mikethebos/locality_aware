@@ -23,15 +23,7 @@ int gpu_aware_alltoall(alltoall_ftn f,
     int total_bytes_s = sendcount * send_bytes * num_procs;
     int total_bytes_r = recvcount * recv_bytes * num_procs;
 
-    char* cpu_sendbuf;
-    char* cpu_recvbuf;
-    cudaMallocHost((void**)&cpu_sendbuf, total_bytes_s);
-    cudaMallocHost((void**)&cpu_recvbuf, total_bytes_r);
-
     int ierr = f(sendbuf, sendcount, sendtype, recvbuf, recvcount, recvtype, comm->global_comm);
-
-    cudaFreeHost(cpu_sendbuf);
-    cudaFreeHost(cpu_recvbuf);
 
     return ierr;
 }
@@ -79,7 +71,9 @@ int copy_to_cpu_alltoall(alltoall_ftn f,
         void* recvbuf, 
         const int recvcount, 
         MPI_Datatype recvtype,
-        MPIX_Comm* comm)
+        MPIX_Comm* comm,
+        char *cpu_sendbuf,
+        char *cpu_recvbuf)
 {
     int ierr = 0;
 
@@ -92,11 +86,14 @@ int copy_to_cpu_alltoall(alltoall_ftn f,
 
     int total_bytes_s = sendcount * send_bytes * num_procs;
     int total_bytes_r = recvcount * recv_bytes * num_procs;
-
-    char* cpu_sendbuf;
-    char* cpu_recvbuf;
-    cudaMallocHost((void**)&cpu_sendbuf, total_bytes_s);
-    cudaMallocHost((void**)&cpu_recvbuf, total_bytes_r);
+    
+    int alloc = 0;
+    if (cpu_sendbuf == NULL)
+    {
+        cpu_sendbuf = (char *)gpuMallocHost(total_bytes_s);
+        cpu_recvbuf = (char *)gpuMallocHost(total_bytes_r);
+        alloc = 1;
+    }
 
     // Copy from GPU to CPU
     ierr += gpuMemcpy(cpu_sendbuf, sendbuf, total_bytes_s, gpuMemcpyDeviceToHost);
@@ -106,9 +103,12 @@ int copy_to_cpu_alltoall(alltoall_ftn f,
 
     // Copy from CPU to GPU
     ierr += gpuMemcpy(recvbuf, cpu_recvbuf, total_bytes_r, gpuMemcpyHostToDevice);
-
-    cudaFreeHost(cpu_sendbuf);
-    cudaFreeHost(cpu_recvbuf);
+    
+    if (alloc == 1)
+    {
+        gpuFreeHost((void *)cpu_sendbuf);
+        gpuFreeHost((void *)cpu_recvbuf);
+    }
     
     return ierr;
 }
@@ -119,7 +119,9 @@ int copy_to_cpu_alltoall_pairwise(const void* sendbuf,
         void* recvbuf, 
         const int recvcount, 
         MPI_Datatype recvtype,
-        MPIX_Comm* comm)
+        MPIX_Comm* comm,
+        char *cpu_sendbuf,
+        char *cpu_recvbuf)
 {
     return copy_to_cpu_alltoall(alltoall_pairwise,
         sendbuf, 
@@ -128,7 +130,9 @@ int copy_to_cpu_alltoall_pairwise(const void* sendbuf,
         recvbuf, 
         recvcount,
         recvtype,
-        comm);
+        comm,
+        cpu_sendbuf,
+        cpu_recvbuf);
 
 }
 
@@ -138,7 +142,9 @@ int copy_to_cpu_alltoall_nonblocking(const void* sendbuf,
         void* recvbuf, 
         const int recvcount, 
         MPI_Datatype recvtype,
-        MPIX_Comm* comm)
+        MPIX_Comm* comm,
+        char *cpu_sendbuf,
+        char *cpu_recvbuf)
 {
     return copy_to_cpu_alltoall(alltoall_nonblocking,
         sendbuf, 
@@ -147,7 +153,9 @@ int copy_to_cpu_alltoall_nonblocking(const void* sendbuf,
         recvbuf, 
         recvcount,
         recvtype,
-        comm);
+        comm,
+        cpu_sendbuf,
+        cpu_recvbuf);
 }
 
 int threaded_alltoall_pairwise(const void* sendbuf,
@@ -156,7 +164,9 @@ int threaded_alltoall_pairwise(const void* sendbuf,
         void* recvbuf, 
         const int recvcount, 
         MPI_Datatype recvtype,
-        MPIX_Comm* comm)
+        MPIX_Comm* comm,
+        char *cpu_sendbuf,
+        char *cpu_recvbuf)
 {
     int ierr = 0;
     
@@ -171,10 +181,13 @@ int threaded_alltoall_pairwise(const void* sendbuf,
     int total_bytes_s = sendcount * send_bytes * num_procs;
     int total_bytes_r = recvcount * recv_bytes * num_procs;
     
-    char* cpu_sendbuf;
-    char* cpu_recvbuf;
-    cudaMallocHost((void**)&cpu_sendbuf, total_bytes_s);
-    cudaMallocHost((void**)&cpu_recvbuf, total_bytes_r);
+    int alloc = 0;
+    if (cpu_sendbuf == NULL)
+    {
+        gpuMallocHost((void**)&cpu_sendbuf, total_bytes_s);
+        gpuMallocHost((void**)&cpu_recvbuf, total_bytes_r);
+        alloc = 1;
+    }
     
     // Copy from GPU to CPU
     ierr += gpuMemcpy(cpu_sendbuf, sendbuf, total_bytes_s, gpuMemcpyDeviceToHost);
@@ -234,8 +247,11 @@ int threaded_alltoall_pairwise(const void* sendbuf,
 
     ierr += gpuMemcpy(recvbuf, cpu_recvbuf, total_bytes_r, gpuMemcpyHostToDevice);
 
-    cudaFreeHost(cpu_sendbuf);
-    cudaFreeHost(cpu_recvbuf);
+    if (alloc == 1)
+    {
+        gpuFreeHost(cpu_sendbuf);
+        gpuFreeHost(cpu_recvbuf);
+    }
 
     return ierr;
 }
@@ -246,7 +262,9 @@ int threaded_alltoall_nonblocking(const void* sendbuf,
         void* recvbuf, 
         const int recvcount, 
         MPI_Datatype recvtype,
-        MPIX_Comm* comm)
+        MPIX_Comm* comm,
+        char *cpu_sendbuf,
+        char *cpu_recvbuf)
 {
     int num_procs, rank;
     MPI_Comm_rank(comm->global_comm, &rank);
@@ -261,8 +279,13 @@ int threaded_alltoall_nonblocking(const void* sendbuf,
 
     char* cpu_sendbuf;
     char* cpu_recvbuf;
-    cudaMallocHost((void**)&cpu_sendbuf, total_bytes_s);
-    cudaMallocHost((void**)&cpu_recvbuf, total_bytes_r);
+    int alloc = 0;
+    if (cpu_sendbuf == NULL)
+    {
+        gpuMallocHost((void**)&cpu_sendbuf, total_bytes_s);
+        gpuMallocHost((void**)&cpu_recvbuf, total_bytes_r);
+        alloc = 1;
+    }
 
     int ierr = 0;
     ierr += gpuMemcpy(cpu_sendbuf, sendbuf, total_bytes_s, gpuMemcpyDeviceToHost);
@@ -327,8 +350,11 @@ int threaded_alltoall_nonblocking(const void* sendbuf,
 } 
 
     ierr += gpuMemcpy(recvbuf, cpu_recvbuf, total_bytes_r, gpuMemcpyHostToDevice);
-    cudaFreeHost(cpu_sendbuf);
-    cudaFreeHost(cpu_recvbuf);
+    if (alloc == 1)
+    {
+        gpuFreeHost(cpu_sendbuf);
+        gpuFreeHost(cpu_recvbuf);
+    }
 
     return ierr;
 }

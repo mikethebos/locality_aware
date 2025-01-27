@@ -44,7 +44,9 @@ int MPIX_Alltoall(const void* sendbuf,
                 recvbuf,
                 recvcount,
                 recvtype,
-                mpi_comm);
+                mpi_comm,
+                NULL,
+                NULL);
     }
     else if (send_type == cudaMemoryTypeDevice ||
             recv_type == cudaMemoryTypeDevice)

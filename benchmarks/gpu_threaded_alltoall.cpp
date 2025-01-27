@@ -25,6 +25,7 @@ int main(int argc, char* argv[])
     double t0, tfinal;
     srand(time(NULL));
     std::vector<double> send_data(max_s*num_procs);
+    std::vector<double> recv_data(max_s*num_procs);
     std::vector<double> pmpi_alltoall(max_s*num_procs);
     std::vector<double> mpix_alltoall(max_s*num_procs);
     for (int j = 0; j < max_s*num_procs; j++)
@@ -70,7 +71,9 @@ int main(int argc, char* argv[])
                 recv_data_d,
                 s,
                 MPI_DOUBLE,
-                locality_comm);
+                locality_comm,
+                (char *)send_data.data(),
+                (char *)recv_data.data());
         cudaMemcpy(mpix_alltoall.data(), recv_data_d, s*num_procs*sizeof(double),
                 cudaMemcpyDeviceToHost);
         cudaMemset(recv_data_d, 0, s*num_procs*sizeof(int));
@@ -93,7 +96,9 @@ int main(int argc, char* argv[])
                 recv_data_d,
                 s,
                 MPI_DOUBLE,
-                locality_comm);
+                locality_comm,
+                (char *)send_data.data(),
+                (char *)recv_data.data());
         cudaMemcpy(mpix_alltoall.data(), recv_data_d, s*num_procs*sizeof(double),
                 cudaMemcpyDeviceToHost);
         cudaMemset(recv_data_d, 0, s*num_procs*sizeof(int));
@@ -141,7 +146,9 @@ int main(int argc, char* argv[])
                 recv_data_d,
                 s,
                 MPI_DOUBLE,
-                locality_comm);
+                locality_comm,
+                (char *)send_data.data(),
+                (char *)recv_data.data());
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int k = 0; k < n_iter; k++)
@@ -152,7 +159,9 @@ int main(int argc, char* argv[])
                     recv_data_d,
                     s,
                     MPI_DOUBLE,
-                    locality_comm);
+                    locality_comm,
+                    (char *)send_data.data(),
+                    (char *)recv_data.data());
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
@@ -165,7 +174,9 @@ int main(int argc, char* argv[])
                 recv_data_d,
                 s,
                 MPI_DOUBLE,
-                locality_comm);
+                locality_comm,
+                (char *)send_data.data(),
+                (char *)recv_data.data());
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int k = 0; k < n_iter; k++)
@@ -176,7 +187,9 @@ int main(int argc, char* argv[])
                     recv_data_d,
                     s,
                     MPI_DOUBLE,
-                    locality_comm);
+                    locality_comm,
+                    (char *)send_data.data(),
+                    (char *)recv_data.data());
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);

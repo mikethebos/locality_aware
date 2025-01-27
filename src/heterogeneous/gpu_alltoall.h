@@ -21,7 +21,9 @@ int copy_to_cpu_alltoall(alltoall_ftn f,
         void* recvbuf,
         const int recvcount,
         MPI_Datatype recvtype,
-        MPIX_Comm* comm);
+        MPIX_Comm* comm,
+        char *cpu_sendbuf,
+        char *cpu_recvbuf);
 
 int gpu_aware_alltoall_pairwise(const void* sendbuf, 
         const int sendcount,
@@ -43,14 +45,18 @@ int copy_to_cpu_alltoall_pairwise(const void* sendbuf,
         void* recvbuf, 
         const int recvcount, 
         MPI_Datatype recvtype,
-        MPIX_Comm* comm);
+        MPIX_Comm* comm,
+        char *cpu_sendbuf,
+        char *cpu_recvbuf);
 int copy_to_cpu_alltoall_nonblocking(const void* sendbuf, 
         const int sendcount,
         MPI_Datatype sendtype,
         void* recvbuf, 
         const int recvcount, 
         MPI_Datatype recvtype,
-        MPIX_Comm* comm);
+        MPIX_Comm* comm,
+        char *cpu_sendbuf,
+        char *cpu_recvbuf);
 
 int threaded_alltoall_pairwise(const void* sendbuf,
         const int sendcount,
@@ -58,7 +64,9 @@ int threaded_alltoall_pairwise(const void* sendbuf,
         void* recvbuf, 
         const int recvcount, 
         MPI_Datatype recvtype,
-        MPIX_Comm* comm);
+        MPIX_Comm* comm,
+        char *cpu_sendbuf,
+        char *cpu_recvbuf);
 
 int threaded_alltoall_nonblocking(const void* sendbuf,
         const int sendcount,
@@ -66,7 +74,9 @@ int threaded_alltoall_nonblocking(const void* sendbuf,
         void* recvbuf, 
         const int recvcount, 
         MPI_Datatype recvtype,
-        MPIX_Comm* comm);
+        MPIX_Comm* comm,
+        char *cpu_sendbuf,
+        char *cpu_recvbuf);
 
 
 
