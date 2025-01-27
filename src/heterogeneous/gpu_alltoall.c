@@ -277,8 +277,6 @@ int threaded_alltoall_nonblocking(const void* sendbuf,
     int total_bytes_s = sendcount * send_bytes * num_procs;
     int total_bytes_r = recvcount * recv_bytes * num_procs;
 
-    char* cpu_sendbuf;
-    char* cpu_recvbuf;
     int alloc = 0;
     if (cpu_sendbuf == NULL)
     {
