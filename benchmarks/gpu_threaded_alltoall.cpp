@@ -17,7 +17,7 @@ int main(int argc, char* argv[])
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &num_procs);
 
-    omp_set_num_threads(10);
+//     omp_set_num_threads(10);
 
     int max_i = 20;
     int max_s = pow(2, max_i);
@@ -34,9 +34,9 @@ int main(int argc, char* argv[])
     MPIX_Comm_init(&locality_comm, MPI_COMM_WORLD);
 
     int gpu_rank;
-    MPI_Comm_rank(locality_comm->local_comm, &gpu_rank); 
+    MPI_Comm_rank(locality_comm->local_comm, &gpu_rank);
     gpuSetDevice(gpu_rank);
-	
+
     double* send_data_d;
     double* recv_data_d;
     cudaMalloc((void**)(&send_data_d), max_s*num_procs*sizeof(double));
