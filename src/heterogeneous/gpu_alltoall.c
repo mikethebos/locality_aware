@@ -90,8 +90,8 @@ int copy_to_cpu_alltoall(alltoall_ftn f,
     int alloc = 0;
     if (cpu_sendbuf == NULL)
     {
-        cpu_sendbuf = (char *)gpuMallocHost(total_bytes_s);
-        cpu_recvbuf = (char *)gpuMallocHost(total_bytes_r);
+        gpuMallocHost((void **)&cpu_sendbuf, total_bytes_s);
+        gpuMallocHost((void **)&cpu_recvbuf, total_bytes_r);
         alloc = 1;
     }
 
