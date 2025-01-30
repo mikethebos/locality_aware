@@ -81,6 +81,7 @@ int main(int argc, char* argv[])
     double t0, tfinal;
     srand(time(NULL));
     std::vector<double> send_data(max_s*num_procs);
+    std::vector<double> recv_data(max_s*num_procs);
     std::vector<double> std_alltoall(max_s*num_procs);
     std::vector<double> new_alltoall(max_s*num_procs);
     for (int j = 0; j < max_s*num_procs; j++)
@@ -184,6 +185,102 @@ int main(int argc, char* argv[])
         }
         gpuMemset(recv_data_d, 0, s*num_procs*sizeof(double));
    
+        // MPI Advance : GPU-Aware Pairwise Exchange
+        gpu_aware_alltoall_pairwise(send_data_d,
+                s,
+                MPI_DOUBLE, 
+                recv_data_d,
+                s,
+                MPI_DOUBLE,
+                xcomm);
+        gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double),
+                gpuMemcpyDeviceToHost);
+        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(int));
+        for (int j = 0; j < s*num_procs; j++)
+	{
+            if (fabs(std_alltoall[j] - new_alltoall[j]) > 1e-10)
+            {
+                fprintf(stderr, 
+                        "Rank %d, idx %d, pmpi %e, GA-PE %e\n", 
+                         rank, j, std_alltoall[j], new_alltoall[j]);
+                MPI_Abort(MPI_COMM_WORLD, 1);
+                return 1;
+            }
+        }
+
+        // MPI Advance : GPU-Aware Nonblocking (P2P)
+        gpu_aware_alltoall_nonblocking(send_data_d,
+                s,
+                MPI_DOUBLE, 
+                recv_data_d,
+                s,
+                MPI_DOUBLE,
+                xcomm);
+        gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double),
+                gpuMemcpyDeviceToHost);
+        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(int));
+        for (int j = 0; j < s*num_procs; j++)
+	{
+            if (fabs(std_alltoall[j] - new_alltoall[j]) > 1e-10)
+            {
+                fprintf(stderr, 
+                        "Rank %d, idx %d, pmpi %e, GA-NB %e\n", 
+                         rank, j, std_alltoall[j], new_alltoall[j]);
+                MPI_Abort(MPI_COMM_WORLD, 1);
+                return 1;
+            }
+        }
+
+        // MPI Advance : Copy to CPU Pairwise Exchange
+        copy_to_cpu_alltoall_pairwise(send_data_d,
+                s,
+                MPI_DOUBLE, 
+                recv_data_d,
+                s,
+                MPI_DOUBLE,
+                xcomm,
+                (char *)send_data.data(),
+                (char *)recv_data.data());
+        gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double),
+                gpuMemcpyDeviceToHost);
+        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(int));
+        for (int j = 0; j < s*num_procs; j++)
+	{
+            if (fabs(std_alltoall[j] - new_alltoall[j]) > 1e-10)
+            {
+                fprintf(stderr, 
+                        "Rank %d, idx %d, pmpi %e, C2C-PE %e\n", 
+                         rank, j, std_alltoall[j], new_alltoall[j]);
+                MPI_Abort(MPI_COMM_WORLD, 1);
+                return 1;
+            }
+        }
+
+        // MPI Advance : Copy To CPU Nonblocking (P2P)
+        copy_to_cpu_alltoall_nonblocking(send_data_d,
+                s,
+                MPI_DOUBLE, 
+                recv_data_d,
+                s,
+                MPI_DOUBLE,
+                xcomm,
+                (char *)send_data.data(),
+                (char *)recv_data.data());
+        gpuMemcpy(new_alltoall.data(), recv_data_d, s*num_procs*sizeof(double),
+                gpuMemcpyDeviceToHost);
+        gpuMemset(recv_data_d, 0, s*num_procs*sizeof(int));
+        for (int j = 0; j < s*num_procs; j++)
+	{
+            if (fabs(std_alltoall[j] - new_alltoall[j]) > 1e-10)
+            {
+                fprintf(stderr, 
+                        "Rank %d, idx %d, pmpi %e, C2C-NB %e\n", 
+                         rank, j, std_alltoall[j], new_alltoall[j]);
+                MPI_Abort(MPI_COMM_WORLD, 1);
+                return 1;
+            }
+        }
+   
         // Time Methods!
 
         // GPU-Aware PMPI Implementation
@@ -257,6 +354,114 @@ int main(int argc, char* argv[])
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0) printf("GPU Aware Nonblocking Time %e\n", t0);
+        
+        // Time GPU-Aware Pairwise Exchange
+        gpu_aware_alltoall_pairwise(send_data_d,
+                s,
+                MPI_DOUBLE, 
+                recv_data_d,
+                s,
+                MPI_DOUBLE,
+                xcomm);
+        gpuDeviceSynchronize();
+        MPI_Barrier(MPI_COMM_WORLD);
+        t0 = MPI_Wtime();
+        for (int k = 0; k < n_iter; k++)
+        {
+            gpu_aware_alltoall_pairwise(send_data_d,
+                    s,
+                    MPI_DOUBLE, 
+                    recv_data_d,
+                    s,
+                    MPI_DOUBLE,
+                    xcomm);
+        }
+        tfinal = (MPI_Wtime() - t0) / n_iter;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0) printf("MPIX GPU-Aware Pairwise Exchange Time %e\n", t0);
+
+        // Time GPU-Aware Nonblocking
+        gpu_aware_alltoall_nonblocking(send_data_d,
+                s,
+                MPI_DOUBLE, 
+                recv_data_d,
+                s,
+                MPI_DOUBLE,
+                xcomm);
+        gpuDeviceSynchronize();
+        MPI_Barrier(MPI_COMM_WORLD);
+        t0 = MPI_Wtime();
+        for (int k = 0; k < n_iter; k++)
+        {
+            gpu_aware_alltoall_nonblocking(send_data_d,
+                    s,
+                    MPI_DOUBLE, 
+                    recv_data_d,
+                    s,
+                    MPI_DOUBLE,
+                    xcomm);
+        }
+        tfinal = (MPI_Wtime() - t0) / n_iter;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0) printf("MPIX GPU-Aware Nonblocking Time %e\n", t0);
+
+        // Time Copy-to-CPU Pairwise Exchange
+        copy_to_cpu_alltoall_pairwise(send_data_d,
+                s,
+                MPI_DOUBLE, 
+                recv_data_d,
+                s,
+                MPI_DOUBLE,
+                xcomm,
+                (char *)send_data.data(),
+                (char *)recv_data.data());
+        gpuDeviceSynchronize();
+        MPI_Barrier(MPI_COMM_WORLD);
+        t0 = MPI_Wtime();
+        for (int k = 0; k < n_iter; k++)
+        {
+            copy_to_cpu_alltoall_pairwise(send_data_d,
+                    s,
+                    MPI_DOUBLE, 
+                    recv_data_d,
+                    s,
+                    MPI_DOUBLE,
+                    xcomm,
+                    (char *)send_data.data(),
+                    (char *)recv_data.data());
+        }
+        tfinal = (MPI_Wtime() - t0) / n_iter;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0) printf("MPIX Copy-to-CPU Pairwise Exchange Time %e\n", t0);
+
+        // Time Copy-to-CPU Nonblocking
+        copy_to_cpu_alltoall_nonblocking(send_data_d,
+                s,
+                MPI_DOUBLE, 
+                recv_data_d,
+                s,
+                MPI_DOUBLE,
+                xcomm,
+                (char *)send_data.data(),
+                (char *)recv_data.data());
+        gpuDeviceSynchronize();
+        MPI_Barrier(MPI_COMM_WORLD);
+        t0 = MPI_Wtime();
+        for (int k = 0; k < n_iter; k++)
+        {
+            copy_to_cpu_alltoall_nonblocking(send_data_d,
+                    s,
+                    MPI_DOUBLE, 
+                    recv_data_d,
+                    s,
+                    MPI_DOUBLE,
+                    xcomm,
+                    (char *)send_data.data(),
+                    (char *)recv_data.data());
+        }
+        tfinal = (MPI_Wtime() - t0) / n_iter;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        if (rank == 0) printf("MPIX Copy-to-CPU Nonblocking Time %e\n", t0);
     }
     free((void *)reqs);
     MPIX_Comm_free(xcomm);
