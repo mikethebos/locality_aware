@@ -410,7 +410,7 @@ int main(int argc, char* argv[])
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("Copy-to-CPU Pairwise Time %e\n", t0);
+        if (rank == 0) printf("Custom Copy-to-CPU Pairwise Time %e\n", t0);
 
         // GPU-Aware Alltoall
         MPI_Barrier(MPI_COMM_WORLD);
@@ -421,7 +421,7 @@ int main(int argc, char* argv[])
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("GPU Aware Pairwise Time %e\n", t0);
+        if (rank == 0) printf("Custom GPU Aware Pairwise Time %e\n", t0);
         
         // Copy-to-CPU Alltoall
         MPI_Barrier(MPI_COMM_WORLD);
@@ -434,7 +434,7 @@ int main(int argc, char* argv[])
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("Copy-to-CPU Nonblocking Time %e\n", t0);
+        if (rank == 0) printf("Custom Copy-to-CPU Nonblocking Time %e\n", t0);
 
         // GPU-Aware Alltoall
         MPI_Barrier(MPI_COMM_WORLD);
@@ -445,7 +445,7 @@ int main(int argc, char* argv[])
         }
         tfinal = (MPI_Wtime() - t0) / n_iter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
-        if (rank == 0) printf("GPU Aware Nonblocking Time %e\n", t0);
+        if (rank == 0) printf("Custom GPU Aware Nonblocking Time %e\n", t0);
     }
     free((void *)reqs);
     MPIX_Comm_free(locality_comm);
