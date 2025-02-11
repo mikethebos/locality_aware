@@ -77,7 +77,7 @@ int main(int argc, char* argv[])
 
     int max_i = 20;
     int max_s = pow(2, max_i);
-    int n_iter = 100;
+    int max_n_iter = 100;
     double t0, tfinal;
     srand(time(NULL));
     std::vector<double> send_data(max_s*num_procs);
@@ -105,6 +105,9 @@ int main(int argc, char* argv[])
     {
         int s = pow(2, i);
         if (rank == 0) printf("Testing Size %d\n", s);
+        
+        int n_iter = max_n_iter;
+        if (s > 4096) n_iter /= 10;
 
         // Standard MPI Implementation
         PMPI_Alltoall(send_data_d,
@@ -400,6 +403,10 @@ int main(int argc, char* argv[])
         if (rank == 0) printf("Copy-to-CPU Nonblocking Time %e\n", t0);
         
         // Copy-to-CPU Alltoall
+        gpuMemcpy(send_data.data(), send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+        alltoall(send_data.data(), recv_data.data(), s, 0, num_procs, 1);
+        gpuMemcpy(recv_data_d, recv_data.data(), s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
+        cudaDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
@@ -413,6 +420,8 @@ int main(int argc, char* argv[])
         if (rank == 0) printf("Custom Copy-to-CPU Pairwise Time %e\n", t0);
 
         // GPU-Aware Alltoall
+        alltoall(send_data_d, recv_data_d, s, 0, num_procs, 1);
+        cudaDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
@@ -424,6 +433,10 @@ int main(int argc, char* argv[])
         if (rank == 0) printf("Custom GPU Aware Pairwise Time %e\n", t0);
         
         // Copy-to-CPU Alltoall
+        gpuMemcpy(send_data.data(), send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+        alltoall_nonblocking_bench(send_data.data(), recv_data.data(), s, 0, num_procs, 1, reqs);
+        gpuMemcpy(recv_data_d, recv_data.data(), s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
+        cudaDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
@@ -437,6 +450,8 @@ int main(int argc, char* argv[])
         if (rank == 0) printf("Custom Copy-to-CPU Nonblocking Time %e\n", t0);
 
         // GPU-Aware Alltoall
+        alltoall_nonblocking_bench(send_data_d, recv_data_d, s, 0, num_procs, 1, reqs);
+        cudaDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)

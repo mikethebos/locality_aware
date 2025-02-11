@@ -224,6 +224,7 @@ int main(int argc, char* argv[])
                 s,
                 MPI_DOUBLE,
                 MPI_COMM_WORLD);
+        cudaDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int k = 0; k < n_iter; k++)
@@ -250,6 +251,7 @@ int main(int argc, char* argv[])
                 locality_comm,
                 (char *)send_data.data(),
                 (char *)recv_data.data());
+        cudaDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int k = 0; k < n_iter; k++)
@@ -278,6 +280,7 @@ int main(int argc, char* argv[])
                 locality_comm,
                 (char *)send_data.data(),
                 (char *)recv_data.data());
+        cudaDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int k = 0; k < n_iter; k++)
@@ -296,6 +299,15 @@ int main(int argc, char* argv[])
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0) printf("Threaded Nonblocking Time %e\n", t0);
         
+        gpuMemcpy(send_data.data(), send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+        #pragma omp parallel num_threads(arg_nt)
+        {
+            int thread_id = omp_get_thread_num();
+            int num_threads = omp_get_num_threads();
+            alltoall(send_data.data(), recv_data.data(), s, thread_id, num_procs, num_threads);
+        }
+        gpuMemcpy(recv_data_d, recv_data.data(), s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
+        cudaDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
@@ -313,6 +325,15 @@ int main(int argc, char* argv[])
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0) printf("%d Threads Custom Pairwise Time %e\n", arg_nt, t0);
         
+        gpuMemcpy(send_data.data(), send_data_d, s*num_procs*sizeof(double), gpuMemcpyDeviceToHost);
+        #pragma omp parallel num_threads(arg_nt)
+        {
+            int thread_id = omp_get_thread_num();
+            int num_threads = omp_get_num_threads();
+            alltoall_nonblocking_bench(send_data.data(), recv_data.data(), s, thread_id, num_procs, num_threads, &(reqs[thread_id * 2 * num_procs]));
+        }
+        gpuMemcpy(recv_data_d, recv_data.data(), s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
+        cudaDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
         for (int i = 0; i < n_iter; i++)
