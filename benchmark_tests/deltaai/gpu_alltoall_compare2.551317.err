@@ -1,0 +1,2672 @@
+
+Inactive Modules:
+  1) cray-libsci     2) cray-mpich
+
+
+Activating Modules:
+  1) cray-libsci/24.07.0     2) cray-mpich/8.1.30
+
+PE 2: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=2, domain_name=cxi2, numa_node=2, address=[0x9033]
+PE 1: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=1, domain_name=cxi1, numa_node=1, address=[0x9032]
+PE 0: Launcher/PMI did not supply NIC data (node_idx=0, rc=0, num_pmi_nics=0)
+PE 3: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=3, domain_name=cxi3, numa_node=3, address=[0x90f3]
+PE 0: MPICH_OFI_NIC_POLICY = BLOCK
+PE 0: MPICH CH4 OFI detected 4 NICs/node on host gh053.hsn.cm.delta.internal.ncsa.edu
+PE 0: ======================== Display NIC Addrs  ========================
+PE 0: Hostname: gh053.hsn.cm.delta.internal.ncsa.edu
+PE 0:   MPICH_OFI_NIC_POLICY: BLOCK
+PE 0:   Number of NICs: 4
+PE 0:     nic_index 0: domain_name=cxi0, numa_domain=0, addr=0x90f2
+PE 0:     nic_index 1: domain_name=cxi1, numa_domain=1, addr=0x9032
+PE 0:     nic_index 2: domain_name=cxi2, numa_domain=2, addr=0x9033
+PE 0:     nic_index 3: domain_name=cxi3, numa_domain=3, addr=0x90f3
+PE 0:   Number of NUMA domains: 36
+PE 0:     numa_domain 0: cpu_list=[0-71]
+PE 0:     numa_domain 1: cpu_list=[72-143]
+PE 0:     numa_domain 2: cpu_list=[144-215]
+PE 0:     numa_domain 3: cpu_list=[216-287]
+PE 0:     numa_domain 4: cpu_list=[]
+PE 0:     numa_domain 5: cpu_list=[]
+PE 0:     numa_domain 6: cpu_list=[]
+PE 0:     numa_domain 7: cpu_list=[]
+PE 0:     numa_domain 8: cpu_list=[]
+PE 0:     numa_domain 9: cpu_list=[]
+PE 0:     numa_domain 10: cpu_list=[]
+PE 0:     numa_domain 11: cpu_list=[]
+PE 0:     numa_domain 12: cpu_list=[]
+PE 0:     numa_domain 13: cpu_list=[]
+PE 0:     numa_domain 14: cpu_list=[]
+PE 0:     numa_domain 15: cpu_list=[]
+PE 0:     numa_domain 16: cpu_list=[]
+PE 0:     numa_domain 17: cpu_list=[]
+PE 0:     numa_domain 18: cpu_list=[]
+PE 0:     numa_domain 19: cpu_list=[]
+PE 0:     numa_domain 20: cpu_list=[]
+PE 0:     numa_domain 21: cpu_list=[]
+PE 0:     numa_domain 22: cpu_list=[]
+PE 0:     numa_domain 23: cpu_list=[]
+PE 0:     numa_domain 24: cpu_list=[]
+PE 0:     numa_domain 25: cpu_list=[]
+PE 0:     numa_domain 26: cpu_list=[]
+PE 0:     numa_domain 27: cpu_list=[]
+PE 0:     numa_domain 28: cpu_list=[]
+PE 0:     numa_domain 29: cpu_list=[]
+PE 0:     numa_domain 30: cpu_list=[]
+PE 0:     numa_domain 31: cpu_list=[]
+PE 0:     numa_domain 32: cpu_list=[]
+PE 0:     numa_domain 33: cpu_list=[]
+PE 0:     numa_domain 34: cpu_list=[]
+PE 0:     numa_domain 35: cpu_list=[]
+PE 0: ====================================================================
+PE 0: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=0, domain_name=cxi0, numa_node=0, address=[0x90f2]
+PE 0: MPICH CH4 OFI netmod using cxi provider (domain_name=cxi0, src_addr=0x90f2)
+PE 0: Selected traffic class: [TC_BEST_EFFORT, 512]
+PE 7: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=3, domain_name=cxi3, numa_node=3, address=[0x7871]
+PE 6: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=2, domain_name=cxi2, numa_node=2, address=[0x78b1]
+PE 5: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=1, domain_name=cxi1, numa_node=1, address=[0x78b0]
+PE 4: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=0, domain_name=cxi0, numa_node=0, address=[0x7870]
+PE 0: MPICH CH4 OFI CXI counters initialized
+(GTL DEBUG: 4) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 1) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 5) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 3) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 7) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 6) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 4] [job id 551317.0] [Mon Mar  3 22:54:59 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 4 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 6] [job id 551317.0] [Mon Mar  3 22:54:59 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(5316866) (rank 6 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+(GTL DEBUG: 0) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 7] [job id 551317.0] [Mon Mar  3 22:54:59 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(5316866) (rank 7 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+(GTL DEBUG: 2) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 0] [job id 551317.0] [Mon Mar  3 22:54:59 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 0 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 3] [job id 551317.0] [Mon Mar  3 22:54:59 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(139534594) (rank 3 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 5] [job id 551317.0] [Mon Mar  3 22:54:59 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 5 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 2] [job id 551317.0] [Mon Mar  3 22:54:59 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 2 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 1] [job id 551317.0] [Mon Mar  3 22:54:59 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(139534594) (rank 1 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+srun: error: gh053: tasks 1-2: Exited with exit code 255
+srun: error: gh076: tasks 4,7: Exited with exit code 255
+srun: error: gh053: tasks 0,3: Exited with exit code 255
+srun: error: gh076: tasks 5-6: Exited with exit code 255
+PE 2: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=2, domain_name=cxi2, numa_node=2, address=[0x9033]
+PE 1: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=1, domain_name=cxi1, numa_node=1, address=[0x9032]
+PE 0: Launcher/PMI did not supply NIC data (node_idx=0, rc=0, num_pmi_nics=0)
+PE 3: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=3, domain_name=cxi3, numa_node=3, address=[0x90f3]
+PE 0: MPICH_OFI_NIC_POLICY = BLOCK
+PE 0: MPICH CH4 OFI detected 4 NICs/node on host gh053.hsn.cm.delta.internal.ncsa.edu
+PE 0: ======================== Display NIC Addrs  ========================
+PE 0: Hostname: gh053.hsn.cm.delta.internal.ncsa.edu
+PE 0:   MPICH_OFI_NIC_POLICY: BLOCK
+PE 0:   Number of NICs: 4
+PE 0:     nic_index 0: domain_name=cxi0, numa_domain=0, addr=0x90f2
+PE 0:     nic_index 1: domain_name=cxi1, numa_domain=1, addr=0x9032
+PE 0:     nic_index 2: domain_name=cxi2, numa_domain=2, addr=0x9033
+PE 0:     nic_index 3: domain_name=cxi3, numa_domain=3, addr=0x90f3
+PE 0:   Number of NUMA domains: 36
+PE 0:     numa_domain 0: cpu_list=[0-71]
+PE 0:     numa_domain 1: cpu_list=[72-143]
+PE 0:     numa_domain 2: cpu_list=[144-215]
+PE 0:     numa_domain 3: cpu_list=[216-287]
+PE 0:     numa_domain 4: cpu_list=[]
+PE 0:     numa_domain 5: cpu_list=[]
+PE 0:     numa_domain 6: cpu_list=[]
+PE 0:     numa_domain 7: cpu_list=[]
+PE 0:     numa_domain 8: cpu_list=[]
+PE 0:     numa_domain 9: cpu_list=[]
+PE 0:     numa_domain 10: cpu_list=[]
+PE 0:     numa_domain 11: cpu_list=[]
+PE 0:     numa_domain 12: cpu_list=[]
+PE 0:     numa_domain 13: cpu_list=[]
+PE 0:     numa_domain 14: cpu_list=[]
+PE 0:     numa_domain 15: cpu_list=[]
+PE 0:     numa_domain 16: cpu_list=[]
+PE 0:     numa_domain 17: cpu_list=[]
+PE 0:     numa_domain 18: cpu_list=[]
+PE 0:     numa_domain 19: cpu_list=[]
+PE 0:     numa_domain 20: cpu_list=[]
+PE 0:     numa_domain 21: cpu_list=[]
+PE 0:     numa_domain 22: cpu_list=[]
+PE 0:     numa_domain 23: cpu_list=[]
+PE 0:     numa_domain 24: cpu_list=[]
+PE 0:     numa_domain 25: cpu_list=[]
+PE 0:     numa_domain 26: cpu_list=[]
+PE 0:     numa_domain 27: cpu_list=[]
+PE 0:     numa_domain 28: cpu_list=[]
+PE 0:     numa_domain 29: cpu_list=[]
+PE 0:     numa_domain 30: cpu_list=[]
+PE 0:     numa_domain 31: cpu_list=[]
+PE 0:     numa_domain 32: cpu_list=[]
+PE 0:     numa_domain 33: cpu_list=[]
+PE 0:     numa_domain 34: cpu_list=[]
+PE 0:     numa_domain 35: cpu_list=[]
+PE 0: ====================================================================
+PE 0: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=0, domain_name=cxi0, numa_node=0, address=[0x90f2]
+PE 0: MPICH CH4 OFI netmod using cxi provider (domain_name=cxi0, src_addr=0x90f2)
+PE 0: Selected traffic class: [TC_BEST_EFFORT, 512]
+PE 4: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=0, domain_name=cxi0, numa_node=0, address=[0x7870]
+PE 7: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=3, domain_name=cxi3, numa_node=3, address=[0x7871]
+PE 6: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=2, domain_name=cxi2, numa_node=2, address=[0x78b1]
+PE 5: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=1, domain_name=cxi1, numa_node=1, address=[0x78b0]
+PE 0: MPICH CH4 OFI CXI counters initialized
+(GTL DEBUG: 4) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 0) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 5) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 6) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 1) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 7) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 4] [job id 551317.1] [Mon Mar  3 22:55:10 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 4 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+(GTL DEBUG: 2) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 5] [job id 551317.1] [Mon Mar  3 22:55:10 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(139534594) (rank 5 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+(GTL DEBUG: 3) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 6] [job id 551317.1] [Mon Mar  3 22:55:10 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 6 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+MPICH ERROR [Rank 0] [job id 551317.1] [Mon Mar  3 22:55:10 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(5316866) (rank 0 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 1] [job id 551317.1] [Mon Mar  3 22:55:10 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(139534594) (rank 1 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 2] [job id 551317.1] [Mon Mar  3 22:55:10 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 2 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+MPICH ERROR [Rank 7] [job id 551317.1] [Mon Mar  3 22:55:10 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(139534594) (rank 7 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 3] [job id 551317.1] [Mon Mar  3 22:55:10 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(139534594) (rank 3 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+srun: error: gh053: tasks 1-2: Exited with exit code 255
+srun: error: gh076: tasks 5-6: Exited with exit code 255
+srun: error: gh076: tasks 4,7: Exited with exit code 255
+srun: error: gh053: tasks 0,3: Exited with exit code 255
+PE 5: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=1, domain_name=cxi1, numa_node=1, address=[0x78b0]
+PE 6: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=2, domain_name=cxi2, numa_node=2, address=[0x78b1]
+PE 7: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=3, domain_name=cxi3, numa_node=3, address=[0x7871]
+PE 2: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=2, domain_name=cxi2, numa_node=2, address=[0x9033]
+PE 4: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=0, domain_name=cxi0, numa_node=0, address=[0x7870]
+PE 3: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=3, domain_name=cxi3, numa_node=3, address=[0x90f3]
+PE 1: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=1, domain_name=cxi1, numa_node=1, address=[0x9032]
+PE 0: Launcher/PMI did not supply NIC data (node_idx=0, rc=0, num_pmi_nics=0)
+PE 0: MPICH_OFI_NIC_POLICY = BLOCK
+PE 0: MPICH CH4 OFI detected 4 NICs/node on host gh053.hsn.cm.delta.internal.ncsa.edu
+PE 0: ======================== Display NIC Addrs  ========================
+PE 0: Hostname: gh053.hsn.cm.delta.internal.ncsa.edu
+PE 0:   MPICH_OFI_NIC_POLICY: BLOCK
+PE 0:   Number of NICs: 4
+PE 0:     nic_index 0: domain_name=cxi0, numa_domain=0, addr=0x90f2
+PE 0:     nic_index 1: domain_name=cxi1, numa_domain=1, addr=0x9032
+PE 0:     nic_index 2: domain_name=cxi2, numa_domain=2, addr=0x9033
+PE 0:     nic_index 3: domain_name=cxi3, numa_domain=3, addr=0x90f3
+PE 0:   Number of NUMA domains: 36
+PE 0:     numa_domain 0: cpu_list=[0-71]
+PE 0:     numa_domain 1: cpu_list=[72-143]
+PE 0:     numa_domain 2: cpu_list=[144-215]
+PE 0:     numa_domain 3: cpu_list=[216-287]
+PE 0:     numa_domain 4: cpu_list=[]
+PE 0:     numa_domain 5: cpu_list=[]
+PE 0:     numa_domain 6: cpu_list=[]
+PE 0:     numa_domain 7: cpu_list=[]
+PE 0:     numa_domain 8: cpu_list=[]
+PE 0:     numa_domain 9: cpu_list=[]
+PE 0:     numa_domain 10: cpu_list=[]
+PE 0:     numa_domain 11: cpu_list=[]
+PE 0:     numa_domain 12: cpu_list=[]
+PE 0:     numa_domain 13: cpu_list=[]
+PE 0:     numa_domain 14: cpu_list=[]
+PE 0:     numa_domain 15: cpu_list=[]
+PE 0:     numa_domain 16: cpu_list=[]
+PE 0:     numa_domain 17: cpu_list=[]
+PE 0:     numa_domain 18: cpu_list=[]
+PE 0:     numa_domain 19: cpu_list=[]
+PE 0:     numa_domain 20: cpu_list=[]
+PE 0:     numa_domain 21: cpu_list=[]
+PE 0:     numa_domain 22: cpu_list=[]
+PE 0:     numa_domain 23: cpu_list=[]
+PE 0:     numa_domain 24: cpu_list=[]
+PE 0:     numa_domain 25: cpu_list=[]
+PE 0:     numa_domain 26: cpu_list=[]
+PE 0:     numa_domain 27: cpu_list=[]
+PE 0:     numa_domain 28: cpu_list=[]
+PE 0:     numa_domain 29: cpu_list=[]
+PE 0:     numa_domain 30: cpu_list=[]
+PE 0:     numa_domain 31: cpu_list=[]
+PE 0:     numa_domain 32: cpu_list=[]
+PE 0:     numa_domain 33: cpu_list=[]
+PE 0:     numa_domain 34: cpu_list=[]
+PE 0:     numa_domain 35: cpu_list=[]
+PE 0: ====================================================================
+PE 0: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=0, domain_name=cxi0, numa_node=0, address=[0x90f2]
+PE 0: MPICH CH4 OFI netmod using cxi provider (domain_name=cxi0, src_addr=0x90f2)
+PE 0: Selected traffic class: [TC_BEST_EFFORT, 512]
+PE 0: MPICH CH4 OFI CXI counters initialized
+(GTL DEBUG: 2) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 4) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 0) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 4] [job id 551317.2] [Mon Mar  3 22:55:16 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(139534594) (rank 4 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 0] [job id 551317.2] [Mon Mar  3 22:55:16 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(139534594) (rank 0 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+(GTL DEBUG: 6) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 5) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 2] [job id 551317.2] [Mon Mar  3 22:55:16 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(5316866) (rank 2 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+(GTL DEBUG: 7) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 3) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 6] [job id 551317.2] [Mon Mar  3 22:55:16 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 6 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 5] [job id 551317.2] [Mon Mar  3 22:55:16 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 5 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 3] [job id 551317.2] [Mon Mar  3 22:55:16 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(5316866) (rank 3 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+MPICH ERROR [Rank 7] [job id 551317.2] [Mon Mar  3 22:55:16 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(5316866) (rank 7 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+(GTL DEBUG: 1) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 1] [job id 551317.2] [Mon Mar  3 22:55:16 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(5316866) (rank 1 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+srun: error: gh053: tasks 1,3: Exited with exit code 255
+srun: error: gh076: tasks 4,7: Exited with exit code 255
+srun: error: gh076: tasks 5-6: Exited with exit code 255
+srun: error: gh053: tasks 0,2: Exited with exit code 255
+PE 2: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=2, domain_name=cxi2, numa_node=2, address=[0x9033]
+PE 3: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=3, domain_name=cxi3, numa_node=3, address=[0x90f3]
+PE 1: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=1, domain_name=cxi1, numa_node=1, address=[0x9032]
+PE 0: Launcher/PMI did not supply NIC data (node_idx=0, rc=0, num_pmi_nics=0)
+PE 0: MPICH_OFI_NIC_POLICY = BLOCK
+PE 0: MPICH CH4 OFI detected 4 NICs/node on host gh053.hsn.cm.delta.internal.ncsa.edu
+PE 0: ======================== Display NIC Addrs  ========================
+PE 0: Hostname: gh053.hsn.cm.delta.internal.ncsa.edu
+PE 0:   MPICH_OFI_NIC_POLICY: BLOCK
+PE 0:   Number of NICs: 4
+PE 0:     nic_index 0: domain_name=cxi0, numa_domain=0, addr=0x90f2
+PE 0:     nic_index 1: domain_name=cxi1, numa_domain=1, addr=0x9032
+PE 0:     nic_index 2: domain_name=cxi2, numa_domain=2, addr=0x9033
+PE 0:     nic_index 3: domain_name=cxi3, numa_domain=3, addr=0x90f3
+PE 0:   Number of NUMA domains: 36
+PE 0:     numa_domain 0: cpu_list=[0-71]
+PE 0:     numa_domain 1: cpu_list=[72-143]
+PE 0:     numa_domain 2: cpu_list=[144-215]
+PE 0:     numa_domain 3: cpu_list=[216-287]
+PE 0:     numa_domain 4: cpu_list=[]
+PE 0:     numa_domain 5: cpu_list=[]
+PE 0:     numa_domain 6: cpu_list=[]
+PE 0:     numa_domain 7: cpu_list=[]
+PE 0:     numa_domain 8: cpu_list=[]
+PE 0:     numa_domain 9: cpu_list=[]
+PE 0:     numa_domain 10: cpu_list=[]
+PE 0:     numa_domain 11: cpu_list=[]
+PE 0:     numa_domain 12: cpu_list=[]
+PE 0:     numa_domain 13: cpu_list=[]
+PE 0:     numa_domain 14: cpu_list=[]
+PE 0:     numa_domain 15: cpu_list=[]
+PE 0:     numa_domain 16: cpu_list=[]
+PE 0:     numa_domain 17: cpu_list=[]
+PE 0:     numa_domain 18: cpu_list=[]
+PE 0:     numa_domain 19: cpu_list=[]
+PE 0:     numa_domain 20: cpu_list=[]
+PE 0:     numa_domain 21: cpu_list=[]
+PE 0:     numa_domain 22: cpu_list=[]
+PE 0:     numa_domain 23: cpu_list=[]
+PE 0:     numa_domain 24: cpu_list=[]
+PE 0:     numa_domain 25: cpu_list=[]
+PE 0:     numa_domain 26: cpu_list=[]
+PE 0:     numa_domain 27: cpu_list=[]
+PE 0:     numa_domain 28: cpu_list=[]
+PE 0:     numa_domain 29: cpu_list=[]
+PE 0:     numa_domain 30: cpu_list=[]
+PE 0:     numa_domain 31: cpu_list=[]
+PE 0:     numa_domain 32: cpu_list=[]
+PE 0:     numa_domain 33: cpu_list=[]
+PE 0:     numa_domain 34: cpu_list=[]
+PE 0:     numa_domain 35: cpu_list=[]
+PE 0: ====================================================================
+PE 0: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=0, domain_name=cxi0, numa_node=0, address=[0x90f2]
+PE 0: MPICH CH4 OFI netmod using cxi provider (domain_name=cxi0, src_addr=0x90f2)
+PE 0: Selected traffic class: [TC_BEST_EFFORT, 512]
+PE 5: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=1, domain_name=cxi1, numa_node=1, address=[0x78b0]
+PE 7: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=3, domain_name=cxi3, numa_node=3, address=[0x7871]
+PE 6: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=2, domain_name=cxi2, numa_node=2, address=[0x78b1]
+PE 4: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=0, domain_name=cxi0, numa_node=0, address=[0x7870]
+PE 0: MPICH CH4 OFI CXI counters initialized
+(GTL DEBUG: 1) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 3) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 0) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 2) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 4) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 5) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 0] [job id 551317.3] [Mon Mar  3 22:55:26 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 0 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+MPICH ERROR [Rank 1] [job id 551317.3] [Mon Mar  3 22:55:26 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 1 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+(GTL DEBUG: 6) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 2] [job id 551317.3] [Mon Mar  3 22:55:26 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 2 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+(GTL DEBUG: 7) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 4] [job id 551317.3] [Mon Mar  3 22:55:26 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(139534594) (rank 4 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+MPICH ERROR [Rank 5] [job id 551317.3] [Mon Mar  3 22:55:26 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(139534594) (rank 5 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 6] [job id 551317.3] [Mon Mar  3 22:55:26 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(5316866) (rank 6 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 7] [job id 551317.3] [Mon Mar  3 22:55:26 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(139534594) (rank 7 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+MPICH ERROR [Rank 3] [job id 551317.3] [Mon Mar  3 22:55:26 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 3 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+srun: error: gh053: tasks 1-2: Exited with exit code 255
+srun: error: gh076: tasks 4,7: Exited with exit code 255
+srun: error: gh053: tasks 0,3: Exited with exit code 255
+srun: error: gh076: tasks 5-6: Exited with exit code 255
+PE 2: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=2, domain_name=cxi2, numa_node=2, address=[0x9033]
+PE 3: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=3, domain_name=cxi3, numa_node=3, address=[0x90f3]
+PE 0: Launcher/PMI did not supply NIC data (node_idx=0, rc=0, num_pmi_nics=0)
+PE 1: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=1, domain_name=cxi1, numa_node=1, address=[0x9032]
+PE 0: MPICH_OFI_NIC_POLICY = BLOCK
+PE 0: MPICH CH4 OFI detected 4 NICs/node on host gh053.hsn.cm.delta.internal.ncsa.edu
+PE 0: ======================== Display NIC Addrs  ========================
+PE 0: Hostname: gh053.hsn.cm.delta.internal.ncsa.edu
+PE 0:   MPICH_OFI_NIC_POLICY: BLOCK
+PE 0:   Number of NICs: 4
+PE 0:     nic_index 0: domain_name=cxi0, numa_domain=0, addr=0x90f2
+PE 0:     nic_index 1: domain_name=cxi1, numa_domain=1, addr=0x9032
+PE 0:     nic_index 2: domain_name=cxi2, numa_domain=2, addr=0x9033
+PE 0:     nic_index 3: domain_name=cxi3, numa_domain=3, addr=0x90f3
+PE 0:   Number of NUMA domains: 36
+PE 0:     numa_domain 0: cpu_list=[0-71]
+PE 0:     numa_domain 1: cpu_list=[72-143]
+PE 0:     numa_domain 2: cpu_list=[144-215]
+PE 0:     numa_domain 3: cpu_list=[216-287]
+PE 0:     numa_domain 4: cpu_list=[]
+PE 0:     numa_domain 5: cpu_list=[]
+PE 0:     numa_domain 6: cpu_list=[]
+PE 0:     numa_domain 7: cpu_list=[]
+PE 0:     numa_domain 8: cpu_list=[]
+PE 0:     numa_domain 9: cpu_list=[]
+PE 0:     numa_domain 10: cpu_list=[]
+PE 0:     numa_domain 11: cpu_list=[]
+PE 0:     numa_domain 12: cpu_list=[]
+PE 0:     numa_domain 13: cpu_list=[]
+PE 0:     numa_domain 14: cpu_list=[]
+PE 0:     numa_domain 15: cpu_list=[]
+PE 0:     numa_domain 16: cpu_list=[]
+PE 0:     numa_domain 17: cpu_list=[]
+PE 0:     numa_domain 18: cpu_list=[]
+PE 0:     numa_domain 19: cpu_list=[]
+PE 0:     numa_domain 20: cpu_list=[]
+PE 0:     numa_domain 21: cpu_list=[]
+PE 0:     numa_domain 22: cpu_list=[]
+PE 0:     numa_domain 23: cpu_list=[]
+PE 0:     numa_domain 24: cpu_list=[]
+PE 0:     numa_domain 25: cpu_list=[]
+PE 0:     numa_domain 26: cpu_list=[]
+PE 0:     numa_domain 27: cpu_list=[]
+PE 0:     numa_domain 28: cpu_list=[]
+PE 0:     numa_domain 29: cpu_list=[]
+PE 0:     numa_domain 30: cpu_list=[]
+PE 0:     numa_domain 31: cpu_list=[]
+PE 0:     numa_domain 32: cpu_list=[]
+PE 0:     numa_domain 33: cpu_list=[]
+PE 0:     numa_domain 34: cpu_list=[]
+PE 0:     numa_domain 35: cpu_list=[]
+PE 0: ====================================================================
+PE 0: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=0, domain_name=cxi0, numa_node=0, address=[0x90f2]
+PE 0: MPICH CH4 OFI netmod using cxi provider (domain_name=cxi0, src_addr=0x90f2)
+PE 0: Selected traffic class: [TC_BEST_EFFORT, 512]
+PE 7: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=3, domain_name=cxi3, numa_node=3, address=[0x7871]
+PE 6: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=2, domain_name=cxi2, numa_node=2, address=[0x78b1]
+PE 5: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=1, domain_name=cxi1, numa_node=1, address=[0x78b0]
+PE 4: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=0, domain_name=cxi0, numa_node=0, address=[0x7870]
+PE 0: MPICH CH4 OFI CXI counters initialized
+(GTL DEBUG: 4) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 4] [job id 551317.4] [Mon Mar  3 22:55:33 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(5316866) (rank 4 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+(GTL DEBUG: 6) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 6] [job id 551317.4] [Mon Mar  3 22:55:33 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 6 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+(GTL DEBUG: 7) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 5) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 1) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 7] [job id 551317.4] [Mon Mar  3 22:55:33 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 7 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+MPICH ERROR [Rank 1] [job id 551317.4] [Mon Mar  3 22:55:33 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 1 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+(GTL DEBUG: 2) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 5] [job id 551317.4] [Mon Mar  3 22:55:33 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 5 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+(GTL DEBUG: 0) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 2] [job id 551317.4] [Mon Mar  3 22:55:33 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(5316866) (rank 2 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 0] [job id 551317.4] [Mon Mar  3 22:55:33 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(5316866) (rank 0 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+(GTL DEBUG: 3) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 3] [job id 551317.4] [Mon Mar  3 22:55:33 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 3 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+srun: error: gh053: tasks 1-2: Exited with exit code 255
+srun: error: gh076: tasks 5-6: Exited with exit code 255
+srun: error: gh053: tasks 0,3: Exited with exit code 255
+srun: error: gh076: tasks 4,7: Exited with exit code 255
+PE 3: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=3, domain_name=cxi3, numa_node=3, address=[0x90f3]
+PE 2: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=2, domain_name=cxi2, numa_node=2, address=[0x9033]
+PE 0: Launcher/PMI did not supply NIC data (node_idx=0, rc=0, num_pmi_nics=0)
+PE 1: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=1, domain_name=cxi1, numa_node=1, address=[0x9032]
+PE 0: MPICH_OFI_NIC_POLICY = BLOCK
+PE 0: MPICH CH4 OFI detected 4 NICs/node on host gh053.hsn.cm.delta.internal.ncsa.edu
+PE 0: ======================== Display NIC Addrs  ========================
+PE 0: Hostname: gh053.hsn.cm.delta.internal.ncsa.edu
+PE 0:   MPICH_OFI_NIC_POLICY: BLOCK
+PE 0:   Number of NICs: 4
+PE 0:     nic_index 0: domain_name=cxi0, numa_domain=0, addr=0x90f2
+PE 0:     nic_index 1: domain_name=cxi1, numa_domain=1, addr=0x9032
+PE 0:     nic_index 2: domain_name=cxi2, numa_domain=2, addr=0x9033
+PE 0:     nic_index 3: domain_name=cxi3, numa_domain=3, addr=0x90f3
+PE 0:   Number of NUMA domains: 36
+PE 0:     numa_domain 0: cpu_list=[0-71]
+PE 0:     numa_domain 1: cpu_list=[72-143]
+PE 0:     numa_domain 2: cpu_list=[144-215]
+PE 0:     numa_domain 3: cpu_list=[216-287]
+PE 0:     numa_domain 4: cpu_list=[]
+PE 0:     numa_domain 5: cpu_list=[]
+PE 0:     numa_domain 6: cpu_list=[]
+PE 0:     numa_domain 7: cpu_list=[]
+PE 0:     numa_domain 8: cpu_list=[]
+PE 0:     numa_domain 9: cpu_list=[]
+PE 0:     numa_domain 10: cpu_list=[]
+PE 0:     numa_domain 11: cpu_list=[]
+PE 0:     numa_domain 12: cpu_list=[]
+PE 0:     numa_domain 13: cpu_list=[]
+PE 0:     numa_domain 14: cpu_list=[]
+PE 0:     numa_domain 15: cpu_list=[]
+PE 0:     numa_domain 16: cpu_list=[]
+PE 0:     numa_domain 17: cpu_list=[]
+PE 0:     numa_domain 18: cpu_list=[]
+PE 0:     numa_domain 19: cpu_list=[]
+PE 0:     numa_domain 20: cpu_list=[]
+PE 0:     numa_domain 21: cpu_list=[]
+PE 0:     numa_domain 22: cpu_list=[]
+PE 0:     numa_domain 23: cpu_list=[]
+PE 0:     numa_domain 24: cpu_list=[]
+PE 0:     numa_domain 25: cpu_list=[]
+PE 0:     numa_domain 26: cpu_list=[]
+PE 0:     numa_domain 27: cpu_list=[]
+PE 0:     numa_domain 28: cpu_list=[]
+PE 0:     numa_domain 29: cpu_list=[]
+PE 0:     numa_domain 30: cpu_list=[]
+PE 0:     numa_domain 31: cpu_list=[]
+PE 0:     numa_domain 32: cpu_list=[]
+PE 0:     numa_domain 33: cpu_list=[]
+PE 0:     numa_domain 34: cpu_list=[]
+PE 0:     numa_domain 35: cpu_list=[]
+PE 0: ====================================================================
+PE 0: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=0, domain_name=cxi0, numa_node=0, address=[0x90f2]
+PE 0: MPICH CH4 OFI netmod using cxi provider (domain_name=cxi0, src_addr=0x90f2)
+PE 0: Selected traffic class: [TC_BEST_EFFORT, 512]
+PE 5: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=1, domain_name=cxi1, numa_node=1, address=[0x78b0]
+PE 7: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=3, domain_name=cxi3, numa_node=3, address=[0x7871]
+PE 6: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=2, domain_name=cxi2, numa_node=2, address=[0x78b1]
+PE 4: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=0, domain_name=cxi0, numa_node=0, address=[0x7870]
+PE 0: MPICH CH4 OFI CXI counters initialized
+(GTL DEBUG: 1) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 4) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 6) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 2) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 5) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 7) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 4] [job id 551317.5] [Mon Mar  3 22:55:42 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(139534594) (rank 4 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+(GTL DEBUG: 3) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 0) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 0] [job id 551317.5] [Mon Mar  3 22:55:42 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(139534594) (rank 0 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+MPICH ERROR [Rank 1] [job id 551317.5] [Mon Mar  3 22:55:42 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 1 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+MPICH ERROR [Rank 2] [job id 551317.5] [Mon Mar  3 22:55:42 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 2 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+MPICH ERROR [Rank 5] [job id 551317.5] [Mon Mar  3 22:55:42 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(139534594) (rank 5 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 3] [job id 551317.5] [Mon Mar  3 22:55:42 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(5316866) (rank 3 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+MPICH ERROR [Rank 6] [job id 551317.5] [Mon Mar  3 22:55:42 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 6 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 7] [job id 551317.5] [Mon Mar  3 22:55:42 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(5316866) (rank 7 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+srun: error: gh053: tasks 2-3: Exited with exit code 255
+srun: error: gh076: tasks 5-6: Exited with exit code 255
+srun: error: gh053: tasks 0-1: Exited with exit code 255
+srun: error: gh076: tasks 4,7: Exited with exit code 255
+PE 5: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=1, domain_name=cxi1, numa_node=1, address=[0x78b0]
+PE 7: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=3, domain_name=cxi3, numa_node=3, address=[0x7871]
+PE 6: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=2, domain_name=cxi2, numa_node=2, address=[0x78b1]
+PE 4: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=0, domain_name=cxi0, numa_node=0, address=[0x7870]
+PE 2: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=2, domain_name=cxi2, numa_node=2, address=[0x9033]
+PE 1: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=1, domain_name=cxi1, numa_node=1, address=[0x9032]
+PE 0: Launcher/PMI did not supply NIC data (node_idx=0, rc=0, num_pmi_nics=0)
+PE 3: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=3, domain_name=cxi3, numa_node=3, address=[0x90f3]
+PE 0: MPICH_OFI_NIC_POLICY = BLOCK
+PE 0: MPICH CH4 OFI detected 4 NICs/node on host gh053.hsn.cm.delta.internal.ncsa.edu
+PE 0: ======================== Display NIC Addrs  ========================
+PE 0: Hostname: gh053.hsn.cm.delta.internal.ncsa.edu
+PE 0:   MPICH_OFI_NIC_POLICY: BLOCK
+PE 0:   Number of NICs: 4
+PE 0:     nic_index 0: domain_name=cxi0, numa_domain=0, addr=0x90f2
+PE 0:     nic_index 1: domain_name=cxi1, numa_domain=1, addr=0x9032
+PE 0:     nic_index 2: domain_name=cxi2, numa_domain=2, addr=0x9033
+PE 0:     nic_index 3: domain_name=cxi3, numa_domain=3, addr=0x90f3
+PE 0:   Number of NUMA domains: 36
+PE 0:     numa_domain 0: cpu_list=[0-71]
+PE 0:     numa_domain 1: cpu_list=[72-143]
+PE 0:     numa_domain 2: cpu_list=[144-215]
+PE 0:     numa_domain 3: cpu_list=[216-287]
+PE 0:     numa_domain 4: cpu_list=[]
+PE 0:     numa_domain 5: cpu_list=[]
+PE 0:     numa_domain 6: cpu_list=[]
+PE 0:     numa_domain 7: cpu_list=[]
+PE 0:     numa_domain 8: cpu_list=[]
+PE 0:     numa_domain 9: cpu_list=[]
+PE 0:     numa_domain 10: cpu_list=[]
+PE 0:     numa_domain 11: cpu_list=[]
+PE 0:     numa_domain 12: cpu_list=[]
+PE 0:     numa_domain 13: cpu_list=[]
+PE 0:     numa_domain 14: cpu_list=[]
+PE 0:     numa_domain 15: cpu_list=[]
+PE 0:     numa_domain 16: cpu_list=[]
+PE 0:     numa_domain 17: cpu_list=[]
+PE 0:     numa_domain 18: cpu_list=[]
+PE 0:     numa_domain 19: cpu_list=[]
+PE 0:     numa_domain 20: cpu_list=[]
+PE 0:     numa_domain 21: cpu_list=[]
+PE 0:     numa_domain 22: cpu_list=[]
+PE 0:     numa_domain 23: cpu_list=[]
+PE 0:     numa_domain 24: cpu_list=[]
+PE 0:     numa_domain 25: cpu_list=[]
+PE 0:     numa_domain 26: cpu_list=[]
+PE 0:     numa_domain 27: cpu_list=[]
+PE 0:     numa_domain 28: cpu_list=[]
+PE 0:     numa_domain 29: cpu_list=[]
+PE 0:     numa_domain 30: cpu_list=[]
+PE 0:     numa_domain 31: cpu_list=[]
+PE 0:     numa_domain 32: cpu_list=[]
+PE 0:     numa_domain 33: cpu_list=[]
+PE 0:     numa_domain 34: cpu_list=[]
+PE 0:     numa_domain 35: cpu_list=[]
+PE 0: ====================================================================
+PE 0: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=0, domain_name=cxi0, numa_node=0, address=[0x90f2]
+PE 0: MPICH CH4 OFI netmod using cxi provider (domain_name=cxi0, src_addr=0x90f2)
+PE 0: Selected traffic class: [TC_BEST_EFFORT, 512]
+PE 0: MPICH CH4 OFI CXI counters initialized
+(GTL DEBUG: 4) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 4] [job id 551317.6] [Mon Mar  3 22:55:49 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(5316866) (rank 4 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+(GTL DEBUG: 0) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 2) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 6) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 0] [job id 551317.6] [Mon Mar  3 22:55:49 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 0 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+(GTL DEBUG: 1) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 2] [job id 551317.6] [Mon Mar  3 22:55:49 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(5316866) (rank 2 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+(GTL DEBUG: 5) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 7) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 1] [job id 551317.6] [Mon Mar  3 22:55:49 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 1 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 6] [job id 551317.6] [Mon Mar  3 22:55:49 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 6 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+MPICH ERROR [Rank 5] [job id 551317.6] [Mon Mar  3 22:55:49 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 5 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+(GTL DEBUG: 3) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 7] [job id 551317.6] [Mon Mar  3 22:55:49 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(5316866) (rank 7 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 3] [job id 551317.6] [Mon Mar  3 22:55:49 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 3 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+srun: error: gh053: tasks 1-2: Exited with exit code 255
+srun: error: gh076: tasks 4,7: Exited with exit code 255
+srun: error: gh053: tasks 0,3: Exited with exit code 255
+srun: error: gh076: tasks 5-6: Exited with exit code 255
+PE 5: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=1, domain_name=cxi1, numa_node=1, address=[0x78b0]
+PE 7: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=3, domain_name=cxi3, numa_node=3, address=[0x7871]
+PE 2: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=2, domain_name=cxi2, numa_node=2, address=[0x9033]
+PE 6: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=2, domain_name=cxi2, numa_node=2, address=[0x78b1]
+PE 4: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=0, domain_name=cxi0, numa_node=0, address=[0x7870]
+PE 1: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=1, domain_name=cxi1, numa_node=1, address=[0x9032]
+PE 3: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=3, domain_name=cxi3, numa_node=3, address=[0x90f3]
+PE 0: Launcher/PMI did not supply NIC data (node_idx=0, rc=0, num_pmi_nics=0)
+PE 0: MPICH_OFI_NIC_POLICY = BLOCK
+PE 0: MPICH CH4 OFI detected 4 NICs/node on host gh053.hsn.cm.delta.internal.ncsa.edu
+PE 0: ======================== Display NIC Addrs  ========================
+PE 0: Hostname: gh053.hsn.cm.delta.internal.ncsa.edu
+PE 0:   MPICH_OFI_NIC_POLICY: BLOCK
+PE 0:   Number of NICs: 4
+PE 0:     nic_index 0: domain_name=cxi0, numa_domain=0, addr=0x90f2
+PE 0:     nic_index 1: domain_name=cxi1, numa_domain=1, addr=0x9032
+PE 0:     nic_index 2: domain_name=cxi2, numa_domain=2, addr=0x9033
+PE 0:     nic_index 3: domain_name=cxi3, numa_domain=3, addr=0x90f3
+PE 0:   Number of NUMA domains: 36
+PE 0:     numa_domain 0: cpu_list=[0-71]
+PE 0:     numa_domain 1: cpu_list=[72-143]
+PE 0:     numa_domain 2: cpu_list=[144-215]
+PE 0:     numa_domain 3: cpu_list=[216-287]
+PE 0:     numa_domain 4: cpu_list=[]
+PE 0:     numa_domain 5: cpu_list=[]
+PE 0:     numa_domain 6: cpu_list=[]
+PE 0:     numa_domain 7: cpu_list=[]
+PE 0:     numa_domain 8: cpu_list=[]
+PE 0:     numa_domain 9: cpu_list=[]
+PE 0:     numa_domain 10: cpu_list=[]
+PE 0:     numa_domain 11: cpu_list=[]
+PE 0:     numa_domain 12: cpu_list=[]
+PE 0:     numa_domain 13: cpu_list=[]
+PE 0:     numa_domain 14: cpu_list=[]
+PE 0:     numa_domain 15: cpu_list=[]
+PE 0:     numa_domain 16: cpu_list=[]
+PE 0:     numa_domain 17: cpu_list=[]
+PE 0:     numa_domain 18: cpu_list=[]
+PE 0:     numa_domain 19: cpu_list=[]
+PE 0:     numa_domain 20: cpu_list=[]
+PE 0:     numa_domain 21: cpu_list=[]
+PE 0:     numa_domain 22: cpu_list=[]
+PE 0:     numa_domain 23: cpu_list=[]
+PE 0:     numa_domain 24: cpu_list=[]
+PE 0:     numa_domain 25: cpu_list=[]
+PE 0:     numa_domain 26: cpu_list=[]
+PE 0:     numa_domain 27: cpu_list=[]
+PE 0:     numa_domain 28: cpu_list=[]
+PE 0:     numa_domain 29: cpu_list=[]
+PE 0:     numa_domain 30: cpu_list=[]
+PE 0:     numa_domain 31: cpu_list=[]
+PE 0:     numa_domain 32: cpu_list=[]
+PE 0:     numa_domain 33: cpu_list=[]
+PE 0:     numa_domain 34: cpu_list=[]
+PE 0:     numa_domain 35: cpu_list=[]
+PE 0: ====================================================================
+PE 0: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=0, domain_name=cxi0, numa_node=0, address=[0x90f2]
+PE 0: MPICH CH4 OFI netmod using cxi provider (domain_name=cxi0, src_addr=0x90f2)
+PE 0: Selected traffic class: [TC_BEST_EFFORT, 512]
+PE 0: MPICH CH4 OFI CXI counters initialized
+(GTL DEBUG: 5) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 1) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 2) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 0) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 3) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 4) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 6) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 7) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 5] [job id 551317.7] [Mon Mar  3 22:55:59 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 5 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 6] [job id 551317.7] [Mon Mar  3 22:55:59 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 6 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+MPICH ERROR [Rank 4] [job id 551317.7] [Mon Mar  3 22:55:59 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 4 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 0] [job id 551317.7] [Mon Mar  3 22:55:59 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(139534594) (rank 0 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+MPICH ERROR [Rank 7] [job id 551317.7] [Mon Mar  3 22:55:59 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 7 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+MPICH ERROR [Rank 1] [job id 551317.7] [Mon Mar  3 22:55:59 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(139534594) (rank 1 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 2] [job id 551317.7] [Mon Mar  3 22:55:59 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 2 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 3] [job id 551317.7] [Mon Mar  3 22:55:59 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 3 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+srun: error: gh076: tasks 5-6: Exited with exit code 255
+srun: error: gh053: tasks 0-1: Exited with exit code 255
+srun: error: gh076: tasks 4,7: Exited with exit code 255
+srun: error: gh053: tasks 2-3: Exited with exit code 255
+PE 5: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=1, domain_name=cxi1, numa_node=1, address=[0x78b0]
+PE 2: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=2, domain_name=cxi2, numa_node=2, address=[0x9033]
+PE 3: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=3, domain_name=cxi3, numa_node=3, address=[0x90f3]
+PE 1: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=1, domain_name=cxi1, numa_node=1, address=[0x9032]
+PE 0: Launcher/PMI did not supply NIC data (node_idx=0, rc=0, num_pmi_nics=0)
+PE 0: MPICH_OFI_NIC_POLICY = BLOCK
+PE 0: MPICH CH4 OFI detected 4 NICs/node on host gh053.hsn.cm.delta.internal.ncsa.edu
+PE 0: ======================== Display NIC Addrs  ========================
+PE 0: Hostname: gh053.hsn.cm.delta.internal.ncsa.edu
+PE 0:   MPICH_OFI_NIC_POLICY: BLOCK
+PE 0:   Number of NICs: 4
+PE 0:     nic_index 0: domain_name=cxi0, numa_domain=0, addr=0x90f2
+PE 0:     nic_index 1: domain_name=cxi1, numa_domain=1, addr=0x9032
+PE 0:     nic_index 2: domain_name=cxi2, numa_domain=2, addr=0x9033
+PE 0:     nic_index 3: domain_name=cxi3, numa_domain=3, addr=0x90f3
+PE 0:   Number of NUMA domains: 36
+PE 0:     numa_domain 0: cpu_list=[0-71]
+PE 0:     numa_domain 1: cpu_list=[72-143]
+PE 0:     numa_domain 2: cpu_list=[144-215]
+PE 0:     numa_domain 3: cpu_list=[216-287]
+PE 0:     numa_domain 4: cpu_list=[]
+PE 0:     numa_domain 5: cpu_list=[]
+PE 0:     numa_domain 6: cpu_list=[]
+PE 0:     numa_domain 7: cpu_list=[]
+PE 0:     numa_domain 8: cpu_list=[]
+PE 0:     numa_domain 9: cpu_list=[]
+PE 0:     numa_domain 10: cpu_list=[]
+PE 0:     numa_domain 11: cpu_list=[]
+PE 0:     numa_domain 12: cpu_list=[]
+PE 0:     numa_domain 13: cpu_list=[]
+PE 0:     numa_domain 14: cpu_list=[]
+PE 0:     numa_domain 15: cpu_list=[]
+PE 0:     numa_domain 16: cpu_list=[]
+PE 0:     numa_domain 17: cpu_list=[]
+PE 0:     numa_domain 18: cpu_list=[]
+PE 0:     numa_domain 19: cpu_list=[]
+PE 0:     numa_domain 20: cpu_list=[]
+PE 0:     numa_domain 21: cpu_list=[]
+PE 0:     numa_domain 22: cpu_list=[]
+PE 0:     numa_domain 23: cpu_list=[]
+PE 0:     numa_domain 24: cpu_list=[]
+PE 0:     numa_domain 25: cpu_list=[]
+PE 0:     numa_domain 26: cpu_list=[]
+PE 0:     numa_domain 27: cpu_list=[]
+PE 0:     numa_domain 28: cpu_list=[]
+PE 0:     numa_domain 29: cpu_list=[]
+PE 0:     numa_domain 30: cpu_list=[]
+PE 0:     numa_domain 31: cpu_list=[]
+PE 0:     numa_domain 32: cpu_list=[]
+PE 0:     numa_domain 33: cpu_list=[]
+PE 0:     numa_domain 34: cpu_list=[]
+PE 0:     numa_domain 35: cpu_list=[]
+PE 0: ====================================================================
+PE 0: Host gh053.hsn.cm.delta.internal.ncsa.edu selected NIC index=0, domain_name=cxi0, numa_node=0, address=[0x90f2]
+PE 0: MPICH CH4 OFI netmod using cxi provider (domain_name=cxi0, src_addr=0x90f2)
+PE 0: Selected traffic class: [TC_BEST_EFFORT, 512]
+PE 4: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=0, domain_name=cxi0, numa_node=0, address=[0x7870]
+PE 7: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=3, domain_name=cxi3, numa_node=3, address=[0x7871]
+PE 6: Host gh076.hsn.cm.delta.internal.ncsa.edu selected NIC index=2, domain_name=cxi2, numa_node=2, address=[0x78b1]
+PE 0: MPICH CH4 OFI CXI counters initialized
+(GTL DEBUG: 2) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 0) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 1) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 2] [job id 551317.8] [Mon Mar  3 22:56:05 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 2 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+(GTL DEBUG: 4) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 0] [job id 551317.8] [Mon Mar  3 22:56:05 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 0 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+MPICH ERROR [Rank 1] [job id 551317.8] [Mon Mar  3 22:56:05 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 1 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+(GTL DEBUG: 5) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 6) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+(GTL DEBUG: 7) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+(GTL DEBUG: 3) cuIpcOpenMemHandle: invalid argument, CUDA_ERROR_INVALID_VALUE, line no 360
+MPICH ERROR [Rank 4] [job id 551317.8] [Mon Mar  3 22:56:05 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(139534594) (rank 4 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+MPICH ERROR [Rank 3] [job id 551317.8] [Mon Mar  3 22:56:05 2025] [gh053.hsn.cm.delta.internal.ncsa.edu] - Abort(5316866) (rank 3 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffd19e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 5] [job id 551317.8] [Mon Mar  3 22:56:05 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 5 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+MPICH ERROR [Rank 6] [job id 551317.8] [Mon Mar  3 22:56:05 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(273752322) (rank 6 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcf9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+MPICH ERROR [Rank 7] [job id 551317.8] [Mon Mar  3 22:56:05 2025] [gh076.hsn.cm.delta.internal.ncsa.edu] - Abort(139534594) (rank 7 in comm 0): Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+
+aborting job:
+Fatal error in PMPI_Alltoall: Invalid count, error stack:
+PMPI_Alltoall(427)........................: MPI_Alltoall(sbuf=0xfffcd9e00000, scount=128, MPI_DOUBLE, rbuf=0x32d000000, rcount=128, datatype=MPI_DOUBLE, comm=MPI_COMM_WORLD) failed
+MPIR_CRAY_Alltoall_chunking(744)..........: 
+MPIR_Waitall(167).........................: 
+MPIR_Waitall_impl(51).....................: 
+MPID_Progress_wait(201)...................: 
+MPIDI_Progress_test(105)..................: 
+MPIDI_SHMI_progress(118)..................: 
+MPIDI_POSIX_progress(412).................: 
+MPIDI_CRAY_Common_lmt_ctrl_send_rts_cb(64): 
+MPIDI_CRAY_Common_lmt_handle_recv(44).....: 
+MPIDI_CRAY_Common_lmt_import_mem(218).....: 
+(unknown)(): Invalid count
+srun: error: gh076: tasks 6-7: Exited with exit code 255
+srun: error: gh053: tasks 2-3: Exited with exit code 255
+srun: error: gh053: tasks 0-1: Exited with exit code 255
+srun: error: gh076: tasks 4-5: Exited with exit code 255

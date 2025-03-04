@@ -1,0 +1,627 @@
+Running Unthreaded Alltoall Test:
+Testing Size 1
+GPU-Aware PMPI Time 4.846284e-05
+Copy-to-CPU PMPI Time 4.174265e-05
+Copy-to-CPU Pairwise Time 6.286740e-05
+GPU Aware Pairwise Time 1.325552e-04
+Copy-to-CPU Nonblocking Time 4.236515e-05
+GPU Aware Nonblocking Time 8.100463e-05
+MPIX GPU-Aware Pairwise Exchange Time 1.185279e-04
+MPIX GPU-Aware Nonblocking Time 6.722170e-05
+MPIX Copy-to-CPU Pairwise Exchange Time 5.785787e-05
+MPIX Copy-to-CPU Nonblocking Time 3.350527e-05
+Testing Size 2
+GPU-Aware PMPI Time 4.558204e-05
+Copy-to-CPU PMPI Time 3.985314e-05
+Copy-to-CPU Pairwise Time 6.173097e-05
+GPU Aware Pairwise Time 1.324150e-04
+Copy-to-CPU Nonblocking Time 4.044794e-05
+GPU Aware Nonblocking Time 8.329396e-05
+MPIX GPU-Aware Pairwise Exchange Time 1.204477e-04
+MPIX GPU-Aware Nonblocking Time 6.734886e-05
+MPIX Copy-to-CPU Pairwise Exchange Time 5.868633e-05
+MPIX Copy-to-CPU Nonblocking Time 3.462460e-05
+Testing Size 4
+GPU-Aware PMPI Time 4.833401e-05
+Copy-to-CPU PMPI Time 4.016772e-05
+Copy-to-CPU Pairwise Time 6.564114e-05
+GPU Aware Pairwise Time 1.340770e-04
+Copy-to-CPU Nonblocking Time 4.241998e-05
+GPU Aware Nonblocking Time 8.006389e-05
+MPIX GPU-Aware Pairwise Exchange Time 1.168573e-04
+MPIX GPU-Aware Nonblocking Time 6.764067e-05
+MPIX Copy-to-CPU Pairwise Exchange Time 5.643177e-05
+MPIX Copy-to-CPU Nonblocking Time 3.576587e-05
+Testing Size 8
+GPU-Aware PMPI Time 5.065263e-05
+Copy-to-CPU PMPI Time 4.314098e-05
+Copy-to-CPU Pairwise Time 6.469307e-05
+GPU Aware Pairwise Time 1.338096e-04
+Copy-to-CPU Nonblocking Time 4.440638e-05
+GPU Aware Nonblocking Time 8.127126e-05
+MPIX GPU-Aware Pairwise Exchange Time 1.211260e-04
+MPIX GPU-Aware Nonblocking Time 7.058455e-05
+MPIX Copy-to-CPU Pairwise Exchange Time 5.885151e-05
+MPIX Copy-to-CPU Nonblocking Time 3.371900e-05
+Testing Size 16
+GPU-Aware PMPI Time 4.984788e-05
+Copy-to-CPU PMPI Time 4.436576e-05
+Copy-to-CPU Pairwise Time 6.288361e-05
+GPU Aware Pairwise Time 1.330322e-04
+Copy-to-CPU Nonblocking Time 4.400612e-05
+GPU Aware Nonblocking Time 8.196239e-05
+MPIX GPU-Aware Pairwise Exchange Time 1.188453e-04
+MPIX GPU-Aware Nonblocking Time 6.747716e-05
+MPIX Copy-to-CPU Pairwise Exchange Time 5.974812e-05
+MPIX Copy-to-CPU Nonblocking Time 3.629876e-05
+Testing Size 32
+GPU-Aware PMPI Time 9.416690e-05
+Copy-to-CPU PMPI Time 8.372582e-05
+Copy-to-CPU Pairwise Time 7.456472e-05
+GPU Aware Pairwise Time 1.391428e-04
+Copy-to-CPU Nonblocking Time 4.623186e-05
+GPU Aware Nonblocking Time 8.051549e-05
+MPIX GPU-Aware Pairwise Exchange Time 1.235701e-04
+MPIX GPU-Aware Nonblocking Time 6.785903e-05
+MPIX Copy-to-CPU Pairwise Exchange Time 6.347334e-05
+MPIX Copy-to-CPU Nonblocking Time 3.717448e-05
+Testing Size 64
+GPU-Aware PMPI Time 9.192613e-05
+Copy-to-CPU PMPI Time 8.167144e-05
+Copy-to-CPU Pairwise Time 8.448832e-05
+GPU Aware Pairwise Time 1.455609e-04
+Copy-to-CPU Nonblocking Time 4.934655e-05
+GPU Aware Nonblocking Time 8.387582e-05
+MPIX GPU-Aware Pairwise Exchange Time 1.258725e-04
+MPIX GPU-Aware Nonblocking Time 6.810255e-05
+MPIX Copy-to-CPU Pairwise Exchange Time 6.756413e-05
+MPIX Copy-to-CPU Nonblocking Time 3.703434e-05
+Testing Size 128
+Running Threaded Alltoall Test with launches, 2 threads
+Testing Size 1
+GPU-Aware PMPI Time 4.893816e-05
+Copy-to-CPU PMPI Time 4.202648e-05
+Copy-to-CPU Pairwise Time 6.355737e-05
+GPU-Aware Pairwise Time 1.348949e-04
+2 Threads Pairwise Time 6.802581e-05
+Copy-to-CPU Nonblocking Time 3.802017e-05
+GPU-Aware Nonblocking Time 7.830998e-05
+2 Threads Nonblocking Time 5.858230e-05
+2 Threads Nonblocking (Neighbor) Time 5.779468e-05
+MPIX Threaded Pairwise Exchange Time 5.928980e-05
+MPIX Threaded Nonblocking Time 5.170668e-05
+Testing Size 2
+GPU-Aware PMPI Time 4.828015e-05
+Copy-to-CPU PMPI Time 4.077238e-05
+Copy-to-CPU Pairwise Time 6.278713e-05
+GPU-Aware Pairwise Time 1.319789e-04
+2 Threads Pairwise Time 6.450567e-05
+Copy-to-CPU Nonblocking Time 4.265391e-05
+GPU-Aware Nonblocking Time 8.136106e-05
+2 Threads Nonblocking Time 6.574953e-05
+2 Threads Nonblocking (Neighbor) Time 6.073145e-05
+MPIX Threaded Pairwise Exchange Time 6.117249e-05
+MPIX Threaded Nonblocking Time 5.492238e-05
+Testing Size 4
+GPU-Aware PMPI Time 4.948363e-05
+Copy-to-CPU PMPI Time 4.252068e-05
+Copy-to-CPU Pairwise Time 6.374188e-05
+GPU-Aware Pairwise Time 1.324006e-04
+2 Threads Pairwise Time 6.534264e-05
+Copy-to-CPU Nonblocking Time 4.206010e-05
+GPU-Aware Nonblocking Time 7.948826e-05
+2 Threads Nonblocking Time 6.122823e-05
+2 Threads Nonblocking (Neighbor) Time 5.823908e-05
+MPIX Threaded Pairwise Exchange Time 5.957289e-05
+MPIX Threaded Nonblocking Time 5.335997e-05
+Testing Size 8
+GPU-Aware PMPI Time 5.215741e-05
+Copy-to-CPU PMPI Time 4.576394e-05
+Copy-to-CPU Pairwise Time 6.493231e-05
+GPU-Aware Pairwise Time 1.351280e-04
+2 Threads Pairwise Time 6.533198e-05
+Copy-to-CPU Nonblocking Time 4.256737e-05
+GPU-Aware Nonblocking Time 7.907224e-05
+2 Threads Nonblocking Time 5.990366e-05
+2 Threads Nonblocking (Neighbor) Time 6.032698e-05
+MPIX Threaded Pairwise Exchange Time 5.850192e-05
+MPIX Threaded Nonblocking Time 5.378767e-05
+Testing Size 16
+GPU-Aware PMPI Time 5.239452e-05
+Copy-to-CPU PMPI Time 4.618105e-05
+Copy-to-CPU Pairwise Time 6.456154e-05
+GPU-Aware Pairwise Time 1.353527e-04
+2 Threads Pairwise Time 6.725483e-05
+Copy-to-CPU Nonblocking Time 4.053267e-05
+GPU-Aware Nonblocking Time 8.023671e-05
+2 Threads Nonblocking Time 6.169039e-05
+2 Threads Nonblocking (Neighbor) Time 5.948323e-05
+MPIX Threaded Pairwise Exchange Time 6.132330e-05
+MPIX Threaded Nonblocking Time 5.384139e-05
+Testing Size 32
+GPU-Aware PMPI Time 8.066613e-05
+Copy-to-CPU PMPI Time 7.457665e-05
+Copy-to-CPU Pairwise Time 7.218471e-05
+GPU-Aware Pairwise Time 1.415727e-04
+2 Threads Pairwise Time 7.082029e-05
+Copy-to-CPU Nonblocking Time 4.966747e-05
+GPU-Aware Nonblocking Time 8.193988e-05
+2 Threads Nonblocking Time 6.409806e-05
+2 Threads Nonblocking (Neighbor) Time 5.993451e-05
+MPIX Threaded Pairwise Exchange Time 6.469065e-05
+MPIX Threaded Nonblocking Time 5.385860e-05
+Testing Size 64
+GPU-Aware PMPI Time 8.444001e-05
+Copy-to-CPU PMPI Time 7.667231e-05
+Copy-to-CPU Pairwise Time 7.369668e-05
+GPU-Aware Pairwise Time 1.408934e-04
+2 Threads Pairwise Time 7.344384e-05
+Copy-to-CPU Nonblocking Time 5.104963e-05
+GPU-Aware Nonblocking Time 8.442070e-05
+2 Threads Nonblocking Time 6.777066e-05
+2 Threads Nonblocking (Neighbor) Time 6.355763e-05
+MPIX Threaded Pairwise Exchange Time 6.700105e-05
+MPIX Threaded Nonblocking Time 6.068790e-05
+Testing Size 128
+Running Threaded Alltoall Test without launches, 2 threads
+Testing Size 1
+GPU-Aware PMPI Time 4.970484e-05
+Copy-to-CPU PMPI Time 4.251879e-05
+Copy-to-CPU Pairwise Time 6.524350e-05
+2 Threads Pairwise Time 6.463910e-05
+Copy-to-CPU Nonblocking Time 4.090022e-05
+2 Threads Nonblocking Time 6.086066e-05
+Testing Size 2
+GPU-Aware PMPI Time 4.867970e-05
+Copy-to-CPU PMPI Time 4.210684e-05
+Copy-to-CPU Pairwise Time 6.480560e-05
+2 Threads Pairwise Time 6.424484e-05
+Copy-to-CPU Nonblocking Time 4.166576e-05
+2 Threads Nonblocking Time 6.304383e-05
+Testing Size 4
+GPU-Aware PMPI Time 5.127763e-05
+Copy-to-CPU PMPI Time 4.382442e-05
+Copy-to-CPU Pairwise Time 6.676973e-05
+2 Threads Pairwise Time 6.756617e-05
+Copy-to-CPU Nonblocking Time 4.197966e-05
+2 Threads Nonblocking Time 6.284344e-05
+Testing Size 8
+GPU-Aware PMPI Time 5.243629e-05
+Copy-to-CPU PMPI Time 4.600063e-05
+Copy-to-CPU Pairwise Time 6.527934e-05
+2 Threads Pairwise Time 6.600107e-05
+Copy-to-CPU Nonblocking Time 4.181049e-05
+2 Threads Nonblocking Time 6.323092e-05
+Testing Size 16
+GPU-Aware PMPI Time 5.338432e-05
+Copy-to-CPU PMPI Time 4.692899e-05
+Copy-to-CPU Pairwise Time 6.595406e-05
+2 Threads Pairwise Time 6.677206e-05
+Copy-to-CPU Nonblocking Time 4.328429e-05
+2 Threads Nonblocking Time 6.441623e-05
+Testing Size 32
+GPU-Aware PMPI Time 8.065557e-05
+Copy-to-CPU PMPI Time 7.576046e-05
+Copy-to-CPU Pairwise Time 7.446520e-05
+2 Threads Pairwise Time 7.460792e-05
+Copy-to-CPU Nonblocking Time 4.333792e-05
+2 Threads Nonblocking Time 6.376991e-05
+Testing Size 64
+GPU-Aware PMPI Time 8.452697e-05
+Copy-to-CPU PMPI Time 7.765080e-05
+Copy-to-CPU Pairwise Time 7.479346e-05
+2 Threads Pairwise Time 7.187334e-05
+Copy-to-CPU Nonblocking Time 4.545235e-05
+2 Threads Nonblocking Time 6.479292e-05
+Testing Size 128
+Running Threaded Alltoall Test with launches, 4 threads
+Testing Size 1
+GPU-Aware PMPI Time 4.835660e-05
+Copy-to-CPU PMPI Time 4.082374e-05
+Copy-to-CPU Pairwise Time 6.211041e-05
+GPU-Aware Pairwise Time 1.309232e-04
+4 Threads Pairwise Time 6.713279e-05
+Copy-to-CPU Nonblocking Time 3.733286e-05
+GPU-Aware Nonblocking Time 7.797300e-05
+4 Threads Nonblocking Time 6.569274e-05
+4 Threads Nonblocking (Neighbor) Time 7.313168e-05
+MPIX Threaded Pairwise Exchange Time 5.571880e-05
+MPIX Threaded Nonblocking Time 6.079497e-05
+Testing Size 2
+GPU-Aware PMPI Time 4.814587e-05
+Copy-to-CPU PMPI Time 4.127866e-05
+Copy-to-CPU Pairwise Time 6.247843e-05
+GPU-Aware Pairwise Time 1.323975e-04
+4 Threads Pairwise Time 6.944872e-05
+Copy-to-CPU Nonblocking Time 4.190959e-05
+GPU-Aware Nonblocking Time 7.921510e-05
+4 Threads Nonblocking Time 7.006147e-05
+4 Threads Nonblocking (Neighbor) Time 6.806322e-05
+MPIX Threaded Pairwise Exchange Time 5.986898e-05
+MPIX Threaded Nonblocking Time 5.704669e-05
+Testing Size 4
+GPU-Aware PMPI Time 4.798195e-05
+Copy-to-CPU PMPI Time 4.111055e-05
+Copy-to-CPU Pairwise Time 6.318180e-05
+GPU-Aware Pairwise Time 1.328823e-04
+4 Threads Pairwise Time 6.518168e-05
+Copy-to-CPU Nonblocking Time 4.182697e-05
+GPU-Aware Nonblocking Time 7.944451e-05
+4 Threads Nonblocking Time 7.200233e-05
+4 Threads Nonblocking (Neighbor) Time 6.757300e-05
+MPIX Threaded Pairwise Exchange Time 6.164585e-05
+MPIX Threaded Nonblocking Time 5.479422e-05
+Testing Size 8
+GPU-Aware PMPI Time 5.106508e-05
+Copy-to-CPU PMPI Time 4.451771e-05
+Copy-to-CPU Pairwise Time 6.294007e-05
+GPU-Aware Pairwise Time 1.341223e-04
+4 Threads Pairwise Time 7.099560e-05
+Copy-to-CPU Nonblocking Time 4.263389e-05
+GPU-Aware Nonblocking Time 8.172440e-05
+4 Threads Nonblocking Time 6.782320e-05
+4 Threads Nonblocking (Neighbor) Time 7.513104e-05
+MPIX Threaded Pairwise Exchange Time 5.613444e-05
+MPIX Threaded Nonblocking Time 6.226048e-05
+Testing Size 16
+GPU-Aware PMPI Time 5.169338e-05
+Copy-to-CPU PMPI Time 4.542779e-05
+Copy-to-CPU Pairwise Time 6.363594e-05
+GPU-Aware Pairwise Time 1.340909e-04
+4 Threads Pairwise Time 6.484707e-05
+Copy-to-CPU Nonblocking Time 3.946804e-05
+GPU-Aware Nonblocking Time 7.856433e-05
+4 Threads Nonblocking Time 7.222118e-05
+4 Threads Nonblocking (Neighbor) Time 7.435061e-05
+MPIX Threaded Pairwise Exchange Time 5.755829e-05
+MPIX Threaded Nonblocking Time 6.494569e-05
+Testing Size 32
+GPU-Aware PMPI Time 7.683025e-05
+Copy-to-CPU PMPI Time 7.063824e-05
+Copy-to-CPU Pairwise Time 7.143537e-05
+GPU-Aware Pairwise Time 1.382979e-04
+4 Threads Pairwise Time 7.417769e-05
+Copy-to-CPU Nonblocking Time 4.800416e-05
+GPU-Aware Nonblocking Time 8.130543e-05
+4 Threads Nonblocking Time 6.517419e-05
+4 Threads Nonblocking (Neighbor) Time 7.484561e-05
+MPIX Threaded Pairwise Exchange Time 5.935274e-05
+MPIX Threaded Nonblocking Time 6.495836e-05
+Testing Size 64
+GPU-Aware PMPI Time 8.179194e-05
+Copy-to-CPU PMPI Time 7.354792e-05
+Copy-to-CPU Pairwise Time 7.311202e-05
+GPU-Aware Pairwise Time 1.393200e-04
+4 Threads Pairwise Time 7.836271e-05
+Copy-to-CPU Nonblocking Time 4.969873e-05
+GPU-Aware Nonblocking Time 8.077480e-05
+4 Threads Nonblocking Time 7.734038e-05
+4 Threads Nonblocking (Neighbor) Time 7.202323e-05
+MPIX Threaded Pairwise Exchange Time 6.671011e-05
+MPIX Threaded Nonblocking Time 6.164808e-05
+Testing Size 128
+Running Threaded Alltoall Test without launches, 4 threads
+Testing Size 1
+GPU-Aware PMPI Time 5.232643e-05
+Copy-to-CPU PMPI Time 4.534059e-05
+Copy-to-CPU Pairwise Time 6.666541e-05
+4 Threads Pairwise Time 6.707234e-05
+Copy-to-CPU Nonblocking Time 4.100990e-05
+4 Threads Nonblocking Time 6.725642e-05
+Testing Size 2
+GPU-Aware PMPI Time 4.926562e-05
+Copy-to-CPU PMPI Time 4.258042e-05
+Copy-to-CPU Pairwise Time 6.482527e-05
+4 Threads Pairwise Time 6.560023e-05
+Copy-to-CPU Nonblocking Time 4.077670e-05
+4 Threads Nonblocking Time 6.739594e-05
+Testing Size 4
+GPU-Aware PMPI Time 4.991088e-05
+Copy-to-CPU PMPI Time 4.400319e-05
+Copy-to-CPU Pairwise Time 6.485862e-05
+4 Threads Pairwise Time 6.548343e-05
+Copy-to-CPU Nonblocking Time 4.206552e-05
+4 Threads Nonblocking Time 6.786277e-05
+Testing Size 8
+GPU-Aware PMPI Time 5.593524e-05
+Copy-to-CPU PMPI Time 4.937007e-05
+Copy-to-CPU Pairwise Time 6.646480e-05
+4 Threads Pairwise Time 6.636001e-05
+Copy-to-CPU Nonblocking Time 4.167389e-05
+4 Threads Nonblocking Time 6.703471e-05
+Testing Size 16
+GPU-Aware PMPI Time 5.349198e-05
+Copy-to-CPU PMPI Time 4.743813e-05
+Copy-to-CPU Pairwise Time 6.656007e-05
+4 Threads Pairwise Time 6.615969e-05
+Copy-to-CPU Nonblocking Time 4.222456e-05
+4 Threads Nonblocking Time 6.815594e-05
+Testing Size 32
+GPU-Aware PMPI Time 8.048393e-05
+Copy-to-CPU PMPI Time 7.389111e-05
+Copy-to-CPU Pairwise Time 7.490412e-05
+4 Threads Pairwise Time 7.716582e-05
+Copy-to-CPU Nonblocking Time 4.493439e-05
+4 Threads Nonblocking Time 7.118479e-05
+Testing Size 64
+GPU-Aware PMPI Time 8.789470e-05
+Copy-to-CPU PMPI Time 7.927789e-05
+Copy-to-CPU Pairwise Time 7.453806e-05
+4 Threads Pairwise Time 7.855610e-05
+Copy-to-CPU Nonblocking Time 4.414053e-05
+4 Threads Nonblocking Time 7.145080e-05
+Testing Size 128
+Running Threaded Alltoall Test with launches, 8 threads
+Testing Size 1
+GPU-Aware PMPI Time 4.821723e-05
+Copy-to-CPU PMPI Time 4.149841e-05
+Copy-to-CPU Pairwise Time 6.240940e-05
+GPU-Aware Pairwise Time 1.309271e-04
+8 Threads Pairwise Time 7.052548e-05
+Copy-to-CPU Nonblocking Time 3.758630e-05
+GPU-Aware Nonblocking Time 7.800239e-05
+8 Threads Nonblocking Time 7.230280e-05
+8 Threads Nonblocking (Neighbor) Time 7.911242e-05
+MPIX Threaded Pairwise Exchange Time 5.312806e-05
+MPIX Threaded Nonblocking Time 6.467983e-05
+Testing Size 2
+GPU-Aware PMPI Time 4.781738e-05
+Copy-to-CPU PMPI Time 4.090389e-05
+Copy-to-CPU Pairwise Time 6.182098e-05
+GPU-Aware Pairwise Time 1.313967e-04
+8 Threads Pairwise Time 7.450414e-05
+Copy-to-CPU Nonblocking Time 4.218459e-05
+GPU-Aware Nonblocking Time 8.085275e-05
+8 Threads Nonblocking Time 7.627230e-05
+8 Threads Nonblocking (Neighbor) Time 7.119336e-05
+MPIX Threaded Pairwise Exchange Time 6.187486e-05
+MPIX Threaded Nonblocking Time 5.603937e-05
+Testing Size 4
+GPU-Aware PMPI Time 4.969966e-05
+Copy-to-CPU PMPI Time 4.149623e-05
+Copy-to-CPU Pairwise Time 6.300334e-05
+GPU-Aware Pairwise Time 1.327230e-04
+8 Threads Pairwise Time 6.652937e-05
+Copy-to-CPU Nonblocking Time 4.324555e-05
+GPU-Aware Nonblocking Time 7.934326e-05
+8 Threads Nonblocking Time 7.138456e-05
+8 Threads Nonblocking (Neighbor) Time 8.019443e-05
+MPIX Threaded Pairwise Exchange Time 5.324995e-05
+MPIX Threaded Nonblocking Time 6.542692e-05
+Testing Size 8
+GPU-Aware PMPI Time 5.140527e-05
+Copy-to-CPU PMPI Time 4.586150e-05
+Copy-to-CPU Pairwise Time 6.336851e-05
+GPU-Aware Pairwise Time 1.337341e-04
+8 Threads Pairwise Time 6.849764e-05
+Copy-to-CPU Nonblocking Time 4.201106e-05
+GPU-Aware Nonblocking Time 7.976085e-05
+8 Threads Nonblocking Time 7.827192e-05
+8 Threads Nonblocking (Neighbor) Time 7.758277e-05
+MPIX Threaded Pairwise Exchange Time 5.554329e-05
+MPIX Threaded Nonblocking Time 6.344666e-05
+Testing Size 16
+GPU-Aware PMPI Time 5.405783e-05
+Copy-to-CPU PMPI Time 4.632840e-05
+Copy-to-CPU Pairwise Time 6.506133e-05
+GPU-Aware Pairwise Time 1.355734e-04
+8 Threads Pairwise Time 7.620837e-05
+Copy-to-CPU Nonblocking Time 3.958384e-05
+GPU-Aware Nonblocking Time 7.998817e-05
+8 Threads Nonblocking Time 7.661598e-05
+8 Threads Nonblocking (Neighbor) Time 7.339071e-05
+MPIX Threaded Pairwise Exchange Time 6.154541e-05
+MPIX Threaded Nonblocking Time 5.823661e-05
+Testing Size 32
+GPU-Aware PMPI Time 7.986081e-05
+Copy-to-CPU PMPI Time 7.207653e-05
+Copy-to-CPU Pairwise Time 7.253203e-05
+GPU-Aware Pairwise Time 1.389906e-04
+8 Threads Pairwise Time 7.361238e-05
+Copy-to-CPU Nonblocking Time 4.866439e-05
+GPU-Aware Nonblocking Time 8.202900e-05
+8 Threads Nonblocking Time 7.841259e-05
+8 Threads Nonblocking (Neighbor) Time 7.925693e-05
+MPIX Threaded Pairwise Exchange Time 5.936569e-05
+MPIX Threaded Nonblocking Time 6.723464e-05
+Testing Size 64
+GPU-Aware PMPI Time 8.431279e-05
+Copy-to-CPU PMPI Time 7.837817e-05
+Copy-to-CPU Pairwise Time 7.423497e-05
+GPU-Aware Pairwise Time 1.410286e-04
+8 Threads Pairwise Time 8.205455e-05
+Copy-to-CPU Nonblocking Time 4.895059e-05
+GPU-Aware Nonblocking Time 8.301735e-05
+8 Threads Nonblocking Time 8.046332e-05
+8 Threads Nonblocking (Neighbor) Time 7.445695e-05
+MPIX Threaded Pairwise Exchange Time 6.803106e-05
+MPIX Threaded Nonblocking Time 6.526177e-05
+Testing Size 128
+Running Threaded Alltoall Test without launches, 8 threads
+Testing Size 1
+GPU-Aware PMPI Time 4.939717e-05
+Copy-to-CPU PMPI Time 4.282259e-05
+Copy-to-CPU Pairwise Time 6.482486e-05
+8 Threads Pairwise Time 6.744811e-05
+Copy-to-CPU Nonblocking Time 4.017208e-05
+8 Threads Nonblocking Time 7.035104e-05
+Testing Size 2
+GPU-Aware PMPI Time 4.902937e-05
+Copy-to-CPU PMPI Time 4.198719e-05
+Copy-to-CPU Pairwise Time 6.440106e-05
+8 Threads Pairwise Time 6.522692e-05
+Copy-to-CPU Nonblocking Time 4.056426e-05
+8 Threads Nonblocking Time 6.934100e-05
+Testing Size 4
+GPU-Aware PMPI Time 4.923497e-05
+Copy-to-CPU PMPI Time 4.235595e-05
+Copy-to-CPU Pairwise Time 6.496337e-05
+8 Threads Pairwise Time 6.550781e-05
+Copy-to-CPU Nonblocking Time 4.061674e-05
+8 Threads Nonblocking Time 6.912878e-05
+Testing Size 8
+GPU-Aware PMPI Time 5.304471e-05
+Copy-to-CPU PMPI Time 4.568855e-05
+Copy-to-CPU Pairwise Time 6.502484e-05
+8 Threads Pairwise Time 6.491900e-05
+Copy-to-CPU Nonblocking Time 4.103221e-05
+8 Threads Nonblocking Time 6.919868e-05
+Testing Size 16
+GPU-Aware PMPI Time 5.310458e-05
+Copy-to-CPU PMPI Time 4.667067e-05
+Copy-to-CPU Pairwise Time 6.603061e-05
+8 Threads Pairwise Time 6.584182e-05
+Copy-to-CPU Nonblocking Time 4.184585e-05
+8 Threads Nonblocking Time 6.882869e-05
+Testing Size 32
+GPU-Aware PMPI Time 7.749495e-05
+Copy-to-CPU PMPI Time 7.142072e-05
+Copy-to-CPU Pairwise Time 7.301731e-05
+8 Threads Pairwise Time 7.771825e-05
+Copy-to-CPU Nonblocking Time 4.266407e-05
+8 Threads Nonblocking Time 7.835867e-05
+Testing Size 64
+GPU-Aware PMPI Time 8.222987e-05
+Copy-to-CPU PMPI Time 7.519710e-05
+Copy-to-CPU Pairwise Time 7.468689e-05
+8 Threads Pairwise Time 7.872395e-05
+Copy-to-CPU Nonblocking Time 4.375693e-05
+8 Threads Nonblocking Time 8.105898e-05
+Testing Size 128
+Running Threaded Alltoall Test with launches, 10 threads
+Testing Size 1
+GPU-Aware PMPI Time 4.885802e-05
+Copy-to-CPU PMPI Time 4.157303e-05
+Copy-to-CPU Pairwise Time 6.207080e-05
+GPU-Aware Pairwise Time 1.315612e-04
+10 Threads Pairwise Time 7.732427e-05
+Copy-to-CPU Nonblocking Time 3.741077e-05
+GPU-Aware Nonblocking Time 7.756452e-05
+10 Threads Nonblocking Time 8.120981e-05
+10 Threads Nonblocking (Neighbor) Time 7.307134e-05
+MPIX Threaded Pairwise Exchange Time 5.884376e-05
+MPIX Threaded Nonblocking Time 5.900455e-05
+Testing Size 2
+GPU-Aware PMPI Time 4.817622e-05
+Copy-to-CPU PMPI Time 4.124235e-05
+Copy-to-CPU Pairwise Time 6.195071e-05
+GPU-Aware Pairwise Time 1.324900e-04
+10 Threads Pairwise Time 6.988477e-05
+Copy-to-CPU Nonblocking Time 4.180793e-05
+GPU-Aware Nonblocking Time 7.915507e-05
+10 Threads Nonblocking Time 7.389341e-05
+10 Threads Nonblocking (Neighbor) Time 7.796353e-05
+MPIX Threaded Pairwise Exchange Time 5.575006e-05
+MPIX Threaded Nonblocking Time 6.266130e-05
+Testing Size 4
+GPU-Aware PMPI Time 4.870407e-05
+Copy-to-CPU PMPI Time 4.144586e-05
+Copy-to-CPU Pairwise Time 6.198046e-05
+GPU-Aware Pairwise Time 1.323412e-04
+10 Threads Pairwise Time 7.377181e-05
+Copy-to-CPU Nonblocking Time 4.199769e-05
+GPU-Aware Nonblocking Time 7.963106e-05
+10 Threads Nonblocking Time 7.724444e-05
+10 Threads Nonblocking (Neighbor) Time 7.413425e-05
+MPIX Threaded Pairwise Exchange Time 6.022653e-05
+MPIX Threaded Nonblocking Time 5.801626e-05
+Testing Size 8
+GPU-Aware PMPI Time 5.159362e-05
+Copy-to-CPU PMPI Time 4.506015e-05
+Copy-to-CPU Pairwise Time 6.309349e-05
+GPU-Aware Pairwise Time 1.336404e-04
+10 Threads Pairwise Time 7.545773e-05
+Copy-to-CPU Nonblocking Time 4.231976e-05
+GPU-Aware Nonblocking Time 7.839289e-05
+10 Threads Nonblocking Time 7.380227e-05
+10 Threads Nonblocking (Neighbor) Time 8.037560e-05
+MPIX Threaded Pairwise Exchange Time 5.346793e-05
+MPIX Threaded Nonblocking Time 6.608756e-05
+Testing Size 16
+GPU-Aware PMPI Time 5.223840e-05
+Copy-to-CPU PMPI Time 4.601596e-05
+Copy-to-CPU Pairwise Time 6.437887e-05
+GPU-Aware Pairwise Time 1.340751e-04
+10 Threads Pairwise Time 7.049834e-05
+Copy-to-CPU Nonblocking Time 4.010787e-05
+GPU-Aware Nonblocking Time 7.956769e-05
+10 Threads Nonblocking Time 7.769856e-05
+10 Threads Nonblocking (Neighbor) Time 7.966836e-05
+MPIX Threaded Pairwise Exchange Time 5.586872e-05
+MPIX Threaded Nonblocking Time 6.614225e-05
+Testing Size 32
+GPU-Aware PMPI Time 7.774064e-05
+Copy-to-CPU PMPI Time 7.119217e-05
+Copy-to-CPU Pairwise Time 7.165312e-05
+GPU-Aware Pairwise Time 1.399914e-04
+10 Threads Pairwise Time 7.993107e-05
+Copy-to-CPU Nonblocking Time 4.820489e-05
+GPU-Aware Nonblocking Time 8.080692e-05
+10 Threads Nonblocking Time 8.147977e-05
+10 Threads Nonblocking (Neighbor) Time 7.656042e-05
+MPIX Threaded Pairwise Exchange Time 6.439098e-05
+MPIX Threaded Nonblocking Time 6.169052e-05
+Testing Size 64
+GPU-Aware PMPI Time 8.240827e-05
+Copy-to-CPU PMPI Time 7.735598e-05
+Copy-to-CPU Pairwise Time 7.344720e-05
+GPU-Aware Pairwise Time 1.396658e-04
+10 Threads Pairwise Time 8.331390e-05
+Copy-to-CPU Nonblocking Time 4.943401e-05
+GPU-Aware Nonblocking Time 8.190977e-05
+10 Threads Nonblocking Time 8.393876e-05
+10 Threads Nonblocking (Neighbor) Time 7.434615e-05
+MPIX Threaded Pairwise Exchange Time 6.804936e-05
+MPIX Threaded Nonblocking Time 6.928052e-05
+Testing Size 128
+Running Threaded Alltoall Test without launches, 10 threads
+Testing Size 1
+GPU-Aware PMPI Time 4.906758e-05
+Copy-to-CPU PMPI Time 4.210247e-05
+Copy-to-CPU Pairwise Time 6.435014e-05
+10 Threads Pairwise Time 6.826740e-05
+Copy-to-CPU Nonblocking Time 4.094720e-05
+10 Threads Nonblocking Time 7.348013e-05
+Testing Size 2
+GPU-Aware PMPI Time 4.882735e-05
+Copy-to-CPU PMPI Time 4.222778e-05
+Copy-to-CPU Pairwise Time 6.412262e-05
+10 Threads Pairwise Time 6.905659e-05
+Copy-to-CPU Nonblocking Time 4.097525e-05
+10 Threads Nonblocking Time 7.112489e-05
+Testing Size 4
+GPU-Aware PMPI Time 4.924023e-05
+Copy-to-CPU PMPI Time 4.243218e-05
+Copy-to-CPU Pairwise Time 6.417950e-05
+10 Threads Pairwise Time 6.931322e-05
+Copy-to-CPU Nonblocking Time 4.146961e-05
+10 Threads Nonblocking Time 7.154731e-05
+Testing Size 8
+GPU-Aware PMPI Time 5.250610e-05
+Copy-to-CPU PMPI Time 4.605772e-05
+Copy-to-CPU Pairwise Time 6.497337e-05
+10 Threads Pairwise Time 6.824605e-05
+Copy-to-CPU Nonblocking Time 4.141966e-05
+10 Threads Nonblocking Time 7.332215e-05
+Testing Size 16
+GPU-Aware PMPI Time 5.294035e-05
+Copy-to-CPU PMPI Time 4.707565e-05
+Copy-to-CPU Pairwise Time 6.555646e-05
+10 Threads Pairwise Time 7.145713e-05
+Copy-to-CPU Nonblocking Time 4.236264e-05
+10 Threads Nonblocking Time 7.250849e-05
+Testing Size 32
+GPU-Aware PMPI Time 7.851988e-05
+Copy-to-CPU PMPI Time 7.271731e-05
+Copy-to-CPU Pairwise Time 7.293746e-05
+10 Threads Pairwise Time 7.873651e-05
+Copy-to-CPU Nonblocking Time 4.304880e-05
+10 Threads Nonblocking Time 7.530705e-05
+Testing Size 64
+GPU-Aware PMPI Time 8.309049e-05
+Copy-to-CPU PMPI Time 7.692797e-05
+Copy-to-CPU Pairwise Time 7.396795e-05
+10 Threads Pairwise Time 8.189867e-05
+Copy-to-CPU Nonblocking Time 4.484723e-05
+10 Threads Nonblocking Time 8.402556e-05
+Testing Size 128
