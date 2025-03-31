@@ -328,7 +328,7 @@ int main(int argc, char* argv[])
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &num_procs);
 
-    int max_i = 20;
+    int max_i = 19;
     int max_s = pow(2, max_i);
     int max_n_iter = 100;
     double t0, tfinal;
@@ -344,7 +344,7 @@ int main(int argc, char* argv[])
     MPIX_Comm_init(&xcomm, MPI_COMM_WORLD);
     int local_rank;
     MPI_Comm_rank(xcomm->local_comm, &local_rank);
-    // gpuSetDevice(local_rank);
+    gpuSetDevice(local_rank);
 
     double* send_data_d;
     double* recv_data_d;

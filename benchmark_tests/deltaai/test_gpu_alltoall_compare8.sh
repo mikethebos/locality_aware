@@ -1,8 +1,8 @@
 #!/bin/bash
-#SBATCH -J gpu_alltoall_compare2
-#SBATCH -e gpu_alltoall_compare2.%j.err
-#SBATCH -o gpu_alltoall_compare2.%j.out
-#SBATCH -N 2
+#SBATCH -J gpu_alltoall_compare8
+#SBATCH -e gpu_alltoall_compare8.%j.err
+#SBATCH -o gpu_alltoall_compare8.%j.out
+#SBATCH -N 8
 #SBATCH --gpus-per-node=4
 #SBATCH --exclusive
 #SBATCH -p ghx4
@@ -18,39 +18,39 @@ cd $HOME/locality_aware-mikethebos/build/benchmarks
 
 export OMP_NUM_THREADS=1
 echo "Running Unthreaded Alltoall Test:"
-srun -N 2 --ntasks-per-node=4 --cpus-per-task=1 --gpus-per-node=4 ./gpu_alltoall_quick
+srun -N 8 --ntasks-per-node=4 --cpus-per-task=1 --gpus-per-node=4 ./gpu_alltoall_quick
 
 export OMP_NUM_THREADS=2
 echo "Running Threaded Alltoall Test with launches, 2 threads"
-srun -N 2 --ntasks-per-node=4 --cpus-per-task=2 --gpus-per-node=4 ./thread_launches 2
+srun -N 8 --ntasks-per-node=4 --cpus-per-task=2 --gpus-per-node=4 ./thread_launches 2
 
 export OMP_NUM_THREADS=2
 echo "Running Threaded Alltoall Test without launches, 2 threads"
-srun -N 2 --ntasks-per-node=4 --cpus-per-task=2 --gpus-per-node=4 ./no_thread_launches 2
+srun -N 8 --ntasks-per-node=4 --cpus-per-task=2 --gpus-per-node=4 ./no_thread_launches 2
 
 export OMP_NUM_THREADS=4
 echo "Running Threaded Alltoall Test with launches, 4 threads"
-srun -N 2 --ntasks-per-node=4 --cpus-per-task=4 --gpus-per-node=4 ./thread_launches 4
+srun -N 8 --ntasks-per-node=4 --cpus-per-task=4 --gpus-per-node=4 ./thread_launches 4
 
 export OMP_NUM_THREADS=4
 echo "Running Threaded Alltoall Test without launches, 4 threads"
-srun -N 2 --ntasks-per-node=4 --cpus-per-task=4 --gpus-per-node=4 ./no_thread_launches 4
+srun -N 8 --ntasks-per-node=4 --cpus-per-task=4 --gpus-per-node=4 ./no_thread_launches 4
 
 export OMP_NUM_THREADS=8
 echo "Running Threaded Alltoall Test with launches, 8 threads"
-srun -N 2 --ntasks-per-node=4 --cpus-per-task=8 --gpus-per-node=4 ./thread_launches 8
+srun -N 8 --ntasks-per-node=4 --cpus-per-task=8 --gpus-per-node=4 ./thread_launches 8
 
 export OMP_NUM_THREADS=8
 echo "Running Threaded Alltoall Test without launches, 8 threads"
-srun -N 2 --ntasks-per-node=4 --cpus-per-task=8 --gpus-per-node=4 ./no_thread_launches 8
+srun -N 8 --ntasks-per-node=4 --cpus-per-task=8 --gpus-per-node=4 ./no_thread_launches 8
 
 export OMP_NUM_THREADS=10
 echo "Running Threaded Alltoall Test with launches, 10 threads"
-srun -N 2 --ntasks-per-node=4 --cpus-per-task=10 --gpus-per-node=4 ./thread_launches 10
+srun -N 8 --ntasks-per-node=4 --cpus-per-task=10 --gpus-per-node=4 ./thread_launches 10
 
 export OMP_NUM_THREADS=10
 echo "Running Threaded Alltoall Test without launches, 10 threads"
-srun -N 2 --ntasks-per-node=4 --cpus-per-task=10 --gpus-per-node=4 ./no_thread_launches 10
+srun -N 8 --ntasks-per-node=4 --cpus-per-task=10 --gpus-per-node=4 ./no_thread_launches 10
 
 #export OMP_NUM_THREADS=1
 

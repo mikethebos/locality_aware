@@ -75,7 +75,7 @@ int main(int argc, char* argv[])
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &num_procs);
 
-    int max_i = 20;
+    int max_i = 19;
     int max_s = pow(2, max_i);
     int max_n_iter = 100;
     double t0, tfinal;
@@ -91,12 +91,17 @@ int main(int argc, char* argv[])
     MPIX_Comm_init(&xcomm, MPI_COMM_WORLD);
     int local_rank;
     MPI_Comm_rank(xcomm->local_comm, &local_rank);
-    // gpuSetDevice(local_rank);
+    gpuSetDevice(local_rank);
+    
+    int dev_count;
+    cudaGetDeviceCount(&dev_count);
+    // printf("rank %d, dev_count %d\n", rank, dev_count);
+    // fflush(stdout);
 
     double* send_data_d;
     double* recv_data_d;
-    gpuMalloc((void**)(&send_data_d), max_s*num_procs*sizeof(double));
-    gpuMalloc((void**)(&recv_data_d), max_s*num_procs*sizeof(double));
+    cudaMalloc((void**)(&send_data_d), max_s*num_procs*sizeof(double));
+    cudaMalloc((void**)(&recv_data_d), max_s*num_procs*sizeof(double));
     gpuMemcpy(send_data_d, send_data.data(), max_s*num_procs*sizeof(double), gpuMemcpyHostToDevice);
     double* send_data_h;
     double* recv_data_h;
@@ -466,8 +471,8 @@ int main(int argc, char* argv[])
     free((void *)reqs);
     MPIX_Comm_free(xcomm);
 
-    gpuFree(send_data_d);
-    gpuFree(recv_data_d);
+    cudaFree(send_data_d);
+    cudaFree(recv_data_d);
     gpuFreeHost(send_data_h);
     gpuFreeHost(recv_data_h);
 
