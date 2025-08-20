@@ -184,7 +184,7 @@ int gpu_aware_neighbor_alltoallv_nonblocking_pure(const void* sendbuf,
         MPI_Datatype recvtype,
         MPIX_Comm* comm)
 {
-    int ierr = gpu_aware_neighbor_alltoallv_std(neighbor_alltoallv_pure_nonblocking,
+    int ierr = gpu_aware_neighbor_alltoallv_pure(neighbor_alltoallv_pure_nonblocking,
         sendbuf,
         sendcounts,
         sdispls,
@@ -344,6 +344,186 @@ int threaded_neighbor_alltoallv_nonblocking_init(const void* sendbuf,
     *request_ptr = outer_request;
     
     return ierr;
+}
+
+int threaded_neighbor_alltoallv_nonblocking_pure(const void* sendbuf,
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void* recvbuf,
+        const int recvcounts[],
+        const int rdispls[],
+        MPI_Datatype recvtype,
+        MPIX_Comm* comm)
+{
+    int ierr = 0;
+
+    int indegree, outdegree, weighted;
+    ierr += MPI_Dist_graph_neighbors_count(
+            comm->neighbor_comm, 
+            &indegree, 
+            &outdegree, 
+            &weighted);
+
+    int *sources = (int *) malloc(indegree * sizeof(int));
+    int sourceweights[indegree];
+    int *destinations = (int *) malloc(outdegree * sizeof(int));
+    int destweights[outdegree];
+    ierr += MPI_Dist_graph_neighbors(
+            comm->neighbor_comm, 
+            indegree, 
+            sources, 
+            sourceweights,
+            outdegree, 
+            destinations, 
+            destweights);
+
+    int send_bytes, recv_bytes;
+    MPI_Type_size(sendtype, &send_bytes);
+    MPI_Type_size(recvtype, &recv_bytes);
+    
+    int total_bytes_s = 0;
+    int total_bytes_r = 0;
+    
+    if (outdegree > 0)
+    {
+        total_bytes_s = (sdispls[outdegree - 1] + sendcounts[outdegree - 1]) * send_bytes;
+    }
+    if (indegree > 0)
+    {
+        total_bytes_r = (rdispls[indegree - 1] + recvcounts[indegree - 1]) * recv_bytes;
+    }
+
+    // no communication occuring here, so no need for openmp
+    int tag = 102944;
+    int n_msgs_s = outdegree;
+    int n_msgs_r = indegree;
+    int num_threads = omp_get_max_threads(); // assume max number of threads always launched
+
+    int n_msgs_s_per_thread = n_msgs_s / num_threads;
+    int n_msgs_r_per_thread = n_msgs_r / num_threads;
+    int extra_msgs_s = n_msgs_s % num_threads;
+    int extra_msgs_r = n_msgs_r % num_threads;
+        
+    int global_n_msgs = (num_threads * n_msgs_s_per_thread) + extra_msgs_s + (num_threads * n_msgs_r_per_thread) + extra_msgs_r;
+    MPI_Request *reqs;
+    allocate_requests(global_n_msgs, &reqs);
+    int ret = 0;
+    #pragma omp parallel reduction(+:ret)
+    {
+        int thread_id = omp_get_thread_num();
+        int thread_n_msgs_s = n_msgs_s_per_thread;
+        int thread_n_msgs_r = n_msgs_r_per_thread;
+        if (extra_msgs_s > thread_id)
+            thread_n_msgs_s++;
+        if (extra_msgs_r > thread_id)
+            thread_n_msgs_r++;
+            
+        int request_idx = (thread_n_msgs_s + thread_n_msgs_r) * thread_id;
+        if (extra_msgs_s <= thread_id)
+        {
+            request_idx += extra_msgs_s;
+        }
+        if (extra_msgs_r <= thread_id)
+        {
+            request_idx += extra_msgs_r;
+        }
+        
+        int start_offset = request_idx;
+        int count_th = 0;
+            
+        if (thread_n_msgs_s)
+        {
+            int baseIdx = thread_n_msgs_s * thread_id;
+            if (extra_msgs_s <= thread_id)
+            {
+                baseIdx += extra_msgs_s;
+            }
+            for (int idx = baseIdx; idx < baseIdx + thread_n_msgs_s; ++idx)
+            {
+                ret += MPI_Isend(&(sendbuf[sdispls[idx] * send_bytes]), 
+                        sendcounts[idx], 
+                        sendtype, 
+                        destinations[idx], 
+                        tag, 
+                        comm->neighbor_comm, 
+                        &(reqs[request_idx]));
+                ++request_idx;
+                ++count_th;
+            }
+        }
+        
+        if (thread_n_msgs_r)
+        {
+            int baseIdx = thread_n_msgs_r * thread_id;
+            if (extra_msgs_r <= thread_id)
+            {
+                baseIdx += extra_msgs_r;
+            }
+            for (int idx = baseIdx; idx < baseIdx + thread_n_msgs_r; ++idx)
+            {
+                ret += MPI_Irecv(&(recvbuf[rdispls[idx] * recv_bytes]), 
+                        recvcounts[idx], 
+                        recvtype, 
+                        sources[idx], 
+                        tag, 
+                        comm->neighbor_comm, 
+                        &(reqs[request_idx]));
+                ++request_idx;
+                ++count_th;
+            }
+        }
+        
+        ret += MPI_Waitall(count_th, &(reqs[start_offset]), MPI_STATUSES_IGNORE);
+    }
+    
+    return ierr + ret;
+}
+
+int gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure(const void* sendbuf, 
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void* recvbuf,
+        const int recvcounts[],
+        const int rdispls[],
+        MPI_Datatype recvtype,
+        MPIX_Comm* comm)
+{
+    int ierr = gpu_aware_neighbor_alltoallv_pure(threaded_neighbor_alltoallv_nonblocking_pure,
+        sendbuf,
+        sendcounts,
+        sdispls,
+        sendtype,
+        recvbuf,
+        recvcounts,
+        rdispls,
+        recvtype,
+        comm);
+
+    return ierr;
+}
+
+int copy_to_cpu_threaded_neighbor_alltoallv_nonblocking_pure(const void* sendbuf, 
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void* recvbuf,
+        const int recvcounts[],
+        const int rdispls[],
+        MPI_Datatype recvtype,
+        MPIX_Comm* comm)
+{
+    return copy_to_cpu_neighbor_alltoallv_pure(threaded_neighbor_alltoallv_nonblocking_pure,
+        sendbuf, 
+        sendcounts,
+        sdispls,
+        sendtype,
+        recvbuf, 
+        recvcounts,
+        rdispls,
+        recvtype,
+        comm);
 }
 
 // ASSUMES 1 CPU CORE PER GPU (Standard for applications)

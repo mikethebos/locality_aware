@@ -115,6 +115,36 @@ int threaded_neighbor_alltoallv_nonblocking_init(const void* sendbuf,
         MPI_Info info,
         MPIX_Request** request_ptr);
 
+int threaded_neighbor_alltoallv_nonblocking_pure(const void* sendbuf,
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void* recvbuf,
+        const int recvcounts[],
+        const int rdispls[],
+        MPI_Datatype recvtype,
+        MPIX_Comm* comm);
+        
+int gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure(const void* sendbuf, 
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void* recvbuf,
+        const int recvcounts[],
+        const int rdispls[],
+        MPI_Datatype recvtype,
+        MPIX_Comm* comm);
+        
+int copy_to_cpu_threaded_neighbor_alltoallv_nonblocking_pure(const void* sendbuf, 
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void* recvbuf,
+        const int recvcounts[],
+        const int rdispls[],
+        MPI_Datatype recvtype,
+        MPIX_Comm* comm);
+        
 typedef int (*neighbor_alltoallv_unk_anyorder_ftn)(const void*, const int*, const int*, MPI_Datatype, 
                                      void**, int*, int*, MPI_Datatype, int *, MPIX_Comm*);
                                      
