@@ -245,6 +245,25 @@ void test_matrix(const char *filename)
 int main(int argc, char **argv)
 {
     MPI_Init(&argc, &argv);
+    
+    int rank, nodeRank, nodeSize;
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+
+    MPI_Comm nodeComm;
+    MPI_Comm_split_type(MPI_COMM_WORLD, MPI_COMM_TYPE_SHARED, 0, MPI_INFO_NULL, &nodeComm);
+    MPI_Comm_rank(nodeComm, &nodeRank);
+    MPI_Comm_size(nodeComm, &nodeSize);
+    
+    if (argc < 2 || (strcmp(argv[1], "r") != 0))
+    {
+        gpuSetDevice(nodeRank);
+    }
+    else
+    {
+        gpuSetDevice((nodeSize - nodeRank) - 1);
+        printf("rank %d reversed\n", rank);
+        fflush(stdout);
+    }
 
     test_matrix("../../test_data/cnr-2000.pm");
     test_matrix("../../test_data/3dtube.pm");
