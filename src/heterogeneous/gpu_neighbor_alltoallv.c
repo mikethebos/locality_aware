@@ -479,6 +479,8 @@ int threaded_neighbor_alltoallv_nonblocking_pure(const void* sendbuf,
         ret += MPI_Waitall(count_th, &(reqs[start_offset]), MPI_STATUSES_IGNORE);
     }
     
+    free(reqs);
+    
     return ierr + ret;
 }
 
