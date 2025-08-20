@@ -134,8 +134,10 @@ int copy_to_cpu_neighbor_alltoallv_pure(neighbor_alltoallv_pure_ftn f,
 #endif
     // Collective Among CPUs
 #ifdef GPU
+    cudaMemcpy(cpu_sendbuf, sendbuf, total_bytes_s, cudaMemcpyDeviceToHost);
     ierr += f(cpu_sendbuf, sendcounts, sdispls, sendtype, 
             cpu_recvbuf, recvcounts, rdispls, recvtype, comm);
+    cudaMemcpy(recvbuf, cpu_recvbuf, total_bytes_r, cudaMemcpyHostToDevice);
 #endif
 
 #ifdef GPU
