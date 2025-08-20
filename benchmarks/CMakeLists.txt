@@ -10,6 +10,8 @@ if(USE_CUDA)
         gpu_threaded_neighbor_alltoallv_novector.cpp
         gpu_suitesparse_neighbor_alltoallv_matblockvec.cpp
         gpu_suitesparse_threaded_neighbor_alltoallv_matblockvec.cpp
+        new_gpuaware_gpu_suitesparse_neighbor_alltoallv_matblockvec.cpp
+        new_gpuaware_gpu_suitesparse_threaded_neighbor_alltoallv_matblockvec.cpp
         PROPERTIES LANGUAGE CUDA)
 
     add_executable(gpu_alltoall gpu_alltoall.cpp)
@@ -47,6 +49,18 @@ if(USE_CUDA)
     >
     )
     target_link_libraries(gpu_suitesparse_threaded_neighbor_alltoallv_matblockvec mpi_advance ${MPI_LIBRARIES} OpenMP::OpenMP_CXX)
+    
+    add_executable(new_gpuaware_gpu_suitesparse_neighbor_alltoallv_matblockvec new_gpuaware_gpu_suitesparse_neighbor_alltoallv_matblockvec.cpp)
+    target_link_libraries(new_gpuaware_gpu_suitesparse_neighbor_alltoallv_matblockvec mpi_advance ${MPI_LIBRARIES} OpenMP::OpenMP_CXX)
+
+    add_executable(new_gpuaware_gpu_suitesparse_threaded_neighbor_alltoallv_matblockvec new_gpuaware_gpu_suitesparse_threaded_neighbor_alltoallv_matblockvec.cpp)
+    target_compile_options(new_gpuaware_gpu_suitesparse_threaded_neighbor_alltoallv_matblockvec PRIVATE
+    $<$<COMPILE_LANGUAGE:CUDA>: # Flags for CUDA Objects
+    -lineinfo
+    -Xcompiler -fopenmp
+    >
+    )
+    target_link_libraries(new_gpuaware_gpu_suitesparse_threaded_neighbor_alltoallv_matblockvec mpi_advance ${MPI_LIBRARIES} OpenMP::OpenMP_CXX)
     
     add_executable(gpu_neighbor_alltoallv_novector gpu_neighbor_alltoallv_novector.cpp)
     target_link_libraries(gpu_neighbor_alltoallv_novector mpi_advance ${MPI_LIBRARIES} OpenMP::OpenMP_CXX)
