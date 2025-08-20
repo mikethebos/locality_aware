@@ -443,7 +443,7 @@ int threaded_neighbor_alltoallv_nonblocking_pure(const void* sendbuf,
             }
             for (int idx = baseIdx; idx < baseIdx + thread_n_msgs_s; ++idx)
             {
-                ret += MPI_Isend(&(sendbuf[sdispls[idx] * send_bytes]), 
+                ret += MPI_Isend(&(((char *) sendbuf)[sdispls[idx] * send_bytes]), 
                         sendcounts[idx], 
                         sendtype, 
                         destinations[idx], 
@@ -464,7 +464,7 @@ int threaded_neighbor_alltoallv_nonblocking_pure(const void* sendbuf,
             }
             for (int idx = baseIdx; idx < baseIdx + thread_n_msgs_r; ++idx)
             {
-                ret += MPI_Irecv(&(recvbuf[rdispls[idx] * recv_bytes]), 
+                ret += MPI_Irecv(&(((char *)recvbuf)[rdispls[idx] * recv_bytes]), 
                         recvcounts[idx], 
                         recvtype, 
                         sources[idx], 
