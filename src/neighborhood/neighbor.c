@@ -296,3 +296,76 @@ int neighbor_alltoallv_unk_anyorder_probe_nonblocking_send(const void* sendbuffe
     
     return ierr;
 }
+
+int neighbor_alltoallv_pure_nonblocking(
+        const void* sendbuffer,
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void* recvbuffer,
+        const int recvcounts[],
+        const int rdispls[],
+        MPI_Datatype recvtype,
+        MPIX_Comm* comm)
+{
+    int ierr = 0;
+    int tag = 349526;
+
+    int indegree, outdegree, weighted;
+    ierr += MPI_Dist_graph_neighbors_count(
+            comm->neighbor_comm, 
+            &indegree, 
+            &outdegree, 
+            &weighted);
+
+    int sources[indegree];
+    int sourceweights[indegree];
+    int destinations[outdegree];
+    int destweights[outdegree];
+    ierr += MPI_Dist_graph_neighbors(
+            comm->neighbor_comm, 
+            indegree, 
+            sources, 
+            sourceweights,
+            outdegree, 
+            destinations, 
+            destweights);
+
+    int global_n_msgs = indegree+outdegree;
+    MPI_Request *reqs;
+    allocate_requests(global_n_msgs, &reqs);
+
+    const char* send_buffer = (const char*)(sendbuffer);
+    char* recv_buffer = (char*)(recvbuffer);
+    int send_size, recv_size;
+    MPI_Type_size(sendtype, &send_size);
+    MPI_Type_size(recvtype, &recv_size);
+
+    for (int i = 0; i < indegree; i++)
+    {
+        ierr += MPI_Irecv(&(recv_buffer[rdispls[i]*recv_size]), 
+                recvcounts[i], 
+                recvtype, 
+                sources[i],
+                tag,
+                comm->neighbor_comm, 
+                &(reqs[i]));
+    }
+
+    for (int i = 0; i < outdegree; i++)
+    {
+        ierr += MPI_Isend(&(send_buffer[sdispls[i]*send_size]),
+                sendcounts[i],
+                sendtype,
+                destinations[i],
+                tag,
+                comm->neighbor_comm,
+                &(reqs[indegree+i]));
+    }
+    
+    ierr += MPI_Waitall(global_n_msgs, reqs, MPI_STATUSES_IGNORE);
+
+    free(reqs);
+
+    return ierr;
+}

@@ -84,6 +84,17 @@ int neighbor_alltoallv_unk_anyorder_probe_nonblocking_send(const void* sendbuffe
         MPIX_Comm* comm);
 
 
+        
+int neighbor_alltoallv_pure_nonblocking(
+        const void* sendbuffer,
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void* recvbuffer,
+        const int recvcounts[],
+        const int rdispls[],
+        MPI_Datatype recvtype,
+        MPIX_Comm* comm);
 
 #ifdef __cplusplus
 }

@@ -7,6 +7,9 @@
 
 typedef int (*neighbor_alltoallv_ftn)(const void*, const int*, const int*, MPI_Datatype, 
                                      void*, const int*, const int*, MPI_Datatype, MPIX_Comm*, MPI_Info, MPIX_Request**);
+                                     
+typedef int (*neighbor_alltoallv_pure_ftn)(const void*, const int*, const int*, MPI_Datatype, 
+                                     void*, const int*, const int*, MPI_Datatype, MPIX_Comm*);
 
 int gpu_aware_neighbor_alltoallv_init(neighbor_alltoallv_ftn f,
         const void* sendbuffer,
@@ -21,6 +24,17 @@ int gpu_aware_neighbor_alltoallv_init(neighbor_alltoallv_ftn f,
         MPI_Info info,
         MPIX_Request** request_ptr);
 
+int gpu_aware_neighbor_alltoallv_pure(neighbor_alltoallv_pure_ftn f,
+        const void* sendbuffer,
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void* recvbuffer,
+        const int recvcounts[],
+        const int rdispls[],
+        MPI_Datatype recvtype,
+        MPIX_Comm* comm);
+        
 int copy_to_cpu_neighbor_alltoallv_init(neighbor_alltoallv_ftn f,
         const void* sendbuf, 
         const int sendcounts[],
@@ -33,6 +47,17 @@ int copy_to_cpu_neighbor_alltoallv_init(neighbor_alltoallv_ftn f,
         MPIX_Comm* comm,
         MPI_Info info,
         MPIX_Request** request_ptr);
+        
+int copy_to_cpu_neighbor_alltoallv_pure(neighbor_alltoallv_pure_ftn f,
+        const void* sendbuf, 
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void* recvbuf,
+        const int recvcounts[],
+        const int rdispls[],
+        MPI_Datatype recvtype,
+        MPIX_Comm* comm);
 
 int gpu_aware_neighbor_alltoallv_nonblocking_init(const void* sendbuf, 
         const int sendcounts[],
@@ -46,6 +71,16 @@ int gpu_aware_neighbor_alltoallv_nonblocking_init(const void* sendbuf,
         MPI_Info info,
         MPIX_Request** request_ptr);
 
+int gpu_aware_neighbor_alltoallv_nonblocking_pure(const void* sendbuf, 
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void* recvbuf,
+        const int recvcounts[],
+        const int rdispls[],
+        MPI_Datatype recvtype,
+        MPIX_Comm* comm);
+        
 int copy_to_cpu_neighbor_alltoallv_nonblocking_init(const void* sendbuf, 
         const int sendcounts[],
         const int sdispls[],
@@ -58,6 +93,16 @@ int copy_to_cpu_neighbor_alltoallv_nonblocking_init(const void* sendbuf,
         MPI_Info info,
         MPIX_Request** request_ptr);
 
+int copy_to_cpu_neighbor_alltoallv_nonblocking_pure(const void* sendbuf, 
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void* recvbuf,
+        const int recvcounts[],
+        const int rdispls[],
+        MPI_Datatype recvtype,
+        MPIX_Comm* comm);
+        
 int threaded_neighbor_alltoallv_nonblocking_init(const void* sendbuf,
         const int sendcounts[],
         const int sdispls[],

@@ -20,32 +20,20 @@ int gpu_aware_neighbor_alltoallv_init(neighbor_alltoallv_ftn f,
             comm, info, request_ptr);
 }
 
-int gpu_aware_neighbor_alltoallv_nonblocking_init(const void* sendbuf, 
+// ASSUMES 1 CPU CORE PER GPU (Standard for applications)
+int gpu_aware_neighbor_alltoallv_pure(neighbor_alltoallv_pure_ftn f,
+        const void* sendbuffer,
         const int sendcounts[],
         const int sdispls[],
         MPI_Datatype sendtype,
-        void* recvbuf,
+        void* recvbuffer,
         const int recvcounts[],
         const int rdispls[],
         MPI_Datatype recvtype,
-        MPIX_Comm* comm,
-        MPI_Info info,
-        MPIX_Request** request_ptr)
+        MPIX_Comm* comm)
 {
-    int ierr = gpu_aware_neighbor_alltoallv_init(MPIX_Neighbor_alltoallv_init,
-        sendbuf,
-        sendcounts,
-        sdispls,
-        sendtype,
-        recvbuf,
-        recvcounts,
-        rdispls,
-        recvtype,
-        comm,
-        MPI_INFO_NULL, 
-        request_ptr);
-
-    return ierr;
+    return f(sendbuffer, sendcounts, sdispls, sendtype, recvbuffer, recvcounts, rdispls, recvtype,
+            comm);
 }
 
 int copy_to_cpu_neighbor_alltoallv_init(neighbor_alltoallv_ftn f,
@@ -103,6 +91,113 @@ int copy_to_cpu_neighbor_alltoallv_init(neighbor_alltoallv_ftn f,
     return ierr;
 }
 
+int copy_to_cpu_neighbor_alltoallv_pure(neighbor_alltoallv_pure_ftn f,
+        const void* sendbuf, 
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void* recvbuf,
+        const int recvcounts[],
+        const int rdispls[],
+        MPI_Datatype recvtype,
+        MPIX_Comm* comm)
+{
+    int ierr = 0;
+
+    int indegree, outdegree, weighted;
+    ierr += MPI_Dist_graph_neighbors_count(
+            comm->neighbor_comm, 
+            &indegree, 
+            &outdegree, 
+            &weighted);
+
+    int send_bytes, recv_bytes;
+    MPI_Type_size(sendtype, &send_bytes);
+    MPI_Type_size(recvtype, &recv_bytes);
+
+    int total_bytes_s = 0;
+    int total_bytes_r = 0;
+    
+    if (outdegree > 0)
+    {
+        total_bytes_s = (sdispls[outdegree - 1] + sendcounts[outdegree - 1]) * send_bytes;
+    }
+    if (indegree > 0)
+    {
+        total_bytes_r = (rdispls[indegree - 1] + recvcounts[indegree - 1]) * recv_bytes;
+    }
+
+    char *cpu_sendbuf, *cpu_recvbuf;
+#ifdef GPU
+    cudaMallocHost((void **)(&cpu_sendbuf), total_bytes_s);
+    cudaMallocHost((void **)(&cpu_recvbuf), total_bytes_r);
+#endif
+    // Collective Among CPUs
+#ifdef GPU
+    ierr += f(cpu_sendbuf, sendcounts, sdispls, sendtype, 
+            cpu_recvbuf, recvcounts, rdispls, recvtype, comm);
+#endif
+
+#ifdef GPU
+    cudaFreeHost((void *)cpu_sendbuf);
+    cudaFreeHost((void *)cpu_recvbuf);
+#endif
+
+    return ierr;
+}
+
+int gpu_aware_neighbor_alltoallv_nonblocking_init(const void* sendbuf, 
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void* recvbuf,
+        const int recvcounts[],
+        const int rdispls[],
+        MPI_Datatype recvtype,
+        MPIX_Comm* comm,
+        MPI_Info info,
+        MPIX_Request** request_ptr)
+{
+    int ierr = gpu_aware_neighbor_alltoallv_init(MPIX_Neighbor_alltoallv_init,
+        sendbuf,
+        sendcounts,
+        sdispls,
+        sendtype,
+        recvbuf,
+        recvcounts,
+        rdispls,
+        recvtype,
+        comm,
+        MPI_INFO_NULL, 
+        request_ptr);
+
+    return ierr;
+}
+
+int gpu_aware_neighbor_alltoallv_nonblocking_pure(const void* sendbuf, 
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void* recvbuf,
+        const int recvcounts[],
+        const int rdispls[],
+        MPI_Datatype recvtype,
+        MPIX_Comm* comm)
+{
+    int ierr = gpu_aware_neighbor_alltoallv_std(neighbor_alltoallv_pure_nonblocking,
+        sendbuf,
+        sendcounts,
+        sdispls,
+        sendtype,
+        recvbuf,
+        recvcounts,
+        rdispls,
+        recvtype,
+        comm);
+
+    return ierr;
+}
+
 int copy_to_cpu_neighbor_alltoallv_nonblocking_init(const void* sendbuf, 
         const int sendcounts[],
         const int sdispls[],
@@ -127,6 +222,28 @@ int copy_to_cpu_neighbor_alltoallv_nonblocking_init(const void* sendbuf,
         comm,
         info,
         request_ptr);
+}
+
+int copy_to_cpu_neighbor_alltoallv_nonblocking_pure(const void* sendbuf, 
+        const int sendcounts[],
+        const int sdispls[],
+        MPI_Datatype sendtype,
+        void* recvbuf,
+        const int recvcounts[],
+        const int rdispls[],
+        MPI_Datatype recvtype,
+        MPIX_Comm* comm)
+{
+    return copy_to_cpu_neighbor_alltoallv_pure(neighbor_alltoallv_pure_nonblocking,
+        sendbuf, 
+        sendcounts,
+        sdispls,
+        sendtype,
+        recvbuf, 
+        recvcounts,
+        rdispls,
+        recvtype,
+        comm);
 }
 
 int threaded_neighbor_alltoallv_nonblocking_init(const void* sendbuf,
