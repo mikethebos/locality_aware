@@ -254,7 +254,23 @@ int main(int argc, char **argv)
     MPI_Comm_rank(nodeComm, &nodeRank);
     MPI_Comm_size(nodeComm, &nodeSize);
     
-    if (argc < 2 || (strcmp(argv[1], "r") != 0))
+    int rev = 0;
+    char **fns = (char **)calloc(argc, sizeof(char *));
+    int fn_count = 0;
+    for (int i = 1; i < argc; ++i)
+    {
+        if (strcmp(argv[i], "r") == 0)
+        {
+            rev = 1;
+        }
+        else
+        {
+            fns[fn_count] = argv[i];
+            fn_count++;
+        }
+    }
+    
+    if (rev == 0)
     {
         gpuSetDevice(nodeRank);
     }
@@ -265,10 +281,21 @@ int main(int argc, char **argv)
         fflush(stdout);
     }
 
-    test_matrix("../../test_data/cnr-2000.pm");
-    test_matrix("../../test_data/3dtube.pm");
-    test_matrix("../../test_data/Goodwin_095.pm");
+    if (fn_count == 0)
+    {
+        test_matrix("../../test_data/cnr-2000.pm");
+        test_matrix("../../test_data/3dtube.pm");
+        test_matrix("../../test_data/Goodwin_095.pm");
+    }
+    else
+    {
+        for (int i = 0; i < fn_count; ++i)
+        {
+            test_matrix(fns[i]);
+        }
+    }
 
+    free((void *)fns);
     MPI_Finalize();
     return 0;
 } // end of main() //
