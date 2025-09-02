@@ -179,7 +179,7 @@ void test_matrix(const char *filename)
                                    std_comm);
         }
         double tfinal = (MPI_Wtime() - t0) / 2;
-        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        MPI_Allreduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, MPI_COMM_WORLD);
         int niter = (2.0 / t0) + 1;
         gpuDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
@@ -234,7 +234,7 @@ void test_matrix(const char *filename)
                                                         neighbor_comm);
         }
         tfinal = (MPI_Wtime() - t0) / 2;
-        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        MPI_Allreduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, MPI_COMM_WORLD);
         niter = (2.0 / t0) + 1;
         gpuDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
@@ -289,7 +289,7 @@ void test_matrix(const char *filename)
                                                      neighbor_comm);
         }
         tfinal = (MPI_Wtime() - t0) / 2;
-        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        MPI_Allreduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, MPI_COMM_WORLD);
         niter = (2.0 / t0) + 1;
         gpuDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
