@@ -11,6 +11,7 @@
 #include <iostream>
 #include <assert.h>
 #include <vector>
+#include <algorithm>
 #include <numeric>
 #include <set>
 
@@ -145,8 +146,40 @@ void test_matrix(const char *filename)
                                         0,
                                         &neighbor_comm);
 
+        int min_r_n_msgs, mean_r_n_msgs, max_r_n_msgs;
+        MPI_Reduce((void *)(&A.recv_comm.n_msgs), (void *)(&min_r_n_msgs), 1, MPI_INT, MPI_MIN, 0, MPI_COMM_WORLD);
+        MPI_Reduce((void *)(&A.recv_comm.n_msgs), (void *)(&mean_r_n_msgs), 1, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
+        if (rank == 0) mean_r_n_msgs = mean_r_n_msgs / num_procs;
+        MPI_Reduce((void *)(&A.recv_comm.n_msgs), (void *)(&max_r_n_msgs), 1, MPI_INT, MPI_MAX, 0, MPI_COMM_WORLD);
+        
+        int min_r_count, mean_r_count, max_r_count;
+        int local_min_r_count = *(std::min_element(newRecvCounts.begin(), newRecvCounts.end()));
+        MPI_Reduce((void *)(&local_min_r_count), (void *)(&min_r_count), 1, MPI_INT, MPI_MIN, 0, MPI_COMM_WORLD);
+        int local_mean_r_count = std::accumulate(newRecvCounts.begin(), newRecvCounts.end(), (int)0);
+        local_mean_r_count = local_mean_r_count / newRecvCounts.size();
+        MPI_Reduce((void *)(&local_mean_r_count), (void *)(&mean_r_count), 1, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
+        if (rank == 0) mean_r_count = mean_r_count / num_procs;
+        int local_max_r_count = *(std::max_element(newRecvCounts.begin(), newRecvCounts.end()));
+        MPI_Reduce((void *)(&local_max_r_count), (void *)(&max_r_count), 1, MPI_INT, MPI_MAX, 0, MPI_COMM_WORLD);
+        
+        int min_s_n_msgs, mean_s_n_msgs, max_s_n_msgs;
+        MPI_Reduce((void *)(&A.send_comm.n_msgs), (void *)(&min_s_n_msgs), 1, MPI_INT, MPI_MIN, 0, MPI_COMM_WORLD);
+        MPI_Reduce((void *)(&A.send_comm.n_msgs), (void *)(&mean_s_n_msgs), 1, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
+        if (rank == 0) mean_s_n_msgs = mean_s_n_msgs / num_procs;
+        MPI_Reduce((void *)(&A.send_comm.n_msgs), (void *)(&max_s_n_msgs), 1, MPI_INT, MPI_MAX, 0, MPI_COMM_WORLD);
+        
+        int min_s_count, mean_s_count, max_s_count;
+        int local_min_s_count = *(std::min_element(newSendCounts.begin(), newSendCounts.end()));
+        MPI_Reduce((void *)(&local_min_s_count), (void *)(&min_s_count), 1, MPI_INT, MPI_MIN, 0, MPI_COMM_WORLD);
+        int local_mean_s_count = std::accumulate(newSendCounts.begin(), newSendCounts.end(), (int)0);
+        local_mean_s_count = local_mean_s_count / newSendCounts.size();
+        MPI_Reduce((void *)(&local_mean_s_count), (void *)(&mean_s_count), 1, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
+        if (rank == 0) mean_s_count = mean_s_count / num_procs;
+        int local_max_s_count = *(std::max_element(newSendCounts.begin(), newSendCounts.end()));
+        MPI_Reduce((void *)(&local_max_s_count), (void *)(&max_s_count), 1, MPI_INT, MPI_MAX, 0, MPI_COMM_WORLD);
+                                        
         if (rank == 0)
-            printf("Testing Size blockVecCols %d, matrix %s\n", block_vec_cols, filename);
+            printf("Testing Size blockVecCols %d, matrix %s, min/mean/max send msgs per GPU %d, %d, %d, send counts per GPU %d, %d, %d, recv msgs per GPU %d, %d, %d, recv counts per GPU %d, %d, %d\n", block_vec_cols, filename, min_s_n_msgs, mean_s_n_msgs, max_s_n_msgs, min_s_count, mean_s_count, max_s_count, min_r_n_msgs, mean_r_n_msgs, max_r_n_msgs, min_r_count, mean_r_count, max_r_count);
 
         // Standard MPI Implementation of Alltoallv (gpu)
         MPI_Neighbor_alltoallv(alltoallv_send_vals_cu,
