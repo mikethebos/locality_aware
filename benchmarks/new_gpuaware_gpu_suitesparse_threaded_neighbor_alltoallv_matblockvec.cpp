@@ -32,8 +32,6 @@ void test_matrix(const char *filename)
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &num_procs);
 
-    int base_niter = 100;
-
     // Read suitesparse matrix
     ParMat<int> A;
     int idx;
@@ -47,12 +45,6 @@ void test_matrix(const char *filename)
         if (block_vec_cols > (int)pow(2, 10))
         {
             break;
-        }
-
-        int niter = base_niter;
-        if (block_vec_cols <= 65536)
-        {
-            niter *= 10;
         }
 
         std::vector<double> std_recv_vals, neigh_recv_vals;
@@ -174,6 +166,24 @@ void test_matrix(const char *filename)
         gpuDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
         double t0 = MPI_Wtime();
+        for (int k = 0; k < 2; k++)
+        {
+            MPI_Neighbor_alltoallv(alltoallv_send_vals_cu,
+                                   newSendCounts.data(),
+                                   newSendDispls.data(),
+                                   MPI_DOUBLE,
+                                   neigh_recv_vals_cu,
+                                   newRecvCounts.data(),
+                                   newRecvDispls.data(),
+                                   MPI_DOUBLE,
+                                   std_comm);
+        }
+        double tfinal = (MPI_Wtime() - t0) / 2;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        int niter = (2.0 / t0) + 1;
+        gpuDeviceSynchronize();
+        MPI_Barrier(MPI_COMM_WORLD);
+        t0 = MPI_Wtime();
         for (int k = 0; k < niter; k++)
         {
             MPI_Neighbor_alltoallv(alltoallv_send_vals_cu,
@@ -186,7 +196,7 @@ void test_matrix(const char *filename)
                                    MPI_DOUBLE,
                                    std_comm);
         }
-        double tfinal = (MPI_Wtime() - t0) / niter;
+        tfinal = (MPI_Wtime() - t0) / niter;
         MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
         if (rank == 0)
             printf("GPU MPI_Neighbor_alltoallv Time %e; Time All Iters %e\n", t0, t0 * niter);
@@ -208,6 +218,24 @@ void test_matrix(const char *filename)
         {
             ASSERT_EQ(std_recv_vals[i], neigh_recv_vals[i]);
         }
+        gpuDeviceSynchronize();
+        MPI_Barrier(MPI_COMM_WORLD);
+        t0 = MPI_Wtime();
+        for (int k = 0; k < 2; k++)
+        {
+            gpu_aware_neighbor_alltoallv_nonblocking_pure(alltoallv_send_vals_cu,
+                                                        newSendCounts.data(),
+                                                        newSendDispls.data(),
+                                                        MPI_DOUBLE,
+                                                        neigh_recv_vals_cu,
+                                                        newRecvCounts.data(),
+                                                        newRecvDispls.data(),
+                                                        MPI_DOUBLE,
+                                                        neighbor_comm);
+        }
+        tfinal = (MPI_Wtime() - t0) / 2;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        niter = (2.0 / t0) + 1;
         gpuDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
@@ -245,6 +273,24 @@ void test_matrix(const char *filename)
         {
             ASSERT_EQ(std_recv_vals[i], neigh_recv_vals[i]);
         }
+        gpuDeviceSynchronize();
+        MPI_Barrier(MPI_COMM_WORLD);
+        t0 = MPI_Wtime();
+        for (int k = 0; k < 2; k++)
+        {
+            gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure(alltoallv_send_vals_cu,
+                                                     newSendCounts.data(),
+                                                     newSendDispls.data(),
+                                                     MPI_DOUBLE,
+                                                     neigh_recv_vals_cu,
+                                                     newRecvCounts.data(),
+                                                     newRecvDispls.data(),
+                                                     MPI_DOUBLE,
+                                                     neighbor_comm);
+        }
+        tfinal = (MPI_Wtime() - t0) / 2;
+        MPI_Reduce(&tfinal, &t0, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
+        niter = (2.0 / t0) + 1;
         gpuDeviceSynchronize();
         MPI_Barrier(MPI_COMM_WORLD);
         t0 = MPI_Wtime();
