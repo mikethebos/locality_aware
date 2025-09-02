@@ -1,0 +1,1382 @@
+Running Unthreaded Neighbor_Alltoallv Test:
+[gpua095.delta.ncsa.illinois.edu:4108448] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4108448] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4108448] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4108448] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4108448] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4108448] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4108448] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4108448] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4108448] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4108448] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4108448] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4108448] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4108448] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4108448] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4108448] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4108448] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4108448] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4108448] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4108448] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4108448] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4108448] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4108448] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4108448] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4108448] [prterun-gpua095-4108448@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4108448] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4108448] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4108448] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4108448] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4108448] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4108448] [prterun-gpua095-4108448@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4108448] [prterun-gpua095-4108448@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4108448] [prterun-gpua095-4108448@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4108448] [prterun-gpua095-4108448@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4108448] [prterun-gpua095-4108448@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4108448] [prterun-gpua095-4108448@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4108448] [prterun-gpua095-4108448@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4108448] [prterun-gpua095-4108448@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4108448] [prterun-gpua095-4108448@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4108448] [prterun-gpua095-4108448@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4108448] [prterun-gpua095-4108448@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4108448] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4108448] Rank 1 bound to package[0][core:16-31]
+[gpua095.delta.ncsa.illinois.edu:4108448] Rank 2 bound to package[0][core:32-47]
+[gpua095.delta.ncsa.illinois.edu:4108448] Rank 3 bound to package[0][core:48-63]
+[gpua097.delta.ncsa.illinois.edu:3277210] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3277210] Rank 6 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3277210] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3277210] Rank 7 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4108824] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4108824] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4108824] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4108824] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4108824] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4108824] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4108824] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4108824] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4108824] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4108824] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4108824] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4108824] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4108824] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4108824] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4108824] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4108824] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4108824] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4108824] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4108824] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4108824] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4108824] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4108824] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4108824] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4108824] [prterun-gpua095-4108824@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4108824] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4108824] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4108824] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4108824] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4108824] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4108824] [prterun-gpua095-4108824@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4108824] [prterun-gpua095-4108824@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4108824] [prterun-gpua095-4108824@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4108824] [prterun-gpua095-4108824@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4108824] [prterun-gpua095-4108824@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4108824] [prterun-gpua095-4108824@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4108824] [prterun-gpua095-4108824@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4108824] [prterun-gpua095-4108824@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4108824] [prterun-gpua095-4108824@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4108824] [prterun-gpua095-4108824@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4108824] [prterun-gpua095-4108824@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4108824] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4108824] Rank 1 bound to package[0][core:16-31]
+[gpua095.delta.ncsa.illinois.edu:4108824] Rank 2 bound to package[0][core:32-47]
+[gpua095.delta.ncsa.illinois.edu:4108824] Rank 3 bound to package[0][core:48-63]
+[gpua097.delta.ncsa.illinois.edu:3277602] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3277602] Rank 7 bound to package[0][core:48-63]
+[gpua097.delta.ncsa.illinois.edu:3277602] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3277602] Rank 6 bound to package[0][core:32-47]
+Message size 1087897600 bigger than supported by selected transport. Max = 1073741824
+
+ [gpua095:00000] *** An error occurred in MPI_Isend
+[gpua095:00000] *** reported by process [3796828161,3]
+[gpua095:00000] *** on communicator MPI_COMM_WORLD
+[gpua095:00000] *** MPI_ERR_OTHER: known error not in list
+[gpua095:00000] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[gpua095:00000] ***    and MPI will try to terminate your MPI job as well)
+--------------------------------------------------------------------------
+prterun has exited due to process rank 3 with PID 0 on node gpua095 calling
+"abort". This may have caused other processes in the application to be
+terminated by signals sent by prterun (as reported here).
+--------------------------------------------------------------------------
+ [gpua095.delta.ncsa.illinois.edu:4109198] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4109198] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4109198] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4109198] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4109198] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4109198] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4109198] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4109198] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4109198] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4109198] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4109198] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4109198] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4109198] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4109198] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4109198] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4109198] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4109198] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4109198] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4109198] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4109198] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4109198] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4109198] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4109198] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4109198] [prterun-gpua095-4109198@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4109198] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4109198] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4109198] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4109198] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4109198] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4109198] [prterun-gpua095-4109198@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4109198] [prterun-gpua095-4109198@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4109198] [prterun-gpua095-4109198@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4109198] [prterun-gpua095-4109198@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4109198] [prterun-gpua095-4109198@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4109198] [prterun-gpua095-4109198@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4109198] [prterun-gpua095-4109198@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4109198] [prterun-gpua095-4109198@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4109198] [prterun-gpua095-4109198@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4109198] [prterun-gpua095-4109198@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4109198] [prterun-gpua095-4109198@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4109198] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4109198] Rank 1 bound to package[0][core:16-31]
+[gpua095.delta.ncsa.illinois.edu:4109198] Rank 3 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4109198] Rank 2 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3277994] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3277994] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3277994] Rank 6 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3277994] Rank 7 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4109573] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4109573] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4109573] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4109573] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4109573] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4109573] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4109573] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4109573] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4109573] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4109573] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4109573] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4109573] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4109573] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4109573] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4109573] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4109573] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4109573] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4109573] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4109573] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4109573] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4109573] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4109573] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4109573] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4109573] [prterun-gpua095-4109573@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4109573] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4109573] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4109573] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4109573] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4109573] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4109573] [prterun-gpua095-4109573@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4109573] [prterun-gpua095-4109573@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4109573] [prterun-gpua095-4109573@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4109573] [prterun-gpua095-4109573@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4109573] [prterun-gpua095-4109573@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4109573] [prterun-gpua095-4109573@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4109573] [prterun-gpua095-4109573@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4109573] [prterun-gpua095-4109573@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4109573] [prterun-gpua095-4109573@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4109573] [prterun-gpua095-4109573@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4109573] [prterun-gpua095-4109573@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4109573] Rank 2 bound to package[0][core:32-47]
+[gpua095.delta.ncsa.illinois.edu:4109573] Rank 1 bound to package[0][core:16-31]
+[gpua095.delta.ncsa.illinois.edu:4109573] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4109573] Rank 3 bound to package[0][core:48-63]
+[gpua097.delta.ncsa.illinois.edu:3278389] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3278389] Rank 6 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3278389] Rank 7 bound to package[0][core:48-63]
+[gpua097.delta.ncsa.illinois.edu:3278389] Rank 5 bound to package[0][core:16-31]
+--------------------------------------------------------------------------
+prterun noticed that process rank 5 with PID 3278411 on node gpua097 exited on
+signal 9 (Killed).
+--------------------------------------------------------------------------
+[gpua095.delta.ncsa.illinois.edu:4109947] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4109947] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4109947] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4109947] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4109947] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4109947] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4109947] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4109947] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4109947] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4109947] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4109947] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4109947] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4109947] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4109947] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4109947] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4109947] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4109947] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4109947] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4109947] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4109947] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4109947] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4109947] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4109947] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4109947] [prterun-gpua095-4109947@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4109947] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4109947] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4109947] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4109947] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4109947] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4109947] [prterun-gpua095-4109947@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4109947] [prterun-gpua095-4109947@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4109947] [prterun-gpua095-4109947@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4109947] [prterun-gpua095-4109947@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4109947] [prterun-gpua095-4109947@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4109947] [prterun-gpua095-4109947@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4109947] [prterun-gpua095-4109947@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4109947] [prterun-gpua095-4109947@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4109947] [prterun-gpua095-4109947@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4109947] [prterun-gpua095-4109947@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4109947] [prterun-gpua095-4109947@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4109947] Rank 1 bound to package[0][core:16-31]
+[gpua095.delta.ncsa.illinois.edu:4109947] Rank 2 bound to package[0][core:32-47]
+[gpua095.delta.ncsa.illinois.edu:4109947] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4109947] Rank 3 bound to package[0][core:48-63]
+[gpua097.delta.ncsa.illinois.edu:3278785] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3278785] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3278785] Rank 7 bound to package[0][core:48-63]
+[gpua097.delta.ncsa.illinois.edu:3278785] Rank 6 bound to package[0][core:32-47]
+assert error
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+  Proc: [[61338,1],0]
+  Errorcode: 1
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+ assert error
+--------------------------------------------------------------------------
+prterun has exited due to process rank 0 with PID 0 on node gpua095 calling
+"abort". This may have caused other processes in the application to be
+terminated by signals sent by prterun (as reported here).
+--------------------------------------------------------------------------
+Running Threaded Neighbor_Alltoallv Test with 2 threads:
+[gpua095.delta.ncsa.illinois.edu:4110659] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4110659] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4110659] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4110659] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4110659] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4110659] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4110659] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4110659] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4110659] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4110659] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4110659] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4110659] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4110659] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4110659] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4110659] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4110659] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4110659] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4110659] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4110659] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4110659] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4110659] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4110659] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4110659] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4110659] [prterun-gpua095-4110659@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4110659] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4110659] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4110659] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4110659] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4110659] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4110659] [prterun-gpua095-4110659@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4110659] [prterun-gpua095-4110659@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4110659] [prterun-gpua095-4110659@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4110659] [prterun-gpua095-4110659@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4110659] [prterun-gpua095-4110659@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4110659] [prterun-gpua095-4110659@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4110659] [prterun-gpua095-4110659@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4110659] [prterun-gpua095-4110659@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4110659] [prterun-gpua095-4110659@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4110659] [prterun-gpua095-4110659@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4110659] [prterun-gpua095-4110659@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4110659] Rank 3 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4110659] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4110659] Rank 1 bound to package[0][core:16-31]
+[gpua095.delta.ncsa.illinois.edu:4110659] Rank 2 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3279517] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3279517] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3279517] Rank 6 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3279517] Rank 7 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4111038] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4111038] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4111038] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4111038] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4111038] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4111038] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4111038] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4111038] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4111038] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4111038] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4111038] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4111038] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4111038] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4111038] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4111038] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4111038] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4111038] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4111038] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4111038] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4111038] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4111038] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4111038] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4111038] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4111038] [prterun-gpua095-4111038@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4111038] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4111038] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4111038] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4111038] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4111038] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4111038] [prterun-gpua095-4111038@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4111038] [prterun-gpua095-4111038@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4111038] [prterun-gpua095-4111038@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4111038] [prterun-gpua095-4111038@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4111038] [prterun-gpua095-4111038@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4111038] [prterun-gpua095-4111038@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4111038] [prterun-gpua095-4111038@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4111038] [prterun-gpua095-4111038@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4111038] [prterun-gpua095-4111038@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4111038] [prterun-gpua095-4111038@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4111038] [prterun-gpua095-4111038@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4111038] Rank 3 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4111038] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4111038] Rank 2 bound to package[0][core:32-47]
+[gpua095.delta.ncsa.illinois.edu:4111038] Rank 1 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3279913] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3279913] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3279913] Rank 7 bound to package[0][core:48-63]
+[gpua097.delta.ncsa.illinois.edu:3279913] Rank 6 bound to package[0][core:32-47]
+Message size 1087897600 bigger than supported by selected transport. Max = 1073741824
+
+ [gpua095:00000] *** An error occurred in MPI_Isend
+[gpua095:00000] *** reported by process [772603905,3]
+[gpua095:00000] *** on communicator MPI_COMM_WORLD
+[gpua095:00000] *** MPI_ERR_OTHER: known error not in list
+[gpua095:00000] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[gpua095:00000] ***    and MPI will try to terminate your MPI job as well)
+--------------------------------------------------------------------------
+prterun has exited due to process rank 3 with PID 0 on node gpua095 calling
+"abort". This may have caused other processes in the application to be
+terminated by signals sent by prterun (as reported here).
+--------------------------------------------------------------------------
+ [gpua095.delta.ncsa.illinois.edu:4111754] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4111754] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4111754] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4111754] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4111754] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4111754] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4111754] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4111754] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4111754] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4111754] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4111754] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4111754] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4111754] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4111754] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4111754] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4111754] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4111754] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4111754] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4111754] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4111754] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4111754] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4111754] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4111754] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4111754] [prterun-gpua095-4111754@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4111754] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4111754] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4111754] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4111754] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4111754] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4111754] [prterun-gpua095-4111754@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4111754] [prterun-gpua095-4111754@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4111754] [prterun-gpua095-4111754@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4111754] [prterun-gpua095-4111754@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4111754] [prterun-gpua095-4111754@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4111754] [prterun-gpua095-4111754@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4111754] [prterun-gpua095-4111754@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4111754] [prterun-gpua095-4111754@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4111754] [prterun-gpua095-4111754@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4111754] [prterun-gpua095-4111754@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4111754] [prterun-gpua095-4111754@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4111754] Rank 2 bound to package[0][core:32-47]
+[gpua095.delta.ncsa.illinois.edu:4111754] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4111754] Rank 3 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4111754] Rank 1 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3280646] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3280646] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3280646] Rank 6 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3280646] Rank 7 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4112131] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4112131] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4112131] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4112131] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4112131] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4112131] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4112131] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4112131] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4112131] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4112131] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4112131] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4112131] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4112131] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4112131] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4112131] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4112131] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4112131] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4112131] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4112131] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4112131] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4112131] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4112131] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4112131] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4112131] [prterun-gpua095-4112131@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4112131] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4112131] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4112131] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4112131] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4112131] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4112131] [prterun-gpua095-4112131@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4112131] [prterun-gpua095-4112131@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4112131] [prterun-gpua095-4112131@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4112131] [prterun-gpua095-4112131@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4112131] [prterun-gpua095-4112131@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4112131] [prterun-gpua095-4112131@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4112131] [prterun-gpua095-4112131@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4112131] [prterun-gpua095-4112131@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4112131] [prterun-gpua095-4112131@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4112131] [prterun-gpua095-4112131@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4112131] [prterun-gpua095-4112131@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4112131] Rank 3 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4112131] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4112131] Rank 1 bound to package[0][core:16-31]
+[gpua095.delta.ncsa.illinois.edu:4112131] Rank 2 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3281042] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3281042] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3281042] Rank 6 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3281042] Rank 7 bound to package[0][core:48-63]
+[gpua097:00000] *** An error occurred in MPI_Neighbor_alltoallv
+[gpua097:00000] *** reported by process [3278766081,4]
+[gpua097:00000] *** on communicator MPI COMM 10 DUP FROM 0
+[gpua097:00000] *** MPI_ERR_OTHER: known error not in list
+[gpua097:00000] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[gpua097:00000] ***    and MPI will try to terminate your MPI job as well)
+--------------------------------------------------------------------------
+prterun noticed that process rank 6 with PID 3281063 on node gpua097 exited on
+signal 9 (Killed).
+--------------------------------------------------------------------------
+ [gpua095.delta.ncsa.illinois.edu:4112848] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4112848] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4112848] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4112848] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4112848] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4112848] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4112848] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4112848] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4112848] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4112848] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4112848] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4112848] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4112848] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4112848] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4112848] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4112848] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4112848] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4112848] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4112848] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4112848] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4112848] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4112848] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4112848] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4112848] [prterun-gpua095-4112848@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4112848] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4112848] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4112848] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4112848] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4112848] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4112848] [prterun-gpua095-4112848@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4112848] [prterun-gpua095-4112848@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4112848] [prterun-gpua095-4112848@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4112848] [prterun-gpua095-4112848@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4112848] [prterun-gpua095-4112848@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4112848] [prterun-gpua095-4112848@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4112848] [prterun-gpua095-4112848@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4112848] [prterun-gpua095-4112848@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4112848] [prterun-gpua095-4112848@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4112848] [prterun-gpua095-4112848@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4112848] [prterun-gpua095-4112848@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4112848] Rank 2 bound to package[0][core:32-47]
+[gpua095.delta.ncsa.illinois.edu:4112848] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4112848] Rank 1 bound to package[0][core:16-31]
+[gpua095.delta.ncsa.illinois.edu:4112848] Rank 3 bound to package[0][core:48-63]
+[gpua097.delta.ncsa.illinois.edu:3281779] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3281779] Rank 6 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3281779] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3281779] Rank 7 bound to package[0][core:48-63]
+assert error
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+  Proc: [[55919,1],0]
+  Errorcode: 1
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+ [gpua095.delta.ncsa.illinois.edu:4112860] mtl_ofi.h:196: Error returned from fi_cq_readerr with null context. Completion flags: 0000000000000808
+*** The Open MPI OFI MTL is aborting the MPI job (via exit(3)).
+assert error
+--------------------------------------------------------------------------
+prterun has exited due to process rank 0 with PID 0 on node gpua095 calling
+"abort". This may have caused other processes in the application to be
+terminated by signals sent by prterun (as reported here).
+--------------------------------------------------------------------------
+Running Threaded Neighbor_Alltoallv Test with 4 threads:
+[gpua095.delta.ncsa.illinois.edu:4113564] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4113564] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4113564] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4113564] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4113564] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4113564] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4113564] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4113564] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4113564] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4113564] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4113564] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4113564] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4113564] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4113564] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4113564] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4113564] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4113564] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4113564] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4113564] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4113564] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4113564] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4113564] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4113564] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4113564] [prterun-gpua095-4113564@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4113564] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4113564] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4113564] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4113564] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4113564] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4113564] [prterun-gpua095-4113564@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4113564] [prterun-gpua095-4113564@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4113564] [prterun-gpua095-4113564@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4113564] [prterun-gpua095-4113564@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4113564] [prterun-gpua095-4113564@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4113564] [prterun-gpua095-4113564@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4113564] [prterun-gpua095-4113564@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4113564] [prterun-gpua095-4113564@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4113564] [prterun-gpua095-4113564@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4113564] [prterun-gpua095-4113564@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4113564] [prterun-gpua095-4113564@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4113564] Rank 2 bound to package[0][core:32-47]
+[gpua095.delta.ncsa.illinois.edu:4113564] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4113564] Rank 1 bound to package[0][core:16-31]
+[gpua095.delta.ncsa.illinois.edu:4113564] Rank 3 bound to package[0][core:48-63]
+[gpua097.delta.ncsa.illinois.edu:3282514] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3282514] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3282514] Rank 6 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3282514] Rank 7 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4114290] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4114290] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4114290] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4114290] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4114290] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4114290] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4114290] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4114290] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4114290] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4114290] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4114290] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4114290] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4114290] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4114290] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4114290] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4114290] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4114290] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4114290] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4114290] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4114290] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4114290] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4114290] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4114290] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4114290] [prterun-gpua095-4114290@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4114290] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4114290] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4114290] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4114290] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4114290] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4114290] [prterun-gpua095-4114290@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4114290] [prterun-gpua095-4114290@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4114290] [prterun-gpua095-4114290@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4114290] [prterun-gpua095-4114290@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4114290] [prterun-gpua095-4114290@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4114290] [prterun-gpua095-4114290@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4114290] [prterun-gpua095-4114290@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4114290] [prterun-gpua095-4114290@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4114290] [prterun-gpua095-4114290@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4114290] [prterun-gpua095-4114290@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4114290] [prterun-gpua095-4114290@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4114290] Rank 3 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4114290] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4114290] Rank 2 bound to package[0][core:32-47]
+[gpua095.delta.ncsa.illinois.edu:4114290] Rank 1 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3283255] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3283255] Rank 7 bound to package[0][core:48-63]
+[gpua097.delta.ncsa.illinois.edu:3283255] Rank 6 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3283255] Rank 5 bound to package[0][core:16-31]
+Message size 1087897600 bigger than supported by selected transport. Max = 1073741824
+
+ [gpua095:00000] *** An error occurred in MPI_Isend
+[gpua095:00000] *** reported by process [628948993,3]
+[gpua095:00000] *** on communicator MPI_COMM_WORLD
+[gpua095:00000] *** MPI_ERR_OTHER: known error not in list
+[gpua095:00000] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[gpua095:00000] ***    and MPI will try to terminate your MPI job as well)
+--------------------------------------------------------------------------
+prterun has exited due to process rank 3 with PID 0 on node gpua095 calling
+"abort". This may have caused other processes in the application to be
+terminated by signals sent by prterun (as reported here).
+--------------------------------------------------------------------------
+ [gpua095.delta.ncsa.illinois.edu:4114675] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4114675] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4114675] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4114675] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4114675] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4114675] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4114675] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4114675] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4114675] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4114675] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4114675] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4114675] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4114675] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4114675] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4114675] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4114675] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4114675] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4114675] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4114675] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4114675] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4114675] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4114675] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4114675] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4114675] [prterun-gpua095-4114675@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4114675] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4114675] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4114675] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4114675] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4114675] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4114675] [prterun-gpua095-4114675@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4114675] [prterun-gpua095-4114675@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4114675] [prterun-gpua095-4114675@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4114675] [prterun-gpua095-4114675@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4114675] [prterun-gpua095-4114675@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4114675] [prterun-gpua095-4114675@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4114675] [prterun-gpua095-4114675@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4114675] [prterun-gpua095-4114675@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4114675] [prterun-gpua095-4114675@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4114675] [prterun-gpua095-4114675@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4114675] [prterun-gpua095-4114675@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4114675] Rank 3 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4114675] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4114675] Rank 2 bound to package[0][core:32-47]
+[gpua095.delta.ncsa.illinois.edu:4114675] Rank 1 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3283658] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3283658] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3283658] Rank 6 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3283658] Rank 7 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4115062] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4115062] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4115062] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4115062] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4115062] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4115062] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4115062] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4115062] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4115062] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4115062] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4115062] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4115062] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4115062] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4115062] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4115062] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4115062] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4115062] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4115062] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4115062] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4115062] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4115062] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4115062] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4115062] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4115062] [prterun-gpua095-4115062@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4115062] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4115062] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4115062] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4115062] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4115062] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4115062] [prterun-gpua095-4115062@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4115062] [prterun-gpua095-4115062@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4115062] [prterun-gpua095-4115062@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4115062] [prterun-gpua095-4115062@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4115062] [prterun-gpua095-4115062@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4115062] [prterun-gpua095-4115062@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4115062] [prterun-gpua095-4115062@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4115062] [prterun-gpua095-4115062@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4115062] [prterun-gpua095-4115062@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4115062] [prterun-gpua095-4115062@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4115062] [prterun-gpua095-4115062@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4115062] Rank 3 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4115062] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4115062] Rank 2 bound to package[0][core:32-47]
+[gpua095.delta.ncsa.illinois.edu:4115062] Rank 1 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3284067] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3284067] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3284067] Rank 6 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3284067] Rank 7 bound to package[0][core:48-63]
+[gpua097.delta.ncsa.illinois.edu:3284087] mtl_ofi.h:196: Error returned from fi_cq_readerr with null context. Completion flags: 0000000000000808
+*** The Open MPI OFI MTL is aborting the MPI job (via exit(3)).
+--------------------------------------------------------------------------
+prterun noticed that process rank 4 with PID 3284086 on node gpua097 exited on
+signal 9 (Killed).
+--------------------------------------------------------------------------
+[gpua095.delta.ncsa.illinois.edu:4115785] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4115785] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4115785] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4115785] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4115785] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4115785] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4115785] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4115785] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4115785] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4115785] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4115785] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4115785] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4115785] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4115785] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4115785] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4115785] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4115785] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4115785] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4115785] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4115785] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4115785] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4115785] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4115785] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4115785] [prterun-gpua095-4115785@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4115785] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4115785] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4115785] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4115785] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4115785] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4115785] [prterun-gpua095-4115785@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4115785] [prterun-gpua095-4115785@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4115785] [prterun-gpua095-4115785@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4115785] [prterun-gpua095-4115785@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4115785] [prterun-gpua095-4115785@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4115785] [prterun-gpua095-4115785@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4115785] [prterun-gpua095-4115785@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4115785] [prterun-gpua095-4115785@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4115785] [prterun-gpua095-4115785@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4115785] [prterun-gpua095-4115785@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4115785] [prterun-gpua095-4115785@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4115785] Rank 3 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4115785] Rank 2 bound to package[0][core:32-47]
+[gpua095.delta.ncsa.illinois.edu:4115785] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4115785] Rank 1 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3284811] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3284811] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3284811] Rank 7 bound to package[0][core:48-63]
+[gpua097.delta.ncsa.illinois.edu:3284811] Rank 6 bound to package[0][core:32-47]
+assert error
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+  Proc: [[12700,1],0]
+  Errorcode: 1
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+prterun has exited due to process rank 0 with PID 0 on node gpua095 calling
+"abort". This may have caused other processes in the application to be
+terminated by signals sent by prterun (as reported here).
+--------------------------------------------------------------------------
+ Running Threaded Neighbor_Alltoallv Test with 8 threads:
+[gpua095.delta.ncsa.illinois.edu:4116511] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4116511] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4116511] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4116511] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4116511] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4116511] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4116511] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4116511] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4116511] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4116511] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4116511] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4116511] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4116511] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4116511] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4116511] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4116511] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4116511] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4116511] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4116511] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4116511] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4116511] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4116511] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4116511] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4116511] [prterun-gpua095-4116511@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4116511] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4116511] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4116511] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4116511] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4116511] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4116511] [prterun-gpua095-4116511@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4116511] [prterun-gpua095-4116511@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4116511] [prterun-gpua095-4116511@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4116511] [prterun-gpua095-4116511@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4116511] [prterun-gpua095-4116511@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4116511] [prterun-gpua095-4116511@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4116511] [prterun-gpua095-4116511@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4116511] [prterun-gpua095-4116511@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4116511] [prterun-gpua095-4116511@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4116511] [prterun-gpua095-4116511@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4116511] [prterun-gpua095-4116511@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4116511] Rank 2 bound to package[0][core:32-47]
+[gpua095.delta.ncsa.illinois.edu:4116511] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4116511] Rank 3 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4116511] Rank 1 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3285554] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3285554] Rank 6 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3285554] Rank 7 bound to package[0][core:48-63]
+[gpua097.delta.ncsa.illinois.edu:3285554] Rank 5 bound to package[0][core:16-31]
+[gpua095.delta.ncsa.illinois.edu:4117254] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4117254] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4117254] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4117254] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4117254] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4117254] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4117254] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4117254] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4117254] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4117254] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4117254] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4117254] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4117254] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4117254] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4117254] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4117254] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4117254] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4117254] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4117254] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4117254] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4117254] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4117254] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4117254] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4117254] [prterun-gpua095-4117254@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4117254] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4117254] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4117254] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4117254] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4117254] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4117254] [prterun-gpua095-4117254@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4117254] [prterun-gpua095-4117254@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4117254] [prterun-gpua095-4117254@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4117254] [prterun-gpua095-4117254@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4117254] [prterun-gpua095-4117254@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4117254] [prterun-gpua095-4117254@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4117254] [prterun-gpua095-4117254@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4117254] [prterun-gpua095-4117254@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4117254] [prterun-gpua095-4117254@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4117254] [prterun-gpua095-4117254@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4117254] [prterun-gpua095-4117254@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4117254] Rank 2 bound to package[0][core:32-47]
+[gpua095.delta.ncsa.illinois.edu:4117254] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4117254] Rank 1 bound to package[0][core:16-31]
+[gpua095.delta.ncsa.illinois.edu:4117254] Rank 3 bound to package[0][core:48-63]
+[gpua097.delta.ncsa.illinois.edu:3286312] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3286312] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3286312] Rank 6 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3286312] Rank 7 bound to package[0][core:48-63]
+Message size 1087897600 bigger than supported by selected transport. Max = 1073741824
+
+ [gpua095:00000] *** An error occurred in MPI_Isend
+[gpua095:00000] *** reported by process [1140391937,3]
+[gpua095:00000] *** on communicator MPI_COMM_WORLD
+[gpua095:00000] *** MPI_ERR_OTHER: known error not in list
+[gpua095:00000] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[gpua095:00000] ***    and MPI will try to terminate your MPI job as well)
+--------------------------------------------------------------------------
+prterun has exited due to process rank 3 with PID 0 on node gpua095 calling
+"abort". This may have caused other processes in the application to be
+terminated by signals sent by prterun (as reported here).
+--------------------------------------------------------------------------
+ [gpua095.delta.ncsa.illinois.edu:4117657] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4117657] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4117657] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4117657] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4117657] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4117657] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4117657] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4117657] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4117657] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4117657] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4117657] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4117657] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4117657] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4117657] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4117657] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4117657] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4117657] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4117657] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4117657] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4117657] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4117657] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4117657] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4117657] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4117657] [prterun-gpua095-4117657@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4117657] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4117657] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4117657] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4117657] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4117657] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4117657] [prterun-gpua095-4117657@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4117657] [prterun-gpua095-4117657@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4117657] [prterun-gpua095-4117657@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4117657] [prterun-gpua095-4117657@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4117657] [prterun-gpua095-4117657@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4117657] [prterun-gpua095-4117657@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4117657] [prterun-gpua095-4117657@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4117657] [prterun-gpua095-4117657@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4117657] [prterun-gpua095-4117657@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4117657] [prterun-gpua095-4117657@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4117657] [prterun-gpua095-4117657@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4117657] Rank 2 bound to package[0][core:32-47]
+[gpua095.delta.ncsa.illinois.edu:4117657] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4117657] Rank 1 bound to package[0][core:16-31]
+[gpua095.delta.ncsa.illinois.edu:4117657] Rank 3 bound to package[0][core:48-63]
+[gpua097.delta.ncsa.illinois.edu:3286734] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3286734] Rank 6 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3286734] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3286734] Rank 7 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4118058] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4118058] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4118058] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4118058] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4118058] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4118058] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4118058] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4118058] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4118058] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4118058] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4118058] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4118058] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4118058] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4118058] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4118058] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4118058] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4118058] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4118058] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4118058] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4118058] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4118058] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4118058] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4118058] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4118058] [prterun-gpua095-4118058@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4118058] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4118058] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4118058] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4118058] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4118058] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4118058] [prterun-gpua095-4118058@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4118058] [prterun-gpua095-4118058@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4118058] [prterun-gpua095-4118058@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4118058] [prterun-gpua095-4118058@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4118058] [prterun-gpua095-4118058@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4118058] [prterun-gpua095-4118058@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4118058] [prterun-gpua095-4118058@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4118058] [prterun-gpua095-4118058@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4118058] [prterun-gpua095-4118058@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4118058] [prterun-gpua095-4118058@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4118058] [prterun-gpua095-4118058@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4118058] Rank 3 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4118058] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4118058] Rank 1 bound to package[0][core:16-31]
+[gpua095.delta.ncsa.illinois.edu:4118058] Rank 2 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3287157] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3287157] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3287157] Rank 6 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3287157] Rank 7 bound to package[0][core:48-63]
+[gpua097:00000] *** An error occurred in MPI_Neighbor_alltoallv
+[gpua097:00000] *** reported by process [1520304129,4]
+[gpua097:00000] *** on communicator MPI COMM 10 DUP FROM 0
+[gpua097:00000] *** MPI_ERR_OTHER: known error not in list
+[gpua097:00000] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[gpua097:00000] ***    and MPI will try to terminate your MPI job as well)
+--------------------------------------------------------------------------
+prterun noticed that process rank 5 with PID 3287177 on node gpua097 exited on
+signal 9 (Killed).
+--------------------------------------------------------------------------
+ [gpua095.delta.ncsa.illinois.edu:4118799] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4118799] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4118799] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4118799] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4118799] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4118799] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4118799] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4118799] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4118799] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4118799] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4118799] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4118799] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4118799] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4118799] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4118799] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4118799] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4118799] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4118799] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4118799] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4118799] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4118799] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4118799] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4118799] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4118799] [prterun-gpua095-4118799@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4118799] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4118799] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4118799] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4118799] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4118799] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4118799] [prterun-gpua095-4118799@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4118799] [prterun-gpua095-4118799@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4118799] [prterun-gpua095-4118799@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4118799] [prterun-gpua095-4118799@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4118799] [prterun-gpua095-4118799@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4118799] [prterun-gpua095-4118799@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4118799] [prterun-gpua095-4118799@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4118799] [prterun-gpua095-4118799@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4118799] [prterun-gpua095-4118799@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4118799] [prterun-gpua095-4118799@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4118799] [prterun-gpua095-4118799@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4118799] Rank 3 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4118799] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4118799] Rank 1 bound to package[0][core:16-31]
+[gpua095.delta.ncsa.illinois.edu:4118799] Rank 2 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3287918] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3287918] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3287918] Rank 7 bound to package[0][core:48-63]
+[gpua097.delta.ncsa.illinois.edu:3287918] Rank 6 bound to package[0][core:32-47]
+assert error
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+  Proc: [[10986,1],0]
+  Errorcode: 1
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+ [gpua095.delta.ncsa.illinois.edu:4118811] mtl_ofi.h:196: Error returned from fi_cq_readerr with null context. Completion flags: 0000000000000808
+*** The Open MPI OFI MTL is aborting the MPI job (via exit(3)).
+--------------------------------------------------------------------------
+prterun has exited due to process rank 0 with PID 0 on node gpua095 calling
+"abort". This may have caused other processes in the application to be
+terminated by signals sent by prterun (as reported here).
+--------------------------------------------------------------------------
+Running Threaded Neighbor_Alltoallv Test with 16 threads:
+[gpua095.delta.ncsa.illinois.edu:4119537] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4119537] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4119537] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4119537] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4119537] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4119537] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4119537] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4119537] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4119537] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4119537] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4119537] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4119537] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4119537] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4119537] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4119537] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4119537] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4119537] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4119537] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4119537] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4119537] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4119537] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4119537] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4119537] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4119537] [prterun-gpua095-4119537@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4119537] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4119537] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4119537] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4119537] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4119537] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4119537] [prterun-gpua095-4119537@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4119537] [prterun-gpua095-4119537@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4119537] [prterun-gpua095-4119537@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4119537] [prterun-gpua095-4119537@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4119537] [prterun-gpua095-4119537@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4119537] [prterun-gpua095-4119537@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4119537] [prterun-gpua095-4119537@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4119537] [prterun-gpua095-4119537@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4119537] [prterun-gpua095-4119537@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4119537] [prterun-gpua095-4119537@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4119537] [prterun-gpua095-4119537@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4119537] Rank 3 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4119537] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4119537] Rank 2 bound to package[0][core:32-47]
+[gpua095.delta.ncsa.illinois.edu:4119537] Rank 1 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3288676] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3288676] Rank 6 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3288676] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3288676] Rank 7 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4120308] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4120308] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4120308] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4120308] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4120308] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4120308] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4120308] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4120308] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4120308] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4120308] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4120308] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4120308] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4120308] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4120308] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4120308] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4120308] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4120308] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4120308] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4120308] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4120308] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4120308] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4120308] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4120308] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4120308] [prterun-gpua095-4120308@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4120308] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4120308] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4120308] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4120308] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4120308] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4120308] [prterun-gpua095-4120308@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4120308] [prterun-gpua095-4120308@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4120308] [prterun-gpua095-4120308@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4120308] [prterun-gpua095-4120308@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4120308] [prterun-gpua095-4120308@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4120308] [prterun-gpua095-4120308@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4120308] [prterun-gpua095-4120308@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4120308] [prterun-gpua095-4120308@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4120308] [prterun-gpua095-4120308@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4120308] [prterun-gpua095-4120308@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4120308] [prterun-gpua095-4120308@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4120308] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4120308] Rank 3 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4120308] Rank 1 bound to package[0][core:16-31]
+[gpua095.delta.ncsa.illinois.edu:4120308] Rank 2 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3289464] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3289464] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3289464] Rank 7 bound to package[0][core:48-63]
+[gpua097.delta.ncsa.illinois.edu:3289464] Rank 6 bound to package[0][core:32-47]
+Message size 1087897600 bigger than supported by selected transport. Max = 1073741824
+
+ [gpua095:00000] *** An error occurred in MPI_Isend
+[gpua095:00000] *** reported by process [90767361,2]
+[gpua095:00000] *** on communicator MPI_COMM_WORLD
+[gpua095:00000] *** MPI_ERR_OTHER: known error not in list
+[gpua095:00000] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[gpua095:00000] ***    and MPI will try to terminate your MPI job as well)
+--------------------------------------------------------------------------
+prterun has exited due to process rank 2 with PID 0 on node gpua095 calling
+"abort". This may have caused other processes in the application to be
+terminated by signals sent by prterun (as reported here).
+--------------------------------------------------------------------------
+ [gpua095.delta.ncsa.illinois.edu:4120746] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4120746] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4120746] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4120746] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4120746] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4120746] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4120746] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4120746] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4120746] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4120746] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4120746] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4120746] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4120746] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4120746] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4120746] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4120746] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4120746] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4120746] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4120746] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4120746] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4120746] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4120746] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4120746] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4120746] [prterun-gpua095-4120746@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4120746] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4120746] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4120746] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4120746] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4120746] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4120746] [prterun-gpua095-4120746@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4120746] [prterun-gpua095-4120746@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4120746] [prterun-gpua095-4120746@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4120746] [prterun-gpua095-4120746@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4120746] [prterun-gpua095-4120746@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4120746] [prterun-gpua095-4120746@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4120746] [prterun-gpua095-4120746@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4120746] [prterun-gpua095-4120746@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4120746] [prterun-gpua095-4120746@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4120746] [prterun-gpua095-4120746@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4120746] [prterun-gpua095-4120746@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4120746] Rank 1 bound to package[0][core:16-31]
+[gpua095.delta.ncsa.illinois.edu:4120746] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4120746] Rank 3 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4120746] Rank 2 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3289921] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3289921] Rank 6 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3289921] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3289921] Rank 7 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4121179] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4121179] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4121179] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4121179] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4121179] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4121179] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4121179] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4121179] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4121179] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4121179] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4121179] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4121179] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4121179] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4121179] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4121179] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4121179] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4121179] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4121179] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4121179] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4121179] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4121179] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4121179] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4121179] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4121179] [prterun-gpua095-4121179@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4121179] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4121179] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4121179] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4121179] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4121179] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4121179] [prterun-gpua095-4121179@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4121179] [prterun-gpua095-4121179@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4121179] [prterun-gpua095-4121179@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4121179] [prterun-gpua095-4121179@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4121179] [prterun-gpua095-4121179@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4121179] [prterun-gpua095-4121179@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4121179] [prterun-gpua095-4121179@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4121179] [prterun-gpua095-4121179@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4121179] [prterun-gpua095-4121179@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4121179] [prterun-gpua095-4121179@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4121179] [prterun-gpua095-4121179@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4121179] Rank 3 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4121179] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4121179] Rank 2 bound to package[0][core:32-47]
+[gpua095.delta.ncsa.illinois.edu:4121179] Rank 1 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3290373] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3290373] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3290373] Rank 6 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3290373] Rank 7 bound to package[0][core:48-63]
+[gpua097:00000] *** An error occurred in MPI_Neighbor_alltoallv
+[gpua097:00000] *** reported by process [1915355137,6]
+[gpua097:00000] *** on communicator MPI COMM 10 DUP FROM 0
+[gpua097:00000] *** MPI_ERR_OTHER: known error not in list
+[gpua097:00000] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[gpua097:00000] ***    and MPI will try to terminate your MPI job as well)
+--------------------------------------------------------------------------
+prterun has exited due to process rank 6 with PID 3290394 on node gpua097 calling
+"abort". This may have caused other processes in the application to be
+terminated by signals sent by prterun (as reported here).
+--------------------------------------------------------------------------
+ [gpua095.delta.ncsa.illinois.edu:4121951] mca: base: component_find: searching NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4121951] mca: base: find_dyn_components: checking NULL for ras components
+[gpua095.delta.ncsa.illinois.edu:4121951] pmix:mca: base: components_register: registering framework ras components
+[gpua095.delta.ncsa.illinois.edu:4121951] pmix:mca: base: components_register: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4121951] pmix:mca: base: components_register: component simulator register function successful
+[gpua095.delta.ncsa.illinois.edu:4121951] pmix:mca: base: components_register: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4121951] pmix:mca: base: components_register: component testrm register function successful
+[gpua095.delta.ncsa.illinois.edu:4121951] pmix:mca: base: components_register: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4121951] pmix:mca: base: components_register: component pbs register function successful
+[gpua095.delta.ncsa.illinois.edu:4121951] pmix:mca: base: components_register: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4121951] pmix:mca: base: components_register: component slurm register function successful
+[gpua095.delta.ncsa.illinois.edu:4121951] mca: base: components_open: opening ras components
+[gpua095.delta.ncsa.illinois.edu:4121951] mca: base: components_open: found loaded component simulator
+[gpua095.delta.ncsa.illinois.edu:4121951] mca: base: components_open: found loaded component testrm
+[gpua095.delta.ncsa.illinois.edu:4121951] mca: base: components_open: found loaded component pbs
+[gpua095.delta.ncsa.illinois.edu:4121951] mca: base: components_open: component pbs open function successful
+[gpua095.delta.ncsa.illinois.edu:4121951] mca: base: components_open: found loaded component slurm
+[gpua095.delta.ncsa.illinois.edu:4121951] mca: base: components_open: component slurm open function successful
+[gpua095.delta.ncsa.illinois.edu:4121951] mca:base:select: Auto-selecting ras components
+[gpua095.delta.ncsa.illinois.edu:4121951] mca:base:select:(  ras) Querying component [simulator]
+[gpua095.delta.ncsa.illinois.edu:4121951] mca:base:select:(  ras) Querying component [testrm]
+[gpua095.delta.ncsa.illinois.edu:4121951] mca:base:select:(  ras) Querying component [pbs]
+[gpua095.delta.ncsa.illinois.edu:4121951] mca:base:select:(  ras) Querying component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4121951] [prterun-gpua095-4121951@0,0] ras:slurm: available for selection
+[gpua095.delta.ncsa.illinois.edu:4121951] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua095.delta.ncsa.illinois.edu:4121951] mca:base:select:(  ras) Selected component [slurm]
+[gpua095.delta.ncsa.illinois.edu:4121951] mca: base: close: unloading component simulator
+[gpua095.delta.ncsa.illinois.edu:4121951] mca: base: close: unloading component testrm
+[gpua095.delta.ncsa.illinois.edu:4121951] mca: base: close: unloading component pbs
+[gpua095.delta.ncsa.illinois.edu:4121951] [prterun-gpua095-4121951@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4121951] [prterun-gpua095-4121951@0,0] ras:slurm:allocate:discover: checking nodelist: gpua[095,097]
+[gpua095.delta.ncsa.illinois.edu:4121951] [prterun-gpua095-4121951@0,0] ras:slurm:allocate:discover: parse range 097 (2)
+[gpua095.delta.ncsa.illinois.edu:4121951] [prterun-gpua095-4121951@0,0] ras:slurm:allocate:discover: adding node gpua095 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4121951] [prterun-gpua095-4121951@0,0] ras:slurm:allocate:discover: adding node gpua097 (64 slots)
+[gpua095.delta.ncsa.illinois.edu:4121951] [prterun-gpua095-4121951@0,0] ras:slurm:allocate: success
+[gpua095.delta.ncsa.illinois.edu:4121951] [prterun-gpua095-4121951@0,0] ras:base:node_insert inserting 2 nodes
+[gpua095.delta.ncsa.illinois.edu:4121951] [prterun-gpua095-4121951@0,0] ras:base:node_insert updating HNP [gpua095] info to 64 slots
+[gpua095.delta.ncsa.illinois.edu:4121951] [prterun-gpua095-4121951@0,0] ras:base:node_insert node gpua097 slots 64
+[gpua095.delta.ncsa.illinois.edu:4121951] [prterun-gpua095-4121951@0,0] ras:base:allocate
+[gpua095.delta.ncsa.illinois.edu:4121951] [prterun-gpua095-4121951@0,0] ras:base:allocate allocation already read
+[gpua095.delta.ncsa.illinois.edu:4121951] Rank 3 bound to package[0][core:48-63]
+[gpua095.delta.ncsa.illinois.edu:4121951] Rank 0 bound to package[0][core:0-15]
+[gpua095.delta.ncsa.illinois.edu:4121951] Rank 1 bound to package[0][core:16-31]
+[gpua095.delta.ncsa.illinois.edu:4121951] Rank 2 bound to package[0][core:32-47]
+[gpua097.delta.ncsa.illinois.edu:3291165] Rank 4 bound to package[0][core:0-15]
+[gpua097.delta.ncsa.illinois.edu:3291165] Rank 5 bound to package[0][core:16-31]
+[gpua097.delta.ncsa.illinois.edu:3291165] Rank 7 bound to package[0][core:48-63]
+[gpua097.delta.ncsa.illinois.edu:3291165] Rank 6 bound to package[0][core:32-47]
+--------------------------------------------------------------------------
+prterun noticed that process rank 0 with PID 4121960 on node gpua095 exited on
+signal 9 (Killed).
+--------------------------------------------------------------------------
+slurmstepd: error: Detected 1 oom_kill event in StepId=11743431.batch. Some of the step tasks have been OOM Killed.

@@ -1,0 +1,2344 @@
+Running Unthreaded Neighbor_Alltoallv Test:
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4108448@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4108448@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4108448@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4108448@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4108448@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4108448@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4108448@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4108448@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4108448@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 6 reversed
+rank 4 reversed
+rank 7 reversed
+rank 5 reversed
+rank 2 reversed
+rank 0 reversed
+rank 3 reversed
+rank 1 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 1.293483e-04; Time All Iters 1.776469e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.292394e-04; Time All Iters 1.926572e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 2.107302e-04; Time All Iters 1.835671e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.106989e-04; Time All Iters 1.841508e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 3.814993e-04; Time All Iters 1.448553e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.816363e-04; Time All Iters 1.803995e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 7.551776e-04; Time All Iters 1.813936e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.537831e-04; Time All Iters 1.837723e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 1.617038e-03; Time All Iters 1.827253e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.595708e-03; Time All Iters 1.865382e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 3.314505e-03; Time All Iters 1.766631e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.384712e-03; Time All Iters 1.753281e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 6.673930e-03; Time All Iters 1.755244e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.710243e-03; Time All Iters 1.784925e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 3.335775e-02; Time All Iters 1.968107e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.331363e-02; Time All Iters 1.998818e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 7.993251e-02; Time All Iters 1.998313e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.993425e-02; Time All Iters 2.078291e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 2.164024e-01; Time All Iters 2.164024e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.164826e-01; Time All Iters 2.164826e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 4.470827e-01; Time All Iters 2.235413e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.496442e-01; Time All Iters 2.248221e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4108824@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4108824@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4108824@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4108824@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4108824@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4108824@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4108824@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4108824@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4108824@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 4 reversed
+rank 7 reversed
+rank 6 reversed
+rank 5 reversed
+rank 2 reversed
+rank 3 reversed
+rank 0 reversed
+rank 1 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 4.439994e-04; Time All Iters 1.946493e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.411492e-04; Time All Iters 1.966643e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 7.644337e-04; Time All Iters 1.696278e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.712244e-04; Time All Iters 1.708262e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 1.589922e-03; Time All Iters 1.820461e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.540927e-03; Time All Iters 1.795179e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 3.180141e-03; Time All Iters 1.898544e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.160904e-03; Time All Iters 1.921829e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 6.205538e-03; Time All Iters 1.799606e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.197985e-03; Time All Iters 1.803614e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 1.641513e-02; Time All Iters 1.740004e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.704041e-02; Time All Iters 1.874445e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 4.727042e-02; Time All Iters 2.079898e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.695023e-02; Time All Iters 2.112760e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 1.075957e-01; Time All Iters 1.936722e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.077262e-01; Time All Iters 1.939071e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 2.901847e-01; Time All Iters 2.031293e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.866432e-01; Time All Iters 2.006503e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 6.538369e-01; Time All Iters 2.615347e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.455267e-01; Time All Iters 2.582107e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4109198@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4109198@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4109198@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4109198@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4109198@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4109198@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4109198@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4109198@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4109198@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 3 reversed
+rank 2 reversed
+rank 1 reversed
+rank 4 reversed
+rank 5 reversed
+rank 0 reversed
+rank 7 reversed
+rank 6 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 2.309185e-04; Time All Iters 1.433773e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.306144e-04; Time All Iters 1.994123e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 3.126450e-04; Time All Iters 1.614499e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.115611e-04; Time All Iters 1.974363e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 4.831459e-04; Time All Iters 1.468764e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.810002e-04; Time All Iters 1.998556e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 8.363494e-04; Time All Iters 2.010584e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.345321e-04; Time All Iters 1.994532e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 1.478313e-03; Time All Iters 1.878936e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.477248e-03; Time All Iters 1.926331e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 3.182213e-03; Time All Iters 1.883870e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.181758e-03; Time All Iters 1.931327e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 6.859186e-03; Time All Iters 1.906854e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.861232e-03; Time All Iters 1.921145e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 2.965463e-02; Time All Iters 1.957206e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.951738e-02; Time All Iters 1.948147e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 6.215818e-02; Time All Iters 1.926903e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.200153e-02; Time All Iters 1.984049e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 1.321898e-01; Time All Iters 1.982847e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.323567e-01; Time All Iters 1.985351e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 3.325369e-01; Time All Iters 1.995221e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.325141e-01; Time All Iters 1.995085e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4109573@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4109573@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4109573@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4109573@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4109573@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4109573@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4109573@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4109573@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4109573@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 6 reversed
+rank 4 reversed
+rank 5 reversed
+rank 7 reversed
+rank 3 reversed
+rank 2 reversed
+rank 0 reversed
+rank 1 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 8.798063e-04; Time All Iters 1.990122e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.797686e-04; Time All Iters 1.995315e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 1.660304e-03; Time All Iters 1.801430e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.654764e-03; Time All Iters 1.874848e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 3.501451e-03; Time All Iters 1.883781e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.509217e-03; Time All Iters 1.884449e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 7.319440e-03; Time All Iters 1.910374e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.340534e-03; Time All Iters 1.937901e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 3.857082e-02; Time All Iters 1.967112e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.876246e-02; Time All Iters 1.976885e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 7.914927e-02; Time All Iters 1.978732e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.906989e-02; Time All Iters 2.055817e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 2.062520e-01; Time All Iters 2.062520e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.065090e-01; Time All Iters 2.065090e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 4.631714e-01; Time All Iters 2.315857e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.662132e-01; Time All Iters 2.331066e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 9.166181e-01; Time All Iters 1.833236e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.036137e+00; Time All Iters 2.072274e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 1.770640e+00; Time All Iters 1.770640e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.758432e+00; Time All Iters 1.758432e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/dgreen.pm
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4109947@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4109947@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4109947@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4109947@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4109947@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4109947@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4109947@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4109947@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4109947@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 1 reversed
+rank 3 reversed
+rank 2 reversed
+rank 0 reversed
+rank 5 reversed
+rank 6 reversed
+rank 4 reversed
+rank 7 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 3.257297e-03; Time All Iters 1.807800e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.249798e-03; Time All Iters 1.852385e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 6.618717e-03; Time All Iters 1.806910e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.693374e-03; Time All Iters 1.874145e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 2.399177e-02; Time All Iters 1.943334e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.393270e-02; Time All Iters 1.962482e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 3.881283e-02; Time All Iters 1.979454e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.870270e-02; Time All Iters 1.973838e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 9.116225e-02; Time All Iters 2.005569e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 9.120046e-02; Time All Iters 2.006410e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 2.376907e-01; Time All Iters 2.139216e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.376964e-01; Time All Iters 2.139268e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 5.850632e-01; Time All Iters 2.340253e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 5.875322e-01; Time All Iters 2.350129e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 1.163211e+00; Time All Iters 2.326421e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.285509e+00; Time All Iters 2.571018e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 2.842068e+00; Time All Iters 2.842068e+00
+Running Threaded Neighbor_Alltoallv Test with 2 threads:
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4110659@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4110659@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4110659@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4110659@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4110659@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4110659@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4110659@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4110659@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4110659@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 6 reversed
+rank 7 reversed
+rank 4 reversed
+rank 5 reversed
+rank 2 reversed
+rank 1 reversed
+rank 0 reversed
+rank 3 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 1.287444e-04; Time All Iters 1.809373e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.287095e-04; Time All Iters 1.909277e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.483387e-04; Time All Iters 1.732744e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 2.101025e-04; Time All Iters 1.505175e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.102086e-04; Time All Iters 1.841848e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.359369e-04; Time All Iters 1.828511e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 3.794732e-04; Time All Iters 1.472356e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.768821e-04; Time All Iters 1.777376e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.251560e-04; Time All Iters 1.816692e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 7.609198e-04; Time All Iters 1.824686e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.625133e-04; Time All Iters 1.859007e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.113789e-04; Time All Iters 1.882399e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 1.612387e-03; Time All Iters 1.767176e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.614084e-03; Time All Iters 1.786790e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.684113e-03; Time All Iters 1.658851e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 3.342720e-03; Time All Iters 1.828468e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.351528e-03; Time All Iters 1.920425e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.400012e-03; Time All Iters 1.740806e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 6.743116e-03; Time All Iters 1.847614e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.739645e-03; Time All Iters 1.745568e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.090635e-03; Time All Iters 1.786840e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 3.233727e-02; Time All Iters 1.972573e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.237187e-02; Time All Iters 2.007056e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.432493e-02; Time All Iters 1.847916e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 9.343243e-02; Time All Iters 2.055513e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.004481e-01; Time All Iters 2.209859e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.291431e-02; Time All Iters 2.016972e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 2.155904e-01; Time All Iters 2.155904e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.141677e-01; Time All Iters 2.141677e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.937408e-01; Time All Iters 2.131149e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 4.453524e-01; Time All Iters 2.226762e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.445031e-01; Time All Iters 2.222516e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.792890e-01; Time All Iters 2.275734e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4111038@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4111038@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4111038@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4111038@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4111038@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4111038@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4111038@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4111038@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4111038@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 5 reversed
+rank 4 reversed
+rank 7 reversed
+rank 6 reversed
+rank 3 reversed
+rank 2 reversed
+rank 1 reversed
+rank 0 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 4.473811e-04; Time All Iters 1.942082e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.542212e-04; Time All Iters 2.043541e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.020041e-04; Time All Iters 1.638167e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 8.356691e-04; Time All Iters 1.977193e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.463190e-04; Time All Iters 1.971077e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.601559e-04; Time All Iters 1.596327e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 1.551992e-03; Time All Iters 1.761511e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.578290e-03; Time All Iters 1.731384e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.584259e-03; Time All Iters 1.715752e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 3.146972e-03; Time All Iters 1.875595e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.126515e-03; Time All Iters 1.844644e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.083200e-03; Time All Iters 1.726592e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 6.174581e-03; Time All Iters 1.710359e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.171406e-03; Time All Iters 1.795879e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.405968e-03; Time All Iters 1.800077e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 1.730656e-02; Time All Iters 1.799883e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.726759e-02; Time All Iters 1.951237e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.894075e-02; Time All Iters 2.064542e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 4.721069e-02; Time All Iters 2.124481e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.742754e-02; Time All Iters 2.086812e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 5.145548e-02; Time All Iters 2.058219e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 1.277344e-01; Time All Iters 1.916016e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.277406e-01; Time All Iters 1.916109e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.107277e-01; Time All Iters 1.771644e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 3.004685e-01; Time All Iters 2.103279e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.016291e-01; Time All Iters 2.111404e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.159668e-01; Time All Iters 2.211768e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 6.590273e-01; Time All Iters 2.636109e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.500796e-01; Time All Iters 2.600318e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.597898e-01; Time All Iters 2.639159e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4111754@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4111754@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4111754@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4111754@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4111754@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4111754@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4111754@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4111754@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4111754@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 0 reversed
+rank 2 reversed
+rank 5 reversed
+rank 4 reversed
+rank 7 reversed
+rank 3 reversed
+rank 1 reversed
+rank 6 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 2.325808e-04; Time All Iters 1.458747e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.327489e-04; Time All Iters 1.982090e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.605524e-04; Time All Iters 1.746744e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 3.167571e-04; Time All Iters 1.973080e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.163842e-04; Time All Iters 1.946079e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.448088e-04; Time All Iters 1.783351e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 4.883630e-04; Time All Iters 1.967614e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.888494e-04; Time All Iters 2.038013e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 5.151723e-04; Time All Iters 1.709857e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 8.187399e-04; Time All Iters 1.918308e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.205943e-04; Time All Iters 1.965323e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.616026e-04; Time All Iters 1.811950e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 1.496726e-03; Time All Iters 1.837980e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.493586e-03; Time All Iters 1.881919e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.626671e-03; Time All Iters 1.859285e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 3.225877e-03; Time All Iters 1.867783e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.222221e-03; Time All Iters 1.930110e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.342190e-03; Time All Iters 1.858258e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 6.833401e-03; Time All Iters 1.940686e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.872214e-03; Time All Iters 1.951709e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.901713e-03; Time All Iters 1.925578e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 2.936992e-02; Time All Iters 1.909045e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.933349e-02; Time All Iters 1.936011e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.417783e-02; Time All Iters 1.928184e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 6.388521e-02; Time All Iters 1.916556e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.367018e-02; Time All Iters 1.973776e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.541324e-02; Time All Iters 1.593596e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 1.388710e-01; Time All Iters 2.083066e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.393838e-01; Time All Iters 2.090757e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.933642e-02; Time All Iters 1.941420e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 3.483654e-01; Time All Iters 2.090192e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.485341e-01; Time All Iters 2.091205e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.258903e-01; Time All Iters 2.258903e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4112131@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4112131@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4112131@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4112131@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4112131@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4112131@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4112131@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4112131@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4112131@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 4 reversed
+rank 5 reversed
+rank 7 reversed
+rank 6 reversed
+rank 3 reversed
+rank 1 reversed
+rank 0 reversed
+rank 2 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 8.772071e-04; Time All Iters 1.892136e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.773245e-04; Time All Iters 1.908181e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 9.467374e-04; Time All Iters 1.795961e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 1.664639e-03; Time All Iters 1.859402e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.656660e-03; Time All Iters 1.817356e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.794111e-03; Time All Iters 1.460406e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 3.751186e-03; Time All Iters 1.973124e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.750903e-03; Time All Iters 1.954220e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.719465e-03; Time All Iters 1.859732e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 8.033300e-03; Time All Iters 2.024392e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.082034e-03; Time All Iters 2.004344e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.529483e-03; Time All Iters 1.746840e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 3.958466e-02; Time All Iters 1.900064e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.954726e-02; Time All Iters 1.937816e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.283977e-02; Time All Iters 1.987060e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 9.402264e-02; Time All Iters 1.974475e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 9.408118e-02; Time All Iters 1.975705e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 5.994985e-02; Time All Iters 1.918395e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 2.060640e-01; Time All Iters 2.060640e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.034929e-01; Time All Iters 2.034929e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.252358e-01; Time All Iters 2.129008e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 4.800404e-01; Time All Iters 2.400202e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.781398e-01; Time All Iters 2.390699e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.873659e-01; Time All Iters 1.936829e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 9.033056e-01; Time All Iters 1.806611e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.015216e+00; Time All Iters 2.030432e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.261519e-01; Time All Iters 2.478456e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 1.812956e+00; Time All Iters 3.625912e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.810262e+00; Time All Iters 3.620523e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.614616e+00; Time All Iters 3.229232e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/dgreen.pm
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4112848@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4112848@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4112848@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4112848@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4112848@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4112848@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4112848@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4112848@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4112848@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 2 reversed
+rank 6 reversed
+rank 4 reversed
+rank 5 reversed
+rank 7 reversed
+rank 0 reversed
+rank 3 reversed
+rank 1 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 3.352297e-03; Time All Iters 1.847116e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.392648e-03; Time All Iters 1.903276e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.276630e-03; Time All Iters 1.736614e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 7.087758e-03; Time All Iters 1.970397e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.084364e-03; Time All Iters 1.969453e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.712461e-03; Time All Iters 1.892914e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 2.400852e-02; Time All Iters 1.968699e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.399535e-02; Time All Iters 1.991614e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.488330e-02; Time All Iters 2.009245e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 3.918775e-02; Time All Iters 1.920200e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.890854e-02; Time All Iters 1.945427e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.389491e-02; Time All Iters 2.169274e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 1.005842e-01; Time All Iters 2.011684e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.007572e-01; Time All Iters 2.015144e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.372117e-02; Time All Iters 1.911635e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 2.608620e-01; Time All Iters 2.086896e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.621465e-01; Time All Iters 2.097172e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.648263e-01; Time All Iters 2.307569e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 6.152296e-01; Time All Iters 2.460919e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.168939e-01; Time All Iters 2.467576e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.834152e-01; Time All Iters 1.933661e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 1.427341e+00; Time All Iters 2.854682e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.426444e+00; Time All Iters 2.852887e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.202508e+00; Time All Iters 2.405017e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 2.845667e+00; Time All Iters 2.845667e+00
+Running Threaded Neighbor_Alltoallv Test with 4 threads:
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4113564@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4113564@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4113564@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4113564@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4113564@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4113564@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4113564@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4113564@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4113564@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 7 reversed
+rank 6 reversed
+rank 4 reversed
+rank 5 reversed
+rank 1 reversed
+rank 0 reversed
+rank 3 reversed
+rank 2 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 1.266025e-04; Time All Iters 1.768004e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.326583e-04; Time All Iters 1.956444e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.492002e-04; Time All Iters 1.897379e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 2.114373e-04; Time All Iters 1.823223e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.112883e-04; Time All Iters 1.832081e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.372680e-04; Time All Iters 1.863028e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 3.784553e-04; Time All Iters 1.770793e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.772623e-04; Time All Iters 1.795014e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.279162e-04; Time All Iters 1.857156e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 7.443429e-04; Time All Iters 1.793122e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.424994e-04; Time All Iters 1.813926e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.187062e-04; Time All Iters 1.888755e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 1.613800e-03; Time All Iters 1.812297e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.611303e-03; Time All Iters 1.819161e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.683596e-03; Time All Iters 1.740839e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 3.381685e-03; Time All Iters 1.863309e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.402173e-03; Time All Iters 1.843978e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.475924e-03; Time All Iters 1.703203e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 6.946645e-03; Time All Iters 1.965900e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.667030e-03; Time All Iters 1.780097e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.111839e-03; Time All Iters 1.777960e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 3.466832e-02; Time All Iters 1.976094e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.460416e-02; Time All Iters 1.937833e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.432868e-02; Time All Iters 1.805413e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 9.664785e-02; Time All Iters 2.029605e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 9.691047e-02; Time All Iters 2.035120e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.416754e-02; Time All Iters 1.987540e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 2.185936e-01; Time All Iters 1.967343e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.191014e-01; Time All Iters 2.191014e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.947629e-01; Time All Iters 2.142392e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 4.463696e-01; Time All Iters 2.231848e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.549933e-01; Time All Iters 2.274966e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.827119e-01; Time All Iters 2.296271e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4114290@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4114290@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4114290@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4114290@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4114290@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4114290@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4114290@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4114290@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4114290@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 2 reversed
+rank 0 reversed
+rank 3 reversed
+rank 1 reversed
+rank 4 reversed
+rank 7 reversed
+rank 5 reversed
+rank 6 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 4.464837e-04; Time All Iters 1.995782e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.409397e-04; Time All Iters 2.051692e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.020340e-04; Time All Iters 1.343597e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 7.895020e-04; Time All Iters 1.793748e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.866799e-04; Time All Iters 1.701589e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.488640e-04; Time All Iters 1.684944e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 1.548174e-03; Time All Iters 1.809816e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.587890e-03; Time All Iters 1.835601e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.528214e-03; Time All Iters 1.765087e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 3.119013e-03; Time All Iters 1.802789e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.116296e-03; Time All Iters 1.891592e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.138786e-03; Time All Iters 1.732610e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 6.396260e-03; Time All Iters 1.918878e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.284958e-03; Time All Iters 1.891772e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.311281e-03; Time All Iters 1.773470e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 1.877770e-02; Time All Iters 1.877770e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.878884e-02; Time All Iters 1.991617e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.505093e-02; Time All Iters 1.836214e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 4.629012e-02; Time All Iters 2.036765e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.609096e-02; Time All Iters 2.074093e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.273673e-02; Time All Iters 1.702310e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 1.182593e-01; Time All Iters 2.010409e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.162604e-01; Time All Iters 2.092687e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.008532e-02; Time All Iters 2.002133e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 2.891756e-01; Time All Iters 2.024229e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.915511e-01; Time All Iters 2.040858e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.184309e-01; Time All Iters 2.402739e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 6.429508e-01; Time All Iters 2.571803e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.428079e-01; Time All Iters 2.571232e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 5.033406e-01; Time All Iters 2.013362e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4114675@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4114675@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4114675@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4114675@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4114675@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4114675@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4114675@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4114675@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4114675@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 4 reversed
+rank 7 reversed
+rank 5 reversed
+rank 6 reversed
+rank 1 reversed
+rank 2 reversed
+rank 3 reversed
+rank 0 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 2.301169e-04; Time All Iters 1.417750e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.304115e-04; Time All Iters 1.964027e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.748429e-04; Time All Iters 1.718593e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 3.148935e-04; Time All Iters 1.953914e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.150646e-04; Time All Iters 1.957181e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.586862e-04; Time All Iters 1.917537e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 4.856955e-04; Time All Iters 1.952010e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.843866e-04; Time All Iters 2.002939e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 5.321054e-04; Time All Iters 1.920369e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 8.193361e-04; Time All Iters 1.958213e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.190563e-04; Time All Iters 1.950992e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.764111e-04; Time All Iters 1.233987e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 1.487314e-03; Time All Iters 1.829396e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.483803e-03; Time All Iters 1.908170e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.610359e-03; Time All Iters 1.814874e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 3.266463e-03; Time All Iters 1.904348e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.266692e-03; Time All Iters 1.979615e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.300652e-03; Time All Iters 1.854966e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 6.628514e-03; Time All Iters 1.855984e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.622592e-03; Time All Iters 1.867571e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.824322e-03; Time All Iters 1.910810e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 2.679571e-02; Time All Iters 1.929291e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.683081e-02; Time All Iters 1.931818e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.411007e-02; Time All Iters 1.961300e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 8.103319e-02; Time All Iters 1.944797e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.097908e-02; Time All Iters 2.024477e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.882079e-02; Time All Iters 1.902172e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 1.667701e-01; Time All Iters 2.001241e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.650724e-01; Time All Iters 1.980868e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.680851e-02; Time All Iters 2.004255e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 3.402844e-01; Time All Iters 2.041706e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.383693e-01; Time All Iters 2.030216e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.660685e-01; Time All Iters 1.826754e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4115062@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4115062@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4115062@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4115062@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4115062@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4115062@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4115062@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4115062@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4115062@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 7 reversed
+rank 4 reversed
+rank 6 reversed
+rank 5 reversed
+rank 3 reversed
+rank 0 reversed
+rank 2 reversed
+rank 1 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 8.744479e-04; Time All Iters 1.949144e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.762521e-04; Time All Iters 1.992597e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 9.337809e-04; Time All Iters 1.763912e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 1.638728e-03; Time All Iters 1.807517e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.643952e-03; Time All Iters 1.874105e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.777704e-03; Time All Iters 1.727928e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 3.435759e-03; Time All Iters 1.762544e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.433160e-03; Time All Iters 1.871072e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.674914e-03; Time All Iters 1.966079e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 7.329655e-03; Time All Iters 1.883721e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.366564e-03; Time All Iters 1.944773e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.531278e-03; Time All Iters 1.958132e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 4.138901e-02; Time All Iters 1.945283e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.140663e-02; Time All Iters 1.987518e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.548635e-02; Time All Iters 1.889334e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 9.965526e-02; Time All Iters 1.993105e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 9.891144e-02; Time All Iters 1.978229e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.513005e-02; Time All Iters 2.107803e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 2.169320e-01; Time All Iters 1.952388e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.172646e-01; Time All Iters 1.955381e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 9.482767e-02; Time All Iters 1.896553e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 4.777593e-01; Time All Iters 2.388796e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.803662e-01; Time All Iters 2.401831e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.062728e-01; Time All Iters 2.143910e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 9.289963e-01; Time All Iters 1.857993e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.049498e+00; Time All Iters 2.098996e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.626069e-01; Time All Iters 2.287821e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 1.670449e+00; Time All Iters 1.670449e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.815377e+00; Time All Iters 3.630755e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.486647e+00; Time All Iters 2.973294e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/dgreen.pm
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4115785@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4115785@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4115785@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4115785@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4115785@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4115785@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4115785@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4115785@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4115785@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 4 reversed
+rank 7 reversed
+rank 6 reversed
+rank 5 reversed
+rank 0 reversed
+rank 2 reversed
+rank 1 reversed
+rank 3 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 3.150080e-03; Time All Iters 1.776645e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.191713e-03; Time All Iters 1.848002e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.243298e-03; Time All Iters 1.709218e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 6.954504e-03; Time All Iters 1.919443e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.115857e-03; Time All Iters 2.042251e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.775811e-03; Time All Iters 1.775262e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 2.404658e-02; Time All Iters 1.923727e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.407846e-02; Time All Iters 1.950355e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.354023e-02; Time All Iters 1.868552e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 3.823886e-02; Time All Iters 1.950182e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.819462e-02; Time All Iters 1.986120e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.715411e-02; Time All Iters 1.819325e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 1.111424e-01; Time All Iters 2.000563e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.111372e-01; Time All Iters 2.000470e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.104536e-02; Time All Iters 2.014497e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 2.635490e-01; Time All Iters 2.108392e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.621866e-01; Time All Iters 2.097493e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.530957e-01; Time All Iters 1.990245e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 6.315448e-01; Time All Iters 2.526179e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.343010e-01; Time All Iters 2.537204e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.479045e-01; Time All Iters 2.239523e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 1.358507e+00; Time All Iters 2.717015e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.367651e+00; Time All Iters 2.735303e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 9.740740e-01; Time All Iters 2.922222e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 2.845174e+00; Time All Iters 2.845174e+00
+Running Threaded Neighbor_Alltoallv Test with 8 threads:
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4116511@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4116511@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4116511@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4116511@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4116511@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4116511@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4116511@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4116511@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4116511@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 6 reversed
+rank 7 reversed
+rank 4 reversed
+rank 5 reversed
+rank 2 reversed
+rank 3 reversed
+rank 0 reversed
+rank 1 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 1.309574e-04; Time All Iters 1.952574e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.306210e-04; Time All Iters 2.013000e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.465024e-04; Time All Iters 1.900576e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 2.105026e-04; Time All Iters 1.824215e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.099816e-04; Time All Iters 1.839439e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.363607e-04; Time All Iters 1.834632e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 3.801114e-04; Time All Iters 1.740910e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.802928e-04; Time All Iters 1.775587e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.138755e-04; Time All Iters 1.797047e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 7.483283e-04; Time All Iters 1.796736e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.474638e-04; Time All Iters 1.803630e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.935112e-04; Time All Iters 1.776671e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 1.530310e-03; Time All Iters 1.729250e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.532400e-03; Time All Iters 1.808232e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.645120e-03; Time All Iters 1.855695e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 3.351220e-03; Time All Iters 1.796254e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.352478e-03; Time All Iters 1.850568e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.435201e-03; Time All Iters 1.830962e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 6.824932e-03; Time All Iters 1.829082e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.808498e-03; Time All Iters 1.926805e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.865747e-03; Time All Iters 1.757631e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 3.226610e-02; Time All Iters 2.000498e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.224982e-02; Time All Iters 1.999489e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.417527e-02; Time All Iters 1.885311e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 9.615472e-02; Time All Iters 2.019249e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 9.610656e-02; Time All Iters 2.018238e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 5.880786e-02; Time All Iters 1.999467e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 2.270308e-01; Time All Iters 2.043277e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.262469e-01; Time All Iters 2.036222e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.934893e-01; Time All Iters 2.128383e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 4.502480e-01; Time All Iters 2.251240e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.505196e-01; Time All Iters 2.252598e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.857930e-01; Time All Iters 2.314758e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4117254@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4117254@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4117254@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4117254@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4117254@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4117254@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4117254@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4117254@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4117254@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 7 reversed
+rank 4 reversed
+rank 5 reversed
+rank 6 reversed
+rank 1 reversed
+rank 2 reversed
+rank 0 reversed
+rank 3 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 4.463928e-04; Time All Iters 1.937345e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.517626e-04; Time All Iters 2.111087e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.046324e-04; Time All Iters 1.347426e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 7.869117e-04; Time All Iters 1.787077e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.880240e-04; Time All Iters 1.905442e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.610422e-04; Time All Iters 1.687992e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 1.559840e-03; Time All Iters 1.807855e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.553970e-03; Time All Iters 1.822807e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.565958e-03; Time All Iters 1.850963e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 3.160561e-03; Time All Iters 1.804681e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.169118e-03; Time All Iters 1.879287e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.147020e-03; Time All Iters 1.746596e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 6.341340e-03; Time All Iters 1.762892e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.226526e-03; Time All Iters 1.730974e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.434198e-03; Time All Iters 1.717931e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 1.759794e-02; Time All Iters 1.830185e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.745469e-02; Time All Iters 1.972379e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.506769e-02; Time All Iters 1.747852e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 4.549767e-02; Time All Iters 2.001897e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.501340e-02; Time All Iters 2.025603e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.234020e-02; Time All Iters 1.681690e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 1.190839e-01; Time All Iters 2.024426e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.197407e-01; Time All Iters 2.035592e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.415998e-02; Time All Iters 1.683200e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 2.911292e-01; Time All Iters 2.037905e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.903358e-01; Time All Iters 2.032350e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.134799e-01; Time All Iters 1.707839e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 6.498262e-01; Time All Iters 2.599305e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.470189e-01; Time All Iters 2.588076e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 5.083492e-01; Time All Iters 2.033397e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4117657@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4117657@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4117657@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4117657@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4117657@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4117657@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4117657@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4117657@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4117657@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 2 reversed
+rank 7 reversed
+rank 0 reversed
+rank 3 reversed
+rank 5 reversed
+rank 4 reversed
+rank 6 reversed
+rank 1 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 2.308816e-04; Time All Iters 1.445781e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.311392e-04; Time All Iters 2.003283e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.811685e-04; Time All Iters 1.819722e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 3.120859e-04; Time All Iters 1.945543e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.130586e-04; Time All Iters 1.963504e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.622899e-04; Time All Iters 1.942236e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 4.837363e-04; Time All Iters 1.975095e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.839592e-04; Time All Iters 2.010851e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 5.319308e-04; Time All Iters 1.934100e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 8.215667e-04; Time All Iters 1.933968e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.180289e-04; Time All Iters 1.982902e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.809024e-04; Time All Iters 1.999648e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 1.482745e-03; Time All Iters 1.866776e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.470885e-03; Time All Iters 1.943040e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.571057e-03; Time All Iters 1.880556e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 3.219753e-03; Time All Iters 1.867457e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.222806e-03; Time All Iters 1.878896e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.258860e-03; Time All Iters 1.961833e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 6.943705e-03; Time All Iters 1.944237e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.945312e-03; Time All Iters 1.972469e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.837598e-03; Time All Iters 1.955553e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 2.996210e-02; Time All Iters 1.887612e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.994488e-02; Time All Iters 1.916472e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.398815e-02; Time All Iters 1.930365e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 8.633397e-02; Time All Iters 1.985681e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.601756e-02; Time All Iters 1.978404e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.869780e-02; Time All Iters 2.008846e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 1.825153e-01; Time All Iters 2.007669e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.827076e-01; Time All Iters 2.009783e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.244673e-02; Time All Iters 1.998295e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 3.395444e-01; Time All Iters 2.037267e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.393315e-01; Time All Iters 2.035989e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.647818e-01; Time All Iters 2.142164e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4118058@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4118058@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4118058@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4118058@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4118058@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4118058@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4118058@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4118058@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4118058@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 6 reversed
+rank 5 reversed
+rank 4 reversed
+rank 7 reversed
+rank 3 reversed
+rank 0 reversed
+rank 2 reversed
+rank 1 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 8.731218e-04; Time All Iters 1.902533e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.763281e-04; Time All Iters 1.941067e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 9.407106e-04; Time All Iters 1.447754e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 1.669144e-03; Time All Iters 1.861096e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.669521e-03; Time All Iters 1.898246e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.739017e-03; Time All Iters 1.939004e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 3.506968e-03; Time All Iters 1.879735e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.518055e-03; Time All Iters 1.920858e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.595450e-03; Time All Iters 1.858848e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 7.268220e-03; Time All Iters 1.984224e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.272148e-03; Time All Iters 1.890759e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.431664e-03; Time All Iters 1.857916e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 2.541197e-02; Time All Iters 1.905898e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.548505e-02; Time All Iters 1.936864e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.516780e-02; Time All Iters 1.941479e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 4.554020e-02; Time All Iters 1.958229e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.553819e-02; Time All Iters 1.958142e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.093431e-02; Time All Iters 1.917927e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 2.103989e-01; Time All Iters 2.103989e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.108169e-01; Time All Iters 2.108169e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.738427e-02; Time All Iters 2.097222e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 4.234707e-01; Time All Iters 2.117354e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.246037e-01; Time All Iters 2.123018e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.508903e-01; Time All Iters 2.007122e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 8.400360e-01; Time All Iters 2.520108e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 9.001053e-01; Time All Iters 2.700316e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.123665e-01; Time All Iters 2.449466e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 1.728003e+00; Time All Iters 3.456006e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.727728e+00; Time All Iters 3.455456e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.197571e+00; Time All Iters 2.395143e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/dgreen.pm
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4118799@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4118799@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4118799@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4118799@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4118799@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4118799@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4118799@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4118799@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4118799@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 4 reversed
+rank 7 reversed
+rank 0 reversed
+rank 3 reversed
+rank 2 reversed
+rank 1 reversed
+rank 6 reversed
+rank 5 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 3.353948e-03; Time All Iters 1.941936e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.336377e-03; Time All Iters 1.915080e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.264166e-03; Time All Iters 1.873631e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 7.096406e-03; Time All Iters 1.994090e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.095204e-03; Time All Iters 1.979562e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.691240e-03; Time All Iters 1.873547e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 2.225535e-02; Time All Iters 1.958471e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.219277e-02; Time All Iters 1.908578e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.345798e-02; Time All Iters 1.857201e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 3.749765e-02; Time All Iters 1.949878e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.712441e-02; Time All Iters 1.967594e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.731061e-02; Time All Iters 1.802500e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 6.907588e-02; Time All Iters 1.865049e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.860535e-02; Time All Iters 1.920950e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 5.828918e-02; Time All Iters 1.981832e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 2.204999e-01; Time All Iters 1.984499e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.206635e-01; Time All Iters 2.206635e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.230974e-01; Time All Iters 1.969558e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 4.576706e-01; Time All Iters 2.288353e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.574242e-01; Time All Iters 2.287121e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.712157e-01; Time All Iters 2.169726e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 1.421198e+00; Time All Iters 2.842395e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.429151e+00; Time All Iters 2.858303e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 9.915405e-01; Time All Iters 1.983081e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 2.834395e+00; Time All Iters 2.834395e+00
+Running Threaded Neighbor_Alltoallv Test with 16 threads:
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4119537@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4119537@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4119537@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4119537@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4119537@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4119537@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4119537@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4119537@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4119537@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 2 reversed
+rank 3 reversed
+rank 1 reversed
+rank 0 reversed
+rank 7 reversed
+rank 4 reversed
+rank 5 reversed
+rank 6 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 1.277812e-04; Time All Iters 1.908539e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.283081e-04; Time All Iters 1.874581e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.665372e-04; Time All Iters 2.763991e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 2.113809e-04; Time All Iters 1.763974e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.122367e-04; Time All Iters 1.849855e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.338885e-04; Time All Iters 7.159160e-02
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 3.841778e-04; Time All Iters 1.796416e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.820324e-04; Time All Iters 1.773777e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.616330e-04; Time All Iters 2.339534e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 7.430449e-04; Time All Iters 1.767704e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.413890e-04; Time All Iters 1.788230e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.281263e-03; Time All Iters 2.909748e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 1.618491e-03; Time All Iters 1.793288e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.613872e-03; Time All Iters 1.825289e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.760709e-03; Time All Iters 1.785359e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 3.388207e-03; Time All Iters 1.816079e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.346571e-03; Time All Iters 1.770336e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.929796e-03; Time All Iters 2.027775e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 6.842090e-03; Time All Iters 1.792628e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.740658e-03; Time All Iters 1.914347e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.855722e-03; Time All Iters 1.924652e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 2.066052e-02; Time All Iters 1.756144e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.073248e-02; Time All Iters 1.824458e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.448271e-02; Time All Iters 1.839305e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 7.522797e-02; Time All Iters 1.955927e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.522332e-02; Time All Iters 2.031030e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.137834e-02; Time All Iters 2.027539e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 1.715651e-01; Time All Iters 2.058781e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.716742e-01; Time All Iters 2.060091e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.503473e-01; Time All Iters 2.104862e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/CurlCurl_4.pm
+GPU MPI_Neighbor_alltoallv Time 3.926729e-01; Time All Iters 2.356037e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.943143e-01; Time All Iters 2.365886e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.484880e-01; Time All Iters 2.090928e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4120308@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4120308@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4120308@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4120308@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4120308@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4120308@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4120308@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4120308@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4120308@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 6 reversed
+rank 5 reversed
+rank 7 reversed
+rank 4 reversed
+rank 2 reversed
+rank 0 reversed
+rank 1 reversed
+rank 3 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 4.440880e-04; Time All Iters 1.965533e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.467302e-04; Time All Iters 1.926301e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.901271e-04; Time All Iters 3.445745e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 7.963111e-04; Time All Iters 1.790107e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.785687e-04; Time All Iters 1.876351e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.424659e-03; Time All Iters 3.192660e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 1.593174e-03; Time All Iters 1.878352e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.523599e-03; Time All Iters 1.800894e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.802195e-03; Time All Iters 2.169842e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 3.192975e-03; Time All Iters 1.887048e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.191086e-03; Time All Iters 1.838066e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.637106e-03; Time All Iters 2.025868e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 6.505958e-03; Time All Iters 1.873716e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.434442e-03; Time All Iters 1.833816e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.188276e-03; Time All Iters 1.926458e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 1.830324e-02; Time All Iters 1.903537e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.831985e-02; Time All Iters 2.015183e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.500850e-02; Time All Iters 1.786011e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 3.416262e-02; Time All Iters 1.673969e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.406799e-02; Time All Iters 1.703399e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.171691e-02; Time All Iters 1.807864e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 7.017201e-02; Time All Iters 1.754300e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.045268e-02; Time All Iters 1.831770e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.643582e-02; Time All Iters 1.860203e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 1.432955e-01; Time All Iters 1.862842e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.425985e-01; Time All Iters 1.853781e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.302854e-01; Time All Iters 1.823996e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/nlpkkt80.pm
+GPU MPI_Neighbor_alltoallv Time 2.989076e-01; Time All Iters 2.092353e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.968075e-01; Time All Iters 2.077653e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.743540e-01; Time All Iters 1.920478e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4120746@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4120746@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4120746@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4120746@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4120746@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4120746@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4120746@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4120746@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4120746@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 7 reversed
+rank 5 reversed
+rank 6 reversed
+rank 4 reversed
+rank 2 reversed
+rank 3 reversed
+rank 1 reversed
+rank 0 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 2.329968e-04; Time All Iters 1.509120e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.331060e-04; Time All Iters 1.977206e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.412379e-04; Time All Iters 9.574862e-02
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 3.180290e-04; Time All Iters 2.007717e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.175805e-04; Time All Iters 1.996629e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.758699e-04; Time All Iters 1.691396e-01
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 4.893980e-04; Time All Iters 2.000659e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.899725e-04; Time All Iters 1.997618e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.077417e-03; Time All Iters 3.893787e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 8.204913e-04; Time All Iters 1.959333e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.222812e-04; Time All Iters 1.998143e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.516658e-03; Time All Iters 8.978612e-01
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 1.500421e-03; Time All Iters 1.881528e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.492411e-03; Time All Iters 1.905809e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.782944e-03; Time All Iters 3.400758e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 3.184387e-03; Time All Iters 1.843760e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.189952e-03; Time All Iters 1.831033e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.028675e-03; Time All Iters 1.075387e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 7.012568e-03; Time All Iters 2.026632e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.020100e-03; Time All Iters 2.007749e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.775918e-03; Time All Iters 2.216137e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 2.997662e-02; Time All Iters 1.888527e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.998352e-02; Time All Iters 1.978913e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.400284e-02; Time All Iters 1.974400e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 4.331737e-02; Time All Iters 1.905964e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.332475e-02; Time All Iters 1.949614e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.840555e-02; Time All Iters 1.959983e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 8.218665e-02; Time All Iters 1.972480e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.225426e-02; Time All Iters 1.974102e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.068910e-02; Time All Iters 1.942051e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/nd24k.pm
+GPU MPI_Neighbor_alltoallv Time 1.585948e-01; Time All Iters 2.061732e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.585397e-01; Time All Iters 1.902477e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.332647e-01; Time All Iters 1.998970e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4121179@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4121179@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4121179@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4121179@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4121179@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4121179@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4121179@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4121179@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4121179@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 4 reversed
+rank 2 reversed
+rank 1 reversed
+rank 0 reversed
+rank 3 reversed
+rank 6 reversed
+rank 7 reversed
+rank 5 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 8.766523e-04; Time All Iters 1.928635e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.787203e-04; Time All Iters 1.912974e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.190117e-03; Time All Iters 6.724161e-01
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 1.649239e-03; Time All Iters 1.779529e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.645527e-03; Time All Iters 1.885774e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.820440e-03; Time All Iters 1.784031e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 3.497560e-03; Time All Iters 1.794248e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.498934e-03; Time All Iters 1.885926e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 5.196046e-03; Time All Iters 2.587631e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 7.427296e-03; Time All Iters 1.938524e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.413424e-03; Time All Iters 1.890423e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.069459e-03; Time All Iters 2.041573e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 2.533193e-02; Time All Iters 1.925227e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.528661e-02; Time All Iters 1.972355e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.539720e-02; Time All Iters 1.832267e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 4.656368e-02; Time All Iters 1.955675e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.652748e-02; Time All Iters 1.954154e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.133691e-02; Time All Iters 1.911552e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 8.923746e-02; Time All Iters 1.963224e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.924650e-02; Time All Iters 1.963423e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.910789e-02; Time All Iters 1.935021e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 1.745312e-01; Time All Iters 2.094374e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.757880e-01; Time All Iters 2.109457e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.471926e-01; Time All Iters 1.913504e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 3.404446e-01; Time All Iters 2.042668e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.426347e-01; Time All Iters 2.055808e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.119331e-01; Time All Iters 2.183531e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/dgreen.pm
+GPU MPI_Neighbor_alltoallv Time 6.987029e-01; Time All Iters 2.096109e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.918646e-01; Time All Iters 2.075594e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.319221e-01; Time All Iters 2.527688e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/dgreen.pm
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua095: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua095.delta.ncsa.illinois.edu,gpua095
+    gpua097: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua097.delta.ncsa.illinois.edu,172.28.23.97,172.28.86.97,141.142.254.97
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua095-4121951@1 offset 0 Total slots allocated 128
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua095	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4121951@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4121951@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4121951@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4121951@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua097	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua095-4121951@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua095-4121951@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua095-4121951@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua095-4121951@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+=============================================================
+rank 2 reversed
+rank 0 reversed
+rank 1 reversed
+rank 3 reversed
+rank 6 reversed
+rank 4 reversed
+rank 5 reversed
+rank 7 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 3.217619e-03; Time All Iters 1.760038e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.232079e-03; Time All Iters 1.809964e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.686549e-03; Time All Iters 7.999811e-01
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 6.765363e-03; Time All Iters 1.901067e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.690978e-03; Time All Iters 1.880165e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.571733e-03; Time All Iters 2.357227e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 2.388000e-02; Time All Iters 1.958160e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.390859e-02; Time All Iters 1.649693e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.361584e-02; Time All Iters 1.892602e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 3.785530e-02; Time All Iters 1.930620e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.791058e-02; Time All Iters 1.933440e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.796726e-02; Time All Iters 1.845839e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 6.870952e-02; Time All Iters 1.923867e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.776053e-02; Time All Iters 1.897295e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 5.957296e-02; Time All Iters 2.025481e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 1.493838e-01; Time All Iters 1.941990e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.496464e-01; Time All Iters 1.945403e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.231191e-01; Time All Iters 1.969906e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 3.060644e-01; Time All Iters 2.142451e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.042280e-01; Time All Iters 2.129596e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.706698e-01; Time All Iters 2.165358e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/adaptive.pm
+GPU MPI_Neighbor_alltoallv Time 6.170088e-01; Time All Iters 2.468035e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.237925e-01; Time All Iters 2.495170e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 5.651955e-01; Time All Iters 2.260782e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/adaptive.pm
