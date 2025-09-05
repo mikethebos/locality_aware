@@ -398,12 +398,11 @@ void test_matrix(const char *filename)
         MPIX_Comm_free(&neighbor_comm);
         MPI_Comm_free(&std_comm);
 
-        gpuFree(std_recv_vals_cu);
-        gpuFree(neigh_recv_vals_cu);
-        gpuFree(alltoallv_send_vals_cu);
-
         block_vec_cols_pow++;
     }
+    gpuFree(std_recv_vals_cu);
+    gpuFree(neigh_recv_vals_cu);
+    gpuFree(alltoallv_send_vals_cu);
 }
 
 int main(int argc, char **argv)
