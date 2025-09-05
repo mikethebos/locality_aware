@@ -544,7 +544,7 @@ void communicateBlockVec(ParMat<T>& A, std::vector<U>& data, std::vector<U>& rec
     }
     
     std::vector<U> sendbuf;
-    if (A.send_comm.size_msgs)
+    if (A.send_comm.size_msgs && A.send_comm.size_msgs * block_vec_cols > sendbuf.size())
         sendbuf.resize(A.send_comm.size_msgs * block_vec_cols);
     for (int i = 0; i < A.send_comm.n_msgs; i++)
     {
