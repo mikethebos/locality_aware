@@ -80,6 +80,40 @@ void test_matrix(const char *filename)
     int send_buf_size_cache = A.send_comm.size_msgs * block_vec_cols_cache;
     double *alltoallv_send_vals_cu;
     gpuMalloc((void **)&alltoallv_send_vals_cu, send_buf_size_cache * sizeof(double));
+    
+    MPI_Comm std_comm;
+    MPI_Status status;
+    MPIX_Comm *neighbor_comm;
+
+    int *s = A.recv_comm.procs.data();
+    if (A.recv_comm.n_msgs == 0)
+        s = MPI_WEIGHTS_EMPTY;
+    int *d = A.send_comm.procs.data();
+    if (A.send_comm.n_msgs == 0)
+        d = MPI_WEIGHTS_EMPTY;
+
+    // Standard MPI Dist Graph Create
+    MPI_Dist_graph_create_adjacent(MPI_COMM_WORLD,
+                                    A.recv_comm.n_msgs,
+                                    s,
+                                    MPI_UNWEIGHTED,
+                                    A.send_comm.n_msgs,
+                                    d,
+                                    MPI_UNWEIGHTED,
+                                    MPI_INFO_NULL,
+                                    0,
+                                    &std_comm);
+
+    MPIX_Dist_graph_create_adjacent(MPI_COMM_WORLD,
+                                    A.recv_comm.n_msgs,
+                                    A.recv_comm.procs.data(),
+                                    MPI_UNWEIGHTED,
+                                    A.send_comm.n_msgs,
+                                    A.send_comm.procs.data(),
+                                    MPI_UNWEIGHTED,
+                                    MPI_INFO_NULL,
+                                    0,
+                                    &neighbor_comm);
 
     int block_vec_cols_pow = 0;
     while (true)
@@ -156,40 +190,6 @@ void test_matrix(const char *filename)
         gpuMemcpy((void *)alltoallv_send_vals_cu, (void *)(alltoallv_send_vals.data()), send_buf_size * sizeof(double), gpuMemcpyHostToDevice);
 
         communicateBlockVec(A, send_vals, std_recv_vals, MPI_DOUBLE, block_vec_cols);
-
-        MPI_Comm std_comm;
-        MPI_Status status;
-        MPIX_Comm *neighbor_comm;
-
-        int *s = A.recv_comm.procs.data();
-        if (A.recv_comm.n_msgs == 0)
-            s = MPI_WEIGHTS_EMPTY;
-        int *d = A.send_comm.procs.data();
-        if (A.send_comm.n_msgs == 0)
-            d = MPI_WEIGHTS_EMPTY;
-
-        // Standard MPI Dist Graph Create
-        MPI_Dist_graph_create_adjacent(MPI_COMM_WORLD,
-                                       A.recv_comm.n_msgs,
-                                       s,
-                                       MPI_UNWEIGHTED,
-                                       A.send_comm.n_msgs,
-                                       d,
-                                       MPI_UNWEIGHTED,
-                                       MPI_INFO_NULL,
-                                       0,
-                                       &std_comm);
-
-        MPIX_Dist_graph_create_adjacent(MPI_COMM_WORLD,
-                                        A.recv_comm.n_msgs,
-                                        A.recv_comm.procs.data(),
-                                        MPI_UNWEIGHTED,
-                                        A.send_comm.n_msgs,
-                                        A.send_comm.procs.data(),
-                                        MPI_UNWEIGHTED,
-                                        MPI_INFO_NULL,
-                                        0,
-                                        &neighbor_comm);
 
         int min_r_n_msgs, mean_r_n_msgs, max_r_n_msgs;
         MPI_Reduce((void *)(&A.recv_comm.n_msgs), (void *)(&min_r_n_msgs), 1, MPI_INT, MPI_MIN, 0, MPI_COMM_WORLD);
@@ -395,14 +395,14 @@ void test_matrix(const char *filename)
         gpuMemset((void *)neigh_recv_vals_cu, 0, recv_buf_size * sizeof(double));
         memset((void *)neigh_recv_vals.data(), 0, recv_buf_size * sizeof(double));
 
-        MPIX_Comm_free(&neighbor_comm);
-        MPI_Comm_free(&std_comm);
-
         block_vec_cols_pow++;
     }
     gpuFree(std_recv_vals_cu);
     gpuFree(neigh_recv_vals_cu);
     gpuFree(alltoallv_send_vals_cu);
+    
+    MPIX_Comm_free(&neighbor_comm);
+    MPI_Comm_free(&std_comm);
 }
 
 int main(int argc, char **argv)
