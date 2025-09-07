@@ -341,17 +341,6 @@ int neighbor_alltoallv_pure_nonblocking(
     MPI_Type_size(sendtype, &send_size);
     MPI_Type_size(recvtype, &recv_size);
 
-    for (int i = 0; i < indegree; i++)
-    {
-        ierr += MPI_Irecv(&(recv_buffer[rdispls[i]*recv_size]), 
-                recvcounts[i], 
-                recvtype, 
-                sources[i],
-                tag,
-                comm->neighbor_comm, 
-                &(reqs[i]));
-    }
-
     for (int i = 0; i < outdegree; i++)
     {
         ierr += MPI_Isend(&(send_buffer[sdispls[i]*send_size]),
@@ -361,6 +350,17 @@ int neighbor_alltoallv_pure_nonblocking(
                 tag,
                 comm->neighbor_comm,
                 &(reqs[indegree+i]));
+    }
+    
+    for (int i = 0; i < indegree; i++)
+    {
+        ierr += MPI_Irecv(&(recv_buffer[rdispls[i]*recv_size]), 
+                recvcounts[i], 
+                recvtype, 
+                sources[i],
+                tag,
+                comm->neighbor_comm, 
+                &(reqs[i]));
     }
     
     ierr += MPI_Waitall(global_n_msgs, reqs, MPI_STATUSES_IGNORE);
