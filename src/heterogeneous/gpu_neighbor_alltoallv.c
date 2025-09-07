@@ -480,6 +480,8 @@ int threaded_neighbor_alltoallv_nonblocking_pure(const void* sendbuf,
     }
     
     free(reqs);
+    free(sources);
+    free(destinations);
     
     return ierr + ret;
 }
