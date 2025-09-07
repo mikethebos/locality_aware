@@ -349,7 +349,7 @@ int neighbor_alltoallv_pure_nonblocking(
                 destinations[i],
                 tag,
                 comm->neighbor_comm,
-                &(reqs[indegree+i]));
+                &(reqs[i]));
     }
     
     for (int i = 0; i < indegree; i++)
@@ -360,7 +360,7 @@ int neighbor_alltoallv_pure_nonblocking(
                 sources[i],
                 tag,
                 comm->neighbor_comm, 
-                &(reqs[i]));
+                &(reqs[outdegree+i]));
     }
     
     ierr += MPI_Waitall(global_n_msgs, reqs, MPI_STATUSES_IGNORE);
