@@ -1,0 +1,2727 @@
+Running Unthreaded Neighbor_Alltoallv Test:
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3743928@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3743928@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3743928@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3743928@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3743928@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3743928@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3743928@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3743928@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3743928@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3743928@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3743928@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3743928@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3743928@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3743928@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3743928@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3743928@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3743928@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 1 reversed
+rank 0 reversed
+rank 2 reversed
+rank 3 reversed
+rank 15 reversed
+rank 12 reversed
+rank 14 reversed
+rank 13 reversed
+rank 11 reversed
+rank 9 reversed
+rank 10 reversed
+rank 8 reversed
+rank 5 reversed
+rank 7 reversed
+rank 4 reversed
+rank 6 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 18053, 21948, 25082, recv msgs per GPU 1, 1, 2, recv counts per GPU 18053, 21948, 25082
+GPU MPI_Neighbor_alltoallv Time 1.281506e-04; Time All Iters 1.744387e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.420262e-04; Time All Iters 1.782855e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 36106, 43898, 50164, recv msgs per GPU 1, 1, 2, recv counts per GPU 36106, 43897, 50164
+GPU MPI_Neighbor_alltoallv Time 2.186068e-04; Time All Iters 1.736613e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.401999e-04; Time All Iters 1.706860e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 72212, 87796, 100328, recv msgs per GPU 1, 1, 2, recv counts per GPU 72212, 87795, 100328
+GPU MPI_Neighbor_alltoallv Time 4.067178e-04; Time All Iters 1.729771e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.236485e-04; Time All Iters 1.659431e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 144424, 175592, 200656, recv msgs per GPU 1, 1, 2, recv counts per GPU 144424, 175591, 200656
+GPU MPI_Neighbor_alltoallv Time 8.549312e-04; Time All Iters 1.687634e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.677237e-04; Time All Iters 1.795320e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 288848, 351184, 401312, recv msgs per GPU 1, 1, 2, recv counts per GPU 288848, 351182, 401312
+GPU MPI_Neighbor_alltoallv Time 1.799959e-03; Time All Iters 1.821559e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.802375e-03; Time All Iters 1.715861e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 577696, 702368, 802624, recv msgs per GPU 1, 1, 2, recv counts per GPU 577696, 702365, 802624
+GPU MPI_Neighbor_alltoallv Time 3.766620e-03; Time All Iters 1.890843e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.794352e-03; Time All Iters 1.806112e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 1155392, 1404736, 1605248, recv msgs per GPU 1, 1, 2, recv counts per GPU 1155392, 1404730, 1605248
+GPU MPI_Neighbor_alltoallv Time 1.241419e-02; Time All Iters 1.626259e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.248313e-02; Time All Iters 1.772605e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 2310784, 2809472, 3210496, recv msgs per GPU 1, 1, 2, recv counts per GPU 2310784, 2809460, 3210496
+GPU MPI_Neighbor_alltoallv Time 2.161028e-02; Time All Iters 1.901705e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.261475e-02; Time All Iters 1.854409e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 4621568, 5618944, 6420992, recv msgs per GPU 1, 1, 2, recv counts per GPU 4621568, 5618920, 6420992
+GPU MPI_Neighbor_alltoallv Time 4.210673e-02; Time All Iters 1.726376e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.211088e-02; Time All Iters 1.810768e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 9243136, 11237888, 12841984, recv msgs per GPU 1, 1, 2, recv counts per GPU 9243136, 11237840, 12841984
+GPU MPI_Neighbor_alltoallv Time 8.846918e-02; Time All Iters 1.857853e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.485431e-02; Time All Iters 1.866795e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 18486272, 22475776, 25683968, recv msgs per GPU 1, 1, 2, recv counts per GPU 18486272, 22475680, 25683968
+GPU MPI_Neighbor_alltoallv Time 1.809526e-01; Time All Iters 1.990478e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.700566e-01; Time All Iters 1.870623e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3744305@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3744305@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3744305@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3744305@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3744305@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3744305@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3744305@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3744305@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3744305@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3744305@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3744305@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3744305@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3744305@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3744305@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3744305@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3744305@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3744305@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 13 reversed
+rank 15 reversed
+rank 14 reversed
+rank 12 reversed
+rank 2 reversed
+rank 3 reversed
+rank 10 reversed
+rank 8 reversed
+rank 1 reversed
+rank 9 reversed
+rank 11 reversed
+rank 0 reversed
+rank 7 reversed
+rank 5 reversed
+rank 4 reversed
+rank 6 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 588, 32751, 66400, recv msgs per GPU 2, 2, 3, recv counts per GPU 588, 32695, 66400
+GPU MPI_Neighbor_alltoallv Time 2.430677e-04; Time All Iters 1.780228e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.304364e-04; Time All Iters 1.657068e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 1176, 65502, 132800, recv msgs per GPU 2, 2, 3, recv counts per GPU 1176, 65391, 132800
+GPU MPI_Neighbor_alltoallv Time 4.792338e-04; Time All Iters 1.894890e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.289954e-04; Time All Iters 1.627179e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 2352, 131005, 265600, recv msgs per GPU 2, 2, 3, recv counts per GPU 2352, 130782, 265600
+GPU MPI_Neighbor_alltoallv Time 9.123581e-04; Time All Iters 1.937849e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.521937e-04; Time All Iters 1.740180e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 4704, 262010, 531200, recv msgs per GPU 2, 2, 3, recv counts per GPU 4704, 261565, 531200
+GPU MPI_Neighbor_alltoallv Time 1.846888e-03; Time All Iters 1.974323e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.719749e-03; Time All Iters 1.611404e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 9408, 524021, 1062400, recv msgs per GPU 2, 2, 3, recv counts per GPU 9408, 523131, 1062400
+GPU MPI_Neighbor_alltoallv Time 3.644233e-03; Time All Iters 1.851271e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.504088e-03; Time All Iters 1.794093e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 18816, 1048042, 2124800, recv msgs per GPU 2, 2, 3, recv counts per GPU 18816, 1046262, 2124800
+GPU MPI_Neighbor_alltoallv Time 1.134458e-02; Time All Iters 1.973957e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.174865e-02; Time All Iters 1.891533e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 37632, 2096085, 4249600, recv msgs per GPU 2, 2, 3, recv counts per GPU 37632, 2092525, 4249600
+GPU MPI_Neighbor_alltoallv Time 2.007433e-02; Time All Iters 1.746466e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.933599e-02; Time All Iters 1.759575e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 75264, 4192170, 8499200, recv msgs per GPU 2, 2, 3, recv counts per GPU 75264, 4185050, 8499200
+GPU MPI_Neighbor_alltoallv Time 3.814188e-02; Time All Iters 1.792668e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.591967e-02; Time All Iters 1.652305e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 150528, 8384341, 16998400, recv msgs per GPU 2, 2, 3, recv counts per GPU 150528, 8370101, 16998400
+GPU MPI_Neighbor_alltoallv Time 8.035460e-02; Time All Iters 1.767801e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.518793e-02; Time All Iters 1.804510e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 301056, 16768682, 33996800, recv msgs per GPU 2, 2, 3, recv counts per GPU 301056, 16740202, 33996800
+GPU MPI_Neighbor_alltoallv Time 1.611233e-01; Time All Iters 1.772357e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.504871e-01; Time All Iters 1.805845e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 602112, 33537365, 67993600, recv msgs per GPU 2, 2, 3, recv counts per GPU 602112, 33480405, 67993600
+GPU MPI_Neighbor_alltoallv Time 3.403658e-01; Time All Iters 2.042195e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.223728e-01; Time All Iters 1.934237e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3744682@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3744682@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3744682@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3744682@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3744682@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3744682@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3744682@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3744682@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3744682@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3744682@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3744682@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3744682@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3744682@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3744682@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3744682@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3744682@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3744682@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 9 reversed
+rank 3 reversed
+rank 13 reversed
+rank 14 reversed
+rank 12 reversed
+rank 15 reversed
+rank 0 reversed
+rank 8 reversed
+rank 11 reversed
+rank 10 reversed
+rank 2 reversed
+rank 1 reversed
+rank 7 reversed
+rank 5 reversed
+rank 6 reversed
+rank 4 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 57, 2057, 4259, recv msgs per GPU 15, 15, 15, recv counts per GPU 57, 2057, 4259
+GPU MPI_Neighbor_alltoallv Time 3.761956e-04; Time All Iters 1.280193e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.758684e-04; Time All Iters 1.717343e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 114, 4115, 8518, recv msgs per GPU 15, 15, 15, recv counts per GPU 114, 4115, 8518
+GPU MPI_Neighbor_alltoallv Time 4.500255e-04; Time All Iters 1.737099e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.479917e-04; Time All Iters 1.949660e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 228, 8231, 17036, recv msgs per GPU 15, 15, 15, recv counts per GPU 228, 8231, 17036
+GPU MPI_Neighbor_alltoallv Time 5.998225e-04; Time All Iters 1.789270e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 5.890658e-04; Time All Iters 1.838474e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 456, 16462, 34072, recv msgs per GPU 15, 15, 15, recv counts per GPU 456, 16462, 34072
+GPU MPI_Neighbor_alltoallv Time 8.673581e-04; Time All Iters 1.977576e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.943589e-04; Time All Iters 1.770831e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 912, 32925, 68144, recv msgs per GPU 15, 15, 15, recv counts per GPU 912, 32925, 68144
+GPU MPI_Neighbor_alltoallv Time 1.436267e-03; Time All Iters 1.964813e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.593897e-03; Time All Iters 1.748505e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 1824, 65851, 136288, recv msgs per GPU 15, 15, 15, recv counts per GPU 1824, 65851, 136288
+GPU MPI_Neighbor_alltoallv Time 2.746002e-03; Time All Iters 1.793139e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.027978e-03; Time All Iters 1.629052e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 3648, 131703, 272576, recv msgs per GPU 15, 15, 15, recv counts per GPU 3648, 131703, 272576
+GPU MPI_Neighbor_alltoallv Time 5.870721e-03; Time All Iters 1.878631e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.365186e-03; Time All Iters 1.794982e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 7296, 263406, 545152, recv msgs per GPU 15, 15, 15, recv counts per GPU 7296, 263406, 545152
+GPU MPI_Neighbor_alltoallv Time 3.620191e-02; Time All Iters 1.810096e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.338915e-02; Time All Iters 1.903181e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 14592, 526813, 1090304, recv msgs per GPU 15, 15, 15, recv counts per GPU 14592, 526813, 1090304
+GPU MPI_Neighbor_alltoallv Time 5.026995e-02; Time All Iters 1.859988e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 5.056546e-02; Time All Iters 1.921487e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 29184, 1053627, 2180608, recv msgs per GPU 15, 15, 15, recv counts per GPU 29184, 1053627, 2180608
+GPU MPI_Neighbor_alltoallv Time 8.095133e-02; Time All Iters 1.861881e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.873806e-02; Time All Iters 1.889713e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 58368, 2107255, 4361216, recv msgs per GPU 15, 15, 15, recv counts per GPU 58368, 2107255, 4361216
+GPU MPI_Neighbor_alltoallv Time 1.568962e-01; Time All Iters 2.039651e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.538563e-01; Time All Iters 2.000132e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3745057@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3745057@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3745057@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3745057@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3745057@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3745057@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3745057@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3745057@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3745057@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3745057@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3745057@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3745057@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3745057@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3745057@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3745057@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3745057@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3745057@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 11 reversed
+rank 9 reversed
+rank 8 reversed
+rank 10 reversed
+rank 15 reversed
+rank 12 reversed
+rank 14 reversed
+rank 2 reversed
+rank 13 reversed
+rank 0 reversed
+rank 1 reversed
+rank 3 reversed
+rank 4 reversed
+rank 7 reversed
+rank 5 reversed
+rank 6 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 1, 24810, 72905, recv msgs per GPU 4, 7, 11, recv counts per GPU 1, 24645, 72905
+GPU MPI_Neighbor_alltoallv Time 6.380996e-04; Time All Iters 1.913661e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.573301e-04; Time All Iters 1.891139e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 2, 49621, 145810, recv msgs per GPU 4, 7, 11, recv counts per GPU 2, 49291, 145810
+GPU MPI_Neighbor_alltoallv Time 1.095386e-03; Time All Iters 1.777812e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.102718e-03; Time All Iters 1.716932e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 4, 99243, 291620, recv msgs per GPU 4, 7, 11, recv counts per GPU 4, 98583, 291620
+GPU MPI_Neighbor_alltoallv Time 2.281742e-03; Time All Iters 1.686207e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.208720e-03; Time All Iters 1.691880e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 8, 198486, 583240, recv msgs per GPU 4, 7, 11, recv counts per GPU 8, 197168, 583240
+GPU MPI_Neighbor_alltoallv Time 5.052316e-03; Time All Iters 2.152287e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.731734e-03; Time All Iters 1.892694e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 16, 396973, 1166480, recv msgs per GPU 4, 7, 11, recv counts per GPU 16, 394336, 1166480
+GPU MPI_Neighbor_alltoallv Time 1.094770e-02; Time All Iters 2.244279e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 9.920442e-03; Time All Iters 1.984088e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 32, 793947, 2332960, recv msgs per GPU 4, 7, 11, recv counts per GPU 32, 788673, 2332960
+GPU MPI_Neighbor_alltoallv Time 3.106832e-02; Time All Iters 1.895167e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.066058e-02; Time All Iters 1.931616e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 64, 1587894, 4665920, recv msgs per GPU 4, 7, 11, recv counts per GPU 64, 1577347, 4665920
+GPU MPI_Neighbor_alltoallv Time 5.516914e-02; Time All Iters 1.875751e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 5.404535e-02; Time All Iters 1.891587e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 128, 3175789, 9331840, recv msgs per GPU 4, 7, 11, recv counts per GPU 128, 3154695, 9331840
+GPU MPI_Neighbor_alltoallv Time 1.039058e-01; Time All Iters 1.974210e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.039580e-01; Time All Iters 1.871243e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 256, 6351579, 18663680, recv msgs per GPU 4, 7, 11, recv counts per GPU 256, 6309391, 18663680
+GPU MPI_Neighbor_alltoallv Time 2.059654e-01; Time All Iters 1.853689e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.077664e-01; Time All Iters 1.869898e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 512, 12703158, 37327360, recv msgs per GPU 4, 7, 11, recv counts per GPU 512, 12618782, 37327360
+GPU MPI_Neighbor_alltoallv Time 4.183157e-01; Time All Iters 2.091578e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.174286e-01; Time All Iters 2.087143e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 1024, 25406317, 74654720, recv msgs per GPU 4, 7, 11, recv counts per GPU 1024, 25237565, 74654720
+GPU MPI_Neighbor_alltoallv Time 1.054393e+00; Time All Iters 2.108786e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 9.538682e-01; Time All Iters 2.861605e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3745432@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3745432@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3745432@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3745432@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3745432@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3745432@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3745432@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3745432@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3745432@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3745432@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3745432@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3745432@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3745432@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3745432@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3745432@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3745432@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3745432@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 2 reversed
+rank 10 reversed
+rank 0 reversed
+rank 3 reversed
+rank 1 reversed
+rank 11 reversed
+rank 8 reversed
+rank 9 reversed
+rank 12 reversed
+rank 15 reversed
+rank 14 reversed
+rank 13 reversed
+rank 7 reversed
+rank 5 reversed
+rank 4 reversed
+rank 6 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 2, 40655, 215596, recv msgs per GPU 9, 13, 15, recv counts per GPU 2, 42409, 215596
+GPU MPI_Neighbor_alltoallv Time 1.930503e-03; Time All Iters 1.922781e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.037458e-03; Time All Iters 1.721652e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 4, 81311, 431192, recv msgs per GPU 9, 13, 15, recv counts per GPU 4, 84820, 431192
+GPU MPI_Neighbor_alltoallv Time 3.898318e-03; Time All Iters 1.894583e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.855510e-03; Time All Iters 1.650158e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 8, 162623, 862384, recv msgs per GPU 9, 13, 15, recv counts per GPU 8, 169640, 862384
+GPU MPI_Neighbor_alltoallv Time 7.807353e-03; Time All Iters 1.850343e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.633343e-03; Time All Iters 1.732769e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 16, 325246, 1724768, recv msgs per GPU 9, 13, 15, recv counts per GPU 16, 339281, 1724768
+GPU MPI_Neighbor_alltoallv Time 2.515098e-02; Time All Iters 1.961777e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.339498e-02; Time All Iters 2.011968e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 32, 650494, 3449536, recv msgs per GPU 9, 13, 15, recv counts per GPU 32, 678563, 3449536
+GPU MPI_Neighbor_alltoallv Time 4.822401e-02; Time All Iters 2.025408e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.538848e-02; Time All Iters 1.997093e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 64, 1300988, 6899072, recv msgs per GPU 9, 13, 15, recv counts per GPU 64, 1357127, 6899072
+GPU MPI_Neighbor_alltoallv Time 9.008422e-02; Time All Iters 1.981853e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.819094e-02; Time All Iters 1.940201e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 128, 2601977, 13798144, recv msgs per GPU 9, 13, 15, recv counts per GPU 128, 2714256, 13798144
+GPU MPI_Neighbor_alltoallv Time 1.789441e-01; Time All Iters 1.968385e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.726195e-01; Time All Iters 1.898815e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 256, 5203954, 27596288, recv msgs per GPU 9, 13, 15, recv counts per GPU 256, 5428512, 27596288
+GPU MPI_Neighbor_alltoallv Time 3.650917e-01; Time All Iters 2.190550e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.439451e-01; Time All Iters 2.063671e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 512, 10407910, 55192576, recv msgs per GPU 9, 13, 15, recv counts per GPU 512, 10857025, 55192576
+GPU MPI_Neighbor_alltoallv Time 7.615202e-01; Time All Iters 2.284561e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.434635e-01; Time All Iters 2.230391e+00
+Running Threaded Neighbor_Alltoallv Test with 2 threads:
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3745810@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3745810@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3745810@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3745810@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3745810@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3745810@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3745810@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3745810@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3745810@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3745810@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3745810@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3745810@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3745810@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3745810@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3745810@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3745810@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3745810@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 14 reversed
+rank 12 reversed
+rank 13 reversed
+rank 1 reversed
+rank 15 reversed
+rank 3 reversed
+rank 0 reversed
+rank 8 reversed
+rank 10 reversed
+rank 9 reversed
+rank 11 reversed
+rank 2 reversed
+rank 6 reversed
+rank 7 reversed
+rank 5 reversed
+rank 4 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 18053, 21948, 25082, recv msgs per GPU 1, 1, 2, recv counts per GPU 18053, 21948, 25082
+GPU MPI_Neighbor_alltoallv Time 1.292011e-04; Time All Iters 1.559328e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.392318e-04; Time All Iters 1.722436e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.501290e-04; Time All Iters 1.659676e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 36106, 43898, 50164, recv msgs per GPU 1, 1, 2, recv counts per GPU 36106, 43897, 50164
+GPU MPI_Neighbor_alltoallv Time 2.201053e-04; Time All Iters 1.759742e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.314430e-04; Time All Iters 1.703189e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.437299e-04; Time All Iters 1.809451e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 72212, 87796, 100328, recv msgs per GPU 1, 1, 2, recv counts per GPU 72212, 87795, 100328
+GPU MPI_Neighbor_alltoallv Time 4.091753e-04; Time All Iters 1.736949e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.165675e-04; Time All Iters 1.615449e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.459912e-04; Time All Iters 1.730892e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 144424, 175592, 200656, recv msgs per GPU 1, 1, 2, recv counts per GPU 144424, 175591, 200656
+GPU MPI_Neighbor_alltoallv Time 8.571495e-04; Time All Iters 1.777728e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.519441e-04; Time All Iters 1.737966e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.728661e-04; Time All Iters 1.881026e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 288848, 351184, 401312, recv msgs per GPU 1, 1, 2, recv counts per GPU 288848, 351182, 401312
+GPU MPI_Neighbor_alltoallv Time 1.759620e-03; Time All Iters 1.851120e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.763333e-03; Time All Iters 1.669877e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.840387e-03; Time All Iters 1.801738e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 577696, 702368, 802624, recv msgs per GPU 1, 1, 2, recv counts per GPU 577696, 702365, 802624
+GPU MPI_Neighbor_alltoallv Time 3.691863e-03; Time All Iters 1.901309e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.711828e-03; Time All Iters 1.785389e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.820825e-03; Time All Iters 1.830175e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 1155392, 1404736, 1605248, recv msgs per GPU 1, 1, 2, recv counts per GPU 1155392, 1404730, 1605248
+GPU MPI_Neighbor_alltoallv Time 1.261192e-02; Time All Iters 1.677385e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.235727e-02; Time All Iters 1.754732e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.913475e-03; Time All Iters 1.962542e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 2310784, 2809472, 3210496, recv msgs per GPU 1, 1, 2, recv counts per GPU 2310784, 2809460, 3210496
+GPU MPI_Neighbor_alltoallv Time 2.147762e-02; Time All Iters 1.847075e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.135118e-02; Time All Iters 1.708094e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.596423e-02; Time All Iters 1.963601e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 4621568, 5618944, 6420992, recv msgs per GPU 1, 1, 2, recv counts per GPU 4621568, 5618920, 6420992
+GPU MPI_Neighbor_alltoallv Time 3.822395e-02; Time All Iters 1.758302e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.947407e-02; Time All Iters 1.855281e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.504844e-02; Time All Iters 1.857568e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 9243136, 11237888, 12841984, recv msgs per GPU 1, 1, 2, recv counts per GPU 9243136, 11237840, 12841984
+GPU MPI_Neighbor_alltoallv Time 8.945691e-02; Time All Iters 1.878595e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.549773e-02; Time All Iters 1.880950e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.074381e-02; Time All Iters 1.937852e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 18486272, 22475776, 25683968, recv msgs per GPU 1, 1, 2, recv counts per GPU 18486272, 22475680, 25683968
+GPU MPI_Neighbor_alltoallv Time 1.812586e-01; Time All Iters 1.993845e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.683192e-01; Time All Iters 2.019830e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.583157e-01; Time All Iters 1.899789e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3746189@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3746189@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3746189@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3746189@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3746189@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3746189@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3746189@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3746189@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3746189@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3746189@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3746189@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3746189@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3746189@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3746189@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3746189@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3746189@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3746189@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 14 reversed
+rank 10 reversed
+rank 13 reversed
+rank 15 reversed
+rank 12 reversed
+rank 2 reversed
+rank 3 reversed
+rank 1 reversed
+rank 0 reversed
+rank 11 reversed
+rank 9 reversed
+rank 8 reversed
+rank 7 reversed
+rank 6 reversed
+rank 5 reversed
+rank 4 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 588, 32751, 66400, recv msgs per GPU 2, 2, 3, recv counts per GPU 588, 32695, 66400
+GPU MPI_Neighbor_alltoallv Time 2.367795e-04; Time All Iters 1.736778e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.317877e-04; Time All Iters 1.617414e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.470083e-04; Time All Iters 1.701393e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 1176, 65502, 132800, recv msgs per GPU 2, 2, 3, recv counts per GPU 1176, 65391, 132800
+GPU MPI_Neighbor_alltoallv Time 4.649354e-04; Time All Iters 1.935061e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.310136e-04; Time All Iters 1.672764e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.442788e-04; Time All Iters 1.652717e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 2352, 131005, 265600, recv msgs per GPU 2, 2, 3, recv counts per GPU 2352, 130782, 265600
+GPU MPI_Neighbor_alltoallv Time 9.151583e-04; Time All Iters 1.905360e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.581840e-04; Time All Iters 1.699204e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.778456e-04; Time All Iters 1.815385e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 4704, 262010, 531200, recv msgs per GPU 2, 2, 3, recv counts per GPU 4704, 261565, 531200
+GPU MPI_Neighbor_alltoallv Time 1.870160e-03; Time All Iters 1.965538e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.731402e-03; Time All Iters 1.797195e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.744482e-03; Time All Iters 1.805539e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 9408, 524021, 1062400, recv msgs per GPU 2, 2, 3, recv counts per GPU 9408, 523131, 1062400
+GPU MPI_Neighbor_alltoallv Time 3.501783e-03; Time All Iters 1.792913e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.569626e-03; Time All Iters 1.731269e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.515371e-03; Time All Iters 1.669801e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 18816, 1048042, 2124800, recv msgs per GPU 2, 2, 3, recv counts per GPU 18816, 1046262, 2124800
+GPU MPI_Neighbor_alltoallv Time 1.306167e-02; Time All Iters 1.880881e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.281347e-02; Time All Iters 1.973274e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.051406e-02; Time All Iters 1.755849e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 37632, 2096085, 4249600, recv msgs per GPU 2, 2, 3, recv counts per GPU 37632, 2092525, 4249600
+GPU MPI_Neighbor_alltoallv Time 1.967864e-02; Time All Iters 1.731720e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.943042e-02; Time All Iters 1.845890e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.795280e-02; Time All Iters 1.902997e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 75264, 4192170, 8499200, recv msgs per GPU 2, 2, 3, recv counts per GPU 75264, 4185050, 8499200
+GPU MPI_Neighbor_alltoallv Time 3.889371e-02; Time All Iters 1.789111e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.583430e-02; Time All Iters 1.720047e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.459120e-02; Time All Iters 1.798742e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 150528, 8384341, 16998400, recv msgs per GPU 2, 2, 3, recv counts per GPU 150528, 8370101, 16998400
+GPU MPI_Neighbor_alltoallv Time 8.117132e-02; Time All Iters 1.866940e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.595729e-02; Time All Iters 1.747018e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.833128e-02; Time All Iters 1.708282e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 301056, 16768682, 33996800, recv msgs per GPU 2, 2, 3, recv counts per GPU 301056, 16740202, 33996800
+GPU MPI_Neighbor_alltoallv Time 1.619527e-01; Time All Iters 1.943432e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.544692e-01; Time All Iters 1.853630e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.450066e-01; Time All Iters 1.885086e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 602112, 33537365, 67993600, recv msgs per GPU 2, 2, 3, recv counts per GPU 602112, 33480405, 67993600
+GPU MPI_Neighbor_alltoallv Time 3.367107e-01; Time All Iters 2.020264e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.227409e-01; Time All Iters 1.936445e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.985799e-01; Time All Iters 2.090059e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3746905@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3746905@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3746905@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3746905@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3746905@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3746905@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3746905@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3746905@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3746905@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3746905@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3746905@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3746905@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3746905@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3746905@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3746905@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3746905@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3746905@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 10 reversed
+rank 9 reversed
+rank 8 reversed
+rank 11 reversed
+rank 12 reversed
+rank 13 reversed
+rank 15 reversed
+rank 14 reversed
+rank 0 reversed
+rank 1 reversed
+rank 3 reversed
+rank 2 reversed
+rank 6 reversed
+rank 7 reversed
+rank 4 reversed
+rank 5 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 57, 2057, 4259, recv msgs per GPU 15, 15, 15, recv counts per GPU 57, 2057, 4259
+GPU MPI_Neighbor_alltoallv Time 3.754108e-04; Time All Iters 1.435946e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.783051e-04; Time All Iters 1.975131e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.339225e-04; Time All Iters 1.605079e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 114, 4115, 8518, recv msgs per GPU 15, 15, 15, recv counts per GPU 114, 4115, 8518
+GPU MPI_Neighbor_alltoallv Time 4.481973e-04; Time All Iters 1.826852e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.470966e-04; Time All Iters 1.950235e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.895225e-04; Time All Iters 1.799485e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 228, 8231, 17036, recv msgs per GPU 15, 15, 15, recv counts per GPU 228, 8231, 17036
+GPU MPI_Neighbor_alltoallv Time 6.019668e-04; Time All Iters 2.002142e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 5.862081e-04; Time All Iters 1.856521e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.414814e-04; Time All Iters 1.769206e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 456, 16462, 34072, recv msgs per GPU 15, 15, 15, recv counts per GPU 456, 16462, 34072
+GPU MPI_Neighbor_alltoallv Time 8.584194e-04; Time All Iters 1.952046e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.896350e-04; Time All Iters 1.790835e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 9.294589e-04; Time All Iters 1.787349e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 912, 32925, 68144, recv msgs per GPU 15, 15, 15, recv counts per GPU 912, 32925, 68144
+GPU MPI_Neighbor_alltoallv Time 1.434329e-03; Time All Iters 1.904789e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.600815e-03; Time All Iters 1.746489e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.591647e-03; Time All Iters 1.867002e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 1824, 65851, 136288, recv msgs per GPU 15, 15, 15, recv counts per GPU 1824, 65851, 136288
+GPU MPI_Neighbor_alltoallv Time 2.768474e-03; Time All Iters 1.807814e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.088703e-03; Time All Iters 1.735851e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.049065e-03; Time All Iters 1.731869e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 3648, 131703, 272576, recv msgs per GPU 15, 15, 15, recv counts per GPU 3648, 131703, 272576
+GPU MPI_Neighbor_alltoallv Time 6.024861e-03; Time All Iters 1.970129e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.298685e-03; Time All Iters 1.801424e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.272232e-03; Time All Iters 1.862853e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 7296, 263406, 545152, recv msgs per GPU 15, 15, 15, recv counts per GPU 7296, 263406, 545152
+GPU MPI_Neighbor_alltoallv Time 3.513770e-02; Time All Iters 1.862298e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.384507e-02; Time All Iters 1.895324e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.555329e-02; Time All Iters 2.325349e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 14592, 526813, 1090304, recv msgs per GPU 15, 15, 15, recv counts per GPU 14592, 526813, 1090304
+GPU MPI_Neighbor_alltoallv Time 4.939176e-02; Time All Iters 1.876887e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.926823e-02; Time All Iters 1.921461e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 5.204280e-02; Time All Iters 1.925584e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 29184, 1053627, 2180608, recv msgs per GPU 15, 15, 15, recv counts per GPU 29184, 1053627, 2180608
+GPU MPI_Neighbor_alltoallv Time 7.912951e-02; Time All Iters 1.899108e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.883680e-02; Time All Iters 1.970920e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.694726e-02; Time All Iters 1.846734e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 58368, 2107255, 4361216, recv msgs per GPU 15, 15, 15, recv counts per GPU 58368, 2107255, 4361216
+GPU MPI_Neighbor_alltoallv Time 1.592496e-01; Time All Iters 2.070245e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.490631e-01; Time All Iters 2.086883e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.374892e-01; Time All Iters 1.924849e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3747285@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3747285@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3747285@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3747285@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3747285@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3747285@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3747285@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3747285@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3747285@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3747285@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3747285@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3747285@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3747285@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3747285@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3747285@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3747285@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3747285@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 11 reversed
+rank 10 reversed
+rank 9 reversed
+rank 8 reversed
+rank 12 reversed
+rank 15 reversed
+rank 13 reversed
+rank 14 reversed
+rank 1 reversed
+rank 2 reversed
+rank 0 reversed
+rank 3 reversed
+rank 7 reversed
+rank 5 reversed
+rank 4 reversed
+rank 6 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 1, 24810, 72905, recv msgs per GPU 4, 7, 11, recv counts per GPU 1, 24645, 72905
+GPU MPI_Neighbor_alltoallv Time 6.330644e-04; Time All Iters 1.896028e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.562502e-04; Time All Iters 1.864407e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.997935e-04; Time All Iters 1.864950e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 2, 49621, 145810, recv msgs per GPU 4, 7, 11, recv counts per GPU 2, 49291, 145810
+GPU MPI_Neighbor_alltoallv Time 1.108674e-03; Time All Iters 1.935745e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.108215e-03; Time All Iters 1.719950e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.132084e-03; Time All Iters 1.686805e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 4, 99243, 291620, recv msgs per GPU 4, 7, 11, recv counts per GPU 4, 98583, 291620
+GPU MPI_Neighbor_alltoallv Time 2.390762e-03; Time All Iters 1.898265e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.214085e-03; Time All Iters 1.771268e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.232971e-03; Time All Iters 1.848900e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 8, 198486, 583240, recv msgs per GPU 4, 7, 11, recv counts per GPU 8, 197168, 583240
+GPU MPI_Neighbor_alltoallv Time 5.031992e-03; Time All Iters 2.027893e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.642438e-03; Time All Iters 1.852333e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.763728e-03; Time All Iters 1.795926e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 16, 396973, 1166480, recv msgs per GPU 4, 7, 11, recv counts per GPU 16, 394336, 1166480
+GPU MPI_Neighbor_alltoallv Time 1.098262e-02; Time All Iters 2.196525e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 9.608749e-03; Time All Iters 1.873706e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.005042e-02; Time All Iters 1.859327e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 32, 793947, 2332960, recv msgs per GPU 4, 7, 11, recv counts per GPU 32, 788673, 2332960
+GPU MPI_Neighbor_alltoallv Time 3.222424e-02; Time All Iters 1.901230e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.072353e-02; Time All Iters 1.935582e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.759267e-02; Time All Iters 1.848709e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 64, 1587894, 4665920, recv msgs per GPU 4, 7, 11, recv counts per GPU 64, 1577347, 4665920
+GPU MPI_Neighbor_alltoallv Time 5.410132e-02; Time All Iters 1.893546e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 5.310053e-02; Time All Iters 1.911619e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.854843e-02; Time All Iters 1.747744e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 128, 3175789, 9331840, recv msgs per GPU 4, 7, 11, recv counts per GPU 128, 3154695, 9331840
+GPU MPI_Neighbor_alltoallv Time 1.019371e-01; Time All Iters 1.936805e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.017763e-01; Time All Iters 1.933750e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 9.424807e-02; Time All Iters 1.884961e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 256, 6351579, 18663680, recv msgs per GPU 4, 7, 11, recv counts per GPU 256, 6309391, 18663680
+GPU MPI_Neighbor_alltoallv Time 2.064997e-01; Time All Iters 1.858497e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.055672e-01; Time All Iters 2.055672e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.964913e-01; Time All Iters 1.964913e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 512, 12703158, 37327360, recv msgs per GPU 4, 7, 11, recv counts per GPU 512, 12618782, 37327360
+GPU MPI_Neighbor_alltoallv Time 4.180430e-01; Time All Iters 2.090215e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.241921e-01; Time All Iters 2.120960e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.159108e-01; Time All Iters 2.079554e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 1024, 25406317, 74654720, recv msgs per GPU 4, 7, 11, recv counts per GPU 1024, 25237565, 74654720
+GPU MPI_Neighbor_alltoallv Time 1.240021e+00; Time All Iters 2.480041e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.063101e+00; Time All Iters 2.126203e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.407047e-01; Time All Iters 2.522114e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3748002@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3748002@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3748002@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3748002@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3748002@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3748002@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3748002@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3748002@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3748002@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3748002@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3748002@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3748002@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3748002@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3748002@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3748002@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3748002@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3748002@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 10 reversed
+rank 9 reversed
+rank 8 reversed
+rank 11 reversed
+rank 13 reversed
+rank 14 reversed
+rank 12 reversed
+rank 15 reversed
+rank 2 reversed
+rank 0 reversed
+rank 1 reversed
+rank 3 reversed
+rank 5 reversed
+rank 4 reversed
+rank 6 reversed
+rank 7 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 2, 40655, 215596, recv msgs per GPU 9, 13, 15, recv counts per GPU 2, 42409, 215596
+GPU MPI_Neighbor_alltoallv Time 1.949144e-03; Time All Iters 1.925754e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.141625e-03; Time All Iters 1.786116e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.030512e-03; Time All Iters 1.803094e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 4, 81311, 431192, recv msgs per GPU 9, 13, 15, recv counts per GPU 4, 84820, 431192
+GPU MPI_Neighbor_alltoallv Time 3.887339e-03; Time All Iters 1.990317e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.023202e-03; Time All Iters 1.689745e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.049026e-03; Time All Iters 1.773473e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 8, 162623, 862384, recv msgs per GPU 9, 13, 15, recv counts per GPU 8, 169640, 862384
+GPU MPI_Neighbor_alltoallv Time 8.059395e-03; Time All Iters 1.958433e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.828228e-03; Time All Iters 1.730038e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.439023e-02; Time All Iters 2.806096e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 16, 325246, 1724768, recv msgs per GPU 9, 13, 15, recv counts per GPU 16, 339281, 1724768
+GPU MPI_Neighbor_alltoallv Time 2.630068e-02; Time All Iters 1.972551e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.366043e-02; Time All Iters 2.011137e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.147698e-02; Time All Iters 1.954405e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 32, 650494, 3449536, recv msgs per GPU 9, 13, 15, recv counts per GPU 32, 678563, 3449536
+GPU MPI_Neighbor_alltoallv Time 4.715311e-02; Time All Iters 1.980431e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.600329e-02; Time All Iters 1.978141e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.534762e-02; Time All Iters 1.838076e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 64, 1300988, 6899072, recv msgs per GPU 9, 13, 15, recv counts per GPU 64, 1357127, 6899072
+GPU MPI_Neighbor_alltoallv Time 8.893863e-02; Time All Iters 1.956650e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.549263e-02; Time All Iters 1.966330e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.691477e-02; Time All Iters 1.999784e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 128, 2601977, 13798144, recv msgs per GPU 9, 13, 15, recv counts per GPU 128, 2714256, 13798144
+GPU MPI_Neighbor_alltoallv Time 1.774728e-01; Time All Iters 1.952201e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.712940e-01; Time All Iters 2.055528e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.575472e-01; Time All Iters 1.890567e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 256, 5203954, 27596288, recv msgs per GPU 9, 13, 15, recv counts per GPU 256, 5428512, 27596288
+GPU MPI_Neighbor_alltoallv Time 3.537433e-01; Time All Iters 2.122460e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.434669e-01; Time All Iters 2.060801e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.330167e-01; Time All Iters 1.998100e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 512, 10407910, 55192576, recv msgs per GPU 9, 13, 15, recv counts per GPU 512, 10857025, 55192576
+GPU MPI_Neighbor_alltoallv Time 8.785249e-01; Time All Iters 2.635575e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.946925e-01; Time All Iters 2.384077e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.653756e-01; Time All Iters 2.296127e+00
+Running Threaded Neighbor_Alltoallv Test with 4 threads:
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3748384@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3748384@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3748384@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3748384@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3748384@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3748384@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3748384@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3748384@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3748384@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3748384@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3748384@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3748384@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3748384@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3748384@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3748384@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3748384@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3748384@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 2 reversed
+rank 3 reversed
+rank 1 reversed
+rank 0 reversed
+rank 8 reversed
+rank 15 reversed
+rank 13 reversed
+rank 12 reversed
+rank 14 reversed
+rank 10 reversed
+rank 11 reversed
+rank 9 reversed
+rank 5 reversed
+rank 4 reversed
+rank 7 reversed
+rank 6 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 18053, 21948, 25082, recv msgs per GPU 1, 1, 2, recv counts per GPU 18053, 21948, 25082
+GPU MPI_Neighbor_alltoallv Time 1.313315e-04; Time All Iters 1.813688e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.372469e-04; Time All Iters 1.735624e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.515516e-04; Time All Iters 1.495814e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 36106, 43898, 50164, recv msgs per GPU 1, 1, 2, recv counts per GPU 36106, 43897, 50164
+GPU MPI_Neighbor_alltoallv Time 2.203119e-04; Time All Iters 1.771968e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.312589e-04; Time All Iters 1.678246e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.475869e-04; Time All Iters 1.740288e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 72212, 87796, 100328, recv msgs per GPU 1, 1, 2, recv counts per GPU 72212, 87795, 100328
+GPU MPI_Neighbor_alltoallv Time 4.080036e-04; Time All Iters 1.745031e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.212126e-04; Time All Iters 1.638517e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.478397e-04; Time All Iters 1.751501e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 144424, 175592, 200656, recv msgs per GPU 1, 1, 2, recv counts per GPU 144424, 175591, 200656
+GPU MPI_Neighbor_alltoallv Time 8.566058e-04; Time All Iters 1.790306e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.640270e-04; Time All Iters 1.735830e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.817590e-04; Time All Iters 1.778508e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 288848, 351184, 401312, recv msgs per GPU 1, 1, 2, recv counts per GPU 288848, 351182, 401312
+GPU MPI_Neighbor_alltoallv Time 1.809002e-03; Time All Iters 1.608203e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.780549e-03; Time All Iters 1.778768e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.861256e-03; Time All Iters 1.766332e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 577696, 702368, 802624, recv msgs per GPU 1, 1, 2, recv counts per GPU 577696, 702365, 802624
+GPU MPI_Neighbor_alltoallv Time 3.856795e-03; Time All Iters 1.955395e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.700867e-03; Time All Iters 1.761613e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.872245e-03; Time All Iters 1.889655e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 1155392, 1404736, 1605248, recv msgs per GPU 1, 1, 2, recv counts per GPU 1155392, 1404730, 1605248
+GPU MPI_Neighbor_alltoallv Time 1.194793e-02; Time All Iters 1.565178e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.225668e-02; Time All Iters 1.679165e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.006559e-03; Time All Iters 1.905561e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 2310784, 2809472, 3210496, recv msgs per GPU 1, 1, 2, recv counts per GPU 2310784, 2809460, 3210496
+GPU MPI_Neighbor_alltoallv Time 2.108552e-02; Time All Iters 1.792269e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.167411e-02; Time All Iters 1.777277e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.599164e-02; Time All Iters 1.903005e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 4621568, 5618944, 6420992, recv msgs per GPU 1, 1, 2, recv counts per GPU 4621568, 5618920, 6420992
+GPU MPI_Neighbor_alltoallv Time 3.873393e-02; Time All Iters 1.743027e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.857636e-02; Time All Iters 1.813089e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.539695e-02; Time All Iters 1.840641e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 9243136, 11237888, 12841984, recv msgs per GPU 1, 1, 2, recv counts per GPU 9243136, 11237840, 12841984
+GPU MPI_Neighbor_alltoallv Time 8.809987e-02; Time All Iters 1.850097e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.553587e-02; Time All Iters 1.881789e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.083552e-02; Time All Iters 1.940052e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/CurlCurl_4.pm, min/mean/max send msgs per GPU 1, 1, 2, send counts per GPU 18486272, 22475776, 25683968, recv msgs per GPU 1, 1, 2, recv counts per GPU 18486272, 22475680, 25683968
+GPU MPI_Neighbor_alltoallv Time 1.827284e-01; Time All Iters 2.010013e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.676559e-01; Time All Iters 1.844215e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.628437e-01; Time All Iters 1.954125e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3748816@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3748816@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3748816@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3748816@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3748816@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3748816@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3748816@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3748816@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3748816@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3748816@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3748816@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3748816@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3748816@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3748816@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3748816@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3748816@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3748816@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 15 reversed
+rank 13 reversed
+rank 14 reversed
+rank 12 reversed
+rank 1 reversed
+rank 0 reversed
+rank 2 reversed
+rank 3 reversed
+rank 10 reversed
+rank 11 reversed
+rank 9 reversed
+rank 8 reversed
+rank 7 reversed
+rank 5 reversed
+rank 4 reversed
+rank 6 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 588, 32751, 66400, recv msgs per GPU 2, 2, 3, recv counts per GPU 588, 32695, 66400
+GPU MPI_Neighbor_alltoallv Time 2.272869e-04; Time All Iters 1.552824e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.347423e-04; Time All Iters 1.622069e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.460126e-04; Time All Iters 1.252204e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 1176, 65502, 132800, recv msgs per GPU 2, 2, 3, recv counts per GPU 1176, 65391, 132800
+GPU MPI_Neighbor_alltoallv Time 4.797190e-04; Time All Iters 1.915518e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.329784e-04; Time All Iters 1.672595e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.282202e-04; Time All Iters 1.655071e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 2352, 131005, 265600, recv msgs per GPU 2, 2, 3, recv counts per GPU 2352, 130782, 265600
+GPU MPI_Neighbor_alltoallv Time 9.152596e-04; Time All Iters 1.955910e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.404388e-04; Time All Iters 1.717857e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.469270e-04; Time All Iters 1.707405e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 4704, 262010, 531200, recv msgs per GPU 2, 2, 3, recv counts per GPU 4704, 261565, 531200
+GPU MPI_Neighbor_alltoallv Time 1.876446e-03; Time All Iters 2.047202e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.792146e-03; Time All Iters 1.822613e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.718205e-03; Time All Iters 1.663222e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 9408, 524021, 1062400, recv msgs per GPU 2, 2, 3, recv counts per GPU 9408, 523131, 1062400
+GPU MPI_Neighbor_alltoallv Time 3.561850e-03; Time All Iters 1.905590e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.478529e-03; Time All Iters 1.767093e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.546920e-03; Time All Iters 1.759272e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 18816, 1048042, 2124800, recv msgs per GPU 2, 2, 3, recv counts per GPU 18816, 1046262, 2124800
+GPU MPI_Neighbor_alltoallv Time 1.172664e-02; Time All Iters 1.876263e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.254963e-02; Time All Iters 1.945193e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.198252e-03; Time All Iters 1.785166e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 37632, 2096085, 4249600, recv msgs per GPU 2, 2, 3, recv counts per GPU 37632, 2092525, 4249600
+GPU MPI_Neighbor_alltoallv Time 1.917011e-02; Time All Iters 1.706140e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.943449e-02; Time All Iters 1.865711e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.606086e-02; Time All Iters 1.911242e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 75264, 4192170, 8499200, recv msgs per GPU 2, 2, 3, recv counts per GPU 75264, 4185050, 8499200
+GPU MPI_Neighbor_alltoallv Time 3.830482e-02; Time All Iters 1.800327e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.575416e-02; Time All Iters 1.680446e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.474688e-02; Time All Iters 1.772091e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 150528, 8384341, 16998400, recv msgs per GPU 2, 2, 3, recv counts per GPU 150528, 8370101, 16998400
+GPU MPI_Neighbor_alltoallv Time 8.079430e-02; Time All Iters 1.777475e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.827840e-02; Time All Iters 1.878682e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.833947e-02; Time All Iters 1.776826e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 301056, 16768682, 33996800, recv msgs per GPU 2, 2, 3, recv counts per GPU 301056, 16740202, 33996800
+GPU MPI_Neighbor_alltoallv Time 1.648729e-01; Time All Iters 1.978475e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.529295e-01; Time All Iters 1.835154e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.429285e-01; Time All Iters 1.858070e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 602112, 33537365, 67993600, recv msgs per GPU 2, 2, 3, recv counts per GPU 602112, 33480405, 67993600
+GPU MPI_Neighbor_alltoallv Time 3.347095e-01; Time All Iters 2.008257e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.229345e-01; Time All Iters 1.937607e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.977755e-01; Time All Iters 2.084428e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3749203@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3749203@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3749203@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3749203@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3749203@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3749203@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3749203@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3749203@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3749203@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3749203@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3749203@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3749203@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3749203@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3749203@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3749203@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3749203@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3749203@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 13 reversed
+rank 15 reversed
+rank 1 reversed
+rank 14 reversed
+rank 12 reversed
+rank 3 reversed
+rank 0 reversed
+rank 2 reversed
+rank 9 reversed
+rank 10 reversed
+rank 11 reversed
+rank 8 reversed
+rank 4 reversed
+rank 6 reversed
+rank 7 reversed
+rank 5 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 57, 2057, 4259, recv msgs per GPU 15, 15, 15, recv counts per GPU 57, 2057, 4259
+GPU MPI_Neighbor_alltoallv Time 3.769315e-04; Time All Iters 1.454956e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.799279e-04; Time All Iters 1.752988e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.363996e-04; Time All Iters 1.785747e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 114, 4115, 8518, recv msgs per GPU 15, 15, 15, recv counts per GPU 114, 4115, 8518
+GPU MPI_Neighbor_alltoallv Time 4.485959e-04; Time All Iters 1.986831e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.490937e-04; Time All Iters 1.270037e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 5.003998e-04; Time All Iters 1.919534e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 228, 8231, 17036, recv msgs per GPU 15, 15, 15, recv counts per GPU 228, 8231, 17036
+GPU MPI_Neighbor_alltoallv Time 6.016983e-04; Time All Iters 2.011477e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 5.885658e-04; Time All Iters 1.861634e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.506024e-04; Time All Iters 1.942048e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 456, 16462, 34072, recv msgs per GPU 15, 15, 15, recv counts per GPU 456, 16462, 34072
+GPU MPI_Neighbor_alltoallv Time 8.727522e-04; Time All Iters 1.989002e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.977146e-04; Time All Iters 1.761316e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 9.338119e-04; Time All Iters 1.923653e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 912, 32925, 68144, recv msgs per GPU 15, 15, 15, recv counts per GPU 912, 32925, 68144
+GPU MPI_Neighbor_alltoallv Time 1.438617e-03; Time All Iters 1.768060e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.574971e-03; Time All Iters 1.718293e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.515993e-03; Time All Iters 1.549345e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 1824, 65851, 136288, recv msgs per GPU 15, 15, 15, recv counts per GPU 1824, 65851, 136288
+GPU MPI_Neighbor_alltoallv Time 2.701154e-03; Time All Iters 1.728739e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.051189e-03; Time All Iters 1.705615e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.923320e-03; Time All Iters 1.850462e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 3648, 131703, 272576, recv msgs per GPU 15, 15, 15, recv counts per GPU 3648, 131703, 272576
+GPU MPI_Neighbor_alltoallv Time 5.825263e-03; Time All Iters 1.869909e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.321479e-03; Time All Iters 1.738407e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.095120e-03; Time All Iters 1.932153e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 7296, 263406, 545152, recv msgs per GPU 15, 15, 15, recv counts per GPU 7296, 263406, 545152
+GPU MPI_Neighbor_alltoallv Time 3.492213e-02; Time All Iters 1.815951e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.619790e-02; Time All Iters 1.990885e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.277627e-02; Time All Iters 1.954770e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 14592, 526813, 1090304, recv msgs per GPU 15, 15, 15, recv counts per GPU 14592, 526813, 1090304
+GPU MPI_Neighbor_alltoallv Time 4.916159e-02; Time All Iters 1.868140e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.988782e-02; Time All Iters 1.945625e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.908649e-02; Time All Iters 1.915238e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 29184, 1053627, 2180608, recv msgs per GPU 15, 15, 15, recv counts per GPU 29184, 1053627, 2180608
+GPU MPI_Neighbor_alltoallv Time 8.222884e-02; Time All Iters 1.973492e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.998877e-02; Time All Iters 1.999719e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.939174e-02; Time All Iters 1.905402e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 58368, 2107255, 4361216, recv msgs per GPU 15, 15, 15, recv counts per GPU 58368, 2107255, 4361216
+GPU MPI_Neighbor_alltoallv Time 1.560282e-01; Time All Iters 2.028366e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.534302e-01; Time All Iters 2.148023e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.276009e-01; Time All Iters 1.914014e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3750149@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3750149@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3750149@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3750149@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3750149@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3750149@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3750149@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3750149@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3750149@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3750149@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3750149@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3750149@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3750149@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3750149@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3750149@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3750149@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3750149@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 10 reversed
+rank 9 reversed
+rank 11 reversed
+rank 8 reversed
+rank 1 reversed
+rank 2 reversed
+rank 12 reversed
+rank 14 reversed
+rank 15 reversed
+rank 13 reversed
+rank 0 reversed
+rank 3 reversed
+rank 7 reversed
+rank 6 reversed
+rank 4 reversed
+rank 5 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 1, 24810, 72905, recv msgs per GPU 4, 7, 11, recv counts per GPU 1, 24645, 72905
+GPU MPI_Neighbor_alltoallv Time 6.388501e-04; Time All Iters 1.887163e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.580609e-04; Time All Iters 1.893899e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.044614e-04; Time All Iters 1.816101e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 2, 49621, 145810, recv msgs per GPU 4, 7, 11, recv counts per GPU 2, 49291, 145810
+GPU MPI_Neighbor_alltoallv Time 1.101862e-03; Time All Iters 1.887490e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.116723e-03; Time All Iters 1.788990e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.153326e-03; Time All Iters 1.869541e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 4, 99243, 291620, recv msgs per GPU 4, 7, 11, recv counts per GPU 4, 98583, 291620
+GPU MPI_Neighbor_alltoallv Time 2.403812e-03; Time All Iters 1.858147e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.200240e-03; Time All Iters 1.711787e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.360912e-03; Time All Iters 1.905256e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 8, 198486, 583240, recv msgs per GPU 4, 7, 11, recv counts per GPU 8, 197168, 583240
+GPU MPI_Neighbor_alltoallv Time 5.363791e-03; Time All Iters 2.124061e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.753773e-03; Time All Iters 1.796926e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.955456e-03; Time All Iters 1.942539e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 16, 396973, 1166480, recv msgs per GPU 4, 7, 11, recv counts per GPU 16, 394336, 1166480
+GPU MPI_Neighbor_alltoallv Time 1.120463e-02; Time All Iters 2.173697e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 9.998822e-03; Time All Iters 1.919774e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.026885e-02; Time All Iters 2.043500e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 32, 793947, 2332960, recv msgs per GPU 4, 7, 11, recv counts per GPU 32, 788673, 2332960
+GPU MPI_Neighbor_alltoallv Time 3.086395e-02; Time All Iters 1.913565e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.989661e-02; Time All Iters 1.913383e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.230706e-02; Time All Iters 2.096864e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 64, 1587894, 4665920, recv msgs per GPU 4, 7, 11, recv counts per GPU 64, 1577347, 4665920
+GPU MPI_Neighbor_alltoallv Time 5.518041e-02; Time All Iters 1.931314e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 5.319877e-02; Time All Iters 1.861957e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.262555e-02; Time All Iters 1.918150e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 128, 3175789, 9331840, recv msgs per GPU 4, 7, 11, recv counts per GPU 128, 3154695, 9331840
+GPU MPI_Neighbor_alltoallv Time 1.041205e-01; Time All Iters 1.978290e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.067746e-01; Time All Iters 1.921943e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.937622e-02; Time All Iters 1.876901e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 256, 6351579, 18663680, recv msgs per GPU 4, 7, 11, recv counts per GPU 256, 6309391, 18663680
+GPU MPI_Neighbor_alltoallv Time 2.004961e-01; Time All Iters 2.004961e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.087588e-01; Time All Iters 2.087588e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.872089e-01; Time All Iters 2.059298e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 512, 12703158, 37327360, recv msgs per GPU 4, 7, 11, recv counts per GPU 512, 12618782, 37327360
+GPU MPI_Neighbor_alltoallv Time 4.086976e-01; Time All Iters 2.043488e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.135319e-01; Time All Iters 2.067659e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.991391e-01; Time All Iters 1.995695e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 1024, 25406317, 74654720, recv msgs per GPU 4, 7, 11, recv counts per GPU 1024, 25237565, 74654720
+GPU MPI_Neighbor_alltoallv Time 1.256062e+00; Time All Iters 2.512124e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.080763e+00; Time All Iters 2.161526e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 9.373951e-01; Time All Iters 2.812185e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3750538@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3750538@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3750538@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3750538@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3750538@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3750538@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3750538@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3750538@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3750538@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3750538@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3750538@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3750538@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3750538@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3750538@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3750538@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3750538@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3750538@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 11 reversed
+rank 2 reversed
+rank 0 reversed
+rank 3 reversed
+rank 1 reversed
+rank 13 reversed
+rank 14 reversed
+rank 9 reversed
+rank 8 reversed
+rank 10 reversed
+rank 15 reversed
+rank 12 reversed
+rank 7 reversed
+rank 4 reversed
+rank 5 reversed
+rank 6 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 2, 40655, 215596, recv msgs per GPU 9, 13, 15, recv counts per GPU 2, 42409, 215596
+GPU MPI_Neighbor_alltoallv Time 1.917916e-03; Time All Iters 1.908327e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.101900e-03; Time All Iters 1.788716e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.048354e-03; Time All Iters 1.876293e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 4, 81311, 431192, recv msgs per GPU 9, 13, 15, recv counts per GPU 4, 84820, 431192
+GPU MPI_Neighbor_alltoallv Time 3.943277e-03; Time All Iters 1.892773e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.081340e-03; Time All Iters 1.795790e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.031113e-03; Time All Iters 1.785783e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 8, 162623, 862384, recv msgs per GPU 9, 13, 15, recv counts per GPU 8, 169640, 862384
+GPU MPI_Neighbor_alltoallv Time 8.002128e-03; Time All Iters 1.888502e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.791720e-03; Time All Iters 1.690803e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.965294e-03; Time All Iters 1.871844e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 16, 325246, 1724768, recv msgs per GPU 9, 13, 15, recv counts per GPU 16, 339281, 1724768
+GPU MPI_Neighbor_alltoallv Time 2.510548e-02; Time All Iters 1.908016e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.131768e-02; Time All Iters 1.939909e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.086990e-02; Time All Iters 1.878291e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 32, 650494, 3449536, recv msgs per GPU 9, 13, 15, recv counts per GPU 32, 678563, 3449536
+GPU MPI_Neighbor_alltoallv Time 4.717339e-02; Time All Iters 1.934109e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.519091e-02; Time All Iters 1.943209e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.648776e-02; Time All Iters 1.970339e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 64, 1300988, 6899072, recv msgs per GPU 9, 13, 15, recv counts per GPU 64, 1357127, 6899072
+GPU MPI_Neighbor_alltoallv Time 8.815649e-02; Time All Iters 1.939443e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.571273e-02; Time All Iters 1.971393e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.597868e-02; Time All Iters 1.823488e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 128, 2601977, 13798144, recv msgs per GPU 9, 13, 15, recv counts per GPU 128, 2714256, 13798144
+GPU MPI_Neighbor_alltoallv Time 1.766342e-01; Time All Iters 1.942977e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.723697e-01; Time All Iters 2.068437e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.598169e-01; Time All Iters 2.077620e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 256, 5203954, 27596288, recv msgs per GPU 9, 13, 15, recv counts per GPU 256, 5428512, 27596288
+GPU MPI_Neighbor_alltoallv Time 3.594319e-01; Time All Iters 2.156591e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.434089e-01; Time All Iters 2.060453e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.234059e-01; Time All Iters 1.940435e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 512, 10407910, 55192576, recv msgs per GPU 9, 13, 15, recv counts per GPU 512, 10857025, 55192576
+GPU MPI_Neighbor_alltoallv Time 8.946351e-01; Time All Iters 2.683905e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.067679e-01; Time All Iters 2.420304e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.991077e-01; Time All Iters 2.097323e+00
+Running Threaded Neighbor_Alltoallv Test with 8 threads:
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3751270@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3751270@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3751270@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3751270@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3751270@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3751270@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3751270@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3751270@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3751270@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3751270@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3751270@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3751270@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3751270@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3751270@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3751270@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3751270@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3751270@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 11 reversed
+rank 8 reversed
+rank 10 reversed
+rank 9 reversed
+rank 0 reversed
+rank 15 reversed
+rank 13 reversed
+rank 14 reversed
+rank 12 reversed
+rank 3 reversed
+rank 2 reversed
+rank 1 reversed
+rank 6 reversed
+rank 4 reversed
+rank 5 reversed
+rank 7 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 588, 32751, 66400, recv msgs per GPU 2, 2, 3, recv counts per GPU 588, 32695, 66400
+GPU MPI_Neighbor_alltoallv Time 2.341463e-04; Time All Iters 1.670868e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.312420e-04; Time All Iters 1.687835e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.540404e-04; Time All Iters 1.795049e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 1176, 65502, 132800, recv msgs per GPU 2, 2, 3, recv counts per GPU 1176, 65391, 132800
+GPU MPI_Neighbor_alltoallv Time 4.591299e-04; Time All Iters 1.807594e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.334241e-04; Time All Iters 1.679952e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.306659e-04; Time All Iters 1.668831e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 2352, 131005, 265600, recv msgs per GPU 2, 2, 3, recv counts per GPU 2352, 130782, 265600
+GPU MPI_Neighbor_alltoallv Time 9.118498e-04; Time All Iters 1.820964e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.387921e-04; Time All Iters 1.693521e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.470187e-04; Time All Iters 1.703355e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 4704, 262010, 531200, recv msgs per GPU 2, 2, 3, recv counts per GPU 4704, 261565, 531200
+GPU MPI_Neighbor_alltoallv Time 1.821088e-03; Time All Iters 1.897574e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.694434e-03; Time All Iters 1.691045e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.726723e-03; Time All Iters 1.766437e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 9408, 524021, 1062400, recv msgs per GPU 2, 2, 3, recv counts per GPU 9408, 523131, 1062400
+GPU MPI_Neighbor_alltoallv Time 3.575398e-03; Time All Iters 1.852056e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.492264e-03; Time All Iters 1.815977e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.482497e-03; Time All Iters 1.765626e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 18816, 1048042, 2124800, recv msgs per GPU 2, 2, 3, recv counts per GPU 18816, 1046262, 2124800
+GPU MPI_Neighbor_alltoallv Time 1.271802e-02; Time All Iters 1.742369e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.263440e-02; Time All Iters 1.958332e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.148806e-03; Time All Iters 1.815797e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 37632, 2096085, 4249600, recv msgs per GPU 2, 2, 3, recv counts per GPU 37632, 2092525, 4249600
+GPU MPI_Neighbor_alltoallv Time 1.957857e-02; Time All Iters 1.762071e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.895576e-02; Time All Iters 1.857665e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.627105e-02; Time All Iters 1.871171e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 75264, 4192170, 8499200, recv msgs per GPU 2, 2, 3, recv counts per GPU 75264, 4185050, 8499200
+GPU MPI_Neighbor_alltoallv Time 3.849603e-02; Time All Iters 1.809314e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.594712e-02; Time All Iters 1.689514e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.177720e-02; Time All Iters 1.747746e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 150528, 8384341, 16998400, recv msgs per GPU 2, 2, 3, recv counts per GPU 150528, 8370101, 16998400
+GPU MPI_Neighbor_alltoallv Time 8.139618e-02; Time All Iters 1.872112e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.610018e-02; Time All Iters 1.750304e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.768462e-02; Time All Iters 1.895169e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 301056, 16768682, 33996800, recv msgs per GPU 2, 2, 3, recv counts per GPU 301056, 16740202, 33996800
+GPU MPI_Neighbor_alltoallv Time 1.600431e-01; Time All Iters 1.920517e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.522878e-01; Time All Iters 1.827453e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.416130e-01; Time All Iters 1.840969e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/nlpkkt80.pm, min/mean/max send msgs per GPU 2, 2, 3, send counts per GPU 602112, 33537365, 67993600, recv msgs per GPU 2, 2, 3, recv counts per GPU 602112, 33480405, 67993600
+GPU MPI_Neighbor_alltoallv Time 3.368349e-01; Time All Iters 2.021009e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.224609e-01; Time All Iters 1.934765e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.977163e-01; Time All Iters 2.084014e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3752024@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3752024@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3752024@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3752024@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3752024@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3752024@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3752024@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3752024@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3752024@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3752024@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3752024@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3752024@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3752024@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3752024@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3752024@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3752024@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3752024@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 10 reversed
+rank 9 reversed
+rank 11 reversed
+rank 8 reversed
+rank 3 reversed
+rank 0 reversed
+rank 2 reversed
+rank 1 reversed
+rank 13 reversed
+rank 15 reversed
+rank 14 reversed
+rank 12 reversed
+rank 7 reversed
+rank 5 reversed
+rank 6 reversed
+rank 4 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 2, 40655, 215596, recv msgs per GPU 9, 13, 15, recv counts per GPU 2, 42409, 215596
+GPU MPI_Neighbor_alltoallv Time 1.870685e-03; Time All Iters 1.943641e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.046575e-03; Time All Iters 1.774381e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.181185e-03; Time All Iters 2.048133e+00
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 4, 81311, 431192, recv msgs per GPU 9, 13, 15, recv counts per GPU 4, 84820, 431192
+GPU MPI_Neighbor_alltoallv Time 3.872850e-03; Time All Iters 1.889951e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.930225e-03; Time All Iters 1.717508e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.851911e-03; Time All Iters 1.744916e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 8, 162623, 862384, recv msgs per GPU 9, 13, 15, recv counts per GPU 8, 169640, 862384
+GPU MPI_Neighbor_alltoallv Time 7.991440e-03; Time All Iters 1.981877e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.755895e-03; Time All Iters 1.729565e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.868323e-03; Time All Iters 1.864793e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 16, 325246, 1724768, recv msgs per GPU 9, 13, 15, recv counts per GPU 16, 339281, 1724768
+GPU MPI_Neighbor_alltoallv Time 2.780456e-02; Time All Iters 1.946319e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.327366e-02; Time All Iters 2.001534e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.817074e-02; Time All Iters 2.016952e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 32, 650494, 3449536, recv msgs per GPU 9, 13, 15, recv counts per GPU 32, 678563, 3449536
+GPU MPI_Neighbor_alltoallv Time 4.836888e-02; Time All Iters 1.983124e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.815501e-02; Time All Iters 2.022510e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.396931e-02; Time All Iters 1.902281e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 64, 1300988, 6899072, recv msgs per GPU 9, 13, 15, recv counts per GPU 64, 1357127, 6899072
+GPU MPI_Neighbor_alltoallv Time 9.125363e-02; Time All Iters 2.007580e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.516205e-02; Time All Iters 1.958727e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.231057e-02; Time All Iters 1.880075e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 128, 2601977, 13798144, recv msgs per GPU 9, 13, 15, recv counts per GPU 128, 2714256, 13798144
+GPU MPI_Neighbor_alltoallv Time 1.805753e-01; Time All Iters 1.986329e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.728431e-01; Time All Iters 1.901275e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.529900e-01; Time All Iters 1.988871e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 256, 5203954, 27596288, recv msgs per GPU 9, 13, 15, recv counts per GPU 256, 5428512, 27596288
+GPU MPI_Neighbor_alltoallv Time 3.554568e-01; Time All Iters 2.132741e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.476447e-01; Time All Iters 2.085868e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.104877e-01; Time All Iters 2.173414e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 512, 10407910, 55192576, recv msgs per GPU 9, 13, 15, recv counts per GPU 512, 10857025, 55192576
+GPU MPI_Neighbor_alltoallv Time 9.538905e-01; Time All Iters 2.861671e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.422136e-01; Time All Iters 2.526641e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.468903e-01; Time All Iters 2.587561e+00
+Running Threaded Neighbor_Alltoallv Test with 16 threads:
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3752775@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3752775@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3752775@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3752775@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3752775@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3752775@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3752775@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3752775@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3752775@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3752775@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3752775@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3752775@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3752775@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3752775@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3752775@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3752775@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3752775@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 15 reversed
+rank 14 reversed
+rank 13 reversed
+rank 3 reversed
+rank 12 reversed
+rank 1 reversed
+rank 0 reversed
+rank 2 reversed
+rank 8 reversed
+rank 10 reversed
+rank 9 reversed
+rank 11 reversed
+rank 4 reversed
+rank 7 reversed
+rank 5 reversed
+rank 6 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 57, 2057, 4259, recv msgs per GPU 15, 15, 15, recv counts per GPU 57, 2057, 4259
+GPU MPI_Neighbor_alltoallv Time 3.763061e-04; Time All Iters 1.357336e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.768808e-04; Time All Iters 1.934906e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.833218e-03; Time All Iters 5.976291e-01
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 114, 4115, 8518, recv msgs per GPU 15, 15, 15, recv counts per GPU 114, 4115, 8518
+GPU MPI_Neighbor_alltoallv Time 4.475050e-04; Time All Iters 1.649503e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.464373e-04; Time All Iters 1.940663e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.366339e-03; Time All Iters 7.271291e-01
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 228, 8231, 17036, recv msgs per GPU 15, 15, 15, recv counts per GPU 228, 8231, 17036
+GPU MPI_Neighbor_alltoallv Time 6.026479e-04; Time All Iters 2.001996e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 5.872881e-04; Time All Iters 1.830577e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.150061e-03; Time All Iters 5.998670e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 456, 16462, 34072, recv msgs per GPU 15, 15, 15, recv counts per GPU 456, 16462, 34072
+GPU MPI_Neighbor_alltoallv Time 8.754558e-04; Time All Iters 1.984658e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.983436e-04; Time All Iters 1.786805e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.691082e-03; Time All Iters 7.677452e-01
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 912, 32925, 68144, recv msgs per GPU 15, 15, 15, recv counts per GPU 912, 32925, 68144
+GPU MPI_Neighbor_alltoallv Time 1.447466e-03; Time All Iters 1.975791e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.592020e-03; Time All Iters 1.744854e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 5.844398e-03; Time All Iters 9.526369e-01
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 1824, 65851, 136288, recv msgs per GPU 15, 15, 15, recv counts per GPU 1824, 65851, 136288
+GPU MPI_Neighbor_alltoallv Time 2.676990e-03; Time All Iters 1.839092e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.060410e-03; Time All Iters 1.661803e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.248688e-03; Time All Iters 7.562664e-01
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 3648, 131703, 272576, recv msgs per GPU 15, 15, 15, recv counts per GPU 3648, 131703, 272576
+GPU MPI_Neighbor_alltoallv Time 5.856857e-03; Time All Iters 1.897622e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.306756e-03; Time All Iters 1.746971e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.891157e-03; Time All Iters 1.813796e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 7296, 263406, 545152, recv msgs per GPU 15, 15, 15, recv counts per GPU 7296, 263406, 545152
+GPU MPI_Neighbor_alltoallv Time 3.562776e-02; Time All Iters 1.817016e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.485239e-02; Time All Iters 2.021438e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.321120e-02; Time All Iters 2.140214e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 14592, 526813, 1090304, recv msgs per GPU 15, 15, 15, recv counts per GPU 14592, 526813, 1090304
+GPU MPI_Neighbor_alltoallv Time 4.970704e-02; Time All Iters 1.938574e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 5.020420e-02; Time All Iters 1.957964e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.669796e-02; Time All Iters 2.029045e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 29184, 1053627, 2180608, recv msgs per GPU 15, 15, 15, recv counts per GPU 29184, 1053627, 2180608
+GPU MPI_Neighbor_alltoallv Time 7.805384e-02; Time All Iters 1.873292e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.633414e-02; Time All Iters 1.908354e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 5.517135e-02; Time All Iters 2.096511e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/nd24k.pm, min/mean/max send msgs per GPU 15, 15, 15, send counts per GPU 58368, 2107255, 4361216, recv msgs per GPU 15, 15, 15, recv counts per GPU 58368, 2107255, 4361216
+GPU MPI_Neighbor_alltoallv Time 1.591194e-01; Time All Iters 1.909432e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.530609e-01; Time All Iters 2.142852e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.102745e-01; Time All Iters 2.095215e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3753551@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3753551@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3753551@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3753551@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3753551@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3753551@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3753551@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3753551@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3753551@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3753551@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3753551@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3753551@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3753551@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3753551@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3753551@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3753551@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3753551@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 15 reversed
+rank 12 reversed
+rank 14 reversed
+rank 13 reversed
+rank 10 reversed
+rank 8 reversed
+rank 9 reversed
+rank 11 reversed
+rank 3 reversed
+rank 2 reversed
+rank 1 reversed
+rank 0 reversed
+rank 7 reversed
+rank 5 reversed
+rank 6 reversed
+rank 4 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 1, 24810, 72905, recv msgs per GPU 4, 7, 11, recv counts per GPU 1, 24645, 72905
+GPU MPI_Neighbor_alltoallv Time 6.201713e-04; Time All Iters 1.905166e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 6.432020e-04; Time All Iters 1.873004e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.732672e-03; Time All Iters 4.563562e-01
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 2, 49621, 145810, recv msgs per GPU 4, 7, 11, recv counts per GPU 2, 49291, 145810
+GPU MPI_Neighbor_alltoallv Time 1.103368e-03; Time All Iters 1.788559e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.100238e-03; Time All Iters 1.714171e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.982373e-03; Time All Iters 3.231268e-01
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 4, 99243, 291620, recv msgs per GPU 4, 7, 11, recv counts per GPU 4, 98583, 291620
+GPU MPI_Neighbor_alltoallv Time 2.344200e-03; Time All Iters 1.828476e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.181659e-03; Time All Iters 1.786779e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.288406e-03; Time All Iters 1.050164e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 8, 198486, 583240, recv msgs per GPU 4, 7, 11, recv counts per GPU 8, 197168, 583240
+GPU MPI_Neighbor_alltoallv Time 5.280093e-03; Time All Iters 2.228199e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.781872e-03; Time All Iters 1.831457e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.031387e-03; Time All Iters 2.643802e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 16, 396973, 1166480, recv msgs per GPU 4, 7, 11, recv counts per GPU 16, 394336, 1166480
+GPU MPI_Neighbor_alltoallv Time 1.122906e-02; Time All Iters 2.167208e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 9.954199e-03; Time All Iters 1.941069e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.093774e-02; Time All Iters 1.848478e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 32, 793947, 2332960, recv msgs per GPU 4, 7, 11, recv counts per GPU 32, 788673, 2332960
+GPU MPI_Neighbor_alltoallv Time 3.145939e-02; Time All Iters 1.856104e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.095329e-02; Time All Iters 1.888151e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 2.098878e-02; Time All Iters 1.888991e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 64, 1587894, 4665920, recv msgs per GPU 4, 7, 11, recv counts per GPU 64, 1577347, 4665920
+GPU MPI_Neighbor_alltoallv Time 5.425035e-02; Time All Iters 1.844512e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 5.293135e-02; Time All Iters 1.799666e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.332716e-02; Time All Iters 1.993049e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 128, 3175789, 9331840, recv msgs per GPU 4, 7, 11, recv counts per GPU 128, 3154695, 9331840
+GPU MPI_Neighbor_alltoallv Time 1.031908e-01; Time All Iters 1.960624e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.037004e-01; Time All Iters 1.866607e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 9.055439e-02; Time All Iters 1.992197e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 256, 6351579, 18663680, recv msgs per GPU 4, 7, 11, recv counts per GPU 256, 6309391, 18663680
+GPU MPI_Neighbor_alltoallv Time 2.117122e-01; Time All Iters 1.905410e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.055686e-01; Time All Iters 1.850118e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.892564e-01; Time All Iters 2.081821e+00
+Testing Size blockVecCols 512, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 512, 12703158, 37327360, recv msgs per GPU 4, 7, 11, recv counts per GPU 512, 12618782, 37327360
+GPU MPI_Neighbor_alltoallv Time 4.235565e-01; Time All Iters 2.117783e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.246856e-01; Time All Iters 2.123428e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.853983e-01; Time All Iters 2.312390e+00
+Testing Size blockVecCols 1024, matrix /u/madams2/test_matrices/dgreen.pm, min/mean/max send msgs per GPU 4, 7, 11, send counts per GPU 1024, 25406317, 74654720, recv msgs per GPU 4, 7, 11, recv counts per GPU 1024, 25237565, 74654720
+GPU MPI_Neighbor_alltoallv Time 1.150420e+00; Time All Iters 2.300840e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.011677e+00; Time All Iters 2.023354e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 8.145049e-01; Time All Iters 2.443515e+00
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+======================   ALLOCATED NODES   ======================
+    gpua025: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:SLOTS_GIVEN
+	aliases: gpua025.delta.ncsa.illinois.edu,gpua025
+    gpua027: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua027.delta.ncsa.illinois.edu,172.28.23.27,172.28.86.27,141.142.254.27
+    gpua037: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua037.delta.ncsa.illinois.edu,172.28.23.37,172.28.86.37,141.142.254.37
+    gpua041: slots=64 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:SLOTS_GIVEN
+	aliases: gpua041.delta.ncsa.illinois.edu,172.28.23.41,172.28.86.41,141.142.254.41
+=================================================================
+
+========================   JOB MAP   ========================
+Data for JOB prterun-gpua025-3753987@1 offset 0 Total slots allocated 256
+    Mapping policy: BYNUMA:NOOVERSUBSCRIBE  Ranking policy: SLOT Binding policy: NUMA
+    Cpu set: N/A  PPR: 1:numa  Cpus-per-rank: N/A  Cpu Type: CORE
+
+
+Data for node: gpua025	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3753987@1 App: 0 Process rank: 0 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3753987@1 App: 0 Process rank: 1 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3753987@1 App: 0 Process rank: 2 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3753987@1 App: 0 Process rank: 3 Bound: package[0][core:48-63]
+
+Data for node: gpua027	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3753987@1 App: 0 Process rank: 4 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3753987@1 App: 0 Process rank: 5 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3753987@1 App: 0 Process rank: 6 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3753987@1 App: 0 Process rank: 7 Bound: package[0][core:48-63]
+
+Data for node: gpua037	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3753987@1 App: 0 Process rank: 8 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3753987@1 App: 0 Process rank: 9 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3753987@1 App: 0 Process rank: 10 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3753987@1 App: 0 Process rank: 11 Bound: package[0][core:48-63]
+
+Data for node: gpua041	Num slots: 64	Max slots: 0	Num procs: 4
+        Process jobid: prterun-gpua025-3753987@1 App: 0 Process rank: 12 Bound: package[0][core:0-15]
+        Process jobid: prterun-gpua025-3753987@1 App: 0 Process rank: 13 Bound: package[0][core:16-31]
+        Process jobid: prterun-gpua025-3753987@1 App: 0 Process rank: 14 Bound: package[0][core:32-47]
+        Process jobid: prterun-gpua025-3753987@1 App: 0 Process rank: 15 Bound: package[0][core:48-63]
+
+=============================================================
+rank 11 reversed
+rank 9 reversed
+rank 8 reversed
+rank 10 reversed
+rank 1 reversed
+rank 3 reversed
+rank 2 reversed
+rank 0 reversed
+rank 15 reversed
+rank 14 reversed
+rank 13 reversed
+rank 12 reversed
+rank 5 reversed
+rank 7 reversed
+rank 6 reversed
+rank 4 reversed
+Testing Size blockVecCols 1, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 2, 40655, 215596, recv msgs per GPU 9, 13, 15, recv counts per GPU 2, 42409, 215596
+GPU MPI_Neighbor_alltoallv Time 1.968703e-03; Time All Iters 1.992327e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.114399e-03; Time All Iters 1.740150e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 4.500035e-03; Time All Iters 9.090070e-01
+Testing Size blockVecCols 2, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 4, 81311, 431192, recv msgs per GPU 9, 13, 15, recv counts per GPU 4, 84820, 431192
+GPU MPI_Neighbor_alltoallv Time 3.917436e-03; Time All Iters 2.013562e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.132161e-03; Time All Iters 1.780961e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.779045e-03; Time All Iters 1.301577e+00
+Testing Size blockVecCols 4, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 8, 162623, 862384, recv msgs per GPU 9, 13, 15, recv counts per GPU 8, 169640, 862384
+GPU MPI_Neighbor_alltoallv Time 7.916713e-03; Time All Iters 1.836677e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.752945e-03; Time All Iters 1.790930e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.049126e-02; Time All Iters 1.710076e+00
+Testing Size blockVecCols 8, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 16, 325246, 1724768, recv msgs per GPU 9, 13, 15, recv counts per GPU 16, 339281, 1724768
+GPU MPI_Neighbor_alltoallv Time 2.711730e-02; Time All Iters 1.979563e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 2.405221e-02; Time All Iters 1.996334e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.625948e-02; Time All Iters 2.016175e+00
+Testing Size blockVecCols 16, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 32, 650494, 3449536, recv msgs per GPU 9, 13, 15, recv counts per GPU 32, 678563, 3449536
+GPU MPI_Neighbor_alltoallv Time 4.747984e-02; Time All Iters 1.946673e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 4.368798e-02; Time All Iters 1.965959e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.293807e-02; Time All Iters 1.910408e+00
+Testing Size blockVecCols 32, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 64, 1300988, 6899072, recv msgs per GPU 9, 13, 15, recv counts per GPU 64, 1357127, 6899072
+GPU MPI_Neighbor_alltoallv Time 8.882845e-02; Time All Iters 1.954226e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 8.446061e-02; Time All Iters 1.942594e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 7.456746e-02; Time All Iters 1.938754e+00
+Testing Size blockVecCols 64, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 128, 2601977, 13798144, recv msgs per GPU 9, 13, 15, recv counts per GPU 128, 2714256, 13798144
+GPU MPI_Neighbor_alltoallv Time 1.795707e-01; Time All Iters 1.975278e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 1.705583e-01; Time All Iters 2.046700e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 1.572329e-01; Time All Iters 2.044028e+00
+Testing Size blockVecCols 128, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 256, 5203954, 27596288, recv msgs per GPU 9, 13, 15, recv counts per GPU 256, 5428512, 27596288
+GPU MPI_Neighbor_alltoallv Time 3.574673e-01; Time All Iters 2.144804e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 3.450549e-01; Time All Iters 2.070329e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 3.173536e-01; Time All Iters 2.221475e+00
+Testing Size blockVecCols 256, matrix /u/madams2/test_matrices/adaptive.pm, min/mean/max send msgs per GPU 9, 13, 15, send counts per GPU 512, 10407910, 55192576, recv msgs per GPU 9, 13, 15, recv counts per GPU 512, 10857025, 55192576
+GPU MPI_Neighbor_alltoallv Time 8.922859e-01; Time All Iters 2.676858e+00
+gpu_aware_neighbor_alltoallv_nonblocking_pure Time 7.980583e-01; Time All Iters 2.394175e+00
+gpu_aware_threaded_neighbor_alltoallv_nonblocking_pure Time 6.663747e-01; Time All Iters 1.999124e+00
