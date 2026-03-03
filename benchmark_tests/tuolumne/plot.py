@@ -653,6 +653,21 @@ plt.add_labels("Message Size Per GPU (Bytes)", "Time (Seconds)")
 plt.set_scale('log', 'log')
 plt.save_plot("ccl_allgpusactive_pergpu.pdf")
 
+# Multiple Processes Per GPU
+plt.add_luke_options()
+for i in range(len(gpu_multi_all)):
+    sizes = [s*gpu_multi_all[i].active_procs for s in gpu_multi_all[i].sizes]
+    plt.line_plot(gpu_multi_all[i].times, sizes, label = "%d Active Procs"%gpu_multi_all[i].active_procs)
+for i in range(len(ccl_multi_all)):
+    if ccl_multi_all[i].active_procs != 1:
+        continue
+    sizes = [s*ccl_multi_all[i].active_procs for s in ccl_multi_all[i].sizes]
+    plt.line_plot(ccl_multi_all[i].times, sizes, label = "CCL")
+plt.add_anchored_legend(ncol=3)
+plt.add_labels("Message Size Per GPU (Bytes)", "Time (Seconds)")
+plt.set_scale('log', 'log')
+plt.save_plot("gpu_multi_allgpusactive_pergpu_plus_ccl.pdf")
+
 # Multiple Processes Per GPU -- Bandwidth
 plt.add_luke_options()
 for i in range(len(ccl_multi_all)):
@@ -663,6 +678,23 @@ plt.add_anchored_legend(ncol=3)
 plt.add_labels("Message Size Per Node (Bytes)", "Bandwidth (Bytes Per Second)")
 plt.set_scale('log', 'log')
 plt.save_plot("ccl_bw_allgpusactive_pernode.pdf")
+
+# Multiple Processes Per GPU -- Bandwidth
+plt.add_luke_options()
+for i in range(len(gpu_multi_all)):
+    sizes = [s * gpu_multi_all[i].active_procs for s in gpu_multi_all[i].sizes]
+    bw = [gpu_multi_all[i].sizes[j] * gpu_multi_all[i].active_procs / gpu_multi_all[i].times[j] for j in range(len(gpu_multi_all[i].sizes))]
+    plt.line_plot(bw, sizes, label = "%d Active Procs"%gpu_multi_all[i].active_procs)
+for i in range(len(ccl_multi_all)):
+    if ccl_multi_all[i].active_procs != 1:
+        continue
+    sizes = [s * ccl_multi_all[i].active_procs for s in ccl_multi_all[i].sizes]
+    bw = [ccl_multi_all[i].sizes[j] * ccl_multi_all[i].active_procs / ccl_multi_all[i].times[j] for j in range(len(ccl_multi_all[i].sizes))]
+    plt.line_plot(bw, sizes, label = "CCL")
+plt.add_anchored_legend(ncol=3)
+plt.add_labels("Message Size Per GPU (Bytes)", "Bandwidth (Bytes Per Second)")
+plt.set_scale('log', 'log')
+plt.save_plot("gpu_bw_allgpusactive_pergpu_plus_ccl.pdf")
 
 #####################################
 ### CPU/GPU Bandwidth Comparisons ###
