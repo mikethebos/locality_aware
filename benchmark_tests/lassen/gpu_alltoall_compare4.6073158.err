@@ -1,0 +1,419 @@
+
+Lmod is automatically replacing "clang/ibm-16.0.6-cuda-11.2.0-gcc-8.3.1" with
+"gcc/8.3.1".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) spectrum-mpi/rolling-release
+
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '-EOMP_NUM_THREADS=10', may prevent LLNL-specific error detection
+         If option '-EOMP_NUM_THREADS=10' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '-EOMP_NUM_THREADS=10', may prevent LLNL-specific error detection
+         If option '-EOMP_NUM_THREADS=10' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+[lassen95:35532] *** An error occurred in MPI_Win_sync
+[lassen95:35532] *** reported by process [3087233017,2]
+[lassen95:35532] *** on win pami window 8
+[lassen95:35532] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen95:35532] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen95:35532] ***    and potentially your MPI job)
+[lassen95:35534] *** An error occurred in MPI_Win_sync
+[lassen95:35534] *** reported by process [3087233017,4]
+[lassen95:35534] *** on win pami window 8
+[lassen95:35534] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen95:35534] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen95:35534] ***    and potentially your MPI job)
+[lassen95:35536] *** An error occurred in MPI_Win_sync
+[lassen95:35536] *** reported by process [3087233017,6]
+[lassen95:35536] *** on win pami window 8
+[lassen95:35536] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen95:35536] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen95:35536] ***    and potentially your MPI job)
+[lassen95:35530] *** An error occurred in MPI_Win_sync
+[lassen95:35530] *** reported by process [3087233017,0]
+[lassen95:35530] *** on win pami window 8
+[lassen95:35530] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen95:35530] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen95:35530] ***    and potentially your MPI job)
+[lassen283:53423] *** An error occurred in MPI_Win_sync
+[lassen283:53423] *** reported by process [3087233017,20]
+[lassen283:53423] *** on win pami window 8
+[lassen283:53423] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen283:53423] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen283:53423] ***    and potentially your MPI job)
+[lassen283:53425] *** An error occurred in MPI_Win_sync
+[lassen283:53425] *** reported by process [3087233017,22]
+[lassen283:53425] *** on win pami window 8
+[lassen283:53425] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen283:53425] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen283:53425] ***    and potentially your MPI job)
+[lassen283:53419] *** An error occurred in MPI_Win_sync
+[lassen283:53419] *** reported by process [3087233017,16]
+[lassen283:53419] *** on win pami window 8
+[lassen283:53419] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen283:53419] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen283:53419] ***    and potentially your MPI job)
+[lassen283:53421] *** An error occurred in MPI_Win_sync
+[lassen283:53421] *** reported by process [3087233017,18]
+[lassen283:53421] *** on win pami window 8
+[lassen283:53421] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen283:53421] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen283:53421] ***    and potentially your MPI job)
+[lassen282:32775] *** An error occurred in MPI_Win_sync
+[lassen282:32775] *** reported by process [3087233017,12]
+[lassen282:32775] *** on win pami window 8
+[lassen282:32775] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen282:32775] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen282:32775] ***    and potentially your MPI job)
+[lassen437:115576] *** An error occurred in MPI_Win_sync
+[lassen437:115576] *** reported by process [3087233017,28]
+[lassen437:115576] *** on win pami window 8
+[lassen437:115576] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen437:115576] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen437:115576] ***    and potentially your MPI job)
+[lassen282:32771] *** An error occurred in MPI_Win_sync
+[lassen282:32771] *** reported by process [3087233017,8]
+[lassen282:32771] *** on win pami window 8
+[lassen282:32771] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen282:32771] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen282:32771] ***    and potentially your MPI job)
+[lassen437:115572] *** An error occurred in MPI_Win_sync
+[lassen437:115572] *** reported by process [3087233017,24]
+[lassen437:115572] *** on win pami window 8
+[lassen437:115572] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen437:115572] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen437:115572] ***    and potentially your MPI job)
+[lassen282:32773] *** An error occurred in MPI_Win_sync
+[lassen282:32773] *** reported by process [3087233017,10]
+[lassen282:32773] *** on win pami window 8
+[lassen282:32773] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen282:32773] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen282:32773] ***    and potentially your MPI job)
+[lassen437:115574] *** An error occurred in MPI_Win_sync
+[lassen437:115574] *** reported by process [3087233017,26]
+[lassen437:115574] *** on win pami window 8
+[lassen437:115574] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen437:115574] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen437:115574] ***    and potentially your MPI job)
+[lassen282:32777] *** An error occurred in MPI_Win_sync
+[lassen282:32777] *** reported by process [3087233017,14]
+[lassen282:32777] *** on win pami window 8
+[lassen282:32777] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen282:32777] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen282:32777] ***    and potentially your MPI job)
+[lassen437:115578] *** An error occurred in MPI_Win_sync
+[lassen437:115578] *** reported by process [3087233017,30]
+[lassen437:115578] *** on win pami window 8
+[lassen437:115578] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen437:115578] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen437:115578] ***    and potentially your MPI job)
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+[lassen95:35644] *** An error occurred in MPI_Win_sync
+[lassen95:35644] *** reported by process [3376878207,0]
+[lassen95:35644] *** on win pami window 8
+[lassen95:35644] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen95:35644] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen95:35644] ***    and potentially your MPI job)
+[lassen95:35648] *** An error occurred in MPI_Win_sync
+[lassen95:35648] *** reported by process [3376878207,4]
+[lassen95:35648] *** on win pami window 8
+[lassen95:35648] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen95:35648] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen95:35648] ***    and potentially your MPI job)
+[lassen95:35676] *** An error occurred in MPI_Win_sync
+[lassen95:35676] *** reported by process [3376878207,12]
+[lassen95:35676] *** on win pami window 8
+[lassen95:35676] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen95:35676] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen95:35676] ***    and potentially your MPI job)
+[lassen95:35652] *** An error occurred in MPI_Win_sync
+[lassen95:35652] *** reported by process [3376878207,8]
+[lassen95:35652] *** on win pami window 8
+[lassen95:35652] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen95:35652] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen95:35652] ***    and potentially your MPI job)
+[lassen283:53505] *** An error occurred in MPI_Win_sync
+[lassen283:53505] *** reported by process [3376878207,32]
+[lassen283:53505] *** on win pami window 8
+[lassen283:53505] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen283:53505] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen283:53505] ***    and potentially your MPI job)
+[lassen283:53509] *** An error occurred in MPI_Win_sync
+[lassen283:53509] *** reported by process [3376878207,36]
+[lassen283:53509] *** on win pami window 8
+[lassen283:53509] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen283:53509] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen283:53509] ***    and potentially your MPI job)
+[lassen437:115661] *** An error occurred in MPI_Win_sync
+[lassen437:115661] *** reported by process [3376878207,52]
+[lassen437:115661] *** on win pami window 8
+[lassen437:115661] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen437:115661] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen437:115661] ***    and potentially your MPI job)
+[lassen437:115665] *** An error occurred in MPI_Win_sync
+[lassen437:115665] *** reported by process [3376878207,56]
+[lassen437:115665] *** on win pami window 8
+[lassen437:115665] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen437:115665] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen437:115665] ***    and potentially your MPI job)
+[lassen283:53513] *** An error occurred in MPI_Win_sync
+[lassen283:53513] *** reported by process [3376878207,40]
+[lassen283:53513] *** on win pami window 8
+[lassen283:53513] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen283:53513] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen283:53513] ***    and potentially your MPI job)
+[lassen282:32866] *** An error occurred in MPI_Win_sync
+[lassen282:32866] *** reported by process [3376878207,24]
+[lassen282:32866] *** on win pami window 8
+[lassen282:32866] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen282:32866] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen282:32866] ***    and potentially your MPI job)
+[lassen437:115669] *** An error occurred in MPI_Win_sync
+[lassen437:115669] *** reported by process [3376878207,60]
+[lassen437:115669] *** on win pami window 8
+[lassen437:115669] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen437:115669] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen437:115669] ***    and potentially your MPI job)
+[lassen283:53517] *** An error occurred in MPI_Win_sync
+[lassen283:53517] *** reported by process [3376878207,44]
+[lassen283:53517] *** on win pami window 8
+[lassen283:53517] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen283:53517] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen283:53517] ***    and potentially your MPI job)
+[lassen282:32870] *** An error occurred in MPI_Win_sync
+[lassen282:32870] *** reported by process [3376878207,28]
+[lassen282:32870] *** on win pami window 8
+[lassen282:32870] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen282:32870] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen282:32870] ***    and potentially your MPI job)
+[lassen282:32858] *** An error occurred in MPI_Win_sync
+[lassen282:32858] *** reported by process [3376878207,16]
+[lassen282:32858] *** on win pami window 8
+[lassen282:32858] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen282:32858] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen282:32858] ***    and potentially your MPI job)
+[lassen437:115657] *** An error occurred in MPI_Win_sync
+[lassen437:115657] *** reported by process [3376878207,48]
+[lassen437:115657] *** on win pami window 8
+[lassen437:115657] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen437:115657] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen437:115657] ***    and potentially your MPI job)
+[lassen282:32862] *** An error occurred in MPI_Win_sync
+[lassen282:32862] *** reported by process [3376878207,20]
+[lassen282:32862] *** on win pami window 8
+[lassen282:32862] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen282:32862] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen282:32862] ***    and potentially your MPI job)
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+[lassen95:35833] *** An error occurred in MPI_Win_sync
+[lassen95:35833] *** reported by process [3682547440,16]
+[lassen95:35833] *** on win pami window 8
+[lassen95:35833] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen95:35833] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen95:35833] ***    and potentially your MPI job)
+[lassen95:35824] *** An error occurred in MPI_Win_sync
+[lassen95:35824] *** reported by process [3682547440,8]
+[lassen95:35824] *** on win pami window 8
+[lassen95:35824] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen95:35824] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen95:35824] ***    and potentially your MPI job)
+[lassen95:35848] *** An error occurred in MPI_Win_sync
+[lassen95:35848] *** reported by process [3682547440,24]
+[lassen95:35848] *** on win pami window 8
+[lassen95:35848] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen95:35848] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen95:35848] ***    and potentially your MPI job)
+[lassen95:35816] *** An error occurred in MPI_Win_sync
+[lassen95:35816] *** reported by process [3682547440,0]
+[lassen95:35816] *** on win pami window 8
+[lassen95:35816] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen95:35816] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen95:35816] ***    and potentially your MPI job)
+[lassen283:53648] *** An error occurred in MPI_Win_sync
+[lassen283:53648] *** reported by process [3682547440,64]
+[lassen283:53648] *** on win pami window 8
+[lassen283:53648] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen283:53648] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen283:53648] ***    and potentially your MPI job)
+[lassen282:32999] *** An error occurred in MPI_Win_sync
+[lassen282:32999] *** reported by process [3682547440,32]
+[lassen282:32999] *** on win pami window 8
+[lassen282:32999] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen282:32999] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen282:32999] ***    and potentially your MPI job)
+[lassen283:53664] *** An error occurred in MPI_Win_sync
+[lassen283:53664] *** reported by process [3682547440,80]
+[lassen283:53664] *** on win pami window 8
+[lassen283:53664] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen283:53664] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen283:53664] ***    and potentially your MPI job)
+[lassen437:115814] *** An error occurred in MPI_Win_sync
+[lassen437:115814] *** reported by process [3682547440,112]
+[lassen437:115814] *** on win pami window 8
+[lassen437:115814] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen437:115814] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen437:115814] ***    and potentially your MPI job)
+[lassen283:53656] *** An error occurred in MPI_Win_sync
+[lassen283:53656] *** reported by process [3682547440,72]
+[lassen283:53656] *** on win pami window 8
+[lassen283:53656] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen283:53656] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen283:53656] ***    and potentially your MPI job)
+[lassen282:33015] *** An error occurred in MPI_Win_sync
+[lassen282:33015] *** reported by process [3682547440,48]
+[lassen282:33015] *** on win pami window 8
+[lassen282:33015] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen282:33015] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen282:33015] ***    and potentially your MPI job)
+[lassen282:33007] *** An error occurred in MPI_Win_sync
+[lassen282:33007] *** reported by process [3682547440,40]
+[lassen282:33007] *** on win pami window 8
+[lassen282:33007] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen282:33007] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen282:33007] ***    and potentially your MPI job)
+[lassen283:53672] *** An error occurred in MPI_Win_sync
+[lassen283:53672] *** reported by process [3682547440,88]
+[lassen283:53672] *** on win pami window 8
+[lassen283:53672] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen283:53672] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen283:53672] ***    and potentially your MPI job)
+[lassen437:115798] *** An error occurred in MPI_Win_sync
+[lassen437:115798] *** reported by process [3682547440,96]
+[lassen437:115798] *** on win pami window 8
+[lassen437:115798] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen437:115798] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen437:115798] ***    and potentially your MPI job)
+[lassen282:33029] *** An error occurred in MPI_Win_sync
+[lassen282:33029] *** reported by process [3682547440,56]
+[lassen282:33029] *** on win pami window 8
+[lassen282:33029] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen282:33029] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen282:33029] ***    and potentially your MPI job)
+[lassen437:115806] *** An error occurred in MPI_Win_sync
+[lassen437:115806] *** reported by process [3682547440,104]
+[lassen437:115806] *** on win pami window 8
+[lassen437:115806] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen437:115806] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen437:115806] ***    and potentially your MPI job)
+[lassen437:115827] *** An error occurred in MPI_Win_sync
+[lassen437:115827] *** reported by process [3682547440,120]
+[lassen437:115827] *** on win pami window 8
+[lassen437:115827] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen437:115827] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen437:115827] ***    and potentially your MPI job)
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+[lassen95:36116] *** An error occurred in MPI_Win_sync
+[lassen95:36116] *** reported by process [3972618628,0]
+[lassen95:36116] *** on win pami window 8
+[lassen95:36116] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen95:36116] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen95:36116] ***    and potentially your MPI job)
+[lassen95:36126] *** An error occurred in MPI_Win_sync
+[lassen95:36126] *** reported by process [3972618628,10]
+[lassen95:36126] *** on win pami window 8
+[lassen95:36126] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen95:36126] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen95:36126] ***    and potentially your MPI job)
+[lassen95:36136] *** An error occurred in MPI_Win_sync
+[lassen95:36136] *** reported by process [3972618628,20]
+[lassen95:36136] *** on win pami window 8
+[lassen95:36136] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen95:36136] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen95:36136] ***    and potentially your MPI job)
+[lassen95:36163] *** An error occurred in MPI_Win_sync
+[lassen95:36163] *** reported by process [3972618628,30]
+[lassen95:36163] *** on win pami window 8
+[lassen95:36163] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen95:36163] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen95:36163] ***    and potentially your MPI job)
+[lassen283:53962] *** An error occurred in MPI_Win_sync
+[lassen283:53962] *** reported by process [3972618628,110]
+[lassen283:53962] *** on win pami window 8
+[lassen283:53962] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen283:53962] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen283:53962] ***    and potentially your MPI job)
+[lassen283:53919] *** An error occurred in MPI_Win_sync
+[lassen283:53919] *** reported by process [3972618628,80]
+[lassen283:53919] *** on win pami window 8
+[lassen283:53919] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen283:53919] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen283:53919] ***    and potentially your MPI job)
+[lassen282:33280] *** An error occurred in MPI_Win_sync
+[lassen282:33280] *** reported by process [3972618628,50]
+[lassen282:33280] *** on win pami window 8
+[lassen282:33280] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen282:33280] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen282:33280] ***    and potentially your MPI job)
+[lassen437:116069] *** An error occurred in MPI_Win_sync
+[lassen437:116069] *** reported by process [3972618628,120]
+[lassen437:116069] *** on win pami window 8
+[lassen437:116069] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen437:116069] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen437:116069] ***    and potentially your MPI job)
+[lassen283:53929] *** An error occurred in MPI_Win_sync
+[lassen283:53929] *** reported by process [3972618628,90]
+[lassen283:53929] *** on win pami window 8
+[lassen283:53929] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen283:53929] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen283:53929] ***    and potentially your MPI job)
+[lassen283:53939] *** An error occurred in MPI_Win_sync
+[lassen283:53939] *** reported by process [3972618628,100]
+[lassen283:53939] *** on win pami window 8
+[lassen283:53939] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen283:53939] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen283:53939] ***    and potentially your MPI job)
+[lassen282:33270] *** An error occurred in MPI_Win_sync
+[lassen282:33270] *** reported by process [3972618628,40]
+[lassen282:33270] *** on win pami window 8
+[lassen282:33270] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen282:33270] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen282:33270] ***    and potentially your MPI job)
+[lassen437:116079] *** An error occurred in MPI_Win_sync
+[lassen437:116079] *** reported by process [3972618628,130]
+[lassen437:116079] *** on win pami window 8
+[lassen437:116079] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen437:116079] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen437:116079] ***    and potentially your MPI job)
+[lassen437:116111] *** An error occurred in MPI_Win_sync
+[lassen437:116111] *** reported by process [3972618628,150]
+[lassen437:116111] *** on win pami window 8
+[lassen437:116111] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen437:116111] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen437:116111] ***    and potentially your MPI job)
+[lassen282:33317] *** An error occurred in MPI_Win_sync
+[lassen282:33317] *** reported by process [3972618628,70]
+[lassen282:33317] *** on win pami window 8
+[lassen282:33317] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen282:33317] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen282:33317] ***    and potentially your MPI job)
+[lassen282:33290] *** An error occurred in MPI_Win_sync
+[lassen282:33290] *** reported by process [3972618628,60]
+[lassen282:33290] *** on win pami window 8
+[lassen282:33290] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen282:33290] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen282:33290] ***    and potentially your MPI job)
+[lassen437:116089] *** An error occurred in MPI_Win_sync
+[lassen437:116089] *** reported by process [3972618628,140]
+[lassen437:116089] *** on win pami window 8
+[lassen437:116089] *** MPI_ERR_RMA_SYNC: error executing rma sync
+[lassen437:116089] *** MPI_ERRORS_ARE_FATAL (processes in this win will now abort,
+[lassen437:116089] ***    and potentially your MPI job)

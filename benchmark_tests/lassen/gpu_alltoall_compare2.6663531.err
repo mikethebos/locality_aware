@@ -1,0 +1,72 @@
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '-EOMP_NUM_THREADS=10', may prevent LLNL-specific error detection
+         If option '-EOMP_NUM_THREADS=10' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '-EOMP_NUM_THREADS=10', may prevent LLNL-specific error detection
+         If option '-EOMP_NUM_THREADS=10' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+no_thread_launches: ../../ccmi/executor/Allreduce.h:569: void CCMI::Executor::Allreduce<T_Conn>::notifyRecv(void*, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Conn = CCMI::ConnectionManager::CommSeqConnMgr; libcoll_event_function = void (*)(void*, void*, libcoll_result_t); libcoll_context_t = void*]: Assertion `cdata->_phase >= (unsigned)_scache.getStartPhase()' failed.
+[lassen554:62355] *** Process received signal ***
+[lassen554:62355] Signal: Aborted (6)
+[lassen554:62355] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/allreduce/AsyncAllreduceT.h:369: LibColl::Interfaces::Composite* CCMI::Protocols::Allreduce::AsyncAllreduceFactoryT<T_Composite, T_Conn, T_reduce_type, getKey>::generate(libcoll_geometry_t, void*) [with T_Composite = CCMI::Protocols::Allreduce::HybridAsyncReduceT<CCMI::ConnectionManager::CommSeqConnMgr, CCMI::Executor::HybridReduceT<CCMI::ConnectionManager::CommSeqConnMgr> >; T_Conn = CCMI::ConnectionManager::CommSeqConnMgr; T_reduce_type = libcoll_reduce_t; unsigned int (* getKey)(unsigned int, unsigned int, unsigned int, void**) = LibColl::Adapter::getKey; libcoll_geometry_t = void*]: Assertion `co->getFlags() & EarlyArrival' failed.
+[lassen554:62358] *** Process received signal ***
+[lassen554:62358] Signal: Aborted (6)
+[lassen554:62358] Signal code:  (-6)
+no_thread_launches: ../../ccmi/executor/Allreduce.h:569: void CCMI::Executor::Allreduce<T_Conn>::notifyRecv(void*, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Conn = CCMI::ConnectionManager::CommSeqConnMgr; libcoll_event_function = void (*)(void*, void*, libcoll_result_t); libcoll_context_t = void*]: Assertion `cdata->_phase >= (unsigned)_scache.getStartPhase()' failed.
+[lassen58:36313] *** Process received signal ***
+[lassen58:36313] Signal: Aborted (6)
+[lassen58:36313] Signal code:  (-6)
+no_thread_launches: ../../ccmi/executor/HybridReduce.h:194: void CCMI::Executor::HybridReduceT<T>::notifyRecv(void*, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T = CCMI::ConnectionManager::CommSeqConnMgr; libcoll_event_function = void (*)(void*, void*, libcoll_result_t); libcoll_context_t = void*]: Assertion `this->_epdomain->endpoint() == _root' failed.
+[lassen58:36314] *** Process received signal ***
+[lassen58:36314] Signal: Aborted (6)
+[lassen58:36314] Signal code:  (-6)
+<< Rank 4: Generating lwcore_cpu.6663531_3.4 on lassen554 Thu Jan  9 14:46:03 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 7: Generating lwcore_cpu.6663531_3.7 on lassen554 Thu Jan  9 14:46:03 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 0: Generating lwcore_cpu.6663531_3.0 on lassen58 Thu Jan  9 14:46:03 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 1: Generating lwcore_cpu.6663531_3.1 on lassen58 Thu Jan  9 14:46:03 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 1:  Generated lwcore_cpu.6663531_3.1 on lassen58 Thu Jan  9 14:46:05 PST 2025 in 2 secs >>
+<< Rank 0:  Generated lwcore_cpu.6663531_3.0 on lassen58 Thu Jan  9 14:46:05 PST 2025 in 2 secs >>
+<< Rank 4:  Generated lwcore_cpu.6663531_3.4 on lassen554 Thu Jan  9 14:46:05 PST 2025 in 2 secs >>
+<< Rank 7:  Generated lwcore_cpu.6663531_3.7 on lassen554 Thu Jan  9 14:46:05 PST 2025 in 2 secs >>
+<< Rank 1: Waiting 60 secs before aborting task on lassen58 Thu Jan  9 14:46:05 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 0: Waiting 60 secs before aborting task on lassen58 Thu Jan  9 14:46:05 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 4: Waiting 60 secs before aborting task on lassen554 Thu Jan  9 14:46:05 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 7: Waiting 60 secs before aborting task on lassen554 Thu Jan  9 14:46:05 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 0:  Waited 60 secs -> now aborting task on lassen58 Thu Jan  9 14:47:05 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 1:  Waited 60 secs -> now aborting task on lassen58 Thu Jan  9 14:47:05 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen58:36313] -----------------------
+[lassen58:36313] -----------------------
+[lassen58:36313] *** End of error message ***
+[lassen58:36314] -----------------------
+[lassen58:36314] -----------------------
+[lassen58:36314] *** End of error message ***
+<< Rank 4:  Waited 60 secs -> now aborting task on lassen554 Thu Jan  9 14:47:05 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 7:  Waited 60 secs -> now aborting task on lassen554 Thu Jan  9 14:47:05 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen554:62355] -----------------------
+[lassen554:62355] -----------------------
+[lassen554:62358] -----------------------
+[lassen554:62358] -----------------------
+[lassen554:62358] *** End of error message ***
+[lassen554:62355] *** End of error message ***
+ERROR:  One or more process (first noticed rank 0) terminated with signal 6
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 

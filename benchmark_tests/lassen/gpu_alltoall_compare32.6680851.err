@@ -1,0 +1,771 @@
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '-EOMP_NUM_THREADS=2', may prevent LLNL-specific error detection
+         If option '-EOMP_NUM_THREADS=2' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '-EOMP_NUM_THREADS=2', may prevent LLNL-specific error detection
+         If option '-EOMP_NUM_THREADS=2' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen177:43735] *** Process received signal ***
+[lassen177:43735] Signal: Aborted (6)
+[lassen177:43735] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen409:86947] *** Process received signal ***
+[lassen409:86947] Signal: Aborted (6)
+[lassen409:86947] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen189:87338] *** Process received signal ***
+[lassen189:87338] Signal: Aborted (6)
+[lassen189:87338] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen332:17960] *** Process received signal ***
+[lassen332:17960] Signal: Aborted (6)
+[lassen332:17960] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen651:10607] *** Process received signal ***
+[lassen651:10607] Signal: Aborted (6)
+[lassen651:10607] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen176:76577] *** Process received signal ***
+[lassen176:76577] Signal: Aborted (6)
+[lassen176:76577] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen664:68711] *** Process received signal ***
+[lassen664:68711] Signal: Aborted (6)
+[lassen664:68711] Signal code:  (-6)
+<< Rank 65: Generating lwcore_cpu.6680851_3.65 on lassen332 Sat Jan 11 15:38:33 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 44: Generating lwcore_cpu.6680851_3.44 on lassen189 Sat Jan 11 15:38:33 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 25: Generating lwcore_cpu.6680851_3.25 on lassen176 Sat Jan 11 15:38:33 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 30: Generating lwcore_cpu.6680851_3.30 on lassen177 Sat Jan 11 15:38:33 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 96: Generating lwcore_cpu.6680851_3.96 on lassen651 Sat Jan 11 15:38:33 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 116: Generating lwcore_cpu.6680851_3.116 on lassen664 Sat Jan 11 15:38:33 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 76: Generating lwcore_cpu.6680851_3.76 on lassen409 Sat Jan 11 15:38:33 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 25:  Generated lwcore_cpu.6680851_3.25 on lassen176 Sat Jan 11 15:38:34 PST 2025 in 1 secs >>
+<< Rank 96:  Generated lwcore_cpu.6680851_3.96 on lassen651 Sat Jan 11 15:38:34 PST 2025 in 1 secs >>
+<< Rank 65:  Generated lwcore_cpu.6680851_3.65 on lassen332 Sat Jan 11 15:38:34 PST 2025 in 1 secs >>
+<< Rank 116:  Generated lwcore_cpu.6680851_3.116 on lassen664 Sat Jan 11 15:38:34 PST 2025 in 1 secs >>
+<< Rank 25: Waiting 60 secs before aborting task on lassen176 Sat Jan 11 15:38:34 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 96: Waiting 60 secs before aborting task on lassen651 Sat Jan 11 15:38:34 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 65: Waiting 60 secs before aborting task on lassen332 Sat Jan 11 15:38:34 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 116: Waiting 60 secs before aborting task on lassen664 Sat Jan 11 15:38:34 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 76:  Generated lwcore_cpu.6680851_3.76 on lassen409 Sat Jan 11 15:38:34 PST 2025 in 1 secs >>
+<< Rank 44:  Generated lwcore_cpu.6680851_3.44 on lassen189 Sat Jan 11 15:38:34 PST 2025 in 1 secs >>
+<< Rank 30:  Generated lwcore_cpu.6680851_3.30 on lassen177 Sat Jan 11 15:38:34 PST 2025 in 1 secs >>
+<< Rank 76: Waiting 60 secs before aborting task on lassen409 Sat Jan 11 15:38:34 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 44: Waiting 60 secs before aborting task on lassen189 Sat Jan 11 15:38:34 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 30: Waiting 60 secs before aborting task on lassen177 Sat Jan 11 15:38:34 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 25:  Waited 60 secs -> now aborting task on lassen176 Sat Jan 11 15:39:34 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen176:76577] -----------------------
+[lassen176:76577] -----------------------
+[lassen176:76577] *** End of error message ***
+<< Rank 96:  Waited 60 secs -> now aborting task on lassen651 Sat Jan 11 15:39:34 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen651:10607] -----------------------
+[lassen651:10607] -----------------------
+[lassen651:10607] *** End of error message ***
+<< Rank 65:  Waited 60 secs -> now aborting task on lassen332 Sat Jan 11 15:39:34 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen332:17960] -----------------------
+[lassen332:17960] -----------------------
+[lassen332:17960] *** End of error message ***
+<< Rank 116:  Waited 60 secs -> now aborting task on lassen664 Sat Jan 11 15:39:34 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen664:68711] -----------------------
+[lassen664:68711] -----------------------
+[lassen664:68711] *** End of error message ***
+<< Rank 76:  Waited 60 secs -> now aborting task on lassen409 Sat Jan 11 15:39:34 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen409:86947] -----------------------
+[lassen409:86947] -----------------------
+[lassen409:86947] *** End of error message ***
+<< Rank 44:  Waited 60 secs -> now aborting task on lassen189 Sat Jan 11 15:39:34 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen189:87338] -----------------------
+[lassen189:87338] -----------------------
+[lassen189:87338] *** End of error message ***
+<< Rank 30:  Waited 60 secs -> now aborting task on lassen177 Sat Jan 11 15:39:34 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen177:43735] -----------------------
+[lassen177:43735] -----------------------
+[lassen177:43735] *** End of error message ***
+ERROR:  One or more process (first noticed rank 116) terminated with signal 6
+Warning: jsrun wrapper does not handle unexpected option '-EOMP_NUM_THREADS=4', may prevent LLNL-specific error detection
+         If option '-EOMP_NUM_THREADS=4' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '-EOMP_NUM_THREADS=4', may prevent LLNL-specific error detection
+         If option '-EOMP_NUM_THREADS=4' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen409:88487] *** Process received signal ***
+[lassen409:88487] Signal: Aborted (6)
+[lassen409:88487] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen177:45136] *** Process received signal ***
+[lassen177:45136] Signal: Aborted (6)
+[lassen177:45136] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen164:26087] *** Process received signal ***
+[lassen164:26087] Signal: Aborted (6)
+[lassen164:26087] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen494:43020] *** Process received signal ***
+[lassen494:43020] Signal: Aborted (6)
+[lassen494:43020] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen252:06105] *** Process received signal ***
+[lassen252:06105] Signal: Aborted (6)
+[lassen252:06105] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen656:37678] *** Process received signal ***
+[lassen656:37678] Signal: Aborted (6)
+[lassen656:37678] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen310:157781] *** Process received signal ***
+[lassen310:157781] Signal: Aborted (6)
+[lassen310:157781] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen340:39801] *** Process received signal ***
+[lassen340:39801] Signal: Aborted (6)
+[lassen340:39801] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen338:65989] *** Process received signal ***
+[lassen338:65989] Signal: Aborted (6)
+[lassen338:65989] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen164:26086] *** Process received signal ***
+[lassen164:26086] Signal: Aborted (6)
+[lassen164:26086] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen664:70117] *** Process received signal ***
+[lassen664:70117] Signal: Aborted (6)
+[lassen664:70117] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen176:77978] *** Process received signal ***
+[lassen176:77978] Signal: Aborted (6)
+[lassen176:77978] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen311:150016] *** Process received signal ***
+[lassen311:150016] Signal: Aborted (6)
+[lassen311:150016] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen664:70114] *** Process received signal ***
+[lassen664:70114] Signal: Aborted (6)
+[lassen664:70114] Signal code:  (-6)
+<< Rank 28: Generating lwcore_cpu.6680851_5.28 on lassen177 Sat Jan 11 15:40:53 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 25: Generating lwcore_cpu.6680851_5.25 on lassen176 Sat Jan 11 15:40:53 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 76: Generating lwcore_cpu.6680851_5.76 on lassen409 Sat Jan 11 15:40:53 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 118: Generating lwcore_cpu.6680851_5.118 on lassen664 Sat Jan 11 15:40:53 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 116: Generating lwcore_cpu.6680851_5.116 on lassen664 Sat Jan 11 15:40:53 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 69: Generating lwcore_cpu.6680851_5.69 on lassen338 Sat Jan 11 15:40:53 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 84: Generating lwcore_cpu.6680851_5.84 on lassen494 Sat Jan 11 15:40:53 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 73: Generating lwcore_cpu.6680851_5.73 on lassen340 Sat Jan 11 15:40:53 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 48: Generating lwcore_cpu.6680851_5.48 on lassen252 Sat Jan 11 15:40:53 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 56: Generating lwcore_cpu.6680851_5.56 on lassen311 Sat Jan 11 15:40:53 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 9: Generating lwcore_cpu.6680851_5.9 on lassen164 Sat Jan 11 15:40:53 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 8: Generating lwcore_cpu.6680851_5.8 on lassen164 Sat Jan 11 15:40:53 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 53: Generating lwcore_cpu.6680851_5.53 on lassen310 Sat Jan 11 15:40:53 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 102: Generating lwcore_cpu.6680851_5.102 on lassen656 Sat Jan 11 15:40:53 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 76:  Generated lwcore_cpu.6680851_5.76 on lassen409 Sat Jan 11 15:40:54 PST 2025 in 1 secs >>
+<< Rank 25:  Generated lwcore_cpu.6680851_5.25 on lassen176 Sat Jan 11 15:40:54 PST 2025 in 1 secs >>
+<< Rank 76: Waiting 60 secs before aborting task on lassen409 Sat Jan 11 15:40:54 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 28:  Generated lwcore_cpu.6680851_5.28 on lassen177 Sat Jan 11 15:40:54 PST 2025 in 1 secs >>
+<< Rank 25: Waiting 60 secs before aborting task on lassen176 Sat Jan 11 15:40:54 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 116:  Generated lwcore_cpu.6680851_5.116 on lassen664 Sat Jan 11 15:40:54 PST 2025 in 1 secs >>
+<< Rank 118:  Generated lwcore_cpu.6680851_5.118 on lassen664 Sat Jan 11 15:40:54 PST 2025 in 1 secs >>
+<< Rank 28: Waiting 60 secs before aborting task on lassen177 Sat Jan 11 15:40:54 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 116: Waiting 60 secs before aborting task on lassen664 Sat Jan 11 15:40:54 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 118: Waiting 60 secs before aborting task on lassen664 Sat Jan 11 15:40:54 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 84:  Generated lwcore_cpu.6680851_5.84 on lassen494 Sat Jan 11 15:40:54 PST 2025 in 1 secs >>
+<< Rank 48:  Generated lwcore_cpu.6680851_5.48 on lassen252 Sat Jan 11 15:40:54 PST 2025 in 1 secs >>
+<< Rank 69:  Generated lwcore_cpu.6680851_5.69 on lassen338 Sat Jan 11 15:40:54 PST 2025 in 1 secs >>
+<< Rank 84: Waiting 60 secs before aborting task on lassen494 Sat Jan 11 15:40:54 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 9:  Generated lwcore_cpu.6680851_5.9 on lassen164 Sat Jan 11 15:40:54 PST 2025 in 1 secs >>
+<< Rank 56:  Generated lwcore_cpu.6680851_5.56 on lassen311 Sat Jan 11 15:40:54 PST 2025 in 1 secs >>
+<< Rank 48: Waiting 60 secs before aborting task on lassen252 Sat Jan 11 15:40:54 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 8:  Generated lwcore_cpu.6680851_5.8 on lassen164 Sat Jan 11 15:40:54 PST 2025 in 1 secs >>
+<< Rank 69: Waiting 60 secs before aborting task on lassen338 Sat Jan 11 15:40:54 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 73:  Generated lwcore_cpu.6680851_5.73 on lassen340 Sat Jan 11 15:40:54 PST 2025 in 1 secs >>
+<< Rank 9: Waiting 60 secs before aborting task on lassen164 Sat Jan 11 15:40:54 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 56: Waiting 60 secs before aborting task on lassen311 Sat Jan 11 15:40:54 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 8: Waiting 60 secs before aborting task on lassen164 Sat Jan 11 15:40:54 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 73: Waiting 60 secs before aborting task on lassen340 Sat Jan 11 15:40:54 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 53:  Generated lwcore_cpu.6680851_5.53 on lassen310 Sat Jan 11 15:40:55 PST 2025 in 2 secs >>
+<< Rank 102:  Generated lwcore_cpu.6680851_5.102 on lassen656 Sat Jan 11 15:40:55 PST 2025 in 2 secs >>
+<< Rank 53: Waiting 60 secs before aborting task on lassen310 Sat Jan 11 15:40:55 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 102: Waiting 60 secs before aborting task on lassen656 Sat Jan 11 15:40:55 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 76:  Waited 60 secs -> now aborting task on lassen409 Sat Jan 11 15:41:54 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen409:88487] -----------------------
+[lassen409:88487] -----------------------
+[lassen409:88487] *** End of error message ***
+<< Rank 25:  Waited 60 secs -> now aborting task on lassen176 Sat Jan 11 15:41:54 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen176:77978] -----------------------
+[lassen176:77978] -----------------------
+[lassen176:77978] *** End of error message ***
+<< Rank 28:  Waited 60 secs -> now aborting task on lassen177 Sat Jan 11 15:41:54 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen177:45136] -----------------------
+[lassen177:45136] -----------------------
+[lassen177:45136] *** End of error message ***
+<< Rank 118:  Waited 60 secs -> now aborting task on lassen664 Sat Jan 11 15:41:54 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 116:  Waited 60 secs -> now aborting task on lassen664 Sat Jan 11 15:41:54 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen664:70114] -----------------------
+[lassen664:70114] -----------------------
+[lassen664:70114] *** End of error message ***
+[lassen664:70117] -----------------------
+[lassen664:70117] -----------------------
+[lassen664:70117] *** End of error message ***
+<< Rank 84:  Waited 60 secs -> now aborting task on lassen494 Sat Jan 11 15:41:54 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen494:43020] -----------------------
+[lassen494:43020] -----------------------
+[lassen494:43020] *** End of error message ***
+<< Rank 48:  Waited 60 secs -> now aborting task on lassen252 Sat Jan 11 15:41:54 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen252:06105] -----------------------
+[lassen252:06105] -----------------------
+[lassen252:06105] *** End of error message ***
+<< Rank 69:  Waited 60 secs -> now aborting task on lassen338 Sat Jan 11 15:41:54 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen338:65989] -----------------------
+[lassen338:65989] -----------------------
+[lassen338:65989] *** End of error message ***
+<< Rank 56:  Waited 60 secs -> now aborting task on lassen311 Sat Jan 11 15:41:54 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen311:150016] -----------------------
+[lassen311:150016] -----------------------
+[lassen311:150016] *** End of error message ***
+<< Rank 8:  Waited 60 secs -> now aborting task on lassen164 Sat Jan 11 15:41:54 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 9:  Waited 60 secs -> now aborting task on lassen164 Sat Jan 11 15:41:54 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen164:26087] -----------------------
+[lassen164:26087] -----------------------
+[lassen164:26087] *** End of error message ***
+[lassen164:26086] -----------------------
+[lassen164:26086] -----------------------
+[lassen164:26086] *** End of error message ***
+<< Rank 73:  Waited 60 secs -> now aborting task on lassen340 Sat Jan 11 15:41:54 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen340:39801] -----------------------
+[lassen340:39801] -----------------------
+[lassen340:39801] *** End of error message ***
+<< Rank 53:  Waited 60 secs -> now aborting task on lassen310 Sat Jan 11 15:41:55 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen310:157781] -----------------------
+[lassen310:157781] -----------------------
+[lassen310:157781] *** End of error message ***
+<< Rank 102:  Waited 60 secs -> now aborting task on lassen656 Sat Jan 11 15:41:55 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen656:37678] -----------------------
+[lassen656:37678] -----------------------
+[lassen656:37678] *** End of error message ***
+ERROR:  One or more process (first noticed rank 116) terminated with signal 6
+Warning: jsrun wrapper does not handle unexpected option '-EOMP_NUM_THREADS=8', may prevent LLNL-specific error detection
+         If option '-EOMP_NUM_THREADS=8' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '-EOMP_NUM_THREADS=8', may prevent LLNL-specific error detection
+         If option '-EOMP_NUM_THREADS=8' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen581:106789] *** Process received signal ***
+[lassen581:106789] Signal: Aborted (6)
+[lassen581:106789] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen409:89892] *** Process received signal ***
+[lassen409:89892] Signal: Aborted (6)
+[lassen409:89892] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen409:89893] *** Process received signal ***
+[lassen409:89893] Signal: Aborted (6)
+[lassen409:89893] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen310:159195] *** Process received signal ***
+[lassen310:159195] Signal: Aborted (6)
+[lassen310:159195] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen409:89894] *** Process received signal ***
+[lassen409:89894] Signal: Aborted (6)
+[lassen409:89894] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen189:90333] *** Process received signal ***
+[lassen189:90333] Signal: Aborted (6)
+[lassen189:90333] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen175:119200] *** Process received signal ***
+[lassen175:119200] Signal: Aborted (6)
+[lassen175:119200] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen171:129949] *** Process received signal ***
+[lassen171:129949] Signal: Aborted (6)
+[lassen171:129949] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen173:114096] *** Process received signal ***
+[lassen173:114096] Signal: Aborted (6)
+[lassen173:114096] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen179:118818] *** Process received signal ***
+[lassen179:118818] Signal: Aborted (6)
+[lassen179:118818] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen651:13550] *** Process received signal ***
+[lassen651:13550] Signal: Aborted (6)
+[lassen651:13550] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen657:64552] *** Process received signal ***
+[lassen657:64552] Signal: Aborted (6)
+[lassen657:64552] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen497:28032] *** Process received signal ***
+[lassen497:28032] Signal: Aborted (6)
+[lassen497:28032] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen252:07643] *** Process received signal ***
+[lassen252:07643] Signal: Aborted (6)
+[lassen252:07643] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen672:51544] *** Process received signal ***
+[lassen672:51544] Signal: Aborted (6)
+[lassen672:51544] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen651:13551] *** Process received signal ***
+[lassen651:13551] Signal: Aborted (6)
+[lassen651:13551] Signal code:  (-6)
+<< Rank 48: Generating lwcore_cpu.6680851_7.48 on lassen252 Sat Jan 11 15:43:13 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 54: Generating lwcore_cpu.6680851_7.54 on lassen310 Sat Jan 11 15:43:13 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 78: Generating lwcore_cpu.6680851_7.78 on lassen409 Sat Jan 11 15:43:13 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 45: Generating lwcore_cpu.6680851_7.45 on lassen189 Sat Jan 11 15:43:13 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 93: Generating lwcore_cpu.6680851_7.93 on lassen581 Sat Jan 11 15:43:13 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 76: Generating lwcore_cpu.6680851_7.76 on lassen409 Sat Jan 11 15:43:13 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 77: Generating lwcore_cpu.6680851_7.77 on lassen409 Sat Jan 11 15:43:13 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 97: Generating lwcore_cpu.6680851_7.97 on lassen651 Sat Jan 11 15:43:13 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 96: Generating lwcore_cpu.6680851_7.96 on lassen651 Sat Jan 11 15:43:13 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 12: Generating lwcore_cpu.6680851_7.12 on lassen171 Sat Jan 11 15:43:13 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 104: Generating lwcore_cpu.6680851_7.104 on lassen657 Sat Jan 11 15:43:13 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 22: Generating lwcore_cpu.6680851_7.22 on lassen175 Sat Jan 11 15:43:13 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 33: Generating lwcore_cpu.6680851_7.33 on lassen179 Sat Jan 11 15:43:13 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 16: Generating lwcore_cpu.6680851_7.16 on lassen173 Sat Jan 11 15:43:13 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 122: Generating lwcore_cpu.6680851_7.122 on lassen672 Sat Jan 11 15:43:13 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 88: Generating lwcore_cpu.6680851_7.88 on lassen497 Sat Jan 11 15:43:13 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 48:  Generated lwcore_cpu.6680851_7.48 on lassen252 Sat Jan 11 15:43:14 PST 2025 in 1 secs >>
+<< Rank 45:  Generated lwcore_cpu.6680851_7.45 on lassen189 Sat Jan 11 15:43:14 PST 2025 in 1 secs >>
+<< Rank 54:  Generated lwcore_cpu.6680851_7.54 on lassen310 Sat Jan 11 15:43:14 PST 2025 in 1 secs >>
+<< Rank 97:  Generated lwcore_cpu.6680851_7.97 on lassen651 Sat Jan 11 15:43:14 PST 2025 in 1 secs >>
+<< Rank 48: Waiting 60 secs before aborting task on lassen252 Sat Jan 11 15:43:14 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 45: Waiting 60 secs before aborting task on lassen189 Sat Jan 11 15:43:14 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 96:  Generated lwcore_cpu.6680851_7.96 on lassen651 Sat Jan 11 15:43:14 PST 2025 in 1 secs >>
+<< Rank 76:  Generated lwcore_cpu.6680851_7.76 on lassen409 Sat Jan 11 15:43:14 PST 2025 in 1 secs >>
+<< Rank 77:  Generated lwcore_cpu.6680851_7.77 on lassen409 Sat Jan 11 15:43:14 PST 2025 in 1 secs >>
+<< Rank 54: Waiting 60 secs before aborting task on lassen310 Sat Jan 11 15:43:14 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 78:  Generated lwcore_cpu.6680851_7.78 on lassen409 Sat Jan 11 15:43:14 PST 2025 in 1 secs >>
+<< Rank 97: Waiting 60 secs before aborting task on lassen651 Sat Jan 11 15:43:14 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 96: Waiting 60 secs before aborting task on lassen651 Sat Jan 11 15:43:14 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 76: Waiting 60 secs before aborting task on lassen409 Sat Jan 11 15:43:14 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 77: Waiting 60 secs before aborting task on lassen409 Sat Jan 11 15:43:14 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 78: Waiting 60 secs before aborting task on lassen409 Sat Jan 11 15:43:14 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 104:  Generated lwcore_cpu.6680851_7.104 on lassen657 Sat Jan 11 15:43:14 PST 2025 in 1 secs >>
+<< Rank 88:  Generated lwcore_cpu.6680851_7.88 on lassen497 Sat Jan 11 15:43:14 PST 2025 in 1 secs >>
+<< Rank 12:  Generated lwcore_cpu.6680851_7.12 on lassen171 Sat Jan 11 15:43:14 PST 2025 in 1 secs >>
+<< Rank 93:  Generated lwcore_cpu.6680851_7.93 on lassen581 Sat Jan 11 15:43:14 PST 2025 in 1 secs >>
+<< Rank 104: Waiting 60 secs before aborting task on lassen657 Sat Jan 11 15:43:14 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 88: Waiting 60 secs before aborting task on lassen497 Sat Jan 11 15:43:14 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 33:  Generated lwcore_cpu.6680851_7.33 on lassen179 Sat Jan 11 15:43:14 PST 2025 in 1 secs >>
+<< Rank 12: Waiting 60 secs before aborting task on lassen171 Sat Jan 11 15:43:14 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 93: Waiting 60 secs before aborting task on lassen581 Sat Jan 11 15:43:14 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 16:  Generated lwcore_cpu.6680851_7.16 on lassen173 Sat Jan 11 15:43:14 PST 2025 in 1 secs >>
+<< Rank 33: Waiting 60 secs before aborting task on lassen179 Sat Jan 11 15:43:14 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 122:  Generated lwcore_cpu.6680851_7.122 on lassen672 Sat Jan 11 15:43:14 PST 2025 in 1 secs >>
+<< Rank 16: Waiting 60 secs before aborting task on lassen173 Sat Jan 11 15:43:14 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 122: Waiting 60 secs before aborting task on lassen672 Sat Jan 11 15:43:14 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 22:  Generated lwcore_cpu.6680851_7.22 on lassen175 Sat Jan 11 15:43:14 PST 2025 in 1 secs >>
+<< Rank 22: Waiting 60 secs before aborting task on lassen175 Sat Jan 11 15:43:14 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 48:  Waited 60 secs -> now aborting task on lassen252 Sat Jan 11 15:44:14 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen252:07643] -----------------------
+[lassen252:07643] -----------------------
+[lassen252:07643] *** End of error message ***
+<< Rank 45:  Waited 60 secs -> now aborting task on lassen189 Sat Jan 11 15:44:14 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen189:90333] -----------------------
+[lassen189:90333] -----------------------
+[lassen189:90333] *** End of error message ***
+<< Rank 54:  Waited 60 secs -> now aborting task on lassen310 Sat Jan 11 15:44:14 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen310:159195] -----------------------
+[lassen310:159195] -----------------------
+[lassen310:159195] *** End of error message ***
+<< Rank 96:  Waited 60 secs -> now aborting task on lassen651 Sat Jan 11 15:44:14 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 97:  Waited 60 secs -> now aborting task on lassen651 Sat Jan 11 15:44:14 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen651:13550] -----------------------
+[lassen651:13550] -----------------------
+[lassen651:13550] *** End of error message ***
+[lassen651:13551] -----------------------
+[lassen651:13551] -----------------------
+[lassen651:13551] *** End of error message ***
+<< Rank 76:  Waited 60 secs -> now aborting task on lassen409 Sat Jan 11 15:44:14 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 78:  Waited 60 secs -> now aborting task on lassen409 Sat Jan 11 15:44:14 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 77:  Waited 60 secs -> now aborting task on lassen409 Sat Jan 11 15:44:14 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen409:89892] -----------------------
+[lassen409:89892] -----------------------
+[lassen409:89892] *** End of error message ***
+[lassen409:89893] -----------------------
+[lassen409:89893] -----------------------
+[lassen409:89893] *** End of error message ***
+[lassen409:89894] -----------------------
+[lassen409:89894] -----------------------
+[lassen409:89894] *** End of error message ***
+<< Rank 104:  Waited 60 secs -> now aborting task on lassen657 Sat Jan 11 15:44:14 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen657:64552] -----------------------
+[lassen657:64552] -----------------------
+[lassen657:64552] *** End of error message ***
+<< Rank 88:  Waited 60 secs -> now aborting task on lassen497 Sat Jan 11 15:44:14 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 12:  Waited 60 secs -> now aborting task on lassen171 Sat Jan 11 15:44:14 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen497:28032] -----------------------
+[lassen497:28032] -----------------------
+[lassen497:28032] *** End of error message ***
+[lassen171:129949] -----------------------
+[lassen171:129949] -----------------------
+[lassen171:129949] *** End of error message ***
+<< Rank 93:  Waited 60 secs -> now aborting task on lassen581 Sat Jan 11 15:44:14 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen581:106789] -----------------------
+[lassen581:106789] -----------------------
+[lassen581:106789] *** End of error message ***
+<< Rank 33:  Waited 60 secs -> now aborting task on lassen179 Sat Jan 11 15:44:14 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen179:118818] -----------------------
+[lassen179:118818] -----------------------
+[lassen179:118818] *** End of error message ***
+<< Rank 16:  Waited 60 secs -> now aborting task on lassen173 Sat Jan 11 15:44:14 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen173:114096] -----------------------
+[lassen173:114096] -----------------------
+[lassen173:114096] *** End of error message ***
+<< Rank 122:  Waited 60 secs -> now aborting task on lassen672 Sat Jan 11 15:44:14 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen672:51544] -----------------------
+[lassen672:51544] -----------------------
+[lassen672:51544] *** End of error message ***
+<< Rank 22:  Waited 60 secs -> now aborting task on lassen175 Sat Jan 11 15:44:14 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen175:119200] -----------------------
+[lassen175:119200] -----------------------
+[lassen175:119200] *** End of error message ***
+ERROR:  One or more process (first noticed rank 54) terminated with signal 6
+Warning: jsrun wrapper does not handle unexpected option '-EOMP_NUM_THREADS=10', may prevent LLNL-specific error detection
+         If option '-EOMP_NUM_THREADS=10' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '-EOMP_NUM_THREADS=10', may prevent LLNL-specific error detection
+         If option '-EOMP_NUM_THREADS=10' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen581:108272] *** Process received signal ***
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen581:108274] *** Process received signal ***
+[lassen581:108274] Signal: Aborted (6)
+[lassen581:108274] Signal code:  (-6)
+[lassen581:108272] Signal: Aborted (6)
+[lassen581:108272] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen177:48093] *** Process received signal ***
+[lassen177:48093] Signal: Aborted (6)
+[lassen177:48093] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen162:50345] *** Process received signal ***
+[lassen162:50345] Signal: Aborted (6)
+[lassen162:50345] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen171:131390] *** Process received signal ***
+[lassen171:131390] Signal: Aborted (6)
+[lassen171:131390] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen738:149747] *** Process received signal ***
+[lassen738:149747] Signal: Aborted (6)
+[lassen738:149747] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen659:40620] *** Process received signal ***
+[lassen659:40620] Signal: Aborted (6)
+[lassen659:40620] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen189:91764] *** Process received signal ***
+[lassen189:91764] Signal: Aborted (6)
+[lassen189:91764] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen332:22443] *** Process received signal ***
+[lassen332:22443] Signal: Aborted (6)
+[lassen332:22443] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen338:68974] *** Process received signal ***
+[lassen338:68974] Signal: Aborted (6)
+[lassen338:68974] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen162:50346] *** Process received signal ***
+[lassen162:50346] Signal: Aborted (6)
+[lassen162:50346] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen185:152275] *** Process received signal ***
+[lassen185:152275] Signal: Aborted (6)
+[lassen185:152275] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen173:115534] *** Process received signal ***
+[lassen173:115534] Signal: Aborted (6)
+[lassen173:115534] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen176:80941] *** Process received signal ***
+[lassen176:80941] Signal: Aborted (6)
+[lassen176:80941] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen179:120253] *** Process received signal ***
+[lassen179:120253] Signal: Aborted (6)
+[lassen179:120253] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen494:45979] *** Process received signal ***
+[lassen494:45979] Signal: Aborted (6)
+[lassen494:45979] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen651:15021] *** Process received signal ***
+[lassen651:15021] Signal: Aborted (6)
+[lassen651:15021] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen310:160771] *** Process received signal ***
+[lassen310:160771] Signal: Aborted (6)
+[lassen310:160771] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen663:28897] *** Process received signal ***
+[lassen663:28897] Signal: Aborted (6)
+[lassen663:28897] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen664:73108] *** Process received signal ***
+[lassen664:73108] Signal: Aborted (6)
+[lassen664:73108] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen252:09113] *** Process received signal ***
+[lassen252:09113] Signal: Aborted (6)
+[lassen252:09113] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen188:27433] *** Process received signal ***
+[lassen188:27433] Signal: Aborted (6)
+[lassen188:27433] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen497:29601] *** Process received signal ***
+[lassen497:29601] Signal: Aborted (6)
+[lassen497:29601] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen494:45980] *** Process received signal ***
+[lassen494:45980] Signal: Aborted (6)
+[lassen494:45980] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen310:160770] *** Process received signal ***
+[lassen310:160770] Signal: Aborted (6)
+[lassen310:160770] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen672:53102] *** Process received signal ***
+[lassen672:53102] Signal: Aborted (6)
+[lassen672:53102] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/barrier/MultiLeaderBarrierT.h:302: static void CCMI::Protocols::Barrier::MultiLeaderBarrierFactoryT<T_Composite, T_Conn>::cb_async(libcoll_context_t, void*, const void*, unsigned int, unsigned int, size_t, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Composite = CCMI::Protocols::Barrier::MultiLeaderBarrierT<LibColl::Interfaces::NativeInterface, (LibColl::topologyIndex_t)0u>; T_Conn = CCMI::ConnectionManager::SimpleConnMgr; libcoll_context_t = void*; size_t = long unsigned int; libcoll_event_function = void (*)(void*, void*, libcoll_result_t)]: Assertion `composite->_internode_srcs_arrived[hdr->_root][hdr->_phase%composite->_lambda] == 0' failed.
+[lassen311:152978] *** Process received signal ***
+[lassen311:152978] Signal: Aborted (6)
+[lassen311:152978] Signal code:  (-6)
+<< Rank 94: Generating lwcore_cpu.6680851_9.94 on lassen581 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 29: Generating lwcore_cpu.6680851_9.29 on lassen177 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 12: Generating lwcore_cpu.6680851_9.12 on lassen171 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 64: Generating lwcore_cpu.6680851_9.64 on lassen332 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 45: Generating lwcore_cpu.6680851_9.45 on lassen189 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 17: Generating lwcore_cpu.6680851_9.17 on lassen173 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 69: Generating lwcore_cpu.6680851_9.69 on lassen338 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 49: Generating lwcore_cpu.6680851_9.49 on lassen252 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 116: Generating lwcore_cpu.6680851_9.116 on lassen664 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 121: Generating lwcore_cpu.6680851_9.121 on lassen672 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 92: Generating lwcore_cpu.6680851_9.92 on lassen581 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 97: Generating lwcore_cpu.6680851_9.97 on lassen651 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 109: Generating lwcore_cpu.6680851_9.109 on lassen659 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 34: Generating lwcore_cpu.6680851_9.34 on lassen179 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 24: Generating lwcore_cpu.6680851_9.24 on lassen176 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 89: Generating lwcore_cpu.6680851_9.89 on lassen497 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 58: Generating lwcore_cpu.6680851_9.58 on lassen311 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 53: Generating lwcore_cpu.6680851_9.53 on lassen310 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 54: Generating lwcore_cpu.6680851_9.54 on lassen310 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 85: Generating lwcore_cpu.6680851_9.85 on lassen494 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 84: Generating lwcore_cpu.6680851_9.84 on lassen494 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 125: Generating lwcore_cpu.6680851_9.125 on lassen738 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 40: Generating lwcore_cpu.6680851_9.40 on lassen188 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 36: Generating lwcore_cpu.6680851_9.36 on lassen185 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 114: Generating lwcore_cpu.6680851_9.114 on lassen663 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 1: Generating lwcore_cpu.6680851_9.1 on lassen162 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 2: Generating lwcore_cpu.6680851_9.2 on lassen162 Sat Jan 11 15:45:32 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 12:  Generated lwcore_cpu.6680851_9.12 on lassen171 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 64:  Generated lwcore_cpu.6680851_9.64 on lassen332 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 12: Waiting 60 secs before aborting task on lassen171 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 24:  Generated lwcore_cpu.6680851_9.24 on lassen176 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 45:  Generated lwcore_cpu.6680851_9.45 on lassen189 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 17:  Generated lwcore_cpu.6680851_9.17 on lassen173 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 97:  Generated lwcore_cpu.6680851_9.97 on lassen651 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 49:  Generated lwcore_cpu.6680851_9.49 on lassen252 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 64: Waiting 60 secs before aborting task on lassen332 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 69:  Generated lwcore_cpu.6680851_9.69 on lassen338 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 89:  Generated lwcore_cpu.6680851_9.89 on lassen497 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 121:  Generated lwcore_cpu.6680851_9.121 on lassen672 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 84:  Generated lwcore_cpu.6680851_9.84 on lassen494 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 34:  Generated lwcore_cpu.6680851_9.34 on lassen179 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 85:  Generated lwcore_cpu.6680851_9.85 on lassen494 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 45: Waiting 60 secs before aborting task on lassen189 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 94:  Generated lwcore_cpu.6680851_9.94 on lassen581 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 24: Waiting 60 secs before aborting task on lassen176 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 29:  Generated lwcore_cpu.6680851_9.29 on lassen177 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 116:  Generated lwcore_cpu.6680851_9.116 on lassen664 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 17: Waiting 60 secs before aborting task on lassen173 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 49: Waiting 60 secs before aborting task on lassen252 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 97: Waiting 60 secs before aborting task on lassen651 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 58:  Generated lwcore_cpu.6680851_9.58 on lassen311 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 69: Waiting 60 secs before aborting task on lassen338 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 89: Waiting 60 secs before aborting task on lassen497 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 94: Waiting 60 secs before aborting task on lassen581 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 84: Waiting 60 secs before aborting task on lassen494 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 121: Waiting 60 secs before aborting task on lassen672 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 34: Waiting 60 secs before aborting task on lassen179 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 92:  Generated lwcore_cpu.6680851_9.92 on lassen581 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 85: Waiting 60 secs before aborting task on lassen494 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 116: Waiting 60 secs before aborting task on lassen664 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 29: Waiting 60 secs before aborting task on lassen177 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 53:  Generated lwcore_cpu.6680851_9.53 on lassen310 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 54:  Generated lwcore_cpu.6680851_9.54 on lassen310 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 58: Waiting 60 secs before aborting task on lassen311 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 53: Waiting 60 secs before aborting task on lassen310 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 92: Waiting 60 secs before aborting task on lassen581 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 54: Waiting 60 secs before aborting task on lassen310 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 125:  Generated lwcore_cpu.6680851_9.125 on lassen738 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 40:  Generated lwcore_cpu.6680851_9.40 on lassen188 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 36:  Generated lwcore_cpu.6680851_9.36 on lassen185 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 125: Waiting 60 secs before aborting task on lassen738 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 109:  Generated lwcore_cpu.6680851_9.109 on lassen659 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 40: Waiting 60 secs before aborting task on lassen188 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 36: Waiting 60 secs before aborting task on lassen185 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 114:  Generated lwcore_cpu.6680851_9.114 on lassen663 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 109: Waiting 60 secs before aborting task on lassen659 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 2:  Generated lwcore_cpu.6680851_9.2 on lassen162 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 114: Waiting 60 secs before aborting task on lassen663 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 2: Waiting 60 secs before aborting task on lassen162 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 1:  Generated lwcore_cpu.6680851_9.1 on lassen162 Sat Jan 11 15:45:33 PST 2025 in 1 secs >>
+<< Rank 1: Waiting 60 secs before aborting task on lassen162 Sat Jan 11 15:45:33 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 24:  Waited 60 secs -> now aborting task on lassen176 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen176:80941] -----------------------
+[lassen176:80941] -----------------------
+[lassen176:80941] *** End of error message ***
+<< Rank 97:  Waited 60 secs -> now aborting task on lassen651 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen651:15021] -----------------------
+[lassen651:15021] -----------------------
+[lassen651:15021] *** End of error message ***
+<< Rank 49:  Waited 60 secs -> now aborting task on lassen252 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen252:09113] -----------------------
+[lassen252:09113] -----------------------
+[lassen252:09113] *** End of error message ***
+<< Rank 121:  Waited 60 secs -> now aborting task on lassen672 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 34:  Waited 60 secs -> now aborting task on lassen179 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 94:  Waited 60 secs -> now aborting task on lassen581 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen581:108274] -----------------------
+[lassen581:108274] -----------------------
+[lassen581:108274] *** End of error message ***
+<< Rank 12:  Waited 60 secs -> now aborting task on lassen171 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen179:120253] -----------------------
+[lassen179:120253] -----------------------
+[lassen179:120253] *** End of error message ***
+<< Rank 85:  Waited 60 secs -> now aborting task on lassen494 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen171:131390] -----------------------
+[lassen171:131390] -----------------------
+[lassen171:131390] *** End of error message ***
+[lassen672:53102] -----------------------
+[lassen672:53102] -----------------------
+[lassen672:53102] *** End of error message ***
+<< Rank 84:  Waited 60 secs -> now aborting task on lassen494 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen494:45979] -----------------------
+[lassen494:45979] -----------------------
+[lassen494:45979] *** End of error message ***
+<< Rank 92:  Waited 60 secs -> now aborting task on lassen581 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen581:108272] -----------------------
+[lassen581:108272] -----------------------
+[lassen581:108272] *** End of error message ***
+<< Rank 45:  Waited 60 secs -> now aborting task on lassen189 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 64:  Waited 60 secs -> now aborting task on lassen332 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen494:45980] -----------------------
+[lassen494:45980] -----------------------
+[lassen494:45980] *** End of error message ***
+[lassen189:91764] -----------------------
+[lassen189:91764] -----------------------
+[lassen332:22443] -----------------------
+[lassen332:22443] -----------------------
+[lassen332:22443] *** End of error message ***
+[lassen189:91764] *** End of error message ***
+<< Rank 17:  Waited 60 secs -> now aborting task on lassen173 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen173:115534] -----------------------
+[lassen173:115534] -----------------------
+[lassen173:115534] *** End of error message ***
+<< Rank 69:  Waited 60 secs -> now aborting task on lassen338 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen338:68974] -----------------------
+[lassen338:68974] -----------------------
+[lassen338:68974] *** End of error message ***
+<< Rank 89:  Waited 60 secs -> now aborting task on lassen497 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen497:29601] -----------------------
+[lassen497:29601] -----------------------
+[lassen497:29601] *** End of error message ***
+<< Rank 116:  Waited 60 secs -> now aborting task on lassen664 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 29:  Waited 60 secs -> now aborting task on lassen177 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen177:48093] -----------------------
+[lassen177:48093] -----------------------
+[lassen177:48093] *** End of error message ***
+[lassen664:73108] -----------------------
+[lassen664:73108] -----------------------
+[lassen664:73108] *** End of error message ***
+<< Rank 58:  Waited 60 secs -> now aborting task on lassen311 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen311:152978] -----------------------
+[lassen311:152978] -----------------------
+[lassen311:152978] *** End of error message ***
+<< Rank 54:  Waited 60 secs -> now aborting task on lassen310 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 53:  Waited 60 secs -> now aborting task on lassen310 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen310:160771] -----------------------
+[lassen310:160771] -----------------------
+[lassen310:160771] *** End of error message ***
+[lassen310:160770] -----------------------
+[lassen310:160770] -----------------------
+[lassen310:160770] *** End of error message ***
+<< Rank 125:  Waited 60 secs -> now aborting task on lassen738 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen738:149747] -----------------------
+[lassen738:149747] -----------------------
+[lassen738:149747] *** End of error message ***
+<< Rank 114:  Waited 60 secs -> now aborting task on lassen663 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen663:28897] -----------------------
+[lassen663:28897] -----------------------
+[lassen663:28897] *** End of error message ***
+<< Rank 40:  Waited 60 secs -> now aborting task on lassen188 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen188:27433] -----------------------
+[lassen188:27433] -----------------------
+[lassen188:27433] *** End of error message ***
+<< Rank 36:  Waited 60 secs -> now aborting task on lassen185 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen185:152275] -----------------------
+[lassen185:152275] -----------------------
+[lassen185:152275] *** End of error message ***
+<< Rank 2:  Waited 60 secs -> now aborting task on lassen162 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen162:50346] -----------------------
+[lassen162:50346] -----------------------
+[lassen162:50346] *** End of error message ***
+<< Rank 1:  Waited 60 secs -> now aborting task on lassen162 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen162:50345] -----------------------
+[lassen162:50345] -----------------------
+[lassen162:50345] *** End of error message ***
+<< Rank 109:  Waited 60 secs -> now aborting task on lassen659 Sat Jan 11 15:46:33 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen659:40620] -----------------------
+[lassen659:40620] -----------------------
+[lassen659:40620] *** End of error message ***
+ERROR:  One or more process (first noticed rank 24) terminated with signal 6
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 

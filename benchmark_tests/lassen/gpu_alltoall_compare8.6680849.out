@@ -1,0 +1,2565 @@
+Running Unthreaded Alltoall Test:
+Testing Size 1
+GPU-Aware PMPI Time 7.706359e-05
+Copy-to-CPU PMPI Time 4.862034e-05
+Copy-to-CPU Pairwise Time 1.346564e-04
+GPU Aware Pairwise Time 5.975423e-04
+Testing Size 2
+GPU-Aware PMPI Time 8.359344e-05
+Copy-to-CPU PMPI Time 5.253265e-05
+Copy-to-CPU Pairwise Time 1.326899e-04
+GPU Aware Pairwise Time 6.669228e-04
+Testing Size 4
+GPU-Aware PMPI Time 8.100609e-05
+Copy-to-CPU PMPI Time 5.009167e-05
+Copy-to-CPU Pairwise Time 1.341057e-04
+GPU Aware Pairwise Time 5.974226e-04
+Testing Size 8
+GPU-Aware PMPI Time 7.456527e-05
+Copy-to-CPU PMPI Time 5.046004e-05
+Copy-to-CPU Pairwise Time 1.204709e-04
+GPU Aware Pairwise Time 5.130834e-04
+Testing Size 16
+GPU-Aware PMPI Time 7.815588e-05
+Copy-to-CPU PMPI Time 5.550272e-05
+Copy-to-CPU Pairwise Time 1.221111e-04
+GPU Aware Pairwise Time 5.363841e-04
+Testing Size 32
+GPU-Aware PMPI Time 8.173907e-05
+Copy-to-CPU PMPI Time 6.165667e-05
+Copy-to-CPU Pairwise Time 1.680455e-04
+GPU Aware Pairwise Time 5.186274e-04
+Testing Size 64
+GPU-Aware PMPI Time 8.747076e-05
+Copy-to-CPU PMPI Time 6.294566e-05
+Copy-to-CPU Pairwise Time 2.014239e-04
+GPU Aware Pairwise Time 5.190995e-04
+Testing Size 128
+GPU-Aware PMPI Time 8.587922e-05
+Copy-to-CPU PMPI Time 6.320171e-05
+Copy-to-CPU Pairwise Time 1.772959e-04
+GPU Aware Pairwise Time 5.031413e-04
+Testing Size 256
+GPU-Aware PMPI Time 9.733590e-05
+Copy-to-CPU PMPI Time 7.100687e-05
+Copy-to-CPU Pairwise Time 1.899382e-04
+GPU Aware Pairwise Time 5.335459e-04
+Testing Size 512
+GPU-Aware PMPI Time 1.235617e-04
+Copy-to-CPU PMPI Time 9.413581e-05
+Copy-to-CPU Pairwise Time 2.277612e-04
+GPU Aware Pairwise Time 5.511634e-04
+Testing Size 1024
+GPU-Aware PMPI Time 1.859017e-04
+Copy-to-CPU PMPI Time 1.520087e-04
+Copy-to-CPU Pairwise Time 3.009234e-04
+GPU Aware Pairwise Time 5.724388e-04
+Testing Size 2048
+GPU-Aware PMPI Time 3.123190e-04
+Copy-to-CPU PMPI Time 2.661766e-04
+Copy-to-CPU Pairwise Time 4.964947e-04
+GPU Aware Pairwise Time 7.600602e-04
+Testing Size 4096
+GPU-Aware PMPI Time 5.603969e-04
+Copy-to-CPU PMPI Time 4.911695e-04
+Copy-to-CPU Pairwise Time 7.274420e-04
+GPU Aware Pairwise Time 7.528283e-04
+Testing Size 8192
+GPU-Aware PMPI Time 9.621215e-04
+Copy-to-CPU PMPI Time 8.844823e-04
+Copy-to-CPU Pairwise Time 1.153896e-03
+GPU Aware Pairwise Time 9.677946e-04
+Testing Size 16384
+GPU-Aware PMPI Time 1.643826e-03
+Copy-to-CPU PMPI Time 1.496408e-03
+Copy-to-CPU Pairwise Time 1.553379e-03
+GPU Aware Pairwise Time 1.567627e-03
+Testing Size 32768
+GPU-Aware PMPI Time 3.007822e-03
+Copy-to-CPU PMPI Time 2.942655e-03
+Copy-to-CPU Pairwise Time 2.614478e-03
+GPU Aware Pairwise Time 2.610257e-03
+Testing Size 65536
+GPU-Aware PMPI Time 5.159120e-03
+Copy-to-CPU PMPI Time 4.818887e-03
+Copy-to-CPU Pairwise Time 4.828737e-03
+GPU Aware Pairwise Time 4.595328e-03
+Testing Size 131072
+GPU-Aware PMPI Time 9.316797e-03
+Copy-to-CPU PMPI Time 8.836454e-03
+Copy-to-CPU Pairwise Time 8.945045e-03
+GPU Aware Pairwise Time 9.163649e-03
+Testing Size 262144
+GPU-Aware PMPI Time 1.765040e-02
+Copy-to-CPU PMPI Time 1.663697e-02
+Copy-to-CPU Pairwise Time 1.789379e-02
+GPU Aware Pairwise Time 1.695870e-02
+Testing Size 524288
+GPU-Aware PMPI Time 3.446527e-02
+Copy-to-CPU PMPI Time 3.268194e-02
+Copy-to-CPU Pairwise Time 3.891137e-02
+GPU Aware Pairwise Time 3.456478e-02
+app 0: ./gpu_alltoall_quick 
+rank: 0: { host: 1; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 1: { host: 1; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 2: { host: 1; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 3: { host: 1; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 4: { host: 2; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 5: { host: 2; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 6: { host: 2; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 7: { host: 2; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 8: { host: 3; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 9: { host: 3; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 10: { host: 3; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 11: { host: 3; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 12: { host: 4; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 13: { host: 4; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 14: { host: 4; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 15: { host: 4; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 16: { host: 5; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 17: { host: 5; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 18: { host: 5; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 19: { host: 5; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 20: { host: 6; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 21: { host: 6; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 22: { host: 6; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 23: { host: 6; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 24: { host: 7; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 25: { host: 7; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 26: { host: 7; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 27: { host: 7; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 28: { host: 8; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 29: { host: 8; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 30: { host: 8; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 31: { host: 8; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+Running Threaded Alltoall Test with launches, 2 threads
+Testing Size 1
+GPU-Aware PMPI Time 9.823243e-05
+Copy-to-CPU PMPI Time 7.248806e-05
+Copy-to-CPU Pairwise Time 1.340072e-04
+GPU-Aware Pairwise Time 1.045561e-03
+2 Threads Pairwise Time 2.163195e-04
+Testing Size 2
+GPU-Aware PMPI Time 9.828098e-05
+Copy-to-CPU PMPI Time 6.476538e-05
+Copy-to-CPU Pairwise Time 1.504126e-04
+GPU-Aware Pairwise Time 1.023666e-03
+2 Threads Pairwise Time 2.198550e-04
+Testing Size 4
+GPU-Aware PMPI Time 1.002869e-04
+Copy-to-CPU PMPI Time 5.655323e-05
+Copy-to-CPU Pairwise Time 1.397005e-04
+GPU-Aware Pairwise Time 9.973857e-04
+2 Threads Pairwise Time 2.403906e-04
+Testing Size 8
+GPU-Aware PMPI Time 8.615834e-05
+Copy-to-CPU PMPI Time 4.851249e-05
+Copy-to-CPU Pairwise Time 2.549603e-04
+GPU-Aware Pairwise Time 1.019532e-03
+2 Threads Pairwise Time 2.195790e-04
+Testing Size 16
+GPU-Aware PMPI Time 1.063896e-04
+Copy-to-CPU PMPI Time 7.375831e-05
+Copy-to-CPU Pairwise Time 1.722195e-04
+GPU-Aware Pairwise Time 9.685054e-04
+2 Threads Pairwise Time 1.954963e-04
+Testing Size 32
+GPU-Aware PMPI Time 8.132017e-05
+Copy-to-CPU PMPI Time 6.308128e-05
+Copy-to-CPU Pairwise Time 2.214446e-04
+GPU-Aware Pairwise Time 8.469240e-04
+2 Threads Pairwise Time 1.851236e-04
+Testing Size 64
+GPU-Aware PMPI Time 8.538625e-05
+Copy-to-CPU PMPI Time 7.001523e-05
+Copy-to-CPU Pairwise Time 2.027554e-04
+GPU-Aware Pairwise Time 8.548497e-04
+2 Threads Pairwise Time 2.358403e-04
+Testing Size 128
+GPU-Aware PMPI Time 9.181262e-05
+Copy-to-CPU PMPI Time 6.357767e-05
+Copy-to-CPU Pairwise Time 2.444693e-04
+GPU-Aware Pairwise Time 8.035929e-04
+2 Threads Pairwise Time 1.911390e-04
+Testing Size 256
+GPU-Aware PMPI Time 9.431917e-05
+Copy-to-CPU PMPI Time 6.551026e-05
+Copy-to-CPU Pairwise Time 2.265346e-04
+GPU-Aware Pairwise Time 9.171136e-04
+2 Threads Pairwise Time 2.638444e-04
+Testing Size 512
+GPU-Aware PMPI Time 1.290444e-04
+Copy-to-CPU PMPI Time 9.439756e-05
+Copy-to-CPU Pairwise Time 3.509806e-04
+GPU-Aware Pairwise Time 9.605034e-04
+2 Threads Pairwise Time 2.681653e-04
+Testing Size 1024
+GPU-Aware PMPI Time 1.859778e-04
+Copy-to-CPU PMPI Time 1.595317e-04
+Copy-to-CPU Pairwise Time 5.480567e-04
+GPU-Aware Pairwise Time 7.170769e-04
+2 Threads Pairwise Time 2.742453e-04
+Testing Size 2048
+GPU-Aware PMPI Time 3.404677e-04
+Copy-to-CPU PMPI Time 2.834156e-04
+Copy-to-CPU Pairwise Time 5.080366e-04
+GPU-Aware Pairwise Time 7.756433e-04
+2 Threads Pairwise Time 4.272217e-04
+Testing Size 4096
+GPU-Aware PMPI Time 5.322388e-04
+Copy-to-CPU PMPI Time 4.822126e-04
+Copy-to-CPU Pairwise Time 7.339848e-04
+GPU-Aware Pairwise Time 8.599656e-04
+2 Threads Pairwise Time 6.681570e-04
+Testing Size 8192
+GPU-Aware PMPI Time 1.017984e-03
+Copy-to-CPU PMPI Time 9.564827e-04
+Copy-to-CPU Pairwise Time 1.216235e-03
+GPU-Aware Pairwise Time 9.882651e-04
+2 Threads Pairwise Time 1.083475e-03
+Testing Size 16384
+GPU-Aware PMPI Time 1.467503e-03
+Copy-to-CPU PMPI Time 1.353816e-03
+Copy-to-CPU Pairwise Time 1.539168e-03
+GPU-Aware Pairwise Time 1.623586e-03
+2 Threads Pairwise Time 6.423521e-03
+Testing Size 32768
+GPU-Aware PMPI Time 2.979689e-03
+Copy-to-CPU PMPI Time 2.745025e-03
+Copy-to-CPU Pairwise Time 3.582329e-03
+GPU-Aware Pairwise Time 4.445891e-03
+2 Threads Pairwise Time 3.582732e-03
+Testing Size 65536
+GPU-Aware PMPI Time 5.488761e-03
+Copy-to-CPU PMPI Time 5.077994e-03
+Copy-to-CPU Pairwise Time 6.331858e-03
+GPU-Aware Pairwise Time 6.037658e-03
+2 Threads Pairwise Time 6.090827e-03
+Testing Size 131072
+GPU-Aware PMPI Time 1.004073e-02
+Copy-to-CPU PMPI Time 9.522788e-03
+Copy-to-CPU Pairwise Time 1.233810e-02
+GPU-Aware Pairwise Time 1.093918e-02
+2 Threads Pairwise Time 1.279944e-02
+Testing Size 262144
+GPU-Aware PMPI Time 1.861240e-02
+Copy-to-CPU PMPI Time 1.776929e-02
+Copy-to-CPU Pairwise Time 2.020182e-02
+GPU-Aware Pairwise Time 1.745862e-02
+2 Threads Pairwise Time 2.142376e-02
+Testing Size 524288
+GPU-Aware PMPI Time 3.456944e-02
+Copy-to-CPU PMPI Time 3.252588e-02
+Copy-to-CPU Pairwise Time 3.797252e-02
+GPU-Aware Pairwise Time 3.381483e-02
+2 Threads Pairwise Time 3.876962e-02
+app 0: ./thread_launches 2 
+rank: 0: { host: 1; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 1: { host: 1; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 2: { host: 1; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 3: { host: 1; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 4: { host: 2; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 5: { host: 2; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 6: { host: 2; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 7: { host: 2; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 8: { host: 3; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 9: { host: 3; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 10: { host: 3; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 11: { host: 3; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 12: { host: 4; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 13: { host: 4; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 14: { host: 4; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 15: { host: 4; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 16: { host: 5; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 17: { host: 5; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 18: { host: 5; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 19: { host: 5; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 20: { host: 6; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 21: { host: 6; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 22: { host: 6; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 23: { host: 6; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 24: { host: 7; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 25: { host: 7; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 26: { host: 7; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 27: { host: 7; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 28: { host: 8; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 29: { host: 8; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 30: { host: 8; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 31: { host: 8; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+Running Threaded Alltoall Test without launches, 2 threads
+Testing Size 1
+GPU-Aware PMPI Time 6.974028e-05
+Copy-to-CPU PMPI Time 4.428849e-05
+Copy-to-CPU Pairwise Time 1.204965e-04
+2 Threads Pairwise Time 1.859027e-04
+Testing Size 2
+GPU-Aware PMPI Time 6.637127e-05
+Copy-to-CPU PMPI Time 4.549918e-05
+Copy-to-CPU Pairwise Time 1.092495e-04
+2 Threads Pairwise Time 1.867583e-04
+Testing Size 4
+GPU-Aware PMPI Time 6.920142e-05
+Copy-to-CPU PMPI Time 4.729200e-05
+Copy-to-CPU Pairwise Time 1.124895e-04
+2 Threads Pairwise Time 1.900670e-04
+Testing Size 8
+GPU-Aware PMPI Time 6.819987e-05
+Copy-to-CPU PMPI Time 4.864640e-05
+Copy-to-CPU Pairwise Time 1.134500e-04
+2 Threads Pairwise Time 1.862857e-04
+Testing Size 16
+GPU-Aware PMPI Time 7.278751e-05
+Copy-to-CPU PMPI Time 4.923620e-05
+Copy-to-CPU Pairwise Time 1.213128e-04
+2 Threads Pairwise Time 1.892222e-04
+Testing Size 32
+GPU-Aware PMPI Time 7.848852e-05
+Copy-to-CPU PMPI Time 5.590263e-05
+Copy-to-CPU Pairwise Time 1.567119e-04
+2 Threads Pairwise Time 1.684119e-04
+Testing Size 64
+GPU-Aware PMPI Time 7.974899e-05
+Copy-to-CPU PMPI Time 5.724345e-05
+Copy-to-CPU Pairwise Time 1.714728e-04
+2 Threads Pairwise Time 1.757216e-04
+Testing Size 128
+GPU-Aware PMPI Time 7.790514e-05
+Copy-to-CPU PMPI Time 5.577094e-05
+Copy-to-CPU Pairwise Time 1.743817e-04
+2 Threads Pairwise Time 1.757276e-04
+Testing Size 256
+GPU-Aware PMPI Time 8.964025e-05
+Copy-to-CPU PMPI Time 6.585132e-05
+Copy-to-CPU Pairwise Time 1.903090e-04
+2 Threads Pairwise Time 1.954246e-04
+Testing Size 512
+GPU-Aware PMPI Time 1.117136e-04
+Copy-to-CPU PMPI Time 8.722112e-05
+Copy-to-CPU Pairwise Time 2.182676e-04
+2 Threads Pairwise Time 2.260619e-04
+Testing Size 1024
+GPU-Aware PMPI Time 1.717527e-04
+Copy-to-CPU PMPI Time 1.435706e-04
+Copy-to-CPU Pairwise Time 2.762681e-04
+2 Threads Pairwise Time 2.699761e-04
+Testing Size 2048
+GPU-Aware PMPI Time 2.833765e-04
+Copy-to-CPU PMPI Time 2.491427e-04
+Copy-to-CPU Pairwise Time 4.291471e-04
+2 Threads Pairwise Time 4.013336e-04
+Testing Size 4096
+GPU-Aware PMPI Time 5.291115e-04
+Copy-to-CPU PMPI Time 4.777788e-04
+Copy-to-CPU Pairwise Time 6.448710e-04
+2 Threads Pairwise Time 6.208259e-04
+Testing Size 8192
+GPU-Aware PMPI Time 1.019156e-03
+Copy-to-CPU PMPI Time 9.787492e-04
+Copy-to-CPU Pairwise Time 1.254379e-03
+2 Threads Pairwise Time 1.075803e-03
+Testing Size 16384
+GPU-Aware PMPI Time 1.468608e-03
+Copy-to-CPU PMPI Time 1.374048e-03
+Copy-to-CPU Pairwise Time 1.525541e-03
+2 Threads Pairwise Time 1.435874e-03
+Testing Size 32768
+GPU-Aware PMPI Time 2.816267e-03
+Copy-to-CPU PMPI Time 2.676181e-03
+Copy-to-CPU Pairwise Time 2.619260e-03
+2 Threads Pairwise Time 2.418313e-03
+Testing Size 65536
+GPU-Aware PMPI Time 5.047981e-03
+Copy-to-CPU PMPI Time 4.718047e-03
+Copy-to-CPU Pairwise Time 4.744049e-03
+2 Threads Pairwise Time 4.660458e-03
+Testing Size 131072
+GPU-Aware PMPI Time 9.368417e-03
+Copy-to-CPU PMPI Time 8.736089e-03
+Copy-to-CPU Pairwise Time 9.509726e-03
+2 Threads Pairwise Time 9.088822e-03
+Testing Size 262144
+GPU-Aware PMPI Time 1.785654e-02
+Copy-to-CPU PMPI Time 1.672574e-02
+Copy-to-CPU Pairwise Time 1.873670e-02
+2 Threads Pairwise Time 1.810528e-02
+Testing Size 524288
+GPU-Aware PMPI Time 3.360553e-02
+Copy-to-CPU PMPI Time 3.197780e-02
+Copy-to-CPU Pairwise Time 3.617624e-02
+2 Threads Pairwise Time 3.593253e-02
+app 0: ./no_thread_launches 2 
+rank: 0: { host: 1; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 1: { host: 1; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 2: { host: 1; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 3: { host: 1; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 4: { host: 2; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 5: { host: 2; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 6: { host: 2; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 7: { host: 2; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 8: { host: 3; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 9: { host: 3; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 10: { host: 3; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 11: { host: 3; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 12: { host: 4; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 13: { host: 4; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 14: { host: 4; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 15: { host: 4; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 16: { host: 5; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 17: { host: 5; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 18: { host: 5; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 19: { host: 5; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 20: { host: 6; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 21: { host: 6; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 22: { host: 6; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 23: { host: 6; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 24: { host: 7; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 25: { host: 7; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 26: { host: 7; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 27: { host: 7; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+rank: 28: { host: 8; cpu: {0-7} ; gpu: {0} ; mem: {0-16301} } : app 0
+rank: 29: { host: 8; cpu: {8-15} ; gpu: {1} ; mem: {16302-32603} } : app 0
+rank: 30: { host: 8; cpu: {80-87} ; gpu: {2} ; mem: {163036-179337} } : app 0
+rank: 31: { host: 8; cpu: {88-95} ; gpu: {3} ; mem: {179338-195639} } : app 0
+Running Threaded Alltoall Test with launches, 4 threads
+Testing Size 1
+GPU-Aware PMPI Time 8.166173e-05
+Copy-to-CPU PMPI Time 5.557821e-05
+Copy-to-CPU Pairwise Time 1.529039e-04
+GPU-Aware Pairwise Time 4.784321e-04
+4 Threads Pairwise Time 1.820535e-04
+Testing Size 2
+GPU-Aware PMPI Time 6.713225e-05
+Copy-to-CPU PMPI Time 4.525576e-05
+Copy-to-CPU Pairwise Time 1.181091e-04
+GPU-Aware Pairwise Time 8.490460e-04
+4 Threads Pairwise Time 2.079346e-04
+Testing Size 4
+GPU-Aware PMPI Time 9.823664e-05
+Copy-to-CPU PMPI Time 4.762588e-05
+Copy-to-CPU Pairwise Time 1.951469e-04
+GPU-Aware Pairwise Time 1.015182e-03
+4 Threads Pairwise Time 2.054910e-04
+Testing Size 8
+GPU-Aware PMPI Time 1.102665e-04
+Copy-to-CPU PMPI Time 4.895424e-05
+Copy-to-CPU Pairwise Time 2.283966e-04
+GPU-Aware Pairwise Time 1.131436e-03
+4 Threads Pairwise Time 1.930729e-04
+Testing Size 16
+GPU-Aware PMPI Time 7.951933e-05
+Copy-to-CPU PMPI Time 5.640209e-05
+Copy-to-CPU Pairwise Time 1.818532e-04
+GPU-Aware Pairwise Time 8.008677e-04
+4 Threads Pairwise Time 1.906690e-04
+Testing Size 32
+GPU-Aware PMPI Time 7.865031e-05
+Copy-to-CPU PMPI Time 5.777009e-05
+Copy-to-CPU Pairwise Time 2.801978e-04
+GPU-Aware Pairwise Time 7.307765e-04
+4 Threads Pairwise Time 2.360124e-04
+Testing Size 64
+GPU-Aware PMPI Time 8.355392e-05
+Copy-to-CPU PMPI Time 6.219317e-05
+Copy-to-CPU Pairwise Time 2.824184e-04
+GPU-Aware Pairwise Time 6.851326e-04
+4 Threads Pairwise Time 2.828901e-04
+Testing Size 128
+GPU-Aware PMPI Time 8.215203e-05
+Copy-to-CPU PMPI Time 6.017955e-05
+Copy-to-CPU Pairwise Time 2.796544e-04
+GPU-Aware Pairwise Time 8.214272e-04
+4 Threads Pairwise Time 2.493522e-04
+Testing Size 256
+GPU-Aware PMPI Time 9.369442e-05
+Copy-to-CPU PMPI Time 7.220376e-05
+Copy-to-CPU Pairwise Time 3.191872e-04
+GPU-Aware Pairwise Time 8.619593e-04
+4 Threads Pairwise Time 2.991852e-04
+Testing Size 512
+GPU-Aware PMPI Time 1.168490e-04
+Copy-to-CPU PMPI Time 9.004027e-05
+Copy-to-CPU Pairwise Time 2.332237e-04
+GPU-Aware Pairwise Time 5.379315e-04
+4 Threads Pairwise Time 2.621402e-04
+Testing Size 1024
+GPU-Aware PMPI Time 1.716205e-04
+Copy-to-CPU PMPI Time 1.436245e-04
+Copy-to-CPU Pairwise Time 3.963356e-04
+GPU-Aware Pairwise Time 6.346932e-04
+4 Threads Pairwise Time 2.974482e-04
+Testing Size 2048
+GPU-Aware PMPI Time 2.845775e-04
+Copy-to-CPU PMPI Time 2.493099e-04
+Copy-to-CPU Pairwise Time 4.238593e-04
+GPU-Aware Pairwise Time 6.846132e-04
+4 Threads Pairwise Time 4.588444e-04
+Testing Size 4096
+GPU-Aware PMPI Time 5.373205e-04
+Copy-to-CPU PMPI Time 4.856835e-04
+Copy-to-CPU Pairwise Time 6.766032e-04
+GPU-Aware Pairwise Time 7.363394e-04
+4 Threads Pairwise Time 6.248186e-04
+Testing Size 8192
+GPU-Aware PMPI Time 1.010305e-03
+Copy-to-CPU PMPI Time 9.313492e-04
+Copy-to-CPU Pairwise Time 1.125688e-03
+GPU-Aware Pairwise Time 1.000457e-03
+4 Threads Pairwise Time 9.577864e-04
+Testing Size 16384
+GPU-Aware PMPI Time 1.648130e-03
+Copy-to-CPU PMPI Time 1.550842e-03
+Copy-to-CPU Pairwise Time 2.512304e-03
+GPU-Aware Pairwise Time 2.421852e-03
+4 Threads Pairwise Time 1.521033e-03
+Testing Size 32768
+GPU-Aware PMPI Time 3.210141e-03
+Copy-to-CPU PMPI Time 3.023973e-03
+Copy-to-CPU Pairwise Time 3.697584e-03
+GPU-Aware Pairwise Time 3.764252e-03
+4 Threads Pairwise Time 2.843448e-03
+Testing Size 65536
+GPU-Aware PMPI Time 5.134672e-03
+Copy-to-CPU PMPI Time 4.935764e-03
+Copy-to-CPU Pairwise Time 5.958302e-03
+GPU-Aware Pairwise Time 5.915852e-03
+4 Threads Pairwise Time 5.177567e-03
+Testing Size 131072
+GPU-Aware PMPI Time 9.655116e-03
+Copy-to-CPU PMPI Time 9.268012e-03
+Copy-to-CPU Pairwise Time 1.190960e-02
+GPU-Aware Pairwise Time 1.110730e-02
+4 Threads Pairwise Time 1.005109e-02
+Testing Size 262144
+GPU-Aware PMPI Time 1.767171e-02
+Copy-to-CPU PMPI Time 1.709114e-02
+Copy-to-CPU Pairwise Time 1.828126e-02
+GPU-Aware Pairwise Time 1.702438e-02
+4 Threads Pairwise Time 1.778865e-02
+Testing Size 524288
+GPU-Aware PMPI Time 3.760444e-02
+Copy-to-CPU PMPI Time 3.530817e-02
+Copy-to-CPU Pairwise Time 4.638861e-02
+GPU-Aware Pairwise Time 4.189735e-02
+4 Threads Pairwise Time 4.121571e-02
+app 0: ./thread_launches 4 
+rank: 0: { host: 1; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 1: { host: 1; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 2: { host: 1; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 3: { host: 1; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 4: { host: 2; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 5: { host: 2; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 6: { host: 2; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 7: { host: 2; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 8: { host: 3; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 9: { host: 3; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 10: { host: 3; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 11: { host: 3; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 12: { host: 4; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 13: { host: 4; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 14: { host: 4; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 15: { host: 4; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 16: { host: 5; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 17: { host: 5; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 18: { host: 5; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 19: { host: 5; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 20: { host: 6; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 21: { host: 6; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 22: { host: 6; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 23: { host: 6; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 24: { host: 7; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 25: { host: 7; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 26: { host: 7; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 27: { host: 7; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 28: { host: 8; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 29: { host: 8; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 30: { host: 8; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 31: { host: 8; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+Running Threaded Alltoall Test without launches, 4 threads
+Testing Size 1
+GPU-Aware PMPI Time 7.098191e-05
+Copy-to-CPU PMPI Time 4.473828e-05
+Copy-to-CPU Pairwise Time 1.185817e-04
+4 Threads Pairwise Time 1.786228e-04
+Testing Size 2
+GPU-Aware PMPI Time 6.493407e-05
+Copy-to-CPU PMPI Time 4.530154e-05
+Copy-to-CPU Pairwise Time 1.100639e-04
+4 Threads Pairwise Time 1.802543e-04
+Testing Size 4
+GPU-Aware PMPI Time 6.588118e-05
+Copy-to-CPU PMPI Time 4.519142e-05
+Copy-to-CPU Pairwise Time 1.108490e-04
+4 Threads Pairwise Time 1.787176e-04
+Testing Size 8
+GPU-Aware PMPI Time 6.742319e-05
+Copy-to-CPU PMPI Time 4.731675e-05
+Copy-to-CPU Pairwise Time 1.145574e-04
+4 Threads Pairwise Time 1.798981e-04
+Testing Size 16
+GPU-Aware PMPI Time 7.122948e-05
+Copy-to-CPU PMPI Time 4.919059e-05
+Copy-to-CPU Pairwise Time 1.192248e-04
+4 Threads Pairwise Time 1.819302e-04
+Testing Size 32
+GPU-Aware PMPI Time 7.558365e-05
+Copy-to-CPU PMPI Time 5.567656e-05
+Copy-to-CPU Pairwise Time 1.550043e-04
+4 Threads Pairwise Time 1.820721e-04
+Testing Size 64
+GPU-Aware PMPI Time 8.134129e-05
+Copy-to-CPU PMPI Time 5.794539e-05
+Copy-to-CPU Pairwise Time 1.607171e-04
+4 Threads Pairwise Time 1.892315e-04
+Testing Size 128
+GPU-Aware PMPI Time 8.107736e-05
+Copy-to-CPU PMPI Time 5.768744e-05
+Copy-to-CPU Pairwise Time 1.639789e-04
+4 Threads Pairwise Time 1.889751e-04
+Testing Size 256
+GPU-Aware PMPI Time 8.807943e-05
+Copy-to-CPU PMPI Time 6.409351e-05
+Copy-to-CPU Pairwise Time 1.808560e-04
+4 Threads Pairwise Time 2.001117e-04
+Testing Size 512
+GPU-Aware PMPI Time 1.119943e-04
+Copy-to-CPU PMPI Time 8.685599e-05
+Copy-to-CPU Pairwise Time 2.219565e-04
+4 Threads Pairwise Time 2.201034e-04
+Testing Size 1024
+GPU-Aware PMPI Time 1.744513e-04
+Copy-to-CPU PMPI Time 1.426540e-04
+Copy-to-CPU Pairwise Time 3.101627e-04
+4 Threads Pairwise Time 2.498565e-04
+Testing Size 2048
+GPU-Aware PMPI Time 2.900349e-04
+Copy-to-CPU PMPI Time 2.493976e-04
+Copy-to-CPU Pairwise Time 4.409634e-04
+4 Threads Pairwise Time 3.465478e-04
+Testing Size 4096
+GPU-Aware PMPI Time 5.311735e-04
+Copy-to-CPU PMPI Time 4.865151e-04
+Copy-to-CPU Pairwise Time 6.582809e-04
+4 Threads Pairwise Time 5.184018e-04
+Testing Size 8192
+GPU-Aware PMPI Time 1.007152e-03
+Copy-to-CPU PMPI Time 9.242425e-04
+Copy-to-CPU Pairwise Time 1.123264e-03
+4 Threads Pairwise Time 9.313525e-04
+Testing Size 16384
+GPU-Aware PMPI Time 1.474841e-03
+Copy-to-CPU PMPI Time 1.355919e-03
+Copy-to-CPU Pairwise Time 1.518501e-03
+4 Threads Pairwise Time 1.202976e-03
+Testing Size 32768
+GPU-Aware PMPI Time 2.729033e-03
+Copy-to-CPU PMPI Time 2.728176e-03
+Copy-to-CPU Pairwise Time 2.540798e-03
+4 Threads Pairwise Time 2.231010e-03
+Testing Size 65536
+GPU-Aware PMPI Time 5.009239e-03
+Copy-to-CPU PMPI Time 4.754495e-03
+Copy-to-CPU Pairwise Time 4.618050e-03
+4 Threads Pairwise Time 4.290248e-03
+Testing Size 131072
+GPU-Aware PMPI Time 9.326631e-03
+Copy-to-CPU PMPI Time 8.749886e-03
+Copy-to-CPU Pairwise Time 8.907196e-03
+4 Threads Pairwise Time 8.596913e-03
+Testing Size 262144
+GPU-Aware PMPI Time 1.759174e-02
+Copy-to-CPU PMPI Time 1.668472e-02
+Copy-to-CPU Pairwise Time 1.763157e-02
+4 Threads Pairwise Time 1.706973e-02
+Testing Size 524288
+GPU-Aware PMPI Time 3.349588e-02
+Copy-to-CPU PMPI Time 3.195087e-02
+Copy-to-CPU Pairwise Time 3.601908e-02
+4 Threads Pairwise Time 3.465489e-02
+app 0: ./no_thread_launches 4 
+rank: 0: { host: 1; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 1: { host: 1; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 2: { host: 1; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 3: { host: 1; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 4: { host: 2; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 5: { host: 2; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 6: { host: 2; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 7: { host: 2; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 8: { host: 3; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 9: { host: 3; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 10: { host: 3; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 11: { host: 3; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 12: { host: 4; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 13: { host: 4; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 14: { host: 4; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 15: { host: 4; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 16: { host: 5; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 17: { host: 5; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 18: { host: 5; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 19: { host: 5; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 20: { host: 6; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 21: { host: 6; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 22: { host: 6; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 23: { host: 6; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 24: { host: 7; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 25: { host: 7; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 26: { host: 7; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 27: { host: 7; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+rank: 28: { host: 8; cpu: {0-15} ; gpu: {0} ; mem: {0-32603} } : app 0
+rank: 29: { host: 8; cpu: {16-31} ; gpu: {1} ; mem: {32604-65207} } : app 0
+rank: 30: { host: 8; cpu: {80-95} ; gpu: {2} ; mem: {163036-195639} } : app 0
+rank: 31: { host: 8; cpu: {96-111} ; gpu: {3} ; mem: {195640-228243} } : app 0
+Running Threaded Alltoall Test with launches, 8 threads
+Testing Size 1
+GPU-Aware PMPI Time 9.425350e-05
+Copy-to-CPU PMPI Time 6.491485e-05
+Copy-to-CPU Pairwise Time 2.436275e-04
+GPU-Aware Pairwise Time 9.209770e-04
+8 Threads Pairwise Time 1.667150e-04
+Testing Size 2
+GPU-Aware PMPI Time 7.000986e-05
+Copy-to-CPU PMPI Time 5.312605e-05
+Copy-to-CPU Pairwise Time 1.553715e-04
+GPU-Aware Pairwise Time 7.385083e-04
+8 Threads Pairwise Time 1.629593e-04
+Testing Size 4
+GPU-Aware PMPI Time 8.051680e-05
+Copy-to-CPU PMPI Time 4.895504e-05
+Copy-to-CPU Pairwise Time 1.853891e-04
+GPU-Aware Pairwise Time 7.737618e-04
+8 Threads Pairwise Time 1.669744e-04
+Testing Size 8
+GPU-Aware PMPI Time 7.981530e-05
+Copy-to-CPU PMPI Time 5.045652e-05
+Copy-to-CPU Pairwise Time 1.211017e-04
+GPU-Aware Pairwise Time 4.804517e-04
+8 Threads Pairwise Time 1.614835e-04
+Testing Size 16
+GPU-Aware PMPI Time 7.376268e-05
+Copy-to-CPU PMPI Time 5.162154e-05
+Copy-to-CPU Pairwise Time 1.480842e-04
+GPU-Aware Pairwise Time 5.208698e-04
+8 Threads Pairwise Time 1.633129e-04
+Testing Size 32
+GPU-Aware PMPI Time 7.952859e-05
+Copy-to-CPU PMPI Time 5.913646e-05
+Copy-to-CPU Pairwise Time 1.835379e-04
+GPU-Aware Pairwise Time 5.864920e-04
+8 Threads Pairwise Time 2.012409e-04
+Testing Size 64
+GPU-Aware PMPI Time 8.251593e-05
+Copy-to-CPU PMPI Time 6.040288e-05
+Copy-to-CPU Pairwise Time 1.701137e-04
+GPU-Aware Pairwise Time 8.617807e-04
+8 Threads Pairwise Time 2.639245e-04
+Testing Size 128
+GPU-Aware PMPI Time 8.895087e-05
+Copy-to-CPU PMPI Time 7.421909e-05
+Copy-to-CPU Pairwise Time 3.262084e-04
+GPU-Aware Pairwise Time 9.523828e-04
+8 Threads Pairwise Time 2.443339e-04
+Testing Size 256
+GPU-Aware PMPI Time 9.475240e-05
+Copy-to-CPU PMPI Time 8.202386e-05
+Copy-to-CPU Pairwise Time 3.942398e-04
+GPU-Aware Pairwise Time 9.842840e-04
+8 Threads Pairwise Time 2.348572e-04
+Testing Size 512
+GPU-Aware PMPI Time 1.196352e-04
+Copy-to-CPU PMPI Time 1.204272e-04
+Copy-to-CPU Pairwise Time 3.343271e-04
+GPU-Aware Pairwise Time 9.610619e-04
+8 Threads Pairwise Time 2.473530e-04
+Testing Size 1024
+GPU-Aware PMPI Time 1.891778e-04
+Copy-to-CPU PMPI Time 1.617280e-04
+Copy-to-CPU Pairwise Time 5.329382e-04
+GPU-Aware Pairwise Time 9.490413e-04
+8 Threads Pairwise Time 2.920039e-04
+Testing Size 2048
+GPU-Aware PMPI Time 3.226065e-04
+Copy-to-CPU PMPI Time 2.513659e-04
+Copy-to-CPU Pairwise Time 4.571446e-04
+GPU-Aware Pairwise Time 6.512522e-04
+8 Threads Pairwise Time 3.751681e-04
+Testing Size 4096
+GPU-Aware PMPI Time 5.279039e-04
+Copy-to-CPU PMPI Time 4.717428e-04
+Copy-to-CPU Pairwise Time 6.644198e-04
+GPU-Aware Pairwise Time 9.683466e-04
+8 Threads Pairwise Time 4.918588e-04
+Testing Size 8192
+GPU-Aware PMPI Time 1.009760e-03
+Copy-to-CPU PMPI Time 9.881114e-04
+Copy-to-CPU Pairwise Time 1.798075e-03
+GPU-Aware Pairwise Time 1.213413e-03
+8 Threads Pairwise Time 1.127051e-03
+Testing Size 16384
+GPU-Aware PMPI Time 1.584410e-03
+Copy-to-CPU PMPI Time 1.500620e-03
+Copy-to-CPU Pairwise Time 2.561913e-03
+GPU-Aware Pairwise Time 2.151310e-03
+8 Threads Pairwise Time 1.377281e-03
+Testing Size 32768
+GPU-Aware PMPI Time 2.949455e-03
+Copy-to-CPU PMPI Time 2.901126e-03
+Copy-to-CPU Pairwise Time 3.824772e-03
+GPU-Aware Pairwise Time 3.683401e-03
+8 Threads Pairwise Time 2.735253e-03
+Testing Size 65536
+GPU-Aware PMPI Time 5.051626e-03
+Copy-to-CPU PMPI Time 4.830390e-03
+Copy-to-CPU Pairwise Time 6.390426e-03
+GPU-Aware Pairwise Time 6.231982e-03
+8 Threads Pairwise Time 4.873195e-03
+Testing Size 131072
+GPU-Aware PMPI Time 9.715183e-03
+Copy-to-CPU PMPI Time 9.157472e-03
+Copy-to-CPU Pairwise Time 1.197042e-02
+GPU-Aware Pairwise Time 1.059130e-02
+8 Threads Pairwise Time 8.515886e-03
+Testing Size 262144
+GPU-Aware PMPI Time 1.741595e-02
+Copy-to-CPU PMPI Time 1.724093e-02
+Copy-to-CPU Pairwise Time 1.826370e-02
+GPU-Aware Pairwise Time 1.780908e-02
+8 Threads Pairwise Time 2.005523e-02
+Testing Size 524288
+GPU-Aware PMPI Time 3.658849e-02
+Copy-to-CPU PMPI Time 3.457784e-02
+Copy-to-CPU Pairwise Time 4.652076e-02
+GPU-Aware Pairwise Time 4.356015e-02
+8 Threads Pairwise Time 3.923502e-02
+app 0: ./thread_launches 8 
+rank: 0: { host: 1; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 1: { host: 1; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 2: { host: 1; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 3: { host: 1; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 4: { host: 2; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 5: { host: 2; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 6: { host: 2; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 7: { host: 2; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 8: { host: 3; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 9: { host: 3; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 10: { host: 3; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 11: { host: 3; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 12: { host: 4; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 13: { host: 4; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 14: { host: 4; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 15: { host: 4; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 16: { host: 5; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 17: { host: 5; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 18: { host: 5; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 19: { host: 5; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 20: { host: 6; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 21: { host: 6; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 22: { host: 6; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 23: { host: 6; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 24: { host: 7; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 25: { host: 7; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 26: { host: 7; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 27: { host: 7; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 28: { host: 8; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 29: { host: 8; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 30: { host: 8; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 31: { host: 8; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+Running Threaded Alltoall Test without launches, 8 threads
+Testing Size 1
+GPU-Aware PMPI Time 7.046330e-05
+Copy-to-CPU PMPI Time 4.412309e-05
+Copy-to-CPU Pairwise Time 1.193111e-04
+8 Threads Pairwise Time 1.591895e-04
+Testing Size 2
+GPU-Aware PMPI Time 6.604484e-05
+Copy-to-CPU PMPI Time 4.556042e-05
+Copy-to-CPU Pairwise Time 1.105847e-04
+8 Threads Pairwise Time 1.568605e-04
+Testing Size 4
+GPU-Aware PMPI Time 6.690805e-05
+Copy-to-CPU PMPI Time 4.718381e-05
+Copy-to-CPU Pairwise Time 1.122470e-04
+8 Threads Pairwise Time 1.576176e-04
+Testing Size 8
+GPU-Aware PMPI Time 6.654479e-05
+Copy-to-CPU PMPI Time 4.652971e-05
+Copy-to-CPU Pairwise Time 1.139322e-04
+8 Threads Pairwise Time 1.579798e-04
+Testing Size 16
+GPU-Aware PMPI Time 6.982730e-05
+Copy-to-CPU PMPI Time 4.980828e-05
+Copy-to-CPU Pairwise Time 1.188073e-04
+8 Threads Pairwise Time 1.592773e-04
+Testing Size 32
+GPU-Aware PMPI Time 7.859962e-05
+Copy-to-CPU PMPI Time 5.495252e-05
+Copy-to-CPU Pairwise Time 1.515921e-04
+8 Threads Pairwise Time 1.789162e-04
+Testing Size 64
+GPU-Aware PMPI Time 7.767187e-05
+Copy-to-CPU PMPI Time 5.633692e-05
+Copy-to-CPU Pairwise Time 1.595984e-04
+8 Threads Pairwise Time 1.918765e-04
+Testing Size 128
+GPU-Aware PMPI Time 7.717976e-05
+Copy-to-CPU PMPI Time 5.546231e-05
+Copy-to-CPU Pairwise Time 1.750031e-04
+8 Threads Pairwise Time 1.857911e-04
+Testing Size 256
+GPU-Aware PMPI Time 8.572307e-05
+Copy-to-CPU PMPI Time 6.515017e-05
+Copy-to-CPU Pairwise Time 1.876102e-04
+8 Threads Pairwise Time 1.950762e-04
+Testing Size 512
+GPU-Aware PMPI Time 1.134414e-04
+Copy-to-CPU PMPI Time 9.231732e-05
+Copy-to-CPU Pairwise Time 2.579551e-04
+8 Threads Pairwise Time 2.141816e-04
+Testing Size 1024
+GPU-Aware PMPI Time 1.715675e-04
+Copy-to-CPU PMPI Time 1.447299e-04
+Copy-to-CPU Pairwise Time 2.937150e-04
+8 Threads Pairwise Time 2.411695e-04
+Testing Size 2048
+GPU-Aware PMPI Time 2.859651e-04
+Copy-to-CPU PMPI Time 2.503570e-04
+Copy-to-CPU Pairwise Time 4.332848e-04
+8 Threads Pairwise Time 3.352296e-04
+Testing Size 4096
+GPU-Aware PMPI Time 5.279678e-04
+Copy-to-CPU PMPI Time 4.783181e-04
+Copy-to-CPU Pairwise Time 6.611560e-04
+8 Threads Pairwise Time 4.677496e-04
+Testing Size 8192
+GPU-Aware PMPI Time 1.015917e-03
+Copy-to-CPU PMPI Time 9.413217e-04
+Copy-to-CPU Pairwise Time 1.122886e-03
+8 Threads Pairwise Time 8.403133e-04
+Testing Size 16384
+GPU-Aware PMPI Time 1.423606e-03
+Copy-to-CPU PMPI Time 1.403854e-03
+Copy-to-CPU Pairwise Time 1.540640e-03
+8 Threads Pairwise Time 1.089330e-03
+Testing Size 32768
+GPU-Aware PMPI Time 2.665812e-03
+Copy-to-CPU PMPI Time 2.659759e-03
+Copy-to-CPU Pairwise Time 2.609857e-03
+8 Threads Pairwise Time 2.215242e-03
+Testing Size 65536
+GPU-Aware PMPI Time 4.846649e-03
+Copy-to-CPU PMPI Time 4.595802e-03
+Copy-to-CPU Pairwise Time 4.755085e-03
+8 Threads Pairwise Time 4.352523e-03
+Testing Size 131072
+GPU-Aware PMPI Time 9.091606e-03
+Copy-to-CPU PMPI Time 8.558749e-03
+Copy-to-CPU Pairwise Time 9.078100e-03
+8 Threads Pairwise Time 8.609796e-03
+Testing Size 262144
+GPU-Aware PMPI Time 1.740482e-02
+Copy-to-CPU PMPI Time 1.662945e-02
+Copy-to-CPU Pairwise Time 1.834648e-02
+8 Threads Pairwise Time 1.723944e-02
+Testing Size 524288
+GPU-Aware PMPI Time 3.381761e-02
+Copy-to-CPU PMPI Time 3.193739e-02
+Copy-to-CPU Pairwise Time 3.656457e-02
+8 Threads Pairwise Time 3.408242e-02
+app 0: ./no_thread_launches 8 
+rank: 0: { host: 1; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 1: { host: 1; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 2: { host: 1; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 3: { host: 1; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 4: { host: 2; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 5: { host: 2; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 6: { host: 2; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 7: { host: 2; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 8: { host: 3; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 9: { host: 3; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 10: { host: 3; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 11: { host: 3; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 12: { host: 4; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 13: { host: 4; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 14: { host: 4; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 15: { host: 4; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 16: { host: 5; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 17: { host: 5; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 18: { host: 5; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 19: { host: 5; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 20: { host: 6; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 21: { host: 6; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 22: { host: 6; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 23: { host: 6; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 24: { host: 7; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 25: { host: 7; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 26: { host: 7; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 27: { host: 7; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+rank: 28: { host: 8; cpu: {0-31} ; gpu: {0} ; mem: {0-65207} } : app 0
+rank: 29: { host: 8; cpu: {32-63} ; gpu: {1} ; mem: {65208-130415} } : app 0
+rank: 30: { host: 8; cpu: {80-111} ; gpu: {2} ; mem: {163036-228243} } : app 0
+rank: 31: { host: 8; cpu: {112-143} ; gpu: {3} ; mem: {228244-293451} } : app 0
+Running Threaded Alltoall Test with launches, 10 threads
+Testing Size 1
+GPU-Aware PMPI Time 7.324839e-05
+Copy-to-CPU PMPI Time 4.937270e-05
+Copy-to-CPU Pairwise Time 1.478500e-04
+GPU-Aware Pairwise Time 6.364041e-04
+10 Threads Pairwise Time 1.597940e-04
+Testing Size 2
+GPU-Aware PMPI Time 7.001809e-05
+Copy-to-CPU PMPI Time 4.592791e-05
+Copy-to-CPU Pairwise Time 1.209182e-04
+GPU-Aware Pairwise Time 6.746192e-04
+10 Threads Pairwise Time 1.602749e-04
+Testing Size 4
+GPU-Aware PMPI Time 8.139758e-05
+Copy-to-CPU PMPI Time 5.522360e-05
+Copy-to-CPU Pairwise Time 1.551542e-04
+GPU-Aware Pairwise Time 6.873103e-04
+10 Threads Pairwise Time 1.619130e-04
+Testing Size 8
+GPU-Aware PMPI Time 7.144631e-05
+Copy-to-CPU PMPI Time 4.949891e-05
+Copy-to-CPU Pairwise Time 1.233635e-04
+GPU-Aware Pairwise Time 4.803353e-04
+10 Threads Pairwise Time 1.627702e-04
+Testing Size 16
+GPU-Aware PMPI Time 7.407979e-05
+Copy-to-CPU PMPI Time 5.162131e-05
+Copy-to-CPU Pairwise Time 1.244550e-04
+GPU-Aware Pairwise Time 4.787680e-04
+10 Threads Pairwise Time 1.605530e-04
+Testing Size 32
+GPU-Aware PMPI Time 7.786526e-05
+Copy-to-CPU PMPI Time 5.570105e-05
+Copy-to-CPU Pairwise Time 1.654820e-04
+GPU-Aware Pairwise Time 4.920397e-04
+10 Threads Pairwise Time 1.967698e-04
+Testing Size 64
+GPU-Aware PMPI Time 8.146198e-05
+Copy-to-CPU PMPI Time 6.014653e-05
+Copy-to-CPU Pairwise Time 1.675179e-04
+GPU-Aware Pairwise Time 4.860290e-04
+10 Threads Pairwise Time 2.267976e-04
+Testing Size 128
+GPU-Aware PMPI Time 8.157021e-05
+Copy-to-CPU PMPI Time 5.750963e-05
+Copy-to-CPU Pairwise Time 1.676718e-04
+GPU-Aware Pairwise Time 4.910214e-04
+10 Threads Pairwise Time 2.180016e-04
+Testing Size 256
+GPU-Aware PMPI Time 8.910265e-05
+Copy-to-CPU PMPI Time 6.512755e-05
+Copy-to-CPU Pairwise Time 1.975137e-04
+GPU-Aware Pairwise Time 5.194139e-04
+10 Threads Pairwise Time 2.211283e-04
+Testing Size 512
+GPU-Aware PMPI Time 1.158045e-04
+Copy-to-CPU PMPI Time 8.849721e-05
+Copy-to-CPU Pairwise Time 2.256076e-04
+GPU-Aware Pairwise Time 6.648243e-04
+10 Threads Pairwise Time 2.624440e-04
+Testing Size 1024
+GPU-Aware PMPI Time 1.969987e-04
+Copy-to-CPU PMPI Time 1.752004e-04
+Copy-to-CPU Pairwise Time 4.982718e-04
+GPU-Aware Pairwise Time 1.252286e-03
+10 Threads Pairwise Time 3.078724e-04
+Testing Size 2048
+GPU-Aware PMPI Time 3.310761e-04
+Copy-to-CPU PMPI Time 2.788353e-04
+Copy-to-CPU Pairwise Time 5.948594e-04
+GPU-Aware Pairwise Time 9.922259e-04
+10 Threads Pairwise Time 3.692131e-04
+Testing Size 4096
+GPU-Aware PMPI Time 5.618765e-04
+Copy-to-CPU PMPI Time 4.993244e-04
+Copy-to-CPU Pairwise Time 8.322437e-04
+GPU-Aware Pairwise Time 1.286000e-03
+10 Threads Pairwise Time 5.175046e-04
+Testing Size 8192
+GPU-Aware PMPI Time 1.157327e-03
+Copy-to-CPU PMPI Time 9.042172e-04
+Copy-to-CPU Pairwise Time 1.105847e-03
+GPU-Aware Pairwise Time 2.264853e-03
+10 Threads Pairwise Time 9.317331e-04
+Testing Size 16384
+GPU-Aware PMPI Time 1.471614e-03
+Copy-to-CPU PMPI Time 1.454677e-03
+Copy-to-CPU Pairwise Time 1.538978e-03
+GPU-Aware Pairwise Time 1.728943e-03
+10 Threads Pairwise Time 1.271713e-03
+Testing Size 32768
+GPU-Aware PMPI Time 2.750675e-03
+Copy-to-CPU PMPI Time 2.554854e-03
+Copy-to-CPU Pairwise Time 2.646783e-03
+GPU-Aware Pairwise Time 2.663046e-03
+10 Threads Pairwise Time 2.195506e-03
+Testing Size 65536
+GPU-Aware PMPI Time 4.936352e-03
+Copy-to-CPU PMPI Time 4.641598e-03
+Copy-to-CPU Pairwise Time 5.210596e-03
+GPU-Aware Pairwise Time 5.219783e-03
+10 Threads Pairwise Time 4.267829e-03
+Testing Size 131072
+GPU-Aware PMPI Time 9.729780e-03
+Copy-to-CPU PMPI Time 9.470972e-03
+Copy-to-CPU Pairwise Time 1.197559e-02
+GPU-Aware Pairwise Time 1.128609e-02
+10 Threads Pairwise Time 1.033770e-02
+Testing Size 262144
+GPU-Aware PMPI Time 1.809725e-02
+Copy-to-CPU PMPI Time 1.752484e-02
+Copy-to-CPU Pairwise Time 2.384202e-02
+GPU-Aware Pairwise Time 2.187325e-02
+10 Threads Pairwise Time 1.874460e-02
+Testing Size 524288
+GPU-Aware PMPI Time 3.292082e-02
+Copy-to-CPU PMPI Time 3.226950e-02
+Copy-to-CPU Pairwise Time 3.829838e-02
+GPU-Aware Pairwise Time 4.121468e-02
+10 Threads Pairwise Time 4.124625e-02
+app 0: ./thread_launches 10 
+rank: 0: { host: 1; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 1: { host: 1; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 2: { host: 1; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 3: { host: 1; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 4: { host: 2; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 5: { host: 2; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 6: { host: 2; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 7: { host: 2; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 8: { host: 3; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 9: { host: 3; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 10: { host: 3; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 11: { host: 3; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 12: { host: 4; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 13: { host: 4; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 14: { host: 4; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 15: { host: 4; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 16: { host: 5; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 17: { host: 5; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 18: { host: 5; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 19: { host: 5; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 20: { host: 6; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 21: { host: 6; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 22: { host: 6; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 23: { host: 6; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 24: { host: 7; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 25: { host: 7; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 26: { host: 7; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 27: { host: 7; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 28: { host: 8; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 29: { host: 8; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 30: { host: 8; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 31: { host: 8; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+Running Threaded Alltoall Test without launches, 10 threads
+Testing Size 1
+GPU-Aware PMPI Time 7.319305e-05
+Copy-to-CPU PMPI Time 4.934840e-05
+Copy-to-CPU Pairwise Time 1.904523e-04
+10 Threads Pairwise Time 1.599785e-04
+Testing Size 2
+GPU-Aware PMPI Time 1.148511e-04
+Copy-to-CPU PMPI Time 6.684547e-05
+Copy-to-CPU Pairwise Time 1.217505e-04
+10 Threads Pairwise Time 1.539675e-04
+Testing Size 4
+GPU-Aware PMPI Time 7.604746e-05
+Copy-to-CPU PMPI Time 6.218790e-05
+Copy-to-CPU Pairwise Time 1.752814e-04
+10 Threads Pairwise Time 1.645359e-04
+Testing Size 8
+GPU-Aware PMPI Time 7.590985e-05
+Copy-to-CPU PMPI Time 4.796813e-05
+Copy-to-CPU Pairwise Time 1.153162e-04
+10 Threads Pairwise Time 1.546140e-04
+Testing Size 16
+GPU-Aware PMPI Time 6.996987e-05
+Copy-to-CPU PMPI Time 5.046173e-05
+Copy-to-CPU Pairwise Time 1.176364e-04
+10 Threads Pairwise Time 1.571977e-04
+Testing Size 32
+GPU-Aware PMPI Time 7.304493e-05
+Copy-to-CPU PMPI Time 5.247940e-05
+Copy-to-CPU Pairwise Time 1.540619e-04
+10 Threads Pairwise Time 1.817949e-04
+Testing Size 64
+GPU-Aware PMPI Time 7.764096e-05
+Copy-to-CPU PMPI Time 5.660596e-05
+Copy-to-CPU Pairwise Time 1.631761e-04
+10 Threads Pairwise Time 1.908296e-04
+Testing Size 128
+GPU-Aware PMPI Time 7.715988e-05
+Copy-to-CPU PMPI Time 5.810028e-05
+Copy-to-CPU Pairwise Time 1.702906e-04
+10 Threads Pairwise Time 1.873785e-04
+Testing Size 256
+GPU-Aware PMPI Time 8.355086e-05
+Copy-to-CPU PMPI Time 6.326655e-05
+Copy-to-CPU Pairwise Time 1.872154e-04
+10 Threads Pairwise Time 1.984106e-04
+Testing Size 512
+GPU-Aware PMPI Time 1.076484e-04
+Copy-to-CPU PMPI Time 8.580674e-05
+Copy-to-CPU Pairwise Time 2.260549e-04
+10 Threads Pairwise Time 2.155318e-04
+Testing Size 1024
+GPU-Aware PMPI Time 1.696920e-04
+Copy-to-CPU PMPI Time 1.427863e-04
+Copy-to-CPU Pairwise Time 2.804033e-04
+10 Threads Pairwise Time 2.420224e-04
+Testing Size 2048
+GPU-Aware PMPI Time 2.851428e-04
+Copy-to-CPU PMPI Time 2.521737e-04
+Copy-to-CPU Pairwise Time 4.515569e-04
+10 Threads Pairwise Time 3.325459e-04
+Testing Size 4096
+GPU-Aware PMPI Time 5.369528e-04
+Copy-to-CPU PMPI Time 4.796679e-04
+Copy-to-CPU Pairwise Time 6.561677e-04
+10 Threads Pairwise Time 4.487948e-04
+Testing Size 8192
+GPU-Aware PMPI Time 1.033723e-03
+Copy-to-CPU PMPI Time 9.198855e-04
+Copy-to-CPU Pairwise Time 1.132790e-03
+10 Threads Pairwise Time 8.457025e-04
+Testing Size 16384
+GPU-Aware PMPI Time 1.424137e-03
+Copy-to-CPU PMPI Time 1.427277e-03
+Copy-to-CPU Pairwise Time 1.496334e-03
+10 Threads Pairwise Time 1.086175e-03
+Testing Size 32768
+GPU-Aware PMPI Time 2.769600e-03
+Copy-to-CPU PMPI Time 2.638454e-03
+Copy-to-CPU Pairwise Time 2.547276e-03
+10 Threads Pairwise Time 2.161332e-03
+Testing Size 65536
+GPU-Aware PMPI Time 4.882351e-03
+Copy-to-CPU PMPI Time 4.694485e-03
+Copy-to-CPU Pairwise Time 4.743582e-03
+10 Threads Pairwise Time 4.340943e-03
+Testing Size 131072
+GPU-Aware PMPI Time 9.101074e-03
+Copy-to-CPU PMPI Time 8.578154e-03
+Copy-to-CPU Pairwise Time 9.186067e-03
+10 Threads Pairwise Time 9.013989e-03
+Testing Size 262144
+GPU-Aware PMPI Time 1.751173e-02
+Copy-to-CPU PMPI Time 1.645296e-02
+Copy-to-CPU Pairwise Time 1.820164e-02
+10 Threads Pairwise Time 1.705162e-02
+Testing Size 524288
+GPU-Aware PMPI Time 3.328424e-02
+Copy-to-CPU PMPI Time 3.121572e-02
+Copy-to-CPU Pairwise Time 3.594665e-02
+10 Threads Pairwise Time 3.460107e-02
+app 0: ./no_thread_launches 10 
+rank: 0: { host: 1; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 1: { host: 1; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 2: { host: 1; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 3: { host: 1; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 4: { host: 2; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 5: { host: 2; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 6: { host: 2; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 7: { host: 2; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 8: { host: 3; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 9: { host: 3; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 10: { host: 3; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 11: { host: 3; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 12: { host: 4; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 13: { host: 4; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 14: { host: 4; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 15: { host: 4; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 16: { host: 5; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 17: { host: 5; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 18: { host: 5; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 19: { host: 5; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 20: { host: 6; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 21: { host: 6; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 22: { host: 6; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 23: { host: 6; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 24: { host: 7; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 25: { host: 7; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 26: { host: 7; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 27: { host: 7; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 28: { host: 8; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 29: { host: 8; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 30: { host: 8; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 31: { host: 8; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+Running Multiproc Alltoall Test with 2 procs:
+Testing Size 1
+GPU-Aware PMPI Time 8.509052e-05
+Copy-to-CPU PMPI Time 6.278751e-05
+Copy-to-CPU Pairwise Time 2.758946e-04
+2 Processes Pairwise Time 1.921589e-04
+Testing Size 2
+GPU-Aware PMPI Time 9.773906e-05
+Copy-to-CPU PMPI Time 5.470826e-05
+Copy-to-CPU Pairwise Time 1.926882e-04
+2 Processes Pairwise Time 1.830757e-04
+Testing Size 4
+GPU-Aware PMPI Time 6.877376e-05
+Copy-to-CPU PMPI Time 4.814313e-05
+Copy-to-CPU Pairwise Time 1.216919e-04
+2 Processes Pairwise Time 1.158493e-04
+Testing Size 8
+GPU-Aware PMPI Time 7.619247e-05
+Copy-to-CPU PMPI Time 5.016547e-05
+Copy-to-CPU Pairwise Time 1.253174e-04
+2 Processes Pairwise Time 1.070828e-04
+Testing Size 16
+GPU-Aware PMPI Time 7.588444e-05
+Copy-to-CPU PMPI Time 5.092716e-05
+Copy-to-CPU Pairwise Time 1.393624e-04
+2 Processes Pairwise Time 1.245733e-04
+Testing Size 32
+GPU-Aware PMPI Time 7.824464e-05
+Copy-to-CPU PMPI Time 6.693883e-05
+Copy-to-CPU Pairwise Time 2.247126e-04
+2 Processes Pairwise Time 1.629375e-04
+Testing Size 64
+GPU-Aware PMPI Time 8.643157e-05
+Copy-to-CPU PMPI Time 6.269184e-05
+Copy-to-CPU Pairwise Time 2.571464e-04
+2 Processes Pairwise Time 1.604825e-04
+Testing Size 128
+GPU-Aware PMPI Time 8.995440e-05
+Copy-to-CPU PMPI Time 6.217673e-05
+Copy-to-CPU Pairwise Time 2.111532e-04
+2 Processes Pairwise Time 1.359778e-04
+Testing Size 256
+GPU-Aware PMPI Time 9.137917e-05
+Copy-to-CPU PMPI Time 6.755734e-05
+Copy-to-CPU Pairwise Time 1.723883e-04
+2 Processes Pairwise Time 1.449057e-04
+Testing Size 512
+GPU-Aware PMPI Time 1.109694e-04
+Copy-to-CPU PMPI Time 8.537641e-05
+Copy-to-CPU Pairwise Time 2.349249e-04
+2 Processes Pairwise Time 2.159432e-04
+Testing Size 1024
+GPU-Aware PMPI Time 1.639367e-04
+Copy-to-CPU PMPI Time 1.363654e-04
+Copy-to-CPU Pairwise Time 2.788264e-04
+2 Processes Pairwise Time 2.574232e-04
+Testing Size 2048
+GPU-Aware PMPI Time 2.852378e-04
+Copy-to-CPU PMPI Time 2.370336e-04
+Copy-to-CPU Pairwise Time 4.385973e-04
+2 Processes Pairwise Time 4.898792e-04
+Testing Size 4096
+GPU-Aware PMPI Time 6.003544e-04
+Copy-to-CPU PMPI Time 4.984199e-04
+Copy-to-CPU Pairwise Time 1.003413e-03
+2 Processes Pairwise Time 1.277983e-03
+Testing Size 8192
+GPU-Aware PMPI Time 9.987785e-04
+Copy-to-CPU PMPI Time 9.007830e-04
+Copy-to-CPU Pairwise Time 1.452478e-03
+2 Processes Pairwise Time 1.383095e-03
+Testing Size 16384
+GPU-Aware PMPI Time 1.454133e-03
+Copy-to-CPU PMPI Time 1.357786e-03
+Copy-to-CPU Pairwise Time 2.049013e-03
+2 Processes Pairwise Time 2.172501e-03
+Testing Size 32768
+GPU-Aware PMPI Time 2.981179e-03
+Copy-to-CPU PMPI Time 3.285359e-03
+Copy-to-CPU Pairwise Time 4.463385e-03
+2 Processes Pairwise Time 7.246342e-03
+Testing Size 65536
+GPU-Aware PMPI Time 5.005728e-03
+Copy-to-CPU PMPI Time 4.655786e-03
+Copy-to-CPU Pairwise Time 6.152649e-03
+2 Processes Pairwise Time 1.177794e-02
+Testing Size 131072
+GPU-Aware PMPI Time 9.975735e-03
+Copy-to-CPU PMPI Time 8.722959e-03
+Copy-to-CPU Pairwise Time 1.390993e-02
+2 Processes Pairwise Time 1.781540e-02
+Testing Size 262144
+GPU-Aware PMPI Time 1.837880e-02
+Copy-to-CPU PMPI Time 1.872093e-02
+Copy-to-CPU Pairwise Time 2.462452e-02
+2 Processes Pairwise Time 3.292980e-02
+Testing Size 524288
+GPU-Aware PMPI Time 3.452078e-02
+Copy-to-CPU PMPI Time 3.154936e-02
+Copy-to-CPU Pairwise Time 4.678531e-02
+2 Processes Pairwise Time 6.194976e-02
+app 0: ./gpu_extraproc_alltoall 
+rank: 0: { host: 1; cpu: {0-3}, {4-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 1: { host: 1; cpu: {4-7}, {0-3,8-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 2: { host: 1; cpu: {8-11}, {0-7,12-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 3: { host: 1; cpu: {12-15}, {0-11,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 4: { host: 1; cpu: {80-83}, {0-15,84-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 5: { host: 1; cpu: {84-87}, {0-15,80-83,88-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 6: { host: 1; cpu: {88-91}, {0-15,80-87,92-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 7: { host: 1; cpu: {92-95}, {0-15,80-91} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 8: { host: 2; cpu: {0-3}, {4-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 9: { host: 2; cpu: {4-7}, {0-3,8-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 10: { host: 2; cpu: {8-11}, {0-7,12-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 11: { host: 2; cpu: {12-15}, {0-11,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 12: { host: 2; cpu: {80-83}, {0-15,84-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 13: { host: 2; cpu: {84-87}, {0-15,80-83,88-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 14: { host: 2; cpu: {88-91}, {0-15,80-87,92-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 15: { host: 2; cpu: {92-95}, {0-15,80-91} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 16: { host: 3; cpu: {0-3}, {4-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 17: { host: 3; cpu: {4-7}, {0-3,8-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 18: { host: 3; cpu: {8-11}, {0-7,12-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 19: { host: 3; cpu: {12-15}, {0-11,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 20: { host: 3; cpu: {80-83}, {0-15,84-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 21: { host: 3; cpu: {84-87}, {0-15,80-83,88-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 22: { host: 3; cpu: {88-91}, {0-15,80-87,92-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 23: { host: 3; cpu: {92-95}, {0-15,80-91} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 24: { host: 4; cpu: {0-3}, {4-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 25: { host: 4; cpu: {4-7}, {0-3,8-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 26: { host: 4; cpu: {8-11}, {0-7,12-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 27: { host: 4; cpu: {12-15}, {0-11,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 28: { host: 4; cpu: {80-83}, {0-15,84-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 29: { host: 4; cpu: {84-87}, {0-15,80-83,88-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 30: { host: 4; cpu: {88-91}, {0-15,80-87,92-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 31: { host: 4; cpu: {92-95}, {0-15,80-91} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 32: { host: 5; cpu: {0-3}, {4-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 33: { host: 5; cpu: {4-7}, {0-3,8-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 34: { host: 5; cpu: {8-11}, {0-7,12-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 35: { host: 5; cpu: {12-15}, {0-11,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 36: { host: 5; cpu: {80-83}, {0-15,84-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 37: { host: 5; cpu: {84-87}, {0-15,80-83,88-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 38: { host: 5; cpu: {88-91}, {0-15,80-87,92-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 39: { host: 5; cpu: {92-95}, {0-15,80-91} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 40: { host: 6; cpu: {0-3}, {4-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 41: { host: 6; cpu: {4-7}, {0-3,8-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 42: { host: 6; cpu: {8-11}, {0-7,12-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 43: { host: 6; cpu: {12-15}, {0-11,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 44: { host: 6; cpu: {80-83}, {0-15,84-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 45: { host: 6; cpu: {84-87}, {0-15,80-83,88-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 46: { host: 6; cpu: {88-91}, {0-15,80-87,92-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 47: { host: 6; cpu: {92-95}, {0-15,80-91} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 48: { host: 7; cpu: {0-3}, {4-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 49: { host: 7; cpu: {4-7}, {0-3,8-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 50: { host: 7; cpu: {8-11}, {0-7,12-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 51: { host: 7; cpu: {12-15}, {0-11,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 52: { host: 7; cpu: {80-83}, {0-15,84-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 53: { host: 7; cpu: {84-87}, {0-15,80-83,88-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 54: { host: 7; cpu: {88-91}, {0-15,80-87,92-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 55: { host: 7; cpu: {92-95}, {0-15,80-91} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 56: { host: 8; cpu: {0-3}, {4-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 57: { host: 8; cpu: {4-7}, {0-3,8-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 58: { host: 8; cpu: {8-11}, {0-7,12-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 59: { host: 8; cpu: {12-15}, {0-11,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 60: { host: 8; cpu: {80-83}, {0-15,84-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 61: { host: 8; cpu: {84-87}, {0-15,80-83,88-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 62: { host: 8; cpu: {88-91}, {0-15,80-87,92-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 63: { host: 8; cpu: {92-95}, {0-15,80-91} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+Running Multiproc Alltoall Test with 4 procs:
+Testing Size 1
+GPU-Aware PMPI Time 1.440929e-04
+Copy-to-CPU PMPI Time 4.639081e-05
+Copy-to-CPU Pairwise Time 1.293543e-04
+4 Processes Pairwise Time 8.667264e-05
+Testing Size 2
+GPU-Aware PMPI Time 6.713364e-05
+Copy-to-CPU PMPI Time 4.428544e-05
+Copy-to-CPU Pairwise Time 1.022595e-04
+4 Processes Pairwise Time 8.110365e-05
+Testing Size 4
+GPU-Aware PMPI Time 6.848231e-05
+Copy-to-CPU PMPI Time 4.513450e-05
+Copy-to-CPU Pairwise Time 1.074518e-04
+4 Processes Pairwise Time 1.287105e-04
+Testing Size 8
+GPU-Aware PMPI Time 6.746784e-05
+Copy-to-CPU PMPI Time 4.835465e-05
+Copy-to-CPU Pairwise Time 1.083319e-04
+4 Processes Pairwise Time 9.706726e-05
+Testing Size 16
+GPU-Aware PMPI Time 7.162124e-05
+Copy-to-CPU PMPI Time 4.999041e-05
+Copy-to-CPU Pairwise Time 1.158814e-04
+4 Processes Pairwise Time 8.677091e-05
+Testing Size 32
+GPU-Aware PMPI Time 1.503231e-04
+Copy-to-CPU PMPI Time 6.633767e-05
+Copy-to-CPU Pairwise Time 1.515877e-04
+4 Processes Pairwise Time 2.511095e-04
+Testing Size 64
+GPU-Aware PMPI Time 8.246996e-05
+Copy-to-CPU PMPI Time 6.065548e-05
+Copy-to-CPU Pairwise Time 1.535655e-04
+4 Processes Pairwise Time 9.538853e-05
+Testing Size 128
+GPU-Aware PMPI Time 8.285436e-05
+Copy-to-CPU PMPI Time 6.290507e-05
+Copy-to-CPU Pairwise Time 1.665357e-04
+4 Processes Pairwise Time 1.133208e-04
+Testing Size 256
+GPU-Aware PMPI Time 9.032319e-05
+Copy-to-CPU PMPI Time 7.534377e-05
+Copy-to-CPU Pairwise Time 1.730567e-04
+4 Processes Pairwise Time 1.244493e-04
+Testing Size 512
+GPU-Aware PMPI Time 1.107059e-04
+Copy-to-CPU PMPI Time 8.614184e-05
+Copy-to-CPU Pairwise Time 2.113965e-04
+4 Processes Pairwise Time 2.655641e-04
+Testing Size 1024
+GPU-Aware PMPI Time 1.646089e-04
+Copy-to-CPU PMPI Time 1.357986e-04
+Copy-to-CPU Pairwise Time 2.935873e-04
+4 Processes Pairwise Time 2.071103e-04
+Testing Size 2048
+GPU-Aware PMPI Time 2.679197e-04
+Copy-to-CPU PMPI Time 2.404286e-04
+Copy-to-CPU Pairwise Time 4.998945e-04
+4 Processes Pairwise Time 3.325928e-04
+Testing Size 4096
+GPU-Aware PMPI Time 4.752922e-04
+Copy-to-CPU PMPI Time 4.267491e-04
+Copy-to-CPU Pairwise Time 7.137700e-04
+4 Processes Pairwise Time 6.726565e-04
+Testing Size 8192
+GPU-Aware PMPI Time 2.009887e-03
+Copy-to-CPU PMPI Time 8.529056e-04
+Copy-to-CPU Pairwise Time 1.131324e-03
+4 Processes Pairwise Time 1.565068e-03
+Testing Size 16384
+GPU-Aware PMPI Time 1.450359e-03
+Copy-to-CPU PMPI Time 1.249683e-03
+Copy-to-CPU Pairwise Time 1.512947e-03
+4 Processes Pairwise Time 2.373446e-03
+Testing Size 32768
+GPU-Aware PMPI Time 3.240503e-03
+Copy-to-CPU PMPI Time 2.497996e-03
+Copy-to-CPU Pairwise Time 2.602437e-03
+4 Processes Pairwise Time 7.357553e-03
+Testing Size 65536
+GPU-Aware PMPI Time 4.676306e-03
+Copy-to-CPU PMPI Time 4.420718e-03
+Copy-to-CPU Pairwise Time 4.886121e-03
+4 Processes Pairwise Time 1.193260e-02
+Testing Size 131072
+GPU-Aware PMPI Time 9.789035e-03
+Copy-to-CPU PMPI Time 8.315399e-03
+Copy-to-CPU Pairwise Time 9.715982e-03
+4 Processes Pairwise Time 1.668928e-02
+Testing Size 262144
+GPU-Aware PMPI Time 1.986240e-02
+Copy-to-CPU PMPI Time 1.594165e-02
+Copy-to-CPU Pairwise Time 2.073073e-02
+4 Processes Pairwise Time 3.270308e-02
+Testing Size 524288
+GPU-Aware PMPI Time 3.282677e-02
+Copy-to-CPU PMPI Time 3.045161e-02
+Copy-to-CPU Pairwise Time 3.888529e-02
+4 Processes Pairwise Time 5.380341e-02
+app 0: ./gpu_extraproc_alltoall 
+rank: 0: { host: 1; cpu: {0-3}, {4-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 1: { host: 1; cpu: {4-7}, {0-3,8-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 2: { host: 1; cpu: {8-11}, {0-7,12-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 3: { host: 1; cpu: {12-15}, {0-11,16-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 4: { host: 1; cpu: {16-19}, {0-15,20-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 5: { host: 1; cpu: {20-23}, {0-19,24-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 6: { host: 1; cpu: {24-27}, {0-23,28-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 7: { host: 1; cpu: {28-31}, {0-27,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 8: { host: 1; cpu: {80-83}, {0-31,84-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 9: { host: 1; cpu: {84-87}, {0-31,80-83,88-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 10: { host: 1; cpu: {88-91}, {0-31,80-87,92-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 11: { host: 1; cpu: {92-95}, {0-31,80-91,96-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 12: { host: 1; cpu: {96-99}, {0-31,80-95,100-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 13: { host: 1; cpu: {100-103}, {0-31,80-99,104-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 14: { host: 1; cpu: {104-107}, {0-31,80-103,108-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 15: { host: 1; cpu: {108-111}, {0-31,80-107} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 16: { host: 2; cpu: {0-3}, {4-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 17: { host: 2; cpu: {4-7}, {0-3,8-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 18: { host: 2; cpu: {8-11}, {0-7,12-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 19: { host: 2; cpu: {12-15}, {0-11,16-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 20: { host: 2; cpu: {16-19}, {0-15,20-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 21: { host: 2; cpu: {20-23}, {0-19,24-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 22: { host: 2; cpu: {24-27}, {0-23,28-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 23: { host: 2; cpu: {28-31}, {0-27,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 24: { host: 2; cpu: {80-83}, {0-31,84-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 25: { host: 2; cpu: {84-87}, {0-31,80-83,88-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 26: { host: 2; cpu: {88-91}, {0-31,80-87,92-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 27: { host: 2; cpu: {92-95}, {0-31,80-91,96-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 28: { host: 2; cpu: {96-99}, {0-31,80-95,100-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 29: { host: 2; cpu: {100-103}, {0-31,80-99,104-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 30: { host: 2; cpu: {104-107}, {0-31,80-103,108-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 31: { host: 2; cpu: {108-111}, {0-31,80-107} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 32: { host: 3; cpu: {0-3}, {4-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 33: { host: 3; cpu: {4-7}, {0-3,8-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 34: { host: 3; cpu: {8-11}, {0-7,12-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 35: { host: 3; cpu: {12-15}, {0-11,16-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 36: { host: 3; cpu: {16-19}, {0-15,20-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 37: { host: 3; cpu: {20-23}, {0-19,24-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 38: { host: 3; cpu: {24-27}, {0-23,28-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 39: { host: 3; cpu: {28-31}, {0-27,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 40: { host: 3; cpu: {80-83}, {0-31,84-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 41: { host: 3; cpu: {84-87}, {0-31,80-83,88-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 42: { host: 3; cpu: {88-91}, {0-31,80-87,92-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 43: { host: 3; cpu: {92-95}, {0-31,80-91,96-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 44: { host: 3; cpu: {96-99}, {0-31,80-95,100-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 45: { host: 3; cpu: {100-103}, {0-31,80-99,104-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 46: { host: 3; cpu: {104-107}, {0-31,80-103,108-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 47: { host: 3; cpu: {108-111}, {0-31,80-107} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 48: { host: 4; cpu: {0-3}, {4-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 49: { host: 4; cpu: {4-7}, {0-3,8-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 50: { host: 4; cpu: {8-11}, {0-7,12-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 51: { host: 4; cpu: {12-15}, {0-11,16-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 52: { host: 4; cpu: {16-19}, {0-15,20-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 53: { host: 4; cpu: {20-23}, {0-19,24-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 54: { host: 4; cpu: {24-27}, {0-23,28-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 55: { host: 4; cpu: {28-31}, {0-27,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 56: { host: 4; cpu: {80-83}, {0-31,84-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 57: { host: 4; cpu: {84-87}, {0-31,80-83,88-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 58: { host: 4; cpu: {88-91}, {0-31,80-87,92-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 59: { host: 4; cpu: {92-95}, {0-31,80-91,96-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 60: { host: 4; cpu: {96-99}, {0-31,80-95,100-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 61: { host: 4; cpu: {100-103}, {0-31,80-99,104-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 62: { host: 4; cpu: {104-107}, {0-31,80-103,108-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 63: { host: 4; cpu: {108-111}, {0-31,80-107} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 64: { host: 5; cpu: {0-3}, {4-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 65: { host: 5; cpu: {4-7}, {0-3,8-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 66: { host: 5; cpu: {8-11}, {0-7,12-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 67: { host: 5; cpu: {12-15}, {0-11,16-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 68: { host: 5; cpu: {16-19}, {0-15,20-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 69: { host: 5; cpu: {20-23}, {0-19,24-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 70: { host: 5; cpu: {24-27}, {0-23,28-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 71: { host: 5; cpu: {28-31}, {0-27,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 72: { host: 5; cpu: {80-83}, {0-31,84-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 73: { host: 5; cpu: {84-87}, {0-31,80-83,88-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 74: { host: 5; cpu: {88-91}, {0-31,80-87,92-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 75: { host: 5; cpu: {92-95}, {0-31,80-91,96-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 76: { host: 5; cpu: {96-99}, {0-31,80-95,100-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 77: { host: 5; cpu: {100-103}, {0-31,80-99,104-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 78: { host: 5; cpu: {104-107}, {0-31,80-103,108-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 79: { host: 5; cpu: {108-111}, {0-31,80-107} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 80: { host: 6; cpu: {0-3}, {4-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 81: { host: 6; cpu: {4-7}, {0-3,8-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 82: { host: 6; cpu: {8-11}, {0-7,12-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 83: { host: 6; cpu: {12-15}, {0-11,16-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 84: { host: 6; cpu: {16-19}, {0-15,20-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 85: { host: 6; cpu: {20-23}, {0-19,24-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 86: { host: 6; cpu: {24-27}, {0-23,28-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 87: { host: 6; cpu: {28-31}, {0-27,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 88: { host: 6; cpu: {80-83}, {0-31,84-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 89: { host: 6; cpu: {84-87}, {0-31,80-83,88-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 90: { host: 6; cpu: {88-91}, {0-31,80-87,92-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 91: { host: 6; cpu: {92-95}, {0-31,80-91,96-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 92: { host: 6; cpu: {96-99}, {0-31,80-95,100-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 93: { host: 6; cpu: {100-103}, {0-31,80-99,104-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 94: { host: 6; cpu: {104-107}, {0-31,80-103,108-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 95: { host: 6; cpu: {108-111}, {0-31,80-107} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 96: { host: 7; cpu: {0-3}, {4-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 97: { host: 7; cpu: {4-7}, {0-3,8-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 98: { host: 7; cpu: {8-11}, {0-7,12-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 99: { host: 7; cpu: {12-15}, {0-11,16-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 100: { host: 7; cpu: {16-19}, {0-15,20-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 101: { host: 7; cpu: {20-23}, {0-19,24-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 102: { host: 7; cpu: {24-27}, {0-23,28-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 103: { host: 7; cpu: {28-31}, {0-27,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 104: { host: 7; cpu: {80-83}, {0-31,84-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 105: { host: 7; cpu: {84-87}, {0-31,80-83,88-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 106: { host: 7; cpu: {88-91}, {0-31,80-87,92-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 107: { host: 7; cpu: {92-95}, {0-31,80-91,96-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 108: { host: 7; cpu: {96-99}, {0-31,80-95,100-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 109: { host: 7; cpu: {100-103}, {0-31,80-99,104-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 110: { host: 7; cpu: {104-107}, {0-31,80-103,108-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 111: { host: 7; cpu: {108-111}, {0-31,80-107} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 112: { host: 8; cpu: {0-3}, {4-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 113: { host: 8; cpu: {4-7}, {0-3,8-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 114: { host: 8; cpu: {8-11}, {0-7,12-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 115: { host: 8; cpu: {12-15}, {0-11,16-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 116: { host: 8; cpu: {16-19}, {0-15,20-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 117: { host: 8; cpu: {20-23}, {0-19,24-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 118: { host: 8; cpu: {24-27}, {0-23,28-31,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 119: { host: 8; cpu: {28-31}, {0-27,80-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 120: { host: 8; cpu: {80-83}, {0-31,84-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 121: { host: 8; cpu: {84-87}, {0-31,80-83,88-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 122: { host: 8; cpu: {88-91}, {0-31,80-87,92-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 123: { host: 8; cpu: {92-95}, {0-31,80-91,96-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 124: { host: 8; cpu: {96-99}, {0-31,80-95,100-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 125: { host: 8; cpu: {100-103}, {0-31,80-99,104-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 126: { host: 8; cpu: {104-107}, {0-31,80-103,108-111} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+rank: 127: { host: 8; cpu: {108-111}, {0-31,80-107} ; gpu: {0,1,2,3} ; mem: {0-65207,163036-228243} } : app 0
+Running Multiproc Alltoall Test with 8 procs:
+Testing Size 1
+GPU-Aware PMPI Time 7.201573e-05
+Copy-to-CPU PMPI Time 4.784692e-05
+Copy-to-CPU Pairwise Time 1.337233e-04
+8 Processes Pairwise Time 1.795047e-04
+Testing Size 2
+GPU-Aware PMPI Time 6.916090e-05
+Copy-to-CPU PMPI Time 4.823950e-05
+Copy-to-CPU Pairwise Time 1.064377e-04
+8 Processes Pairwise Time 4.753056e-04
+Testing Size 4
+GPU-Aware PMPI Time 7.182528e-05
+Copy-to-CPU PMPI Time 4.670609e-05
+Copy-to-CPU Pairwise Time 1.132661e-04
+8 Processes Pairwise Time 1.777387e-04
+Testing Size 8
+GPU-Aware PMPI Time 7.993721e-05
+Copy-to-CPU PMPI Time 5.252821e-05
+Copy-to-CPU Pairwise Time 2.014499e-04
+8 Processes Pairwise Time 8.782219e-05
+Testing Size 16
+GPU-Aware PMPI Time 7.354458e-05
+Copy-to-CPU PMPI Time 5.118524e-05
+Copy-to-CPU Pairwise Time 1.272523e-04
+8 Processes Pairwise Time 9.363004e-05
+Testing Size 32
+GPU-Aware PMPI Time 7.923344e-05
+Copy-to-CPU PMPI Time 5.538922e-05
+Copy-to-CPU Pairwise Time 1.559935e-04
+8 Processes Pairwise Time 1.870933e-04
+Testing Size 64
+GPU-Aware PMPI Time 8.197724e-05
+Copy-to-CPU PMPI Time 5.905244e-05
+Copy-to-CPU Pairwise Time 1.552455e-04
+8 Processes Pairwise Time 1.068641e-04
+Testing Size 128
+GPU-Aware PMPI Time 8.102868e-05
+Copy-to-CPU PMPI Time 5.903637e-05
+Copy-to-CPU Pairwise Time 1.571750e-04
+8 Processes Pairwise Time 1.121584e-04
+Testing Size 256
+GPU-Aware PMPI Time 9.200983e-05
+Copy-to-CPU PMPI Time 6.712463e-05
+Copy-to-CPU Pairwise Time 1.758527e-04
+8 Processes Pairwise Time 1.286148e-04
+Testing Size 512
+GPU-Aware PMPI Time 1.132303e-04
+Copy-to-CPU PMPI Time 8.646293e-05
+Copy-to-CPU Pairwise Time 2.133244e-04
+8 Processes Pairwise Time 1.700708e-04
+Testing Size 1024
+GPU-Aware PMPI Time 1.842474e-04
+Copy-to-CPU PMPI Time 1.371689e-04
+Copy-to-CPU Pairwise Time 2.737530e-04
+8 Processes Pairwise Time 3.043513e-04
+Testing Size 2048
+GPU-Aware PMPI Time 2.731682e-04
+Copy-to-CPU PMPI Time 3.145026e-04
+Copy-to-CPU Pairwise Time 4.405058e-04
+8 Processes Pairwise Time 3.448930e-04
+Testing Size 4096
+GPU-Aware PMPI Time 4.904967e-04
+Copy-to-CPU PMPI Time 4.913908e-04
+Copy-to-CPU Pairwise Time 6.503285e-04
+8 Processes Pairwise Time 7.149724e-04
+Testing Size 8192
+GPU-Aware PMPI Time 9.405147e-04
+Copy-to-CPU PMPI Time 8.580256e-04
+Copy-to-CPU Pairwise Time 1.676241e-03
+8 Processes Pairwise Time 1.052834e-03
+Testing Size 16384
+GPU-Aware PMPI Time 1.460794e-03
+Copy-to-CPU PMPI Time 1.331570e-03
+Copy-to-CPU Pairwise Time 2.273032e-03
+8 Processes Pairwise Time 2.271677e-03
+Testing Size 32768
+GPU-Aware PMPI Time 3.470878e-03
+Copy-to-CPU PMPI Time 4.179006e-03
+Copy-to-CPU Pairwise Time 2.609568e-03
+8 Processes Pairwise Time 6.536617e-03
+Testing Size 65536
+GPU-Aware PMPI Time 4.619922e-03
+Copy-to-CPU PMPI Time 4.350647e-03
+Copy-to-CPU Pairwise Time 5.850372e-03
+8 Processes Pairwise Time 1.331829e-02
+Testing Size 131072
+GPU-Aware PMPI Time 9.411620e-03
+Copy-to-CPU PMPI Time 8.424614e-03
+Copy-to-CPU Pairwise Time 1.046643e-02
+8 Processes Pairwise Time 2.000288e-02
+Testing Size 262144
+GPU-Aware PMPI Time 1.977399e-02
+Copy-to-CPU PMPI Time 1.606869e-02
+Copy-to-CPU Pairwise Time 1.926289e-02
+8 Processes Pairwise Time 3.132213e-02
+Testing Size 524288
+GPU-Aware PMPI Time 3.299151e-02
+Copy-to-CPU PMPI Time 3.100316e-02
+Copy-to-CPU Pairwise Time 3.776889e-02
+8 Processes Pairwise Time 5.782406e-02
+app 0: ./gpu_extraproc_alltoall 
+rank: 0: { host: 1; cpu: {0-3}, {4-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 1: { host: 1; cpu: {4-7}, {0-3,8-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 2: { host: 1; cpu: {8-11}, {0-7,12-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 3: { host: 1; cpu: {12-15}, {0-11,16-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 4: { host: 1; cpu: {16-19}, {0-15,20-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 5: { host: 1; cpu: {20-23}, {0-19,24-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 6: { host: 1; cpu: {24-27}, {0-23,28-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 7: { host: 1; cpu: {28-31}, {0-27,32-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 8: { host: 1; cpu: {32-35}, {0-31,36-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 9: { host: 1; cpu: {36-39}, {0-35,40-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 10: { host: 1; cpu: {40-43}, {0-39,44-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 11: { host: 1; cpu: {44-47}, {0-43,48-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 12: { host: 1; cpu: {48-51}, {0-47,52-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 13: { host: 1; cpu: {52-55}, {0-51,56-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 14: { host: 1; cpu: {56-59}, {0-55,60-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 15: { host: 1; cpu: {60-63}, {0-59,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 16: { host: 1; cpu: {80-83}, {0-63,84-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 17: { host: 1; cpu: {84-87}, {0-63,80-83,88-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 18: { host: 1; cpu: {88-91}, {0-63,80-87,92-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 19: { host: 1; cpu: {92-95}, {0-63,80-91,96-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 20: { host: 1; cpu: {96-99}, {0-63,80-95,100-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 21: { host: 1; cpu: {100-103}, {0-63,80-99,104-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 22: { host: 1; cpu: {104-107}, {0-63,80-103,108-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 23: { host: 1; cpu: {108-111}, {0-63,80-107,112-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 24: { host: 1; cpu: {112-115}, {0-63,80-111,116-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 25: { host: 1; cpu: {116-119}, {0-63,80-115,120-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 26: { host: 1; cpu: {120-123}, {0-63,80-119,124-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 27: { host: 1; cpu: {124-127}, {0-63,80-123,128-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 28: { host: 1; cpu: {128-131}, {0-63,80-127,132-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 29: { host: 1; cpu: {132-135}, {0-63,80-131,136-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 30: { host: 1; cpu: {136-139}, {0-63,80-135,140-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 31: { host: 1; cpu: {140-143}, {0-63,80-139} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 32: { host: 2; cpu: {0-3}, {4-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 33: { host: 2; cpu: {4-7}, {0-3,8-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 34: { host: 2; cpu: {8-11}, {0-7,12-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 35: { host: 2; cpu: {12-15}, {0-11,16-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 36: { host: 2; cpu: {16-19}, {0-15,20-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 37: { host: 2; cpu: {20-23}, {0-19,24-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 38: { host: 2; cpu: {24-27}, {0-23,28-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 39: { host: 2; cpu: {28-31}, {0-27,32-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 40: { host: 2; cpu: {32-35}, {0-31,36-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 41: { host: 2; cpu: {36-39}, {0-35,40-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 42: { host: 2; cpu: {40-43}, {0-39,44-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 43: { host: 2; cpu: {44-47}, {0-43,48-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 44: { host: 2; cpu: {48-51}, {0-47,52-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 45: { host: 2; cpu: {52-55}, {0-51,56-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 46: { host: 2; cpu: {56-59}, {0-55,60-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 47: { host: 2; cpu: {60-63}, {0-59,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 48: { host: 2; cpu: {80-83}, {0-63,84-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 49: { host: 2; cpu: {84-87}, {0-63,80-83,88-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 50: { host: 2; cpu: {88-91}, {0-63,80-87,92-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 51: { host: 2; cpu: {92-95}, {0-63,80-91,96-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 52: { host: 2; cpu: {96-99}, {0-63,80-95,100-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 53: { host: 2; cpu: {100-103}, {0-63,80-99,104-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 54: { host: 2; cpu: {104-107}, {0-63,80-103,108-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 55: { host: 2; cpu: {108-111}, {0-63,80-107,112-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 56: { host: 2; cpu: {112-115}, {0-63,80-111,116-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 57: { host: 2; cpu: {116-119}, {0-63,80-115,120-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 58: { host: 2; cpu: {120-123}, {0-63,80-119,124-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 59: { host: 2; cpu: {124-127}, {0-63,80-123,128-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 60: { host: 2; cpu: {128-131}, {0-63,80-127,132-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 61: { host: 2; cpu: {132-135}, {0-63,80-131,136-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 62: { host: 2; cpu: {136-139}, {0-63,80-135,140-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 63: { host: 2; cpu: {140-143}, {0-63,80-139} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 64: { host: 3; cpu: {0-3}, {4-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 65: { host: 3; cpu: {4-7}, {0-3,8-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 66: { host: 3; cpu: {8-11}, {0-7,12-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 67: { host: 3; cpu: {12-15}, {0-11,16-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 68: { host: 3; cpu: {16-19}, {0-15,20-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 69: { host: 3; cpu: {20-23}, {0-19,24-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 70: { host: 3; cpu: {24-27}, {0-23,28-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 71: { host: 3; cpu: {28-31}, {0-27,32-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 72: { host: 3; cpu: {32-35}, {0-31,36-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 73: { host: 3; cpu: {36-39}, {0-35,40-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 74: { host: 3; cpu: {40-43}, {0-39,44-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 75: { host: 3; cpu: {44-47}, {0-43,48-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 76: { host: 3; cpu: {48-51}, {0-47,52-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 77: { host: 3; cpu: {52-55}, {0-51,56-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 78: { host: 3; cpu: {56-59}, {0-55,60-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 79: { host: 3; cpu: {60-63}, {0-59,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 80: { host: 3; cpu: {80-83}, {0-63,84-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 81: { host: 3; cpu: {84-87}, {0-63,80-83,88-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 82: { host: 3; cpu: {88-91}, {0-63,80-87,92-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 83: { host: 3; cpu: {92-95}, {0-63,80-91,96-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 84: { host: 3; cpu: {96-99}, {0-63,80-95,100-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 85: { host: 3; cpu: {100-103}, {0-63,80-99,104-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 86: { host: 3; cpu: {104-107}, {0-63,80-103,108-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 87: { host: 3; cpu: {108-111}, {0-63,80-107,112-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 88: { host: 3; cpu: {112-115}, {0-63,80-111,116-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 89: { host: 3; cpu: {116-119}, {0-63,80-115,120-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 90: { host: 3; cpu: {120-123}, {0-63,80-119,124-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 91: { host: 3; cpu: {124-127}, {0-63,80-123,128-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 92: { host: 3; cpu: {128-131}, {0-63,80-127,132-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 93: { host: 3; cpu: {132-135}, {0-63,80-131,136-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 94: { host: 3; cpu: {136-139}, {0-63,80-135,140-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 95: { host: 3; cpu: {140-143}, {0-63,80-139} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 96: { host: 4; cpu: {0-3}, {4-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 97: { host: 4; cpu: {4-7}, {0-3,8-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 98: { host: 4; cpu: {8-11}, {0-7,12-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 99: { host: 4; cpu: {12-15}, {0-11,16-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 100: { host: 4; cpu: {16-19}, {0-15,20-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 101: { host: 4; cpu: {20-23}, {0-19,24-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 102: { host: 4; cpu: {24-27}, {0-23,28-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 103: { host: 4; cpu: {28-31}, {0-27,32-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 104: { host: 4; cpu: {32-35}, {0-31,36-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 105: { host: 4; cpu: {36-39}, {0-35,40-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 106: { host: 4; cpu: {40-43}, {0-39,44-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 107: { host: 4; cpu: {44-47}, {0-43,48-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 108: { host: 4; cpu: {48-51}, {0-47,52-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 109: { host: 4; cpu: {52-55}, {0-51,56-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 110: { host: 4; cpu: {56-59}, {0-55,60-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 111: { host: 4; cpu: {60-63}, {0-59,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 112: { host: 4; cpu: {80-83}, {0-63,84-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 113: { host: 4; cpu: {84-87}, {0-63,80-83,88-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 114: { host: 4; cpu: {88-91}, {0-63,80-87,92-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 115: { host: 4; cpu: {92-95}, {0-63,80-91,96-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 116: { host: 4; cpu: {96-99}, {0-63,80-95,100-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 117: { host: 4; cpu: {100-103}, {0-63,80-99,104-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 118: { host: 4; cpu: {104-107}, {0-63,80-103,108-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 119: { host: 4; cpu: {108-111}, {0-63,80-107,112-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 120: { host: 4; cpu: {112-115}, {0-63,80-111,116-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 121: { host: 4; cpu: {116-119}, {0-63,80-115,120-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 122: { host: 4; cpu: {120-123}, {0-63,80-119,124-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 123: { host: 4; cpu: {124-127}, {0-63,80-123,128-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 124: { host: 4; cpu: {128-131}, {0-63,80-127,132-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 125: { host: 4; cpu: {132-135}, {0-63,80-131,136-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 126: { host: 4; cpu: {136-139}, {0-63,80-135,140-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 127: { host: 4; cpu: {140-143}, {0-63,80-139} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 128: { host: 5; cpu: {0-3}, {4-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 129: { host: 5; cpu: {4-7}, {0-3,8-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 130: { host: 5; cpu: {8-11}, {0-7,12-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 131: { host: 5; cpu: {12-15}, {0-11,16-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 132: { host: 5; cpu: {16-19}, {0-15,20-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 133: { host: 5; cpu: {20-23}, {0-19,24-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 134: { host: 5; cpu: {24-27}, {0-23,28-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 135: { host: 5; cpu: {28-31}, {0-27,32-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 136: { host: 5; cpu: {32-35}, {0-31,36-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 137: { host: 5; cpu: {36-39}, {0-35,40-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 138: { host: 5; cpu: {40-43}, {0-39,44-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 139: { host: 5; cpu: {44-47}, {0-43,48-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 140: { host: 5; cpu: {48-51}, {0-47,52-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 141: { host: 5; cpu: {52-55}, {0-51,56-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 142: { host: 5; cpu: {56-59}, {0-55,60-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 143: { host: 5; cpu: {60-63}, {0-59,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 144: { host: 5; cpu: {80-83}, {0-63,84-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 145: { host: 5; cpu: {84-87}, {0-63,80-83,88-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 146: { host: 5; cpu: {88-91}, {0-63,80-87,92-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 147: { host: 5; cpu: {92-95}, {0-63,80-91,96-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 148: { host: 5; cpu: {96-99}, {0-63,80-95,100-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 149: { host: 5; cpu: {100-103}, {0-63,80-99,104-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 150: { host: 5; cpu: {104-107}, {0-63,80-103,108-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 151: { host: 5; cpu: {108-111}, {0-63,80-107,112-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 152: { host: 5; cpu: {112-115}, {0-63,80-111,116-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 153: { host: 5; cpu: {116-119}, {0-63,80-115,120-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 154: { host: 5; cpu: {120-123}, {0-63,80-119,124-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 155: { host: 5; cpu: {124-127}, {0-63,80-123,128-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 156: { host: 5; cpu: {128-131}, {0-63,80-127,132-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 157: { host: 5; cpu: {132-135}, {0-63,80-131,136-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 158: { host: 5; cpu: {136-139}, {0-63,80-135,140-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 159: { host: 5; cpu: {140-143}, {0-63,80-139} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 160: { host: 6; cpu: {0-3}, {4-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 161: { host: 6; cpu: {4-7}, {0-3,8-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 162: { host: 6; cpu: {8-11}, {0-7,12-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 163: { host: 6; cpu: {12-15}, {0-11,16-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 164: { host: 6; cpu: {16-19}, {0-15,20-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 165: { host: 6; cpu: {20-23}, {0-19,24-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 166: { host: 6; cpu: {24-27}, {0-23,28-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 167: { host: 6; cpu: {28-31}, {0-27,32-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 168: { host: 6; cpu: {32-35}, {0-31,36-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 169: { host: 6; cpu: {36-39}, {0-35,40-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 170: { host: 6; cpu: {40-43}, {0-39,44-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 171: { host: 6; cpu: {44-47}, {0-43,48-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 172: { host: 6; cpu: {48-51}, {0-47,52-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 173: { host: 6; cpu: {52-55}, {0-51,56-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 174: { host: 6; cpu: {56-59}, {0-55,60-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 175: { host: 6; cpu: {60-63}, {0-59,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 176: { host: 6; cpu: {80-83}, {0-63,84-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 177: { host: 6; cpu: {84-87}, {0-63,80-83,88-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 178: { host: 6; cpu: {88-91}, {0-63,80-87,92-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 179: { host: 6; cpu: {92-95}, {0-63,80-91,96-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 180: { host: 6; cpu: {96-99}, {0-63,80-95,100-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 181: { host: 6; cpu: {100-103}, {0-63,80-99,104-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 182: { host: 6; cpu: {104-107}, {0-63,80-103,108-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 183: { host: 6; cpu: {108-111}, {0-63,80-107,112-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 184: { host: 6; cpu: {112-115}, {0-63,80-111,116-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 185: { host: 6; cpu: {116-119}, {0-63,80-115,120-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 186: { host: 6; cpu: {120-123}, {0-63,80-119,124-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 187: { host: 6; cpu: {124-127}, {0-63,80-123,128-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 188: { host: 6; cpu: {128-131}, {0-63,80-127,132-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 189: { host: 6; cpu: {132-135}, {0-63,80-131,136-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 190: { host: 6; cpu: {136-139}, {0-63,80-135,140-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 191: { host: 6; cpu: {140-143}, {0-63,80-139} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 192: { host: 7; cpu: {0-3}, {4-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 193: { host: 7; cpu: {4-7}, {0-3,8-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 194: { host: 7; cpu: {8-11}, {0-7,12-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 195: { host: 7; cpu: {12-15}, {0-11,16-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 196: { host: 7; cpu: {16-19}, {0-15,20-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 197: { host: 7; cpu: {20-23}, {0-19,24-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 198: { host: 7; cpu: {24-27}, {0-23,28-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 199: { host: 7; cpu: {28-31}, {0-27,32-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 200: { host: 7; cpu: {32-35}, {0-31,36-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 201: { host: 7; cpu: {36-39}, {0-35,40-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 202: { host: 7; cpu: {40-43}, {0-39,44-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 203: { host: 7; cpu: {44-47}, {0-43,48-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 204: { host: 7; cpu: {48-51}, {0-47,52-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 205: { host: 7; cpu: {52-55}, {0-51,56-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 206: { host: 7; cpu: {56-59}, {0-55,60-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 207: { host: 7; cpu: {60-63}, {0-59,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 208: { host: 7; cpu: {80-83}, {0-63,84-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 209: { host: 7; cpu: {84-87}, {0-63,80-83,88-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 210: { host: 7; cpu: {88-91}, {0-63,80-87,92-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 211: { host: 7; cpu: {92-95}, {0-63,80-91,96-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 212: { host: 7; cpu: {96-99}, {0-63,80-95,100-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 213: { host: 7; cpu: {100-103}, {0-63,80-99,104-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 214: { host: 7; cpu: {104-107}, {0-63,80-103,108-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 215: { host: 7; cpu: {108-111}, {0-63,80-107,112-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 216: { host: 7; cpu: {112-115}, {0-63,80-111,116-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 217: { host: 7; cpu: {116-119}, {0-63,80-115,120-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 218: { host: 7; cpu: {120-123}, {0-63,80-119,124-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 219: { host: 7; cpu: {124-127}, {0-63,80-123,128-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 220: { host: 7; cpu: {128-131}, {0-63,80-127,132-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 221: { host: 7; cpu: {132-135}, {0-63,80-131,136-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 222: { host: 7; cpu: {136-139}, {0-63,80-135,140-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 223: { host: 7; cpu: {140-143}, {0-63,80-139} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 224: { host: 8; cpu: {0-3}, {4-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 225: { host: 8; cpu: {4-7}, {0-3,8-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 226: { host: 8; cpu: {8-11}, {0-7,12-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 227: { host: 8; cpu: {12-15}, {0-11,16-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 228: { host: 8; cpu: {16-19}, {0-15,20-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 229: { host: 8; cpu: {20-23}, {0-19,24-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 230: { host: 8; cpu: {24-27}, {0-23,28-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 231: { host: 8; cpu: {28-31}, {0-27,32-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 232: { host: 8; cpu: {32-35}, {0-31,36-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 233: { host: 8; cpu: {36-39}, {0-35,40-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 234: { host: 8; cpu: {40-43}, {0-39,44-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 235: { host: 8; cpu: {44-47}, {0-43,48-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 236: { host: 8; cpu: {48-51}, {0-47,52-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 237: { host: 8; cpu: {52-55}, {0-51,56-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 238: { host: 8; cpu: {56-59}, {0-55,60-63,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 239: { host: 8; cpu: {60-63}, {0-59,80-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 240: { host: 8; cpu: {80-83}, {0-63,84-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 241: { host: 8; cpu: {84-87}, {0-63,80-83,88-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 242: { host: 8; cpu: {88-91}, {0-63,80-87,92-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 243: { host: 8; cpu: {92-95}, {0-63,80-91,96-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 244: { host: 8; cpu: {96-99}, {0-63,80-95,100-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 245: { host: 8; cpu: {100-103}, {0-63,80-99,104-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 246: { host: 8; cpu: {104-107}, {0-63,80-103,108-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 247: { host: 8; cpu: {108-111}, {0-63,80-107,112-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 248: { host: 8; cpu: {112-115}, {0-63,80-111,116-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 249: { host: 8; cpu: {116-119}, {0-63,80-115,120-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 250: { host: 8; cpu: {120-123}, {0-63,80-119,124-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 251: { host: 8; cpu: {124-127}, {0-63,80-123,128-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 252: { host: 8; cpu: {128-131}, {0-63,80-127,132-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 253: { host: 8; cpu: {132-135}, {0-63,80-131,136-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 254: { host: 8; cpu: {136-139}, {0-63,80-135,140-143} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+rank: 255: { host: 8; cpu: {140-143}, {0-63,80-139} ; gpu: {0,1,2,3} ; mem: {0-130415,163036-293451} } : app 0
+Running Multiproc Alltoall Test with 10 procs:
+Testing Size 1
+GPU-Aware PMPI Time 7.401174e-05
+Copy-to-CPU PMPI Time 4.996416e-05
+Copy-to-CPU Pairwise Time 1.481830e-04
+10 Processes Pairwise Time 2.164420e-04
+Testing Size 2
+GPU-Aware PMPI Time 7.090161e-05
+Copy-to-CPU PMPI Time 4.582139e-05
+Copy-to-CPU Pairwise Time 1.235411e-04
+10 Processes Pairwise Time 9.716163e-05
+Testing Size 4
+GPU-Aware PMPI Time 8.456090e-05
+Copy-to-CPU PMPI Time 5.570525e-05
+Copy-to-CPU Pairwise Time 1.674837e-04
+10 Processes Pairwise Time 1.649663e-04
+Testing Size 8
+GPU-Aware PMPI Time 7.701789e-05
+Copy-to-CPU PMPI Time 4.911960e-05
+Copy-to-CPU Pairwise Time 1.850109e-04
+10 Processes Pairwise Time 1.835203e-04
+Testing Size 16
+GPU-Aware PMPI Time 1.504971e-04
+Copy-to-CPU PMPI Time 6.435945e-05
+Copy-to-CPU Pairwise Time 1.862476e-04
+10 Processes Pairwise Time 1.916216e-04
+Testing Size 32
+GPU-Aware PMPI Time 1.086683e-04
+Copy-to-CPU PMPI Time 6.856819e-05
+Copy-to-CPU Pairwise Time 2.141378e-04
+10 Processes Pairwise Time 2.680469e-04
+Testing Size 64
+GPU-Aware PMPI Time 8.358165e-05
+Copy-to-CPU PMPI Time 6.651398e-05
+Copy-to-CPU Pairwise Time 2.071711e-04
+10 Processes Pairwise Time 2.116183e-04
+Testing Size 128
+GPU-Aware PMPI Time 9.492470e-05
+Copy-to-CPU PMPI Time 7.091912e-05
+Copy-to-CPU Pairwise Time 2.190199e-04
+10 Processes Pairwise Time 1.853682e-04
+Testing Size 256
+GPU-Aware PMPI Time 1.045160e-04
+Copy-to-CPU PMPI Time 8.631218e-05
+Copy-to-CPU Pairwise Time 2.489946e-04
+10 Processes Pairwise Time 1.425698e-04
+Testing Size 512
+GPU-Aware PMPI Time 1.347326e-04
+Copy-to-CPU PMPI Time 9.957759e-05
+Copy-to-CPU Pairwise Time 2.905868e-04
+10 Processes Pairwise Time 2.195908e-04
+Testing Size 1024
+GPU-Aware PMPI Time 2.110627e-04
+Copy-to-CPU PMPI Time 2.032547e-04
+Copy-to-CPU Pairwise Time 5.270529e-04
+10 Processes Pairwise Time 5.068872e-04
+Testing Size 2048
+GPU-Aware PMPI Time 4.143515e-04
+Copy-to-CPU PMPI Time 2.599106e-04
+Copy-to-CPU Pairwise Time 5.869246e-04
+10 Processes Pairwise Time 4.102789e-04
+Testing Size 4096
+GPU-Aware PMPI Time 5.382853e-04
+Copy-to-CPU PMPI Time 4.905694e-04
+Copy-to-CPU Pairwise Time 8.719721e-04
+10 Processes Pairwise Time 6.905892e-04
+Testing Size 8192
+GPU-Aware PMPI Time 1.014080e-03
+Copy-to-CPU PMPI Time 9.142478e-04
+Copy-to-CPU Pairwise Time 1.323184e-03
+10 Processes Pairwise Time 1.439643e-03
+Testing Size 16384
+GPU-Aware PMPI Time 1.488985e-03
+Copy-to-CPU PMPI Time 1.404069e-03
+Copy-to-CPU Pairwise Time 2.092018e-03
+10 Processes Pairwise Time 1.688872e-03
+Testing Size 32768
+GPU-Aware PMPI Time 2.985410e-03
+Copy-to-CPU PMPI Time 2.545934e-03
+Copy-to-CPU Pairwise Time 2.597173e-03
+10 Processes Pairwise Time 3.830230e-03
+Testing Size 65536
+GPU-Aware PMPI Time 5.002594e-03
+Copy-to-CPU PMPI Time 4.406614e-03
+Copy-to-CPU Pairwise Time 4.881112e-03
+10 Processes Pairwise Time 7.677023e-03
+Testing Size 131072
+GPU-Aware PMPI Time 1.137425e-02
+Copy-to-CPU PMPI Time 9.665325e-03
+Copy-to-CPU Pairwise Time 1.571671e-02
+10 Processes Pairwise Time 2.702983e-02
+Testing Size 262144
+GPU-Aware PMPI Time 1.778344e-02
+Copy-to-CPU PMPI Time 1.756732e-02
+Copy-to-CPU Pairwise Time 2.086925e-02
+10 Processes Pairwise Time 3.768957e-02
+Testing Size 524288
+GPU-Aware PMPI Time 3.466793e-02
+Copy-to-CPU PMPI Time 3.224179e-02
+Copy-to-CPU Pairwise Time 4.861752e-02
+10 Processes Pairwise Time 1.023581e-01
+app 0: ./gpu_extraproc_alltoall 
+rank: 0: { host: 1; cpu: {0-3}, {4-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 1: { host: 1; cpu: {4-7}, {0-3,8-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 2: { host: 1; cpu: {8-11}, {0-7,12-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 3: { host: 1; cpu: {12-15}, {0-11,16-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 4: { host: 1; cpu: {16-19}, {0-15,20-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 5: { host: 1; cpu: {20-23}, {0-19,24-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 6: { host: 1; cpu: {24-27}, {0-23,28-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 7: { host: 1; cpu: {28-31}, {0-27,32-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 8: { host: 1; cpu: {32-35}, {0-31,36-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 9: { host: 1; cpu: {36-39}, {0-35,40-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 10: { host: 1; cpu: {40-43}, {0-39,44-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 11: { host: 1; cpu: {44-47}, {0-43,48-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 12: { host: 1; cpu: {48-51}, {0-47,52-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 13: { host: 1; cpu: {52-55}, {0-51,56-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 14: { host: 1; cpu: {56-59}, {0-55,60-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 15: { host: 1; cpu: {60-63}, {0-59,64-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 16: { host: 1; cpu: {64-67}, {0-63,68-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 17: { host: 1; cpu: {68-71}, {0-67,72-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 18: { host: 1; cpu: {72-75}, {0-71,76-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 19: { host: 1; cpu: {76-79}, {0-75,80-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 20: { host: 1; cpu: {80-83}, {0-79,84-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 21: { host: 1; cpu: {84-87}, {0-83,88-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 22: { host: 1; cpu: {88-91}, {0-87,92-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 23: { host: 1; cpu: {92-95}, {0-91,96-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 24: { host: 1; cpu: {96-99}, {0-95,100-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 25: { host: 1; cpu: {100-103}, {0-99,104-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 26: { host: 1; cpu: {104-107}, {0-103,108-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 27: { host: 1; cpu: {108-111}, {0-107,112-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 28: { host: 1; cpu: {112-115}, {0-111,116-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 29: { host: 1; cpu: {116-119}, {0-115,120-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 30: { host: 1; cpu: {120-123}, {0-119,124-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 31: { host: 1; cpu: {124-127}, {0-123,128-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 32: { host: 1; cpu: {128-131}, {0-127,132-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 33: { host: 1; cpu: {132-135}, {0-131,136-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 34: { host: 1; cpu: {136-139}, {0-135,140-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 35: { host: 1; cpu: {140-143}, {0-139,144-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 36: { host: 1; cpu: {144-147}, {0-143,148-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 37: { host: 1; cpu: {148-151}, {0-147,152-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 38: { host: 1; cpu: {152-155}, {0-151,156-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 39: { host: 1; cpu: {156-159}, {0-155} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 40: { host: 2; cpu: {0-3}, {4-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 41: { host: 2; cpu: {4-7}, {0-3,8-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 42: { host: 2; cpu: {8-11}, {0-7,12-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 43: { host: 2; cpu: {12-15}, {0-11,16-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 44: { host: 2; cpu: {16-19}, {0-15,20-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 45: { host: 2; cpu: {20-23}, {0-19,24-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 46: { host: 2; cpu: {24-27}, {0-23,28-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 47: { host: 2; cpu: {28-31}, {0-27,32-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 48: { host: 2; cpu: {32-35}, {0-31,36-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 49: { host: 2; cpu: {36-39}, {0-35,40-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 50: { host: 2; cpu: {40-43}, {0-39,44-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 51: { host: 2; cpu: {44-47}, {0-43,48-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 52: { host: 2; cpu: {48-51}, {0-47,52-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 53: { host: 2; cpu: {52-55}, {0-51,56-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 54: { host: 2; cpu: {56-59}, {0-55,60-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 55: { host: 2; cpu: {60-63}, {0-59,64-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 56: { host: 2; cpu: {64-67}, {0-63,68-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 57: { host: 2; cpu: {68-71}, {0-67,72-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 58: { host: 2; cpu: {72-75}, {0-71,76-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 59: { host: 2; cpu: {76-79}, {0-75,80-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 60: { host: 2; cpu: {80-83}, {0-79,84-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 61: { host: 2; cpu: {84-87}, {0-83,88-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 62: { host: 2; cpu: {88-91}, {0-87,92-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 63: { host: 2; cpu: {92-95}, {0-91,96-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 64: { host: 2; cpu: {96-99}, {0-95,100-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 65: { host: 2; cpu: {100-103}, {0-99,104-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 66: { host: 2; cpu: {104-107}, {0-103,108-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 67: { host: 2; cpu: {108-111}, {0-107,112-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 68: { host: 2; cpu: {112-115}, {0-111,116-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 69: { host: 2; cpu: {116-119}, {0-115,120-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 70: { host: 2; cpu: {120-123}, {0-119,124-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 71: { host: 2; cpu: {124-127}, {0-123,128-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 72: { host: 2; cpu: {128-131}, {0-127,132-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 73: { host: 2; cpu: {132-135}, {0-131,136-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 74: { host: 2; cpu: {136-139}, {0-135,140-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 75: { host: 2; cpu: {140-143}, {0-139,144-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 76: { host: 2; cpu: {144-147}, {0-143,148-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 77: { host: 2; cpu: {148-151}, {0-147,152-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 78: { host: 2; cpu: {152-155}, {0-151,156-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 79: { host: 2; cpu: {156-159}, {0-155} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 80: { host: 3; cpu: {0-3}, {4-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 81: { host: 3; cpu: {4-7}, {0-3,8-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 82: { host: 3; cpu: {8-11}, {0-7,12-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 83: { host: 3; cpu: {12-15}, {0-11,16-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 84: { host: 3; cpu: {16-19}, {0-15,20-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 85: { host: 3; cpu: {20-23}, {0-19,24-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 86: { host: 3; cpu: {24-27}, {0-23,28-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 87: { host: 3; cpu: {28-31}, {0-27,32-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 88: { host: 3; cpu: {32-35}, {0-31,36-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 89: { host: 3; cpu: {36-39}, {0-35,40-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 90: { host: 3; cpu: {40-43}, {0-39,44-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 91: { host: 3; cpu: {44-47}, {0-43,48-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 92: { host: 3; cpu: {48-51}, {0-47,52-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 93: { host: 3; cpu: {52-55}, {0-51,56-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 94: { host: 3; cpu: {56-59}, {0-55,60-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 95: { host: 3; cpu: {60-63}, {0-59,64-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 96: { host: 3; cpu: {64-67}, {0-63,68-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 97: { host: 3; cpu: {68-71}, {0-67,72-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 98: { host: 3; cpu: {72-75}, {0-71,76-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 99: { host: 3; cpu: {76-79}, {0-75,80-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 100: { host: 3; cpu: {80-83}, {0-79,84-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 101: { host: 3; cpu: {84-87}, {0-83,88-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 102: { host: 3; cpu: {88-91}, {0-87,92-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 103: { host: 3; cpu: {92-95}, {0-91,96-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 104: { host: 3; cpu: {96-99}, {0-95,100-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 105: { host: 3; cpu: {100-103}, {0-99,104-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 106: { host: 3; cpu: {104-107}, {0-103,108-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 107: { host: 3; cpu: {108-111}, {0-107,112-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 108: { host: 3; cpu: {112-115}, {0-111,116-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 109: { host: 3; cpu: {116-119}, {0-115,120-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 110: { host: 3; cpu: {120-123}, {0-119,124-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 111: { host: 3; cpu: {124-127}, {0-123,128-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 112: { host: 3; cpu: {128-131}, {0-127,132-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 113: { host: 3; cpu: {132-135}, {0-131,136-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 114: { host: 3; cpu: {136-139}, {0-135,140-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 115: { host: 3; cpu: {140-143}, {0-139,144-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 116: { host: 3; cpu: {144-147}, {0-143,148-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 117: { host: 3; cpu: {148-151}, {0-147,152-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 118: { host: 3; cpu: {152-155}, {0-151,156-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 119: { host: 3; cpu: {156-159}, {0-155} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 120: { host: 4; cpu: {0-3}, {4-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 121: { host: 4; cpu: {4-7}, {0-3,8-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 122: { host: 4; cpu: {8-11}, {0-7,12-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 123: { host: 4; cpu: {12-15}, {0-11,16-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 124: { host: 4; cpu: {16-19}, {0-15,20-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 125: { host: 4; cpu: {20-23}, {0-19,24-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 126: { host: 4; cpu: {24-27}, {0-23,28-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 127: { host: 4; cpu: {28-31}, {0-27,32-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 128: { host: 4; cpu: {32-35}, {0-31,36-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 129: { host: 4; cpu: {36-39}, {0-35,40-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 130: { host: 4; cpu: {40-43}, {0-39,44-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 131: { host: 4; cpu: {44-47}, {0-43,48-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 132: { host: 4; cpu: {48-51}, {0-47,52-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 133: { host: 4; cpu: {52-55}, {0-51,56-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 134: { host: 4; cpu: {56-59}, {0-55,60-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 135: { host: 4; cpu: {60-63}, {0-59,64-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 136: { host: 4; cpu: {64-67}, {0-63,68-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 137: { host: 4; cpu: {68-71}, {0-67,72-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 138: { host: 4; cpu: {72-75}, {0-71,76-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 139: { host: 4; cpu: {76-79}, {0-75,80-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 140: { host: 4; cpu: {80-83}, {0-79,84-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 141: { host: 4; cpu: {84-87}, {0-83,88-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 142: { host: 4; cpu: {88-91}, {0-87,92-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 143: { host: 4; cpu: {92-95}, {0-91,96-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 144: { host: 4; cpu: {96-99}, {0-95,100-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 145: { host: 4; cpu: {100-103}, {0-99,104-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 146: { host: 4; cpu: {104-107}, {0-103,108-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 147: { host: 4; cpu: {108-111}, {0-107,112-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 148: { host: 4; cpu: {112-115}, {0-111,116-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 149: { host: 4; cpu: {116-119}, {0-115,120-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 150: { host: 4; cpu: {120-123}, {0-119,124-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 151: { host: 4; cpu: {124-127}, {0-123,128-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 152: { host: 4; cpu: {128-131}, {0-127,132-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 153: { host: 4; cpu: {132-135}, {0-131,136-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 154: { host: 4; cpu: {136-139}, {0-135,140-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 155: { host: 4; cpu: {140-143}, {0-139,144-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 156: { host: 4; cpu: {144-147}, {0-143,148-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 157: { host: 4; cpu: {148-151}, {0-147,152-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 158: { host: 4; cpu: {152-155}, {0-151,156-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 159: { host: 4; cpu: {156-159}, {0-155} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 160: { host: 5; cpu: {0-3}, {4-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 161: { host: 5; cpu: {4-7}, {0-3,8-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 162: { host: 5; cpu: {8-11}, {0-7,12-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 163: { host: 5; cpu: {12-15}, {0-11,16-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 164: { host: 5; cpu: {16-19}, {0-15,20-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 165: { host: 5; cpu: {20-23}, {0-19,24-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 166: { host: 5; cpu: {24-27}, {0-23,28-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 167: { host: 5; cpu: {28-31}, {0-27,32-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 168: { host: 5; cpu: {32-35}, {0-31,36-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 169: { host: 5; cpu: {36-39}, {0-35,40-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 170: { host: 5; cpu: {40-43}, {0-39,44-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 171: { host: 5; cpu: {44-47}, {0-43,48-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 172: { host: 5; cpu: {48-51}, {0-47,52-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 173: { host: 5; cpu: {52-55}, {0-51,56-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 174: { host: 5; cpu: {56-59}, {0-55,60-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 175: { host: 5; cpu: {60-63}, {0-59,64-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 176: { host: 5; cpu: {64-67}, {0-63,68-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 177: { host: 5; cpu: {68-71}, {0-67,72-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 178: { host: 5; cpu: {72-75}, {0-71,76-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 179: { host: 5; cpu: {76-79}, {0-75,80-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 180: { host: 5; cpu: {80-83}, {0-79,84-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 181: { host: 5; cpu: {84-87}, {0-83,88-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 182: { host: 5; cpu: {88-91}, {0-87,92-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 183: { host: 5; cpu: {92-95}, {0-91,96-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 184: { host: 5; cpu: {96-99}, {0-95,100-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 185: { host: 5; cpu: {100-103}, {0-99,104-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 186: { host: 5; cpu: {104-107}, {0-103,108-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 187: { host: 5; cpu: {108-111}, {0-107,112-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 188: { host: 5; cpu: {112-115}, {0-111,116-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 189: { host: 5; cpu: {116-119}, {0-115,120-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 190: { host: 5; cpu: {120-123}, {0-119,124-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 191: { host: 5; cpu: {124-127}, {0-123,128-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 192: { host: 5; cpu: {128-131}, {0-127,132-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 193: { host: 5; cpu: {132-135}, {0-131,136-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 194: { host: 5; cpu: {136-139}, {0-135,140-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 195: { host: 5; cpu: {140-143}, {0-139,144-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 196: { host: 5; cpu: {144-147}, {0-143,148-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 197: { host: 5; cpu: {148-151}, {0-147,152-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 198: { host: 5; cpu: {152-155}, {0-151,156-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 199: { host: 5; cpu: {156-159}, {0-155} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 200: { host: 6; cpu: {0-3}, {4-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 201: { host: 6; cpu: {4-7}, {0-3,8-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 202: { host: 6; cpu: {8-11}, {0-7,12-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 203: { host: 6; cpu: {12-15}, {0-11,16-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 204: { host: 6; cpu: {16-19}, {0-15,20-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 205: { host: 6; cpu: {20-23}, {0-19,24-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 206: { host: 6; cpu: {24-27}, {0-23,28-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 207: { host: 6; cpu: {28-31}, {0-27,32-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 208: { host: 6; cpu: {32-35}, {0-31,36-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 209: { host: 6; cpu: {36-39}, {0-35,40-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 210: { host: 6; cpu: {40-43}, {0-39,44-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 211: { host: 6; cpu: {44-47}, {0-43,48-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 212: { host: 6; cpu: {48-51}, {0-47,52-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 213: { host: 6; cpu: {52-55}, {0-51,56-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 214: { host: 6; cpu: {56-59}, {0-55,60-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 215: { host: 6; cpu: {60-63}, {0-59,64-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 216: { host: 6; cpu: {64-67}, {0-63,68-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 217: { host: 6; cpu: {68-71}, {0-67,72-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 218: { host: 6; cpu: {72-75}, {0-71,76-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 219: { host: 6; cpu: {76-79}, {0-75,80-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 220: { host: 6; cpu: {80-83}, {0-79,84-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 221: { host: 6; cpu: {84-87}, {0-83,88-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 222: { host: 6; cpu: {88-91}, {0-87,92-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 223: { host: 6; cpu: {92-95}, {0-91,96-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 224: { host: 6; cpu: {96-99}, {0-95,100-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 225: { host: 6; cpu: {100-103}, {0-99,104-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 226: { host: 6; cpu: {104-107}, {0-103,108-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 227: { host: 6; cpu: {108-111}, {0-107,112-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 228: { host: 6; cpu: {112-115}, {0-111,116-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 229: { host: 6; cpu: {116-119}, {0-115,120-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 230: { host: 6; cpu: {120-123}, {0-119,124-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 231: { host: 6; cpu: {124-127}, {0-123,128-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 232: { host: 6; cpu: {128-131}, {0-127,132-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 233: { host: 6; cpu: {132-135}, {0-131,136-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 234: { host: 6; cpu: {136-139}, {0-135,140-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 235: { host: 6; cpu: {140-143}, {0-139,144-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 236: { host: 6; cpu: {144-147}, {0-143,148-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 237: { host: 6; cpu: {148-151}, {0-147,152-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 238: { host: 6; cpu: {152-155}, {0-151,156-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 239: { host: 6; cpu: {156-159}, {0-155} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 240: { host: 7; cpu: {0-3}, {4-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 241: { host: 7; cpu: {4-7}, {0-3,8-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 242: { host: 7; cpu: {8-11}, {0-7,12-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 243: { host: 7; cpu: {12-15}, {0-11,16-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 244: { host: 7; cpu: {16-19}, {0-15,20-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 245: { host: 7; cpu: {20-23}, {0-19,24-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 246: { host: 7; cpu: {24-27}, {0-23,28-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 247: { host: 7; cpu: {28-31}, {0-27,32-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 248: { host: 7; cpu: {32-35}, {0-31,36-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 249: { host: 7; cpu: {36-39}, {0-35,40-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 250: { host: 7; cpu: {40-43}, {0-39,44-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 251: { host: 7; cpu: {44-47}, {0-43,48-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 252: { host: 7; cpu: {48-51}, {0-47,52-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 253: { host: 7; cpu: {52-55}, {0-51,56-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 254: { host: 7; cpu: {56-59}, {0-55,60-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 255: { host: 7; cpu: {60-63}, {0-59,64-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 256: { host: 7; cpu: {64-67}, {0-63,68-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 257: { host: 7; cpu: {68-71}, {0-67,72-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 258: { host: 7; cpu: {72-75}, {0-71,76-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 259: { host: 7; cpu: {76-79}, {0-75,80-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 260: { host: 7; cpu: {80-83}, {0-79,84-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 261: { host: 7; cpu: {84-87}, {0-83,88-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 262: { host: 7; cpu: {88-91}, {0-87,92-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 263: { host: 7; cpu: {92-95}, {0-91,96-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 264: { host: 7; cpu: {96-99}, {0-95,100-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 265: { host: 7; cpu: {100-103}, {0-99,104-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 266: { host: 7; cpu: {104-107}, {0-103,108-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 267: { host: 7; cpu: {108-111}, {0-107,112-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 268: { host: 7; cpu: {112-115}, {0-111,116-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 269: { host: 7; cpu: {116-119}, {0-115,120-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 270: { host: 7; cpu: {120-123}, {0-119,124-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 271: { host: 7; cpu: {124-127}, {0-123,128-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 272: { host: 7; cpu: {128-131}, {0-127,132-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 273: { host: 7; cpu: {132-135}, {0-131,136-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 274: { host: 7; cpu: {136-139}, {0-135,140-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 275: { host: 7; cpu: {140-143}, {0-139,144-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 276: { host: 7; cpu: {144-147}, {0-143,148-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 277: { host: 7; cpu: {148-151}, {0-147,152-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 278: { host: 7; cpu: {152-155}, {0-151,156-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 279: { host: 7; cpu: {156-159}, {0-155} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 280: { host: 8; cpu: {0-3}, {4-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 281: { host: 8; cpu: {4-7}, {0-3,8-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 282: { host: 8; cpu: {8-11}, {0-7,12-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 283: { host: 8; cpu: {12-15}, {0-11,16-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 284: { host: 8; cpu: {16-19}, {0-15,20-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 285: { host: 8; cpu: {20-23}, {0-19,24-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 286: { host: 8; cpu: {24-27}, {0-23,28-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 287: { host: 8; cpu: {28-31}, {0-27,32-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 288: { host: 8; cpu: {32-35}, {0-31,36-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 289: { host: 8; cpu: {36-39}, {0-35,40-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 290: { host: 8; cpu: {40-43}, {0-39,44-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 291: { host: 8; cpu: {44-47}, {0-43,48-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 292: { host: 8; cpu: {48-51}, {0-47,52-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 293: { host: 8; cpu: {52-55}, {0-51,56-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 294: { host: 8; cpu: {56-59}, {0-55,60-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 295: { host: 8; cpu: {60-63}, {0-59,64-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 296: { host: 8; cpu: {64-67}, {0-63,68-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 297: { host: 8; cpu: {68-71}, {0-67,72-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 298: { host: 8; cpu: {72-75}, {0-71,76-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 299: { host: 8; cpu: {76-79}, {0-75,80-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 300: { host: 8; cpu: {80-83}, {0-79,84-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 301: { host: 8; cpu: {84-87}, {0-83,88-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 302: { host: 8; cpu: {88-91}, {0-87,92-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 303: { host: 8; cpu: {92-95}, {0-91,96-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 304: { host: 8; cpu: {96-99}, {0-95,100-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 305: { host: 8; cpu: {100-103}, {0-99,104-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 306: { host: 8; cpu: {104-107}, {0-103,108-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 307: { host: 8; cpu: {108-111}, {0-107,112-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 308: { host: 8; cpu: {112-115}, {0-111,116-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 309: { host: 8; cpu: {116-119}, {0-115,120-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 310: { host: 8; cpu: {120-123}, {0-119,124-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 311: { host: 8; cpu: {124-127}, {0-123,128-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 312: { host: 8; cpu: {128-131}, {0-127,132-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 313: { host: 8; cpu: {132-135}, {0-131,136-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 314: { host: 8; cpu: {136-139}, {0-135,140-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 315: { host: 8; cpu: {140-143}, {0-139,144-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 316: { host: 8; cpu: {144-147}, {0-143,148-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 317: { host: 8; cpu: {148-151}, {0-147,152-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 318: { host: 8; cpu: {152-155}, {0-151,156-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 319: { host: 8; cpu: {156-159}, {0-155} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+logout
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 6680849: <gpu_alltoall_compare8> in cluster <lassen> Done
+
+Job <gpu_alltoall_compare8> was submitted from host <lassen708> by user <adams112> in cluster <lassen> at Sat Jan 11 15:09:24 2025
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <adams112> in cluster <lassen> at Sat Jan 11 15:33:37 2025
+                            <40*lassen739>
+                            <40*lassen583>
+                            <40*lassen585>
+                            <40*lassen256>
+                            <40*lassen587>
+                            <40*lassen589>
+                            <40*lassen80>
+                            <40*lassen82>
+</g/g11/adams112> was used as the home directory.
+</g/g11/adams112/locality_aware-mikethebos/benchmark_tests/lassen> was used as the working directory.
+Started at Sat Jan 11 15:33:37 2025
+Terminated at Sat Jan 11 15:37:11 2025
+Results reported at Sat Jan 11 15:37:11 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J gpu_alltoall_compare8
+#BSUB -e gpu_alltoall_compare8.%J.err
+#BSUB -o gpu_alltoall_compare8.%J.out
+#BSUB -nnodes 8
+#BSUB -q pbatch
+#BSUB -W 01:45
+ 
+module load gcc/8.3.1
+module load cuda/11.2.0
+module load hwloc
+
+cd $HOME/locality_aware-mikethebos/build/benchmarks
+
+export OMP_NUM_THREADS=1
+echo "Running Unthreaded Alltoall Test:"
+jsrun -n32 -r4 -a1 -c1 -g1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_alltoall_quick
+
+export MV2_USE_ALIGNED_ALLOC=1
+
+export OMP_NUM_THREADS=2
+echo "Running Threaded Alltoall Test with launches, 2 threads"
+jsrun -n32 -r4 -a1 -c2 -g1 -bpacked:2 -dpacked -EOMP_NUM_THREADS=2 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./thread_launches 2
+
+export OMP_NUM_THREADS=2
+echo "Running Threaded Alltoall Test without launches, 2 threads"
+jsrun -n32 -r4 -a1 -c2 -g1 -bpacked:2 -dpacked -EOMP_NUM_THREADS=2 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./no_thread_launches 2
+
+export OMP_NUM_THREADS=4
+echo "Running Threaded Alltoall Test with launches, 4 threads"
+jsrun -n32 -r4 -a1 -c4 -g1 -bpacked:4 -dpacked -EOMP_NUM_THREADS=4 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./thread_launches 4
+
+export OMP_NUM_THREADS=4
+echo "Running Threaded Alltoall Test without launches, 4 threads"
+jsrun -n32 -r4 -a1 -c4 -g1 -bpacked:4 -dpacked -EOMP_NUM_THREADS=4 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./no_thread_launches 4
+
+export OMP_NUM_THREADS=8
+echo "Running Threaded Alltoall Test with launches, 8 threads"
+jsrun -n32 -r4 -a1 -c8 -g1 -bpacked:8 -dpacked -EOMP_NUM_THREADS=8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./thread_launches 8
+
+export OMP_NUM_THREADS=8
+echo "Running Threaded Alltoall Test without launches, 8 threads"
+jsrun -n32 -r4 -a1 -c8 -g1 -bpacked:8 -dpacked -EOMP_NUM_THREADS=8 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./no_thread_launches 8
+
+export OMP_NUM_THREADS=10
+echo "Running Threaded Alltoall Test with launches, 10 threads"
+jsrun -n32 -r4 -a1 -c10 -g1 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./thread_launches 10
+
+export OMP_NUM_THREADS=10
+echo "Running Threaded Alltoall Test without launches, 10 threads"
+
+(... more ...)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   2.00 sec.
+    Max Memory :                                 66 MB
+    Average Memory :                             60.73 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1426 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   214 sec.
+    Turnaround time :                            1667 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <gpu_alltoall_compare8.6680849.err> for stderr output of this job.
+

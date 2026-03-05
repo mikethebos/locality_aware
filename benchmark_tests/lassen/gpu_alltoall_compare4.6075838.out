@@ -1,0 +1,277 @@
+Running Multiproc Alltoall Test with 2 procs:
+PASSED copy at size 1
+Testing Size 1
+PASSED copy at size 1
+PASSED copy at size 1
+PASSED copy at size 2
+PASSED copy at size 1
+PASSED copy at size 2
+PASSED copy at size 1
+Testing Size 2
+PASSED copy at size 2
+Testing Size 4
+PASSED copy at size 4
+Testing Size 8
+PASSED copy at size 8
+Testing Size 16
+PASSED copy at size 16
+Testing Size 32
+PASSED copy at size 32
+Testing Size 64
+PASSED copy at size 64
+Testing Size 128
+PASSED copy at size 128
+Testing Size 256
+PASSED copy at size 256
+Testing Size 512
+PASSED copy at size 512
+Testing Size 1024
+PASSED copy at size 1024
+PASSED copy at size 1
+PASSED copy at size 4
+PASSED copy at size 8
+PASSED copy at size 16
+PASSED copy at size 32
+PASSED copy at size 64
+PASSED copy at size 128
+PASSED copy at size 256
+PASSED copy at size 512
+PASSED copy at size 1024
+PASSED copy at size 1
+PASSED copy at size 1
+PASSED copy at size 4
+PASSED copy at size 8
+PASSED copy at size 16
+PASSED copy at size 32
+PASSED copy at size 64
+PASSED copy at size 128
+PASSED copy at size 256
+PASSED copy at size 512
+PASSED copy at size 1024
+PASSED copy at size 2
+PASSED copy at size 4
+PASSED copy at size 8
+PASSED copy at size 16
+PASSED copy at size 32
+PASSED copy at size 64
+PASSED copy at size 128
+PASSED copy at size 256
+PASSED copy at size 512
+PASSED copy at size 1024
+PASSED copy at size 1
+PASSED copy at size 1
+PASSED copy at size 1
+PASSED copy at size 1
+PASSED copy at size 1
+PASSED copy at size 1
+PASSED copy at size 1
+PASSED copy at size 1
+PASSED copy at size 2
+PASSED copy at size 4
+PASSED copy at size 8
+PASSED copy at size 2
+PASSED copy at size 4
+PASSED copy at size 2
+PASSED copy at size 4
+PASSED copy at size 2
+PASSED copy at size 4
+PASSED copy at size 8
+PASSED copy at size 2
+PASSED copy at size 4
+PASSED copy at size 2
+PASSED copy at size 4
+PASSED copy at size 2
+PASSED copy at size 4
+PASSED copy at size 8
+PASSED copy at size 2
+PASSED copy at size 4
+PASSED copy at size 2
+PASSED copy at size 4
+PASSED copy at size 8
+PASSED copy at size 2
+PASSED copy at size 4
+PASSED copy at size 2
+PASSED copy at size 4
+PASSED copy at size 8
+PASSED copy at size 16
+PASSED copy at size 32
+PASSED send at size 1
+PASSED copy at size 2
+PASSED copy at size 16
+PASSED copy at size 32
+PASSED copy at size 8
+PASSED copy at size 16
+PASSED copy at size 16
+PASSED copy at size 32
+PASSED send at size 2
+PASSED copy at size 4
+PASSED copy at size 16
+PASSED copy at size 32
+PASSED copy at size 64
+PASSED copy at size 8
+PASSED copy at size 16
+PASSED copy at size 8
+PASSED copy at size 16
+PASSED copy at size 64
+PASSED copy at size 8
+PASSED copy at size 16
+PASSED copy at size 64
+PASSED copy at size 8
+PASSED copy at size 16
+PASSED copy at size 32
+PASSED copy at size 128
+PASSED copy at size 16
+PASSED copy at size 8
+PASSED copy at size 16
+PASSED copy at size 64
+PASSED copy at size 128
+PASSED send at size 4
+PASSED copy at size 8
+PASSED copy at size 128
+PASSED copy at size 256
+PASSED copy at size 32
+PASSED copy at size 64
+PASSED copy at size 64
+PASSED copy at size 32
+PASSED copy at size 64
+PASSED copy at size 256
+PASSED copy at size 32
+PASSED copy at size 64
+PASSED copy at size 256
+PASSED copy at size 32
+PASSED copy at size 64
+PASSED send at size 8
+PASSED copy at size 128
+PASSED copy at size 256
+PASSED copy at size 32
+PASSED copy at size 64
+PASSED copy at size 128
+PASSED copy at size 512
+PASSED copy at size 128
+PASSED copy at size 128
+PASSED copy at size 512
+PASSED copy at size 128
+PASSED copy at size 32
+PASSED copy at size 64
+PASSED copy at size 128
+PASSED copy at size 512
+PASSED copy at size 256
+PASSED copy at size 128
+PASSED copy at size 256
+PASSED copy at size 128
+PASSED copy at size 256
+PASSED copy at size 512
+PASSED copy at size 16
+PASSED copy at size 256
+PASSED copy at size 1024
+PASSED copy at size 256
+PASSED copy at size 512
+PASSED copy at size 1024
+PASSED copy at size 256
+PASSED copy at size 512
+PASSED copy at size 1024
+PASSED copy at size 512
+PASSED copy at size 256
+PASSED copy at size 512
+PASSED copy at size 1024
+PASSED copy at size 512
+PASSED send at size 16
+PASSED copy at size 512
+PASSED copy at size 32
+PASSED copy at size 512
+PASSED copy at size 1024
+PASSED copy at size 1024
+PASSED copy at size 1024
+PASSED copy at size 1024
+PASSED copy at size 1024
+PASSED copy at size 1024
+PASSED copy at size 1024
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 6075838: <gpu_alltoall_compare4> in cluster <lassen> Exited
+
+Job <gpu_alltoall_compare4> was submitted from host <lassen708> by user <adams112> in cluster <lassen> at Wed Aug  7 17:36:50 2024
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <adams112> in cluster <lassen> at Wed Aug  7 17:50:55 2024
+                            <40*lassen96>
+                            <40*lassen98>
+                            <40*lassen420>
+                            <40*lassen750>
+</g/g11/adams112> was used as the home directory.
+</g/g11/adams112/locality_aware-mikethebos/benchmark_tests/lassen> was used as the working directory.
+Started at Wed Aug  7 17:50:55 2024
+Terminated at Wed Aug  7 17:59:49 2024
+Results reported at Wed Aug  7 17:59:49 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J gpu_alltoall_compare4
+#BSUB -e gpu_alltoall_compare4.%J.err
+#BSUB -o gpu_alltoall_compare4.%J.out
+#BSUB -nnodes 4
+#BSUB -q pbatch
+#BSUB -W 01:45
+ 
+module load gcc/8.3.1
+module load cuda/11.2.0
+module load hwloc
+
+cd $HOME/locality_aware-mikethebos/build/benchmarks
+
+#export OMP_NUM_THREADS=1
+#echo "Running Unthreaded Alltoall Test:"
+#jsrun -n4 -r1 -a4 -c4 -g4 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_alltoall
+
+export MV2_USE_ALIGNED_ALLOC=1
+
+#export OMP_NUM_THREADS=10
+#echo "Running Threaded Alltoall Test with launches"
+#jsrun -n4 -r1 -a4 -c40 -g4 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./thread_launches
+
+#export OMP_NUM_THREADS=10
+#echo "Running Threaded Alltoall Test without launches"
+#jsrun -n4 -r1 -a4 -c40 -g4 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./no_thread_launches
+
+export OMP_NUM_THREADS=1
+
+echo "Running Multiproc Alltoall Test with 2 procs:"
+jsrun -n4 -r1 -a8 -c8 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+
+#echo "Running Multiproc Alltoall Test with 4 procs:"
+#jsrun -n4 -r1 -a16 -c16 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+
+#echo "Running Multiproc Alltoall Test with 8 procs:"
+#jsrun -n4 -r1 -a32 -c32 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+
+#echo "Running Multiproc Alltoall Test with 10 procs:"
+#jsrun -n4 -r1 -a40 -c40 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 255.
+
+Resource usage summary:
+
+    CPU time :                                   1.46 sec.
+    Max Memory :                                 59 MB
+    Average Memory :                             59.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1425 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   534 sec.
+    Turnaround time :                            1379 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <gpu_alltoall_compare4.6075838.err> for stderr output of this job.
+

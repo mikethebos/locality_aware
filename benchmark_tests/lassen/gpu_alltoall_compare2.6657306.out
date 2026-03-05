@@ -1,0 +1,388 @@
+Running Unthreaded Alltoall Test:
+Testing Size 1
+GPU-Aware PMPI Time 7.452376e-05
+Copy-to-CPU PMPI Time 4.209941e-05
+Copy-to-CPU Nonblocking Time 4.691220e-05
+GPU Aware Nonblocking Time 1.196912e-04
+Testing Size 2
+GPU-Aware PMPI Time 6.568517e-05
+Copy-to-CPU PMPI Time 4.289548e-05
+Copy-to-CPU Nonblocking Time 4.447754e-05
+GPU Aware Nonblocking Time 1.226828e-04
+Testing Size 4
+GPU-Aware PMPI Time 6.606667e-05
+Copy-to-CPU PMPI Time 4.276399e-05
+Copy-to-CPU Nonblocking Time 4.474854e-05
+GPU Aware Nonblocking Time 1.172835e-04
+Testing Size 8
+GPU-Aware PMPI Time 6.592603e-05
+Copy-to-CPU PMPI Time 4.272435e-05
+Copy-to-CPU Nonblocking Time 4.332816e-05
+GPU Aware Nonblocking Time 1.170799e-04
+Testing Size 16
+GPU-Aware PMPI Time 6.706387e-05
+Copy-to-CPU PMPI Time 4.324688e-05
+Copy-to-CPU Nonblocking Time 4.386767e-05
+GPU Aware Nonblocking Time 1.159697e-04
+Testing Size 32
+GPU-Aware PMPI Time 6.737726e-05
+Copy-to-CPU PMPI Time 4.378193e-05
+Copy-to-CPU Nonblocking Time 4.555712e-05
+GPU Aware Nonblocking Time 1.170924e-04
+Testing Size 64
+GPU-Aware PMPI Time 6.877357e-05
+Copy-to-CPU PMPI Time 4.592628e-05
+Copy-to-CPU Nonblocking Time 4.694527e-05
+GPU Aware Nonblocking Time 1.162848e-04
+Testing Size 128
+GPU-Aware PMPI Time 6.973836e-05
+Copy-to-CPU PMPI Time 4.657246e-05
+Copy-to-CPU Nonblocking Time 4.841488e-05
+GPU Aware Nonblocking Time 1.167517e-04
+Testing Size 256
+GPU-Aware PMPI Time 7.357245e-05
+Copy-to-CPU PMPI Time 5.002188e-05
+Copy-to-CPU Nonblocking Time 5.193246e-05
+GPU Aware Nonblocking Time 1.186716e-04
+Testing Size 512
+GPU-Aware PMPI Time 7.545931e-05
+Copy-to-CPU PMPI Time 5.070557e-05
+Copy-to-CPU Nonblocking Time 5.329292e-05
+GPU Aware Nonblocking Time 1.180125e-04
+Testing Size 1024
+GPU-Aware PMPI Time 8.919475e-05
+Copy-to-CPU PMPI Time 6.228661e-05
+Copy-to-CPU Nonblocking Time 6.462584e-05
+GPU Aware Nonblocking Time 1.190799e-04
+Testing Size 2048
+GPU-Aware PMPI Time 1.155980e-04
+Copy-to-CPU PMPI Time 8.484226e-05
+Copy-to-CPU Nonblocking Time 8.744942e-05
+GPU Aware Nonblocking Time 1.192211e-04
+Testing Size 4096
+GPU-Aware PMPI Time 1.567815e-04
+Copy-to-CPU PMPI Time 1.175867e-04
+Copy-to-CPU Nonblocking Time 1.208835e-04
+GPU Aware Nonblocking Time 1.205158e-04
+Testing Size 8192
+GPU-Aware PMPI Time 2.490416e-04
+Copy-to-CPU PMPI Time 1.949357e-04
+Copy-to-CPU Nonblocking Time 2.321019e-04
+GPU Aware Nonblocking Time 1.271978e-04
+Testing Size 16384
+GPU-Aware PMPI Time 3.584839e-04
+Copy-to-CPU PMPI Time 3.381061e-04
+Copy-to-CPU Nonblocking Time 3.167472e-04
+GPU Aware Nonblocking Time 1.645527e-04
+Testing Size 32768
+GPU-Aware PMPI Time 6.420533e-04
+Copy-to-CPU PMPI Time 5.454659e-04
+Copy-to-CPU Nonblocking Time 6.008867e-04
+GPU Aware Nonblocking Time 2.809959e-04
+Testing Size 65536
+GPU-Aware PMPI Time 1.213477e-03
+Copy-to-CPU PMPI Time 1.040005e-03
+Copy-to-CPU Nonblocking Time 1.062110e-03
+GPU Aware Nonblocking Time 6.152142e-04
+Testing Size 131072
+GPU-Aware PMPI Time 2.016395e-03
+Copy-to-CPU PMPI Time 1.821642e-03
+Copy-to-CPU Nonblocking Time 1.877410e-03
+GPU Aware Nonblocking Time 1.213202e-03
+Testing Size 262144
+GPU-Aware PMPI Time 4.098365e-03
+Copy-to-CPU PMPI Time 3.519445e-03
+Copy-to-CPU Nonblocking Time 4.589244e-03
+GPU Aware Nonblocking Time 2.421917e-03
+Testing Size 524288
+GPU-Aware PMPI Time 7.733243e-03
+Copy-to-CPU PMPI Time 7.357127e-03
+Copy-to-CPU Nonblocking Time 6.944338e-03
+GPU Aware Nonblocking Time 4.718115e-03
+app 0: ./gpu_alltoall_quick 
+rank: 0: { host: 1; cpu: {0-3}, {4-7,80-87} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 1: { host: 1; cpu: {4-7}, {0-3,80-87} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 2: { host: 1; cpu: {80-83}, {0-7,84-87} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 3: { host: 1; cpu: {84-87}, {0-7,80-83} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 4: { host: 2; cpu: {0-3}, {4-7,80-87} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 5: { host: 2; cpu: {4-7}, {0-3,80-87} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 6: { host: 2; cpu: {80-83}, {0-7,84-87} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+rank: 7: { host: 2; cpu: {84-87}, {0-7,80-83} ; gpu: {0,1,2,3} ; mem: {0-16301,163036-179337} } : app 0
+Running Threaded Alltoall Test with launches
+Testing Size 1
+GPU-Aware PMPI Time 6.383249e-05
+Copy-to-CPU PMPI Time 4.023665e-05
+Copy-to-CPU Nonblocking Time 4.548289e-05
+GPU-Aware Nonblocking Time 1.156206e-04
+2 Threads Nonblocking Time 4.284377e-05
+4 Threads Nonblocking Time 4.268519e-05
+8 Threads Nonblocking Time 4.318393e-05
+10 Threads Nonblocking Time 4.265817e-05
+Testing Size 2
+GPU-Aware PMPI Time 6.189991e-05
+Copy-to-CPU PMPI Time 4.030081e-05
+Copy-to-CPU Nonblocking Time 4.267602e-05
+GPU-Aware Nonblocking Time 1.125391e-04
+2 Threads Nonblocking Time 4.122596e-05
+4 Threads Nonblocking Time 4.091272e-05
+8 Threads Nonblocking Time 4.082928e-05
+10 Threads Nonblocking Time 4.072787e-05
+Testing Size 4
+GPU-Aware PMPI Time 6.083792e-05
+Copy-to-CPU PMPI Time 3.958291e-05
+Copy-to-CPU Nonblocking Time 4.091547e-05
+GPU-Aware Nonblocking Time 1.114077e-04
+2 Threads Nonblocking Time 4.128734e-05
+4 Threads Nonblocking Time 4.108919e-05
+8 Threads Nonblocking Time 4.100919e-05
+10 Threads Nonblocking Time 4.107766e-05
+Testing Size 8
+GPU-Aware PMPI Time 6.170400e-05
+Copy-to-CPU PMPI Time 4.035000e-05
+Copy-to-CPU Nonblocking Time 4.161020e-05
+GPU-Aware Nonblocking Time 1.114586e-04
+2 Threads Nonblocking Time 4.210915e-05
+4 Threads Nonblocking Time 4.171176e-05
+8 Threads Nonblocking Time 4.163157e-05
+10 Threads Nonblocking Time 4.151707e-05
+Testing Size 16
+GPU-Aware PMPI Time 6.192473e-05
+Copy-to-CPU PMPI Time 4.058134e-05
+Copy-to-CPU Nonblocking Time 4.202457e-05
+GPU-Aware Nonblocking Time 1.107038e-04
+2 Threads Nonblocking Time 4.220223e-05
+4 Threads Nonblocking Time 4.201663e-05
+8 Threads Nonblocking Time 4.193187e-05
+10 Threads Nonblocking Time 4.223846e-05
+Testing Size 32
+GPU-Aware PMPI Time 6.300193e-05
+Copy-to-CPU PMPI Time 4.131919e-05
+Copy-to-CPU Nonblocking Time 4.444702e-05
+GPU-Aware Nonblocking Time 1.112288e-04
+2 Threads Nonblocking Time 4.484806e-05
+4 Threads Nonblocking Time 4.481984e-05
+8 Threads Nonblocking Time 4.465070e-05
+10 Threads Nonblocking Time 4.446827e-05
+Testing Size 64
+GPU-Aware PMPI Time 6.528127e-05
+Copy-to-CPU PMPI Time 4.321532e-05
+Copy-to-CPU Nonblocking Time 4.602674e-05
+GPU-Aware Nonblocking Time 1.112723e-04
+2 Threads Nonblocking Time 4.620393e-05
+4 Threads Nonblocking Time 4.603518e-05
+8 Threads Nonblocking Time 4.604045e-05
+10 Threads Nonblocking Time 4.611623e-05
+Testing Size 128
+GPU-Aware PMPI Time 6.661020e-05
+Copy-to-CPU PMPI Time 4.373441e-05
+Copy-to-CPU Nonblocking Time 4.853960e-05
+GPU-Aware Nonblocking Time 1.109099e-04
+2 Threads Nonblocking Time 4.888354e-05
+4 Threads Nonblocking Time 4.844232e-05
+8 Threads Nonblocking Time 4.806632e-05
+10 Threads Nonblocking Time 4.873696e-05
+Testing Size 256
+GPU-Aware PMPI Time 7.047491e-05
+Copy-to-CPU PMPI Time 4.759953e-05
+Copy-to-CPU Nonblocking Time 5.208443e-05
+GPU-Aware Nonblocking Time 1.140243e-04
+2 Threads Nonblocking Time 5.235515e-05
+4 Threads Nonblocking Time 5.212430e-05
+8 Threads Nonblocking Time 5.236706e-05
+10 Threads Nonblocking Time 5.203695e-05
+Testing Size 512
+GPU-Aware PMPI Time 7.286036e-05
+Copy-to-CPU PMPI Time 5.006741e-05
+Copy-to-CPU Nonblocking Time 5.427580e-05
+GPU-Aware Nonblocking Time 1.133943e-04
+2 Threads Nonblocking Time 5.417372e-05
+4 Threads Nonblocking Time 5.420485e-05
+8 Threads Nonblocking Time 5.392035e-05
+10 Threads Nonblocking Time 5.432261e-05
+Testing Size 1024
+GPU-Aware PMPI Time 8.315670e-05
+Copy-to-CPU PMPI Time 5.873589e-05
+Copy-to-CPU Nonblocking Time 6.171897e-05
+GPU-Aware Nonblocking Time 1.195998e-04
+2 Threads Nonblocking Time 6.864124e-05
+4 Threads Nonblocking Time 6.173269e-05
+8 Threads Nonblocking Time 6.904567e-05
+10 Threads Nonblocking Time 6.222315e-05
+Testing Size 2048
+GPU-Aware PMPI Time 1.147340e-04
+Copy-to-CPU PMPI Time 7.978258e-05
+Copy-to-CPU Nonblocking Time 8.775666e-05
+GPU-Aware Nonblocking Time 1.153695e-04
+2 Threads Nonblocking Time 8.305720e-05
+4 Threads Nonblocking Time 8.308274e-05
+8 Threads Nonblocking Time 8.280026e-05
+10 Threads Nonblocking Time 8.356441e-05
+Testing Size 4096
+GPU-Aware PMPI Time 1.404254e-04
+Copy-to-CPU PMPI Time 1.043187e-04
+Copy-to-CPU Nonblocking Time 1.070221e-04
+GPU-Aware Nonblocking Time 1.162079e-04
+2 Threads Nonblocking Time 1.069381e-04
+4 Threads Nonblocking Time 1.061117e-04
+8 Threads Nonblocking Time 1.067070e-04
+10 Threads Nonblocking Time 1.050919e-04
+Testing Size 8192
+GPU-Aware PMPI Time 2.037925e-04
+Copy-to-CPU PMPI Time 1.664464e-04
+Copy-to-CPU Nonblocking Time 1.634528e-04
+GPU-Aware Nonblocking Time 1.255145e-04
+2 Threads Nonblocking Time 1.634266e-04
+4 Threads Nonblocking Time 1.745633e-04
+8 Threads Nonblocking Time 1.671384e-04
+10 Threads Nonblocking Time 1.651523e-04
+Testing Size 16384
+GPU-Aware PMPI Time 3.302471e-04
+Copy-to-CPU PMPI Time 2.855929e-04
+Copy-to-CPU Nonblocking Time 2.891940e-04
+GPU-Aware Nonblocking Time 1.639523e-04
+2 Threads Nonblocking Time 2.845156e-04
+4 Threads Nonblocking Time 2.768277e-04
+8 Threads Nonblocking Time 2.846029e-04
+10 Threads Nonblocking Time 2.833181e-04
+Testing Size 32768
+GPU-Aware PMPI Time 5.549629e-04
+Copy-to-CPU PMPI Time 1.137994e-03
+Copy-to-CPU Nonblocking Time 5.139521e-04
+GPU-Aware Nonblocking Time 2.917359e-04
+2 Threads Nonblocking Time 5.117977e-04
+4 Threads Nonblocking Time 5.007526e-04
+8 Threads Nonblocking Time 5.030555e-04
+10 Threads Nonblocking Time 5.054186e-04
+Testing Size 65536
+GPU-Aware PMPI Time 1.025463e-03
+Copy-to-CPU PMPI Time 8.964480e-04
+Copy-to-CPU Nonblocking Time 1.501805e-03
+GPU-Aware Nonblocking Time 6.157363e-04
+2 Threads Nonblocking Time 9.702985e-04
+4 Threads Nonblocking Time 9.623609e-04
+8 Threads Nonblocking Time 9.479079e-04
+10 Threads Nonblocking Time 9.733574e-04
+Testing Size 131072
+GPU-Aware PMPI Time 1.956793e-03
+Copy-to-CPU PMPI Time 1.775954e-03
+Copy-to-CPU Nonblocking Time 1.744699e-03
+GPU-Aware Nonblocking Time 1.188610e-03
+2 Threads Nonblocking Time 2.241894e-03
+4 Threads Nonblocking Time 2.295080e-03
+8 Threads Nonblocking Time 1.698230e-03
+10 Threads Nonblocking Time 1.720454e-03
+Testing Size 262144
+GPU-Aware PMPI Time 3.731312e-03
+Copy-to-CPU PMPI Time 4.455861e-03
+Copy-to-CPU Nonblocking Time 3.221970e-03
+GPU-Aware Nonblocking Time 2.350224e-03
+2 Threads Nonblocking Time 3.197215e-03
+4 Threads Nonblocking Time 3.225608e-03
+8 Threads Nonblocking Time 3.222833e-03
+10 Threads Nonblocking Time 3.273954e-03
+Testing Size 524288
+GPU-Aware PMPI Time 7.142503e-03
+Copy-to-CPU PMPI Time 6.636948e-03
+Copy-to-CPU Nonblocking Time 6.230363e-03
+GPU-Aware Nonblocking Time 5.618894e-03
+2 Threads Nonblocking Time 6.198823e-03
+4 Threads Nonblocking Time 6.237595e-03
+8 Threads Nonblocking Time 7.663327e-03
+10 Threads Nonblocking Time 6.775506e-03
+app 0: ./thread_launches 
+rank: 0: { host: 1; cpu: {0-39}, {40-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 1: { host: 1; cpu: {40-79}, {0-39,80-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 2: { host: 1; cpu: {80-119}, {0-79,120-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 3: { host: 1; cpu: {120-159}, {0-119} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 4: { host: 2; cpu: {0-39}, {40-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 5: { host: 2; cpu: {40-79}, {0-39,80-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 6: { host: 2; cpu: {80-119}, {0-79,120-159} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+rank: 7: { host: 2; cpu: {120-159}, {0-119} ; gpu: {0,1,2,3} ; mem: {0-163019,163036-326055} } : app 0
+Running Threaded Alltoall Test without launches
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 6657306: <gpu_alltoall_compare2> in cluster <lassen> Exited
+
+Job <gpu_alltoall_compare2> was submitted from host <lassen709> by user <adams112> in cluster <lassen> at Tue Jan  7 09:59:29 2025
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <adams112> in cluster <lassen> at Tue Jan  7 10:53:44 2025
+                            <40*lassen519>
+                            <40*lassen524>
+</g/g11/adams112> was used as the home directory.
+</g/g11/adams112/locality_aware-mikethebos/benchmark_tests/lassen> was used as the working directory.
+Started at Tue Jan  7 10:53:44 2025
+Terminated at Tue Jan  7 11:27:29 2025
+Results reported at Tue Jan  7 11:27:29 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J gpu_alltoall_compare2
+#BSUB -e gpu_alltoall_compare2.%J.err
+#BSUB -o gpu_alltoall_compare2.%J.out
+#BSUB -nnodes 2
+#BSUB -q pbatch
+#BSUB -W 01:45
+ 
+module load gcc/8.3.1
+module load cuda/11.2.0
+module load hwloc
+
+cd $HOME/locality_aware-mikethebos/build/benchmarks
+
+export OMP_NUM_THREADS=1
+echo "Running Unthreaded Alltoall Test:"
+jsrun -n2 -r1 -a4 -c4 -g4 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_alltoall_quick
+
+export MV2_USE_ALIGNED_ALLOC=1
+
+export OMP_NUM_THREADS=10
+echo "Running Threaded Alltoall Test with launches"
+jsrun -n2 -r1 -a4 -c40 -g4 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./thread_launches
+
+export OMP_NUM_THREADS=10
+echo "Running Threaded Alltoall Test without launches"
+jsrun -n2 -r1 -a4 -c40 -g4 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./no_thread_launches
+
+export OMP_NUM_THREADS=1
+
+echo "Running Multiproc Alltoall Test with 2 procs:"
+jsrun -n2 -r1 -a8 -c8 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+
+echo "Running Multiproc Alltoall Test with 4 procs:"
+jsrun -n2 -r1 -a16 -c16 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+
+echo "Running Multiproc Alltoall Test with 8 procs:"
+jsrun -n2 -r1 -a32 -c32 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+
+echo "Running Multiproc Alltoall Test with 10 procs:"
+jsrun -n2 -r1 -a40 -c40 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 255.
+
+Resource usage summary:
+
+    CPU time :                                   3.08 sec.
+    Max Memory :                                 59 MB
+    Average Memory :                             58.52 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1425 MB
+    Max Processes :                              5
+    Max Threads :                                27
+    Run time :                                   2023 sec.
+    Turnaround time :                            5280 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <gpu_alltoall_compare2.6657306.err> for stderr output of this job.
+

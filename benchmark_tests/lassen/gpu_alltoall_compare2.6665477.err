@@ -1,0 +1,39 @@
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '-EOMP_NUM_THREADS=10', may prevent LLNL-specific error detection
+         If option '-EOMP_NUM_THREADS=10' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '-EOMP_NUM_THREADS=10', may prevent LLNL-specific error detection
+         If option '-EOMP_NUM_THREADS=10' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+no_thread_launches: ../../ccmi/executor/Allreduce.h:569: void CCMI::Executor::Allreduce<T_Conn>::notifyRecv(void*, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Conn = CCMI::ConnectionManager::CommSeqConnMgr; libcoll_event_function = void (*)(void*, void*, libcoll_result_t); libcoll_context_t = void*]: Assertion `cdata->_phase >= (unsigned)_scache.getStartPhase()' failed.
+[lassen301:68138] *** Process received signal ***
+[lassen301:68138] Signal: Aborted (6)
+[lassen301:68138] Signal code:  (-6)
+<< Rank 0: Generating lwcore_cpu.6665477_3.0 on lassen301 Thu Jan  9 16:58:00 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 0:  Generated lwcore_cpu.6665477_3.0 on lassen301 Thu Jan  9 16:58:02 PST 2025 in 2 secs >>
+<< Rank 0: Waiting 60 secs before aborting task on lassen301 Thu Jan  9 16:58:02 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 0:  Waited 60 secs -> now aborting task on lassen301 Thu Jan  9 16:59:02 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen301:68138] -----------------------
+[lassen301:68138] -----------------------
+[lassen301:68138] *** End of error message ***
+ERROR:  One or more process (first noticed rank 0) terminated with signal 6
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 

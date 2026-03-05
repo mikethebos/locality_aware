@@ -1,0 +1,82 @@
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '-EOMP_NUM_THREADS=10', may prevent LLNL-specific error detection
+         If option '-EOMP_NUM_THREADS=10' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+[lassen626:136967] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen626:136967] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen626:136967] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen626:136966] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen626:136966] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen626:136966] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen626:136966] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen626:136965] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen626:136965] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen626:136964] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen626:136964] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen626:136964] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen626:136964] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen626:136967] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen626:136965] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen626:136965] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen77:73882] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen77:73882] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen77:73883] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen77:73883] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen77:73884] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen77:73884] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen77:73885] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen77:73885] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen77:73884] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen77:73884] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen77:73882] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen77:73882] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen77:73885] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen77:73885] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen77:73883] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen77:73883] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+Warning: jsrun wrapper does not handle unexpected option '-EOMP_NUM_THREADS=10', may prevent LLNL-specific error detection
+         If option '-EOMP_NUM_THREADS=10' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+no_thread_launches: ../../ccmi/executor/HybridReduce.h:194: void CCMI::Executor::HybridReduceT<T>::notifyRecv(void*, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T = CCMI::ConnectionManager::CommSeqConnMgr; libcoll_event_function = void (*)(void*, void*, libcoll_result_t); libcoll_context_t = void*]: Assertion `this->_epdomain->endpoint() == _root' failed.
+[lassen77:74275] *** Process received signal ***
+[lassen77:74275] Signal: Aborted (6)
+[lassen77:74275] Signal code:  (-6)
+no_thread_launches: ../../ccmi/executor/Allreduce.h:569: void CCMI::Executor::Allreduce<T_Conn>::notifyRecv(void*, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T_Conn = CCMI::ConnectionManager::CommSeqConnMgr; libcoll_event_function = void (*)(void*, void*, libcoll_result_t); libcoll_context_t = void*]: Assertion `cdata->_phase >= (unsigned)_scache.getStartPhase()' failed.
+[lassen77:74272] *** Process received signal ***
+[lassen77:74272] Signal: Aborted (6)
+[lassen77:74272] Signal code:  (-6)
+<< Rank 0: Generating lwcore_cpu.6661573_3.0 on lassen77 Wed Jan  8 21:18:52 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 3: Generating lwcore_cpu.6661573_3.3 on lassen77 Wed Jan  8 21:18:52 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 0:  Generated lwcore_cpu.6661573_3.0 on lassen77 Wed Jan  8 21:18:53 PST 2025 in 1 secs >>
+<< Rank 3:  Generated lwcore_cpu.6661573_3.3 on lassen77 Wed Jan  8 21:18:53 PST 2025 in 1 secs >>
+<< Rank 3: Waiting 60 secs before aborting task on lassen77 Wed Jan  8 21:18:53 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 0: Waiting 60 secs before aborting task on lassen77 Wed Jan  8 21:18:53 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 3:  Waited 60 secs -> now aborting task on lassen77 Wed Jan  8 21:19:53 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 0:  Waited 60 secs -> now aborting task on lassen77 Wed Jan  8 21:19:53 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen77:74275] -----------------------
+[lassen77:74275] -----------------------
+[lassen77:74272] -----------------------
+[lassen77:74272] -----------------------
+[lassen77:74272] *** End of error message ***
+[lassen77:74275] *** End of error message ***
+ERROR:  One or more process (first noticed rank 0) terminated with signal 6
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 

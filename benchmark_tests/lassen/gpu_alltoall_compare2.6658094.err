@@ -1,0 +1,85 @@
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '-EOMP_NUM_THREADS=10', may prevent LLNL-specific error detection
+         If option '-EOMP_NUM_THREADS=10' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+[lassen96:79858] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen96:79858] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen96:79862] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen96:79862] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen96:79862] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen96:79860] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen96:79860] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen96:79860] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen96:79858] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen96:79858] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen96:79864] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen96:79864] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen96:79864] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen97:10395] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen97:10395] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen97:10393] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen97:10393] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen97:10393] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen97:10392] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen97:10392] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen97:10395] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen97:10394] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen97:10394] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen97:10394] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen97:10392] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+[lassen97:10392] ERROR: Exceeded maximum supported application threads (64). Use common_pami_max_threads MCA parameter to increase this limit
+Warning: jsrun wrapper does not handle unexpected option '-EOMP_NUM_THREADS=10', may prevent LLNL-specific error detection
+         If option '-EOMP_NUM_THREADS=10' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 
+no_thread_launches: ../../ccmi/executor/HybridReduce.h:194: void CCMI::Executor::HybridReduceT<T>::notifyRecv(void*, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T = CCMI::ConnectionManager::CommSeqConnMgr; libcoll_event_function = void (*)(void*, void*, libcoll_result_t); libcoll_context_t = void*]: Assertion `this->_epdomain->endpoint() == _root' failed.
+[lassen96:80404] *** Process received signal ***
+[lassen96:80404] Signal: Aborted (6)
+[lassen96:80404] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/allreduce/AsyncAllreduceT.h:369: LibColl::Interfaces::Composite* CCMI::Protocols::Allreduce::AsyncAllreduceFactoryT<T_Composite, T_Conn, T_reduce_type, getKey>::generate(libcoll_geometry_t, void*) [with T_Composite = CCMI::Protocols::Allreduce::HybridAsyncReduceT<CCMI::ConnectionManager::CommSeqConnMgr, CCMI::Executor::HybridReduceT<CCMI::ConnectionManager::CommSeqConnMgr> >; T_Conn = CCMI::ConnectionManager::CommSeqConnMgr; T_reduce_type = libcoll_reduce_t; unsigned int (* getKey)(unsigned int, unsigned int, unsigned int, void**) = LibColl::Adapter::getKey; libcoll_geometry_t = void*]: Assertion `co->getFlags() & EarlyArrival' failed.
+[lassen96:80401] *** Process received signal ***
+[lassen96:80401] Signal: Aborted (6)
+[lassen96:80401] Signal code:  (-6)
+no_thread_launches: ../../ccmi/protocols/allreduce/AsyncAllreduceT.h:369: LibColl::Interfaces::Composite* CCMI::Protocols::Allreduce::AsyncAllreduceFactoryT<T_Composite, T_Conn, T_reduce_type, getKey>::generate(libcoll_geometry_t, void*) [with T_Composite = CCMI::Protocols::Allreduce::HybridAsyncReduceT<CCMI::ConnectionManager::CommSeqConnMgr, CCMI::Executor::HybridReduceT<CCMI::ConnectionManager::CommSeqConnMgr> >; T_Conn = CCMI::ConnectionManager::CommSeqConnMgr; T_reduce_type = libcoll_reduce_t; unsigned int (* getKey)(unsigned int, unsigned int, unsigned int, void**) = LibColl::Adapter::getKey; libcoll_geometry_t = void*]: Assertion `co->getFlags() & EarlyArrival' failed.
+[lassen96:80403] *** Process received signal ***
+[lassen96:80403] Signal: Aborted (6)
+[lassen96:80403] Signal code:  (-6)
+no_thread_launches: ../../ccmi/executor/HybridReduce.h:194: void CCMI::Executor::HybridReduceT<T>::notifyRecv(void*, LibColl::PipeWorkQueue**, void (**)(libcoll_context_t, void*, libcoll_result_t), void**) [with T = CCMI::ConnectionManager::CommSeqConnMgr; libcoll_event_function = void (*)(void*, void*, libcoll_result_t); libcoll_context_t = void*]: Assertion `this->_epdomain->endpoint() == _root' failed.
+[lassen97:10942] *** Process received signal ***
+[lassen97:10942] Signal: Aborted (6)
+[lassen97:10942] Signal code:  (-6)
+<< Rank 0: Generating lwcore_cpu.6658094_3.0 on lassen96 Tue Jan  7 12:40:26 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 2: Generating lwcore_cpu.6658094_3.2 on lassen96 Tue Jan  7 12:40:26 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 3: Generating lwcore_cpu.6658094_3.3 on lassen96 Tue Jan  7 12:40:26 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 6: Generating lwcore_cpu.6658094_3.6 on lassen97 Tue Jan  7 12:40:26 PST 2025 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 6:  Generated lwcore_cpu.6658094_3.6 on lassen97 Tue Jan  7 12:40:28 PST 2025 in 2 secs >>
+<< Rank 0:  Generated lwcore_cpu.6658094_3.0 on lassen96 Tue Jan  7 12:40:28 PST 2025 in 2 secs >>
+<< Rank 6: Waiting 60 secs before aborting task on lassen97 Tue Jan  7 12:40:28 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 2:  Generated lwcore_cpu.6658094_3.2 on lassen96 Tue Jan  7 12:40:28 PST 2025 in 2 secs >>
+<< Rank 0: Waiting 60 secs before aborting task on lassen96 Tue Jan  7 12:40:28 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 3:  Generated lwcore_cpu.6658094_3.3 on lassen96 Tue Jan  7 12:40:28 PST 2025 in 2 secs >>
+<< Rank 2: Waiting 60 secs before aborting task on lassen96 Tue Jan  7 12:40:28 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 3: Waiting 60 secs before aborting task on lassen96 Tue Jan  7 12:40:28 PST 2025 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 6:  Waited 60 secs -> now aborting task on lassen97 Tue Jan  7 12:41:28 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen97:10942] -----------------------
+[lassen97:10942] -----------------------
+[lassen97:10942] *** End of error message ***
+<< Rank 2:  Waited 60 secs -> now aborting task on lassen96 Tue Jan  7 12:41:28 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen96:80403] -----------------------
+[lassen96:80403] -----------------------
+[lassen96:80403] *** End of error message ***
+<< Rank 0:  Waited 60 secs -> now aborting task on lassen96 Tue Jan  7 12:41:28 PST 2025 (LLNL_COREDUMP_KILL=task) >>
+[lassen96:80401] -----------------------
+[lassen96:80401] -----------------------
+[lassen96:80401] *** End of error message ***
+ERROR:  One or more process (first noticed rank 6) terminated with signal 6
+Warning: jsrun wrapper does not handle unexpected option '--print_placement=1', may prevent LLNL-specific error detection
+         If option '--print_placement=1' valid,  please tell John Gyllenhaal (gyllen@llnl.gov, 4-5485)
+ 

@@ -1,0 +1,219 @@
+Running Unthreaded Alltoall Test:
+Testing Size 1
+GPU-Aware PMPI Time 6.498445e-05
+Copy-to-CPU PMPI Time 4.082210e-05
+Copy-to-CPU Nonblocking Time 4.438580e-05
+GPU Aware Nonblocking Time 1.129499e-04
+Testing Size 2
+GPU-Aware PMPI Time 6.353109e-05
+Copy-to-CPU PMPI Time 4.100245e-05
+Copy-to-CPU Nonblocking Time 4.135988e-05
+GPU Aware Nonblocking Time 1.145443e-04
+Testing Size 4
+GPU-Aware PMPI Time 6.456182e-05
+Copy-to-CPU PMPI Time 4.226908e-05
+Copy-to-CPU Nonblocking Time 4.233332e-05
+GPU Aware Nonblocking Time 1.148920e-04
+Testing Size 8
+GPU-Aware PMPI Time 6.512828e-05
+Copy-to-CPU PMPI Time 4.197808e-05
+Copy-to-CPU Nonblocking Time 4.289233e-05
+GPU Aware Nonblocking Time 1.143958e-04
+Testing Size 16
+GPU-Aware PMPI Time 6.576765e-05
+Copy-to-CPU PMPI Time 4.263048e-05
+Copy-to-CPU Nonblocking Time 4.322580e-05
+GPU Aware Nonblocking Time 1.142080e-04
+Testing Size 32
+GPU-Aware PMPI Time 6.631055e-05
+Copy-to-CPU PMPI Time 4.362631e-05
+Copy-to-CPU Nonblocking Time 4.556864e-05
+GPU Aware Nonblocking Time 1.143380e-04
+Testing Size 64
+GPU-Aware PMPI Time 6.811140e-05
+Copy-to-CPU PMPI Time 4.536643e-05
+Copy-to-CPU Nonblocking Time 4.693834e-05
+GPU Aware Nonblocking Time 1.148916e-04
+Testing Size 128
+GPU-Aware PMPI Time 6.887114e-05
+Copy-to-CPU PMPI Time 4.540779e-05
+Copy-to-CPU Nonblocking Time 4.869916e-05
+GPU Aware Nonblocking Time 1.143028e-04
+Testing Size 256
+GPU-Aware PMPI Time 7.235714e-05
+Copy-to-CPU PMPI Time 4.891150e-05
+Copy-to-CPU Nonblocking Time 5.166816e-05
+GPU Aware Nonblocking Time 1.177433e-04
+Testing Size 512
+GPU-Aware PMPI Time 7.535505e-05
+Copy-to-CPU PMPI Time 4.982231e-05
+Copy-to-CPU Nonblocking Time 5.378479e-05
+GPU Aware Nonblocking Time 1.168174e-04
+Testing Size 1024
+GPU-Aware PMPI Time 8.920634e-05
+Copy-to-CPU PMPI Time 6.217255e-05
+Copy-to-CPU Nonblocking Time 6.420970e-05
+GPU Aware Nonblocking Time 1.168299e-04
+Testing Size 2048
+GPU-Aware PMPI Time 1.144202e-04
+Copy-to-CPU PMPI Time 8.247182e-05
+Copy-to-CPU Nonblocking Time 8.641284e-05
+GPU Aware Nonblocking Time 1.172607e-04
+Testing Size 4096
+GPU-Aware PMPI Time 1.539405e-04
+Copy-to-CPU PMPI Time 1.177057e-04
+Copy-to-CPU Nonblocking Time 1.199542e-04
+GPU Aware Nonblocking Time 1.194293e-04
+Testing Size 8192
+GPU-Aware PMPI Time 2.496826e-04
+Copy-to-CPU PMPI Time 1.906641e-04
+Copy-to-CPU Nonblocking Time 1.933211e-04
+GPU Aware Nonblocking Time 1.258504e-04
+Testing Size 16384
+GPU-Aware PMPI Time 3.557549e-04
+Copy-to-CPU PMPI Time 3.114071e-04
+Copy-to-CPU Nonblocking Time 3.180928e-04
+GPU Aware Nonblocking Time 1.643497e-04
+Testing Size 32768
+GPU-Aware PMPI Time 6.582256e-04
+Copy-to-CPU PMPI Time 5.572497e-04
+Copy-to-CPU Nonblocking Time 5.676586e-04
+GPU Aware Nonblocking Time 2.935204e-04
+Testing Size 65536
+GPU-Aware PMPI Time 1.197095e-03
+Copy-to-CPU PMPI Time 1.081416e-03
+Copy-to-CPU Nonblocking Time 1.096837e-03
+GPU Aware Nonblocking Time 6.148328e-04
+Testing Size 131072
+GPU-Aware PMPI Time 2.183277e-03
+Copy-to-CPU PMPI Time 2.059965e-03
+Copy-to-CPU Nonblocking Time 2.091986e-03
+GPU Aware Nonblocking Time 1.217047e-03
+Testing Size 262144
+GPU-Aware PMPI Time 4.227910e-03
+Copy-to-CPU PMPI Time 3.669815e-03
+Copy-to-CPU Nonblocking Time 3.740195e-03
+GPU Aware Nonblocking Time 2.387952e-03
+Testing Size 524288
+GPU-Aware PMPI Time 8.046705e-03
+Copy-to-CPU PMPI Time 7.196276e-03
+Copy-to-CPU Nonblocking Time 7.180370e-03
+GPU Aware Nonblocking Time 4.789868e-03
+app 0: ./gpu_alltoall_quick 
+rank: 0: { host: 1; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 1: { host: 1; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 2: { host: 1; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 3: { host: 1; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+rank: 4: { host: 2; cpu: {0-3} ; gpu: {0} ; mem: {0-8150} } : app 0
+rank: 5: { host: 2; cpu: {4-7} ; gpu: {1} ; mem: {8151-16301} } : app 0
+rank: 6: { host: 2; cpu: {80-83} ; gpu: {2} ; mem: {163036-171186} } : app 0
+rank: 7: { host: 2; cpu: {84-87} ; gpu: {3} ; mem: {171187-179337} } : app 0
+Running Threaded Alltoall Test with launches
+app 0: ./thread_launches 
+rank: 0: { host: 1; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 1: { host: 1; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 2: { host: 1; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 3: { host: 1; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 4: { host: 2; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 5: { host: 2; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 6: { host: 2; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 7: { host: 2; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+Running Threaded Alltoall Test without launches
+Testing Size 1
+app 0: ./no_thread_launches 
+rank: 0: { host: 1; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 1: { host: 1; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 2: { host: 1; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 3: { host: 1; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+rank: 4: { host: 2; cpu: {0-39} ; gpu: {0} ; mem: {0-81509} } : app 0
+rank: 5: { host: 2; cpu: {40-79} ; gpu: {1} ; mem: {81510-163019} } : app 0
+rank: 6: { host: 2; cpu: {80-119} ; gpu: {2} ; mem: {163036-244545} } : app 0
+rank: 7: { host: 2; cpu: {120-159} ; gpu: {3} ; mem: {244546-326055} } : app 0
+Running Multiproc Alltoall Test with 2 procs:
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 6658406: <gpu_alltoall_compare2> in cluster <lassen> Exited
+
+Job <gpu_alltoall_compare2> was submitted from host <lassen708> by user <adams112> in cluster <lassen> at Tue Jan  7 15:41:25 2025
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <adams112> in cluster <lassen> at Tue Jan  7 15:45:01 2025
+                            <40*lassen249>
+                            <40*lassen53>
+</g/g11/adams112> was used as the home directory.
+</g/g11/adams112/locality_aware-mikethebos/benchmark_tests/lassen> was used as the working directory.
+Started at Tue Jan  7 15:45:01 2025
+Terminated at Tue Jan  7 15:53:45 2025
+Results reported at Tue Jan  7 15:53:45 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J gpu_alltoall_compare2
+#BSUB -e gpu_alltoall_compare2.%J.err
+#BSUB -o gpu_alltoall_compare2.%J.out
+#BSUB -nnodes 2
+#BSUB -q pbatch
+#BSUB -W 01:45
+ 
+module load gcc/8.3.1
+module load cuda/11.2.0
+module load hwloc
+
+cd $HOME/locality_aware-mikethebos/build/benchmarks
+
+export OMP_NUM_THREADS=1
+echo "Running Unthreaded Alltoall Test:"
+jsrun -n8 -r4 -a1 -c1 -g1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_alltoall_quick
+
+export MV2_USE_ALIGNED_ALLOC=1
+
+export OMP_NUM_THREADS=10
+echo "Running Threaded Alltoall Test with launches"
+jsrun -n8 -r4 -a1 -c10 -g1 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./thread_launches
+
+export OMP_NUM_THREADS=10
+echo "Running Threaded Alltoall Test without launches"
+jsrun -n8 -r4 -a1 -c10 -g1 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./no_thread_launches
+
+export OMP_NUM_THREADS=1
+
+echo "Running Multiproc Alltoall Test with 2 procs:"
+jsrun -n2 -r1 -a8 -c8 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+
+echo "Running Multiproc Alltoall Test with 4 procs:"
+jsrun -n2 -r1 -a16 -c16 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+
+echo "Running Multiproc Alltoall Test with 8 procs:"
+jsrun -n2 -r1 -a32 -c32 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+
+echo "Running Multiproc Alltoall Test with 10 procs:"
+jsrun -n2 -r1 -a40 -c40 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 255.
+
+Resource usage summary:
+
+    CPU time :                                   1.11 sec.
+    Max Memory :                                 60 MB
+    Average Memory :                             59.87 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1425 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   520 sec.
+    Turnaround time :                            740 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <gpu_alltoall_compare2.6658406.err> for stderr output of this job.
+

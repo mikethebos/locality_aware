@@ -1,0 +1,157 @@
+Running Multiproc Alltoall Test with 2 procs:
+PASSED copy at size 1
+PASSED copy at size 1
+PASSED copy at size 1
+PASSED copy at size 1
+PASSED copy at size 1
+PASSED copy at size 1
+Testing Size 1
+PASSED copy at size 1
+PASSED copy at size 1
+PASSED copy at size 1
+PASSED copy at size 1
+PASSED copy at size 1
+PASSED copy at size 1
+PASSED send at size 1
+PASSED copy at size 1
+PASSED copy at size 1
+PASSED copy at size 1
+C2C 2 Processes MPI_Alltoall Error at IDX 15, rank 30
+C2C 2 Processes MPI_Alltoall Error at IDX 3, rank 24
+PASSED copy at size 1
+C2C 2 Processes MPI_Alltoall Error at IDX 7, rank 26
+C2C 2 Processes MPI_Alltoall Error at IDX 11, rank 28
+C2C 2 Processes MPI_Alltoall Error at IDX 0, rank 0
+C2C 2 Processes MPI_Alltoall Error at IDX 5, rank 10
+C2C 2 Processes MPI_Alltoall Error at IDX 4, rank 2
+C2C 2 Processes MPI_Alltoall Error at IDX 14, rank 22
+C2C 2 Processes MPI_Alltoall Error at IDX 1, rank 8
+C2C 2 Processes MPI_Alltoall Error at IDX 8, rank 4
+C2C 2 Processes MPI_Alltoall Error at IDX 10, rank 20
+C2C 2 Processes MPI_Alltoall Error at IDX 13, rank 14
+C2C 2 Processes MPI_Alltoall Error at IDX 12, rank 6
+C2C 2 Processes MPI_Alltoall Error at IDX 9, rank 12
+C2C 2 Processes MPI_Alltoall Error at IDX 6, rank 18
+C2C 2 Processes MPI_Alltoall Error at IDX 2, rank 16
+app 0: ./gpu_extraproc_alltoall 
+rank: 0: { host: 1; cpu: {0-3}, {4-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 1: { host: 1; cpu: {4-7}, {0-3,8-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 2: { host: 1; cpu: {8-11}, {0-7,12-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 3: { host: 1; cpu: {12-15}, {0-11,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 4: { host: 1; cpu: {80-83}, {0-15,84-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 5: { host: 1; cpu: {84-87}, {0-15,80-83,88-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 6: { host: 1; cpu: {88-91}, {0-15,80-87,92-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 7: { host: 1; cpu: {92-95}, {0-15,80-91} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 8: { host: 2; cpu: {0-3}, {4-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 9: { host: 2; cpu: {4-7}, {0-3,8-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 10: { host: 2; cpu: {8-11}, {0-7,12-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 11: { host: 2; cpu: {12-15}, {0-11,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 12: { host: 2; cpu: {80-83}, {0-15,84-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 13: { host: 2; cpu: {84-87}, {0-15,80-83,88-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 14: { host: 2; cpu: {88-91}, {0-15,80-87,92-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 15: { host: 2; cpu: {92-95}, {0-15,80-91} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 16: { host: 3; cpu: {0-3}, {4-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 17: { host: 3; cpu: {4-7}, {0-3,8-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 18: { host: 3; cpu: {8-11}, {0-7,12-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 19: { host: 3; cpu: {12-15}, {0-11,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 20: { host: 3; cpu: {80-83}, {0-15,84-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 21: { host: 3; cpu: {84-87}, {0-15,80-83,88-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 22: { host: 3; cpu: {88-91}, {0-15,80-87,92-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 23: { host: 3; cpu: {92-95}, {0-15,80-91} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 24: { host: 4; cpu: {0-3}, {4-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 25: { host: 4; cpu: {4-7}, {0-3,8-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 26: { host: 4; cpu: {8-11}, {0-7,12-15,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 27: { host: 4; cpu: {12-15}, {0-11,80-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 28: { host: 4; cpu: {80-83}, {0-15,84-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 29: { host: 4; cpu: {84-87}, {0-15,80-83,88-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 30: { host: 4; cpu: {88-91}, {0-15,80-87,92-95} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+rank: 31: { host: 4; cpu: {92-95}, {0-15,80-91} ; gpu: {0,1,2,3} ; mem: {0-32603,163036-195639} } : app 0
+logout
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 6076903: <gpu_alltoall_compare4> in cluster <lassen> Exited
+
+Job <gpu_alltoall_compare4> was submitted from host <lassen708> by user <adams112> in cluster <lassen> at Thu Aug  8 09:20:05 2024
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <adams112> in cluster <lassen> at Thu Aug  8 09:20:28 2024
+                            <40*lassen730>
+                            <40*lassen370>
+                            <40*lassen579>
+                            <40*lassen575>
+</g/g11/adams112> was used as the home directory.
+</g/g11/adams112/locality_aware-mikethebos/benchmark_tests/lassen> was used as the working directory.
+Started at Thu Aug  8 09:20:28 2024
+Terminated at Thu Aug  8 09:20:38 2024
+Results reported at Thu Aug  8 09:20:38 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J gpu_alltoall_compare4
+#BSUB -e gpu_alltoall_compare4.%J.err
+#BSUB -o gpu_alltoall_compare4.%J.out
+#BSUB -nnodes 4
+#BSUB -q pbatch
+#BSUB -W 01:45
+ 
+module load gcc/8.3.1
+module load cuda/11.2.0
+module load hwloc
+
+cd $HOME/locality_aware-mikethebos/build/benchmarks
+
+#export OMP_NUM_THREADS=1
+#echo "Running Unthreaded Alltoall Test:"
+#jsrun -n4 -r1 -a4 -c4 -g4 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_alltoall
+
+export MV2_USE_ALIGNED_ALLOC=1
+
+#export OMP_NUM_THREADS=10
+#echo "Running Threaded Alltoall Test with launches"
+#jsrun -n4 -r1 -a4 -c40 -g4 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./thread_launches
+
+#export OMP_NUM_THREADS=10
+#echo "Running Threaded Alltoall Test without launches"
+#jsrun -n4 -r1 -a4 -c40 -g4 -bpacked:10 -dpacked -EOMP_NUM_THREADS=10 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./no_thread_launches
+
+export OMP_NUM_THREADS=1
+
+echo "Running Multiproc Alltoall Test with 2 procs:"
+jsrun -n4 -r1 -a8 -c8 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+
+#echo "Running Multiproc Alltoall Test with 4 procs:"
+#jsrun -n4 -r1 -a16 -c16 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+
+#echo "Running Multiproc Alltoall Test with 8 procs:"
+#jsrun -n4 -r1 -a32 -c32 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+
+#echo "Running Multiproc Alltoall Test with 10 procs:"
+#jsrun -n4 -r1 -a40 -c40 -g4 -dpacked -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed --print_placement=1 ./gpu_extraproc_alltoall
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.20 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   10 sec.
+    Turnaround time :                            33 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <gpu_alltoall_compare4.6076903.err> for stderr output of this job.
+

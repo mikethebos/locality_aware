@@ -1,0 +1,9 @@
+#!/bin/bash
+#BSUB -J nbralltoallv_n8
+#BSUB -e nbralltoallv_n8.%J.err
+#BSUB -o nbralltoallv_n8.%J.out
+#BSUB -nnodes 1
+#BSUB -q pdebug
+#BSUB -W 00:01
+
+lscpu

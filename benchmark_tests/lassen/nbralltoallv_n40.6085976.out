@@ -1,0 +1,122 @@
+Running Unthreaded Neighbor_Alltoallv Test:
+Running Threaded Neighbor_Alltoallv Test with 2 threads:
+Running Threaded Neighbor_Alltoallv Test with 4 threads:
+Running Threaded Neighbor_Alltoallv Test with 6 threads:
+Running Threaded Neighbor_Alltoallv Test with 8 threads:
+logout
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 6085976: <nbralltoallv_n40> in cluster <lassen> Exited
+
+Job <nbralltoallv_n40> was submitted from host <lassen709> by user <adams112> in cluster <lassen> at Mon Aug 12 13:19:09 2024
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <adams112> in cluster <lassen> at Tue Aug 13 02:48:22 2024
+                            <40*lassen93>
+                            <40*lassen422>
+                            <40*lassen423>
+                            <40*lassen426>
+                            <40*lassen755>
+                            <40*lassen757>
+                            <40*lassen276>
+                            <40*lassen101>
+                            <40*lassen761>
+                            <40*lassen104>
+                            <40*lassen763>
+                            <40*lassen109>
+                            <40*lassen439>
+                            <40*lassen768>
+                            <40*lassen286>
+                            <40*lassen289>
+                            <40*lassen441>
+                            <40*lassen113>
+                            <40*lassen443>
+                            <40*lassen115>
+                            <40*lassen774>
+                            <40*lassen775>
+                            <40*lassen448>
+                            <40*lassen779>
+                            <40*lassen296>
+                            <40*lassen298>
+                            <40*lassen601>
+                            <40*lassen603>
+                            <40*lassen608>
+                            <40*lassen453>
+                            <40*lassen611>
+                            <40*lassen614>
+                            <40*lassen463>
+                            <40*lassen619>
+                            <40*lassen138>
+                            <40*lassen139>
+                            <40*lassen798>
+                            <40*lassen625>
+                            <40*lassen629>
+                            <40*lassen634>
+</g/g11/adams112> was used as the home directory.
+</g/g11/adams112/locality_aware-mikethebos/benchmark_tests/lassen> was used as the working directory.
+Started at Tue Aug 13 02:48:22 2024
+Terminated at Tue Aug 13 02:48:33 2024
+Results reported at Tue Aug 13 02:48:33 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J nbralltoallv_n40
+#BSUB -e nbralltoallv_n40.%J.err
+#BSUB -o nbralltoallv_n40.%J.out
+#BSUB -nnodes 40
+#BSUB -q pbatch
+#BSUB -W 06:10
+
+module load gcc/7.3.1
+module load cuda/10.2.89
+module load hwloc
+
+cd $HOME/locality_aware-mikethebos/build/benchmarks
+
+echo "Running Unthreaded Neighbor_Alltoallv Test:"
+export OMP_NUM_THREADS=1
+jsrun -a1 -c1 -g1 -r40 -n8 -bpacked:1 -dpacked -EOMP_NUM_THREADS=1 --print_placement=1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_neighbor_alltoallv
+
+echo "Running Threaded Neighbor_Alltoallv Test with 2 threads:"
+export OMP_NUM_THREADS=2
+jsrun -a1 -c2 -g1 -r40 -n8 -bpacked:2 -dpacked -EOMP_NUM_THREADS=2 --print_placement=1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+
+echo "Running Threaded Neighbor_Alltoallv Test with 4 threads:"
+export OMP_NUM_THREADS=4
+jsrun -a1 -c4 -g1 -r40 -n8 -bpacked:4 -dpacked -EOMP_NUM_THREADS=4 --print_placement=1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+
+echo "Running Threaded Neighbor_Alltoallv Test with 6 threads:"
+export OMP_NUM_THREADS=6
+jsrun -a1 -c6 -g1 -r40 -n8 -bpacked:6 -dpacked -EOMP_NUM_THREADS=6 --print_placement=1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+
+echo "Running Threaded Neighbor_Alltoallv Test with 8 threads:"
+export OMP_NUM_THREADS=8
+jsrun -a1 -c8 -g1 -r40 -n8 -bpacked:8 -dpacked -EOMP_NUM_THREADS=8 --print_placement=1 -M "-gpu" --latency_priority=gpu-cpu --launch_distribution=packed ./gpu_threaded_neighbor_alltoallv
+
+------------------------------------------------------------
+
+Exited with exit code 255.
+
+Resource usage summary:
+
+    CPU time :                                   0.17 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   10 sec.
+    Turnaround time :                            48564 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <nbralltoallv_n40.6085976.err> for stderr output of this job.
+
