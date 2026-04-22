@@ -74,12 +74,14 @@ def filter_big_sizes(times, max_size):
 if __name__ == "__main__":
     if "NO_TITLE" in os.environ.keys() and int(os.environ["NO_TITLE"]) == 1:
         plt.title = lambda *args, **kwargs: None
+        
+    plt.rcParams['axes.labelsize'] = 'large'
     
     fn_in = sys.argv[1]
     with open(fn_in, 'r') as f:
         lines = f.readlines()
     
-    fn_out = fn_in + "_plot.pdf"
+    fn_out = os.path.basename(os.path.normpath(os.path.dirname(os.path.abspath(fn_in)))) + "_" + fn_in + "_plot.pdf"
 
     locality_lines = lines
     locality_times = find_besttimes(locality_lines)
@@ -130,9 +132,8 @@ if __name__ == "__main__":
     plt.xscale("log")
     plt.yscale("log")
     plt.ylabel("Time (s)")
-    plt.legend()
-    plt.tight_layout()
-    pdf.savefig(plt.gcf())
+    plt.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
+    pdf.savefig(bbox_inches="tight")
 
     # =========================================================
     # PLOT 2: SPEEDUP vs PMPI
@@ -150,8 +151,7 @@ if __name__ == "__main__":
     # plt.yscale("log")
     plt.ylim((0.5, 1.5))
     plt.ylabel("Speedup (PMPI / method)")
-    plt.legend()
-    plt.tight_layout()
-    pdf.savefig(plt.gcf())
+    plt.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
+    pdf.savefig(bbox_inches="tight")
     
     pdf.close()
