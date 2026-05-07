@@ -148,6 +148,7 @@ if __name__ == "__main__":
     for k in keys[1:]:
         y = np.array(plot_series[k])
         speedup = base_times / y
+        print("Speedup of " + k + ": " + str(speedup))
         label = k.replace("MPIL ", "").replace("CopyToCPU ", "C2C ").replace(" Time", "")
         plt.plot(nodes_with_data, speedup, label=label)
 
