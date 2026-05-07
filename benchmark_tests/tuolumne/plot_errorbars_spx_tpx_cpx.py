@@ -1469,7 +1469,7 @@ if __name__ == "__main__":
             locality_spx_spx_error_np[1]["MIKELANE"],
             locality_spx_spx_avg[1]["MIKELANE"]
         )
-        plt.errorbar(local_x, local_avg, yerr=local_speedup_error_diffs[1:, :], label="Lane, 1 PPG, SPX")
+        plt.errorbar(local_x, local_avg, yerr=local_speedup_error_diffs[1:, :], label="Lane, 1 PPG, SPX", linestyle="--")
 
         # Lane, 2-PPG SPX
         local_speedup_error_diffs, local_x, local_avg = min_max_error_diff_reduced_time_nps_to_speedup_error_diffs(
@@ -1478,7 +1478,7 @@ if __name__ == "__main__":
             locality_spx_spx_error_np[2]["MIKELANE MPS COPY"],
             locality_spx_spx_avg[2]["MIKELANE MPS COPY"]
         )
-        plt.errorbar(local_x, local_avg, yerr=local_speedup_error_diffs[1:, :], label="Lane, 2 PPG, SPX")
+        plt.errorbar(local_x, local_avg, yerr=local_speedup_error_diffs[1:, :], label="Lane, 2 PPG, SPX", linestyle="--")
 
         # Styling
         plt.title(f"Lane+Std Allreduce\nAll nodes at $2^{{{target_power_spx}}}$ floats, MI300A SPX")
@@ -1585,7 +1585,7 @@ if __name__ == "__main__":
             locality_tpx_tpx_error_np[1]["MIKELANE"],
             locality_tpx_tpx_avg[1]["MIKELANE"]
         )
-        plt.errorbar(local_x, local_avg, yerr=local_speedup_error_diffs[1:, :], label="Lane, 1 PPG, TPX")
+        plt.errorbar(local_x, local_avg, yerr=local_speedup_error_diffs[1:, :], label="Lane, 1 PPG, TPX", linestyle="--")
 
         # Lane, 2-PPG TPX
         local_speedup_error_diffs, local_x, local_avg = min_max_error_diff_reduced_time_nps_to_speedup_error_diffs(
@@ -1594,7 +1594,7 @@ if __name__ == "__main__":
             locality_tpx_tpx_error_np[2]["MIKELANE MPS COPY"],
             locality_tpx_tpx_avg[2]["MIKELANE MPS COPY"]
         )
-        plt.errorbar(local_x, local_avg, yerr=local_speedup_error_diffs[1:, :], label="Lane, 2 PPG, TPX")
+        plt.errorbar(local_x, local_avg, yerr=local_speedup_error_diffs[1:, :], label="Lane, 2 PPG, TPX", linestyle="--")
 
         plt.title(f"Lane+Std Allreduce\nAll nodes at $2^{{{target_power_tpx}}}$ floats, MI300A TPX")
         plt.xlabel("Nodes")
@@ -1612,7 +1612,8 @@ if __name__ == "__main__":
         plt.gca().xaxis.set_minor_formatter("")
         plt.tick_params(which="minor", left=True)
         plt.ylabel("Speedup")
-        plt.legend()
+        
+        pfp.add_anchored_legend(ncol=3, fontsize=16, anchor=(0, 1.1, 1, 0.102))
         plt.tight_layout()
         pdf.savefig(plt.gcf())
 
@@ -1706,7 +1707,7 @@ if __name__ == "__main__":
             locality_cpx_cpx_error_np[1]["MIKELANE"],
             locality_cpx_cpx_avg[1]["MIKELANE"]
         )
-        plt.errorbar(local_x, local_avg, yerr=local_speedup_error_diffs[1:, :], label="Lane, 1 PPG, CPX")
+        plt.errorbar(local_x, local_avg, yerr=local_speedup_error_diffs[1:, :], label="Lane, 1 PPG, CPX", linestyle="--")
 
         # Lane, 2-PPG CPX
         local_speedup_error_diffs, local_x, local_avg = min_max_error_diff_reduced_time_nps_to_speedup_error_diffs(
@@ -1715,7 +1716,7 @@ if __name__ == "__main__":
             locality_cpx_cpx_error_np[2]["MIKELANE MPS COPY"],
             locality_cpx_cpx_avg[2]["MIKELANE MPS COPY"]
         )
-        plt.errorbar(local_x, local_avg, yerr=local_speedup_error_diffs[1:, :], label="Lane, 2 PPG, CPX")
+        plt.errorbar(local_x, local_avg, yerr=local_speedup_error_diffs[1:, :], label="Lane, 2 PPG, CPX", linestyle="--")
 
         plt.title(f"Lane+Std Allreduce\nAll nodes at $2^{{{target_power_cpx}}}$ floats, MI300A CPX")
         plt.xlabel("Nodes")
@@ -1733,7 +1734,8 @@ if __name__ == "__main__":
         plt.gca().xaxis.set_minor_formatter("")
         plt.tick_params(which="minor", left=True)
         plt.ylabel("Speedup")
-        plt.legend()
+        
+        pfp.add_anchored_legend(ncol=3, fontsize=16, anchor=(0, 1.1, 1, 0.102))
         plt.tight_layout()
         pdf.savefig(plt.gcf())
         
@@ -1963,7 +1965,8 @@ if __name__ == "__main__":
         plt.tick_params(which="minor", left=True)
         plt.ylabel("Speedup")
         plt.ylim((0.5, 3.))
-        plt.legend()
+        # plt.legend()
+        pfp.add_anchored_legend(ncol=3, fontsize=16, anchor=(0, 1.1, 1, 0.102))       
         plt.tight_layout()
         pdf.savefig(plt.gcf())
         
