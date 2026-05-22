@@ -1,9 +1,9 @@
 #!/bin/sh
 #Submit using flux batch <filename>
 
-#flux: --job-name=cpx_hyprecg_numaaware_compare_hypre2.33.0_n32
-#flux: --output='cpx_hyprecg_numaaware_compare_hypre2.33.0_n32.{{id}}.out'
-#flux: --error='cpx_hyprecg_numaaware_compare_hypre2.33.0_n32.{{id}}.err'
+#flux: --job-name=cpx_hyprecg_numaaware_compare_hypre2.33.0_gpu_mpi1_n32
+#flux: --output='cpx_hyprecg_numaaware_compare_hypre2.33.0_gpu_mpi1_n32.{{id}}.out'
+#flux: --error='cpx_hyprecg_numaaware_compare_hypre2.33.0_gpu_mpi1_n32.{{id}}.err'
 #flux: -N 32
 #flux: -l # Add task rank prefixes to each line of output.
 #flux: --setattr=thp=always # Enable Transparent Huge Pages (THP)
@@ -42,15 +42,15 @@ run_tests() {
       
       echo "5pt 2D Laplacian"
       flux run -N${n_nodes} -n${n_procs} -c${n_cores} --verbose --exclusive\
-	  --setopt=mpibind=verbose:2 ./ij -solver 2 -laplacian -n ${N_first} ${N_first} ${N_first} -P ${Px} ${Py} ${Pz}
+	  --setopt=mpibind=verbose:2 ./ij -gpu_mpi 1 -solver 2 -laplacian -n ${N_first} ${N_first} ${N_first} -P ${Px} ${Py} ${Pz}
 
       echo "27pt 3D Laplacian"
       flux run -N${n_nodes} -n${n_procs} -c${n_cores} --verbose --exclusive\
-	  --setopt=mpibind=verbose:2 ./ij -solver 2 -27pt -n ${N_first} ${N_first} ${N_first} -P ${Px} ${Py} ${Pz}
+	  --setopt=mpibind=verbose:2 ./ij -gpu_mpi 1 -solver 2 -27pt -n ${N_first} ${N_first} ${N_first} -P ${Px} ${Py} ${Pz}
 
       echo "125pt 3D Laplacian"
       flux run -N${n_nodes} -n${n_procs} -c${n_cores} --verbose --exclusive\
-	  --setopt=mpibind=verbose:2 ./ij -solver 2 -125pt -n ${N_first} ${N_first} ${N_first} -P ${Px} ${Py} ${Pz}
+	  --setopt=mpibind=verbose:2 ./ij -gpu_mpi 1 -solver 2 -125pt -n ${N_first} ${N_first} ${N_first} -P ${Px} ${Py} ${Pz}
     done
   done
 }
