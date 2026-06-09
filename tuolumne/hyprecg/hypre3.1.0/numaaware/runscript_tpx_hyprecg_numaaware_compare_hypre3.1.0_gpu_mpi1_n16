@@ -1,0 +1,63 @@
+#!/bin/sh
+#Submit using flux batch <filename>
+
+#flux: --job-name=tpx_hyprecg_numaaware_compare_hypre3.1.0_gpu_mpi1_n16
+#flux: --output='tpx_hyprecg_numaaware_compare_hypre3.1.0_gpu_mpi1_n16.{{id}}.out'
+#flux: --error='tpx_hyprecg_numaaware_compare_hypre3.1.0_gpu_mpi1_n16.{{id}}.err'
+#flux: -N 16
+#flux: -l # Add task rank prefixes to each line of output.
+#flux: --setattr=thp=always # Enable Transparent Huge Pages (THP)
+#flux: -t 20
+#flux: -q pbatch
+#flux: --setattr=gpumode=TPX
+#flux: --conf=resource.rediscover=true
+
+module load rocmcc/7.2.1-magic
+module load cray-mpich/9.1.0
+
+export MPICH_GPU_SUPPORT_ENABLED=1
+export HSA_XNACK=1
+
+# Check if THP are enabled
+#cat /sys/kernel/mm/transparent_hugepage/enabled
+
+n_nodes=16
+gpus_per_node=12
+max_cores=7
+
+Px=6
+Py=8
+Pz=4
+
+run_tests() {
+  for ppg in 1; do
+    n_procs=$(( ppg * gpus_per_node * n_nodes ))
+    n_cores=$(( max_cores / ppg ))
+    echo "${ppg} Processes Per GPU, ${gpus_per_node} GPUs Per Node"
+    
+    for N in 64 128 256; do
+      N_first=$(( (N / 2) * 3 ))
+      echo "Global matrix size: ${N_first} x ${N_first} x ${N_first}"
+      
+      echo "5pt 2D Laplacian"
+      flux run -N${n_nodes} -n${n_procs} -c${n_cores} --verbose --exclusive\
+	  --setopt=mpibind=verbose:2 ./ij -gpu_mpi 1 -solver 2 -laplacian -n ${N_first} ${N_first} ${N_first} -P ${Px} ${Py} ${Pz}
+
+      echo "27pt 3D Laplacian"
+      flux run -N${n_nodes} -n${n_procs} -c${n_cores} --verbose --exclusive\
+	  --setopt=mpibind=verbose:2 ./ij -gpu_mpi 1 -solver 2 -27pt -n ${N_first} ${N_first} ${N_first} -P ${Px} ${Py} ${Pz}
+
+      echo "125pt 3D Laplacian"
+      flux run -N${n_nodes} -n${n_procs} -c${n_cores} --verbose --exclusive\
+	  --setopt=mpibind=verbose:2 ./ij -gpu_mpi 1 -solver 2 -125pt -n ${N_first} ${N_first} ${N_first} -P ${Px} ${Py} ${Pz}
+    done
+  done
+}
+
+echo "Running baseline test"
+cd $HOME/hypre-3.1.0/src/build-with-gpu-and-tests/test
+run_tests
+
+echo "Running numa aware test"
+cd $HOME/hypre-mikethebos-numaaware-3.1.0/src/build-with-gpu-and-tests/test
+run_tests
