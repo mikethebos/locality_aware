@@ -1254,8 +1254,8 @@ for n in nodes:
                 curr_size = (int)(splitting[0].rsplit(' ')[-1])
             elif active_method and curr_size != -1:
                 if "STD MPS COPY:" in line or "STD:" in line:
-                    if curr_size <= 8192 or curr_size >= 10**7:
-                        continue
+                    # if curr_size <= 8192 or curr_size >= 10**7:
+                        # continue
                     splitting = line.split(": ")
                     time = (float)(splitting[-1].split('\n')[0])
                     method.add_timing(curr_size, time)
