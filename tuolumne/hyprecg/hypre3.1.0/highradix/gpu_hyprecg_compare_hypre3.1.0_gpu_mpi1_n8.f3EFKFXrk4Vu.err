@@ -1,0 +1,748 @@
+0: 
+0: Lmod is automatically replacing "cce/20.0.0" with "rocmcc/7.2.1-magic".
+0: 
+0: 
+0: Due to MODULEPATH changes, the following have been reloaded:
+0:   1) cray-libsci/25.09.0
+0: 
+0: The following have been reloaded with a version change:
+0:   1) cray-mpich/9.0.1 => cray-mpich/9.1.0
+0: 
+0: jobid: f2bB4MCT
+0: 0.111s: flux-shell[1]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.113s: flux-shell[2]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.099s: flux-shell[0]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.113s: flux-shell[4]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.115s: flux-shell[3]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.111s: flux-shell[5]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.115s: flux-shell[6]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.113s: flux-shell[7]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: jobid: fGAcLtZD
+0: 0.088s: flux-shell[1]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.084s: flux-shell[2]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.080s: flux-shell[5]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.089s: flux-shell[4]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.082s: flux-shell[3]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.074s: flux-shell[0]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.082s: flux-shell[6]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.087s: flux-shell[7]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: jobid: fME3xjhq
+0: 0.078s: flux-shell[1]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.075s: flux-shell[2]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.074s: flux-shell[3]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.082s: flux-shell[4]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.074s: flux-shell[5]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.074s: flux-shell[6]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.076s: flux-shell[7]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.076s: flux-shell[0]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: jobid: fSTsVZGT
+0: 0.080s: flux-shell[1]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.079s: flux-shell[2]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.082s: flux-shell[4]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.078s: flux-shell[5]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.076s: flux-shell[3]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.075s: flux-shell[0]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.080s: flux-shell[6]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.081s: flux-shell[7]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: jobid: fXeXButK
+0: 0.075s: flux-shell[1]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.079s: flux-shell[2]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.082s: flux-shell[4]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.076s: flux-shell[3]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.079s: flux-shell[5]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.073s: flux-shell[6]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.075s: flux-shell[7]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.076s: flux-shell[0]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: jobid: fd5zm5xB
+0: 0.080s: flux-shell[1]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.077s: flux-shell[2]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.084s: flux-shell[4]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.084s: flux-shell[5]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.076s: flux-shell[0]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.073s: flux-shell[3]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.080s: flux-shell[6]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.077s: flux-shell[7]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: jobid: fiMXd5Pu
+0: 0.081s: flux-shell[1]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.073s: flux-shell[2]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.075s: flux-shell[3]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.081s: flux-shell[5]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.084s: flux-shell[4]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.077s: flux-shell[0]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.075s: flux-shell[6]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.079s: flux-shell[7]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: jobid: fozy2TM9
+0: 0.083s: flux-shell[1]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.079s: flux-shell[2]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.077s: flux-shell[3]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.086s: flux-shell[5]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.083s: flux-shell[4]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.078s: flux-shell[6]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.080s: flux-shell[7]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.076s: flux-shell[0]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: jobid: fubHZLvK
+0: 0.078s: flux-shell[1]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.077s: flux-shell[2]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.081s: flux-shell[5]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.075s: flux-shell[3]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.077s: flux-shell[0]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.079s: flux-shell[4]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.074s: flux-shell[6]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.076s: flux-shell[7]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: jobid: f21FD8VE7
+0: 0.078s: flux-shell[1]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.076s: flux-shell[2]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.080s: flux-shell[3]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.083s: flux-shell[4]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.086s: flux-shell[5]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.082s: flux-shell[6]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.075s: flux-shell[0]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.076s: flux-shell[7]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: jobid: f26eCtrxX
+0: 0.075s: flux-shell[1]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.073s: flux-shell[2]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.080s: flux-shell[3]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.078s: flux-shell[0]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.082s: flux-shell[4]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.081s: flux-shell[5]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.082s: flux-shell[6]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.073s: flux-shell[7]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: jobid: f2BpSsR4s
+0: 0.076s: flux-shell[1]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.073s: flux-shell[2]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.077s: flux-shell[5]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.076s: flux-shell[3]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.081s: flux-shell[4]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.075s: flux-shell[0]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.078s: flux-shell[6]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.075s: flux-shell[7]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: jobid: f2H4BxGnT
+0: 0.079s: flux-shell[5]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.076s: flux-shell[0]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.080s: flux-shell[2]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.080s: flux-shell[1]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.079s: flux-shell[3]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.082s: flux-shell[6]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.084s: flux-shell[4]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.082s: flux-shell[7]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: jobid: f2NFgaDhh
+0: 0.073s: flux-shell[1]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.077s: flux-shell[2]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.074s: flux-shell[0]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.073s: flux-shell[5]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.074s: flux-shell[4]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.079s: flux-shell[6]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.079s: flux-shell[3]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.077s: flux-shell[7]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: jobid: f2TEekEXy
+0: 0.071s: flux-shell[1]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.073s: flux-shell[2]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.072s: flux-shell[3]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.073s: flux-shell[5]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.078s: flux-shell[6]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.076s: flux-shell[0]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.077s: flux-shell[4]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.073s: flux-shell[7]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: jobid: f2YJ1v7qZ
+0: 0.078s: flux-shell[1]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.075s: flux-shell[2]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.080s: flux-shell[3]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.076s: flux-shell[5]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.079s: flux-shell[4]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.075s: flux-shell[0]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.080s: flux-shell[6]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.077s: flux-shell[7]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: jobid: f2dtx2iB1
+0: 0.082s: flux-shell[2]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.085s: flux-shell[1]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.079s: flux-shell[3]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.083s: flux-shell[5]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.085s: flux-shell[4]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.083s: flux-shell[6]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.078s: flux-shell[0]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.081s: flux-shell[7]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: jobid: f2j6KEigX
+0: 0.080s: flux-shell[2]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.078s: flux-shell[3]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.078s: flux-shell[1]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.076s: flux-shell[5]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.077s: flux-shell[0]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.082s: flux-shell[4]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.077s: flux-shell[6]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.074s: flux-shell[7]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
