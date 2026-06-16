@@ -33,7 +33,7 @@ active_method = False
 curr_ppg = -1
 curr_size = -1
 curr_times = []
-nodes = [2,4,8,16]
+nodes = [2,4,8,16,32,64]
 alltoall_1ppg = list() 
 alltoall_2ppg = list()
 alltoall_4ppg = list()
@@ -148,7 +148,7 @@ plt.save_plot(alltoall_fn_prefix + "_somemethods_ppg_nodes_best.pdf")
 active_method = False
 curr_ppg = -1
 curr_size = -1
-nodes = [2,4,8,16]
+nodes = [2,4,8,16,32,64]
 alltoall_1ppg = list() 
 alltoall_2ppg = list()
 alltoall_4ppg = list()
@@ -252,7 +252,7 @@ plt.save_plot(alltoall_fn_prefix + "_somemethods_ppg_nodes.pdf")
 active_method = False
 curr_ppg = -1
 curr_size = -1
-nodes = [2,4,8,16]
+nodes = [2,4,8,16,32,64]
 alltoall_1ppg = list() 
 alltoall_2ppg = list()
 alltoall_4ppg = list()
@@ -356,7 +356,7 @@ plt.save_plot(alltoall_fn_prefix + "_somemethods_ppg_nodes_pw.pdf")
 active_method = False
 curr_ppg = -1
 curr_size = -1
-nodes = [2,4,8,16]
+nodes = [2,4,8,16,32,64]
 alltoall_1ppg = list() 
 alltoall_2ppg = list()
 alltoall_4ppg = list()
@@ -459,7 +459,7 @@ plt.save_plot(alltoall_fn_prefix + "_somemethods_ppg_nodes_nb.pdf")
 
 curr_ppg = -1
 curr_size = -1
-nodes = [2,4,8,16]
+nodes = [2,4,8,16,32,64]
 alltoall_1ppg_sys = list() 
 alltoall_1ppg_pw = list()
 alltoall_1ppg_nb = list()
@@ -543,7 +543,7 @@ active_method = False
 curr_ppg = -1
 curr_size = -1
 curr_times = []
-nodes = [2,4,8,16]
+nodes = [2,4,8,16,32,64]
 alltoall_1ppg_best = list() 
 alltoall_multippg = dict()
 alltoall_multippg_pw = dict()
