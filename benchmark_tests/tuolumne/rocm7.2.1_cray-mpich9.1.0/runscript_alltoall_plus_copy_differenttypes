@@ -1,13 +1,13 @@
 #!/bin/sh
 #Submit using flux batch <filename>
 
-#flux: --job-name=alltoall_plus_copy_differenttypes_n16
-#flux: --output='alltoall_plus_copy_differenttypes_n16.{{id}}.out'
-#flux: --error='alltoall_plus_copy_differenttypes_n16.{{id}}.err'
-#flux: -N 16
+#flux: --job-name=alltoall_plus_copy_differenttypes_n64
+#flux: --output='alltoall_plus_copy_differenttypes_n64.{{id}}.out'
+#flux: --error='alltoall_plus_copy_differenttypes_n64.{{id}}.err'
+#flux: -N 64
 #flux: -l # Add task rank prefixes to each line of output.
 #flux: --setattr=thp=always # Enable Transparent Huge Pages (THP)
-#flux: -t 75
+#flux: -t 60
 #flux: -q pbatch
 
 module load rocmcc/7.2.1-magic
@@ -21,7 +21,7 @@ export HSA_XNACK=1
 
 cd $HOME/MPICCL/build/benchmarks
 
-n_nodes=16
+n_nodes=64
 gpus_per_node=4
 max_cores=21
 
