@@ -27,6 +27,9 @@ class PingPong:
 num_sockets = 4
 GPN = 4
 
+def get_max_common_size(li_li_pingpong, nodes):
+    return max(set.intersection(*map(set, sum([[l[i].sizes for l in li_li_pingpong] for i in range(len(nodes))], []))))
+
 alltoall_fn_prefix = "alltoall_plus_copy_differenttypes"
 
 active_method = False
@@ -145,6 +148,19 @@ plt.set_scale('linear', 'log')
 plt.set_xticks(nodes, nodes)
 plt.save_plot(alltoall_fn_prefix + "_somemethods_ppg_nodes_best.pdf")
 
+# Standard alltoall Times
+max_size = get_max_common_size([alltoall_1ppg, alltoall_2ppg, alltoall_4ppg, alltoall_8ppg], nodes)
+plt.add_luke_options()
+plt.line_plot([alltoall_1ppg[i].times[alltoall_1ppg[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, color='r', label = "1 PPG")
+plt.line_plot([alltoall_2ppg[i].times[alltoall_2ppg[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, color='b', label = "2 PPG")
+plt.line_plot([alltoall_4ppg[i].times[alltoall_4ppg[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, color='g', label = "4 PPG")
+plt.line_plot([alltoall_8ppg[i].times[alltoall_8ppg[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, color='y', label = "8 PPG") #
+plt.add_anchored_legend(ncol=3)
+plt.add_labels("Nodes", "Time (Seconds)")
+plt.set_scale('linear', 'log')
+plt.set_xticks(nodes, nodes)
+plt.save_plot(alltoall_fn_prefix + "_weakish_somemethods_ppg_nodes_best.pdf")
+
 active_method = False
 curr_ppg = -1
 curr_size = -1
@@ -248,6 +264,18 @@ plt.add_labels("Nodes", "Time (Seconds)")
 plt.set_scale('linear', 'log')
 plt.set_xticks(nodes, nodes)
 plt.save_plot(alltoall_fn_prefix + "_somemethods_ppg_nodes.pdf")
+
+max_size = get_max_common_size([alltoall_1ppg, alltoall_2ppg, alltoall_4ppg, alltoall_8ppg], nodes)
+plt.add_luke_options()
+plt.line_plot([alltoall_1ppg[i].times[alltoall_1ppg[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, color='r', label = "1 PPG")
+plt.line_plot([alltoall_2ppg[i].times[alltoall_2ppg[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, color='b', label = "2 PPG")
+plt.line_plot([alltoall_4ppg[i].times[alltoall_4ppg[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, color='g', label = "4 PPG")
+plt.line_plot([alltoall_8ppg[i].times[alltoall_8ppg[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, color='y', label = "8 PPG") #
+plt.add_anchored_legend(ncol=3)
+plt.add_labels("Nodes", "Time (Seconds)")
+plt.set_scale('linear', 'log')
+plt.set_xticks(nodes, nodes)
+plt.save_plot(alltoall_fn_prefix + "_weakish_somemethods_ppg_nodes.pdf")
 
 active_method = False
 curr_ppg = -1
@@ -353,6 +381,18 @@ plt.set_scale('linear', 'log')
 plt.set_xticks(nodes, nodes)
 plt.save_plot(alltoall_fn_prefix + "_somemethods_ppg_nodes_pw.pdf")
 
+max_size = get_max_common_size([alltoall_1ppg, alltoall_2ppg, alltoall_4ppg, alltoall_8ppg], nodes)
+plt.add_luke_options()
+plt.line_plot([alltoall_1ppg[i].times[alltoall_1ppg[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, color='r', label = "1 PPG")
+plt.line_plot([alltoall_2ppg[i].times[alltoall_2ppg[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, color='b', label = "2 PPG")
+plt.line_plot([alltoall_4ppg[i].times[alltoall_4ppg[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, color='g', label = "4 PPG")
+plt.line_plot([alltoall_8ppg[i].times[alltoall_8ppg[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, color='y', label = "8 PPG") #
+plt.add_anchored_legend(ncol=3)
+plt.add_labels("Nodes", "Time (Seconds)")
+plt.set_scale('linear', 'log')
+plt.set_xticks(nodes, nodes)
+plt.save_plot(alltoall_fn_prefix + "_weakish_somemethods_ppg_nodes_pw.pdf")
+
 active_method = False
 curr_ppg = -1
 curr_size = -1
@@ -457,6 +497,18 @@ plt.set_scale('linear', 'log')
 plt.set_xticks(nodes, nodes)
 plt.save_plot(alltoall_fn_prefix + "_somemethods_ppg_nodes_nb.pdf")
 
+max_size = get_max_common_size([alltoall_1ppg, alltoall_2ppg, alltoall_4ppg, alltoall_8ppg], nodes)
+plt.add_luke_options()
+plt.line_plot([alltoall_1ppg[i].times[alltoall_1ppg[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, color='r', label = "1 PPG")
+plt.line_plot([alltoall_2ppg[i].times[alltoall_2ppg[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, color='b', label = "2 PPG")
+plt.line_plot([alltoall_4ppg[i].times[alltoall_4ppg[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, color='g', label = "4 PPG")
+plt.line_plot([alltoall_8ppg[i].times[alltoall_8ppg[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, color='y', label = "8 PPG") #
+plt.add_anchored_legend(ncol=3)
+plt.add_labels("Nodes", "Time (Seconds)")
+plt.set_scale('linear', 'log')
+plt.set_xticks(nodes, nodes)
+plt.save_plot(alltoall_fn_prefix + "_weakish_somemethods_ppg_nodes_nb.pdf")
+
 curr_ppg = -1
 curr_size = -1
 nodes = [2,4,8,16,32,64]
@@ -538,6 +590,17 @@ plt.add_labels("Nodes", "Time (Seconds)")
 plt.set_scale('linear', 'log')
 plt.set_xticks(nodes, nodes)
 plt.save_plot(alltoall_fn_prefix + "_somemethods_1ppg_nodes.pdf")
+
+max_size = get_max_common_size([alltoall_1ppg_sys, alltoall_1ppg_pw, alltoall_1ppg_nb], nodes)
+plt.add_luke_options()
+plt.line_plot([alltoall_1ppg_sys[i].times[alltoall_1ppg_sys[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, color='r', label = "Sys")
+plt.line_plot([alltoall_1ppg_pw[i].times[alltoall_1ppg_pw[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, color='b', label = "Pw")
+plt.line_plot([alltoall_1ppg_nb[i].times[alltoall_1ppg_nb[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, color='g', label = "Nb")
+plt.add_anchored_legend(ncol=3)
+plt.add_labels("Nodes", "Time (Seconds)")
+plt.set_scale('linear', 'log')
+plt.set_xticks(nodes, nodes)
+plt.save_plot(alltoall_fn_prefix + "_weakish_somemethods_1ppg_nodes.pdf")
 
 active_method = False
 curr_ppg = -1
@@ -684,3 +747,17 @@ for ppg in alltoall_multippg_pw.keys():
     plt.set_scale('linear', 'log')
     plt.set_xticks(nodes, nodes)
     plt.save_plot(alltoall_fn_prefix + "_somemethods_ppg_nodes_best1_vs_all" + str(ppg) + "ppg.pdf")
+    
+    max_size = get_max_common_size([alltoall_1ppg_best, alltoall_multippg_pw[ppg], alltoall_multippg_pwsplit[ppg], alltoall_multippg_nb[ppg], alltoall_multippg_nbsplit[ppg], alltoall_multippg[ppg]], nodes)
+    plt.add_luke_options()
+    plt.line_plot([alltoall_1ppg_best[i].times[alltoall_1ppg_best[i].sizes.index(max_size)] for i in range(len(nodes))], nodes, label = "1 PPG, Best")
+    plt.line_plot([alltoall_multippg_pw[ppg][i].times[alltoall_multippg_pw[ppg][i].sizes.index(max_size)] for i in range(len(nodes))], nodes, label = str(ppg) + " PPG, Pw")
+    plt.line_plot([alltoall_multippg_pwsplit[ppg][i].times[alltoall_multippg_pwsplit[ppg][i].sizes.index(max_size)] for i in range(len(nodes))], nodes, label = str(ppg) + " PPG, Pw Split")    
+    plt.line_plot([alltoall_multippg_nb[ppg][i].times[alltoall_multippg_nb[ppg][i].sizes.index(max_size)] for i in range(len(nodes))], nodes, label = str(ppg) + " PPG, Nb")
+    plt.line_plot([alltoall_multippg_nbsplit[ppg][i].times[alltoall_multippg_nbsplit[ppg][i].sizes.index(max_size)] for i in range(len(nodes))], nodes, label = str(ppg) + " PPG, Nb Split")
+    plt.line_plot([alltoall_multippg[ppg][i].times[alltoall_multippg[ppg][i].sizes.index(max_size)] for i in range(len(nodes))], nodes, label = str(ppg) + " PPG, Sys")
+    plt.add_anchored_legend(ncol=3)
+    plt.add_labels("Nodes", "Time (Seconds)")
+    plt.set_scale('linear', 'log')
+    plt.set_xticks(nodes, nodes)
+    plt.save_plot(alltoall_fn_prefix + "_weakish_somemethods_ppg_nodes_best1_vs_all" + str(ppg) + "ppg.pdf")
