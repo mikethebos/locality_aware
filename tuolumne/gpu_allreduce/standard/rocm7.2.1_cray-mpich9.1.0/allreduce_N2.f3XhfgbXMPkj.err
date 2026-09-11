@@ -1,0 +1,55 @@
+0: 
+0: Lmod is automatically replacing "cce/20.0.0" with "rocmcc/7.2.1-magic".
+0: 
+0: 
+0: Due to MODULEPATH changes, the following have been reloaded:
+0:   1) cray-libsci/25.09.0
+0: 
+0: The following have been reloaded with a version change:
+0:   1) cray-mpich/9.0.1 => cray-mpich/9.1.0
+0: 
+0: jobid: f2ci1c79
+0: 0.106s: flux-shell[1]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: 0.099s: flux-shell[0]: mpibind: 
+0: mpibind: task   0 nths 21 gpus 0 cpus 1-7,9-15,17-23
+0: mpibind: task   1 nths 21 gpus 1 cpus 25-31,33-39,41-47
+0: mpibind: task   2 nths 21 gpus 2 cpus 49-55,57-63,65-71
+0: mpibind: task   3 nths 21 gpus 3 cpus 73-79,81-87,89-95
+0: MPICH ERROR [Rank 3] [job id 61505273856] [Fri Sep 11 14:28:16 2026] [tuolumne1785] - Abort(537556484) (rank 3 in comm 448): Fatal error in internal_Sendrecv: Invalid tag, error stack:
+0: internal_Sendrecv(126): MPI_Sendrecv(sendbuf=0x9838f0, sendcount=64, MPI_DOUBLE, 2, 8388608, recvbuf=0x9ed960, recvcount=64, MPI_DOUBLE, 4, 8388608, comm=0x84000005, status=0x1) failed
+0: MPICH ERROR [Rank 2] [job id 61505273856] [Fri Sep 11 14:28:16 2026] [tuolumne1785] - Abort(738883076) (rank 2 in comm 448): Fatal error in internal_Sendrecv: Invalid tag, error stack:
+0: MPICH ERROR [Rank 1] [job id 61505273856] [Fri Sep 11 14:28:16 2026] [tuolumne1785] - Abort(470447620) (rank 1 in comm 448): Fatal error in internal_Sendrecv: Invalid tag, error stack:
+0: MPICH ERROR [Rank 0] [job id 61505273856] [Fri Sep 11 14:28:16 2026] [tuolumne1785] - Abort(873100804) (rank 0 in comm 448): Fatal error in internal_Sendrecv: Invalid tag, error stack:
+0: internal_Sendrecv(82).: Invalid tag, value is 8388608
+0: internal_Sendrecv(126): MPI_Sendrecv(sendbuf=0x983460, sendcount=64, MPI_DOUBLE, 1, 8388608, recvbuf=0x98a080, recvcount=64, MPI_DOUBLE, 3, 8388608, comm=0x84000005, status=0x1) failed
+0: internal_Sendrecv(126): MPI_Sendrecv(sendbuf=0x983510, sendcount=64, MPI_DOUBLE, 0, 8388608, recvbuf=0x989a10, recvcount=64, MPI_DOUBLE, 2, 8388608, comm=0x84000005, status=0x1) failed
+0: internal_Sendrecv(126): MPI_Sendrecv(sendbuf=0x989ab0, sendcount=64, MPI_DOUBLE, 7, 8388608, recvbuf=0x96c010, recvcount=64, MPI_DOUBLE, 1, 8388608, comm=0xc4000000, status=0x1) failed
+0: 
+0: internal_Sendrecv(82).: Invalid tag, value is 8388608
+0: internal_Sendrecv(82).: Invalid tag, value is 8388608
+0: internal_Sendrecv(82).: Invalid tag, value is 8388608
+0: MPICH ERROR [Rank 5] [job id 61505273856] [Fri Sep 11 14:28:16 2026] [tuolumne1787] - Abort(403338756) (rank 5 in comm 448): Fatal error in internal_Sendrecv: Invalid tag, error stack:
+0: 
+0: 
+0: 
+0: MPICH ERROR [Rank 7] [job id 61505273856] [Fri Sep 11 14:28:16 2026] [tuolumne1787] - Abort(1007318532) (rank 7 in comm 448): Fatal error in internal_Sendrecv: Invalid tag, error stack:
+0: MPICH ERROR [Rank 6] [job id 61505273856] [Fri Sep 11 14:28:16 2026] [tuolumne1787] - Abort(537556484) (rank 6 in comm 448): Fatal error in internal_Sendrecv: Invalid tag, error stack:
+0: internal_Sendrecv(126): MPI_Sendrecv(sendbuf=0x983910, sendcount=64, MPI_DOUBLE, 4, 8388608, recvbuf=0x9918d0, recvcount=64, MPI_DOUBLE, 6, 8388608, comm=0x84000005, status=0x1) failed
+0: MPICH ERROR [Rank 4] [job id 61505273856] [Fri Sep 11 14:28:16 2026] [tuolumne1787] - Abort(685572) (rank 4 in comm 448): Fatal error in internal_Sendrecv: Invalid tag, error stack:
+0: internal_Sendrecv(126): MPI_Sendrecv(sendbuf=0x983760, sendcount=64, MPI_DOUBLE, 6, 8388608, recvbuf=0x990dc0, recvcount=64, MPI_DOUBLE, 0, 8388608, comm=0x84000005, status=0x1) failed
+0: internal_Sendrecv(126): MPI_Sendrecv(sendbuf=0x983710, sendcount=64, MPI_DOUBLE, 5, 8388608, recvbuf=0x989e20, recvcount=64, MPI_DOUBLE, 7, 8388608, comm=0x84000005, status=0x1) failed
+0: internal_Sendrecv(82).: Invalid tag, value is 8388608
+0: internal_Sendrecv(126): MPI_Sendrecv(sendbuf=0x98ad00, sendcount=64, MPI_DOUBLE, 3, 8388608, recvbuf=0x96d370, recvcount=64, MPI_DOUBLE, 5, 8388608, comm=0xc4000000, status=0x1) failed
+0: internal_Sendrecv(82).: Invalid tag, value is 8388608
+0: internal_Sendrecv(82).: Invalid tag, value is 8388608
+0: 
+0: internal_Sendrecv(82).: Invalid tag, value is 8388608
+0: 
+0: 
+0: 
+0: flux-job: task(s) exited with exit code 4
+0: Sep 11 14:28:17.031028 PDT 2026 broker.err[0]: rc2.0: /var/tmp/adams112/jobtmp-0-f3XhfgbXMPkj/script Exited (rc=4) 126.6s
