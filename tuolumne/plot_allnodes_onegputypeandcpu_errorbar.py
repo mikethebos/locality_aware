@@ -285,7 +285,7 @@ if __name__ == "__main__":
         plt.gca().xaxis.set_major_formatter(StrMethodFormatter('{x:,.0f}'))
         plt.gca().xaxis.set_minor_formatter("")
 
-    fn_out = "node_scaling_min_size.pdf"
+    fn_out = "onegputypeandcpu_node_scaling_min_size_errorbar.pdf"
     for dir in dirs_in:
         if "gpu" in dir:
             fn_out = dir + os.path.sep + fn_out
