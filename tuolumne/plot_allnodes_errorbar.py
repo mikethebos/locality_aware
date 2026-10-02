@@ -6,8 +6,12 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 from matplotlib.ticker import StrMethodFormatter
 
+# How CPU series are drawn: "o" = dots only, "o--" = dots joined by a dashed line
+CPU_FMT = "o"
+CAPSIZE = 3
+
 def find_nnodes(fn):
-    """Extracts node count from filename matching 'allreduce_N(\d+)'."""
+    r"""Extracts node count from filename matching 'allreduce_N(\d+)'."""
     match = re.search(r'allreduce_N(\d+)\s*', fn)
     if match:
         return int(match.group(1))
@@ -23,11 +27,14 @@ def find_size(l):
         return int(match.group(1))
     return None
 
-def find_timings(l):
-    matches = re.findall(r'^\s*\d+:\s*(.+?):\s+([-+]?\d*\.\d+e[-+]\d+)', l)
+def find_timings(l, alg_colon=True):
+    if alg_colon:
+        matches = re.findall(r'^\s*\d+:\s*(.+?):\s+([-+]?\d*\.\d+e[-+]\d+)', l)
+    else:
+        matches = re.findall(r'^\s*\d+:\s*(.+?)\s+([-+]?\d*\.\d+e[-+]\d+)', l)
     return [(k, float(v)) for k, v in matches]
 
-def find_besttimes(lines):
+def find_besttimes(lines, alg_colon=True):
     times = {1: {}}
     curr_size = 0
     procs_per_gpu = 1
@@ -40,7 +47,7 @@ def find_besttimes(lines):
                     times, curr_size, local_times = update(times, curr_size, local_times, size, procs_per_gpu)
                 if curr_size == 0:
                     curr_size = size
-        for (k, v) in find_timings(l):
+        for (k, v) in find_timings(l, alg_colon=alg_colon):
             local_times.append((k, v))
     
     if curr_size != 0:
@@ -123,29 +130,6 @@ def min_max_error_diff_reduced_time_nps_to_speedup_error_diffs(array_2d_ref, lp_
     
     return speedup_diffs, speedup_diffs[0, :], avg_speedups
 
-# assume sizes pushed in
-def find_max_size_in_all_li_times(li_times):
-    def extract_sizes(times):
-        all_sizes = None
-        for subdict in times.values():
-            for inner_list in subdict.values():
-                current = {pair[0] for pair in inner_list}
-                if all_sizes is None:
-                    all_sizes = current
-                else:
-                    all_sizes = all_sizes.intersection(current)
-        return all_sizes if all_sizes is not None else set()
-
-    common_sizes = None
-    for times in li_times:
-        sizes = extract_sizes(times)
-        if common_sizes is None:
-            common_sizes = sizes
-        else:
-            common_sizes = common_sizes.intersection(sizes)
-
-    return max(common_sizes) if common_sizes else None
-
 def num_node_combined_times_pairs_push_num_nodes_in_at_size(node_comb_times_pairs, target_size):
     out = {}
     for num_nodes, combined_times in node_comb_times_pairs:
@@ -165,6 +149,9 @@ if __name__ == "__main__":
     if len(sys.argv) >= 2 and (sys.argv[1] == "-h" or sys.argv[1] == "--help"):
         print("Usage: python plot_allnodes_errorbar.py <input_directory>,<input_directory> [prefix] [suffix]")
         sys.exit(1)
+
+    if "NO_TITLE" in os.environ.keys() and int(os.environ["NO_TITLE"]) == 1:
+        plt.title = lambda *args, **kwargs: None
 
     plt.rcParams['axes.labelsize'] = 'large'
 
@@ -187,15 +174,17 @@ if __name__ == "__main__":
                 if nn is not None:
                     with open(os.path.join(dir_in, fn), 'r') as f:
                         lines = f.readlines()
-                        raw_times = find_besttimes(lines)
-                        pushed_times = push_sizes_in(raw_times)
+                        alg_colon = True
                         run_type = "gpu"
                         if "cpu" in dir_in:
+                            alg_colon = False
                             run_type = "cpu"
+                        raw_times = find_besttimes(lines, alg_colon=alg_colon)
+                        pushed_times = push_sizes_in(raw_times)
                         node_data[run_type].setdefault(nn, []).append(pushed_times)
 
-    if not node_data:
-        print(f"No valid files found in {dir_in}")
+    if not node_data["gpu"] and not node_data["cpu"]:
+        print(f"No valid files found in {', '.join(dirs_in)}")
         sys.exit(1)
 
     target_size = 1
@@ -240,53 +229,117 @@ if __name__ == "__main__":
         if ok:
             cpu_nodes_with_data.append(nn)
 
-    # 4. Extract Y-values using ONLY the nodes that have data
-    plot_series_gpu, plot_series_cpu = {k: [] for k in gpu_keys}, {k: [] for k in cpu_keys}
-    for nn in gpu_nodes_with_data:
-        # MIKE stopped here
-        data = node_data["gpu"][nn].get(ppg, {})
-        for k in gpu_keys:
-            series = data.get(k, [])
-            # Extract the value for the target size
-            import pdb;pdb.set_trace()
-            val = next((v for s, v in series if s == target_size), np.nan)
-            plot_series_gpu[k].append(val)
+    if not gpu_nodes_with_data and not cpu_nodes_with_data:
+        print(f"No nodes have data for size {target_size}")
+        sys.exit(1)
+    all_nodes = sorted(set(gpu_nodes_with_data) | set(cpu_nodes_with_data))
 
-    fn_out = os.path.basename(os.path.normpath(os.path.abspath(dir_in))) + "_node_scaling_min_size.pdf"
+    # 4. Mean and (min, max) error bars at target_size for every node count
+    #    (same pipeline as the locality script: combine runs -> push nodes in -> reduce)
+    def build_series(run_type, nodes):
+        """Returns ({key: [(nodes, mean), ...]}, {key: 3 x n array of nodes / mean-min / max-mean})."""
+        if not nodes:
+            return {}, {}
+        pairs = [(nn, combine_times(node_data[run_type][nn])) for nn in nodes]
+        at_size = num_node_combined_times_pairs_push_num_nodes_in_at_size(pairs, target_size)
+        avg = reduce_combined_times(at_size, np.mean)
+        err = min_max_error_diff_reduced_times_to_np(reduce_combined_times(at_size, get_min_max_error_diffs))
+        return avg[ppg], err[ppg]
+
+    gpu_avg, gpu_err = build_series("gpu", gpu_nodes_with_data)
+    cpu_avg, cpu_err = build_series("cpu", cpu_nodes_with_data)
+    runs = [("gpu", gpu_keys, gpu_avg, gpu_err),
+            ("cpu", cpu_keys, cpu_avg, cpu_err)]
+
+    # 5. Styling: GPU = lines, CPU = dots. A CPU method shares its color with the
+    #    GPU "CopyToCPU" version of the same algorithm so the two are easy to compare.
+    colors = {k: f"C{i}" for i, k in enumerate(gpu_keys)}
+    cpu_to_gpu_key = {
+        "PMPI_Allreduce Time": "PMPI Allreduce Time",
+        "MPIL Recursive Doubling Allreduce Time": "MPIL CopyToCPU Recursive Doubling Time",
+        "MPIL Node-Aware Dissemination Allreduce Time": "MPIL CopyToCPU Node-Aware Dissemination Time",
+        "MPIL NUMA-Aware Dissemination Allreduce Time": "MPIL CopyToCPU NUMA-Aware Dissemination Time",
+    }
+    colors.update({ck: colors[gk] for ck, gk in cpu_to_gpu_key.items()})
+
+    def short_label(k):
+        label = k.replace("PMPI_Allreduce", "PMPI Allreduce")
+        if label.startswith("MPIL "):
+            label = label[len("MPIL "):].replace(" Allreduce Time", " Time")
+        label = label.replace("CopyToCPU ", "C2C ")
+        return label.replace(" Time", "")
+
+    def has_data(avg, k):
+        return k in avg and len(avg[k]) > 0
+
+    def draw(run_type, k, x, y, yerr):
+        plt.errorbar(x, y, yerr=np.clip(yerr, 0, None),
+                     fmt=CPU_FMT if run_type == "cpu" else "-",
+                     color=colors.get(k), capsize=CAPSIZE,
+                     label=f"{short_label(k)} ({run_type.upper()})")
+
+    def format_node_axis():
+        plt.xlabel("Nodes")
+        plt.xscale("log")
+        plt.xticks(ticks=all_nodes)
+        plt.gca().xaxis.set_major_formatter(StrMethodFormatter('{x:,.0f}'))
+        plt.gca().xaxis.set_minor_formatter("")
+
+    fn_out = "node_scaling_min_size.pdf"
+    for dir in dirs_in:
+        if "gpu" in dir:
+            fn_out = dir + os.path.sep + fn_out
+            break
     pdf = PdfPages(fn_out)
     
     # Timing Plot
     plt.figure()
-    for k in gpu_keys:
-        label = k.replace("MPIL ", "").replace("CopyToCPU ", "C2C ").replace(" Time", "")
-        plt.plot(nodes_with_data, plot_series[k], label=label)
+    for run_type, keys, avg, err in runs:
+        if not avg:
+            continue
+        for k in keys:
+            if not has_data(avg, k):
+                print(f"Warning: no {run_type} data for '{k}' at size {target_size}")
+                continue
+            draw(run_type, k, [x for x, _ in avg[k]], [y for _, y in avg[k]], err[k][1:, :])
 
     plt.title(f"Allreduce Timings vs Nodes\nSmallest Size ({target_size} doubles), PPG={ppg}")
-    plt.xlabel("Nodes")
+    format_node_axis()
     plt.ylabel("Time (s)")
-    plt.xscale("log")
     plt.yscale("log")
-    plt.xticks(nodes_with_data, labels=[str(n) for n in nodes_with_data])
-    plt.gca().xaxis.set_major_formatter(StrMethodFormatter('{x:,.0f}'))
     plt.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
     pdf.savefig(bbox_inches="tight")
 
-    # Speedup Plot
+    # Speedup Plot (each run type is compared against its own PMPI baseline)
+    for run_type, keys, avg, err in runs: # compare to gpu baseline
+        if run_type == "gpu":
+            base_run_type = run_type
+            base_key = keys[0]
+            base_err = err[base_key]
+            base_avg = avg[base_key]
+            break
+    
     plt.figure()
-    base_times = np.array(plot_series["PMPI Allreduce Time"])
-    for k in gpu_keys[1:]:
-        y = np.array(plot_series[k])
-        speedup = base_times / y
-        print("Speedup of " + k + ": " + str(speedup))
-        label = k.replace("MPIL ", "").replace("CopyToCPU ", "C2C ").replace(" Time", "")
-        plt.plot(nodes_with_data, speedup, label=label)
+    for run_type, keys, avg, err in runs:
+        if not avg:
+            continue
+        if not has_data({base_key: base_avg}, base_key):
+            print(f"Warning: no {base_run_type} baseline '{base_key}', skipping {base_run_type} speedups")
+            continue
+        for k in keys[:]:
+            if not has_data(avg, k):
+                continue
+            if [x for x, _ in base_avg] != [x for x, _ in avg[k]]:
+                print(f"Warning: '{k}' and baseline '{base_key}' cover different node counts, skipping")
+                continue
+            speedup_error_diffs, speedup_x, speedup_avg = min_max_error_diff_reduced_time_nps_to_speedup_error_diffs(
+                base_err, base_avg, err[k], avg[k])
+            print(f"Speedup of {k} ({run_type.upper()}) at nodes {speedup_x}: {speedup_avg}")
+            draw(run_type, k, speedup_x, speedup_avg, speedup_error_diffs[1:, :])
 
-    plt.title(f"Allreduce Speedup vs PMPI\nSmallest Size ({target_size} doubles), PPG={ppg}")
-    plt.xlabel("Nodes")
+    plt.title(f"Allreduce Speedup vs {base_run_type.upper()} {base_key}\nSmallest Size ({target_size} doubles), PPG={ppg}")
+    format_node_axis()
     plt.ylabel("Speedup (PMPI / Method)")
-    plt.xscale("log")
-    plt.xticks(nodes_with_data, labels=[str(n) for n in nodes_with_data])
-    plt.gca().xaxis.set_major_formatter(StrMethodFormatter('{x:,.0f}'))
     plt.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
     pdf.savefig(bbox_inches="tight")
 
