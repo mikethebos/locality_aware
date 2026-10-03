@@ -150,8 +150,10 @@ if __name__ == "__main__":
         print("Usage: python plot_allnodes_errorbar.py <input_directory>,<input_directory> [prefix] [suffix]")
         sys.exit(1)
 
+    no_title = False
     if "NO_TITLE" in os.environ.keys() and int(os.environ["NO_TITLE"]) == 1:
         plt.title = lambda *args, **kwargs: None
+        no_title = True
 
     plt.rcParams['axes.labelsize'] = 'large'
 
@@ -285,11 +287,34 @@ if __name__ == "__main__":
         plt.gca().xaxis.set_major_formatter(StrMethodFormatter('{x:,.0f}'))
         plt.gca().xaxis.set_minor_formatter("")
 
-    fn_out = "onegputypeandcpu_node_scaling_min_size_errorbar.pdf"
+    def finish_fig(title, top=0.85):
+        fig, ax = plt.gcf(), plt.gca()
+        handles, labels = ax.get_legend_handles_labels()
+        fig.tight_layout(rect=[0, 0, 1, top])          # reserve headroom (figure coords)
+        fig.legend(handles, labels, loc="lower center", frameon=False,
+                ncol=int(np.ceil(len(handles) / 2)),
+                bbox_to_anchor=(0.5, top - 0.04))           # figure coords for fig.legend, 0.04 to decrease space between legend and plot
+        if not no_title:
+            fig.suptitle(title, y=0.995, va="top")          # title above the legend
+
+    fn_out = "node_scaling_min_size_errorbar.pdf"
+    add_prefix = None
+    gpu_exists, cpu_exists = False, False
     for dir in dirs_in:
         if "gpu" in dir:
-            fn_out = dir + os.path.sep + fn_out
-            break
+            add_prefix = dir + os.path.sep
+            gpu_exists = True
+        elif "cpu" in dir:
+            cpu_exists = True
+    if add_prefix == None:
+        add_prefix = dirs_in[0] + os.path.sep
+    if gpu_exists and cpu_exists:
+        add_prefix += "onegputypeandcpu_"
+    elif gpu_exists:
+        add_prefix += "onegputype_"
+    elif cpu_exists:
+        add_prefix += "cpu_"
+    fn_out = add_prefix + fn_out
     pdf = PdfPages(fn_out)
     
     # Timing Plot
@@ -303,14 +328,14 @@ if __name__ == "__main__":
                 continue
             draw(run_type, k, [x for x, _ in avg[k]], [y for _, y in avg[k]], err[k][1:, :])
 
-    plt.title(f"Allreduce Timings vs Nodes\nSmallest Size ({target_size} doubles), PPG={ppg}")
     format_node_axis()
     plt.ylabel("Time (s)")
     plt.yscale("log")
-    plt.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
+    finish_fig(f"Allreduce Timings vs Nodes\nSmallest Size ({target_size} doubles), PPG={ppg}")
     pdf.savefig(bbox_inches="tight")
 
     # Speedup Plot (each run type is compared against its own PMPI baseline)
+    base_run_type = None
     for run_type, keys, avg, err in runs: # compare to gpu baseline
         if run_type == "gpu":
             base_run_type = run_type
@@ -318,6 +343,12 @@ if __name__ == "__main__":
             base_err = err[base_key]
             base_avg = avg[base_key]
             break
+    if base_run_type == None:
+        run_type, keys, avg, err = runs[0] 
+        base_run_type = run_type
+        base_key = keys[0]
+        base_err = err[base_key]
+        base_avg = avg[base_key]
     
     plt.figure()
     for run_type, keys, avg, err in runs:
@@ -337,10 +368,10 @@ if __name__ == "__main__":
             print(f"Speedup of {k} ({run_type.upper()}) at nodes {speedup_x}: {speedup_avg}")
             draw(run_type, k, speedup_x, speedup_avg, speedup_error_diffs[1:, :])
 
-    plt.title(f"Allreduce Speedup vs {base_run_type.upper()} {base_key}\nSmallest Size ({target_size} doubles), PPG={ppg}")
     format_node_axis()
     plt.ylabel("Speedup (PMPI / Method)")
-    plt.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
+    finish_fig(f"Allreduce Speedup vs {base_run_type.upper()} {base_key}\n"
+           f"Smallest Size ({target_size} doubles), PPG={ppg}")
     pdf.savefig(bbox_inches="tight")
 
     pdf.close()
