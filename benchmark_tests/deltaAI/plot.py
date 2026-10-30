@@ -220,7 +220,7 @@ plt.save_plot("off_node_allsocketsactive_perproc.pdf")
 # Off-Node, MultiProc, Even Sockets
 plt.add_luke_options()
 for i in range(len(off_node_even_sockets)):
-    sizes = [s * off_node_even_sockets[i].active_procs for s in off_node_even_sockets[i].sizes]
+    sizes = [s * off_node_even_sockets[i].active_procs * num_sockets for s in off_node_even_sockets[i].sizes]
     plt.line_plot(off_node_even_sockets[i].times, sizes, label = "%d Active PPS"%off_node_even_sockets[i].active_procs)
 plt.add_anchored_legend(ncol=3)
 plt.add_labels("Message Size Per Node (Bytes)", "Time (Seconds)")
@@ -233,7 +233,7 @@ plt.add_luke_options()
 for i in range(len(off_node_even_sockets)):
     sizes = [s  for s in off_node_even_sockets[i].sizes]        
     bw = [(off_node_even_sockets[i].sizes[j])/off_node_even_sockets[i].times[j] for j in range(len(off_node_even_sockets[i].sizes))]
-    plt.line_plot(bw, off_node_even_sockets[i].sizes, label = "%d Active PPS"%off_node_even_sockets[i].active_procs)
+    plt.line_plot(bw, sizes, label = "%d Active PPS"%off_node_even_sockets[i].active_procs)
 plt.add_anchored_legend(ncol=3)
 plt.add_labels("Message Size (Bytes)", "Bandwidth (Bytes Per Second)")
 plt.set_scale('log', 'log')
@@ -244,10 +244,10 @@ plt.save_plot("off_node_bw_allsocketsactive_perproc.pdf")
 plt.add_luke_options()
 for i in range(len(off_node_even_sockets)):
     sizes = [s * off_node_even_sockets[i].active_procs * num_sockets for s in off_node_even_sockets[i].sizes]        
-    bw = [(off_node_even_sockets[i].sizes[j]*off_node_even_sockets[i].active_procs)/off_node_even_sockets[i].times[j] for j in range(len(off_node_even_sockets[i].sizes))]
-    plt.line_plot(bw, off_node_even_sockets[i].sizes, label = "%d Active PPS"%off_node_even_sockets[i].active_procs)
+    bw = [(off_node_even_sockets[i].sizes[j]*off_node_even_sockets[i].active_procs*num_sockets)/off_node_even_sockets[i].times[j] for j in range(len(off_node_even_sockets[i].sizes))]
+    plt.line_plot(bw, sizes, label = "%d Active PPS"%off_node_even_sockets[i].active_procs)
 plt.add_anchored_legend(ncol=3)
-plt.add_labels("Message Size (Bytes)", "Bandwidth (Bytes Per Second)")
+plt.add_labels("Message Size Per Node (Bytes)", "Bandwidth (Bytes Per Second)")
 plt.set_scale('log', 'log')
 plt.save_plot("off_node_bw_allsocketsactive_pernode.pdf")
 
@@ -512,7 +512,7 @@ bw = [(off_node_even_sockets[1].sizes[j]*off_node_even_sockets[1].active_procs *
 plt.line_plot(bw, sizes, label = "%d CPU Cores Per Socket"%off_node_even_sockets[1].active_procs)
 
 # 1 Proc per GPU
-sizes = [s * gpu_multi_all[0].active_procs for s in gpu_multi_all[0].sizes]    
+sizes = [s * gpu_multi_all[0].active_procs * GPN for s in gpu_multi_all[0].sizes]    
 bw = [gpu_multi_all[0].sizes[j] * gpu_multi_all[0].active_procs * GPN / gpu_multi_all[0].times[j] for j in range(len(gpu_multi_all[0].sizes))]
 plt.line_plot(bw, sizes, label = "1 GPU Per Socket")
 
@@ -546,12 +546,12 @@ bw = [(off_node_even_sockets[1].sizes[j]*off_node_even_sockets[1].active_procs *
 plt.line_plot(bw, sizes, label = "%d CPU Cores Per Socket"%off_node_even_sockets[1].active_procs)
 
 # 1 Proc per GPU
-sizes = [s * gpu_multi_all[0].active_procs for s in gpu_multi_all[0].sizes]    
+sizes = [s * gpu_multi_all[0].active_procs * GPN for s in gpu_multi_all[0].sizes]    
 bw = [gpu_multi_all[0].sizes[j] * gpu_multi_all[0].active_procs * GPN / gpu_multi_all[0].times[j] for j in range(len(gpu_multi_all[0].sizes))]
 plt.line_plot(bw, sizes, label = "1 Process Per GPU")
 
 # 16 Proc per GPU
-sizes = [s * gpu_multi_all[1].active_procs for s in gpu_multi_all[1].sizes]    
+sizes = [s * gpu_multi_all[1].active_procs * GPN for s in gpu_multi_all[1].sizes]    
 bw = [gpu_multi_all[1].sizes[j] * gpu_multi_all[1].active_procs * GPN / gpu_multi_all[1].times[j] for j in range(len(gpu_multi_all[1].sizes))]
 plt.line_plot(bw, sizes, label = "%d Processes Per GPU"%gpu_multi_all[1].active_procs)
 

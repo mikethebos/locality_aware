@@ -512,7 +512,7 @@ bw = [(off_node_even_sockets[1].sizes[j]*off_node_even_sockets[1].active_procs *
 plt.line_plot(bw, sizes, label = "%d CPU Cores Per Socket"%off_node_even_sockets[1].active_procs)
 
 # 1 Proc per GPU
-sizes = [s * gpu_multi_all[0].active_procs for s in gpu_multi_all[0].sizes]    
+sizes = [s * gpu_multi_all[0].active_procs * GPN for s in gpu_multi_all[0].sizes]    
 bw = [gpu_multi_all[0].sizes[j] * gpu_multi_all[0].active_procs * GPN / gpu_multi_all[0].times[j] for j in range(len(gpu_multi_all[0].sizes))]
 plt.line_plot(bw, sizes, label = "1 GPU Per Socket")
 
@@ -546,12 +546,12 @@ bw = [(off_node_even_sockets[1].sizes[j]*off_node_even_sockets[1].active_procs *
 plt.line_plot(bw, sizes, label = "%d CPU Cores Per Socket"%off_node_even_sockets[1].active_procs)
 
 # 1 Proc per GPU
-sizes = [s * gpu_multi_all[0].active_procs for s in gpu_multi_all[0].sizes]    
+sizes = [s * gpu_multi_all[0].active_procs * GPN for s in gpu_multi_all[0].sizes]    
 bw = [gpu_multi_all[0].sizes[j] * gpu_multi_all[0].active_procs * GPN / gpu_multi_all[0].times[j] for j in range(len(gpu_multi_all[0].sizes))]
 plt.line_plot(bw, sizes, label = "1 Process Per GPU")
 
 # 16 Proc per GPU
-sizes = [s * gpu_multi_all[1].active_procs for s in gpu_multi_all[1].sizes]    
+sizes = [s * gpu_multi_all[1].active_procs * GPN for s in gpu_multi_all[1].sizes]    
 bw = [gpu_multi_all[1].sizes[j] * gpu_multi_all[1].active_procs * GPN / gpu_multi_all[1].times[j] for j in range(len(gpu_multi_all[1].sizes))]
 plt.line_plot(bw, sizes, label = "%d Processes Per GPU"%gpu_multi_all[1].active_procs)
 
